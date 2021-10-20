@@ -2,6 +2,7 @@
 <!-- Aeon MQ 5 6.1.3 -->
 <!-- Krypton 9.1.18/9.2.1 window IDs -->
 <!-- Leia 10.2.5/10.5.2/10.6.1/10.6.2 -->
+<!-- Nexus add colorbutton --> 
 <includes>
 	<default type="image">
 		<posx>0</posx>
@@ -72,6 +73,30 @@
 		<aligny>center</aligny>
 		<textureradioonfocus>radiobutton_on.png</textureradioonfocus>
 		<textureradioofffocus>radiobutton.png</textureradioofffocus>
+		<scroll>true</scroll>
+	</default>
+	<default type="colorbutton">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>1560</width>
+		<height>60</height>
+		<font>Font_20</font>
+		<texturefocus>settings_button_focus.png</texturefocus>
+		<texturenofocus></texturenofocus>
+		<textcolor>FFFFFAF0</textcolor>
+		<focusedcolor>E4101010</focusedcolor>
+		<disabledcolor>FF505050</disabledcolor>
+		<pulseonselect>false</pulseonselect>
+		<textwidth>1200</textwidth>
+		<texturecolormask>color-button-box.png</texturecolormask>
+		<texturecolordisabledmask>color-button-box.png</texturecolordisabledmask>
+		<colorwidth>116</colorwidth>
+		<colorposx>1395</colorposx>
+		<colorposy>0</colorposy>
+		<colorheight>98</colorheight>
+		<textoffsetx>75</textoffsetx>
+		<align>left</align>
+		<aligny>center</aligny>
 		<scroll>true</scroll>
 	</default>
 	<default type="progress">
