@@ -81,8 +81,7 @@
 					<autoscroll delay="8000" time="2000" repeat="8000">!Skin.HasSetting(noallowscroll)</autoscroll>
 				</control>
 			</control>
-			<control type="group">
-				<!-- right group game video select -->
+			<control type="group">				<!-- right group game video select -->
 				<posx>75</posx>
 				<animation effect="slide" start="900,0" end="0,0" time="1000" tween="cubic" easing="out">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="900,0" time="1000" tween="cubic" easing="out">WindowClose</animation>
@@ -369,8 +368,7 @@
 						<visible allowhiddenfocus="true">Control.HasFocus(61) | Control.HasFocus(3) | Control.HasFocus(6)</visible>
 					</control>
 				</control>
-				<control type="group">
-					<!-- Used for games video settings -->
+				<control type="group">					<!-- Used for games video settings -->
 					<visible>Window.IsActive(gamestretchmode) | Window.IsActive(gamevideofilter) | Window.IsActive(gamevideorotation)</visible>
 					<control type="image">
 						<posx>0</posx>
