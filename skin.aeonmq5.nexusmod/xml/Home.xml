@@ -5,6 +5,7 @@
 <!-- Krypton 9.1.16/9.1.19/9.2.1 windowIDs/9.2.2 -->
 <!-- Leia 10.3.0/10.5.1 /10.6.0/10.6.2-->
 <!-- Matrix 11.0.1/11.0.4/11.0.5/11.1.1/11.2.0 -->
+<!-- Nexus 12.2.0 -->
 <!-- Includes:  Quickfix InvisibleButton Playlists HomeBG Animation_Fade LiveBG Animation_Window HomeRSS Animation_HomeGlass Animation_CDart  Animation_HomeNowPlaying Animation_Widgets Animation_HomeGlass2 Animation_HomeFade -->
 <!-- NextTracksContent Animation_HomePanel HomeFlagSeparator HomeFlagLabel mf_contentmovies -->
 <!--
@@ -26,18 +27,18 @@ Group 602: Widgets
 	<onload condition="Skin.String(custom_wxicons.path)">SetProperty(current_wxicon_path,$INFO[Skin.String(custom_wxicons.path)],home)</onload>
 	<onload condition="!Skin.String(custom_wxicons.path)">SetProperty(current_wxicon_path,resource://resource.images.weathericons.default/,home)</onload>
 	<!-- copied from startup.xml -->
-	<onload condition="System.HasAddon(script.skin.info.service) + !String.IsEqual(Window.Property(skin.aeonmq5.matrixmod.status),run)">RunScript(script.skin.info.service)</onload>
-	<onload condition="Skin.HasSetting(custommode) + !String.IsEqual(Window.Property(skin.aeonmq5.matrixmod.status),run)">Skin.Reset(custommode)</onload>
-	<onload condition="Skin.HasSetting(submode) + !String.IsEqual(Window.Property(skin.aeonmq5.matrixmod.status),run)">Skin.Reset(submode)</onload>
-	<onload condition="Skin.HasSetting(startplay) + !String.IsEqual(Window.Property(skin.aeonmq5.matrixmod.status),run)">PlayMedia($INFO[Skin.String(startupplaylist)])</onload>
-	<onload condition="String.IsEqual(System.ProfileAutoLogin,Last Used Profile) + !String.IsEqual(System.ProfileName,master user) + !String.IsEqual(Window.Property(skin.aeonmq5.matrixmod.status),run)">Notification(Profile In Use,$INFO[System.ProfileName],5000)</onload>
-	<onload>SetProperty(skin.aeonmq5.matrixmod.status,run,home)</onload>
+	<onload condition="System.HasAddon(script.skin.info.service) + !String.IsEqual(Window.Property(skin.aeonmq5.nexusmod.status),run)">RunScript(script.skin.info.service)</onload>
+	<onload condition="Skin.HasSetting(custommode) + !String.IsEqual(Window.Property(skin.aeonmq5.nexusmod.status),run)">Skin.Reset(custommode)</onload>
+	<onload condition="Skin.HasSetting(submode) + !String.IsEqual(Window.Property(skin.aeonmq5.nexusmod.status),run)">Skin.Reset(submode)</onload>
+	<onload condition="Skin.HasSetting(startplay) + !String.IsEqual(Window.Property(skin.aeonmq5.nexusmod.status),run)">PlayMedia($INFO[Skin.String(startupplaylist)])</onload>
+	<onload condition="String.IsEqual(System.ProfileAutoLogin,Last Used Profile) + !String.IsEqual(System.ProfileName,master user) + !String.IsEqual(Window.Property(skin.aeonmq5.nexusmod.status),run)">Notification(Profile In Use,$INFO[System.ProfileName],5000)</onload>
+	<onload>SetProperty(skin.aeonmq5.nexusmod.status,run,home)</onload>
 
 	<!-- default weather icons -->
 	<onload condition="Skin.HasSetting(custom_wxicons.multi)">SetProperty(current_wxicon_multi,true,home)</onload>
 	<onload condition="Player.HasAudio + System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
 	<onload condition="System.HasAddon(script.favourites) + ![String.IsEmpty(skin.string(favouriteswidget)) | Skin.HasSetting(nofavouriteswidget)]">RunScript(script.favourites)</onload>
-	<onload condition="Skin.HasSetting(rcbgames) | [!String.IsEqual(Window.Property(skin.aeonmq5.matrixmod.status),run) + System.HasAddon(script.games.rom.collection.browser) + ![String.IsEmpty(skin.string(gameswidget)) | Skin.HasSetting(nogameswidget)]]">RunScript(script.games.rom.collection.browser,limit=12)</onload>
+	<onload condition="Skin.HasSetting(rcbgames) | [!String.IsEqual(Window.Property(skin.aeonmq5.nexusmod.status),run) + System.HasAddon(script.games.rom.collection.browser) + ![String.IsEmpty(skin.string(gameswidget)) | Skin.HasSetting(nogameswidget)]]">RunScript(script.games.rom.collection.browser,limit=12)</onload>
 	<onload condition="Skin.HasSetting(rcbgames)">Skin.Reset(rcbgames)</onload>
 	<onload>Skin.Reset(playlists)</onload>
 	<onunload condition="String.Contains(Container(9000).ListItem.Property(id),vpl) | String.Contains(Container(9000).ListItem.Property(id),apl)">Skin.SetString(playlists,$INFO[Container(9000).ListItem.Property(id)])</onunload>
