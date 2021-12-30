@@ -4,7 +4,7 @@
 <!-- Jarvis 8.1.13/8.1.14 -->
 <!-- Krypton 9.1.16/9.1.17/9.1.19/9.2.1 window IDs/9.2.3 -->
 <!-- Leia 10.2.4/10.3.0/10.4.0/10.5.0/10.5.2/10.6.0/10.6.1/10.6.2 -->
-<!-- Matrix 11.0.2/11.0.4 -->
+<!-- Matrix 11.0.2/11.0.4/11.2.0 -->
 <includes>
 	<!-- ######################################################################### Music Window #########################################################################-->
 	<include name="MusicWindow">
@@ -14,38 +14,46 @@
 		<onunload>ClearProperty(mv_artist,music)</onunload>
 		<views>51,54,55,56,58,59,62,69,70,71</views>
 		<controls>
-			<control type="list" id="5032">
-				<!-- check if artist info has extrafanart note: if artist info entry is normalized it isn't found -->
-				<posx>-500</posx>
-				<posy>-500</posy>
-				<height>400</height>
-				<width>50</width>
-				<visible>Skin.HasSetting(musiclogo) + String.Contains(skin.string(musicfanart),extra) + !String.IsEmpty(Skin.String(CustomMusicLogoPath)) + ![String.IsEmpty(ListItem.Artist) + String.IsEmpty(ListItem.Actor)]</visible>
-				<itemlayout />
-				<focusedlayout />
-				<content target="filemanager">$INFO[Skin.String(CustomMusicLogoPath)]$VAR[value_musicartist]/extrafanart/</content>
+			<control type="group">	<!-- check for extrafanart with folderarts -->
+				<visible>Skin.HasSetting(use_folderarts)</visible>
+				<control type="list" id="5032">
+					<!-- check if artist info has extrafanart note: if artist info entry is normalized it isn't found -->
+					<posx>-500</posx>
+					<posy>-500</posy>
+					<height>400</height>
+					<width>50</width>
+					<visible>Skin.HasSetting(musiclogo) + String.Contains(skin.string(musicfanart),extra) + !String.IsEmpty(Skin.String(CustomMusicLogoPath)) + ![String.IsEmpty(ListItem.Artist) + String.IsEmpty(ListItem.Actor)]</visible>
+					<itemlayout/>
+					<focusedlayout/>
+					<content target="filemanager">$INFO[Skin.String(CustomMusicLogoPath)]$VAR[value_musicartist]/extrafanart/</content>
+				</control>
+				<control type="list" id="5033">
+					<!-- check if mv lib path has extrafanart -->
+					<posx>-500</posx>
+					<posy>-500</posy>
+					<height>400</height>
+					<width>50</width>
+					<visible>String.Contains(skin.string(musicfanart),extra) + ![String.StartsWith(ListItem.Path,Plugin) | String.StartsWith(ListItem.Path,..)]</visible>
+					<itemlayout/>
+					<focusedlayout/>
+					<content target="filemanager">$INFO[ListItem.Path]extrafanart/</content>
+				</control>
+				<control type="list" id="5034">
+					<!-- check if song lib path has extrafanart -->
+					<posx>-500</posx>
+					<posy>-500</posy>
+					<height>400</height>
+					<width>50</width>
+					<visible>String.Contains(skin.string(musicfanart),extra) + ![String.StartsWith(ListItem.Path,Plugin) | String.StartsWith(ListItem.Path,..)]</visible>
+					<itemlayout/>
+					<focusedlayout/>
+					<content target="filemanager">$INFO[ListItem.Path]../extrafanart/</content>
+				</control>
 			</control>
-			<control type="list" id="5033">
-				<!-- check if mv lib path has extrafanart -->
-				<posx>-500</posx>
-				<posy>-500</posy>
-				<height>400</height>
-				<width>50</width>
-				<visible>String.Contains(skin.string(musicfanart),extra) + ![String.StartsWith(ListItem.Path,Plugin) | String.StartsWith(ListItem.Path,..)]</visible>
-				<itemlayout />
-				<focusedlayout />
-				<content target="filemanager">$INFO[ListItem.Path]extrafanart/</content>
-			</control>
-			<control type="list" id="5034">
-				<!-- check if song lib path has extrafanart -->
-				<posx>-500</posx>
-				<posy>-500</posy>
-				<height>400</height>
-				<width>50</width>
-				<visible>String.Contains(skin.string(musicfanart),extra) + ![String.StartsWith(ListItem.Path,Plugin) | String.StartsWith(ListItem.Path,..)]</visible>
-				<itemlayout />
-				<focusedlayout />
-				<content target="filemanager">$INFO[ListItem.Path]../extrafanart/</content>
+			<control type="fadelabel" id="5056">
+				<visible>!Skin.HasSetting(use_folderarts)</visible>
+				<description>Randomizer for plugin-free multiple fanart</description>
+				<include>music_fanartfadelabel</include>
 			</control>
 			<control type="image">
 				<!-- Single Fanart -->
@@ -71,6 +79,7 @@
 				<include>WindowBG</include>
 				<imagepath background="true">$INFO[ListItem.Path]../extrafanart/</imagepath>
 				<visible>String.IsEqual(ListItem.DBType,song) + String.Contains(skin.string(musicfanart),extra) + Integer.IsGreater(Container(5034).NumItems,0) + [!Skin.HasSetting(musiclogo) | [Skin.HasSetting(musiclogo) + String.IsEmpty(Skin.String(CustomMusicLogoPath))]]</visible>
+				<visible>Skin.HasSetting(use_folderarts)</visible>
 			</control>
 			<control type="image" id="9924">
 				<!-- record label control -->
@@ -529,6 +538,8 @@
 <!--                                                                                         -->
 <!-- *****************************  Music Playlist  **************************************** -->
 	<include name="MusicPLWindow">
+	<control type="group">
+		<visible>Skin.HasSetting(use_folderarts)</visible>
 		<control type="list" id="5032">
 			<!-- check if artist info has extrafanart note: if artist info entry is normalized it isn't found -->
 			<posx>-500</posx>
@@ -536,8 +547,8 @@
 			<height>400</height>
 			<width>50</width>
 			<visible>Skin.HasSetting(musiclogo) + !String.IsEmpty(Skin.String(CustomMusicLogoPath)) + ![String.IsEmpty(ListItem.Artist) + String.IsEmpty(ListItem.Actor)]</visible>
-			<itemlayout />
-			<focusedlayout />
+			<itemlayout/>
+			<focusedlayout/>
 			<content target="filemanager">$INFO[Skin.String(CustomMusicLogoPath)]$VAR[value_musicartist]/extrafanart/</content>
 		</control>
 		<control type="list" id="5033">
@@ -546,8 +557,8 @@
 			<posy>-500</posy>
 			<height>400</height>
 			<width>50</width>
-			<itemlayout />
-			<focusedlayout />
+			<itemlayout/>
+			<focusedlayout/>
 			<content target="filemanager">$INFO[ListItem.Path]extrafanart/</content>
 		</control>
 		<control type="list" id="5034">
@@ -556,10 +567,16 @@
 			<posy>-500</posy>
 			<height>400</height>
 			<width>50</width>
-			<itemlayout />
-			<focusedlayout />
+			<itemlayout/>
+			<focusedlayout/>
 			<content target="filemanager">$INFO[ListItem.Path]../extrafanart/</content>
-		</control>		
+		</control>
+		</control>
+		<control type="fadelabel" id="5056">
+				<visible>!Skin.HasSetting(use_folderarts)</visible>
+				<description>Randomizer for plugin-free multiple fanart</description>
+				<include>music_fanartfadelabel</include>
+		</control>
 		<control type="image">
 			<!-- Single Fanart -->
 			<include>WindowBG</include>
@@ -1014,5 +1031,5 @@
 			<include>TopMenu_Audio</include>
 			<include>BGBlack</include>
 		</control>
-	</include>
+</include>
 </includes>

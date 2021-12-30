@@ -120,7 +120,7 @@ Group 602: Widgets
 		show for the full amount of time -->
 			<resetonlabelchange>true</resetonlabelchange>
 		</control>
-		<control type="multiimage"><!-- skin backgrounds -->
+		<control type="multiimage">	<!-- skin backgrounds -->
 			<include>HomeBG</include>
 			<imagepath background="true">$VAR[value_menubg]</imagepath>
 		</control>
@@ -135,14 +135,21 @@ Group 602: Widgets
 			<include>HomeBG</include>
 			<include>Animation_Fade</include>
 			<texture background="true">$INFO[Player.Art(artist.fanart)]</texture>
-			<visible>Player.HasAudio + System.IdleTime(8) + !Integer.IsGreater(Container(7044).NumItems,0)</visible>
+			<visible>Player.HasAudio + System.IdleTime(8) + Skin.HasSetting(use_folderarts) + !Integer.IsGreater(Container(7044).NumItems,0)</visible>
 		</control>
 		<control type="multiimage">
-			<!-- Audio fanart -->
+			<!-- Audio fanart extrafanart -->
 			<include>HomeBG</include>
 			<include>Animation_Fade</include>
 			<imagepath background="true">$INFO[Skin.String(CustomMusicLogoPath)]$INFO[MusicPlayer.Artist]/extrafanart/</imagepath>
-			<visible>Player.HasAudio + !PVR.IsPlayingRadio + System.IdleTime(8) + Integer.IsGreater(Container(7044).NumItems,0)</visible>
+			<visible>Player.HasAudio + !PVR.IsPlayingRadio + System.IdleTime(8) + Skin.HasSetting(use_folderarts) + Integer.IsGreater(Container(7044).NumItems,0)</visible>
+		</control>
+		<control type="multiimage">
+			<!-- Audio fanart fanart[nn] -->
+			<include>HomeBG</include>
+			<include>Animation_Fade</include>
+			<imagepath background="true">$INFO[Control.GetLabel(7047)]</imagepath>
+			<visible>Player.HasAudio + !PVR.IsPlayingRadio + System.IdleTime(8) + !Skin.HasSetting(use_folderarts)</visible>
 		</control>
 		<control type="multiimage">
 			<!-- Widget fanart -->
@@ -152,10 +159,10 @@ Group 602: Widgets
 			<visible>Control.HasFocus(510) + !String.IsEmpty(Container(510).ListItem.Property(Fanart))</visible>
 		</control>
 		<include>LiveBG</include>
-		<control type="group"><!-- default group -->
+		<control type="group">	<!-- default group -->
 			<include>Animation_Window</include>
 			<include condition="system.getbool(lookandfeel.enablerssfeeds)">HomeRSS</include>
-			<control type="group" id="605"><!-- disc art bottom left -->
+			<control type="group" id="605">  <!-- disc art bottom left -->
 				<!-- Arte de disco -->
 				<animation effect="slide" start="-750,0" end="0,0" time="1000" delay="3000" tween="cubic" easing="inout">WindowOpen</animation>
 				<animation effect="slide" start="-750,0" end="0,0" time="1000" delay="3000" tween="cubic" easing="inout">Visible</animation>
@@ -212,7 +219,7 @@ Group 602: Widgets
 					<visible>Player.HasVideo</visible>
 				</control>
 			</control>
-			<control type="group" id="606"><!-- PVR recording/next recording bottom left -->
+			<control type="group" id="606">  <!-- PVR recording/next recording bottom left -->
 				<!-- Lembrete (reminder) PVR-->
 				<animation effect="slide" start="-750,0" end="0,0" time="1000" delay="3000" tween="cubic" easing="inout">WindowOpen</animation>
 				<animation effect="slide" start="-750,0" end="0,0" time="1000" delay="3000" tween="cubic" easing="inout">Visible</animation>
@@ -256,7 +263,7 @@ Group 602: Widgets
 					<textcolor>FFFFFAF0</textcolor>
 					<label>$VAR[value_pvrstatushome]</label>
 					<autoscroll time="1000" repeat="5000">true</autoscroll>
-					<pagecontrol/>
+					<pagecontrol></pagecontrol>
 					<scrolltime>200</scrolltime>
 				</control>
 				<control type="image">
@@ -270,7 +277,7 @@ Group 602: Widgets
 					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 				</control>
 			</control>
-			<control type="group" id="604"><!-- top left now playing art + data panel / Top right next tracks-->
+			<control type="group" id="604">  <!-- top left now playing art + data panel / Top right next tracks-->
 				<!-- Tocando agora (now playing) -->
 				<posy>-75</posy>
 				<include condition="![Skin.HasSetting(higherwidgets) | Skin.HasSetting(highermainmenu)]">Animation_HomeNowPlaying</include>
@@ -319,7 +326,7 @@ Group 602: Widgets
 					<texture fallback="DefaultAudioCover.png" background="true">$INFO[Container(603).ListItem.Icon]</texture>
 					<bordertexture border="-35">musicframe.png</bordertexture>
 					<fadetime>FanartCrossFadeTime</fadetime>
-					<visible>Control.HasFocus(603)</visible><!-- Next Tracks album cover from top right -->
+					<visible>Control.HasFocus(603)</visible>  <!-- Next Tracks album cover from top right -->
 				</control>
 				<control type="image">
 					<!-- Fundo borda -->
@@ -365,7 +372,7 @@ Group 602: Widgets
 					<fadetime>FanartCrossFadeTime</fadetime>
 					<visible>Player.HasAudio</visible>
 				</control>
-				<control type="videowindow" id="8"><!-- show unless we have video playing full screen -->
+				<control type="videowindow" id="8">  <!-- show unless we have video playing full screen -->
 					<posx>52</posx>
 					<posy>141</posy>
 					<width>666</width>
@@ -516,7 +523,7 @@ Group 602: Widgets
 						<visible>[String.IsEmpty(MusicPlayer.offset(1).Artist) | Skin.HasSetting(nonexttracks)] + Player.HasAudio | Player.HasVideo</visible>
 					</control>
 				</control>
-				<control type="group"><!-- Next tracks heading top right -->
+				<control type="group">	<!-- Next tracks heading top right -->
 					<visible>![String.IsEmpty(MusicPlayer.offset(1).Artist) | Skin.HasSetting(nonexttracks)] + Player.HasAudio</visible>
 					<control type="label">
 						<posx>1305</posx>
@@ -542,7 +549,7 @@ Group 602: Widgets
 						<scroll>true</scroll>
 						<scrollout>false</scrollout>
 					</control>
-					<control type="panel" id="603"><!-- Next tracks top right -->
+					<control type="panel" id="603">  <!-- Next tracks top right -->
 						<posx>1305</posx>
 						<posy>225</posy>
 						<width>615</width>
@@ -554,7 +561,7 @@ Group 602: Widgets
 						<onright condition="Skin.HasSetting(highermainmenu)">Skin.SetBool(submode)</onright>
 						<onright condition="Skin.HasSetting(highermainmenu)">ActivateWindow($VAR[Sub_GoTo])</onright>
 						<orientation>vertical</orientation>
-						<pagecontrol/>
+						<pagecontrol></pagecontrol>
 						<include>Animation_HomeFade</include>
 						<itemlayout width="615" height="45">
 							<control type="image">
@@ -632,7 +639,7 @@ Group 602: Widgets
 					</control>
 				</control>
 			</control>
-			<control type="group" id="601"><!-- Details panel for skin widgets panel (includesmenuwidgets) 510 -->
+			<control type="group" id="601">  <!-- Details panel for skin widgets panel (includesmenuwidgets) 510 -->
 				<posx>0</posx>
 				<posy>-450</posy>
 				<include condition="![Skin.HasSetting(higherwidgets) | Skin.HasSetting(highermainmenu)]">Animation_HomePanel</include>
@@ -949,7 +956,7 @@ Group 602: Widgets
 				<animation effect="fade" start="0" end="100" time="150" delay="5000" condition="String.Contains(skin.string(widgets_seconds),5)">Visible</animation>
 				<visible>![Container(9000).OnNext | Container(9000).OnPrevious]</visible>
 			</control>
-			<control type="group" id="602"><!-- Widgets (panel is 510) -->
+			<control type="group" id="602">	<!-- Widgets (panel is 510) -->
 				<animation effect="slide" start="0,0" end="0,-480" condition="Skin.HasSetting(higherwidgets) + ![Skin.HasSetting(highermainmenu) | String.IsEqual(Container(9000).ListItem.Property(id),settings) | String.IsEqual(Container(9000).ListItem.Property(id),weather)]">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,-165" condition="Skin.HasSetting(higherwidgets) + Skin.HasSetting(highermainmenu) + ![String.IsEqual(Container(9000).ListItem.Property(id),settings) | String.IsEqual(Container(9000).ListItem.Property(id),weather)]">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,-315" condition="Skin.HasSetting(highermainmenu) + ![String.IsEqual(Container(9000).ListItem.Property(id),settings) | String.IsEqual(Container(9000).ListItem.Property(id),weather)]">Conditional</animation>
@@ -1007,7 +1014,7 @@ Group 602: Widgets
 				<include condition="![String.IsEmpty(skin.string(weatherwidget)) | Skin.HasSetting(noweatherwidget)]">mf_weather</include>
 				<include condition="![String.IsEmpty(skin.string(pvrwidget)) | Skin.HasSetting(nopvrwidget)]">mf_contentpvr_tv</include>
 			</control>
-			<control type="group"><!-- Library status -->
+			<control type="group">  <!-- Library status -->
 				<!-- Status da biblioteca -->
 				<animation effect="slide" start="-750,0" end="0,0" time="500" delay="2000" tween="sine" easing="out" condition="Window.Previous(Startup)">WindowOpen</animation>
 				<animation effect="slide" start="-750,0" end="0,0" time="500" delay="1000" tween="sine" easing="out" condition="!Window.Previous(Startup)">WindowOpen</animation>
@@ -1041,7 +1048,7 @@ Group 602: Widgets
 					<scroll>true</scroll>
 				</control>
 			</control>
-			<control type="group"><!-- date/weather -->
+			<control type="group">  <!-- date/weather -->
 				<!-- Data e clima -->
 				<visible>![Skin.HasSetting(nohometime) | Skin.HasSetting(highertime) + [Window.IsVisible(volumebar) | Window.IsVisible(notification) | Library.IsScanningVideo | Library.IsScanningMusic | Window.IsVisible(extendedprogressdialog)]]</visible>
 				<animation effect="slide" start="1920,0" end="0,0" time="500" delay="1000" tween="sine" easing="out">WindowOpen</animation>
@@ -1096,7 +1103,7 @@ Group 602: Widgets
 					<animation effect="slide" start="0,0" end="-112,0" condition="![String.IsEqual(Weather.Plugin,weather.openweathermap.extended) | String.IsEqual(Weather.Plugin,weather.ozweather) | String.IsEqual(Weather.Plugin,weather.worldweatheronline) | String.IsEqual(Weather.Plugin,weather.wunderground) | String.IsEqual(Weather.Plugin,weather.yahoo) | String.IsEqual(Weather.Plugin,weather.weatherbit.io) | String.IsEqual(Weather.Plugin,weather.multi)]">Conditional</animation>
 				</control>
 			</control>
-			<control type="group"><!-- player controls -->
+			<control type="group">  <!-- player controls -->
 				<visible>Player.HasMedia</visible>
 				<animation effect="slide" start="1920,0" end="0,0" time="500" delay="1000" tween="sine" easing="out">WindowOpen</animation>
 				<animation effect="slide" start="1920,0" end="0,0" time="500" delay="1000" tween="sine" easing="out">Visible</animation>
@@ -1113,7 +1120,7 @@ Group 602: Widgets
 					<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 					<include>Animation_HomeGlass</include>
 				</control>
-				<control type="list" id="600"><!--  player controls -->
+				<control type="list" id="600">  <!--  player controls -->
 					<posx>1455</posx>
 					<posy>747</posy>
 					<height>300</height>
@@ -1160,103 +1167,103 @@ Group 602: Widgets
 					<content>
 						<item id="1">
 							<!-- play DVD -->
-							<label/>
+							<label></label>
 							<icon>osd_menu_play_square.png</icon>
 							<onclick>PlayDVD</onclick>
 							<visible>System.HasMediaDVD + ![Player.Playing | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
 						</item>
 						<item id="2">
 							<!-- pause -->
-							<label/>
+							<label></label>
 							<icon>osd_menu_pause_square.png</icon>
 							<onclick>PlayerControl(Play)</onclick>
 							<visible>!Player.Paused</visible>
 						</item>
 						<item id="3">
 							<!-- play -->
-							<label/>
+							<label></label>
 							<icon>osd_menu_play_square.png</icon>
 							<onclick>PlayerControl(Play)</onclick>
 							<visible>Player.Paused</visible>
 						</item>
 						<item id="4">
 							<!-- playlist -->
-							<label/>
+							<label></label>
 							<icon>osd_menu_plyalist_square.png</icon>
 							<onclick>ActivateWindow(musicplaylist)</onclick>
 							<visible>Player.HasAudio + !String.IsEmpty(MusicPlayer.offset(1).Artist)</visible>
 						</item>
 						<item id="5">
 							<!-- stop -->
-							<label/>
+							<label></label>
 							<icon>osd_menu_stop_square.png</icon>
 							<onclick>PlayerControl(Stop)</onclick>
 							<onclick>SetFocus(9000)</onclick>
 						</item>
 						<item id="6">
 							<!-- skipbwd -->
-							<label/>
+							<label></label>
 							<icon>osd_menu_skipbwd_square.png</icon>
 							<onclick>PlayerControl(Previous)</onclick>
 							<visible>!VideoPlayer.Content(LiveTV)</visible>
 						</item>
 						<item id="6">
 							<!-- - canal -->
-							<label/>
+							<label></label>
 							<icon>osd_menu_skipbwd_channeldown.png</icon>
 							<onclick>PlayerControl(Previous)</onclick>
 							<visible>VideoPlayer.Content(LiveTV)</visible>
 						</item>
 						<item id="7">
 							<!-- rew -->
-							<label/>
+							<label></label>
 							<icon>osd_menu_rew_square.png</icon>
 							<onclick>PlayerControl(Rewind)</onclick>
 						</item>
 						<item id="8">
 							<!-- ff -->
-							<label/>
+							<label></label>
 							<icon>osd_menu_ff_square.png</icon>
 							<onclick>PlayerControl(Forward)</onclick>
 						</item>
 						<item id="9">
 							<!-- skipfwd -->
-							<label/>
+							<label></label>
 							<icon>osd_menu_skipfwd_square.png</icon>
 							<onclick>PlayerControl(Next)</onclick>
 							<visible>!VideoPlayer.Content(LiveTV)</visible>
 						</item>
 						<item id="9">
 							<!-- + canal -->
-							<label/>
+							<label></label>
 							<icon>osd_menu_skipfwd_channelup.png</icon>
 							<onclick>PlayerControl(Next)</onclick>
 							<visible>VideoPlayer.Content(LiveTV)</visible>
 						</item>
 						<item id="10">
 							<!-- repeat -->
-							<label/>
+							<label></label>
 							<icon>$VAR[value_playericon_repeat]</icon>
 							<onclick>PlayerControl(Repeat)</onclick>
 							<visible>!VideoPlayer.Content(LiveTV)</visible>
 						</item>
 						<item id="11">
 							<!-- random -->
-							<label/>
+							<label></label>
 							<icon>$VAR[value_playericon_random]</icon>
 							<onclick>PlayerControl(Random)</onclick>
 							<visible>!VideoPlayer.Content(LiveTV)</visible>
 						</item>
 						<item id="12">
 							<!-- go to fullscreen -->
-							<label/>
+							<label></label>
 							<icon>osd_menu_fullscreen_square.png</icon>
 							<onclick>fullscreen</onclick>
 						</item>
 					</content>
 				</control>
 			</control>
-			<control type="group"><!-- widgets subtitle (label2) -->
+			<control type="group">  <!-- widgets subtitle (label2) -->
 				<!-- Subtitulo dos widgets -->
 				<animation effect="slide" start="-750,0" end="0,0" time="500" delay="1000" tween="sine" easing="out">Visible</animation>
 				<animation effect="slide" start="0,0" end="-750,0" time="500" tween="sine" easing="out">Hidden</animation>
@@ -1287,7 +1294,7 @@ Group 602: Widgets
 				</control>
 			</control>
 			<!-- Menu Principal -->
-			<control type="group"><!-- main menu -->
+			<control type="group">  <!-- main menu -->
 				<animation effect="slide" start="0,0" end="0,-315" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
 				<visible>String.IsEqual(skin.string(defaultsettings),2)</visible>
 				<control type="image">
@@ -1369,7 +1376,7 @@ Group 602: Widgets
 					<animation effect="fade" start="0" end="100" time="750" condition="Player.HasMedia + System.IdleTime(8)">Conditional</animation>
 					<visible>System.IdleTime(8) + VideoPlayer.Content(liveTV)</visible>
 				</control>
-				<control type="grouplist"><!-- play  progress -->
+				<control type="grouplist">	<!-- play  progress -->
 					<posx>0</posx>
 					<posy>807</posy>
 					<width>1920</width>
