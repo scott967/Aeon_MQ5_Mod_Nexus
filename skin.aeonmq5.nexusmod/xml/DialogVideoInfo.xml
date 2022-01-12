@@ -833,7 +833,7 @@
 			</control>
 			<control type="grouplist"> <!-- flags except for sets -->
 				<!-- Etiquetas -->
-				<posx>165</posx>
+				<posx>80</posx>
 				<posy>1016</posy>
 				<orientation>horizontal</orientation>
 				<itemgap>52</itemgap>
