@@ -3,6 +3,7 @@
 <!-- Jarvis 8.1.13/8.1.14 -->
 <!-- Krypton 9.2.1 window IDs 103/9.2.3 -->
 <!-- Leia 10.2.4/10.3.0/10.5.2/10.6.1 -->
+<!-- Nexus 12.3.0 -->
 <window>
 	<defaultcontrol always="true">300</defaultcontrol>
 	<coordinates>
@@ -10,10 +11,9 @@
 		<top>180</top>
 	</coordinates>
 	<controls>
-		<control type="group">
+		<control type="group">	<!-- not numeric -->
 			<include>Animation_DialogPopup</include>
 			<visible>!Window.IsVisible(numericinput)</visible>
-			<!-- DialogNumeric -->
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
@@ -40,9 +40,9 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="image">
-				<left>75</left>
+				<left>45</left>
 				<top>90</top>
-				<width>1140</width>
+				<width>1172</width>
 				<height>75</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>grey.png</texture>
@@ -61,6 +61,26 @@
 				<texturefocus></texturefocus>
 				<texturenofocus></texturenofocus>
 			</control>
+			<control type="button" id="310">
+				<top>111</top>
+				<left>1224</left>
+				<width>32</width>
+				<height>32</height>
+				<textoffsetx>1000</textoffsetx>
+				<texturenofocus>darkgrey.png</texturenofocus>
+				<texturefocus>grey.png</texturefocus>
+				<ondown>309</ondown>
+				<onup>302</onup>
+			</control>
+			<control type="image">
+				<top>111</top>
+				<left>1224</left>
+				<width>32</width>
+				<height>32</height>
+				<aspectratio>keep</aspectratio>
+				<texture>$VAR[PasswordButton]</texture>
+				<visible>Control.IsVisible(310) </visible>
+			</control>>
 			<control type="group">
 				<left>45</left>
 				<top>210</top>
@@ -74,7 +94,8 @@
 						<width>225</width>
 						<height>75</height>
 						<label>20177</label>
-						<onup>300</onup>
+						<onup condition="Control.IsVisible(310)">310</onup>
+						<onup condition="!Control.IsVisible(310)">300</onup>
 						<ondown>302</ondown>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -511,7 +532,8 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<onup>304</onup>
-						<ondown>309</ondown>
+						<ondown conditon="Control.IsVisible(310)">310</ondown>
+						<ondown conditon="!Control.IsVisible(310)">309</ondown>
 					</control>
 					<control type="button" id="32">
 						<description>SPACE button</description>
