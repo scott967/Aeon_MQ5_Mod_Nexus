@@ -1,3 +1,13 @@
+[B][COLOR=FFFF8C00]BUILD 12.3.0 - RELEASE DATE 03/31/2021[/COLOR][/B]
+New:  Add new video aspect ratio flage (Nexus feature)
+New:  Add button to show/hide password entry in virtual keyboard (Nexus feature)
+Fix:  Default home menu weather settings submenu had obsolete window
+
+[B][COLOR=FFFF8C00]BUILD 12.2.0 - RELEASE DATE 12/31/2021[/COLOR][/B]
+New:  Add new colorbutton and use in subtitle settings (Nexus feature)
+Improved:  ROM Collection Browser and LRC lyrics addons now are optional
+Improved:  All 11.2.0 fixes incorporated
+
 [B][COLOR=FFFF8C00]BUILD 11.2.0 - RELEASE DATE 12/31/2021[/COLOR][/B]
 New:  Fanart[nn] can be used instead of extrafanart folders.  Use skin settings / general dialog to toggle.  (availaible fanart1-fanart10)
 New:  Suport for artowrk downloader addon has been removed
