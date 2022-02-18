@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  Initial use with Kodi Leia10.5.2 -->
 <!-- Matrix 11.0.4/11.1.1 -->
+<!-- Nexus 12.3.0 -->
 <window>
 	<defaultcontrol always="true">4000</defaultcontrol>
 	<controls>
@@ -884,7 +885,7 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group">
+					<control type="group" id="3500">
 						<visible>Integer.IsGreater(Container(350).NumItems,0)</visible>
 						<height>440</height>
 						<control type="label">
@@ -993,12 +994,13 @@
 										<width>323</width>
 										<height>100</height>
 										<left>0</left>
-										<top>227</top>
+										<top>240</top>
 										<align>center</align>
 										<!-- <textcolor>FFFFFAF0</textcolor> -->
 										<font>Font_14A</font>
 										<textcolor>FFF0F0F0</textcolor>
 										<info>ListItem.Label</info>
+										<autoscroll delay="3000" time="1000" repeat="1000"></autoscroll>
 									</control>
 								</control>
 							</focusedlayout>

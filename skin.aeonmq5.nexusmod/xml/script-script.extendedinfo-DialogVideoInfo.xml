@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--  Nexus 12.3.0 -->
 <window>
 	<defaultcontrol always="true">4000</defaultcontrol>
 	<controls>
@@ -44,7 +45,7 @@
 					<ondown>noop</ondown>
 					<width>2100</width>
 					<height>896</height>
-					<control type="group" id="140">
+					<control type="group" id="140">	<!-- Plot / tagline -->
 						<height>220</height>
 						<visible>!String.IsEmpty(Window.Property(Plot))</visible>
 						<control type="button" id="132">  <!-- button sits on top of plot textbox to show full screen plot -->
@@ -345,7 +346,7 @@
 							</control>
 						</control>
 					</control>  <!-- end of buttons group -->
-					<control type="group">  <!-- flags bar -->
+					<control type="group">  <!-- flags bar (in library movie or episode) -->
 						<top>60</top>
 						<visible>!String.IsEmpty(Window.Property(DBID))</visible>
 						<visible>String.IsEqual(Window.Property(type),movie) | String.IsEqual(Window.Property(type),episode)</visible>
@@ -747,7 +748,7 @@
 											<width>228</width>
 											<height>140</height>
 											<left>0</left>
-											<top>340</top>
+											<top>358</top>
 											<align>center</align>
 											<textcolor>FFFAFAFA</textcolor>
 											<font>Font_14A</font>
@@ -896,7 +897,7 @@
 											<width>228</width>
 											<textcolor>FFFAFAFA</textcolor>
 											<height>140</height>
-											<top>340</top>
+											<top>360</top>
 											<align>center</align>
 											<font>Font_14A</font>
 											<label>$INFO[ListItem.Label]$INFO[ListItem.Property(job),[COLOR FF999999][CR],[/COLOR]]</label>
@@ -907,7 +908,7 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group">
+					<control type="group">	<!-- OMDb awards -->
 						<height>120</height>
 						<visible>!String.IsEmpty(Window.Property(omdb.Awards)) | !String.IsEmpty(Window.Property(omdb.tomatoConsensus))</visible>
 						<control type="image">
@@ -1103,7 +1104,7 @@
 											<width>228</width>
 											<height>140</height>
 											<textcolor>FFFAFAFA</textcolor>
-											<top>340</top>
+											<top>360</top>
 											<align>center</align>
 											<font>Font_14A</font>
 											<label>$INFO[ListItem.Label]</label>
@@ -1471,7 +1472,7 @@
 										<width>323</width>
 										<height>140</height>
 										<textcolor>FFFAFAFA</textcolor>
-										<top>227</top>
+										<top>247</top>
 										<align>center</align>
 										<font>Font_14A</font>
 										<label>$INFO[ListItem.Property(Type),[B],: [/B]]$INFO[ListItem.Label]</label>
@@ -1598,7 +1599,7 @@
 										<width>323</width>
 										<textcolor>FFFAFAFA</textcolor>
 										<height>98</height>
-										<top>227</top>
+										<top>247</top>
 										<align>center</align>
 										<font>Font_14A</font>
 										<label>$INFO[ListItem.Label]</label>
@@ -1708,7 +1709,7 @@
 									</control>
 									<control type="textbox">
 										<left>20</left>
-										<top>150</top>
+										<top>155</top>
 										<width>330</width>
 										<textcolor>FFFAFAFA</textcolor>
 										<height>140</height>
@@ -1921,15 +1922,15 @@
 								<control type="group">
 									<left>50</left>
 									<control type="image">
-										<top>0</top>
+										<top>15</top>
 										<width>200</width>
-										<height>220</height>
+										<height>100</height>
 										<texture border="40" colordiffuse="$INFO[Window(home).Property(ImageColor)]">settings_button.png</texture>
 									</control>
 									<control type="image">
-										<top>0</top>
+										<top>15</top>
 										<width>200</width>
-										<height>220</height>
+										<height>100</height>
 										<texture border="40" colordiffuse="$INFO[Window(home).Property(ImageColor)]">settings_button_focus.png</texture>
 										<animation effect="fade" start="0" end="100" time="160">Focus</animation>
 										<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
@@ -2009,16 +2010,16 @@
 									<top>0</top>
 									<control type="image">
 										<left>0</left>
-										<top>0</top>
+										<top>5</top>
 										<width>280</width>
-										<height>100</height>
+										<height>90</height>
 										<texture border="40" colordiffuse="$INFO[Window(home).Property(ImageColor)]">settings_button.png</texture>
 									</control>
 									<control type="image">
 										<left>0</left>
-										<top>0</top>
+										<top>5</top>
 										<width>280</width>
-										<height>100</height>
+										<height>90</height>
 										<texture border="40" colordiffuse="$INFO[Window(home).Property(ImageColor)]">settings_button_focus.png</texture>
 										<animation effect="fade" start="0" end="100" time="160">Focus</animation>
 										<animation effect="fade" start="0" end="100" time="0">UnFocus</animation>
@@ -2088,17 +2089,17 @@
 							<focusedlayout height="400" width="630">
 								<control type="group">
 									<left>50</left>
-									<top>0</top>
+									<top>5</top>
 									<control type="image">
 										<width>630</width>
-										<height>400</height>
+										<height>390</height>
 										<texture border="40" colordiffuse="$INFO[Window(home).Property(ImageColor)]">settings_button.png</texture>
 									</control>
 									<control type="image">
 										<left>0</left>
 										<top>0</top>
 										<width>630</width>
-										<height>400</height>
+										<height>390</height>
 										<texture border="40" colordiffuse="$INFO[Window(home).Property(ImageColor)]">settings_button_focus.png</texture>
 										<animation effect="fade" start="0" end="100" time="160">Focus</animation>
 										<animation effect="fade" start="0" end="100" time="0">UnFocus</animation>
@@ -2170,15 +2171,16 @@
 									<top>0</top>
 									<left>50</left>
 									<control type="image">
+										<top>5</top>
 										<width>280</width>
-										<height>100</height>
+										<height>90</height>
 										<texture border="40" colordiffuse="$INFO[Window(home).Property(ImageColor)]">settings_button.png</texture>
 									</control>
 									<control type="image">
 										<left>0</left>
-										<top>0</top>
+										<top>5</top>
 										<width>280</width>
-										<height>100</height>
+										<height>90</height>
 										<texture border="40" colordiffuse="$INFO[Window(home).Property(ImageColor)]">settings_button_focus.png</texture>
 										<animation effect="fade" start="0" end="100" time="160">Focus</animation>
 										<animation effect="fade" start="0" end="100" time="0">UnFocus</animation>
