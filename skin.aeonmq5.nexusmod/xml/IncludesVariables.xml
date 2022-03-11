@@ -3315,7 +3315,7 @@
 	<variable name="value_gamesfanart">
 		<value condition="String.Contains(skin.string(gamesfanart),fallback)">$INFO[Skin.String(CustomFallbackGamesBG)]</value>
 		<value condition="String.Contains(skin.string(gamesfanart),curtains)">special://skin/backgrounds/extras/curtains.jpg</value>
-		<value condition="String.Contains(skin.string(gamesfanart),extra)">$INFO[ListItem.Path]extrafanart/</value>
+		<value condition="String.Contains(skin.string(gamesfanart),extra) + Skin.HasSetting(use_folderarts)">$INFO[ListItem.Path]extrafanart/</value>
 	</variable>
 	<variable name="value_nextairedfanart">
 		<value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Art(fanart))]</value>
