@@ -46,7 +46,7 @@
 					<ondown>noop</ondown>
 					<width>2100</width>
 					<height>896</height>
-					<control type="group" id="140">	<!-- Plot / tagline -->
+					<control type="group" id="140">	<!-- Plot / tagline 800 -->
 						<height>220</height>
 						<visible>!String.IsEmpty(Window.Property(Plot))</visible>
 						<control type="button" id="132">  <!-- button sits on top of plot textbox to show full screen plot -->
@@ -630,7 +630,7 @@
 							<texture>line.png</texture>
 						</control>
 					</control>  <!-- end flags bar -->
-					<control type="group" id="50111"> <!-- cast -->
+					<control type="group" id="50111"> <!-- cast key actors 1000 -->
 						<visible>Integer.IsGreater(Container(1000).NumItems,0)</visible>
 						<height>530</height>
 						<control type="label">
@@ -761,7 +761,7 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group" id="54111"> <!-- crew -->
+					<control type="group" id="54111"> <!-- crew key crew 750 -->
 						<visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
 						<height>530</height>
 						<control type="label">
@@ -931,9 +931,9 @@
 							<font>Font_14A</font>
 						</control>
 					</control>
-					<control type="group" id="50112">  <!-- recommended by tmbd -->
+					<control type="group" id="50112">  <!-- recommended by tmbd key similar 150 -->
 						<visible>Integer.IsGreater(Container(150).NumItems,0)</visible>
-						<height>500</height>
+						<height>530</height>
 						<control type="label">
 							<left>25</left>
 							<top>3</top>
@@ -996,7 +996,7 @@
 										</control>
 										<control type="image">
 											<top>310</top>
-											<width>63</width>
+											<width>84</width>
 											<height>25</height>
 											<texture>black.png</texture>
 											<animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
@@ -1083,7 +1083,7 @@
 										</control>
 										<control type="image">
 											<top>310</top>
-											<width>63</width>
+											<width>84</width>
 											<height>25</height>
 											<texture>black.png</texture>
 											<animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
@@ -1118,7 +1118,7 @@
 					</control>
 					<control type="group">  <!-- set info -->
 						<visible>!String.IsEmpty(Window.Property(set.label))</visible>
-						<top>400</top>
+						<!-- <top>400</top> -->
 						<height>350</height>
 						<control type="image">
 							<top>45</top>
@@ -1140,7 +1140,7 @@
 						</control>
 						<control type="label">
 							<left>25</left>
-							<top>0</top>
+							<top>10</top>
 							<width>1900</width>
 							<height>25</height>
 							<aligny>center</aligny>
@@ -1168,8 +1168,8 @@
 							<fadetime>0</fadetime>
 						</control>
 					</control>
-					<control type="group" id="50113">  <!--  seasons -->
-						<height>500</height>
+					<control type="group" id="50113">  <!--  sets key sets 250  -->
+						<height>535</height>
 						<visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
 						<control type="label">
 							<left>25</left>
@@ -1203,7 +1203,7 @@
 						</control>
 						<control type="panel" id="250">
 							<left>-50</left>
-							<top>30</top>
+							<top>35</top>
 							<width>1930</width>
 							<height>500</height>
 							<onleft>250</onleft>
@@ -1241,7 +1241,7 @@
 										</control>
 										<control type="image">
 											<top>310</top>
-											<width>63</width>
+											<width>84</width>
 											<height>25</height>
 											<texture>black.png</texture>
 											<animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
@@ -1319,7 +1319,7 @@
 										</control>
 										<control type="image">
 											<top>310</top>
-											<width>63</width>
+											<width>84</width>
 											<height>25</height>
 											<texture>black.png</texture>
 											<animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
@@ -1341,7 +1341,7 @@
 											<width>228</width>
 											<height>140</height>
 											<textcolor>FFFAFAFA</textcolor>
-											<top>340</top>
+											<top>355</top>
 											<align>center</align>
 											<font>Font_14A</font>
 											<label>$INFO[ListItem.Label]</label>
@@ -1352,12 +1352,12 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group">  <!-- official videos -->
+					<control type="group">  <!-- official videos key videos 1150 -->
 						<visible>Integer.IsGreater(Container(1150).NumItems,0)</visible>
 						<height>420</height>
 						<control type="label">
 							<left>25</left>
-							<top>6</top>
+							<top>3</top>
 							<width>500</width>
 							<height>25</height>
 							<aligny>center</aligny>
@@ -1482,12 +1482,12 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group">  <!--  youtube videos -->
+					<control type="group">  <!--  youtube videos 350 -->
 						<visible>Integer.IsGreater(Container(350).NumItems,0)</visible>
 						<height>460</height>
 						<control type="label">
 							<left>25</left>
-							<top>6</top>
+							<top>3</top>
 							<width>500</width>
 							<height>25</height>
 							<aligny>center</aligny>
@@ -1609,12 +1609,12 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group">  <!-- movie -->
+					<control type="group">  <!-- studios key studios 550 -->
 						<visible>Integer.IsGreater(Container(550).NumItems,0)</visible>
 						<height>300</height>
 						<control type="label">
 							<left>25</left>
-							<top>6</top>
+							<top>3</top>
 							<width>500</width>
 							<height>25</height>
 							<aligny>center</aligny>
@@ -1723,12 +1723,12 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group">  <!-- networks -->
+					<control type="group">  <!-- networks 1450 -->
 						<visible>Integer.IsGreater(Container(1450).NumItems,0)</visible>
 						<height>300</height>
 						<control type="label">
 							<left>25</left>
-							<top>6</top>
+							<top>3</top>
 							<width>500</width>
 							<height>25</height>
 							<aligny>center</aligny>
@@ -1837,12 +1837,12 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group">  <!-- releases -->
+					<control type="group">  <!-- releases key releases 650 -->
 						<visible>Integer.IsGreater(Container(650).NumItems,0)</visible>
 						<height>450</height>
 						<control type="label">
 							<left>25</left>
-							<top>6</top>
+							<top>3</top>
 							<width>500</width>
 							<height>25</height>
 							<aligny>center</aligny>
@@ -1958,12 +1958,12 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group">  <!-- genres -->
+					<control type="group">  <!-- genres key genres 850 -->
 						<visible>Integer.IsGreater(Container(850).NumItems,0)</visible>
 						<height>180</height>
 						<control type="label">
 							<left>25</left>
-							<top>6</top>
+							<top>3</top>
 							<width>500</width>
 							<height>25</height>
 							<aligny>center</aligny>
@@ -2039,12 +2039,12 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group">  <!-- reviews -->
+					<control type="group">  <!-- reviews key reviews 1050 -->
 						<visible>Integer.IsGreater(Container(1050).NumItems,0)</visible>
 						<height>430</height>
 						<control type="label">
 							<left>25</left>
-							<top>6</top>
+							<top>3</top>
 							<width>500</width>
 							<height>25</height>
 							<aligny>center</aligny>
@@ -2119,12 +2119,12 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group">  <!-- keywords -->
+					<control type="group">  <!-- keywords key keywords 950 -->
 						<visible>Integer.IsGreater(Container(950).NumItems,0)</visible>
 						<height>330</height>
 						<control type="label">
 							<left>25</left>
-							<top>6</top>
+							<top>3</top>
 							<width>500</width>
 							<height>25</height>
 							<aligny>center</aligny>
@@ -2200,12 +2200,12 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group">  <!-- artwork -->
+					<control type="group">  <!-- artwork key images 1250 -->
 						<height>450</height>
 						<visible>Integer.IsGreater(Container(1250).NumItems,0)</visible>
 						<control type="label">
 							<left>25</left>
-							<top>6</top>
+							<top>3</top>
 							<width>500</width>
 							<height>25</height>
 							<aligny>center</aligny>
@@ -2307,12 +2307,12 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group">  <!-- fanart -->
+					<control type="group">  <!-- fanart key backdrops 1350 -->
 						<height>450</height>
 						<visible>Integer.IsGreater(Container(1350).NumItems,0)</visible>
 						<control type="label">
 							<left>25</left>
-							<top>6</top>
+							<top>3</top>
 							<width>500</width>
 							<height>25</height>
 							<aligny>center</aligny>
@@ -2414,12 +2414,12 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group" id="50215">  <!-- related movie lists -->
+					<control type="group" id="50215">  <!-- related movie lists key lists 450 -->
 						<height>600</height>
 						<visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
 						<control type="label">
 							<left>25</left>
-							<top>6</top>
+							<top>3</top>
 							<width>500</width>
 							<height>25</height>
 							<aligny>center</aligny>
@@ -2579,12 +2579,12 @@
 							</focusedlayout>
 						</control>
 					</control>
-					<control type="group">  <!-- episode index -->
+					<control type="group">  <!-- episode index 2000 -->
 						<visible>Integer.IsGreater(Container(2000).NumItems,0)</visible>
 						<height>896</height>
 						<control type="label">
 							<left>25</left>
-							<top>6</top>
+							<top>3</top>
 							<width>500</width>
 							<height>25</height>
 							<aligny>center</aligny>
@@ -2687,8 +2687,7 @@
 						</control>
 					</control>
 				</control>
-				<!-- TOP Movie info -->
-				<control type="group" id="33000">
+				<control type="group" id="33000">	<!-- TOP Movie info -->
 					<left>825</left>
 					<top>22</top>
 					<visible>!Control.HasFocus(132) + !ControlGroup(5000).HasFocus</visible>
@@ -2721,7 +2720,7 @@
 								<font>Font_14A</font>
 							</control>
 						</control>
-						<control type="grouplist">
+						<control type="grouplist">	<!-- title -->
 							<left>0</left>
 							<top>-30</top>
 							<animation effect="slide" start="0,0" end="90,0" time="0" condition="!String.IsEmpty(Window.Property(Top250))">Conditional</animation>
@@ -2739,8 +2738,7 @@
 							</control>
 						</control>
 					</control>
-					<!-- First Row -->
-					<control type="group">
+					<control type="group">	<!-- Top data -->
 						<top>-54</top>
 						<control type="image">
 							<left>0</left>
@@ -2756,7 +2754,7 @@
 							<height>1</height>
 							<texture>line.png</texture>
 						</control>
-						<control type="grouplist">
+						<control type="grouplist">	<!-- Top data bar -->
 							<left>-25</left>
 							<top>81</top>
 							<width>1200</width>
@@ -2772,7 +2770,7 @@
 								<aspectratio align="center">keep</aspectratio>
 								<texture colordiffuse="FFFAFAFA" fallback="flags/mpaa/MPAA_NR_Certificate_US.png">$INFO[Window.Property(mpaa),flags/rating/,.png]</texture>
 							</control>
-							<control type="group">
+							<control type="group">	<!-- rating and votes -->
 								<left>0</left>
 								<width>155</width>
 								<visible>!String.IsEqual(Window.Property(Rating),0.0) + !String.IsEmpty(Window.Property(Rating))</visible>
@@ -2804,7 +2802,7 @@
 									<font>Font_14A</font>
 								</control>
 							</control>
-							<control type="group">
+							<control type="group"><!-- Duration -->
 								<left>0</left>
 								<width>155</width>
 								<visible>!String.IsEqual(Window.Property(duration),0) + !String.IsEmpty(Window.Property(duration))</visible>
@@ -2844,7 +2842,7 @@
 								<visible>!String.IsEqual(Window.Property(type),Season)</visible>
 								<texture>flagseparator.png</texture>
 							</control>
-							<control type="group">
+							<control type="group">	<!-- Premiered -->
 								<width>220</width>
 								<visible>!String.IsEmpty(Window.Property(Premiered))</visible>
 								<control type="label">
@@ -2869,7 +2867,7 @@
 									<font>Font_14A</font>
 								</control>
 							</control>
-							<control type="group">
+							<control type="group">	<!-- Budget -->
 								<left>0</left>
 								<width>220</width>
 								<visible>!String.IsEmpty(Window.Property(Budget))</visible>
@@ -2902,7 +2900,7 @@
 									<font>Font_14A</font>
 								</control>
 							</control>
-							<control type="group">
+							<control type="group">	<!-- Revenue -->
 								<left>0</left>
 								<width>220</width>
 								<visible>!String.IsEmpty(Window.Property(Revenue))</visible>

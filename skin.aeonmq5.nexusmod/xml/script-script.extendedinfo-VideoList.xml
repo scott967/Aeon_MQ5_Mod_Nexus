@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Matrix 11.3.0 -->
-<!--  Nexus 12.3.0 -->
+<!-- Nexus 12.3.0 -->
 <window>
 	<onload condition="String.IsEmpty(Window(home).Property(WindowColor))">SetProperty(WindowColor,FFFFFFFF,home)</onload>
 	<views>500,50</views>
@@ -114,7 +114,7 @@
 					<width>135</width>
 					<height>26</height>
 					<animation effect="fade" start="100" end="60" time="0" condition="String.IsEmpty(ListItem.Rating)">Conditional</animation>
-					<texture fallback="flags/stars/0.0.png">$INFO[ListItem.Rating,stars/,.png]</texture>
+					<texture fallback="flags/stars/0.0.png">$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 				</control>
 				<control type="textbox">
 					<top>450</top>
