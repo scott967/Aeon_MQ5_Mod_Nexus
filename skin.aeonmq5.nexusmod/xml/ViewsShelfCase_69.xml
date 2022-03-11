@@ -2,6 +2,7 @@
 <!-- Aeon MQ 5 Isengard 7.1.9 ShelfCase/7.1.10 -->
 <!-- Jarvis 8.1.13 -->
 <!-- Krypton 9.1.19/9.2.1 window IDs -->
+<!-- Nexus 2.3.0 -->
 <includes>
 	<!--##################################################################################   VISTA SHELFCASE - ID 69   ##################################################################################-->
 	<include name="ViewShelfCase">
@@ -43,7 +44,8 @@
 								<posy>520</posy>
 								<width>276</width>
 								<height>392</height>
-								<texture flipy="true" diffuse="thumb_shelf_reflect_case.png">$VAR[value_videocase0]</texture>
+								<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+								<texture flipy="true" diffuse="thumb_shelf_reflect_case.png">thumb_box.png</texture>
 								<fadetime>200</fadetime>
 								<aspectratio>stretch</aspectratio>
 							</control>
@@ -75,7 +77,8 @@
 								<posy>180</posy>
 								<width>276</width>
 								<height>392</height>
-								<texture>$VAR[value_videocase0]</texture>
+								<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+								<texture>thumb_box.png</texture>
 								<fadetime>200</fadetime>
 								<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 							</control>
@@ -111,7 +114,8 @@
 								<posy>537</posy>
 								<width>366</width>
 								<height>492</height>
-								<texture flipy="true" diffuse="thumb_shelf_reflect_case.png">$VAR[value_videocase0]</texture>
+								<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+								<texture flipy="true" diffuse="thumb_shelf_reflect_case.png">thumb_box.png</texture>
 								<fadetime>200</fadetime>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 								<animation type="Focus" reversible="false">
@@ -152,7 +156,8 @@
 								<posy>112</posy>
 								<width>366</width>
 								<height>492</height>
-								<texture>$VAR[value_videocase0]</texture>
+								<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+								<texture>thumb_box.png</texture>
 								<fadetime>200</fadetime>
 								<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 								<animation type="Focus" reversible="false">

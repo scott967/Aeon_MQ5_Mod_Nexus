@@ -3,6 +3,7 @@
 <!-- Krypton 9.1.19/9.2.1 window IDs -->
 <!-- Leia 10.3.0/10.4.0/10.5.2 -->
 <!-- Matrix 11.0.2/11.1.1/11.2.0 -->
+<!-- Nexus 2.3.0 -->
 <includes>
 	<!--##################################################################################   VISTA SETS - ID 65   ##################################################################################-->
 	<include name="SetsLabel">
@@ -210,7 +211,8 @@
 						<width>368</width>
 						<height>566</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
-						<texture>$VAR[value_videocase0]</texture>
+						<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+						<texture>thumb_box.png</texture>
 					</control>
 					<control type="image">
 						<!-- Codec -->

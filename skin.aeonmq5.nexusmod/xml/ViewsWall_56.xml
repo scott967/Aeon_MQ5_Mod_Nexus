@@ -5,6 +5,7 @@
 <!-- Krypton 9.1.19/9.2.1 window IDs -->
 <!-- Leia 10.3.0/10.5.2 -->
 <!-- Matrix 11.0.4/11.1.1 -->
+<!-- Nexus 12.3.0 -->
 <includes>
 	<!--##################################################################################   VISTA WALL - ID 56   ##################################################################################-->
 	<include name="Wall_Dimmer">
@@ -155,7 +156,8 @@
 							<posy>-8</posy>
 							<width>202</width>
 							<height>296</height>
-							<texture>$VAR[value_videocase0]</texture>
+							<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+							<texture>thumb_box.png</texture>
 							<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 						</control>
 						<control type="image">
@@ -198,7 +200,8 @@
 							<posy>-15</posy>
 							<width>225</width>
 							<height>308</height>
-							<texture>$VAR[value_videocase0]</texture>
+							<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+							<texture>thumb_box.png</texture>
 							<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 						</control>
 						<control type="image">
@@ -241,7 +244,8 @@
 							<posy>-22</posy>
 							<width>322</width>
 							<height>462</height>
-							<texture>$VAR[value_videocase0]</texture>
+							<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+							<texture>thumb_box.png</texture>
 							<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 						</control>
 						<control type="image">
@@ -498,7 +502,8 @@
 						<posy>-8</posy>
 						<width>202</width>
 						<height>296</height>
-						<texture>$VAR[value_videocase0]</texture>
+						<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" />
@@ -582,7 +587,8 @@
 						<posy>-15</posy>
 						<width>225</width>
 						<height>308</height>
-						<texture>$VAR[value_videocase0]</texture>
+						<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" />
@@ -666,7 +672,8 @@
 						<posy>-22</posy>
 						<width>322</width>
 						<height>462</height>
-						<texture>$VAR[value_videocase0]</texture>
+						<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" />

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.6/6.1.7 -->
 <!-- Krypton 9.1.17/9.1.19 -->
+<!-- Nexus 2.3.0 -->
 <includes>
 	<!--##################################################################################   VISTA COVERFLOW - ID 58   ##################################################################################-->
 	<include name="CoverFlowThumb">
@@ -143,13 +144,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase-4]</texture>
+						<colordiffuse>$VAR[value_videocase-4]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase-4]</texture>
+						<colordiffuse>$VAR[value_videocase-4]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -195,13 +198,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase-3]</texture>
+						<colordiffuse>$VAR[value_videocase-3]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase-3]</texture>
+						<colordiffuse>$VAR[value_videocase-3]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -247,13 +252,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase-2]</texture>
+						<colordiffuse>$VAR[value_videocase-2]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase-2]</texture>
+						<colordiffuse>$VAR[value_videocase-2]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -315,13 +322,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase3]</texture>
+						<colordiffuse>$VAR[value_videocase3]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase3]</texture>
+						<colordiffuse>$VAR[value_videocase3]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -367,13 +376,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase2]</texture>
+						<colordiffuse>$VAR[value_videocase2]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase2]</texture>
+						<colordiffuse>$VAR[value_videocase2]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -419,13 +430,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase1]</texture>
+						<colordiffuse>$VAR[value_videocase1]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase1]</texture>
+						<colordiffuse>$VAR[value_videocase1]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -476,13 +489,15 @@
 						<control type="image">
 							<!-- Estojo Reflexo -->
 							<include>CoverFlowCaseReflect</include>
-							<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase0]</texture>
+							<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+							<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 							<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 						</control>
 						<control type="image">
 							<!-- Estojo -->
 							<include>CoverFlowCase</include>
-							<texture>$VAR[value_videocase0]</texture>
+							<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+							<texture>thumb_box.png</texture>
 							<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 						</control>
 						<control type="image">
@@ -529,13 +544,15 @@
 						<control type="image">
 							<!-- Estojo Reflexo -->
 							<include>CoverFlowCaseReflect</include>
-							<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase-1]</texture>
+							<colordiffuse>$VAR[value_videocase-1]</colordiffuse>
+							<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 							<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 						</control>
 						<control type="image">
 							<!-- Estojo -->
 							<include>CoverFlowCase</include>
-							<texture>$VAR[value_videocase-1]</texture>
+							<colordiffuse>$VAR[value_videocase-1]</colordiffuse>
+							<texture>thumb_box.png</texture>
 							<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 						</control>
 						<control type="image">
@@ -590,13 +607,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase4]</texture>
+						<colordiffuse>$VAR[value_videocase4]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase4]</texture>
+						<colordiffuse>$VAR[value_videocase4]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -642,13 +661,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase3]</texture>
+						<colordiffuse>$VAR[value_videocase3]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase3]</texture>
+						<colordiffuse>$VAR[value_videocase3]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -694,13 +715,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase2]</texture>
+						<colordiffuse>$VAR[value_videocase2]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase2]</texture>
+						<colordiffuse>$VAR[value_videocase2]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -762,13 +785,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase-3]</texture>
+						<colordiffuse>$VAR[value_videocase-3]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase-3]</texture>
+						<colordiffuse>$VAR[value_videocase-3]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -814,13 +839,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase-2]</texture>
+						<colordiffuse>$VAR[value_videocase-2]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase-2]</texture>
+						<colordiffuse>$VAR[value_videocase-2]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -866,13 +893,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase-1]</texture>
+						<colordiffuse>$VAR[value_videocase-1]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase-1]</texture>
+						<colordiffuse>$VAR[value_videocase-1]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -923,13 +952,15 @@
 						<control type="image">
 							<!-- Estojo Reflexo -->
 							<include>CoverFlowCaseReflect</include>
-							<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase0]</texture>
+							<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+							<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 							<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 						</control>
 						<control type="image">
 							<!-- Estojo -->
 							<include>CoverFlowCase</include>
-							<texture>$VAR[value_videocase0]</texture>
+							<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+							<texture>thumb_box.png</texture>
 							<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 						</control>
 						<control type="image">
@@ -976,13 +1007,15 @@
 						<control type="image">
 							<!-- Estojo Reflexo -->
 							<include>CoverFlowCaseReflect</include>
-							<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase1]</texture>
+							<colordiffuse>$VAR[value_videocase1]</colordiffuse>
+							<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 							<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] </visible>
 						</control>
 						<control type="image">
 							<!-- Estojo -->
 							<include>CoverFlowCase</include>
-							<texture>$VAR[value_videocase1]</texture>
+							<colordiffuse>$VAR[value_videocase1]</colordiffuse>
+							<texture>thumb_box.png</texture>
 							<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] </visible>
 						</control>
 						<control type="image">
@@ -1034,13 +1067,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase-3]</texture>
+						<colordiffuse>$VAR[value_videocase-3]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase-3]</texture>
+						<colordiffuse>$VAR[value_videocase-3]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -1086,13 +1121,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase-2]</texture>
+						<colordiffuse>$VAR[value_videocase-2]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase-2]</texture>
+						<colordiffuse>$VAR[value_videocase-2]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -1138,13 +1175,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase-1]</texture>
+						<colordiffuse>$VAR[value_videocase-1]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase-1]</texture>
+						<colordiffuse>$VAR[value_videocase-1]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -1190,13 +1229,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase3]</texture>
+						<colordiffuse>$VAR[value_videocase3]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase3]</texture>
+						<colordiffuse>$VAR[value_videocase3]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -1242,13 +1283,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase2]</texture>
+						<colordiffuse>$VAR[value_videocase2]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase2]</texture>
+						<colordiffuse>$VAR[value_videocase2]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -1294,13 +1337,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase1]</texture>
+						<colordiffuse>$VAR[value_videocase1]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase1]</texture>
+						<colordiffuse>$VAR[value_videocase1]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
@@ -1346,13 +1391,15 @@
 					<control type="image">
 						<!-- Estojo Reflexo -->
 						<include>CoverFlowCaseReflect</include>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase0]</texture>
+						<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<!-- Estojo -->
 						<include>CoverFlowCase</include>
-						<texture>$VAR[value_videocase0]</texture>
+						<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+						<texture>thumb_box.png</texture>
 						<visible>!Skin.HasSetting(nocoverflowvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">

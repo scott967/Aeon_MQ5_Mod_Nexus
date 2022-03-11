@@ -3,6 +3,7 @@
 <!-- Krypton 9.1.19/9.2.1 window IDs -->
 <!-- Leia 10.6.1/10.6.2 -->
 <!-- Matrix 11.0.4 -->
+<!-- Nexus 2.3.0 -->
 <includes>
 	<!--##################################################################################   VISTA MULTIPLEX - ID 61   #############################################################################-->
 	<include name="MultiplexLabel_Fanart">
@@ -117,7 +118,8 @@
 				<width>243</width>
 				<height>380</height>
 				<fadetime>FanartCrossFadeTime</fadetime>
-				<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase0]</texture>
+				<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+				<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 				<aspectratio align="center" aligny="top">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -127,7 +129,8 @@
 				<width>243</width>
 				<height>380</height>
 				<fadetime>FanartCrossFadeTime</fadetime>
-				<texture>$VAR[value_videocase0]</texture>
+				<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+				<texture>thumb_box.png</texture>
 				<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -225,7 +228,8 @@
 				<width>294</width>
 				<height>438</height>
 				<fadetime>FanartCrossFadeTime</fadetime>
-				<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase0]</texture>
+				<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+				<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 				<aspectratio align="center" aligny="top">stretch</aspectratio>
 				<animation effect="zoom" start="100" end="110" center="202,382" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 			</control>
@@ -236,7 +240,8 @@
 				<width>294</width>
 				<height>438</height>
 				<fadetime>FanartCrossFadeTime</fadetime>
-				<texture>$VAR[value_videocase0]</texture>
+				<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+				<texture>thumb_box.png</texture>
 				<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 				<animation effect="zoom" start="100" end="110" center="202,382" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 			</control>

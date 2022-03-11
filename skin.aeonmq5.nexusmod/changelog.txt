@@ -1,7 +1,9 @@
 [B][COLOR=FFFF8C00]BUILD 12.3.0 - RELEASE DATE 03/31/2021[/COLOR][/B]
-New:  Add new video aspect ratio flage (Nexus feature)
+New:  Add new video aspect ratio flags (Nexus feature)
 New:  Add button to show/hide password entry in virtual keyboard (Nexus feature)
 Fix:  Default home menu weather settings submenu had obsolete window
+Improved:  Extendedinfo script dialog windows
+Improved:  Use colorpicker button to set video case colors
 
 [B][COLOR=FFFF8C00]BUILD 12.2.0 - RELEASE DATE 12/31/2021[/COLOR][/B]
 New:  Add new colorbutton and use in subtitle settings (Nexus feature)

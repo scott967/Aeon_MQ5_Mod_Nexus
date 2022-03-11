@@ -5,6 +5,7 @@
 <!-- Krypton 9.1.15/9.1.17/9.1.19/9.2.1 window IDs/9.2.3 -->
 <!-- Leia 10.2.5/10.3.0/10.5.0/10.5.1/10.5.2/10.6.1/10.6.2 -->
 <!-- Matrix 11.0.2 -->
+<!-- Nexus 2.3.0 -->
 <includes>
 	<!--##################################################################################   VISTA LOW LIST - ID 55   ##################################################################################-->
 	<include name="LowListLabel">
@@ -699,7 +700,8 @@
 						<width>453</width>
 						<height>652</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
-						<texture flipy="true" diffuse="thumb_box_reflect.png">$VAR[value_videocase0]</texture>
+						<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box.png</texture>
 						<aspectratio>stretch</aspectratio>
 					</control>
 					<control type="image">
@@ -718,7 +720,8 @@
 						<width>453</width>
 						<height>652</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
-						<texture>$VAR[value_videocase0]</texture>
+						<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+						<texture>thumb_box.png</texture>
 					</control>
 					<control type="image">
 						<!-- Codec -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Nexus 12.2.0 new window ID 2008 -->
+<!-- Nexus 12.2.0 new window ID 2008/12.3.0 -->
 <window>
 	<defaultcontrol always="true">6</defaultcontrol>
 	<controls>
@@ -54,7 +54,7 @@
 					<width>1156</width>
 					<height>34</height>
 					<font>Font_23</font>
-					<textcolor>80FFFAF0</textcolor>
+					<textcolor>FFFFFAF0</textcolor>
 				</control>
 					<control type="panel" id="6">	<!-- Color List -->
 						<viewtype label="100">icon</viewtype>
@@ -209,7 +209,7 @@
 			</control>
 				<control type="button" id="7">
 					<description>Cancel Button</description>
-					<posx>270</posx>
+					<posx>935</posx>
 					<posy>945</posy>
 					<width>315</width>
 					<height>52</height>

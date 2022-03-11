@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Leia 10.5.2/10.6.0/10.6.1/10.6.2 -->
 <!-- Matrix 11.0.4/11.1.1/11/2.0 -->
+<!-- Nexus 2.3.0 -->
 
 <includes>
 <!--##################################################################################   VIEW MULTILIST - 71   ##################################################################################-->
@@ -1860,7 +1861,8 @@
 							<posy>712</posy>
 							<width>308</width>
 							<height>271</height>
-							<texture>$VAR[value_videocase0]</texture>
+							<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+							<texture>thumb_box.png</texture>
 							<colordiffuse>DEFFFFFF</colordiffuse>
 						</control>
 					</control>
@@ -1908,7 +1910,8 @@
 							<posy>704</posy>
 							<width>206</width>
 							<height>291</height>
-							<texture>$VAR[value_videocase0]</texture>
+							<colordiffuse>$VAR[value_videocase0]</colordiffuse>
+							<texture>thumb_box.png</texture>
 							<colordiffuse>DEFFFFFF</colordiffuse>
 							<visible>!Control.IsVisible(715)</visible>
 						</control>
