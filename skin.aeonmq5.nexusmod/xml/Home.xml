@@ -4,7 +4,7 @@
 <!-- Jarvis 8.1.13/8.1.14 -->
 <!-- Krypton 9.1.16/9.1.19/9.2.1 windowIDs/9.2.2 -->
 <!-- Leia 10.3.0/10.5.1 /10.6.0/10.6.2-->
-<!-- Matrix 11.0.1/11.0.4/11.0.5/11.1.1/11.2.0 -->
+<!-- Matrix 11.0.1/11.0.4/11.0.5/11.1.1/11.2.0/11.3.0 -->
 <!-- Nexus 12.2.0/12.3.0 -->
 <!-- Includes:  Quickfix InvisibleButton Playlists HomeBG Animation_Fade LiveBG Animation_Window HomeRSS Animation_HomeGlass Animation_CDart  Animation_HomeNowPlaying Animation_Widgets Animation_HomeGlass2 Animation_HomeFade -->
 <!-- NextTracksContent Animation_HomePanel HomeFlagSeparator HomeFlagLabel mf_contentmovies -->
@@ -777,7 +777,7 @@ Group 602: Widgets
 							<visible>!String.IsEmpty(Container(510).ListItem.Property(Mpaa))</visible>
 						</control>
 						<control type="image">
-							<!-- Video Codec derive from filename (not really codec) -->
+							<!-- Video Codec derive from filename (fallback to videocodec) -->
 							<width>90</width>
 							<height>62</height>
 							<align>center</align>
@@ -924,7 +924,7 @@ Group 602: Widgets
 						<texture flipx="true">divider.png</texture>
 					</control>
 					<control type="textbox">
-						<!-- Plot video -->
+						<!-- Plot video / Description Music -->
 						<posx>8</posx>
 						<posy>225</posy>
 						<width>825</width>
