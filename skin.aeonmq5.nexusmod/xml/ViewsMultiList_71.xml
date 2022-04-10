@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Leia 10.5.2/10.6.0/10.6.1/10.6.2 -->
 <!-- Matrix 11.0.4/11.1.1/11/2.0 -->
-<!-- Nexus 2.3.0 -->
+<!-- Nexus 12.3.0 -->
 
 <includes>
 <!--##################################################################################   VIEW MULTILIST - 71   ##################################################################################-->
@@ -2220,7 +2220,7 @@
 							<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
 							<visible>!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable</visible>
 						</control>
-						<control type="image">
+						<!-- <control type="image">
 							<posx>897</posx>
 							<posy>-2</posy>
 							<width>45</width>
@@ -2236,7 +2236,7 @@
 							<height>45</height>
 							<texture>inprogress/p$INFO[ListItem.PercentPlayed].png</texture>
 							<visible>!Skin.HasSetting(nooverlays) + ListItem.IsResumable</visible>
-						</control>
+						</control> -->
 					</itemlayout>
 					<focusedlayout height="60">
 						<control type="image">
@@ -2279,7 +2279,7 @@
 							<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
 							<visible>!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable</visible>
 						</control>
-						<control type="image">
+						<!-- <control type="image">
 							<posx>897</posx>
 							<posy>-2</posy>
 							<width>45</width>
@@ -2295,7 +2295,7 @@
 							<height>45</height>
 							<texture>inprogress/p$INFO[ListItem.PercentPlayed].png</texture>
 							<visible>!Skin.HasSetting(nooverlays) + ListItem.IsResumable</visible>
-						</control>
+						</control> -->
 					</focusedlayout>
 					<content target="videos" sortby="title" sortorder="ascending">$INFO[Container(71).ListItem.FolderPath]</content>
 				</control>
