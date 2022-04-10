@@ -278,7 +278,7 @@
 		<!-- 151 was 614 extendedprogress -->
 	</include>
 	<include name="Animation_TopDialogPopup">
-		<animation effect="slide" start="0,-150" end="0" time="500" easing="inout" tween="cubic">WindowOpen</animation>
+		<animation effect="slide" start="0,-150" end="0,0" time="500" easing="inout" tween="cubic">WindowOpen</animation>
 		<animation effect="slide" start="0,-150" end="0,0" time="500" easing="inout" tween="cubic">Visible</animation>
 		<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 		<animation effect="slide" start="0,0" end="0,-150" time="300" easing="inout" tween="cubic">Hidden</animation>
@@ -2194,15 +2194,15 @@
 	</include>
 	<include name="Dialogs_Progress">
 		<posx>15</posx>
-		<posy>39</posy>
+		<posy>41</posy>
 		<width>1890</width>
 		<height>4</height>
 	</include>
 	<include name="Dialogs_Label1">
 		<posx>15</posx>
-		<posy>3</posy>
+		<posy>2</posy>
 		<width>750</width>
-		<height>40</height>
+		<height>39</height>
 		<align>left</align>
 		<aligny>center</aligny>
 		<textcolor>$VAR[value_headercolor]</textcolor>
@@ -2211,9 +2211,9 @@
 	</include>
 	<include name="Dialogs_Label2">
 		<right>15</right>
-		<posy>3</posy>
+		<posy>2</posy>
 		<width>750</width>
-		<height>40</height>
+		<height>39</height>
 		<align>right</align>
 		<aligny>center</aligny>
 		<textcolor>FFFFFAF0</textcolor>
@@ -2264,7 +2264,7 @@
 		<posx>1155</posx>
 		<posy>-10</posy>
 		<width>750</width>
-		<height>90</height>
+		<height>95</height>
 		<align>right</align>
 		<font>Font_17A</font>
 		<textcolor>FFFFFAF0</textcolor>
