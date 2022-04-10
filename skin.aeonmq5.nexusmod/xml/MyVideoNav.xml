@@ -5,6 +5,7 @@
 <!-- Krypton 9.1.16/9.1.19/9.2.1 window IDs 25/9.2.2/9.2.3 -->
 <!-- Leia 10.3.0/10.4.0/10.6.1/10.6.2/10.6.3 -->
 <!-- Matrix 11.0.2/11.0.4/11.2.0 -->
+<!-- Nexus 12.3.0 -->
 <window>
 	<defaultcontrol always="true">51</defaultcontrol>
 	<menucontrol>9900</menucontrol>
@@ -279,6 +280,16 @@
 						<control type="image">
 							<include>FlagSeparator</include>
 							<visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
+						</control>
+						<control type="image">
+							<!-- HDR type -->
+							<include>FlagImage</include>
+							<texture>$INFO[ListItem.HDRType,flags/hdr/,.png]</texture>
+							<visible>!String.IsEmpty(ListItem.HDRType)</visible>
+						</control>
+						<control type="image">
+							<include>FlagSeparator</include>
+							<visible>!String.IsEmpty(ListItem.HDRType)</visible>
 						</control>
 						<control type="image">
 							<!-- Audio Codec -->
