@@ -4,6 +4,7 @@
 <!-- Krypton 9.1.16/9.1.19/9.2.1 Window IDs 142/9.2.3 -->
 <!-- Leia 10.2.5/10.3.0/10.4.0/10.6.0/10.6.1 -->
 <!-- Matrix 11.0.2/11.1.1 -->
+<!-- Nexus 12.3.0 -->
 <window>
 	<controls>
 		<control type="group">	<!-- top area furniture full and partial or paused-->
@@ -357,6 +358,12 @@
 					<!-- Aspect -->
 					<include>FlagImage</include>
 					<texture>$INFO[Videoplayer.VideoAspect,flags/aspectratio/,.png]</texture>
+				</control>
+				<control type="image">
+					<!-- HDR type -->
+					<include>FlagImage</include>
+					<texture>$INFO[VideoPlayer.HDRType,flags/hdr/,.png]</texture>
+					<visible>!String.IsEmpty(VideoPlayer.HDRType)</visible>
 				</control>
 				<control type="image">
 					<!-- Audio Codec -->
