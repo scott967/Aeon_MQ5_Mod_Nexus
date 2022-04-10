@@ -4,7 +4,7 @@
 <!-- Aeon MQ5 Jarvis 8.1.13/8.1.14 -->
 <!-- Krypton 9.1.14/9.1.16/9.1.17/9.1.18/9.1.19 /9.2.0/9.2.1 window IDs/9.2.2 /9.2.3-->
 <!-- Leia 10.2.3 /10.2.4/10.2.5/10.2.6/10.2.8/10.3.0/10.5.0/10.5.1/10.5.2/10.6.0/10.6.1/10.6.2 -->
-<!-- Matrix 11.0.1/11.0.2/11.0.4/11.0.5/11.1.1/11.2.0 -->
+<!-- Matrix 11.0.1/11.0.2/11.0.4/11.0.5/11.1.1/11.2.0/11.3.0 -->
 <!-- Nexus 12.2.0/12.3.0 -->
 <includes>
 	<!-- ################################################ Value/General ################################################ -->
@@ -3739,7 +3739,7 @@
 	</variable>
 	<variable name="value_listinfofocus">
 		<!-- PVR recordings -->
-		<value condition="$EXP[IsPVRRecordings]">[COLOR=$VAR[value_headercolor]]$LOCALIZE[31763]: [/COLOR] $INFO[ListItem.ChannelName] [COLOR=$VAR[value_headercolor]][UPPERCASE]$LOCALIZE[21820]: [/UPPERCASE][/COLOR] $INFO[ListItem.Label2] [COLOR=$VAR[value_headercolor]]$LOCALIZE[31522]: [/COLOR] $INFO[ListItem.Duration]</value>
+		<value condition="$EXP[IsPVRRecordings] + ![String.IsEqual(ListItem.Label, ..) | ListItem.IsFolder]">[COLOR=$VAR[value_headercolor]]$LOCALIZE[31763]: [/COLOR] $INFO[ListItem.ChannelName] [COLOR=$VAR[value_headercolor]][UPPERCASE]$LOCALIZE[21820]: [/UPPERCASE][/COLOR] $INFO[ListItem.Label2] [COLOR=$VAR[value_headercolor]]$LOCALIZE[31522]: [/COLOR] $INFO[ListItem.Duration]</value>
 		<!-- music -->
 		<value condition="String.Contains(ListItem.DBType,musicvideo)">[COLOR=$VAR[value_headercolorfocus]]$LOCALIZE[557]: [/COLOR] $INFO[ListItem.Artist]</value>
 		<value condition="String.Contains(ListItem.DBType,album)">[COLOR=$VAR[value_headercolorfocus]]$LOCALIZE[21899]: [/COLOR]$INFO[ListItem.Property(Album_Label)]</value>
