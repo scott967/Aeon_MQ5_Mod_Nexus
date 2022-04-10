@@ -182,10 +182,10 @@
 								<height>400</height>
 								<control type="radiobutton" id="6001">
 									<label>$ADDON[script.extendedinfo 32129]</label>  <!-- your rating -->
-									<textureradioonfocus colordiffuse="FFFAFAFA">-</textureradioonfocus>
+									<textureradioonfocus colordiffuse="FFFAFAFA"></textureradioonfocus>
 									<textureradioofffocus colordiffuse="FFFAFAFA">osd_menu_rating.png</textureradioofffocus>
 									<textureradiooffnofocus colordiffuse="FF999999">osd_menu_rating.png</textureradiooffnofocus>
-									<textureradioonnofocus colordiffuse="FF999999">-</textureradioonnofocus>
+									<textureradioonnofocus colordiffuse="FF999999"></textureradioonnofocus>
 									<left>0</left>
 									<top>0</top>
 									<width>280</width>

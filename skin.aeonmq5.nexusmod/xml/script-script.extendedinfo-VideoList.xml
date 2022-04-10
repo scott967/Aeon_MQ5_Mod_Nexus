@@ -55,7 +55,7 @@
 					</animation>
 					<animation effect="fade" time="320" delay="200">Visible</animation>
 					<animation effect="fade" time="200">Hidden</animation>
-					<texture colordiffuse="FF12B2E7" border="40">buttons/button-fo.png</texture>
+					<texture colordiffuse="FF12B2E7" border="40">button-fo.png</texture>
 					<animation effect="slide" end="0,425" time="300" tween="cubic" easing="inout" condition="Container(500).Row(1)">Conditional</animation>
 					<animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,3)">Conditional</animation>
 					<animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
@@ -195,7 +195,7 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<left>750</left>
-							<font>font10</font>
+							<font>Font_17A</font>
 							<textcolor>FFFAFAFA</textcolor>
 							<label>$INFO[ListItem.UserRating,[B],[/B]]</label>
 							<visible>!String.IsEmpty(ListItem.UserRating)</visible>
@@ -320,7 +320,7 @@
 									<align>center</align>
 									<aligny>center</aligny>
 									<left>-12</left>
-									<font>font10</font>
+									<font>Font_17A</font>
 									<textcolor>FF000000</textcolor>
 									<label>$INFO[ListItem.UserRating]</label>
 								</control>
@@ -485,7 +485,7 @@
 					<aligny>center</aligny>
 					<width>1920</width>
 					<align>left</align>
-					<font>font10</font>
+					<font>Font_17A</font>
 					<label>$ADDON[script.extendedinfo 32023]</label>
 				</control>
 			</control>
@@ -592,7 +592,7 @@
 				<textoffsety>25</textoffsety>
 				<font>Font_18A</font>
 				<textwidth>315</textwidth>
-				<label>-</label>
+				<label></label>
 				<textcolor>FFBBBBBB</textcolor>
 				<focusedcolor>FFFAFAFA</focusedcolor>
 				<radiowidth>200</radiowidth>
