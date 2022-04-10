@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ5 Krypton 9.1.15/9.1.17/9.1.19/9.2.1 window IDs -->
 <!-- Leia 10.3.0/10.4.0/10.6.1/10.6.2 -->
+<!-- Nexus 12.3.0 -->
 <includes>
 	<include name="VideoPLWindow">
 		<control type="image">
@@ -220,6 +221,16 @@
 							<visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
 						</control>
 						<control type="image">
+							<!-- HDR type -->
+							<include>FlagImage</include>
+							<texture>$INFO[ListItem.HDRType,flags/hdr/,.png]</texture>
+							<visible>!String.IsEmpty(ListItem.HDRType)</visible>
+						</control>
+						<control type="image">
+							<include>FlagSeparator</include>
+							<visible>!String.IsEmpty(ListItem.HDRType)</visible>
+						</control>
+						<control type="image">
 							<!-- Audio Codec -->
 							<include>FlagImage</include>
 							<texture>$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]</texture>
@@ -311,6 +322,16 @@
 						<control type="image">
 							<include>FlagSeparator</include>
 							<visible>!String.IsEmpty(VideoPlayer.VideoAspect)</visible>
+						</control>
+						<control type="image">
+							<!-- HDR type -->
+							<include>FlagImage</include>
+							<texture>$INFO[VideoPlayer.HDRType,flags/hdr/,.png]</texture>
+							<visible>!String.IsEmpty(VideoPlayer.HDRType)</visible>
+						</control>
+						<control type="image">
+							<include>FlagSeparator</include>
+							<visible>!String.IsEmptyVideoPlayer.HDRType)</visible>
 						</control>
 						<control type="image">
 							<!-- Audio Codec -->
