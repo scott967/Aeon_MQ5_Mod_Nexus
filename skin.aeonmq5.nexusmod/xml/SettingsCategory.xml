@@ -73,6 +73,7 @@
 			<control type="label" id="14">
 				<height>45</height>
 				<align>center</align>
+				<aligny>center</aligny>
 			</control>
 			<control type="colorbutton" id="15"></control>
 			<include>RSS</include>

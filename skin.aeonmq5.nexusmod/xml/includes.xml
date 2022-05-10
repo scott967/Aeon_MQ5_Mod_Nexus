@@ -1392,6 +1392,7 @@
 		<width>1485</width>
 		<height>74</height>
 		<align>left</align>
+		<aligny>center</aligny>
 		<font>Font_32</font>
 		<textcolor>E4101010</textcolor>
 	</include>
@@ -1401,6 +1402,7 @@
 		<width>1350</width>
 		<height>74</height>
 		<align>left</align>
+		<aligny>center</aligny>
 		<font>Font_32</font>
 		<textcolor>FFFFFAF0</textcolor>
 		<scroll>true</scroll>
@@ -1506,6 +1508,7 @@
 		<height>62</height>
 		<font>Font_18</font>
 		<align>left</align>
+		<aligny>center</aligny>
 		<textcolor>E4101010</textcolor>
 		<focusedcolor>FFFFFAF0</focusedcolor>
 		<selectedcolor>E4101010</selectedcolor>
