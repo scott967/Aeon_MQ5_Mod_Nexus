@@ -9,7 +9,7 @@
 <includes>
 	<!-- ################################################ Value/General ################################################ -->
 	<variable name="SkinVersion">
-		<value>12.3.0 Nexusmod[COLOR=80FFFFFF] | [/COLOR]03/31/2022</value>
+		<value>12.3.0 Nexusmod[COLOR=80FFFFFF] | [/COLOR]05/15/2022</value>
 	</variable>
 	<variable name="Sub_GoTo">
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(subid),movies)">6001</value>
@@ -3427,7 +3427,7 @@
 		<value condition="Control.Hasfocus(150) + Container(150).HasFocus(7)">$LOCALIZE[31287] - $LOCALIZE[31272]</value>
 		<value condition="Control.Hasfocus(150) + Container(150).HasFocus(8)">$LOCALIZE[31287] - $LOCALIZE[31048]</value>
 		<value condition="Control.Hasfocus(150) + Container(150).HasFocus(9)">$LOCALIZE[31287] - $LOCALIZE[31275]</value>
-		<value condition="ControlGroup(165).HasFocus + ControlGroup(165).HasFocus(167)">$LOCALIZE[31296] - $LOCALIZE[31632]</value>
+		<!-- <value condition="ControlGroup(165).HasFocus + ControlGroup(165).HasFocus(167)">$LOCALIZE[31296] - $LOCALIZE[31632]</value>
 		<value condition="ControlGroup(165).HasFocus + ControlGroup(165).HasFocus(168)">$LOCALIZE[31296] - $LOCALIZE[31625]</value>
 		<value condition="ControlGroup(165).HasFocus + ControlGroup(165).HasFocus(169)">$LOCALIZE[31296] - $LOCALIZE[31647]</value>
 		<value condition="ControlGroup(165).HasFocus + ControlGroup(165).HasFocus(170)">$LOCALIZE[31296] - $LOCALIZE[31640]</value>
@@ -3449,7 +3449,7 @@
 		<value condition="ControlGroup(165).HasFocus + ControlGroup(165).HasFocus(186)">$LOCALIZE[31296] - $LOCALIZE[31636]</value>
 		<value condition="ControlGroup(165).HasFocus + ControlGroup(165).HasFocus(187)">$LOCALIZE[31296] - $LOCALIZE[31639]</value>
 		<value condition="ControlGroup(165).HasFocus + ControlGroup(165).HasFocus(188)">$LOCALIZE[31296] - $LOCALIZE[31644]</value>
-		<value condition="ControlGroup(165).HasFocus + ControlGroup(165).HasFocus(189)">$LOCALIZE[31296] - $LOCALIZE[31645]</value>
+		<value condition="ControlGroup(165).HasFocus + ControlGroup(165).HasFocus(189)">$LOCALIZE[31296] - $LOCALIZE[31645]</value> -->
 	</variable>
 	<variable name="value_resetalertcolor">
 		<value condition="Control.HasFocus(9100) + Container(9100).HasFocus(32)">FFFFFFFF</value>
