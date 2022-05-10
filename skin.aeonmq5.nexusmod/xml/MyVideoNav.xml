@@ -13,6 +13,7 @@
 	<onload condition="!Skin.HasSetting(ontvtunes) + System.HasAddon(service.tvtunes)">SetProperty(TvTunesBlocked,true)</onload>
 	<onload condition="Skin.HasSetting(ontvtunes) + System.HasAddon(service.tvtunes)">ClearProperty(TvTunesBlocked)</onload>
 	<onload condition="System.HasAddon(script.tv.show.next.aired) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">RunScript(script.tv.show.next.aired,backend=True)</onload>
+	<onload>SetProperty(hitclicked, 0 , home)</onload>
 	<onunload condition="Skin.HasSetting(kioskcode)">Skin.Reset($INFO[skin.string(custom_code)])</onunload>
 	<onunload condition="Skin.HasSetting(trailers)">Skin.Reset(trailers)</onunload>
 	<onunload condition="Skin.HasSetting(playlists)">Skin.Reset(playlists)</onunload>
