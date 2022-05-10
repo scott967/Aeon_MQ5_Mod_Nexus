@@ -750,6 +750,7 @@
 				<onfocus>Skin.SetString(gameswidget,true)</onfocus>
 				<onfocus>Skin.SetString(menu7.action,ActivateWindow(games))</onfocus>
 				<onfocus>Skin.SetString(menu8.master,programs)</onfocus>
+				<onfocus>Skin.SetString(programswidget,true)</onfocus>
 				<onfocus condition="!System.Platform.Android">Skin.SetString(menu8.action,ActivateWindow(Programs,Addons,return))</onfocus>
 				<onfocus condition="System.Platform.Android">Skin.SetString(menu8.action,ActivateWindow(Programs))</onfocus>
 				<onfocus>Skin.SetString(menu9.master,pictures)</onfocus>

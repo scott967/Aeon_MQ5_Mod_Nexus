@@ -5,6 +5,7 @@
 <!-- Krypton 9.1.16/9.1.19/9.2.1 window IDs/9.2.3 -->
 <!-- Leia 10.3.0/10.4.0/10.6.2 -->
 <!-- Matrix 11.0.4/11.1.1/11.2.0/11.3.0 -->
+<!-- Nexus 12.3.0 -->
 <window>
 	<defaultcontrol always="true">9100</defaultcontrol>
 	<onunload condition="String.Contains(skin.string(customwindow),video)">SetFocus(50)</onunload>
@@ -376,6 +377,13 @@
 					<onclick>Skin.ToggleSetting(nofavouriteswidget)</onclick>
 					<selected>!Skin.HasSetting(nofavouriteswidget)</selected>
 					<visible>!String.IsEmpty(skin.string(favouriteswidget))</visible>
+				</control>
+				<control type="radiobutton" id="1109">
+					<!-- Programs -->
+					<label>$LOCALIZE[31030]</label>
+					<onclick>Skin.ToggleSetting(noprogramswidget)</onclick>
+					<selected>!Skin.HasSetting(noprogramswidget)</selected>
+					<visible>!String.IsEmpty(skin.string(programswidget))</visible>
 				</control>
 				<control type="radiobutton" id="1111">
 					<!-- Vpl1 -->
