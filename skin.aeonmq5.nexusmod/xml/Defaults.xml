@@ -78,7 +78,7 @@
 	<default type="colorbutton">
 		<posx>0</posx>
 		<posy>0</posy>
-		<width>500</width>
+		<width>1560</width>
 		<height>60</height>
 		<font>Font_20</font>
 		<texturefocus>settings_button_focus.png</texturefocus>
@@ -87,14 +87,14 @@
 		<focusedcolor>E4101010</focusedcolor>
 		<disabledcolor>FF505050</disabledcolor>
 		<pulseonselect>false</pulseonselect>
-		<textwidth>250</textwidth>
+		<textwidth>1200</textwidth>
 		<texturecolormask>color-button-box.png</texturecolormask>
 		<texturecolordisabledmask>color-button-box.png</texturecolordisabledmask>
 		<colorwidth>100</colorwidth>
-		<colorposx>385</colorposx>
+		<colorposx>1395</colorposx>
 		<colorposy>0</colorposy>
 		<colorheight>40</colorheight>
-		<textoffsetx>10</textoffsetx>
+		<textoffsetx>75</textoffsetx>
 		<align>left</align>
 		<aligny>center</aligny>
 		<scroll>true</scroll>
