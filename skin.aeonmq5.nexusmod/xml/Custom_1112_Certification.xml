@@ -107,13 +107,13 @@
 					<onclick>ActivateWindow(videos, videodb://movies/sets/$INFO[ListItem.SetID], return)</onclick>
 					<visible>!String.IsEmpty(ListItem.Set)</visible>
 				</control>
-				<!-- <control type="button" id="11123">
+				<control type="button" id="11123">
 					<width>870</width>
 					<height>200</height>
 					<colordiffuse>00000000</colordiffuse>
 					<onclick>SetProperty(hitclicked, 0 , home)</onclick>
-					<onclick>Dialog.Close(1112)</onclick>
-				</control> -->
+					<visible>String.IsEmpty(ListItem.Set)</visible>
+				</control>
 			</control>
 		</control>
 	</controls>
