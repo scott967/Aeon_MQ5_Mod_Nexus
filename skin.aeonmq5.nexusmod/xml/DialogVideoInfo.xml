@@ -257,7 +257,7 @@
 					<onclick>SetProperty(hitclicked, 1, home)</onclick>
 					<!-- <onclick>ActivateWindow(1112)</onclick>  custom certification -->
 					<onclick>SetFocus(149)</onclick>
-					<visible>!String.IsEmpty(ListItem.Mpaa)</visible>
+					<!-- <visible>!String.IsEmpty(ListItem.Mpaa)</visible> -->
 				</control>
 				<control type="label">
 					<!-- Year -->
