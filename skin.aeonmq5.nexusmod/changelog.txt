@@ -1,6 +1,10 @@
-[B][COLOR=FFFF8C00]BUILD 12.3.0 - RELEASE DATE 03/31/2021[/COLOR][/B]
+[B][COLOR=FFFF8C00]BUILD 12.3.0 - RELEASE DATE 05/23/2022[/COLOR][/B]
+New:  Show hdr flags
 New:  Add new video aspect ratio flags (Nexus feature)
 New:  Add button to show/hide password entry in virtual keyboard (Nexus feature)
+New:  Use min:sec for music video runtime display
+New:  on video info dialog, click button on MPAA rating tag for more info
+New:  Widgets on hmoe page for addons (programs menu)
 Fix:  Default home menu weather settings submenu had obsolete window
 Improved:  Extendedinfo script dialog windows
 Improved:  Use colorpicker button to set video case colors
