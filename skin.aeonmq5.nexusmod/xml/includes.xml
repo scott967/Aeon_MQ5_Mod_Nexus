@@ -643,17 +643,17 @@
 				<onfocus>Skin.SetString(mfapl19_list,latest)</onfocus>
 				<onfocus>Skin.SetString(mfapl20_list,latest)</onfocus>
 				<onfocus>Skin.SetString(mfpvr_list,tv)</onfocus>
-				<!-- set the default video case colors and "sticker" icon"  -->
-				<onfocus>Skin.SetString(case_default,deepblue)</onfocus>
-				<onfocus>Skin.SetString(case_bluray,sky)</onfocus>
+				<!-- set the default video case colors from system/colors.xml and "sticker" icon"  -->
+				<onfocus>Skin.SetString(case_default,deepskyblue)</onfocus>
+				<onfocus>Skin.SetString(case_bluray,skyblue)</onfocus>
 				<onfocus>Skin.SetString(case_3dbd,orange)</onfocus>
 				<onfocus>Skin.SetString(case_webtv,red)</onfocus>
 				<onfocus>Skin.SetString(case_hdtv,violet)</onfocus>
 				<onfocus>Skin.SetString(case_dvd,grey)</onfocus>
-				<onfocus>Skin.SetString(case_set,blood)</onfocus>
+				<onfocus>Skin.SetString(case_set,firebrick)</onfocus>
 				<onfocus>Skin.SetString(case_4k,chocolate)</onfocus>
-				<onfocus>Skin.SetString(case_hdr,digital)</onfocus>
-				<onfocus>Skin.SetString(case_uhd,goldyellow)</onfocus>
+				<onfocus>Skin.SetString(case_hdr,dimgrey)</onfocus>
+				<onfocus>Skin.SetString(case_uhd,goldenrod)</onfocus>
 				<onfocus>Skin.SetString(codec_default,default)</onfocus>
 				<onfocus>Skin.SetString(codec_bluray,bluray)</onfocus>
 				<onfocus>Skin.SetString(codec_3dbd,3dbd)</onfocus>

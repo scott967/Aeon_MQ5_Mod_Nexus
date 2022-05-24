@@ -1863,7 +1863,7 @@
 							<height>271</height>
 							<colordiffuse>$VAR[value_videocase0]</colordiffuse>
 							<texture>thumb_box.png</texture>
-							<colordiffuse>DEFFFFFF</colordiffuse>
+							<!-- <colordiffuse>DEFFFFFF</colordiffuse> -->
 						</control>
 					</control>
 					<control type="group">  <!-- Poster for 715, movies, musicvideos w poster right art with case -->
@@ -1912,7 +1912,7 @@
 							<height>291</height>
 							<colordiffuse>$VAR[value_videocase0]</colordiffuse>
 							<texture>thumb_box.png</texture>
-							<colordiffuse>DEFFFFFF</colordiffuse>
+							<!-- <colordiffuse>DEFFFFFF</colordiffuse> -->
 							<visible>!Control.IsVisible(715)</visible>
 						</control>
 						<control type="image">	<!-- Codec 715 -->

@@ -13,7 +13,7 @@
 	</coordinates>
 	<controls>
 		<control type="button" id="9147">
-			<include>invisibleButton</include>
+			<include>InvisibleButton</include>
 			<height>1110</height>
 			<width>1950</width>
 			<onclick>Dialog.Close(147)</onclick>

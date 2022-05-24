@@ -384,11 +384,11 @@
 							<label>$INFO[ListItem.Label]</label>
 							<autoscroll delay="3000" time="1000" repeat="1000"></autoscroll>
 							<animation type="Focus" reversible="false">
-								<effect type="slide" start="0,0" end="0,35" time="280" tween="back" reversible="false"/>
+								<effect type="slide" start="0,0" end="0,35" time="280" tween="back"/>
 								<effect type="fade" start="62" end="100" time="280" />
 							</animation>
 							<animation type="UnFocus" reversible="false">
-								<effect type="slide"  start="0,35" end="0" time="200" tween="cubic" reversible="false"/>
+								<effect type="slide"  start="0,35" end="0" time="200" tween="cubic"/>
 								<effect type="fade" start="100" end="62" time="280" />
 							</animation>
 						</control>

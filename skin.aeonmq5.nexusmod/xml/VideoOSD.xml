@@ -268,7 +268,7 @@
 					<height>32</height>
 					<onup>Dialog.Close(VideoOSD)</onup>
 					<ondown>100</ondown>
-					<action>PVR.seek</action>
+					<action>PVR.SeekPercentage</action>
 					<texturesliderbar>sliderback_large.png</texturesliderbar>
 					<textureslidernib/>
 					<textureslidernibfocus>progress_mid.png</textureslidernibfocus>

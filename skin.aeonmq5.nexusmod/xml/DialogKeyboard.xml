@@ -532,8 +532,8 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<onup>304</onup>
-						<ondown conditon="Control.IsVisible(310)">310</ondown>
-						<ondown conditon="!Control.IsVisible(310)">309</ondown>
+						<ondown condition="Control.IsVisible(310)">310</ondown>
+						<ondown condition="!Control.IsVisible(310)">309</ondown>
 					</control>
 					<control type="button" id="32">
 						<description>SPACE button</description>
