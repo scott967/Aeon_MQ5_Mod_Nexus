@@ -1318,14 +1318,16 @@
 							<label>31066</label>
 							<onclick>Dialog.Close(MovieInformation)</onclick>
 							<onclick>RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
-							<visible>Container.Content(Movies) + !Skin.HasSetting(trailers) + System.HasAddon(script.cinema.experience) + !System.HasAddon(script.cinemavision)</visible>
+							<!-- <visible>Container.Content(Movies) + !Skin.HasSetting(trailers) + System.HasAddon(script.cinema.experience) + !System.HasAddon(script.cinemavision)</visible> -->
+							<visible>false</visible>
 						</item>
 						<item id="24">
 							<!-- CinemaVision -->
 							<label>CinemaVision</label>
 							<onclick>Dialog.Close(MovieInformation)</onclick>
 							<onclick>RunScript(script.cinemavision,experience)</onclick>
-							<visible>System.HasAddon(script.cinemavision) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+							<!-- <visible>System.HasAddon(script.cinemavision) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible> -->
+							<visible>false</visible>
 						</item>
 						<!-- <item id="23"> -->
 						<item id="5">

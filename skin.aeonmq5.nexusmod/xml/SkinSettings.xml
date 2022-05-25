@@ -2408,7 +2408,7 @@
 				</control>
 				<control type="radiobutton" id="1061">
 					<!-- colors -->
-					<label>COLORS IMAGES THEME</label>
+					<label>$LOCALIZE[31404] $LOCALIZE[31008] [UPPERCASE]$LOCALIZE[15111][/UPPERCASE]</label>
 					<onclick>Skin.SetString(theme,colours)</onclick>
 					<selected>String.Contains(skin.string(theme),colours)</selected>
 					<enable>Skin.String(custom_themes.name)</enable>
