@@ -5,11 +5,11 @@
 <!-- Krypton 9.1.14/9.1.16/9.1.17/9.1.18/9.1.19 /9.2.0/9.2.1 window IDs/9.2.2 /9.2.3-->
 <!-- Leia 10.2.3 /10.2.4/10.2.5/10.2.6/10.2.8/10.3.0/10.5.0/10.5.1/10.5.2/10.6.0/10.6.1/10.6.2 -->
 <!-- Matrix 11.0.1/11.0.2/11.0.4/11.0.5/11.1.1/11.2.0/11.3.0 -->
-<!-- Nexus 12.2.0/12.3.0 -->
+<!-- Nexus 12.2.0/12.3.0/12.4.0 favorites -->
 <includes>
 	<!-- ################################################ Value/General ################################################ -->
 	<variable name="SkinVersion">
-		<value>12.3.0 Nexusmod[COLOR=80FFFFFF] | [/COLOR]05/15/2022</value>
+		<value>12.4.0 Nexusmod[COLOR=80FFFFFF] | [/COLOR]11/14/2022</value>
 	</variable>
 	<variable name="Sub_GoTo">
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(subid),movies)">6001</value>
@@ -1734,6 +1734,7 @@
 		<value condition="String.Contains(ListItem.Mpaa,R18)">flags/mpaa/Eirin_Rated_R18+.png</value>
 		<value condition="String.Contains(ListItem.Mpaa,GSRR_R)">flags/mpaa/GSRR_R.png</value>
 		<value condition="String.Contains(ListItem.Mpaa,KMRB_18)">flags/mpaa/KMRB_18.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,R15)">flags/mpaa/Eirin_Rated_R15+.png</value>
 	</variable>
 	<!-- ######################################################################### Variable Mpaa Flags em reproducao ######################################################################### -->
 	<variable name="value_mpaa_fs">
@@ -1778,6 +1779,7 @@
 		<value condition="String.Contains(Videoplayer.Mpaa,R18)">flags/mpaa/Eirin_Rated_R18+.png</value>
 		<value condition="String.Contains(Videoplayer.Mpaa,KMRB_18)">flags/mpaa/KMRB_18.png</value>
 		<value condition="String.Contains(Videoplayer.Mpaa,GSRR_R)">flags/mpaa/GSRR_R.png</value>
+		<value condition="String.Contains(Videoplayer.Mpaa,R15)">flags/mpaa/Eirin_Rated_R15+.png</value>
 	</variable>
 	<!-- ######################################################################### Variable Mpaa Flags Menu Principal ######################################################################### -->
 	<variable name="value_mfmpaa">
@@ -4440,7 +4442,7 @@
 		<value condition="Window.IsActive(settings)">[COLOR=$VAR[value_headercolor]]$LOCALIZE[31445][/COLOR]</value>
 		<value condition="Window.IsActive(selectdialog) + Control.Hasfocus(3)">[COLOR=$VAR[value_headercolor]]$LOCALIZE[31210]: [/COLOR]$INFO[Container(3).NumItems] - [COLOR=$VAR[value_headercolor]]$LOCALIZE[31215]: [/COLOR]$INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages]</value>
 		<value condition="Window.IsActive(selectdialog) + Control.Hasfocus(6)">[COLOR=$VAR[value_headercolor]]$LOCALIZE[31210]: [/COLOR]$INFO[Container(6).NumItems] - [COLOR=$VAR[value_headercolor]]$LOCALIZE[31215]: [/COLOR]$INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages]</value>
-		<value condition="Window.IsActive(favourites)">[COLOR=$VAR[value_headercolor]]$LOCALIZE[31210]: [/COLOR]$INFO[Container(450).NumItems] - [COLOR=$VAR[value_headercolor]]$LOCALIZE[31215]: [/COLOR]$INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages]</value>
+		<value condition="Container.Content(favourites) + !Window.IsActive(selectdialog)">[COLOR=$VAR[value_headercolor]]$INFO[Container.SortMethod]$VAR[multilabel_sortdir] $LOCALIZE[31210]: [/COLOR]$INFO[Container.NumItems] - [COLOR=$VAR[value_headercolor]]$LOCALIZE[31215]: [/COLOR]$INFO[Container.CurrentPage]/$INFO[Container.NumPages]</value>
 		<value condition="Skin.HasSetting(games)">[COLOR=$VAR[value_headercolor]]$LOCALIZE[31088]: [/COLOR]$INFO[Container.NumItems] - [COLOR=$VAR[value_headercolor]]$LOCALIZE[31215]: [/COLOR]$INFO[Container.CurrentPage]/$INFO[Container.NumPages]</value>
 	</variable>
 	<variable name="value_weather_date">
@@ -5208,9 +5210,9 @@
 		<value condition="String.Contains(skin.string(theme),mytheme)">$INFO[Skin.String(CustomMyTheme),,addons]</value>
 	</variable>
 	<variable name="SeekLabel">
-		<value condition="Player.DisplayAfterSeek + !Player.Seeking + Player.Paused">$LOCALIZE[31308]</value>
+		<value condition="Player.HasPerformedSeek(2) + !Player.Seeking + Player.Paused">$LOCALIZE[31308]</value>
 		<value condition="!String.IsEmpty(Player.SeekStepSize) + ![player.forwarding | player.rewinding]">$LOCALIZE[31997][COLOR=$VAR[value_headercolor]] $INFO[Player.SeekStepSize][/COLOR]</value>
-		<value condition="[Player.DisplayAfterSeek | Player.Seeking] + ![player.forwarding | player.rewinding]">$LOCALIZE[31997][COLOR=$VAR[value_headercolor]] $INFO[Player.SeekOffset][/COLOR]</value>
+		<value condition="[Player.HasPerformedSeek(2) | Player.Seeking] + ![player.forwarding | player.rewinding]">$LOCALIZE[31997][COLOR=$VAR[value_headercolor]] $INFO[Player.SeekOffset][/COLOR]</value>
 		<value condition="Player.Seeking">$LOCALIZE[31997]</value>
 	</variable>
 	<variable name="User_Rating_Stars">

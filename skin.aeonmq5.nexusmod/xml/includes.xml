@@ -5,7 +5,7 @@
 <!-- Krypton 9.1.15/9.1.16/9.1.17/9.1.18/9.1.19/9.2.1 window IDs/9.2.2/9.2.3 -->
 <!-- Leia 10.2.7/10.2.8/10.3.0/10.4.0/10.5.0/10.5.1/10.5.2/10.6.0/10.6.1/10.6.2/10.6.3 -->
 <!-- Matrix 11.0.1/11.0.2/11.0.4/11.0.5/11.1.1/11.2.0/11.3.0 -->
-<!-- Nexus 12.3.0 -->
+<!-- Nexus 12.3.0/12.4.0 favourites -->
 <includes>
 	<include file="Defaults.xml" />
 	<include file="IncludesVariables.xml" />
@@ -558,7 +558,7 @@
 			<colordiffuse>C3FFFFFF</colordiffuse>
 			<include>Animation_Fade</include>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog)">conditional</animation>
-			<visible>Window.IsVisible(progressdialog) | Window.IsVisible(virtualkeyboard) | Window.IsVisible(contextmenu) | Window.IsVisible(numericinput) | Window.IsVisible(shutdownmenu) | Window.IsVisible(playercontrols) | Window.IsVisible(filebrowser) | Window.IsVisible(networksetup) | Window.IsVisible(mediasource) | Window.IsVisible(profilesettings) | Window.IsVisible(contentsettings) | Window.IsVisible(favourites) | Window.IsVisible(smartplaylisteditor) | Window.IsVisible(smartplaylistrule) | Window.IsVisible(630) | Window.IsVisible(633) | Window.IsVisible(selectdialog)</visible>	<!-- 630 custom presets 633 custom season -->
+			<visible>Window.IsVisible(progressdialog) | Window.IsVisible(virtualkeyboard) | Window.IsVisible(contextmenu) | Window.IsVisible(numericinput) | Window.IsVisible(shutdownmenu) | Window.IsVisible(playercontrols) | Window.IsVisible(filebrowser) | Window.IsVisible(networksetup) | Window.IsVisible(mediasource) | Window.IsVisible(profilesettings) | Window.IsVisible(contentsettings) | Window.IsVisible(smartplaylisteditor) | Window.IsVisible(smartplaylistrule) | Window.IsVisible(630) | Window.IsVisible(633) | Window.IsVisible(selectdialog)</visible>	<!-- 630 custom presets 633 custom season -->
 		</control>
 <!-- default skin settings used for initial install or if user requests reset to default ******************************************************************  -->
 		<include condition="!String.IsEqual(skin.string(defaultsettings),2)">DefaultSettings</include>
@@ -745,7 +745,7 @@
 				<onfocus>Skin.SetString(menu5.action,ActivateWindow(tvchannels))</onfocus>
 				<onfocus>Skin.SetString(menu6.master,favourites)</onfocus>
 				<onfocus>Skin.SetString(favouriteswidget,true)</onfocus>
-				<onfocus>Skin.SetString(menu6.action,ActivateWindow(favourites))</onfocus>
+				<onfocus>Skin.SetString(menu6.action,ActivateWindow(favouritesbrowser))</onfocus>
 				<onfocus>Skin.SetString(menu7.master,games)</onfocus>
 				<onfocus>Skin.SetString(gameswidget,true)</onfocus>
 				<onfocus>Skin.SetString(menu7.action,ActivateWindow(games))</onfocus>

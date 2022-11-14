@@ -5,6 +5,7 @@
 <!-- Krypton 9.1.15/9.1.16/9.1.17/9.1.18/9.1.19/9.2.1 window IDs/9.2.2/9.2.3 -->
 <!-- Leia 10.2.3/10.2.6/10.2.7/10.3.0/10.5.0/10.5.1/10.5.2/10.6.0/10.6.1/10.6.2 -->
 <!-- Matrix 11.0.2/11.0.4/11.1.1/11.2.0 -->
+<!-- Nexus 12.4.0 favourites -->
 <includes>
 	<include name="content_views_video">
 		<param name="content"></param>
@@ -66,6 +67,17 @@
 			<onclick>Skin.SetBool(viewcoverflow_games)</onclick>
 			<onclick>Skin.SetBool(viewrightlist_games)</onclick>
 			<onclick>Skin.SetBool(viewpanel_games)</onclick>
+		</definition>
+	</include>
+	<include name="content_views_favourites">
+		<param name="content"></param>
+		<definition>
+			<onclick>Skin.SetBool(viewposter_favourites)</onclick>
+			<onclick>Skin.SetBool(viewlowlist_favourites)</onclick>
+			<onclick>Skin.SetBool(viewwall_favourites)</onclick>
+			<onclick>Skin.SetBool(viewcoverflow_favourites)</onclick>
+			<onclick>Skin.SetBool(viewrightlist_favourites)</onclick>
+			<onclick>Skin.SetBool(viewpanel_favourites)</onclick>
 		</definition>
 	</include>
 	<include name="content_views_programs">
@@ -224,6 +236,8 @@
 				<!-- custom views programs -->
 				<onclick condition="Window.IsActive(games)">ActivateWindow(1105)</onclick>
 				<!-- custom views games -->
+				<onclick condition="Window.IsActive(favouritesbrowser)">ActivateWindow(1118)</onclick>
+				<!-- custom views favourites -->
 				<visible>![Window.IsActive(pictures)]</visible>
 			</control>
 			<control type="label">
@@ -304,6 +318,8 @@
 				<!-- custom views programs -->
 				<onup condition="Window.IsActive(games)">ActivateWindow(1105)</onup>
 				<!-- custom views games -->
+				<onup condition="Window.IsActive(favouritesbrowser)">ActivateWindow(1118)</onup>
+				<!-- custom views favourites -->
 				<ondown>SetFocus(51)</ondown>
 			</control>
 			<control type="button" id="9941">
@@ -3388,6 +3404,352 @@
 					<height>22</height>
 					<texture flipy="true">arrow_settings_down.png</texture>
 					<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+				</control>
+			</control>
+			<control type="button" id="9400">
+				<include>TopMenuTopButton</include>
+				<posx>1440</posx>
+				<onup>SetFocus(51)</onup>
+				<ondown>9401</ondown>
+				<onleft>9300</onleft>
+				<onright>SetFocus(50)</onright>
+				<label>31408</label>
+				<enable>![Skin.HasSetting(kiosksmart) + !String.Contains(skin.string(codestep),step3)]</enable>
+			</control>
+			<control type="image">
+				<posx>480</posx>
+				<posy>28</posy>
+				<width>1</width>
+				<height>45</height>
+				<texture>separator_v.png</texture>
+			</control>
+			<control type="image">
+				<posx>960</posx>
+				<posy>28</posy>
+				<width>1</width>
+				<height>45</height>
+				<texture>separator_v.png</texture>
+			</control>
+			<control type="image">
+				<posx>1440</posx>
+				<posy>28</posy>
+				<width>1</width>
+				<height>45</height>
+				<texture>separator_v.png</texture>
+			</control>
+		</control>
+		<include>ViewName</include>
+	</include>
+	<!--##################################################################################################  Favourites  ################################################################################################## -->
+	<include name="TopMenu_Favourites">
+		<include>TopMenu_BG</include>
+		<control type="group" id="9000">
+			<posy>-150</posy>
+			<animation effect="slide" start="0,0" end="0,120" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus">Conditional</animation>
+			<control type="grouplist" id="9101">
+				<!-- Go to -->
+				<animation effect="slide" start="0,0" end="0,525" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9100) | ControlGroup(9101).HasFocus">Conditional</animation>
+				<posx>1</posx>
+				<posy>-450</posy>
+				<width>477</width>
+				<height>450</height>
+				<onup>9101</onup>
+				<ondown>9101</ondown>
+				<onleft>SetFocus(51)</onleft>
+				<onright>9200</onright>
+				<itemgap>0</itemgap>
+				<focusposition>1</focusposition>
+				<scrolltime>450</scrolltime>
+				<control type="button" id="9102">
+					<!-- Kiosk Code -->
+					<include>TopMenuButton</include>
+					<label>$VAR[value_kioskcode]</label>
+					<onclick>Skin.SetString(custom_code,codestep)</onclick>
+					<onclick condition="!String.Contains(skin.string(codestep),step3)">SetFocus(51)</onclick>
+					<onclick condition="!String.Contains(skin.string(codestep),step3)">ActivateWindow(1113)</onclick>
+					<!-- custom delay -->
+					<onclick condition="String.Contains(skin.string(codestep),step3) + Control.HasFocus(9102)">Skin.Reset($INFO[skin.string(custom_code)])</onclick>
+					<visible>Skin.HasSetting(kioskcode)</visible>
+				</control>
+				<control type="button" id="9103">
+					<!-- Home -->
+					<include>TopMenuButton</include>
+					<label>31410</label>
+					<onclick>ReplaceWindow(Home)</onclick>
+				</control>
+				<control type="button" id="9104">
+					<!-- Videos -->
+					<include>TopMenuButton</include>
+					<label>$LOCALIZE[31001] ($LOCALIZE[31437])</label>
+					<onclick>ReplaceWindow(Videos,Root)</onclick>
+				</control>
+				<control type="button" id="9105">
+					<!-- Movies -->
+					<include>TopMenuButton</include>
+					<label>31003</label>
+					<onclick>ActivateWindow(videos,movietitles,return)</onclick>
+				</control>
+				<control type="button" id="9106">
+					<!-- TVShows -->
+					<include>TopMenuButton</include>
+					<label>31005</label>
+					<onclick>ActivateWindow(videos,tvshowtitles,return)</onclick>
+				</control>
+				<control type="button" id="9107">
+					<!-- Live TV -->
+					<include>TopMenuButton</include>
+					<label>31006</label>
+					<onclick>ActivateWindow(tvchannels)</onclick>
+					<visible>!Container.Content(LiveTV) + Pvr.HasTVChannels</visible>
+				</control>
+				<control type="button" id="9108">
+					<!-- Music Videos -->
+					<include>TopMenuButton</include>
+					<label>31013</label>
+					<onclick>ActivateWindow(videos,musicvideotitles,return)</onclick>
+					<visible>!Container.Content(MusicVideos) + Library.HasContent(MusicVideos)</visible>
+				</control>
+				<control type="button" id="9109">
+					<!-- Music -->
+					<include>TopMenuButton</include>
+					<label>31002</label>
+					<onclick>ActivateWindow(music)</onclick>
+					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(music)] + Library.HasContent(Music)</visible>
+				</control>
+				<control type="button" id="9112">
+					<include>TopMenuButton</include>
+					<label>31375</label>
+					<onclick>ActivateWindow(settings)</onclick>
+					<visible>![Skin.HasSetting(kiosksmart) + !String.Contains(skin.string(codestep),step3)]</visible>
+				</control>
+			</control>
+			<control type="grouplist" id="9201"><!-- Collection/change view -->
+				<animation effect="slide" start="0,0" end="0,675" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9200) | ControlGroup(9201).HasFocus">Conditional</animation>
+				<posx>482</posx>
+				<posy>-600</posy>
+				<width>477</width>
+				<height>600</height>
+				<onup>9200</onup>
+				<ondown>9201</ondown>
+				<onleft>9100</onleft>
+				<onright>9300</onright>
+				<itemgap>0</itemgap>
+				<focusposition>1</focusposition>
+				<scrolltime>450</scrolltime>
+				<!-- Wall -->
+				<control type="radiobutton" id="9214">
+					<include>TopMenuRadioButton</include>
+					<label>$LOCALIZE[31511] - $LOCALIZE[31513]</label>
+					<onclick>Skin.SetString(wallfavesgrid,default)</onclick>
+					<selected>String.Contains(skin.string(wallfavesgrid),default)</selected>
+					<visible>Control.IsVisible(56)</visible>
+				</control>
+				<control type="radiobutton" id="9215">
+					<include>TopMenuRadioButton</include>
+					<label>$LOCALIZE[31511] - $LOCALIZE[31512]</label>
+					<onclick>Skin.SetString(wallfavesgrid,mid)</onclick>
+					<selected>String.Contains(skin.string(wallfavesgrid),mid)</selected>
+					<visible>Control.IsVisible(56)</visible>
+				</control>
+				<control type="radiobutton" id="9216">
+					<include>TopMenuRadioButton</include>
+					<label>$LOCALIZE[31511] - $LOCALIZE[31514]</label>
+					<onclick>Skin.SetString(wallfavesgrid,big)</onclick>
+					<selected>String.Contains(skin.string(wallfavesgrid),big)</selected>
+					<visible>Control.IsVisible(56)</visible>
+				</control>
+				<control type="radiobutton" id="9217">
+					<include>TopMenuRadioButton</include>
+					<label>31533</label>
+					<onclick>Skin.ToggleSetting(darkbar)</onclick>
+					<selected>Skin.HasSetting(darkbar)</selected>
+				</control>
+				<control type="button" id="9218">
+					<include>TopMenuRadioButton</include>
+					<label>- $LOCALIZE[31252]</label>
+					<onclick>SetFocus(260)</onclick>
+					<onclick>ActivateWindow(632)</onclick>
+					<!-- custom glass -->
+				</control>
+			</control>
+			<control type="grouplist" id="9401">
+				<!-- Artwork -->
+				<animation effect="slide" start="0,0" end="0,525" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9400) | ControlGroup(9401).HasFocus">Conditional</animation>
+				<posx>1442</posx>
+				<posy>-450</posy>
+				<width>477</width>
+				<height>450</height>
+				<onup>9400</onup>
+				<ondown>9401</ondown>
+				<onleft>9300</onleft>
+				<onleft>51</onleft>
+				<itemgap>0</itemgap>
+				<focusposition>1</focusposition>
+				<scrolltime>450</scrolltime>
+				<control type="radiobutton" id="9402">
+					<include>TopMenuRadioButton</include>
+					<label>31463</label>
+					<onclick>Skin.ToggleSetting(animation_panscan)</onclick>
+					<selected>Skin.HasSetting(animation_panscan)</selected>
+				</control>
+				<control type="radiobutton" id="9406">
+					<!-- Fanart - Default -->
+					<include>TopMenuRadioButton</include>
+					<label>31497</label>
+					<onclick>Skin.SetString(favesfanart,fanart)</onclick>
+					<selected>String.Contains(skin.string(favesfanart),fanart)</selected>
+				</control>
+				<control type="radiobutton" id="9407">
+					<!-- Curtains -->
+					<include>TopMenuRadioButton</include>
+					<label>31501</label>
+					<onclick>Skin.SetString(favesfanart,curtains)</onclick>
+					<selected>String.Contains(skin.string(favesfanart),curtains)</selected>
+				</control>
+				<control type="radiobutton" id="9408">
+					<!-- Fanart - Fallback -->
+					<include>TopMenuRadioButton</include>
+					<label>31500</label>
+					<onclick>Skin.SetString(favesfanart,fallback)</onclick>
+					<selected>String.Contains(skin.string(favesfanart),fallback)</selected>
+				</control>
+				<control type="button" id="9409">
+					<!-- Movies Image Fallback -->
+					<include>TopMenuButton</include>
+					<label>[COLOR=$VAR[value_headercolor]] - $LOCALIZE[31504][/COLOR]</label>
+					<onclick>Skin.SetImage(CustomFallbackFavesBG)</onclick>
+					<visible>String.Contains(skin.string(favesfanart),fallback)</visible>
+				</control>
+				<control type="radiobutton" id="9410">
+					<!-- Extra Fanart Faves fanart -->
+					<include>TopMenuRadioButton</include>
+					<label>$LOCALIZE[31498] ($LOCALIZE[20445][nn])</label>
+					<onclick>Skin.SetString(favesfanart,extra)</onclick>
+					<selected>String.Contains(skin.string(favesfanart),extra) + !Skin.HasSetting(use_folderarts)</selected>
+				</control>
+				<control type="radiobutton" id="94100">
+					<!-- Extra Fanart Faves folder -->
+					<include>TopMenuRadioButton</include>
+					<label>$LOCALIZE[31498] ($LOCALIZE[20334])</label>
+					<onclick>Skin.SetString(favesfanart,extra)</onclick>
+					<selected>String.Contains(skin.string(favesfanart),extra) + Skin.HasSetting(use_folderarts)</selected>
+				</control>
+				<control type="button" id="94110">
+					<include>TopMenuButton</include>
+					<label>$LOCALIZE[31371]</label>
+					<onclick>ActivateWindowAndFocus(skinsettings,1028,0)</onclick>
+					<visible>String.Contains(skin.string(favesfanart),extra)</visible>
+				</control>
+			</control>
+			<include>TopMenu_Bar</include>
+			<control type="button" id="9100">
+				<include>TopMenuTopButton</include>
+				<posx>0</posx>
+				<onup>SetFocus(51)</onup>
+				<ondown>9101</ondown>
+				<onleft>SetFocus(50)</onleft>
+				<onright>9200</onright>
+				<label>31436</label>
+			</control>
+			<control type="button" id="9200">
+				<include>TopMenuTopButton</include>
+				<posx>480</posx>
+				<onup>9940</onup>
+				<ondown>9201</ondown>
+				<onleft>9100</onleft>
+				<onright>9300</onright>
+				<label>$LOCALIZE[31407]/$LOCALIZE[31135]</label>
+				<enable>![Skin.HasSetting(kiosksmart) + !String.Contains(skin.string(codestep),step3)]</enable>
+			</control>
+			<control type="group">
+				<posx>502</posx>
+				<animation effect="fade" start="20" end="100" time="700" condition="true" pulse="true">Conditional</animation>
+				<visible>Control.HasFocus(9200)</visible>
+				<control type="image">
+					<posx>0</posx>
+					<posy>40</posy>
+					<width>30</width>
+					<height>22</height>
+					<texture>arrow_settings_down.png</texture>
+					<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>405</posx>
+					<posy>40</posy>
+					<width>30</width>
+					<height>22</height>
+					<texture flipy="true">arrow_settings_down.png</texture>
+					<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+				</control>
+			</control>
+			<control type="button" id="9300">
+				<include>TopMenuTopButton</include>
+				<posx>960</posx>
+				<onup>9940</onup>
+				<ondown>9301</ondown>
+				<onleft>9200</onleft>
+				<onright>9400</onright>
+				<label>$LOCALIZE[31745]/$LOCALIZE[31135]</label>
+				<enable>![Skin.HasSetting(kiosksmart) + !String.Contains(skin.string(codestep),step3)]</enable>
+			</control>
+			<control type="group">
+				<posx>982</posx>
+				<animation effect="fade" start="20" end="100" time="700" condition="true" pulse="true">Conditional</animation>
+				<visible>Control.HasFocus(9300)</visible>
+				<control type="image">
+					<posx>0</posx>
+					<posy>40</posy>
+					<width>30</width>
+					<height>22</height>
+					<texture>arrow_settings_down.png</texture>
+					<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>405</posx>
+					<posy>40</posy>
+					<width>30</width>
+					<height>22</height>
+					<texture flipy="true">arrow_settings_down.png</texture>
+					<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+				</control>
+			</control>
+			<control type="grouplist" id="9301">
+				<!-- Colecao -->
+				<animation effect="slide" start="0,0" end="0,840" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9300) | ControlGroup(9301).HasFocus">Conditional</animation>
+				<posx>962</posx>
+				<posy>-765</posy>
+				<width>477</width>
+				<height>450</height>
+				<onup>9300</onup>
+				<ondown>9301</ondown>
+				<onleft>9200</onleft>
+				<onright>9400</onright>
+				<itemgap>0</itemgap>
+				<focusposition>1</focusposition>
+				<scrolltime>450</scrolltime>
+				<control type="button" id="3">
+					<!-- Sort by -->
+					<include>TopMenuButton</include>
+					<label>103</label>
+				</control>
+				<control type="togglebutton" id="4">
+					<!-- Sort asc -->
+					<include>TopMenuToggleButton</include>
+					<label>31481</label>
+					<altlabel>31480</altlabel>
+					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
+				</control>
+				<control type="button" id="991">
+					<!-- Global Search -->
+					<include>TopMenuButton</include>
+					<label>137</label>
+					<onclick>RunScript(script.globalsearch)</onclick>
+					<visible>System.HasAddon(script.globalsearch)</visible>
+				</control>
+				<control type="button" id="19">
+					<!-- Filter -->
+					<include>TopMenuButton</include>
+					<label>587</label>
 				</control>
 			</control>
 			<control type="button" id="9400">

@@ -3,7 +3,8 @@
 <!-- Jarvis 8.1.13 -->
 <!-- Krypton 9.1.17/9.1.18/9.1.19/9.2.1 window IDs/9.2.3 -->
 <!-- Leia 10.2.3/10.2.8/10.3.0/10.5.0/10.5.1/10.6.0 -->
-<!-- Matrix 11.0.2/11.0.4 -->
+<!-- Matrix 11.0.2/11.0.4/11.3.0 -->
+<!-- Nexus 12.3.0/12.4.0 Favourites -->
 <includes>
 	<!-- ######################################################################### Presets para aplicar ######################################################################### -->
 	<include name="Preset1_Apply">
@@ -2319,7 +2320,7 @@
 					<label2>31031</label2>
 					<property name="id">various</property>
 					<onclick>Skin.SetString($INFO[skin.string(custom_master)],favourites)</onclick>
-					<onclick>Skin.SetString($INFO[skin.string(custom_action)],ActivateWindow(favourites))</onclick>
+					<onclick>Skin.SetString($INFO[skin.string(custom_action)],ActivateWindow(favouritesbrowser))</onclick>
 					<include>DefaultReset</include>
 				</item>
 				<item>

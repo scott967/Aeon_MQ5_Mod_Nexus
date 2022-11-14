@@ -4,6 +4,7 @@
 <!-- Krypton 9.2.1 window IDs 111 -->
 <!-- Leia 10.2.4/10.3.0 -->
 <!-- Matrix 11.0.2/11.0.4 -->
+<!-- Nexus 12.4.0 favourites -->
 <window>
 	<defaultcontrol always="true">4112</defaultcontrol>
 	<coordinates>
@@ -148,7 +149,7 @@
 						<!-- Favourites -->
 						<label>1036</label>
 						<onclick>Dialog.Close(shutdownmenu)</onclick>
-						<onclick>ActivateWindow(Favourites)</onclick>
+						<onclick>ActivateWindow(FavouritesBrowser)</onclick>
 					</item>
 					<item id="15">
 						<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
