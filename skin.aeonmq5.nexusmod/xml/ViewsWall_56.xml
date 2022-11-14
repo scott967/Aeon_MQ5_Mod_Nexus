@@ -5,7 +5,7 @@
 <!-- Krypton 9.1.19/9.2.1 window IDs -->
 <!-- Leia 10.3.0/10.5.2 -->
 <!-- Matrix 11.0.4/11.1.1 -->
-<!-- Nexus 12.3.0 -->
+<!-- Nexus 12.3.012.4.0 -->
 <includes>
 	<!--##################################################################################   VISTA WALL - ID 56   ##################################################################################-->
 	<include name="Wall_Dimmer">
@@ -67,7 +67,7 @@
 				<animation effect="slide" start="0,0" end="-165,0" time="500" delay="500" tween="cubic" easing="out" condition="Container(56).Column(5) + String.Contains(skin.string(wallvideogrid),big) + Window.IsActive(videos) + ![String.IsEmpty(ListItem.Art(discart)) | Skin.HasSetting(nowalldiscart_video) | ListItem.IsCollection]">Conditional</animation>
 				<visible>![Container.Content(episodes) | Container.Content(sets) | Container.Content(years)]</visible>
 				<itemlayout condition="[[Container.Content(movies) | Container.Content(musicvideos)] + Skin.HasSetting(nowallvideocase) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(genres) | Container.Content(addons)] + String.Contains(skin.string(wallvideogrid),default)" width="148" height="207">
-					<!-- POSTER SEM ESTOJO - tamanho normal -->
+					<!-- POSTER WITHOUT CASE - normal size -->
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
@@ -91,7 +91,7 @@
 					</control>
 				</itemlayout>
 				<itemlayout condition="[[Container.Content(movies) | Container.Content(musicvideos)] + Skin.HasSetting(nowallvideocase) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(genres) | Container.Content(addons)] + String.Contains(skin.string(wallvideogrid),mid)" width="192" height="276">
-					<!-- POSTER SEM ESTOJO - tamanho medio -->
+					<!-- POSTER WITHOUT CASE - medium size -->
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
@@ -115,7 +115,7 @@
 					</control>
 				</itemlayout>
 				<itemlayout condition="[[Container.Content(movies) | Container.Content(musicvideos)] + Skin.HasSetting(nowallvideocase) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(genres) | Container.Content(addons)] + String.Contains(skin.string(wallvideogrid),big)" width="315" height="414">
-					<!-- POSTER SEM ESTOJO - tamanho grande -->
+					<!-- POSTER WITHOUT CASE - large size -->
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
@@ -139,19 +139,19 @@
 					</control>
 				</itemlayout>
 				<itemlayout condition="[Container.Content(movies) | Container.Content(musicvideos)] + !Skin.HasSetting(nowallvideocase) + String.Contains(skin.string(wallvideogrid),default)" width="174" height="276">
-					<!-- POSTER ESTOJO - tamanho normal -->
+					<!-- POSTER with CASE - normal size -->
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
 							<posx>6</posx>
-							<posy>27</posy>
-							<width>170</width>
-							<height>237</height>
+							<posy>30</posy>
+							<width>162</width>
+							<height>234</height>
 							<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
 							<aspectratio align="center">stretch</aspectratio>
 						</control>
 						<control type="image">
-							<!-- Estojo -->
+							<!-- Case -->
 							<posx>-9</posx>
 							<posy>-8</posy>
 							<width>202</width>
@@ -183,7 +183,7 @@
 					</control>
 				</itemlayout>
 				<itemlayout condition="[Container.Content(movies) | Container.Content(musicvideos)] + !Skin.HasSetting(nowallvideocase) + String.Contains(skin.string(wallvideogrid),mid)" width="191" height="278">
-					<!-- POSTER ESTOJO - tamanho medio -->
+					<!-- POSTER with CASE - medium size -->
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
@@ -195,7 +195,7 @@
 							<aspectratio align="center">stretch</aspectratio>
 						</control>
 						<control type="image">
-							<!-- Estojo -->
+							<!-- Case -->
 							<posx>-9</posx>
 							<posy>-15</posy>
 							<width>225</width>
@@ -227,7 +227,7 @@
 					</control>
 				</itemlayout>
 				<itemlayout condition="[Container.Content(movies) | Container.Content(musicvideos)] + !Skin.HasSetting(nowallvideocase) + String.Contains(skin.string(wallvideogrid),big)" width="315" height="417">
-					<!-- POSTER ESTOJO - tamanho grande -->
+					<!-- POSTER with CASE - large size -->
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
@@ -239,7 +239,7 @@
 							<aspectratio align="center">stretch</aspectratio>
 						</control>
 						<control type="image">
-							<!-- Estojo -->
+							<!-- Case -->
 							<posx>12</posx>
 							<posy>-22</posy>
 							<width>322</width>
@@ -271,7 +271,7 @@
 					</control>
 				</itemlayout>
 				<focusedlayout condition="[[Container.Content(movies) | Container.Content(musicvideos)] + Skin.HasSetting(nowallvideocase) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(genres) | Container.Content(addons)] + String.Contains(skin.string(wallvideogrid),default)" width="148" height="207">
-					<!-- POSTER SEM ESTOJO - tamanho normal -->
+					<!-- POSTER WITHOUT CASE - normal size -->
 					<control type="group">
 						<!-- CDART VIDEO -->
 						<animation type="WindowOpen">
@@ -328,7 +328,7 @@
 					</control>
 				</focusedlayout>
 				<focusedlayout condition="[[Container.Content(movies) | Container.Content(musicvideos)] + Skin.HasSetting(nowallvideocase) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(genres) | Container.Content(addons)] + String.Contains(skin.string(wallvideogrid),mid)" width="192" height="276">
-					<!-- POSTER SEM ESTOJO - tamanho medio -->
+					<!-- POSTER WITHOUT CASE - medium size -->
 					<control type="group">
 						<!-- CDART VIDEO -->
 						<animation type="WindowOpen">
@@ -385,7 +385,7 @@
 					</control>
 				</focusedlayout>
 				<focusedlayout condition="[[Container.Content(movies) | Container.Content(musicvideos)] + Skin.HasSetting(nowallvideocase) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(genres) | Container.Content(addons)] + String.Contains(skin.string(wallvideogrid),big)" width="315" height="414">
-					<!-- POSTER SEM ESTOJO - tamanho grande -->
+					<!-- POSTER WITHOUT CASE - large size -->
 					<control type="group">
 						<!-- CDART VIDEO -->
 						<animation type="WindowOpen">
@@ -442,7 +442,7 @@
 					</control>
 				</focusedlayout>
 				<focusedlayout condition="[Container.Content(movies) | Container.Content(musicvideos)] + !Skin.HasSetting(nowallvideocase) + String.Contains(skin.string(wallvideogrid),default)" width="174" height="276">
-					<!-- POSTER ESTOJO - tamanho normal -->
+					<!-- POSTER WITH CASE - normal size -->
 					<control type="group">
 						<!-- CDART VIDEO -->
 						<animation type="WindowOpen">
@@ -486,9 +486,9 @@
 					</control>
 					<control type="image">
 						<posx>6</posx>
-						<posy>27</posy>
-						<width>170</width>
-						<height>237</height>
+						<posy>30</posy>
+						<width>162</width>
+						<height>234</height>
 						<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
 						<aspectratio align="center">stretch</aspectratio>
 						<animation type="Focus" reversible="false">
@@ -497,7 +497,7 @@
 						</animation>
 					</control>
 					<control type="image">
-						<!-- Estojo -->
+						<!-- Case -->
 						<posx>-9</posx>
 						<posy>-8</posy>
 						<width>202</width>
