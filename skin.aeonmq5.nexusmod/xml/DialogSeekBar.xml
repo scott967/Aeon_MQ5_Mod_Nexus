@@ -3,12 +3,12 @@
 <!-- Krypton 9.1.19/9.2.1 window IDs/9.2.3-->
 <!-- Leia 10.3.0/10.4.010.5.0/10.6.1 -->
 <!-- Matrix 11.0.2/11.0.3/11.0.4/11.1.1/11.2.0 -->
-<!-- Nexus 12.3.0 -->
+<!-- Nexus 12.3.0/12.4.0 -->
 <window>
 	<defaultcontrol>23</defaultcontrol>
 	<visible>Window.IsActive(fullscreenvideo) + ![Window.IsActive(videoosd) | Window.IsActive(fullscreeninfo) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Window.IsActive(SubtitleSearch)]</visible>
 	<!-- <visible>Window.IsActive(fullscreenvideo) + ![Window.IsActive(videoosd) | [Skin.HasSetting(nopausedlabel) + [Player.FrameAdvance | Player.Paused]] | Window.IsActive(fullscreeninfo) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Window.IsActive(SubtitleSearch)]</visible> -->
-	<visible>Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Player.IsTempo</visible>
+	<visible>Player.Seeking | Player.HasPerformedSeek(2) | Player.Paused | Player.Forwarding | Player.Rewinding | Player.IsTempo</visible>
 	<controls>
 		<control type="group">				<!-- Upper bar furniture full and partial -->
 			<animation effect="slide" time="400" start="0,-375" end="0,0" easing="inout" tween="cubic">WindowOpen</animation>
@@ -99,7 +99,7 @@
 		<control type="group">				<!-- Lower bar all furniture except hidden if tempo changes -->
 			<animation effect="slide" time="400" start="0,1200" end="0,0" easing="out" tween="cubic">WindowOpen</animation>
 			<animation effect="slide" time="400" start="0,0" end="0,1200" easing="in" tween="cubic">WindowClose</animation>
-			<visible>!Player.IsTempo + [Player.Seeking | Player.DisplayAfterSeek]</visible>
+			<visible>!Player.IsTempo + [Player.Seeking | Player.HasPerformedSeek(2)]</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>825</posy>
@@ -124,7 +124,6 @@
 					<height>15</height>
 					<info>Player.Chapters</info>
 					<righttexture>progress_mid.png</righttexture>
-					<!-- <animation effect="fade" time="200">VisibleChange</animation> -->
 				</control>
 				<control type="label">
 					<posx>45</posx>
@@ -157,7 +156,7 @@
 					<align>center</align>
 					<textcolor>FFFFFAF0</textcolor>
 					<label>$VAR[SeekLabel]</label>
-					<visible>Player.Seeking | Player.DisplayAfterSeek</visible>
+					<visible>Player.Seeking | Player.HasPerformedSeek(2)</visible>
 				</control>
 			</control>
 			<control type="group">	<!-- bottom right bar group Furniture full partial slide up for rwd -->
