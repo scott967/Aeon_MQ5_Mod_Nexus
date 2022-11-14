@@ -1352,7 +1352,7 @@
 							<!-- Editor de info -->
 							<label>31671</label>
 							<onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
-							<visible>System.HasAddon(script.libraryeditor) + !Container.Content(sets)</visible>
+							<visible>System.HasAddon(script.libraryeditor)</visible>
 						</item>
 						<item id="9">
 							<!-- actor bio -->
