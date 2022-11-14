@@ -78,7 +78,7 @@
 				<onright>Dialog.Close(contextmenu)</onright>
 				<onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
 				<label>31671</label>
-				<visible>System.HasAddon(script.libraryeditor) + [Container.Content(Movies) | Container.Content(episodes)]</visible>
+				<visible>System.HasAddon(script.libraryeditor) + [Container.Content(Movies) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 			</control>
 			<control type="button" id="1031">
 				<include>DialogContext_Button</include>
