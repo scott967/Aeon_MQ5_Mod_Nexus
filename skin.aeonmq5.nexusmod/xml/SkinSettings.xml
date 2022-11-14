@@ -6,6 +6,17 @@
 <!-- Leia 10.3.0/10.4.0/10.6.2 -->
 <!-- Matrix 11.0.4/11.1.1/11.2.0/11.3.0 -->
 <!-- Nexus 12.3.0 -->
+<!-- 9100 Main selector menu list -->
+<!-- 9001 - general settings -->
+<!-- 9002 Home window settings -->
+<!-- 9003 Restore settings -->
+<!-- 9004 theme settings -->
+<!-- 9005 styles settings -->
+<!-- 9006 widgets settings -->
+<!-- Mobile -->
+<!-- 9008 font settings -->
+<!-- 9009 disc settings -->
+<!-- 9011 backgrounds/icon settings -->
 <window>
 	<defaultcontrol always="true">9100</defaultcontrol>
 	<onunload condition="String.Contains(skin.string(customwindow),video)">SetFocus(50)</onunload>
