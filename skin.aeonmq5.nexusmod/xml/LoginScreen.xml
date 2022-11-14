@@ -3,6 +3,7 @@
 <!-- Jarvis 8.1.13 -->
 <!-- Krypton 9.2.1 window IDs 29 -->
 <!-- Leia 10.2.4/10.3.0/10.4.0 -->
+<!-- Nexus 12.4.0 -->
 <window>
 	<defaultcontrol always="true">52</defaultcontrol>
 	<coordinates>
@@ -114,6 +115,7 @@
 						<width>900</width>
 						<height>24</height>
 						<align>left</align>
+						<aligny>center</aligny>
 						<font>Font_30A</font>
 						<textcolor>$VAR[value_headercolor]</textcolor>
 						<info>ListItem.Label</info>
@@ -126,6 +128,7 @@
 						<width>900</width>
 						<height>24</height>
 						<align>left</align>
+						<aligny>center</aligny>
 						<font>Font_15</font>
 						<textcolor>FFFFFAF0</textcolor>
 						<info>ListItem.Label2</info>
