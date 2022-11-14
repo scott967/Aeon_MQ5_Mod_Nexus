@@ -2,6 +2,7 @@
 <!-- Aeon MQ 5 -->
 <!-- Krypton 9.1.19 -->
 <!-- Matrix 11.1.1 -->
+<!-- Nexus 12.4.0 -->
 <includes>
 	<!--##################################################################################   VISTA BANNER - ID 52   ##################################################################################-->
 	<include name="Banner_Dimmer">
@@ -64,7 +65,7 @@
 							<include>Animation_Fade</include>
 						</control>
 						<control type="image">
-							<!-- Cover -->
+							<!-- Banner -->
 							<width>885</width>
 							<height>190</height>
 							<bordersize>8</bordersize>
@@ -84,26 +85,11 @@
 				</itemlayout>
 				<focusedlayout height="206" width="900">
 					<control type="image">
-						<!-- Background -->
+						<!-- Banner -->
 						<width>885</width>
 						<height>190</height>
-						<texture>banner_glass.png</texture>
-						<aspectratio>stretch</aspectratio>
-						<animation effect="zoom" center="auto" start="90" end="110" time="600" tween="back" easing="out" reversible="false" condition="Skin.HasSetting(bannerzoom)">Focus</animation>
-					</control>
-					<control type="image">
-						<!-- Background Double -->
-						<width>885</width>
-						<height>190</height>
-						<texture>banner_glass.png</texture>
-						<aspectratio>stretch</aspectratio>
-						<animation effect="zoom" center="auto" start="90" end="110" time="600" tween="back" easing="out" reversible="false" condition="Skin.HasSetting(bannerzoom)">Focus</animation>
-					</control>
-					<control type="image">
-						<!-- Cover -->
-						<width>885</width>
-						<height>190</height>
-						<bordersize>8</bordersize>
+						<bordersize>12</bordersize>
+						<bordertexture infill="False" border="8" colordiffuse="$VAR[value_headercolor]">banner_glass2.png</bordertexture>
 						<texture background="true">$VAR[value_banner]</texture>
 						<aspectratio>keep</aspectratio>
 						<animation effect="zoom" center="auto" start="90" end="110" time="600" tween="back" easing="out" reversible="false" condition="Skin.HasSetting(bannerzoom)">Focus</animation>
