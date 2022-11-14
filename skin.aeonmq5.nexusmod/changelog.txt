@@ -1,10 +1,15 @@
+[B][COLOR=FFFF8C00]BUILD 12.4.0 - RELEASE DATE 11/14/2022[/COLOR][/B]
+Improved:  Library Editor can be launched for sets and MVs
+Improved:  New Nexus timer for displaying SeekBar
+New:  Add new Nexus Favourites Browser Window as a media window
+
 [B][COLOR=FFFF8C00]BUILD 12.3.0 - RELEASE DATE 05/23/2022[/COLOR][/B]
 New:  Show hdr flags
 New:  Add new video aspect ratio flags (Nexus feature)
 New:  Add button to show/hide password entry in virtual keyboard (Nexus feature)
 New:  Use min:sec for music video runtime display
 New:  on video info dialog, click button on MPAA rating tag for more info
-New:  Widgets on hmoe page for addons (programs menu)
+New:  Widgets on home page for addons (programs menu)
 Fix:  Default home menu weather settings submenu had obsolete window
 Improved:  Extendedinfo script dialog windows
 Improved:  Use colorpicker button to set video case colors
