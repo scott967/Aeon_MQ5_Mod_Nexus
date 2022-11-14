@@ -71,7 +71,7 @@ Group 602: Widgets
 				<posy>-500</posy>
 				<height>400</height>
 				<width>50</width>
-				<visible>Player.HasVideo + !String.StartsWith(Player.FolderPath,Plugin) + !PVR.IsPlayingTV</visible>
+				<visible>Player.HasVideo + !String.StartsWith(Player.FolderPath,Plugin) + !String.StartsWith(Player.FolderPath,pvr) + !PVR.IsPlayingTV</visible>
 				<itemlayout/>
 				<focusedlayout/>
 				<content target="filemanager">$INFO[Player.FolderPath]extrafanart\</content>
@@ -81,7 +81,7 @@ Group 602: Widgets
 				<posy>-500</posy>
 				<height>400</height>
 				<width>50</width>
-				<visible>Player.HasVideo + !String.StartsWith(Player.FolderPath,Plugin) + !PVR.IsPlayingTV</visible>
+				<visible>Player.HasVideo + !String.StartsWith(Player.FolderPath,Plugin) + !String.StartsWith(Player.FolderPath,pvr) + !PVR.IsPlayingTV</visible>
 				<itemlayout/>
 				<focusedlayout/>
 				<content target="filemanager">$INFO[Player.FolderPath,,..\extrafanart\]</content>
