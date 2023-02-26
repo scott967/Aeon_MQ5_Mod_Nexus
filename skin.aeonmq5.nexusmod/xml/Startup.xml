@@ -4,11 +4,11 @@
 <!-- Krypton 9.2.3 -->
 <!-- Leia 10.2.4/10.3.0 -->
 <!-- Matrix 11.0.1 -->
-<!-- Nexus 12.2.0 -->
+<!-- Nexus 12.2.0/12.5.0 -->
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
-	<onload condition="System.HasAddon(script.skin.info.service)">RunScript(script.skin.info.service)</onload>
-	<onload condition="System.HasAddon(script.games.rom.collection.browser) + ![String.IsEmpty(skin.string(gameswidget)) | Skin.HasSetting(nogameswidget)]">RunScript(script.games.rom.collection.browser,limit=12)</onload>
+	<onload condition="System.AddonIsEnabled(script.skin.info.service)">RunScript(script.skin.info.service)</onload>
+	<onload condition="System.AddonIsEnabled(script.games.rom.collection.browser) + ![String.IsEmpty(skin.string(gameswidget)) | Skin.HasSetting(nogameswidget)]">RunScript(script.games.rom.collection.browser,limit=12)</onload>
 	<onload>ReplaceWindow($INFO[System.StartupWindow])</onload>
 	<onload condition="Skin.HasSetting(custommode)">Skin.Reset(custommode)</onload>
 	<onload condition="Skin.HasSetting(submode)">Skin.Reset(submode)</onload>

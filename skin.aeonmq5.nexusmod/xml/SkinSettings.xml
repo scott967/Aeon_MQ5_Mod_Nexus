@@ -366,7 +366,7 @@
 					<label>$LOCALIZE[31007]</label>
 					<onclick>Skin.ToggleSetting(nogameswidget)</onclick>
 					<selected>!Skin.HasSetting(nogameswidget)</selected>
-					<visible>!String.IsEmpty(skin.string(gameswidget)) + [System.HasAddon(script.games.rom.collection.browser) + String.Contains(skin.string(games_link),rcb)]</visible>
+					<visible>!String.IsEmpty(skin.string(gameswidget)) + [System.AddonIsEnabled(script.games.rom.collection.browser) + String.Contains(skin.string(games_link),rcb)]</visible>
 				</control>
 				<control type="radiobutton" id="1106">
 					<!-- Clima -->
@@ -705,13 +705,13 @@
 					<!-- Exportar ajustes -->
 					<label>31622</label>
 					<onclick>RunScript(script.toolbox,info=exportskinsettings)</onclick>
-					<visible>System.HasAddon(script.toolbox)</visible>
+					<visible>System.AddonIsEnabled(script.toolbox)</visible>
 				</control>
 				<control type="button" id="1161">
 					<!-- Importar ajustes -->
 					<label>31623</label>
 					<onclick>RunScript(script.toolbox,info=importskinsettings)</onclick>
-					<visible>System.HasAddon(script.toolbox)</visible>
+					<visible>System.AddonIsEnabled(script.toolbox)</visible>
 				</control>
 				<control type="button" id="1164">
 					<!-- Reaplicar ajustes -->

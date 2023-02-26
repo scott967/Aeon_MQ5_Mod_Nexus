@@ -5,7 +5,7 @@
 <!-- Krypton 9.1.16/9.1.18/9.1.19/9.2.1 window IDs 2003/9.2.2 -->
 <!-- Leia 10.2.5/10.3.0/10.4.0/10.5.2/10.6.0/10.6.1/10.6.2 -->
 <!-- Matrix 11.0.1/11.0.3/11.0.4/11.1.1/11.2.0 -->
-<!-- Nexus 12.3.0 -->
+<!-- Nexus 12.3.0/12.5.0 -->
 <window>
 	<onload>Control.SetFocus(50,0,absolute)</onload>
 	<onload>Control.SetFocus(149)</onload>
@@ -1318,7 +1318,7 @@
 							<label>31066</label>
 							<onclick>Dialog.Close(MovieInformation)</onclick>
 							<onclick>RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
-							<!-- <visible>Container.Content(Movies) + !Skin.HasSetting(trailers) + System.HasAddon(script.cinema.experience) + !System.HasAddon(script.cinemavision)</visible> -->
+							<!-- <visible>Container.Content(Movies) + !Skin.HasSetting(trailers) + System.AddonIsEnabled(script.cinema.experience) + !System.AddonIsEnabled(script.cinemavision)</visible> -->
 							<visible>false</visible>
 						</item>
 						<item id="24">
@@ -1326,7 +1326,7 @@
 							<label>CinemaVision</label>
 							<onclick>Dialog.Close(MovieInformation)</onclick>
 							<onclick>RunScript(script.cinemavision,experience)</onclick>
-							<!-- <visible>System.HasAddon(script.cinemavision) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible> -->
+							<!-- <visible>System.AddonIsEnabled(script.cinemavision) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible> -->
 							<visible>false</visible>
 						</item>
 						<!-- <item id="23"> -->
@@ -1352,13 +1352,19 @@
 							<!-- Editor de info -->
 							<label>31671</label>
 							<onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
-							<visible>System.HasAddon(script.libraryeditor)</visible>
+							<visible>System.AddonIsEnabled(script.libraryeditor)</visible>
 						</item>
 						<item id="9">
 							<!-- actor bio -->
 							<label>31798</label>
 							<onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label])</onclick>
-							<visible>System.HasAddon(script.extendedinfo) + !Container.Content(sets)</visible>
+							<visible>System.AddonIsEnabled(script.extendedinfo) + !Container.Content(sets) + !Container.Content(musicvideos)</visible>
+						</item>
+						<item id="991">
+							<!-- mv artist bio -->
+							<label>31798</label>
+							<onclick>RunScript(script.extendedinfo,info=artistdetails,artistname=$INFO[Container(50).ListItem.Label])</onclick>
+							<visible>System.AddonIsEnabled(script.extendedinfo) + Container.Content(musicvideos)</visible>
 						</item>
 						<item id="13">
 							<!-- Director Movies -->
@@ -1369,13 +1375,13 @@
 						<item id="10">
 							<label>$LOCALIZE[31496]</label> <!-- extra info -->
 							<onclick>RunScript(script.extendedinfo,info=openinfodialog)</onclick>"
-							<visible>System.hasAddon(script.extendedinfo) + [String.IsEqual(ListItem.DbType,movie) | String.IsEqual(ListItem.DbType,tvshow) | String.IsEqual(ListItem.DbType,season) | String.IsEqual(ListItem.DbType,episode) | String.IsEqual(ListItem.DbType,set)]</visible>
+							<visible>System.AddonIsEnabled(script.extendedinfo) + [String.IsEqual(ListItem.DbType,movie) | String.IsEqual(ListItem.DbType,tvshow) | String.IsEqual(ListItem.DbType,season) | String.IsEqual(ListItem.DbType,episode) | String.IsEqual(ListItem.DbType,set)]</visible>
 						</item>
 						<item id="11">
 							<!-- Artist Video Clips -->
 							<label>31950</label>
 							<onclick>RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[Container(50).ListItem.Label])</onclick>
-							<visible>System.HasAddon(script.extendedinfo) + [String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(ListItem.DBType,movie)]</visible>
+							<visible>System.AddonIsEnabled(script.extendedinfo) + [String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(ListItem.DBType,movie)]</visible>
 						</item>
 					</content>
 				</control>

@@ -4,7 +4,7 @@
 <!-- Krypton 9.1.17/9.1.18/9.1.19/9.2.1 window IDs/9.2.3 -->
 <!-- Leia 10.2.3/10.2.8/10.3.0/10.5.0/10.5.1/10.6.0 -->
 <!-- Matrix 11.0.2/11.0.4/11.3.0 -->
-<!-- Nexus 12.3.0/12.4.0 Favourites -->
+<!-- Nexus 12.3.0/12.4.0 Favourites/12.5.0 -->
 <includes>
 	<!-- ######################################################################### Presets para aplicar ######################################################################### -->
 	<include name="Preset1_Apply">
@@ -1652,8 +1652,8 @@
 					<label2>31071</label2>
 					<property name="id">custom</property>
 					<onclick>Skin.SetString($INFO[skin.string(custom_master)],favs)</onclick>
-					<onclick condition="!System.HasAddon(script.favourites)">ActivateWindow(Programs,Addons,return)</onclick>
-					<onclick condition="System.HasAddon(script.favourites)">RunScript(script.favourites,property=$INFO[Container(9000).ListItem.Property(name)])</onclick>
+					<onclick condition="!System.AddonIsEnabled(script.favourites)">ActivateWindow(Programs,Addons,return)</onclick>
+					<onclick condition="System.AddonIsEnabled(script.favourites)">RunScript(script.favourites,property=$INFO[Container(9000).ListItem.Property(name)])</onclick>
 					<include>DefaultReset</include>
 				</item>
 				<item>
@@ -1700,7 +1700,7 @@
 					<onclick>Skin.SetString($INFO[skin.string(custom_master)],addons)</onclick>
 					<onclick>Skin.SetString($INFO[Skin.String(custom_path)],script.games.rom.collection.browser)</onclick>
 					<include>DefaultReset</include>
-					<visible>System.HasAddon(script.games.rom.collection.browser)</visible>
+					<visible>System.AddonIsEnabled(script.games.rom.collection.browser)</visible>
 				</item>
 				<item>
 					<label>31003</label>
@@ -1739,7 +1739,7 @@
 					<label2>$LOCALIZE[31003]-$LOCALIZE[31066]</label2>
 					<property name="id">movies</property>
 					<onclick>Skin.SetString($INFO[skin.string(custom_master)],moviecinema)</onclick>
-					<onclick condition="System.HasAddon(script.cinema.experience)">Skin.SetString($INFO[skin.string(custom_action)],RunScript(script.cinema.experience,movietitles))</onclick>
+					<onclick condition="System.AddonIsEnabled(script.cinema.experience)">Skin.SetString($INFO[skin.string(custom_action)],RunScript(script.cinema.experience,movietitles))</onclick>
 					<include>DefaultReset</include>
 				</item>
 				<item>
@@ -5011,8 +5011,8 @@
 				<!-- Criar ou atualizar Colecao -->
 				<include>CustomMenuButton</include>
 				<label>$VAR[value_addon4]</label>
-				<onclick condition="!System.HasAddon(script.artworkorganizer)">ActivateWindow(Programs,Addons,return)</onclick>
-				<onclick condition="System.HasAddon(script.artworkorganizer)">RunScript(script.artworkorganizer)</onclick>
+				<onclick condition="!System.AddonIsEnabled(script.artworkorganizer)">ActivateWindow(Programs,Addons,return)</onclick>
+				<onclick condition="System.AddonIsEnabled(script.artworkorganizer)">RunScript(script.artworkorganizer)</onclick>
 				<visible>String.IsEqual(Container(9000).ListItem.Property(id),movies) + Skin.HasSetting(randommoviebg) | String.IsEqual(Container(9000).ListItem.Property(id),tvshows) + Skin.HasSetting(randomtvshowbg) | String.IsEqual(Container(9000).ListItem.Property(id),concerts) + Skin.HasSetting(randomconcertbg) | String.IsEqual(Container(9000).ListItem.Property(id),music) + Skin.HasSetting(randommusicbg)</visible>
 			</control>
 			<control type="button" id="127">
