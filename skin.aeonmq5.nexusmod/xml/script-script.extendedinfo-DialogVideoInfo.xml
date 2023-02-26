@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Matrix 11.3.0 -->
-<!--  Nexus 12.3.0 -->
+<!--  Nexus 12.3.0/12.5.0 -->
 <window>
 	<defaultcontrol always="true">4000</defaultcontrol>
 	<controls>
@@ -272,7 +272,7 @@
 								<radiowidth>44</radiowidth>
 								<radioheight>44</radioheight>
 								<visible>!String.IsEmpty(Window.Property(tmdb_logged_in))</visible>
-								<visible>!String.IsEqual(Window.Property(type),season) + !String.IsEqual(Window.Property(type),episode)</visible>
+								<visible>!String.IsEqual(Window.Property(type),season) + !String.IsEqual(Window.Property(type),episode) + !String.IsEqual(Window.Property(type),tvshow)</visible>
 							</control>
 							<control type="radiobutton" id="6002">
 								<label>$ADDON[script.extendedinfo 32130]</label>  <!-- show lists -->
@@ -711,7 +711,7 @@
 											<font>Font_14A</font>
 											<textcolor>FFFAFAFA</textcolor>
 											<animation effect="fade" start="100" end="70" time="0" condition="Control.HasFocus(1000)">Conditional</animation>
-											<label>$INFO[ListItem.Label]$INFO[ListItem.Property(character),[COLOR FF999999][CR] $LOCALIZE[20347] ,[/COLOR]]</label>
+											<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]$INFO[ListItem.Property(character),[COLOR FF999999][CR] $LOCALIZE[20347] ,[/COLOR]]</label>
 										</control>
 									</control>
 								</control>
@@ -753,7 +753,7 @@
 											<align>center</align>
 											<textcolor>FFFAFAFA</textcolor>
 											<font>Font_14A</font>
-											<label>$INFO[ListItem.Label]$INFO[ListItem.Property(character),[COLOR FF999999][CR] $LOCALIZE[20347] ,[/COLOR]]</label>
+											<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]$INFO[ListItem.Property(character),[COLOR FF999999][CR] $LOCALIZE[20347] ,[/COLOR]]</label>
 											<autoscroll delay="5000" time="2000" repeat="8001">true</autoscroll>
 										</control>
 									</control>
@@ -1171,7 +1171,7 @@
 					<control type="group" id="50113">  <!--  sets key sets 250  -->
 						<height>535</height>
 						<visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
-						<control type="label">
+						<control type="label">	<!-- label "seasons" if no set -->
 							<left>25</left>
 							<top>6</top>
 							<width>1900</width>
@@ -1228,7 +1228,8 @@
 											<top>10</top>
 											<width>224</width>
 											<height>325</height>
-											<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
+											<!--<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>-->
+											<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
 											<aspectratio aligny="center">scale</aspectratio>
 										</control>
 										<control type="image">
@@ -1272,7 +1273,7 @@
 											<width>228</width>
 											<height>140</height>
 											<textcolor>FFFAFAFA</textcolor>
-											<top>340</top>
+											<top>360</top>
 											<align>center</align>
 											<font>Font_14A</font>
 											<label>$INFO[ListItem.Label]</label>
@@ -1305,7 +1306,7 @@
 											<top>10</top>
 											<width>224</width>
 											<height>325</height>
-											<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
+											<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
 											<aspectratio aligny="center">scale</aspectratio>
 											<fadetime>0</fadetime>
 										</control>
@@ -1341,7 +1342,7 @@
 											<width>228</width>
 											<height>140</height>
 											<textcolor>FFFAFAFA</textcolor>
-											<top>355</top>
+											<top>360</top>
 											<align>center</align>
 											<font>Font_14A</font>
 											<label>$INFO[ListItem.Label]</label>
@@ -2637,7 +2638,7 @@
 										<width>323</width>
 										<height>100</height>
 										<textcolor>FFFAFAFA</textcolor>
-										<top>227</top>
+										<top>245</top> <!-- 227 -->
 										<align>center</align>
 										<font>Font_14A</font>
 										<label>$INFO[ListItem.Episode,[B],[/B]]$INFO[ListItem.Label,[B]:[/B] ]$INFO[ListItem.Premiered,[CR][COLOR FFAAAAAA],[/COLOR]]</label>
@@ -2676,7 +2677,7 @@
 										<left>0</left>
 										<width>323</width>
 										<height>100</height>
-										<top>227</top>
+										<top>245</top>
 										<textcolor>FFFAFAFA</textcolor>
 										<align>center</align>
 										<font>Font_14A</font>
@@ -2768,7 +2769,7 @@
 								<height>67</height>
 								<visible>!String.IsEqual(Window.Property(type),Season) + !String.IsEqual(Window.Property(type),episode)</visible>
 								<aspectratio align="center">keep</aspectratio>
-								<texture colordiffuse="FFFAFAFA" fallback="flags/mpaa/MPAA_NR_Certificate_US.png">$INFO[Window.Property(mpaa),flags/rating/,.png]</texture>
+								<texture colordiffuse="FFFAFAFA" fallback="flags/mpaa/MPAA_NR_Certificate_US.png">$INFO[Window.Property(mpaa),flags/mpaa/,.png]</texture>
 							</control>
 							<control type="group">	<!-- rating and votes -->
 								<left>0</left>
