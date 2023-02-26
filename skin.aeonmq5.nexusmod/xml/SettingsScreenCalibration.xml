@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 -->
 <!--  Krypton 9.2.1 -->
+<!-- Nexus 12.5.0 -->
 <window>
 	<defaultcontrol>8</defaultcontrol>
 	<controls>
@@ -17,6 +18,12 @@
 			<top>0</top>
 			<width>192</width>
 			<height>192</height>
+			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
+				<eventconfig type="up" />
+				<eventconfig type="down" />
+				<eventconfig type="left" />
+				<eventconfig type="right" />
+			</movingspeed>
 			<texturefocus>calibrate_topleft_focus.png</texturefocus>
 			<texturenofocus>calibrate_topleft.png</texturenofocus>
 		</control>
@@ -26,6 +33,12 @@
 			<top>750</top>
 			<width>192</width>
 			<height>192</height>
+			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
+				<eventconfig type="up" />
+				<eventconfig type="down" />
+				<eventconfig type="left" />
+				<eventconfig type="right" />
+			</movingspeed>
 			<texturefocus>calibrate_bottomright_focus.png</texturefocus>
 			<texturenofocus>calibrate_bottomright.png</texturenofocus>
 		</control>
@@ -35,8 +48,12 @@
 			<top>750</top>
 			<width>768</width>
 			<height>192</height>
-			<texturefocus>calibrate_subtitles_focus.png</texturefocus>
-			<texturenofocus>calibrate_subtitles.png</texturenofocus>
+			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
+				<eventconfig type="up" />
+				<eventconfig type="down" />
+			</movingspeed>
+			<texturefocus>calibrate_subtitles_focusv2.png</texturefocus>
+			<texturenofocus>calibrate_subtitlesv2.png</texturenofocus>
 		</control>
 		<control type="resize" id="11">
 			<description>pixel aspect ratio box</description>
@@ -44,14 +61,37 @@
 			<posy>405</posy>
 			<width>432</width>
 			<height>432</height>
+			<movingspeed acceleration="140" maxvelocity="300" resettimeout="180" delta="1">
+				<eventconfig type="left" />
+				<eventconfig type="right" />
+			</movingspeed>
 			<texturefocus>calibrate_pixelratio_focus.png</texturefocus>
 			<texturenofocus>calibrate_pixelratio.png</texturenofocus>
+		</control>
+		<control type="resize" id="12">
+			<description>reset calibration</description>
+			<posx>0</posx>
+			<posy>800</posy>
+			<width>256</width>
+			<height>256</height>
+			<texturefocus>calibrate_reset_focus.png</texturefocus>
+			<texturenofocus>calibrate_reset.png</texturenofocus>
+		</control>
+		<control type="label">
+			<description>window title</description>
+			<posx>0</posx>
+			<posy>30</posy>
+			<width>100%</width>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[214]</label>
+			<font>Font32</font>
 		</control>
 		<control type="group">
 			<posx>360</posx>
 			<posy>90</posy>
 			<control type="label" id="2">
-				<description>coordinates label</description>
+				<description>resolution info</description>
 				<posx>30</posx>
 				<posy>15</posy>
 				<width>1125</width>
@@ -60,13 +100,22 @@
 				<align>center</align>
 			</control>
 			<control type="label" id="3">
-				<description>help information</description>
+				<description>control description and help</description>
 				<posx>30</posx>
 				<posy>60</posy>
 				<width>1125</width>
 				<label></label>
 				<font>Font_18A</font>
 				<align>center</align>
+			</control>
+			<control type="label" id="4">
+				<description>calibration value</description>
+				<posx>30</posx>
+				<posy>130</posy>
+				<width>1125</width>
+				<align>center</align>
+				<label></label>
+				<font>Font_18A</font>
 			</control>
 		</control>
 	</controls>
