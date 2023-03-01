@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Matrox 11.0.4 -->
-<!-- Nexus 12.3.0/12.4.0 -->
+<!-- Nexus 12.3.0/12.4.0/12.5.0 -->
 <window id="1112" type="dialog" modality="modal">
 	<defaultcontrol always="true">11121</defaultcontrol>
 	<visible>Window.IsVisible(movieinformation) + Integer.IsEqual(Window(home).Property(hitclicked),1)</visible>
@@ -84,6 +84,15 @@
 					<textcolor>FFFFFAF0</textcolor>
 					<font>Font_18A</font>
 					<visible>!String.IsEmpty(ListItem.Premiered)</visible>
+					<!-- <autoscroll delay="3000" time="2000" repeat="3000">!Skin.HasSetting(noallowscroll)</autoscroll> -->
+				</control>
+				<control type="textbox">
+					<width>1300</width>
+					<height>60</height>
+					<label>[COLOR=$VAR[value_headercolor]]$LOCALIZE[570]:  [/COLOR]$INFO[ListItem.DateAdded]</label>
+					<textcolor>FFFFFAF0</textcolor>
+					<font>Font_18A</font>
+					<visible>!String.IsEmpty(ListItem.DateAdded)</visible>
 					<!-- <autoscroll delay="3000" time="2000" repeat="3000">!Skin.HasSetting(noallowscroll)</autoscroll> -->
 				</control>
 				<control type="textbox">
