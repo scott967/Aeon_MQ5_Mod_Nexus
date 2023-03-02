@@ -7,7 +7,7 @@
 	<controls>
 		<control type="group">	<!-- main group -->
 			<include>Animation_Window</include>
-			<control type="image">
+			<!-- <control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1920</width>
@@ -15,6 +15,25 @@
 				<texture>black.png</texture>
 				<colordiffuse>D0FFFFFF</colordiffuse>
 				<include>Animation_Fade</include>
+			</control> -->
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1920</width>
+				<height>1080</height>
+				<texture fallback="black.png">$INFO[Window.Property(ImageFilter)]</texture>
+				<include>Animation_VisibleChange</include>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1920</width>
+				<height>1080</height>
+				<animation effect="fade" start="100" end="60" time="0" condition="true">Conditional</animation>
+				<aspectratio align="center">scale</aspectratio>
+				<texture colordiffuse="$INFO[Window(home).Property(ImageColor)]">diffuseoverlay.jpg</texture>
+				<!-- <colordiffuse>D0FFFFFF</colordiffuse> -->
+				<!-- <include>Animation_VisibleChange</include> -->
 			</control>
 			<control type="group">	<!-- left side -->
 				<control type="image">
