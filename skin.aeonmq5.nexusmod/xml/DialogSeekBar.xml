@@ -3,12 +3,12 @@
 <!-- Krypton 9.1.19/9.2.1 window IDs/9.2.3-->
 <!-- Leia 10.3.0/10.4.010.5.0/10.6.1 -->
 <!-- Matrix 11.0.2/11.0.3/11.0.4/11.1.1/11.2.0 -->
-<!-- Nexus 12.3.0/12.4.0 -->
+<!-- Nexus 12.3.0/12.4.0/12.5.0 -->
 <window>
 	<defaultcontrol>23</defaultcontrol>
 	<visible>Window.IsActive(fullscreenvideo) + ![Window.IsActive(videoosd) | Window.IsActive(fullscreeninfo) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Window.IsActive(SubtitleSearch)]</visible>
 	<!-- <visible>Window.IsActive(fullscreenvideo) + ![Window.IsActive(videoosd) | [Skin.HasSetting(nopausedlabel) + [Player.FrameAdvance | Player.Paused]] | Window.IsActive(fullscreeninfo) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Window.IsActive(SubtitleSearch)]</visible> -->
-	<visible>Player.Seeking | Player.HasPerformedSeek(2) | Player.Paused | Player.Forwarding | Player.Rewinding | Player.IsTempo</visible>
+	<visible>[Player.Seeking + !Skin.HasSetting(seek_time_0)] | $EXP[SeekBarTime] | Player.Paused | Player.Forwarding | Player.Rewinding | Player.IsTempo</visible>
 	<controls>
 		<control type="group">				<!-- Upper bar furniture full and partial -->
 			<animation effect="slide" time="400" start="0,-375" end="0,0" easing="inout" tween="cubic">WindowOpen</animation>
@@ -96,10 +96,10 @@
 				<visible>![VideoPlayer.Content(LiveTV) | PVR.IsPlayingRecording]</visible>
 			</control>
 		</control>
-		<control type="group">				<!-- Lower bar all furniture except hidden if tempo changes -->
+		<control type="group">				<!-- Lower bar all furniture except hidden if tempo changes show for seek_time -->
 			<animation effect="slide" time="400" start="0,1200" end="0,0" easing="out" tween="cubic">WindowOpen</animation>
 			<animation effect="slide" time="400" start="0,0" end="0,1200" easing="in" tween="cubic">WindowClose</animation>
-			<visible>!Player.IsTempo + [Player.Seeking | Player.HasPerformedSeek(2)]</visible>
+			<visible>!Player.IsTempo + !Skin.HasSetting(seek_time_0) + [Player.Seeking | $EXP[SeekBarTime]]</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>825</posy>
@@ -108,7 +108,7 @@
 				<texture>shadow_mask.png</texture>
 				<colordiffuse>E4000000</colordiffuse>
 			</control>
-			<control type="group">	<!-- bottom left bar group slide up for ffwd -->
+			<control type="group">	<!-- bottom left bar progress group slide up for ffwd -->
 				<animation effect="slide" start="0,0" end="0,-38" time="300" tween="cubic" easing="out" condition="Player.Forwarding">Conditional</animation>
 				<control type="progress" id="23">
 					<posx>30</posx>
@@ -416,9 +416,8 @@
 				</control>
 			</control>
 		</control>
-		<!-- Seek Widget + support for player tempo-->
-		<control type="group">
-			<control type="group">
+		<control type="group">	<!-- Seek Widget + support for player tempo-->
+			<control type="group">	<!-- forwarding -->
 				<posx>-750</posx>
 				<posy>1040</posy>
 				<width>748</width>
@@ -440,7 +439,7 @@
 					<label>$VAR[value_seekforward]</label>
 				</control>
 			</control>
-			<control type="group">
+			<control type="group">	<!-- tempo -->
 				<posx>-750</posx>
 				<posy>1040</posy>
 				<width>748</width>
@@ -510,7 +509,7 @@
 					<label>$VAR[value_seekforward]</label>
 				</control>
 			</control>
-			<control type="group">
+			<control type="group">	<!-- reversing -->
 				<posx>1920</posx>
 				<posy>1040</posy>
 				<width>748</width>
@@ -533,7 +532,7 @@
 				</control>
 			</control>
 		</control>
-		<control type="label">
+		<control type="label">	<!-- paused label -->
 			<posx>-480</posx>
 			<posy>270</posy>
 			<width>2880</width>

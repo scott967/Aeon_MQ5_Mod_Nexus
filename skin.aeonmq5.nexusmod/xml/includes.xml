@@ -5,7 +5,7 @@
 <!-- Krypton 9.1.15/9.1.16/9.1.17/9.1.18/9.1.19/9.2.1 window IDs/9.2.2/9.2.3 -->
 <!-- Leia 10.2.7/10.2.8/10.3.0/10.4.0/10.5.0/10.5.1/10.5.2/10.6.0/10.6.1/10.6.2/10.6.3 -->
 <!-- Matrix 11.0.1/11.0.2/11.0.4/11.0.5/11.1.1/11.2.0/11.3.0 -->
-<!-- Nexus 12.3.0/12.4.0 favourites -->
+<!-- Nexus 12.3.0/12.4.0 favourites/ 12.5.0 -->
 <includes>
 	<include file="Defaults.xml" />
 	<include file="IncludesVariables.xml" />
@@ -722,6 +722,7 @@
 				<onfocus>Skin.SetBool(visanimationradio_panscan)</onfocus>
 				<onfocus>Skin.SetBool(darkbar)</onfocus>
 				<onfocus>Skin.SetBool(ontvtunes)</onfocus>
+				<onfocus>Skin.SetBool(seek_time_2)</onfocus>
 				<onfocus>AlarmClock(nextstep,SetFocus(901),0:03,true)</onfocus>
 			</control>
 			<control type="button" id="901">
