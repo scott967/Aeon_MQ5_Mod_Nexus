@@ -88,7 +88,7 @@
 					<onright>Dialog.Close(1117)</onright>
 					<onclick>Dialog.Close(1117)</onclick>
 					<onclick>RunScript(script.cinemavision,movieid=$INFO[skin.string(custom_id)])</onclick>
-					<label>Watch with CinemaVision</label>
+					<label>$LOCALIZE[21480] $INFO[System.AddonTitle(script.cinemavision)</label>
 					<!-- <visible>System.HasAddon(script.cinemavision)</visible> -->
 					<visible>false</visible>
 				</control>

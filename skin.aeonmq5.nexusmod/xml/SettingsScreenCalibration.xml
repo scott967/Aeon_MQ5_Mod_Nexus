@@ -85,7 +85,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<label>$LOCALIZE[214]</label>
-			<font>Font32</font>
+			<font>Font_32</font>
 		</control>
 		<control type="group">
 			<posx>360</posx>
