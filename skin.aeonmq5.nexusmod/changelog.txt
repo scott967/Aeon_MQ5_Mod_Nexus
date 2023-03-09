@@ -1,3 +1,10 @@
+[B][COLOR=FFFF8C00]BUILD 12.5.0 - RELEASE DATE 02/28/2023[/COLOR][/B]
+New:  Implement new Nexus screen calibration controls including "reset"
+New:  Implement Nexus display after seek as a variable skin setting of 0 to 5 secs
+Improved:  Use "AddonIsEnabled" so that installed but disabled addons are not treated as available
+Improved:  Skin windows for extendedinfo script improved for script.extendedinfo ver 6.0.5
+Improved:  The custom MPAA certification window (reach from video info dialog) includes "date added"
+
 [B][COLOR=FFFF8C00]BUILD 12.4.0 - RELEASE DATE 11/14/2022[/COLOR][/B]
 Improved:  Library Editor can be launched for sets and MVs
 Improved:  New Nexus timer for displaying SeekBar
