@@ -5,7 +5,7 @@
 <!-- Krypton 9.1.16/9.1.19/9.2.1 windowIDs/9.2.2 -->
 <!-- Leia 10.3.0/10.5.1 /10.6.0/10.6.2-->
 <!-- Matrix 11.0.1/11.0.4/11.0.5/11.1.1/11.2.0/11.3.0 -->
-<!-- Nexus 12.2.0/12.3.0 -->
+<!-- Nexus 12.2.0/12.3.0/12.5.0 -->
 <!-- Includes:  Quickfix InvisibleButton Playlists HomeBG Animation_Fade LiveBG Animation_Window HomeRSS Animation_HomeGlass Animation_CDart  Animation_HomeNowPlaying Animation_Widgets Animation_HomeGlass2 Animation_HomeFade -->
 <!-- NextTracksContent Animation_HomePanel HomeFlagSeparator HomeFlagLabel mf_contentmovies -->
 <!-- Main Menu fixedlist/wraplist 9000 mainmenu_content (layout) and menu_content (content) in IncludesMainMenu -->
@@ -28,7 +28,7 @@ Group 602: Widgets
 	<onload condition="Skin.String(custom_wxicons.path)">SetProperty(current_wxicon_path,$INFO[Skin.String(custom_wxicons.path)],home)</onload>
 	<onload condition="!Skin.String(custom_wxicons.path)">SetProperty(current_wxicon_path,resource://resource.images.weathericons.default/,home)</onload>
 	<!-- copied from startup.xml -->
-	<onload condition="System.HasAddon(script.skin.info.service) + !String.IsEqual(Window.Property(skin.aeonmq5.nexusmod.status),run)">RunScript(script.skin.info.service)</onload>
+	<onload condition="System.AddonIsEnabled(script.skin.info.service) + !String.IsEqual(Window.Property(skin.aeonmq5.nexusmod.status),run)">RunScript(script.skin.info.service)</onload>
 	<onload condition="Skin.HasSetting(custommode) + !String.IsEqual(Window.Property(skin.aeonmq5.nexusmod.status),run)">Skin.Reset(custommode)</onload>
 	<onload condition="Skin.HasSetting(submode) + !String.IsEqual(Window.Property(skin.aeonmq5.nexusmod.status),run)">Skin.Reset(submode)</onload>
 	<onload condition="Skin.HasSetting(startplay) + !String.IsEqual(Window.Property(skin.aeonmq5.nexusmod.status),run)">PlayMedia($INFO[Skin.String(startupplaylist)])</onload>
@@ -36,14 +36,14 @@ Group 602: Widgets
 	<onload>SetProperty(skin.aeonmq5.nexusmod.status,run,home)</onload>
 	<!-- default weather icons -->
 	<onload condition="Skin.HasSetting(custom_wxicons.multi)">SetProperty(current_wxicon_multi,true,home)</onload>
-	<onload condition="Player.HasAudio + System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
-	<onload condition="System.HasAddon(script.favourites) + ![String.IsEmpty(skin.string(favouriteswidget)) | Skin.HasSetting(nofavouriteswidget)]">RunScript(script.favourites)</onload>
-	<onload condition="Skin.HasSetting(rcbgames) | [!String.IsEqual(Window.Property(skin.aeonmq5.nexusmod.status),run) + System.HasAddon(script.games.rom.collection.browser) + ![String.IsEmpty(skin.string(gameswidget)) | Skin.HasSetting(nogameswidget)]]">RunScript(script.games.rom.collection.browser,limit=12)</onload>
+	<onload condition="Player.HasAudio + System.AddonIsEnabled(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
+	<onload condition="System.AddonIsEnabled(script.favourites) + ![String.IsEmpty(skin.string(favouriteswidget)) | Skin.HasSetting(nofavouriteswidget)]">RunScript(script.favourites)</onload>
+	<onload condition="Skin.HasSetting(rcbgames) | [!String.IsEqual(Window.Property(skin.aeonmq5.nexusmod.status),run) + System.AddonIsEnabled(script.games.rom.collection.browser) + ![String.IsEmpty(skin.string(gameswidget)) | Skin.HasSetting(nogameswidget)]]">RunScript(script.games.rom.collection.browser,limit=12)</onload>
 	<onload condition="Skin.HasSetting(rcbgames)">Skin.Reset(rcbgames)</onload>
 	<onload>Skin.Reset(playlists)</onload>
 	<onunload condition="String.Contains(Container(9000).ListItem.Property(id),vpl) | String.Contains(Container(9000).ListItem.Property(id),apl)">Skin.SetString(playlists,$INFO[Container(9000).ListItem.Property(id)])</onunload>
 	<!-- run script.randomandlastitems for any menu playlists with active widgets -->
-	<include condition="System.HasAddon(script.randomandlastitems) + [String.Contains(skin.string(menu1.master),vpl) + !Skin.HasSetting(novpl1widget) | String.Contains(skin.string(menu2.master),vpl) + !Skin.HasSetting(novpl2widget) | String.Contains(skin.string(menu3.master),vpl) + !Skin.HasSetting(novpl3widget) | String.Contains(skin.string(menu4.master),vpl) + !Skin.HasSetting(novpl4widget) | String.Contains(skin.string(menu5.master),vpl) + !Skin.HasSetting(novpl5widget) | String.Contains(skin.string(menu6.master),vpl) + !Skin.HasSetting(novpl6widget) | String.Contains(skin.string(menu7.master),vpl) + !Skin.HasSetting(novpl7widget) | String.Contains(skin.string(menu8.master),vpl) + !Skin.HasSetting(novpl8widget) | String.Contains(skin.string(menu9.master),vpl) + !Skin.HasSetting(novpl9widget) | String.Contains(skin.string(menu10.master),vpl) + !Skin.HasSetting(novpl10widget) | ubString(skin.string(menu11.master),vpl) + !Skin.HasSetting(novpl11widget) | String.Contains(skin.string(menu12.master),vpl) + !Skin.HasSetting(novpl12widget) | String.Contains(skin.string(menu13.master),vpl) + !Skin.HasSetting(novpl13widget) | String.Contains(skin.string(menu14.master),vpl) + !Skin.HasSetting(novpl14widget) | String.Contains(skin.string(menu15.master),vpl) + !Skin.HasSetting(novpl15widget) | String.Contains(skin.string(menu16.master),vpl) + !Skin.HasSetting(novpl16widget) | String.Contains(skin.string(menu17.master),vpl) + !Skin.HasSetting(novpl17widget) | String.Contains(skin.string(menu18.master),vpl) + !Skin.HasSetting(novpl18widget) | String.Contains(skin.string(menu19.master),vpl) + !Skin.HasSetting(novpl19widget) | String.Contains(skin.string(menu20.master),vpl) + !Skin.HasSetting(novpl20widget) | String.Contains(skin.string(menu1.master),apl) + !Skin.HasSetting(noapl1widget) | String.Contains(skin.string(menu2.master),apl) + !Skin.HasSetting(noapl2widget) | String.Contains(skin.string(menu3.master),apl) + !Skin.HasSetting(noapl3widget) | String.Contains(skin.string(menu4.master),apl) + !Skin.HasSetting(noapl4widget) | String.Contains(skin.string(menu5.master),apl) + !Skin.HasSetting(noapl5widget) | String.Contains(skin.string(menu6.master),apl) + !Skin.HasSetting(noapl6widget) | String.Contains(skin.string(menu7.master),apl) + !Skin.HasSetting(noapl7widget) | String.Contains(skin.string(menu8.master),apl) + !Skin.HasSetting(noapl8widget) | String.Contains(skin.string(menu9.master),apl) + !Skin.HasSetting(noapl9widget) | String.Contains(skin.string(menu10.master),apl) + !Skin.HasSetting(noapl10widget) | ubString(skin.string(menu11.master),apl) + !Skin.HasSetting(noapl11widget) | String.Contains(skin.string(menu12.master),apl) + !Skin.HasSetting(noapl12widget) | String.Contains(skin.string(menu13.master),apl) + !Skin.HasSetting(noapl13widget) | String.Contains(skin.string(menu14.master),apl) + !Skin.HasSetting(noapl14widget) | String.Contains(skin.string(menu15.master),apl) + !Skin.HasSetting(noapl15widget) | String.Contains(skin.string(menu16.master),apl) + !Skin.HasSetting(noapl16widget) | String.Contains(skin.string(menu17.master),apl) + !Skin.HasSetting(noapl17widget) | String.Contains(skin.string(menu18.master),apl) + !Skin.HasSetting(noapl18widget) | String.Contains(skin.string(menu19.master),apl) + !Skin.HasSetting(noapl19widget) | String.Contains(skin.string(menu20.master),apl) + !Skin.HasSetting(noapl20widget)]">Playlists</include>
+	<include condition="System.AddonIsEnabled(script.randomandlastitems) + [String.Contains(skin.string(menu1.master),vpl) + !Skin.HasSetting(novpl1widget) | String.Contains(skin.string(menu2.master),vpl) + !Skin.HasSetting(novpl2widget) | String.Contains(skin.string(menu3.master),vpl) + !Skin.HasSetting(novpl3widget) | String.Contains(skin.string(menu4.master),vpl) + !Skin.HasSetting(novpl4widget) | String.Contains(skin.string(menu5.master),vpl) + !Skin.HasSetting(novpl5widget) | String.Contains(skin.string(menu6.master),vpl) + !Skin.HasSetting(novpl6widget) | String.Contains(skin.string(menu7.master),vpl) + !Skin.HasSetting(novpl7widget) | String.Contains(skin.string(menu8.master),vpl) + !Skin.HasSetting(novpl8widget) | String.Contains(skin.string(menu9.master),vpl) + !Skin.HasSetting(novpl9widget) | String.Contains(skin.string(menu10.master),vpl) + !Skin.HasSetting(novpl10widget) | ubString(skin.string(menu11.master),vpl) + !Skin.HasSetting(novpl11widget) | String.Contains(skin.string(menu12.master),vpl) + !Skin.HasSetting(novpl12widget) | String.Contains(skin.string(menu13.master),vpl) + !Skin.HasSetting(novpl13widget) | String.Contains(skin.string(menu14.master),vpl) + !Skin.HasSetting(novpl14widget) | String.Contains(skin.string(menu15.master),vpl) + !Skin.HasSetting(novpl15widget) | String.Contains(skin.string(menu16.master),vpl) + !Skin.HasSetting(novpl16widget) | String.Contains(skin.string(menu17.master),vpl) + !Skin.HasSetting(novpl17widget) | String.Contains(skin.string(menu18.master),vpl) + !Skin.HasSetting(novpl18widget) | String.Contains(skin.string(menu19.master),vpl) + !Skin.HasSetting(novpl19widget) | String.Contains(skin.string(menu20.master),vpl) + !Skin.HasSetting(novpl20widget) | String.Contains(skin.string(menu1.master),apl) + !Skin.HasSetting(noapl1widget) | String.Contains(skin.string(menu2.master),apl) + !Skin.HasSetting(noapl2widget) | String.Contains(skin.string(menu3.master),apl) + !Skin.HasSetting(noapl3widget) | String.Contains(skin.string(menu4.master),apl) + !Skin.HasSetting(noapl4widget) | String.Contains(skin.string(menu5.master),apl) + !Skin.HasSetting(noapl5widget) | String.Contains(skin.string(menu6.master),apl) + !Skin.HasSetting(noapl6widget) | String.Contains(skin.string(menu7.master),apl) + !Skin.HasSetting(noapl7widget) | String.Contains(skin.string(menu8.master),apl) + !Skin.HasSetting(noapl8widget) | String.Contains(skin.string(menu9.master),apl) + !Skin.HasSetting(noapl9widget) | String.Contains(skin.string(menu10.master),apl) + !Skin.HasSetting(noapl10widget) | ubString(skin.string(menu11.master),apl) + !Skin.HasSetting(noapl11widget) | String.Contains(skin.string(menu12.master),apl) + !Skin.HasSetting(noapl12widget) | String.Contains(skin.string(menu13.master),apl) + !Skin.HasSetting(noapl13widget) | String.Contains(skin.string(menu14.master),apl) + !Skin.HasSetting(noapl14widget) | String.Contains(skin.string(menu15.master),apl) + !Skin.HasSetting(noapl15widget) | String.Contains(skin.string(menu16.master),apl) + !Skin.HasSetting(noapl16widget) | String.Contains(skin.string(menu17.master),apl) + !Skin.HasSetting(noapl17widget) | String.Contains(skin.string(menu18.master),apl) + !Skin.HasSetting(noapl18widget) | String.Contains(skin.string(menu19.master),apl) + !Skin.HasSetting(noapl19widget) | String.Contains(skin.string(menu20.master),apl) + !Skin.HasSetting(noapl20widget)]">Playlists</include>
 	<controls>
 		<control type="button" id="8000">
 			<include>InvisibleButton</include>
@@ -61,7 +61,7 @@ Group 602: Widgets
 				<posy>-500</posy>
 				<height>400</height>
 				<width>50</width>
-				<visible>Player.HasAudio + !PVR.IsPlayingRadio + Skin.HasSetting(customlogo) +  !String.IsEmpty(Skin.String(CustomMusicLogoPath))</visible>
+				<visible>Player.HasAudio + !PVR.IsPlayingRadio + Skin.HasSetting(customlogo) + !String.IsEmpty(Skin.String(CustomMusicLogoPath))</visible>
 				<itemlayout/>
 				<focusedlayout/>
 				<content target="filemanager">$INFO[Skin.String(CustomMusicLogoPath)]$INFO[MusicPlayer.Artist]\extrafanart\</content>
@@ -1014,51 +1014,51 @@ Group 602: Widgets
 				<include condition="Library.HasContent(TVShows) + ![String.IsEmpty(skin.string(tvshowswidget)) | Skin.HasSetting(notvshowswidget)]">mf_contenttvshows</include>
 				<include condition="Library.HasContent(MusicVideos) + ![String.IsEmpty(skin.string(concertswidget)) |  Skin.HasSetting(noconcertswidget)]">mf_contentconcerts</include>
 				<include condition="Library.HasContent(Music) + ![String.IsEmpty(skin.string(musicwidget)) | Skin.HasSetting(nomusicwidget)]">mf_contentmusic</include>
-				<include condition="System.HasAddon(script.favourites) + ![String.IsEmpty(skin.string(favouriteswidget)) | Skin.HasSetting(nofavouriteswidget)]">mf_contentfavourites</include>
+				<include condition="System.AddonIsEnabled(script.favourites) + ![String.IsEmpty(skin.string(favouriteswidget)) | Skin.HasSetting(nofavouriteswidget)]">mf_contentfavourites</include>
 				<include condition="!String.IsEmpty(skin.string(mymenu1widget))">mf_contentmymenu1</include>
 				<include condition="!String.IsEmpty(skin.string(mymenu2widget))">mf_contentmymenu2</include>
 				<include condition="![String.IsEmpty(skin.string(programswidget)) | Skin.HasSetting(noprogramswidget)]">mf_contentprograms</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu1.master),vpl) + !Skin.HasSetting(novpl1widget)">mf_contentvpl1</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu2.master),vpl) + !Skin.HasSetting(novpl2widget)">mf_contentvpl2</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu3.master),vpl) + !Skin.HasSetting(novpl3widget)">mf_contentvpl3</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu4.master),vpl) + !Skin.HasSetting(novpl4widget)">mf_contentvpl4</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu5.master),vpl) + !Skin.HasSetting(novpl5widget)">mf_contentvpl5</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu6.master),vpl) + !Skin.HasSetting(novpl6widget)">mf_contentvpl6</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu7.master),vpl) + !Skin.HasSetting(novpl7widget)">mf_contentvpl7</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu8.master),vpl) + !Skin.HasSetting(novpl8widget)">mf_contentvpl8</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu9.master),vpl) + !Skin.HasSetting(novpl9widget)">mf_contentvpl9</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu10.master),vpl) + !Skin.HasSetting(novpl10widget)">mf_contentvpl10</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu11.master),vpl) + !Skin.HasSetting(novpl11widget)">mf_contentvpl11</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu12.master),vpl) + !Skin.HasSetting(novpl12widget)">mf_contentvpl12</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu13.master),vpl) + !Skin.HasSetting(novpl13widget)">mf_contentvpl13</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu14.master),vpl) + !Skin.HasSetting(novpl14widget)">mf_contentvpl14</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu15.master),vpl) + !Skin.HasSetting(novpl15widget)">mf_contentvpl15</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu16.master),vpl) + !Skin.HasSetting(novpl16widget)">mf_contentvpl16</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu17.master),vpl) + !Skin.HasSetting(novpl17widget)">mf_contentvpl17</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu18.master),vpl) + !Skin.HasSetting(novpl18widget)">mf_contentvpl18</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu19.master),vpl) + !Skin.HasSetting(novpl19widget)">mf_contentvpl19</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu20.master),vpl) + !Skin.HasSetting(novpl20widget)">mf_contentvpl20</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu1.master),apl) + !Skin.HasSetting(noapl1widget)">mf_contentapl1</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu2.master),apl) + !Skin.HasSetting(noapl2widget)">mf_contentapl2</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu3.master),apl) + !Skin.HasSetting(noapl3widget)">mf_contentapl3</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu4.master),apl) + !Skin.HasSetting(noapl4widget)">mf_contentapl4</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu5.master),apl) + !Skin.HasSetting(noapl5widget)">mf_contentapl5</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu6.master),apl) + !Skin.HasSetting(noapl6widget)">mf_contentapl6</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu7.master),apl) + !Skin.HasSetting(noapl7widget)">mf_contentapl7</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu8.master),apl) + !Skin.HasSetting(noapl8widget)">mf_contentapl8</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu9.master),apl) + !Skin.HasSetting(noapl9widget)">mf_contentapl9</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu10.master),apl) + !Skin.HasSetting(noapl10widget)">mf_contentapl10</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu11.master),apl) + !Skin.HasSetting(noapl11widget)">mf_contentapl11</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu12.master),apl) + !Skin.HasSetting(noapl12widget)">mf_contentapl12</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu13.master),apl) + !Skin.HasSetting(noapl13widget)">mf_contentapl13</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu14.master),apl) + !Skin.HasSetting(noapl14widget)">mf_contentapl14</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu15.master),apl) + !Skin.HasSetting(noapl15widget)">mf_contentapl15</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu16.master),apl) + !Skin.HasSetting(noapl16widget)">mf_contentapl16</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu17.master),apl) + !Skin.HasSetting(noapl17widget)">mf_contentapl17</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu18.master),apl) + !Skin.HasSetting(noapl18widget)">mf_contentapl18</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu19.master),apl) + !Skin.HasSetting(noapl19widget)">mf_contentapl19</include>
-				<include condition="System.HasAddon(script.randomandlastitems) + String.Contains(skin.string(menu20.master),apl) + !Skin.HasSetting(noapl20widget)">mf_contentapl20</include>
-				<include condition="System.HasAddon(script.games.rom.collection.browser) + ![String.IsEmpty(skin.string(gameswidget)) | Skin.HasSetting(nogameswidget)]">mf_contentgames</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu1.master),vpl) + !Skin.HasSetting(novpl1widget)">mf_contentvpl1</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu2.master),vpl) + !Skin.HasSetting(novpl2widget)">mf_contentvpl2</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu3.master),vpl) + !Skin.HasSetting(novpl3widget)">mf_contentvpl3</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu4.master),vpl) + !Skin.HasSetting(novpl4widget)">mf_contentvpl4</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu5.master),vpl) + !Skin.HasSetting(novpl5widget)">mf_contentvpl5</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu6.master),vpl) + !Skin.HasSetting(novpl6widget)">mf_contentvpl6</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu7.master),vpl) + !Skin.HasSetting(novpl7widget)">mf_contentvpl7</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu8.master),vpl) + !Skin.HasSetting(novpl8widget)">mf_contentvpl8</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu9.master),vpl) + !Skin.HasSetting(novpl9widget)">mf_contentvpl9</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu10.master),vpl) + !Skin.HasSetting(novpl10widget)">mf_contentvpl10</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu11.master),vpl) + !Skin.HasSetting(novpl11widget)">mf_contentvpl11</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu12.master),vpl) + !Skin.HasSetting(novpl12widget)">mf_contentvpl12</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu13.master),vpl) + !Skin.HasSetting(novpl13widget)">mf_contentvpl13</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu14.master),vpl) + !Skin.HasSetting(novpl14widget)">mf_contentvpl14</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu15.master),vpl) + !Skin.HasSetting(novpl15widget)">mf_contentvpl15</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu16.master),vpl) + !Skin.HasSetting(novpl16widget)">mf_contentvpl16</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu17.master),vpl) + !Skin.HasSetting(novpl17widget)">mf_contentvpl17</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu18.master),vpl) + !Skin.HasSetting(novpl18widget)">mf_contentvpl18</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu19.master),vpl) + !Skin.HasSetting(novpl19widget)">mf_contentvpl19</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu20.master),vpl) + !Skin.HasSetting(novpl20widget)">mf_contentvpl20</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu1.master),apl) + !Skin.HasSetting(noapl1widget)">mf_contentapl1</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu2.master),apl) + !Skin.HasSetting(noapl2widget)">mf_contentapl2</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu3.master),apl) + !Skin.HasSetting(noapl3widget)">mf_contentapl3</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu4.master),apl) + !Skin.HasSetting(noapl4widget)">mf_contentapl4</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu5.master),apl) + !Skin.HasSetting(noapl5widget)">mf_contentapl5</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu6.master),apl) + !Skin.HasSetting(noapl6widget)">mf_contentapl6</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu7.master),apl) + !Skin.HasSetting(noapl7widget)">mf_contentapl7</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu8.master),apl) + !Skin.HasSetting(noapl8widget)">mf_contentapl8</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu9.master),apl) + !Skin.HasSetting(noapl9widget)">mf_contentapl9</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu10.master),apl) + !Skin.HasSetting(noapl10widget)">mf_contentapl10</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu11.master),apl) + !Skin.HasSetting(noapl11widget)">mf_contentapl11</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu12.master),apl) + !Skin.HasSetting(noapl12widget)">mf_contentapl12</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu13.master),apl) + !Skin.HasSetting(noapl13widget)">mf_contentapl13</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu14.master),apl) + !Skin.HasSetting(noapl14widget)">mf_contentapl14</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu15.master),apl) + !Skin.HasSetting(noapl15widget)">mf_contentapl15</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu16.master),apl) + !Skin.HasSetting(noapl16widget)">mf_contentapl16</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu17.master),apl) + !Skin.HasSetting(noapl17widget)">mf_contentapl17</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu18.master),apl) + !Skin.HasSetting(noapl18widget)">mf_contentapl18</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu19.master),apl) + !Skin.HasSetting(noapl19widget)">mf_contentapl19</include>
+				<include condition="System.AddonIsEnabled(script.randomandlastitems) + String.Contains(skin.string(menu20.master),apl) + !Skin.HasSetting(noapl20widget)">mf_contentapl20</include>
+				<include condition="System.AddonIsEnabled(script.games.rom.collection.browser) + ![String.IsEmpty(skin.string(gameswidget)) | Skin.HasSetting(nogameswidget)]">mf_contentgames</include>
 				<include condition="![String.IsEmpty(skin.string(livetvwidget)) | Skin.HasSetting(nonextairedwidget)]">mf_contentnextaired</include>
 				<include condition="!Skin.HasSetting(nosystemwidget)">mf_contentsystem</include>
 				<include condition="![String.IsEmpty(skin.string(weatherwidget)) | Skin.HasSetting(noweatherwidget)]">mf_weather</include>

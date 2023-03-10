@@ -5,7 +5,7 @@
 <!-- Krypton 9.1.16/9.1.19/9.2.1 window IDs/9.2.3 -->
 <!-- Leia 10.3.0/10.4.0/10.6.2 -->
 <!-- Matrix 11.0.4/11.1.1/11.2.0/11.3.0 -->
-<!-- Nexus 12.3.0 -->
+<!-- Nexus 12.3.0/12.5.0 -->
 <!-- 9100 Main selector menu list -->
 <!-- 9001 - general settings -->
 <!-- 9002 Home window settings -->
@@ -157,6 +157,10 @@
 					<onclick>Skin.ToggleSetting(use_folderarts)</onclick>
 					<altclick>Skin.ToggleSetting(use_folderarts)</altclick>
 					<usealttexture>!Skin.HasSetting(use_folderarts)</usealttexture>
+				</control>
+				<control type="button" id="1029">
+					<label>$LOCALIZE[20141] $LOCALIZE[10115] $LOCALIZE[180] - $VAR[SeekTime]</label>
+					<onclick>Skin.SelectBool(180, 12310|seek_time_0, 12311|seek_time_1, 12312|seek_time_2, 12313|seek_time_3, 12314|seek_time_4, 12315|seek_time_5, 12316)</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="9002">				<!-- Home Main Menu  -->
@@ -366,7 +370,7 @@
 					<label>$LOCALIZE[31007]</label>
 					<onclick>Skin.ToggleSetting(nogameswidget)</onclick>
 					<selected>!Skin.HasSetting(nogameswidget)</selected>
-					<visible>!String.IsEmpty(skin.string(gameswidget)) + [System.HasAddon(script.games.rom.collection.browser) + String.Contains(skin.string(games_link),rcb)]</visible>
+					<visible>!String.IsEmpty(skin.string(gameswidget)) + [System.AddonIsEnabled(script.games.rom.collection.browser) + String.Contains(skin.string(games_link),rcb)]</visible>
 				</control>
 				<control type="radiobutton" id="1106">
 					<!-- Clima -->
@@ -705,13 +709,13 @@
 					<!-- Exportar ajustes -->
 					<label>31622</label>
 					<onclick>RunScript(script.toolbox,info=exportskinsettings)</onclick>
-					<visible>System.HasAddon(script.toolbox)</visible>
+					<visible>System.AddonIsEnabled(script.toolbox)</visible>
 				</control>
 				<control type="button" id="1161">
 					<!-- Importar ajustes -->
 					<label>31623</label>
 					<onclick>RunScript(script.toolbox,info=importskinsettings)</onclick>
-					<visible>System.HasAddon(script.toolbox)</visible>
+					<visible>System.AddonIsEnabled(script.toolbox)</visible>
 				</control>
 				<control type="button" id="1164">
 					<!-- Reaplicar ajustes -->

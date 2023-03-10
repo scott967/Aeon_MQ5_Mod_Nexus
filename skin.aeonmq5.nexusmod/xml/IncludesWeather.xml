@@ -4,6 +4,7 @@
 <!-- Krypton 9.1.19/9.2.1 window IDs/9.2.3 -->
 <!-- Leia 10.3.0/10.4.0/10.5.1/10.6.2 -->
 <!-- Matrix 11.0.4 -->
+<!-- Nexus 12.5.0 -->
 <includes>
 	<!-- ######################################################################### Current #########################################################################-->
 	<!-- Widget Common Values -->
@@ -5386,7 +5387,7 @@
 			<posx>435</posx>
 			<posy>90</posy>
 			<onright>5200</onright>
-			<visible>String.IsEqual(Window.Property(Weather.CurrentView),maps) + [String.IsEqual(Window.Property(WeatherProvider),OpenWeatherMap Extended) | String.Contains(Window.Property(WeatherProvider), Weatherbit) | String.Contains(Window.Property(WeatherProvider), Multi)] + System.HasAddon(script.openweathermap.maps)</visible>
+			<visible>String.IsEqual(Window.Property(Weather.CurrentView),maps) + [String.IsEqual(Window.Property(WeatherProvider),OpenWeatherMap Extended) | String.Contains(Window.Property(WeatherProvider), Weatherbit) | String.Contains(Window.Property(WeatherProvider), Multi)] + System.AddonIsEnabled(script.openweathermap.maps)</visible>
 			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 			<!-- Category buttons and maps -->
 			<control type="group" id="5200">

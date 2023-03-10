@@ -2,7 +2,7 @@
 <!-- Aeon MQ 5 Helix 6.1.0 massive fonts-->
 <!-- Krypton 9.2.3 -->
 <!-- Leia 10.2.4/10.2.5/10.4.0/10.5.0 -->
-<!-- Nexus 12.3.0 -->
+<!-- Nexus 12.3.0/12.5.0 -->
 <fonts>
 	<fontset id="Default">
 		<font>
@@ -96,6 +96,11 @@
 		<font>
 			<name>Font_23</name>
 			<filename>aeon_mainmenu.ttf</filename>
+			<size>34</size>
+		</font>
+		<font>
+			<name>Font_23A</name>
+			<filename>aeon_common.ttf</filename>
 			<size>34</size>
 		</font>
 		<font>
@@ -338,6 +343,11 @@
 			<size>42</size>
 		</font>
 		<font>
+			<name>Font_23A</name>
+			<filename>aeon_common.ttf</filename>
+			<size>42</size>
+		</font>
+		<font>
 			<name>Font_24A</name>
 			<!-- nao usar uppercase -->
 			<filename>aeon_common.ttf</filename>
@@ -574,6 +584,11 @@
 		<font>
 			<name>Font_23</name>
 			<filename>aeon_mainmenu.ttf</filename>
+			<size>50</size>
+		</font>
+		<font>
+			<name>Font_23A</name>
+			<filename>aeon_common.ttf</filename>
 			<size>50</size>
 		</font>
 		<font>

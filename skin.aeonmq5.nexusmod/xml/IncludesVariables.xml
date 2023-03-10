@@ -5,11 +5,11 @@
 <!-- Krypton 9.1.14/9.1.16/9.1.17/9.1.18/9.1.19 /9.2.0/9.2.1 window IDs/9.2.2 /9.2.3-->
 <!-- Leia 10.2.3 /10.2.4/10.2.5/10.2.6/10.2.8/10.3.0/10.5.0/10.5.1/10.5.2/10.6.0/10.6.1/10.6.2 -->
 <!-- Matrix 11.0.1/11.0.2/11.0.4/11.0.5/11.1.1/11.2.0/11.3.0 -->
-<!-- Nexus 12.2.0/12.3.0/12.4.0 favorites -->
+<!-- Nexus 12.2.0/12.3.0/12.4.0 favorites/12.5.0 -->
 <includes>
 	<!-- ################################################ Value/General ################################################ -->
 	<variable name="SkinVersion">
-		<value>12.4.0 Nexusmod[COLOR=80FFFFFF] | [/COLOR]11/14/2022</value>
+		<value>12.5.0 Nexusmod[COLOR=80FFFFFF] | [/COLOR]02/28/2023</value>
 	</variable>
 	<variable name="Sub_GoTo">
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(subid),movies)">6001</value>
@@ -2662,8 +2662,8 @@
 	</variable>
 	<variable name="value_animatedicons">
 		<!-- unused -->
-		<value condition="!Skin.HasSetting(weathericons_external) + !System.HasAddon(script.aeonmq5.extrapack)">$LOCALIZE[31543] ($LOCALIZE[31900])</value>
-		<value condition="!Skin.HasSetting(weathericons_external) + System.HasAddon(script.aeonmq5.extrapack)">$LOCALIZE[31543]</value>
+		<value condition="!Skin.HasSetting(weathericons_external) + !System.AddonIsEnabled(script.aeonmq5.extrapack)">$LOCALIZE[31543] ($LOCALIZE[31900])</value>
+		<value condition="!Skin.HasSetting(weathericons_external) + System.AddonIsEnabled(script.aeonmq5.extrapack)">$LOCALIZE[31543]</value>
 		<value condition="Skin.HasSetting(weathericons_external)">$LOCALIZE[31543]</value>
 	</variable>
 	<variable name="value_weathercondition">
@@ -4248,7 +4248,7 @@
 		<value condition="String.IsEqual(ListItem.DBType,MusicVideo)">$INFO[ListItem.Plot]</value>
 		<value condition="![Container.Content(files) | Container.Content(addons) | Window.IsActive(pictures) | ListItem.IsCollection | Window.IsActive(musicplaylist) | Window.IsActive(music) + [String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,artist) | String.IsEqual(ListItem.DBType,song)] | String.IsEqual(ListItem.DBType,musicvideo)]">$INFO[ListItem.Plot]</value>
 		<value condition="ListItem.IsCollection + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>  <!-- set overview -->
-		<value condition="ListItem.IsCollection + System.HasAddon(script.skin.info.service)">$INFO[Window(home).Property(SkinInfo.Set.Movies.Plot)]</value>
+		<value condition="ListItem.IsCollection + System.AddonIsEnabled(script.skin.info.service)">$INFO[Window(home).Property(SkinInfo.Set.Movies.Plot)]</value>
 		<value condition="Container.Content(addons)">$INFO[ListItem.AddonSummary][CR]$INFO[ListItem.AddonDescription]</value>				
 		<value condition="[Container.Content(songs) + String.IsEmpty(ListItem.Comment) | Container.Content(mixed) | Container.Content(files)] + !String.IsEqual(ListItem.DBType,MusicVideo) ">$INFO[ListItem.Property(Album_Description)]$INFO[ListItem.Property(Artist_Description)]</value>
 		<!-- MV in mixed music library  or music playlist-->
@@ -4475,41 +4475,41 @@
 		<value condition="String.Contains(skin.string(codestep),step3)">$LOCALIZE[31612]</value>
 	</variable>
 	<variable name="value_addon2">
-		<value condition="System.HasAddon(service.tvtunes) + System.AddonIsEnabled(service.tvtunes)">$LOCALIZE[31440]</value>
-		<value condition="!System.HasAddon(service.tvtunes) | !System.AddonIsEnabled(service.tvtunes)">[COLOR=FFB20000]$LOCALIZE[31440] | $LOCALIZE[31435]: TvTunes[/COLOR]</value>
+		<value condition="System.AddonIsEnabled(service.tvtunes) + System.AddonIsEnabled(service.tvtunes)">$LOCALIZE[31440]</value>
+		<value condition="!System.AddonIsEnabled(service.tvtunes) | !System.AddonIsEnabled(service.tvtunes)">[COLOR=FFB20000]$LOCALIZE[31440] | $LOCALIZE[31435]: TvTunes[/COLOR]</value>
 	</variable>
 	<variable name="value_addon3">
-		<value condition="System.HasAddon(plugin.moviesets)">$LOCALIZE[31029]</value>
-		<value condition="!System.HasAddon(plugin.moviesets)">[COLOR=FFB20000]$LOCALIZE[31029] | $LOCALIZE[31435]: Movie Sets[/COLOR]</value>
+		<value condition="System.AddonIsEnabled(plugin.moviesets)">$LOCALIZE[31029]</value>
+		<value condition="!System.AddonIsEnabled(plugin.moviesets)">[COLOR=FFB20000]$LOCALIZE[31029] | $LOCALIZE[31435]: Movie Sets[/COLOR]</value>
 	</variable>
 	<variable name="value_addon4">
-		<value condition="System.HasAddon(script.artworkorganizer)">$LOCALIZE[31547] / $LOCALIZE[31548]</value>
-		<value condition="!System.HasAddon(script.artworkorganizer)">[COLOR=FFB20000]$LOCALIZE[31547] / $LOCALIZE[31548] | $LOCALIZE[31435]: Artwork Organizer[/COLOR]</value>
+		<value condition="System.AddonIsEnabled(script.artworkorganizer)">$LOCALIZE[31547] / $LOCALIZE[31548]</value>
+		<value condition="!System.AddonIsEnabled(script.artworkorganizer)">[COLOR=FFB20000]$LOCALIZE[31547] / $LOCALIZE[31548] | $LOCALIZE[31435]: Artwork Organizer[/COLOR]</value>
 	</variable>
 	<variable name="value_addon5">
-		<value condition="System.HasAddon(script.artwork.beef)">$LOCALIZE[31442]</value>
-		<value condition="!System.HasAddon(script.artwork.beef)">[COLOR=FFB20000]$LOCALIZE[31442] | $LOCALIZE[31435]: Artwork Beef[/COLOR]</value>
+		<value condition="System.AddonIsEnabled(script.artwork.beef)">$LOCALIZE[31442]</value>
+		<value condition="!System.AddonIsEnabled(script.artwork.beef)">[COLOR=FFB20000]$LOCALIZE[31442] | $LOCALIZE[31435]: Artwork Beef[/COLOR]</value>
 	</variable>
 	<variable name="value_addon6">
-		<value condition="System.HasAddon(script.artistslideshow)">$LOCALIZE[31557]</value>
-		<value condition="!System.HasAddon(script.artistslideshow)">[COLOR=FFB20000]$LOCALIZE[31557] | $LOCALIZE[31435]: Artist Slideshow[/COLOR]</value>
+		<value condition="System.AddonIsEnabled(script.artistslideshow)">$LOCALIZE[31557]</value>
+		<value condition="!System.AddonIsEnabled(script.artistslideshow)">[COLOR=FFB20000]$LOCALIZE[31557] | $LOCALIZE[31435]: Artist Slideshow[/COLOR]</value>
 	</variable>
 	<variable name="value_addon8">
-		<value condition="System.HasAddon(script.randomandlastitems)">$LOCALIZE[31584]</value>
-		<value condition="!System.HasAddon(script.randomandlastitems)">[COLOR=FFB20000]$LOCALIZE[31584] | $LOCALIZE[31435]: Random and Last items script[/COLOR]</value>
+		<value condition="System.AddonIsEnabled(script.randomandlastitems)">$LOCALIZE[31584]</value>
+		<value condition="!System.AddonIsEnabled(script.randomandlastitems)">[COLOR=FFB20000]$LOCALIZE[31584] | $LOCALIZE[31435]: Random and Last items script[/COLOR]</value>
 	</variable>
 	<variable name="value_addon10">
-		<value condition="System.HasAddon(script.randomandlastitems)">$LOCALIZE[31583]</value>
-		<value condition="!System.HasAddon(script.randomandlastitems)">[COLOR=FFB20000]$LOCALIZE[31583] | $LOCALIZE[31435]: Random and Last items script[/COLOR]</value>
+		<value condition="System.AddonIsEnabled(script.randomandlastitems)">$LOCALIZE[31583]</value>
+		<value condition="!System.AddonIsEnabled(script.randomandlastitems)">[COLOR=FFB20000]$LOCALIZE[31583] | $LOCALIZE[31435]: Random and Last items script[/COLOR]</value>
 	</variable>
 	<variable name="value_addon11">
-		<value condition="System.HasAddon(plugin.video.ign_com) + String.IsEmpty(skin.string(subgamestrailers.label))">IGN ($LOCALIZE[31065])</value>
-		<value condition="System.HasAddon(plugin.video.ign_com) + !String.IsEmpty(skin.string(subgamestrailers.label))">$INFO[skin.string(subgamestrailers.label)]</value>
-		<value condition="!System.HasAddon(plugin.video.ign_com)">[COLOR=FFB20000]$LOCALIZE[31065] | $LOCALIZE[31435]: IGN.com[/COLOR]</value>
+		<value condition="System.AddonIsEnabled(plugin.video.ign_com) + String.IsEmpty(skin.string(subgamestrailers.label))">IGN ($LOCALIZE[31065])</value>
+		<value condition="System.AddonIsEnabled(plugin.video.ign_com) + !String.IsEmpty(skin.string(subgamestrailers.label))">$INFO[skin.string(subgamestrailers.label)]</value>
+		<value condition="!System.AddonIsEnabled(plugin.video.ign_com)">[COLOR=FFB20000]$LOCALIZE[31065] | $LOCALIZE[31435]: IGN.com[/COLOR]</value>
 	</variable>
 	<variable name="value_addon13">
-		<value condition="System.HasAddon(script.favourites)">$LOCALIZE[31015]</value>
-		<value condition="!System.HasAddon(script.favourites)">[COLOR=FFB20000]$LOCALIZE[31435]: Favourites script[/COLOR]</value>
+		<value condition="System.AddonIsEnabled(script.favourites)">$LOCALIZE[31015]</value>
+		<value condition="!System.AddonIsEnabled(script.favourites)">[COLOR=FFB20000]$LOCALIZE[31435]: Favourites script[/COLOR]</value>
 	</variable>
 	<variable name="value_addon14">
 		<!-- resource skinthemes -->
@@ -5306,4 +5306,23 @@
 		<value condition="!Control.HasFocus(310) + String.IsEqual(Control.GetLabel(310), $LOCALIZE[12309])">icon_keyboard_show.png</value>
 		<value>icon_keyboard_show_focus.png</value>
 	</variable>
+	<variable name="SeekTime">
+		<value condition="Skin.HasSetting(seek_time_0)">0</value>
+		<value condition="Skin.HasSetting(seek_time_1)">1</value>
+		<value condition="Skin.HasSetting(seek_time_2)">2</value>
+		<value condition="Skin.HasSetting(seek_time_3)">3</value>
+		<value condition="Skin.HasSetting(seek_time_4)">4</value>
+		<value condition="Skin.HasSetting(seek_time_5)">5</value>
+		<value condition="Skin.HasSetting(seek_time_6)">6</value>
+		<value condition="Skin.HasSetting(seek_time_7)">7</value>
+		<value condition="Skin.HasSetting(seek_time_8)">8</value>
+		<value condition="Skin.HasSetting(seek_time_9)">9</value>
+	</variable>
+	<expression name="SeekBarTime">
+		[Player.HasPerformedSeek(1) + Skin.HasSetting(seek_time_1)] |
+		[Player.HasPerformedSeek(2) + Skin.HasSetting(seek_time_2)] | 
+		[Player.HasPerformedSeek(3) + Skin.HasSetting(seek_time_3)] | 
+		[Player.HasPerformedSeek(4) + Skin.HasSetting(seek_time_4)] | 
+		[Player.HasPerformedSeek(5) + Skin.HasSetting(seek_time_5)]
+	</expression>
 </includes>

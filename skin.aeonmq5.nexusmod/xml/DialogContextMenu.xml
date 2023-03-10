@@ -4,6 +4,7 @@
 <!-- Krypton 9.2.1 window IDs 106 -->
 <!-- Leia 10.3.0 -->
 <!-- Matrix 11.0.4/11.2.0 -->
+<!-- Nexus 12.5.0 -->
 <window>
 	<defaultcontrol>1000</defaultcontrol>
 	<coordinates>
@@ -78,7 +79,7 @@
 				<onright>Dialog.Close(contextmenu)</onright>
 				<onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
 				<label>31671</label>
-				<visible>System.HasAddon(script.libraryeditor) + [Container.Content(Movies) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+				<visible>System.AddonIsEnabled(script.libraryeditor) + [Container.Content(Movies) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 			</control>
 			<control type="button" id="1031">
 				<include>DialogContext_Button</include>
@@ -103,7 +104,7 @@
 				<onright>Dialog.Close(contextmenu)</onright>
 				<onclick>RunScript(script.trakt,action=contextmenu)</onclick>
 				<label>trakt</label>
-				<visible>System.HasAddon(script.trakt)</visible>
+				<visible>System.AddonIsEnabled(script.trakt)</visible>
 			</control>
 		</control>
 	</controls>

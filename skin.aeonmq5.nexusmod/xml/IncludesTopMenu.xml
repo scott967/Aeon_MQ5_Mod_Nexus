@@ -5,7 +5,7 @@
 <!-- Krypton 9.1.15/9.1.16/9.1.17/9.1.18/9.1.19/9.2.1 window IDs/9.2.2/9.2.3 -->
 <!-- Leia 10.2.3/10.2.6/10.2.7/10.3.0/10.5.0/10.5.1/10.5.2/10.6.0/10.6.1/10.6.2 -->
 <!-- Matrix 11.0.2/11.0.4/11.1.1/11.2.0 -->
-<!-- Nexus 12.4.0 favourites -->
+<!-- Nexus 12.4.0 favourites/12.5.0 -->
 <includes>
 	<include name="content_views_video">
 		<param name="content"></param>
@@ -527,7 +527,7 @@
 					<include>TopMenuButton</include>
 					<label>31067</label>
 					<onclick>RunScript(script.tv.show.next.aired)</onclick>
-					<visible>[Container.Content(TvShows) | Container.Content(Episodes)] + system.hasaddon(script.tv.show.next.aired)</visible>
+					<visible>[Container.Content(TvShows) | Container.Content(Episodes)] + system.AddonIsEnabled(script.tv.show.next.aired)</visible>
 				</control>
 				<control type="button" id="9112">
 					<!-- Video addons -->
@@ -1410,11 +1410,11 @@
 				<control type="radiobutton" id="9323">
 					<include>TopMenuRadioButton</include>
 					<label>$VAR[value_addon2]</label>
-					<onclick condition="System.HasAddon(service.tvtunes)">Skin.ToggleSetting(ontvtunes)</onclick>
-					<onclick condition="System.HasAddon(service.tvtunes) + !Skin.HasSetting(ontvtunes)">SetProperty(TvTunesBlocked,true)</onclick>
-					<onclick condition="System.HasAddon(service.tvtunes) + Skin.HasSetting(ontvtunes)">ClearProperty(TvTunesBlocked)</onclick>
-					<onclick condition="!System.HasAddon(service.tvtunes)">ActivateWindow(Programs,Addons,return)</onclick>
-					<selected>System.HasAddon(service.tvtunes) + Skin.HasSetting(ontvtunes)</selected>
+					<onclick condition="System.AddonIsEnabled(service.tvtunes)">Skin.ToggleSetting(ontvtunes)</onclick>
+					<onclick condition="System.AddonIsEnabled(service.tvtunes) + !Skin.HasSetting(ontvtunes)">SetProperty(TvTunesBlocked,true)</onclick>
+					<onclick condition="System.AddonIsEnabled(service.tvtunes) + Skin.HasSetting(ontvtunes)">ClearProperty(TvTunesBlocked)</onclick>
+					<onclick condition="!System.AddonIsEnabled(service.tvtunes) | !System.HasAddon(service.tvtunes)">ActivateWindow(Programs,Addons,return)</onclick>
+					<selected>System.AddonIsEnabled(service.tvtunes) + Skin.HasSetting(ontvtunes)</selected>
 					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 				</control>
 				<include condition="Window.IsActive(videoplaylist)">TopMenu_Playlist</include>
@@ -2015,7 +2015,7 @@
 					<include>TopMenuButton</include>
 					<label>31067</label>
 					<onclick>RunScript(script.tv.show.next.aired)</onclick>
-					<visible>[Container.Content(TvShows) | Container.Content(Episodes)] + system.hasaddon(script.tv.show.next.aired)</visible>
+					<visible>[Container.Content(TvShows) | Container.Content(Episodes)] + system.AddonIsEnabled(script.tv.show.next.aired)</visible>
 				</control>
 				<control type="button" id="9111">
 					<!-- Music addons -->
@@ -2322,8 +2322,8 @@
 					<!-- run artwork beef or get addon -->
 					<include>TopMenuButton</include>
 					<label>$VAR[value_addon5]</label>
-					<onclick condition="!system.hasaddon(script.artwork.beef)">ActivateWindow(Programs,Addons,return)</onclick>
-					<onclick condition="system.hasaddon(script.artwork.beef)">RunScript(script.artwork.beef)</onclick>
+					<onclick condition="!system.AddonIsEnabled(script.artwork.beef) | !system.HasAddon(script.artwork.beef)">ActivateWindow(Programs,Addons,return)</onclick>
+					<onclick condition="system.AddonIsEnabled(script.artwork.beef)">RunScript(script.artwork.beef)</onclick>
 					<onclick>SetFocus(51)</onclick>
 				</control>
 				<!-- moved to 9400 artwork -->
@@ -3181,7 +3181,7 @@
 					<!-- GameTrailers.com: Exclusive Shows -->
 					<include>TopMenuButton</include>
 					<label>$VAR[value_addon11]</label>
-					<onclick condition="!system.hasaddon(plugin.video.gametrailers.exclusives)">ActivateWindow(Programs,Addons,return)</onclick>
+					<onclick condition="!system.hasaddon(plugin.video.gametrailers.exclusives) | !system.AddonIsEnabled(plugin.video.gametrailers.exclusives)">ActivateWindow(Programs,Addons,return)</onclick>
 					<onclick>ActivateWindow(plugin.video.gametrailers.exclusives)</onclick>
 					<onclick>SetFocus(51)</onclick>
 				</control>
@@ -3744,7 +3744,7 @@
 					<include>TopMenuButton</include>
 					<label>137</label>
 					<onclick>RunScript(script.globalsearch)</onclick>
-					<visible>System.HasAddon(script.globalsearch)</visible>
+					<visible>System.AddonIsEnabled(script.globalsearch)</visible>
 				</control>
 				<control type="button" id="19">
 					<!-- Filter -->
@@ -4267,7 +4267,7 @@
 					<include>TopMenuButton</include>
 					<label>137</label>
 					<onclick>RunScript(script.globalsearch)</onclick>
-					<visible>System.HasAddon(script.globalsearch)</visible>
+					<visible>System.AddonIsEnabled(script.globalsearch)</visible>
 				</control>
 				<control type="button" id="19">
 					<!-- Filter -->

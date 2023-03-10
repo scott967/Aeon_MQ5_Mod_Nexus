@@ -4,6 +4,7 @@
 <!-- Krypton 9.2.1 window IDs 2600 -->
 <!-- Leia 10.3.0/10.5.1 -->
 <!-- Matrix 11.0.4 -->
+<!-- Nexus 12.5.0 -->
 <window>
 	<defaultcontrol always="true">51</defaultcontrol>
 	<menucontrol>9000</menucontrol>
@@ -127,7 +128,7 @@
 					<onfocus>SetProperty(Weather.CurrentView,maps)</onfocus>
 					<onfocus>SetProperty(Weather.CurrentViewMenu,$LOCALIZE[31844])</onfocus>
 					<onfocus>Skin.Reset(TWC.ZoomWeatherMap)</onfocus>
-					<visible>String.Contains(Window(Weather).Property(WeatherProvider),openweatherrmap)+ System.HasAddon(script.openweathermap.maps) + !String.IsEmpty(Window.Property(Map.IsFetched))</visible>
+					<visible>String.Contains(Window(Weather).Property(WeatherProvider),openweatherrmap)+ System.AddonIsEnabled(script.openweathermap.maps) + !String.IsEmpty(Window.Property(Map.IsFetched))</visible>
 				</control>
 				<control type="button" id="106">
 					<!-- Alerts -->

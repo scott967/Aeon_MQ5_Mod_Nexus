@@ -4,8 +4,9 @@
 <!--  Krypton 9.1.16/9.1.19/9.2.1 window IDs 2006/9.2.3 -->
 <!-- Leia 10.2.4/10.2.5/10.2.8/10.3.0/10.4.0/10.5.2/10.6.0 refactor customOSDMusic is now 1106 custom Next Tracks is now 1107/10.6.1/10.6.2 -->
 <!-- Matrix 11.0.1/11.0.2/11.0.4/11.0.5/11.1.1/11.2.0 -->
+<!-- Nexus 12.5.0 -->
 <window>
-	<onload condition="System.HasAddon(script.artistslideshow) + !PVR.IsPlayingRadio">RunScript(script.artistslideshow)</onload>
+	<onload condition="System.AddonIsEnabled(script.artistslideshow) + !PVR.IsPlayingRadio">RunScript(script.artistslideshow)</onload>
 	<onload condition="![Skin.HasSetting(nolyrics_on) | PVR.IsPlayingRadio] + String.Contains(Skin.String(LyricScript_Path),script.cu.lrclyrics) + !String.IsEqual(Window(home).Property(culrc.running),true)">RunScript(script.cu.lrclyrics)</onload>
 	<onload condition="[Skin.HasSetting(nolyrics_on) + !PVR.IsPlayingRadio] + ![String.IsEmpty(MusicPlayer.offset(1).Artist) | Skin.HasSetting(novisfurniture) | Skin.HasSetting(nonexttracks_on)]">ActivateWindowAndFocus(1107,640,0)</onload><!-- Custom next tracks -->
 	<onunload>Dialog.Close(1107)</onunload><!-- custom Next Tracks -->

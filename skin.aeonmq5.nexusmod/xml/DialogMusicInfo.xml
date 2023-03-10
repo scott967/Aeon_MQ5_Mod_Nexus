@@ -4,9 +4,10 @@
 <!-- Krypton 9.1.15/9.1.16/9.1.18/9.1.19/9.2.1 window IDs/9.2.2/9.2.3 -->
 <!-- Leia 10.2.4/10.2.5/10.2.6/10.2.8/10.3.0/10.4.0/10.5.2/10.6.0/10.6.2 -->
 <!-- Matrix 11.0.2/11.0.4/11.0.5/11.1.1/11.2.0 -->
+<!-- Nexus 12.5.0 -->
 <window>
 	<defaultcontrol always="true">149</defaultcontrol>
-	<onload condition="System.HasAddon(script.artistslideshow) + Player.HasAudio + !Window(Visualisation).Property(ArtistSlideshowRunning)">RunScript(script.artistslideshow)</onload>
+	<onload condition="System.AddonIsEnabled(script.artistslideshow) + Player.HasAudio + !Window(Visualisation).Property(ArtistSlideshowRunning)">RunScript(script.artistslideshow)</onload>
 	<controls>
 		<control type="group"> 	<!-- invisible control group to determine if extrafanart folders exist for item -->
 			<visible>![PVR.IsPlayingRadio + Window.IsVisible(visualisation)] + Skin.HasSetting(use_folderarts)</visible>
@@ -1050,14 +1051,14 @@
 							<label>$LOCALIZE[31303] $LOCALIZE[558]</label>
 							<onclick>RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
 							<onclick>Action(Close)</onclick>
-							<visible>String.IsEqual(ListItem.DBType,album) + System.HasAddon(script.playalbum)</visible>
+							<visible>String.IsEqual(ListItem.DBType,album) + System.AddonIsEnabled(script.playalbum)</visible>
 						</item>
 						<item id="21">
 							<!--  Play album  Container 50 track -->
 							<label>$LOCALIZE[31303] $LOCALIZE[31799] $INFO[Container(50).ListItem.TrackNumber]</label>
 							<onclick>RunScript(script.playalbum,albumid=$INFO[ListItem.DBID]&amp;tracknr=$INFO[Container(50).ListItem.TrackNumber])</onclick>
 							<onclick>Action(close)</onclick>
-							<visible>String.IsEqual(ListItem.DBType,album) + System.HasAddon(script.playalbum)</visible>
+							<visible>String.IsEqual(ListItem.DBType,album) + System.AddonIsEnabled(script.playalbum)</visible>
 						</item>
 						<!-- <item id="5">  -->
 						<item id="6">
@@ -1079,7 +1080,7 @@
 							<label>31950</label>
 							<onclick>Skin.SetBool(musictrailers)</onclick>
 							<onclick>RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist])</onclick>
-							<visible>System.HasAddon(script.extendedinfo)</visible>
+							<visible>System.AddonIsEnabled(script.extendedinfo)</visible>
 						</item>
 						<item id="8">
 							<!-- Song Video Clip -->
@@ -1088,7 +1089,7 @@
 							<onclick>Skin.SetBool(musictrailers)</onclick>
 							<onclick condition="!String.IsEqual(ListItem.DBType,song)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Album])</onclick>
 							<onclick condition="String.IsEqual(ListItem.DBType,song)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Title])</onclick>
-							<visible>System.HasAddon(script.extendedinfo)</visible>
+							<visible>System.AddonIsEnabled(script.extendedinfo)</visible>
 						</item>
 					</content>
 				</control>
@@ -1257,7 +1258,7 @@
 							<onclick>Skin.SetBool(musictrailers)</onclick>
 							<onclick condition="!Window.IsActive(visualisation)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Album])</onclick>
 							<onclick condition="Window.IsActive(visualisation)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[MusicPlayer.Artist] $INFO[MusicPlayer.Album])</onclick>
-							<visible>System.HasAddon(script.extendedinfo) + !PVR.IsPlayingRadio</visible>
+							<visible>System.AddonIsEnabled(script.extendedinfo) + !PVR.IsPlayingRadio</visible>
 						</item>
 						<item id="17">
 							<!-- Song Video Clip -->
@@ -1266,7 +1267,7 @@
 							<onclick>Skin.SetBool(musictrailers)</onclick>
 							<onclick condition="!Window.IsActive(visualisation)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Title])</onclick>
 							<onclick condition="Window.IsActive(visualisation)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[MusicPlayer.Artist] $INFO[MusicPlayer.Title])</onclick>
-							<visible>System.HasAddon(script.extendedinfo) + !PVR.IsPlayingRadio</visible>
+							<visible>System.AddonIsEnabled(script.extendedinfo) + !PVR.IsPlayingRadio</visible>
 						</item>
 					</content>
 				</control>
