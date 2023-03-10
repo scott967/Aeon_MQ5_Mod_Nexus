@@ -1,4 +1,4 @@
-# Aeon_MQ5_Mod_Leia
+# Aeon_MQ5_Mod_Nexus
 Aeon MQ5 MOD for Kodi Nexus 20.0 +
 
 A project to update the Kodi skin Aeon MQ5 for use in Kodi Nexus versions from 20.0.  
