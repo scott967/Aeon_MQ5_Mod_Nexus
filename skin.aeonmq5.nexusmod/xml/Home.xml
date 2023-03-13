@@ -962,7 +962,7 @@ Group 602: Widgets
 						<aligny>center</aligny>
 						<textcolor>FFFFFAF0</textcolor>
 						<font>Font_18A</font>
-						<label>$INFO[Container(510).ListItem.Property(Type)]</label>
+						<label>$INFO[Container(510).ListItem.Property(Type),$LOCALIZE[146] ,] $INFO[Container(510).ListItem.Property(Provides),/ ,]</label>
 						<scroll>true</scroll>
 					</control>
 					<control type="image">
