@@ -1,3 +1,7 @@
+[B][COLOR=FFFF8C00]BUILD 12.7.0 - RELEASE DATE 10/31/2023[/COLOR][/B]
+Fix:  Replace posx with left / posy with top
+Note:  Basis for Aeon MQ5 OmegaMod
+
 [B][COLOR=FFFF8C00]BUILD 12.5.0 - RELEASE DATE 02/28/2023[/COLOR][/B]
 New:  Implement new Nexus screen calibration controls including "reset"
 New:  Implement Nexus display after seek as a variable skin setting of 0 to 5 secs
