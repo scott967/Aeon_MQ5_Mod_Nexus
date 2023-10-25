@@ -10,7 +10,7 @@
 	<!--##################################################################################   VISTA RIGHT LIST - ID 59   ##################################################################################-->
 	<include name="RightListLabel">
 		<font>Font_22A</font>
-		<posx>0</posx>
+		<left>0</left>
 		<height>30</height>
 		<width>600</width>
 		<aligny>top</aligny>
@@ -45,8 +45,8 @@
 				<animation effect="slide" time="500" start="0,600" end="0,0" tween="cubic" easing="out">Visible</animation>
 				<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>510</posy>
+					<left>0</left>
+					<top>510</top>
 					<width>1920</width>
 					<height>315</height>
 					<texture>gradient_small.png</texture>
@@ -55,8 +55,8 @@
 				</control>
 				<control type="image">
 					<!-- artist Clearlogo (music) -->
-					<posx>540</posx>
-					<posy>660</posy>
+					<left>540</left>
+					<top>660</top>
 					<width>450</width>
 					<height>165</height>
 					<texture background="true" fallback="transparent.png">$INFO[ListItem.Art(artist.clearlogo)]</texture>
@@ -66,8 +66,8 @@
 				</control>
 				<control type="image">
 					<!-- listitem.art(clearlogo or clearart) (videos)  -->
-					<posx>540</posx>
-					<posy>660</posy>
+					<left>540</left>
+					<top>660</top>
 					<width>450</width>
 					<height>165</height>
 					<texture background="true">$VAR[value_logoandclearart]</texture>
@@ -76,8 +76,8 @@
 					<visible>Window.IsActive(videos) + !Skin.HasSetting(noartrightlistvideo)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>782</posy>
+					<left>0</left>
+					<top>782</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
@@ -85,16 +85,16 @@
 					<include>Animation_Fade</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>975</posy>
+					<left>0</left>
+					<top>975</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>825</posy>
+					<left>0</left>
+					<top>825</top>
 					<width>1920</width>
 					<height>150</height>
 					<texture>darkgrey.png</texture>
@@ -103,16 +103,16 @@
 					<animation effect="fade" end="50" condition="Window.IsActive(videoplaylist)">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>406</posx>
-					<posy>825</posy>
+					<left>406</left>
+					<top>825</top>
 					<width>45</width>
 					<height>150</height>
 					<texture flipx="true">shadow.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>450</posx>
-					<posy>825</posy>
+					<left>450</left>
+					<top>825</top>
 					<width>900</width>
 					<height>150</height>
 					<texture flipx="true" diffuse="shadow_mask_v.png">darkgrey.png</texture>
@@ -121,8 +121,8 @@
 					<animation effect="fade" end="50" condition="Window.IsActive(videoplaylist)">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>450</posx>
-					<posy>825</posy>
+					<left>450</left>
+					<top>825</top>
 					<width>600</width>
 					<height>38</height>
 					<texture flipx="true" diffuse="shadow_mask_v.png">darkgrey.png</texture>
@@ -132,8 +132,8 @@
 				</control>
 				<control type="label">
 					<!-- Year/title (video) Now Playing Artist (music) -->
-					<posx>480</posx>
-					<posy>816</posy>
+					<left>480</left>
+					<top>816</top>
 					<width>570</width>
 					<height>20</height>
 					<font>Font_22A</font>
@@ -144,8 +144,8 @@
 					<scrollspeed>25</scrollspeed>
 				</control>
 				<control type="grouplist">	<!-- Info panel for focus listitem or nowplaying in playlist windows -->
-					<posx>480</posx>
-					<posy>858</posy>  <!-- 903 -->
+					<left>480</left>
+					<top>858</top>  <!-- 903 -->
 					<orientation>vertical</orientation>
 					<itemgap>6</itemgap>
 					<visible>$EXP[HasDetailInfo]</visible>
@@ -164,8 +164,8 @@
 					</control>
 				</control>
 				<control type="image">
-					<posx>1095</posx>
-					<posy>-105</posy>
+					<left>1095</left>
+					<top>-105</top>
 					<width>825</width>
 					<height>930</height>
 					<texture diffuse="shadow_mask_v.png">darkgrey.png</texture>
@@ -174,22 +174,22 @@
 					<animation effect="fade" end="50" condition="Window.IsActive(videoplaylist)">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>1080</posx>
-					<posy>832</posy>
+					<left>1080</left>
+					<top>832</top>
 					<width>1</width>
 					<height>135</height>
 					<texture>line_v.png</texture>
 				</control>
 				<control type="image">
-					<posx>1080</posx>
-					<posy>832</posy>
+					<left>1080</left>
+					<top>832</top>
 					<width>840</width>
 					<height>1</height>
 					<texture>line.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>1380</posx>
-					<posy>30</posy>
+					<left>1380</left>
+					<top>30</top>
 					<width>510</width>
 					<height>744</height>
 					<font>Font_18A</font>
@@ -200,8 +200,8 @@
 					<visible>Control.HasFocus(9915)</visible>
 				</control>
 				<control type="image">
-					<posx>1080</posx>
-					<posy>0</posy>
+					<left>1080</left>
+					<top>0</top>
 					<width>840</width>
 					<height>825</height>
 					<texture>osd_black_bg.png</texture>
@@ -210,8 +210,8 @@
 				</control>
 				<control type="fixedlist" id="59">
 					<viewtype label="31828">list</viewtype>
-					<posx>1080</posx>
-					<posy>30</posy>
+					<left>1080</left>
+					<top>30</top>
 					<width>840</width>
 					<height>750</height>
 					<pagecontrol>80</pagecontrol>
@@ -226,15 +226,15 @@
 					<visible>!Container.Content(years)</visible>
 					<itemlayout condition="[Window.IsActive(musicplaylist) | Window.IsActive(music)] + Container.Content(artists)" height="45">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>825</width>
 							<height>1</height>
 							<texture diffuse="shadow_mask_v.png">line.png</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>0</posy>
+							<right>30r</right>
+							<top>0</top>
 							<width>720</width>
 							<height>45</height>
 							<font>Font_20A</font>
@@ -246,15 +246,15 @@
 					</itemlayout>
 					<itemlayout condition="Window.IsActive(videos) | Window.IsActive(videoplaylist) | Window.IsActive(musicplaylist) | Window.IsActive(music)" height="45">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>825</width>
 							<height>1</height>
 							<texture diffuse="shadow_mask_v.png">line.png</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>0</posy>
+							<right>30r</right>
+							<top>0</top>
 							<width>720</width>
 							<height>45</height>
 							<font>Font_20A</font>
@@ -265,8 +265,8 @@
 							<visible>!String.IsEmpty(ListItem.DBType)</visible>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>0</posy>
+							<right>30r</right>
+							<top>0</top>
 							<width>720</width>
 							<height>45</height>
 							<font>Font_20</font>
@@ -277,8 +277,8 @@
 							<visible>String.IsEmpty(ListItem.DBType)</visible>
 						</control>
 						<control type="image">
-							<posx>772</posx>
-							<posy>4</posy>
+							<left>772</left>
+							<top>4</top>
 							<width>36</width>
 							<height>36</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -286,8 +286,8 @@
 							<visible>!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
 						</control>
 						<control type="image">
-								<posx>907</posx>
-								<posy>8</posy>
+								<left>907</left>
+								<top>8</top>
 								<width>45</width>
 								<height>45</height>
 								<texture>$VAR[pvr_overlay]</texture>
@@ -297,15 +297,15 @@
 					</itemlayout>
 					<itemlayout condition="Window.IsVisible(tvrecordings) | Window.IsVisible(radiorecordings)" height="45">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>825</width>
 							<height>1</height>
 							<texture diffuse="shadow_mask_v.png">line.png</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>0</posy>
+							<right>30r</right>
+							<top>0</top>
 							<width>720</width>
 							<height>45</height>
 							<font>Font_20A</font>
@@ -315,8 +315,8 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="image">
-							<posx>907</posx>
-							<posy>8</posy>
+							<left>907</left>
+							<top>8</top>
 							<width>45</width>
 							<height>45</height>
 							<texture>$VAR[pvr_overlay]</texture>
@@ -326,15 +326,15 @@
 					</itemlayout>
 					<focusedlayout condition="Container.Content(artists) + [Window.IsActive(musicplaylist) | Window.IsActive(music)] + Skin.HasSetting(slimrightlistmusic)" height="45">
 						<control type="image">
-							<posx>30</posx>
-							<posy>0</posy>
+							<left>30</left>
+							<top>0</top>
 							<width>795</width>
 							<height>45</height>
 							<texture>settings_button_focus.png</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>-2</posy>
+							<right>30r</right>
+							<top>-2</top>
 							<width>720</width>
 							<height>45</height>
 							<font>Font_22A</font>
@@ -348,15 +348,15 @@
 					<focusedlayout condition="Container.Content(artists) + [Window.IsActive(musicplaylist) | Window.IsActive(music)] + !Skin.HasSetting(slimrightlistmusic)" height="75">
 						<control type="image">
 							<animation effect="fade" start="100" end="60" time="0" condition="!Control.Hasfocus(51)">conditional</animation>
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1020</width>
 							<height>75</height>
 							<texture flipx="true">gradient_button.png</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>-2</posy>
+							<right>30r</right>
+							<top>-2</top>
 							<width>720</width>
 							<height>45</height>
 							<font>Font_22A</font>
@@ -367,8 +367,8 @@
 							<scrollspeed>20</scrollspeed>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>45</posy>
+							<right>30r</right>
+							<top>45</top>
 							<width>720</width>
 							<height>24</height>
 							<font>Font_18A</font>
@@ -382,15 +382,15 @@
 					</focusedlayout>
 					<focusedlayout condition="Window.IsVisible(tvrecordings) | Window.IsVisible(radiorecordings)" height="45">
 						<control type="image">
-							<posx>30</posx>
-							<posy>0</posy>
+							<left>30</left>
+							<top>0</top>
 							<width>795</width>
 							<height>45</height>
 							<texture>settings_button_focus.png</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>-2</posy>
+							<right>30r</right>
+							<top>-2</top>
 							<width>720</width>
 							<height>45</height>
 							<font>Font_22A</font>
@@ -401,8 +401,8 @@
 							<scrollspeed>20</scrollspeed>
 						</control>
 						<control type="image">
-							<posx>907</posx>
-							<posy>8</posy>
+							<left>907</left>
+							<top>8</top>
 							<width>45</width>
 							<height>45</height>
 							<texture>$VAR[pvr_overlay]</texture>
@@ -412,15 +412,15 @@
 					</focusedlayout>
 					<focusedlayout condition="String.IsEmpty(Control.GetLabel(5902)) | [[Window.IsActive(videos)  | Window.IsActive(videoplaylist)]+ Skin.HasSetting(slimrightlistvideo) | [Window.IsActive(musicplaylist) | Window.IsActive(music)] + Skin.HasSetting(slimrightlistmusic)]" height="45">
 						<control type="image">
-							<posx>30</posx>
-							<posy>0</posy>
+							<left>30</left>
+							<top>0</top>
 							<width>795</width>
 							<height>45</height>
 							<texture>settings_button_focus.png</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>-4</posy>
+							<right>30r</right>
+							<top>-4</top>
 							<width>720</width>
 							<height>45</height>
 							<font>Font_22A</font>
@@ -433,8 +433,8 @@
 							<visible>ListItem.IsPlaying + !String.IsEmpty(ListItem.DBType)</visible>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>-4</posy>
+							<right>30r</right>
+							<top>-4</top>
 							<width>720</width>
 							<height>45</height>
 							<font>Font_22</font>
@@ -447,8 +447,8 @@
 							<visible>ListItem.IsPlaying + String.IsEmpty(ListItem.DBType)</visible>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>-2</posy>
+							<right>30r</right>
+							<top>-2</top>
 							<width>720</width>
 							<height>45</height>
 							<font>Font_22A</font>
@@ -460,8 +460,8 @@
 							<visible>!ListItem.IsPlaying + !String.IsEmpty(ListItem.DBType)</visible>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>-2</posy>
+							<right>30r</right>
+							<top>-2</top>
 							<width>720</width>
 							<height>45</height>
 							<font>Font_22</font>
@@ -473,8 +473,8 @@
 							<visible>!ListItem.IsPlaying + String.IsEmpty(ListItem.DBType)</visible>
 						</control>
 						<control type="image">
-							<posx>765</posx>
-							<posy>0</posy>
+							<left>765</left>
+							<top>0</top>
 							<width>45</width>
 							<height>45</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -485,15 +485,15 @@
 					<focusedlayout condition="!String.IsEmpty(Control.GetLabel(5902)) + [[Window.IsActive(videos) | Window.IsActive(videoplaylist)] + !Skin.HasSetting(slimrightlistvideo) | [Window.IsActive(musicplaylist) | Window.IsActive(music)] + !Skin.HasSetting(slimrightlistmusic)]" height="75">
 						<control type="image">
 							<animation effect="fade" start="100" end="60" time="0" condition="!Control.Hasfocus(51)">conditional</animation>
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1020</width>
 							<height>75</height>
 							<texture flipx="true">gradient_button.png</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>-2</posy>
+							<right>30r</right>
+							<top>-2</top>
 							<width>720</width>
 							<height>45</height>
 							<font>Font_22A</font>
@@ -506,8 +506,8 @@
 							<visible>ListItem.IsPlaying</visible>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>-2</posy>
+							<right>30r</right>
+							<top>-2</top>
 							<width>720</width>
 							<height>45</height>
 							<font>Font_22A</font>
@@ -519,8 +519,8 @@
 							<visible>!ListItem.IsPlaying + !String.IsEmpty(ListItem.DBType)</visible>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>-2</posy>
+							<right>30r</right>
+							<top>-2</top>
 							<width>720</width>
 							<height>45</height>
 							<font>Font_22</font>
@@ -532,8 +532,8 @@
 							<visible>!ListItem.IsPlaying + String.IsEmpty(ListItem.DBType)</visible>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>45</posy>
+							<right>30r</right>
+							<top>45</top>
 							<width>720</width>
 							<height>24</height>
 							<font>Font_18A</font>
@@ -546,8 +546,8 @@
 							<visible>!String.IsEqual(ListItem.Label,..) + ListItem.IsPlaying</visible>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>45</posy>
+							<right>30r</right>
+							<top>45</top>
 							<width>720</width>
 							<height>24</height>
 							<font>Font_18A</font>
@@ -559,8 +559,8 @@
 							<visible>!String.IsEqual(ListItem.Label,..) + !ListItem.IsPlaying</visible>
 						</control>
 						<control type="image">
-							<posx>765</posx>
-							<posy>15</posy>
+							<left>765</left>
+							<top>15</top>
 							<width>45</width>
 							<height>45</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -570,8 +570,8 @@
 					</focusedlayout>					
 				</control>
 				<control type="textbox">
-					<posx>1110</posx>
-					<posy>832</posy>
+					<left>1110</left>
+					<top>832</top>
 					<width>780</width>
 					<height>138</height>
 					<font>Font_18A</font>
@@ -594,8 +594,8 @@
 			</control>
 			<control type="group">  <!-- posx 0 posy 45 -->
 				<!-- Default Group - Miniaturas -->
-				<posx>45</posx>
-				<posy>300</posy>  <!-- 345 -->
+				<left>45</left>
+				<top>300</top>  <!-- 345 -->
 				<visible>Control.IsVisible(59)</visible>
 				<animation effect="slide" time="1000" start="-600,0" end="0,0" tween="cubic" easing="out">WindowOpen</animation>
 				<animation effect="slide" time="1000" start="-600,0" end="0,0" tween="cubic" easing="out">Visible</animation>
@@ -617,8 +617,8 @@
 					<animation effect="slide" time="200" start="0,0" end="0,-30" tween="cubic" easing="out" condition="!Skin.HasSetting(norightlistvideocase)">Conditional</animation>
 					<visible>![String.IsEmpty(ListItem.Art(discart)) | Skin.HasSetting(norightlistdiscart) | ListItem.IsCollection] + Window.IsActive(videos) + Control.IsVisible(9923)</visible>
 					<control type="image">
-						<posx>168</posx>
-						<posy>105</posy>
+						<left>168</left>
+						<top>105</top>
 						<width>375</width>
 						<height>375</height>
 						<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -629,8 +629,8 @@
 					</control>
 				</control>
 				<control type="grouplist">	<!-- CDART SETS -->
-					<posx>390</posx>
-					<posy>315</posy>
+					<left>390</left>
+					<top>315</top>
 					<orientation>horizontal</orientation>
 					<itemgap>-146</itemgap>
 					<animation type="WindowOpen">
@@ -703,8 +703,8 @@
 					<visible>![!Skin.HasSetting(norightlistvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] | Window.IsActive(musicplaylist) | Window.IsActive(music)]</visible>
 					<control type="image">
 						<!-- Filmes/Fotos/Arquivos reflexo -->
-						<posx>-8</posx>
-						<posy>698</posy>
+						<left>-8</left>
+						<top>698</top>
 						<width>368</width>
 						<height>525</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -713,8 +713,8 @@
 						<bordertexture flipy="true" diffuse="thumb_reflect.png" border="-2">black.png</bordertexture>
 					</control>
 					<control type="image">   <!--  poster > thumb > icon or exception (genre/playlists) -->
-						<posx>-8</posx>  <!-- 37 -->
-						<posy>168</posy>  <!-- 443 -->
+						<left>-8</left>  <!-- 37 -->
+						<top>168</top>  <!-- 443 -->
 						<width>368</width>  <!-- 405 -->
 						<height>525</height>  <!-- 968 -->
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -753,8 +753,8 @@
 					<visible>!Skin.HasSetting(norightlistvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] + ![Window.IsActive(musicplaylist) | Window.IsActive(music)]</visible>
 					<control type="image">
 						<!-- Poster reflexo -->
-						<posx>-8</posx>
-						<posy>654</posy>
+						<left>-8</left>
+						<top>654</top>
 						<width>368</width>
 						<height>525</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -763,8 +763,8 @@
 					</control>
 					<control type="image">
 						<!-- Estojo reflexo -->
-						<posx>-39</posx>
-						<posy>600</posy>
+						<left>-39</left>
+						<top>600</top>
 						<width>456</width>
 						<height>652</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -774,8 +774,8 @@
 					</control>
 					<control type="image">
 						<!-- Poster -->
-						<posx>-8</posx>
-						<posy>94</posy>
+						<left>-8</left>
+						<top>94</top>
 						<width>368</width>
 						<height>525</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -783,8 +783,8 @@
 					</control>
 					<control type="image">
 						<!-- Estojo -->
-						<posx>-39</posx>
-						<posy>12</posy>
+						<left>-39</left>
+						<top>12</top>
 						<width>456</width>
 						<height>660</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -793,8 +793,8 @@
 					</control>
 					<control type="image">
 						<!-- Codec -->
-						<posx>132</posx>
-						<posy>18</posy>
+						<left>132</left>
+						<top>18</top>
 						<width>105</width>
 						<height>105</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -809,8 +809,8 @@
 					<visible>[Window.IsActive(musicplaylist) | Window.IsActive(music)] + [Skin.HasSetting(norightlistaudiocase) | Container.Content(genres) | Container.Content(roles) | Container.Content(sources)]</visible>
 					<control type="image">
 						<!-- Musica reflexo -->
-						<posx>-8</posx>
-						<posy>630</posy>
+						<left>-8</left>
+						<top>630</top>
 						<width>368</width>
 						<height>525</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -820,8 +820,8 @@
 					</control>
 					<control type="image">
 						<!-- Musica -->
-						<posx>-8</posx>
-						<posy>98</posy>
+						<left>-8</left>
+						<top>98</top>
 						<width>368</width>
 						<height>525</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -835,8 +835,8 @@
 					<visible>[Window.IsActive(musicplaylist) | Window.IsActive(music)] + ![Skin.HasSetting(norightlistaudiocase) | Container.Content(genres) | Container.Content(roles) | Container.Content(sources)]</visible>
 					<control type="image">
 						<!-- Musica/Estojo reflexo-->
-						<posx>27</posx>
-						<posy>630</posy>
+						<left>27</left>
+						<top>630</top>
 						<width>345</width>
 						<height>345</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -845,16 +845,16 @@
 					</control>
 					<control type="image">
 						<!-- Estojo reflexo -->
-						<posx>-30</posx>
-						<posy>627</posy>
+						<left>-30</left>
+						<top>627</top>
 						<width>417</width>
 						<height>364</height>
 						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box_cd.png</texture>
 					</control>
 					<control type="image">
 						<!-- Musica -->
-						<posx>27</posx>
-						<posy>291</posy>
+						<left>27</left>
+						<top>291</top>
 						<width>345</width>
 						<height>345</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -863,8 +863,8 @@
 					</control>
 					<control type="image">
 						<!-- Estojo -->
-						<posx>-30</posx>
-						<posy>285</posy>
+						<left>-30</left>
+						<top>285</top>
 						<width>417</width>
 						<height>364</height>
 						<texture>thumb_box_cd.png</texture>
@@ -874,8 +874,8 @@
 			</control>
 			<control type="scrollbar" id="80">
 				<include>ScrollBar_Vertical</include>
-				<posx>1875</posx>
-				<posy>30</posy>
+				<left>1875</left>
+				<top>30</top>
 				<height>750</height>
 				<onleft>59</onleft>
 				<onright condition="!String.IsEmpty(Control.GetLabel(5901))">9915</onright>

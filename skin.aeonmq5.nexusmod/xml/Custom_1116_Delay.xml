@@ -13,13 +13,13 @@
 	<onload condition="String.Contains(skin.string(panel_seconds),5)">SetFocus(9065)</onload>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<texture>black.png</texture>
@@ -27,28 +27,28 @@
 			<include>Animation_Fade</include>
 		</control>
 		<control type="group">
-			<posx>615</posx>
-			<posy>180</posy>
+			<left>615</left>
+			<top>180</top>
 			<include>Animation_DialogPopup</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>45</posy>
+				<left>0</left>
+				<top>45</top>
 				<width>681</width>
 				<height>58</height>
 				<texture>gradient_focus.png</texture>
 				<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>681</width>
 				<height>58</height>
 				<texture>dialogs_context_nofocus.png</texture>
 				<colordiffuse>F9FFFFFF</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>120</posx>
-				<posy>12</posy>
+				<left>120</left>
+				<top>12</top>
 				<width>450</width>
 				<height>60</height>
 				<align>center</align>
@@ -57,8 +57,8 @@
 				<textcolor>$VAR[value_headercolor]</textcolor>
 			</control>
 			<control type="grouplist" id="9060">
-				<posx>0</posx>
-				<posy>75</posy>
+				<left>0</left>
+				<top>75</top>
 				<width>668</width>
 				<height max="1005">auto</height>
 				<itemgap>0</itemgap>

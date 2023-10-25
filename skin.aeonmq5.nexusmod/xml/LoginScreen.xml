@@ -8,16 +8,16 @@
 	<defaultcontrol always="true">52</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="group">
 			<!-- default group -->
 			<include>Animation_Window</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<texture background="true">special://skin/backgrounds/vnodes.jpg</texture>
@@ -25,8 +25,8 @@
 			</control>
 			<control type="image">
 				<!-- Footer Bar -->
-				<posx>0</posx>
-				<posy>660</posy>
+				<left>0</left>
+				<top>660</top>
 				<width>1920</width>
 				<height>420</height>
 				<colordiffuse>FFFFFAF0</colordiffuse>
@@ -34,8 +34,8 @@
 				<include>Animation_FloorGlass</include>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>660</posy>
+				<left>0</left>
+				<top>660</top>
 				<width>1920</width>
 				<height>420</height>
 				<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
@@ -44,8 +44,8 @@
 			</control>
 			<control type="fixedlist" id="52">
 				<viewtype label="login">list</viewtype>
-				<posx>-68</posx>
-				<posy>622</posy>
+				<left>-68</left>
+				<top>622</top>
 				<width>2169</width>
 				<height>825</height>
 				<orientation>horizontal</orientation>
@@ -57,8 +57,8 @@
 				<ondown>98</ondown>
 				<itemlayout height="300" width="300">
 					<control type="image">
-						<posx>3</posx>
-						<posy>351</posy>
+						<left>3</left>
+						<top>351</top>
 						<width>225</width>
 						<height>225</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -67,8 +67,8 @@
 						<bordertexture flipy="true" diffuse="thumb_box_reflect.png" border="-2">black.png</bordertexture>
 					</control>
 					<control type="image">
-						<posx>3</posx>
-						<posy>120</posy>
+						<left>3</left>
+						<top>120</top>
 						<width>225</width>
 						<height>225</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -79,8 +79,8 @@
 				</itemlayout>
 				<focusedlayout height="300" width="300">
 					<control type="image">
-						<posx>3</posx>
-						<posy>357</posy>
+						<left>3</left>
+						<top>357</top>
 						<width>225</width>
 						<height>225</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -90,8 +90,8 @@
 						<animation effect="zoom" start="100" end="145" center="112,368" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 					</control>
 					<control type="image">
-						<posx>3</posx>
-						<posy>128</posy>
+						<left>3</left>
+						<top>128</top>
 						<width>225</width>
 						<height>225</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -101,8 +101,8 @@
 						<animation effect="zoom" start="100" end="145" center="112,368" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 					</control>
 					<control type="image">
-						<posx>285</posx>
-						<posy>17</posy>
+						<left>285</left>
+						<top>17</top>
 						<width>750</width>
 						<height>75</height>
 						<texture>gradient_button.png</texture>
@@ -110,8 +110,8 @@
 						<visible>Control.HasFocus(52)</visible>
 					</control>
 					<control type="label">
-						<posx>300</posx>
-						<posy>9</posy>
+						<left>300</left>
+						<top>9</top>
 						<width>900</width>
 						<height>24</height>
 						<align>left</align>
@@ -123,8 +123,8 @@
 						<visible>Control.HasFocus(52)</visible>
 					</control>
 					<control type="label">
-						<posx>300</posx>
-						<posy>60</posy>
+						<left>300</left>
+						<top>60</top>
 						<width>900</width>
 						<height>24</height>
 						<align>left</align>

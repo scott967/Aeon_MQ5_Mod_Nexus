@@ -12,24 +12,24 @@
 			<visible>!Window.IsVisible(pvrgroupmanager)</visible>
 			<include>Animation_DialogPopup</include>
 			<control type="image">
-				<posx>165</posx>
-				<posy>0</posy>
+				<left>165</left>
+				<top>0</top>
 				<width>45</width>
 				<height>1080</height>
 				<texture flipx="true">shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>1710</posx>
-				<posy>0</posy>
+				<left>1710</left>
+				<top>0</top>
 				<width>45</width>
 				<height>1080</height>
 				<texture>shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>210</posx>
-				<posy>0</posy>
+				<left>210</left>
+				<top>0</top>
 				<width>1500</width>
 				<height>1080</height>
 				<texture>darkgrey.png</texture>
@@ -37,16 +37,16 @@
 				<animation effect="fade" end="85" condition="true">Conditional</animation>
 			</control>
 			<control type="image">
-				<posx>210</posx>
-				<posy>0</posy>
+				<left>210</left>
+				<top>0</top>
 				<width>1500</width>
 				<height>120</height>
 				<texture>black.png</texture>
 				<colordiffuse>90FFFFFF</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>322</posx>
-				<posy>34</posy>
+				<left>322</left>
+				<top>34</top>
 				<width>1278</width>
 				<height>45</height>
 				<label>$LOCALIZE[19199] - $LOCALIZE[19023]</label>
@@ -58,8 +58,8 @@
 				<visible>String.IsEmpty(Window.Property(IsRadio))</visible>
 			</control>
 			<control type="label">
-				<posx>322</posx>
-				<posy>34</posy>
+				<left>322</left>
+				<top>34</top>
 				<width>1278</width>
 				<height>45</height>
 				<label>$LOCALIZE[19199] - $LOCALIZE[19024]</label>
@@ -71,16 +71,16 @@
 				<visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
 			</control>
 			<control type="image">
-				<posx>900</posx>
-				<posy>150</posy>
+				<left>900</left>
+				<top>150</top>
 				<width>52</width>
 				<height>660</height>
 				<texture>grey.png</texture>
 				<colordiffuse>20FFFFFF</colordiffuse>
 			</control>
 			<control type="list" id="20">  <!-- channel list -->
-				<posx>210</posx>
-				<posy>150</posy>
+				<left>210</left>
+				<top>150</top>
 				<width>750</width>
 				<height>660</height>
 				<onup>20</onup>
@@ -92,8 +92,8 @@
 				<itemgap>0</itemgap>
 				<itemlayout condition="String.IsEmpty(Window.Property(IsRadio))"  height="45" width="750">
 					<control type="image">  <!-- station logo -->
-						<posx>45</posx>
-						<posy>3</posy>
+						<left>45</left>
+						<top>3</top>
 						<width>78</width>
 						<height>39</height>
 						<aspectratio>keep</aspectratio>
@@ -101,8 +101,8 @@
 						<visible>ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="image">
-						<posx>45</posx>
-						<posy>3</posy>
+						<left>45</left>
+						<top>3</top>
 						<width>78</width>
 						<height>39</height>
 						<colordiffuse>50FFFAF0</colordiffuse>
@@ -111,8 +111,8 @@
 						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="label">
-						<posx>180</posx>  <!-- 98 -->
-						<posy>0</posy>
+						<left>180</left>  <!-- 98 -->
+						<top>0</top>
 						<width>500</width>
 						<height>45</height>
 						<font>Font_18</font>
@@ -125,8 +125,8 @@
 						<visible>ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="label">
-						<posx>180</posx>
-						<posy>0</posy>
+						<left>180</left>
+						<top>0</top>
 						<width>500</width>
 						<height>45</height>
 						<font>Font_18</font>
@@ -139,8 +139,8 @@
 						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="image">
-						<posx>702</posx>
-						<posy>8</posy>
+						<left>702</left>
+						<top>8</top>
 						<width>33</width>
 						<height>33</height>
 						<texture>OverlayWatched.png</texture>
@@ -150,8 +150,8 @@
 				</itemlayout>
 				<itemlayout condition="!String.IsEmpty(Window.Property(IsRadio))"  height="45" width="750">	<!-- radio channels -->
 					<control type="image">  <!-- station logo -->
-						<posx>45</posx>
-						<posy>3</posy>
+						<left>45</left>
+						<top>3</top>
 						<width>78</width>
 						<height>39</height>
 						<aspectratio>keep</aspectratio>
@@ -159,8 +159,8 @@
 						<visible>ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="image">
-						<posx>45</posx>
-						<posy>3</posy>
+						<left>45</left>
+						<top>3</top>
 						<width>78</width>
 						<height>39</height>
 						<colordiffuse>50FFFAF0</colordiffuse>
@@ -169,8 +169,8 @@
 						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="label">
-						<posx>180</posx>  <!-- 98 -->
-						<posy>0</posy>
+						<left>180</left>  <!-- 98 -->
+						<top>0</top>
 						<width>500</width>
 						<height>45</height>
 						<font>Font_18</font>
@@ -183,8 +183,8 @@
 						<visible>ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="label">
-						<posx>180</posx>
-						<posy>0</posy>
+						<left>180</left>
+						<top>0</top>
 						<width>500</width>
 						<height>45</height>
 						<font>Font_18</font>
@@ -197,8 +197,8 @@
 						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="image">
-						<posx>702</posx>
-						<posy>8</posy>
+						<left>702</left>
+						<top>8</top>
 						<width>33</width>
 						<height>33</height>
 						<texture>OverlayWatched.png</texture>
@@ -208,24 +208,24 @@
 				</itemlayout>
 				<focusedlayout condition="String.IsEmpty(Window.Property(IsRadio))" height="75" width="750">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>750</width>
 						<height>75</height>
 						<texture>settings_button_focus.png</texture>
 						<animation effect="fade" start="100" end="50" time="50" condition="!Control.Hasfocus(20)">conditional</animation>
 					</control>
 					<!-- <control type="image">
-						<posx>45</posx>
-						<posy>0</posy>
+						<left>45</left>
+						<top>0</top>
 						<width>75</width>
 						<height>75</height>
 						<texture>black.png</texture>
 						<animation effect="fade" end="70" condition="true">Conditional</animation>
 					</control> -->
 					<control type="image">
-						<posx>42</posx>  <!-- 52 -->
-						<posy>8</posy>
+						<left>42</left>  <!-- 52 -->
+						<top>8</top>
 						<width>120</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
@@ -233,8 +233,8 @@
 						<visible>ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="image">
-						<posx>42</posx>
-						<posy>8</posy>
+						<left>42</left>
+						<top>8</top>
 						<width>120</width>
 						<height>60</height>
 						<colordiffuse>50FFFAF0</colordiffuse>
@@ -243,8 +243,8 @@
 						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="label">
-						<posx>180</posx>  <!-- 135 -->
-						<posy>1</posy>
+						<left>180</left>  <!-- 135 -->
+						<top>1</top>
 						<width>548</width>
 						<height>45</height>
 						<font>Font_22</font>
@@ -257,8 +257,8 @@
 						<visible>ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="label">
-						<posx>180</posx>
-						<posy>1</posy>
+						<left>180</left>
+						<top>1</top>
 						<width>548</width>
 						<height>45</height>
 						<font>Font_22</font>
@@ -271,8 +271,8 @@
 						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="label">
-						<posx>180</posx>
-						<posy>33</posy>
+						<left>180</left>
+						<top>33</top>
 						<width>548</width>
 						<height>45</height>
 						<font>Font_18A</font>
@@ -284,8 +284,8 @@
 						<visible>ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="label">
-						<posx>180</posx>
-						<posy>33</posy>
+						<left>180</left>
+						<top>33</top>
 						<width>548</width>
 						<height>45</height>
 						<font>Font_18A</font>
@@ -297,8 +297,8 @@
 						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="image">
-						<posx>702</posx>
-						<posy>8</posy>
+						<left>702</left>
+						<top>8</top>
 						<width>33</width>
 						<height>33</height>
 						<texture>OverlayWatched.png</texture>
@@ -308,24 +308,24 @@
 				</focusedlayout>
 				<focusedlayout condition="!String.IsEmpty(Window.Property(IsRadio))" height="75" width="750">	<!-- radio channels -->
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>750</width>
 						<height>75</height>
 						<texture>settings_button_focus.png</texture>
 						<animation effect="fade" start="100" end="50" time="50" condition="!Control.Hasfocus(20)">conditional</animation>
 					</control>
 					<!-- <control type="image">
-						<posx>45</posx>
-						<posy>0</posy>
+						<left>45</left>
+						<top>0</top>
 						<width>75</width>
 						<height>75</height>
 						<texture>black.png</texture>
 						<animation effect="fade" end="70" condition="true">Conditional</animation>
 					</control> -->
 					<control type="image">
-						<posx>42</posx>  <!-- 52 -->
-						<posy>8</posy>
+						<left>42</left>  <!-- 52 -->
+						<top>8</top>
 						<width>120</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
@@ -333,8 +333,8 @@
 						<visible>ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="image">
-						<posx>42</posx>
-						<posy>8</posy>
+						<left>42</left>
+						<top>8</top>
 						<width>120</width>
 						<height>60</height>
 						<colordiffuse>50FFFAF0</colordiffuse>
@@ -343,8 +343,8 @@
 						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="label">
-						<posx>180</posx>  <!-- 135 -->
-						<posy>1</posy>
+						<left>180</left>  <!-- 135 -->
+						<top>1</top>
 						<width>548</width>
 						<height>45</height>
 						<font>Font_22</font>
@@ -357,8 +357,8 @@
 						<visible>ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="label">
-						<posx>180</posx>
-						<posy>1</posy>
+						<left>180</left>
+						<top>1</top>
 						<width>548</width>
 						<height>45</height>
 						<font>Font_22</font>
@@ -371,8 +371,8 @@
 						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="label">
-						<posx>180</posx>
-						<posy>33</posy>
+						<left>180</left>
+						<top>33</top>
 						<width>548</width>
 						<height>45</height>
 						<font>Font_18A</font>
@@ -384,8 +384,8 @@
 						<visible>ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="label">
-						<posx>180</posx>
-						<posy>33</posy>
+						<left>180</left>
+						<top>33</top>
 						<width>548</width>
 						<height>45</height>
 						<font>Font_18A</font>
@@ -397,8 +397,8 @@
 						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="image">
-						<posx>702</posx>
-						<posy>8</posy>
+						<left>702</left>
+						<top>8</top>
 						<width>33</width>
 						<height>33</height>
 						<texture>OverlayWatched.png</texture>
@@ -409,8 +409,8 @@
 			</control>
 			<control type="scrollbar" id="60">
 				<include>ScrollBar_Vertical</include>
-				<posx>210</posx>
-				<posy>150</posy>
+				<left>210</left>
+				<top>150</top>
 				<height>663</height>
 				<onleft>4</onleft>
 				<onright>20</onright>
@@ -418,8 +418,8 @@
 				<onup>60</onup>
 			</control>
 			<control type="label">
-				<posx>225</posx>
-				<posy>832</posy>
+				<left>225</left>
+				<top>832</top>
 				<width>600</width>
 				<height>30</height>
 				<font>Font_18</font>
@@ -431,11 +431,11 @@
 			</control>
 			<control type="group" id="9002">
 				<control type="group">
-					<posx>960</posx>
-					<posy>150</posy>
+					<left>960</left>
+					<top>150</top>
 					<control type="label">
-						<posx>45</posx>
-						<posy>15</posy>
+						<left>45</left>
+						<top>15</top>
 						<aligny>center</aligny>
 						<width>750</width>
 						<height>30</height>
@@ -447,8 +447,8 @@
 						<!-- Channel activated -->
 						<textoffsetx>60</textoffsetx>
 						<include>PVRSearchButton</include>
-						<posx>0</posx>
-						<posy>52</posy>
+						<left>0</left>
+						<top>52</top>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[19074]</label>
 						<onleft>20</onleft>
@@ -460,8 +460,8 @@
 						<!-- Channel name -->
 						<textoffsetx>60</textoffsetx>
 						<include>PVRSearchButton</include>
-						<posx>0</posx>
-						<posy>98</posy>
+						<left>0</left>
+						<top>98</top>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[19201]</label>
 						<onright>4</onright>
@@ -473,8 +473,8 @@
 						<!-- Channel logo -->
 						<textoffsetx>60</textoffsetx>
 						<include>PVRSearchButton</include>
-						<posx>0</posx>
-						<posy>142</posy>
+						<left>0</left>
+						<top>142</top>
 						<label>$LOCALIZE[19202]</label>
 						<onleft>20</onleft>
 						<onright>4</onright>
@@ -482,8 +482,8 @@
 						<ondown>12</ondown>
 					</control>
 					<control type="image"> <!-- list 20 channel icon bg -->
-						<posx>628</posx>
-						<posy>142</posy>
+						<left>628</left>
+						<top>142</top>
 						<width>86</width>
 						<height>45</height>
 						<texture>black.png</texture>
@@ -491,8 +491,8 @@
 						<visible>Control.HasFocus(9)</visible>
 					</control>
 					<control type="image" id="10">  <!-- list 20 channel icon tv -->
-						<posx>635</posx>
-						<posy>146</posy>
+						<left>635</left>
+						<top>146</top>
 						<width>78</width>
 						<height>39</height>
 						<aspectratio>keep</aspectratio>
@@ -500,8 +500,8 @@
 						<visible>String.IsEmpty(Window.Property(IsRadio))</visible>
 					</control>
 					<control type="image" id="10">  <!-- list 20 channel icon radio -->
-						<posx>635</posx>
-						<posy>146</posy>
+						<left>635</left>
+						<top>146</top>
 						<width>78</width>
 						<height>39</height>
 						<aspectratio>keep</aspectratio>
@@ -512,8 +512,8 @@
 						<!-- EPG activated -->
 						<textoffsetx>60</textoffsetx>
 						<include>PVRSearchButton</include>
-						<posx>0</posx>
-						<posy>188</posy>
+						<left>0</left>
+						<top>188</top>
 						<label>$LOCALIZE[19206]</label>
 						<onleft>20</onleft>
 						<onright>4</onright>
@@ -524,8 +524,8 @@
 						<!-- EPG source -->
 						<textoffsetx>60</textoffsetx>
 						<include>PVRSearchButton</include>
-						<posx>0</posx>
-						<posy>232</posy>
+						<left>0</left>
+						<top>232</top>
 						<label>$LOCALIZE[19200]</label>
 						<onright>4</onright>
 						<onleft>20</onleft>
@@ -536,8 +536,8 @@
 						<!-- Parental Control -->
 						<textoffsetx>60</textoffsetx>
 						<include>PVRSearchButton</include>
-						<posx>0</posx>
-						<posy>276</posy>
+						<left>0</left>
+						<top>276</top>
 						<label>$LOCALIZE[19267]</label>
 						<onleft>20</onleft>
 						<onright>4</onright>
@@ -546,11 +546,11 @@
 					</control>
 				</control>
 				<control type="group">
-					<posx>960</posx>
-					<posy>480</posy>
+					<left>960</left>
+					<top>480</top>
 					<control type="label">
-						<posx>45</posx>
-						<posy>8</posy>
+						<left>45</left>
+						<top>8</top>
 						<width>570</width>
 						<height>30</height>
 						<font>Font_18</font>
@@ -562,8 +562,8 @@
 						<!-- Group Manager -->
 						<textoffsetx>60</textoffsetx>
 						<include>PVRSearchButton</include>
-						<posx>0</posx>
-						<posy>45</posy>
+						<left>0</left>
+						<top>45</top>
 						<label>$LOCALIZE[19205]</label>
 						<onleft>20</onleft>
 						<onright>9000</onright>
@@ -574,8 +574,8 @@
 						<!-- TV/Radio -->
 						<textoffsetx>60</textoffsetx>
 						<include>PVRSearchButton</include>
-						<posx>0</posx>
-						<posy>90</posy>
+						<left>0</left>
+						<top>90</top>
 						<label>$LOCALIZE[19024]</label>
 						<altlabel>$LOCALIZE[19023]</altlabel>
 						<usealttexture>!String.IsEmpty(Window.Property(IsRadio))</usealttexture>
@@ -588,8 +588,8 @@
 						<!-- New channel -->
 						<textoffsetx>60</textoffsetx>
 						<include>PVRSearchButton</include>
-						<posx>0</posx>
-						<posy>135</posy>
+						<left>0</left>
+						<top>135</top>
 						<label>$LOCALIZE[19204]</label>
 						<onleft>20</onleft>
 						<onright>9000</onright>
@@ -599,23 +599,23 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>960</posx>
-				<posy>123</posy>
+				<left>960</left>
+				<top>123</top>
 				<width>3</width>
 				<height>687</height>
 				<texture>separator_v.png</texture>
 			</control>
 			<control type="image">
-				<posx>210</posx>
-				<posy>900</posy>
+				<left>210</left>
+				<top>900</top>
 				<height>60</height>
 				<width>1500</width>
 				<texture>black.png</texture>
 				<colordiffuse>90FFFFFF</colordiffuse>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>210</posx>
-				<posy>900</posy>
+				<left>210</left>
+				<top>900</top>
 				<onup>9002</onup>
 				<ondown>9002</ondown>
 				<orientation>horizontal</orientation>

@@ -21,8 +21,8 @@
 			<control type="grouplist">
 				<orientation>horizontal</orientation>
 				<align>center</align>
-				<posx>0</posx>
-				<posy>45</posy>
+				<left>0</left>
+				<top>45</top>
 				<width>1920</width>
 				<control type="button" id="10">
 					<!-- no/canx -->
@@ -84,13 +84,13 @@
 			</control>
 			<control type="progress" id="20">
 				<!-- was 404? -->
-				<posy>90</posy>
+				<top>90</top>
 				<include>Dialogs_Progress</include>
 				<info>System.Progressbar</info>
 			</control>
 			<control type="label">
-				<posx>910</posx>
-				<posy>1</posy>
+				<left>910</left>
+				<top>1</top>
 				<width>100</width>
 				<height>52</height>
 				<align>center</align>

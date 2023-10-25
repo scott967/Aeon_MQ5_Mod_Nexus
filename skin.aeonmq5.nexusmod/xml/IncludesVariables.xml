@@ -5,11 +5,11 @@
 <!-- Krypton 9.1.14/9.1.16/9.1.17/9.1.18/9.1.19 /9.2.0/9.2.1 window IDs/9.2.2 /9.2.3-->
 <!-- Leia 10.2.3 /10.2.4/10.2.5/10.2.6/10.2.8/10.3.0/10.5.0/10.5.1/10.5.2/10.6.0/10.6.1/10.6.2 -->
 <!-- Matrix 11.0.1/11.0.2/11.0.4/11.0.5/11.1.1/11.2.0/11.3.0 -->
-<!-- Nexus 12.2.0/12.3.0/12.4.0 favorites/12.5.0 -->
+<!-- Nexus 12.2.0/12.3.0/12.4.0 favorites/12.5.0/12.7.0 -->
 <includes>
 	<!-- ################################################ Value/General ################################################ -->
 	<variable name="SkinVersion">
-		<value>12.5.0 Nexusmod[COLOR=80FFFFFF] | [/COLOR]02/28/2023</value>
+		<value>12.7.0 Nexusmod[COLOR=80FFFFFF] | [/COLOR]02/28/2023</value>
 	</variable>
 	<variable name="Sub_GoTo">
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(subid),movies)">6001</value>
@@ -4059,6 +4059,7 @@
 		<value condition="Window.IsActive(musicplaylist) + ![Player.HasAudio | [Player.HasVideo + VideoPlayer.Content(musicvideos)]] +  String.IsEqual(ListItem.DBType,musicvideo)">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="Window.IsActive(musicplaylist) + Player.HasVideo +  VideoPlayer.Content(musicvideos)">$INFO[Player.Art(thumb)]</value>  <!-- MV is playing on mixed playlist -->
 		<!-- art for other than musicplaylist (not genres)  -->
+		<value condition="String.Contains(ListItem.DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem.Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="![String.IsEmpty(ListItem.Art(poster)) | Container.Content(genres)]">$INFO[ListItem.Art(poster)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(cover)) + Container.Content(musicvideos) + [!Control.IsVisible(62) | [Control.IsVisible(62) + !Skin.HasSetting(noviewpanelposter)]]">$INFO[ListItem.Art(cover)]</value>
 		<value condition="Window.IsVisible(videos) + Container.Content(albums)">$INFO[Container(5026).ListItem(0).Art(thumb)]</value>  <!-- invisible list to get album art for musicvideos -->
@@ -4123,6 +4124,7 @@
 		<value>$INFO[ListItem.Art(thumb)]</value>
 	</variable>
 	<variable name="value_poster_midlist">
+		<value condition="String.Contains(ListItem.DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem.Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="Window.IsVisible(videos) + Container.Content(albums)">$INFO[Container(5026).ListItem(0).Art(thumb)]</value>
 		<value condition="![String.IsEmpty(ListItem.Art(poster)) | Container.Content(genres)]">$INFO[ListItem.Art(poster)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(tvshow.poster)) + Container.Content(episodes)">$INFO[ListItem.Art(tvshow.poster)]</value>
@@ -4133,94 +4135,117 @@
 		<value condition="[Window.IsActive(musicplaylist) | Window.IsActive(music)] + Container.Content(genres) + Skin.HasSetting(externalmusicgenreicon)">$INFO[Skin.String(custom_musicgenreicons.path)]$INFO[ListItem.Label]$INFO[Skin.String(custom_musicgenreicons.ext)]</value>
 	</variable>
 	<variable name="value_poster-11">
+		<value condition="String.Contains(ListItem(-11).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(-11).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(-11).Art(poster))">$INFO[ListItem(-11).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(-11).Art(poster))">$INFO[ListItem(-11).Icon]</value>
 	</variable>
 	<variable name="value_poster-10">
+		<value condition="String.Contains(ListItem(-10).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(-10).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(-10).Art(poster))">$INFO[ListItem(-10).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(-10).Art(poster))">$INFO[ListItem(-10).Icon]</value>
 	</variable>
 	<variable name="value_poster-9">
+		<value condition="String.Contains(ListItem(-9).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(-9).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(-9).Art(poster))">$INFO[ListItem(-9).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(-9).Art(poster))">$INFO[ListItem(-9).Icon]</value>
 	</variable>
 	<variable name="value_poster-8">
+		<value condition="String.Contains(ListItem(-8).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(-8).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(-8).Art(poster))">$INFO[ListItem(-8).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(-8).Art(poster))">$INFO[ListItem(-8).Icon]</value>
 	</variable>
 	<variable name="value_poster-7">
+		<value condition="String.Contains(ListItem(-7).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(-7).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(-7).Art(poster))">$INFO[ListItem(-7).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(-7).Art(poster))">$INFO[ListItem(-7).Icon]</value>
 	</variable>
 	<variable name="value_poster-6">
+		<value condition="String.Contains(ListItem(-6).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(-6).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(-6).Art(poster))">$INFO[ListItem(-6).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(-6).Art(poster))">$INFO[ListItem(-6).Icon]</value>
 	</variable>
 	<variable name="value_poster-5">
+		<value condition="String.Contains(ListItem(-5).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(-5).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(-5).Art(poster))">$INFO[ListItem(-5).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(-5).Art(poster))">$INFO[ListItem(-5).Icon]</value>
 	</variable>
 	<variable name="value_poster-4">
+		<value condition="String.Contains(ListItem(-4).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(-4).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(-4).Art(poster))">$INFO[ListItem(-4).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(-4).Art(poster))">$INFO[ListItem(-4).Icon]</value>
 	</variable>
 	<variable name="value_poster-3">
+		<value condition="String.Contains(ListItem(-3).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(-3).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(-3).Art(poster))">$INFO[ListItem(-3).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(-3).Art(poster))">$INFO[ListItem(-3).Icon]</value>
 	</variable>
 	<variable name="value_poster-2">
+		<value condition="String.Contains(ListItem(-2).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(-2).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(-2).Art(poster))">$INFO[ListItem(-2).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(-2).Art(poster))">$INFO[ListItem(-2).Icon]</value>
 	</variable>
 	<variable name="value_poster-1">
+		<value condition="String.Contains(ListItem(-1).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(-1).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(-1).Art(poster))">$INFO[ListItem(-1).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(-1).Art(poster))">$INFO[ListItem(-1).Icon]</value>
 	</variable>
 	<variable name="value_poster0">
+		<value condition="String.Contains(ListItem(0).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(0).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(0).Art(poster))">$INFO[ListItem(0).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(0).Art(poster))">$INFO[ListItem(0).Icon]</value>
 	</variable>
 	<variable name="value_poster1">
+		<value condition="String.Contains(ListItem(1).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(1).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(1).Art(poster))">$INFO[ListItem(1).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(1).Art(poster))">$INFO[ListItem(1).Icon]</value>
 	</variable>
 	<variable name="value_poster2">
+		<value condition="String.Contains(ListItem(2).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(2).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(2).Art(poster))">$INFO[ListItem(2).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(2).Art(poster))">$INFO[ListItem(2).Icon]</value>
 	</variable>
 	<variable name="value_poster3">
+		<value condition="String.Contains(ListItem(3).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(3).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(3).Art(poster))">$INFO[ListItem(3).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(3).Art(poster))">$INFO[ListItem(3).Icon]</value>
 	</variable>
 	<variable name="value_poster4">
+		<value condition="String.Contains(ListItem(4).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(4).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(4).Art(poster))">$INFO[ListItem(4).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(4).Art(poster))">$INFO[ListItem(4).Icon]</value>
 	</variable>
 	<variable name="value_poster5">
+		<value condition="String.Contains(ListItem(5).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(5).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(5).Art(poster))">$INFO[ListItem(5).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(5).Art(poster))">$INFO[ListItem(5).Icon]</value>
 	</variable>
 	<variable name="value_poster6">
+		<value condition="String.Contains(ListItem(6).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(6).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(6).Art(poster))">$INFO[ListItem(6).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(6).Art(poster))">$INFO[ListItem(6).Icon]</value>
 	</variable>
 	<variable name="value_poster7">
+		<value condition="String.Contains(ListItem(7).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(7).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(7).Art(poster))">$INFO[ListItem(7).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(7).Art(poster))">$INFO[ListItem(7).Icon]</value>
 	</variable>
 	<variable name="value_poster8">
+		<value condition="String.Contains(ListItem(8).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(8).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(8).Art(poster))">$INFO[ListItem(8).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(8).Art(poster))">$INFO[ListItem(8).Icon]</value>
 	</variable>
 	<variable name="value_poster9">
+		<value condition="String.Contains(ListItem(9).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(9).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(9).Art(poster))">$INFO[ListItem(9).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(9).Art(poster))">$INFO[ListItem(9).Icon]</value>
 	</variable>
 	<variable name="value_poster10">
+		<value condition="String.Contains(ListItem(10).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(10).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(10).Art(poster))">$INFO[ListItem(10).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(10).Art(poster))">$INFO[ListItem(10).Icon]</value>
 	</variable>
 	<variable name="value_poster11">
+		<value condition="String.Contains(ListItem(11).DBType,studio)">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem(11).Label]$INFO[Skin.String(custom_studios.ext)]</value>
 		<value condition="!String.IsEmpty(ListItem(11).Art(poster))">$INFO[ListItem(11).Art(poster)]</value>
 		<value condition="String.IsEmpty(ListItem(11).Art(poster))">$INFO[ListItem(11).Icon]</value>
 	</variable>

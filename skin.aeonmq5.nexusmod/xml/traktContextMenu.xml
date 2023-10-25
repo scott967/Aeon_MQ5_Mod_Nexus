@@ -5,16 +5,16 @@
 <window>
 	<coordinates>
 		<system>1</system>
-		<posx>615</posx>
-		<posy>298</posy>
+		<left>615</left>
+		<top>298</top>
 	</coordinates>
 	<controls>
 		<control type="group" id="2">
 			<animation effect="fade" time="300">Visible</animation>
 			<animation effect="fade" time="300">Hidden</animation>
 			<control type="list" id="111">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>681</width>
 				<height>483</height>
 				<onup>111</onup>
@@ -24,15 +24,15 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="58" width="681">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>58</height>
 						<width>681</width>
 						<texture>dialogs_context_nofocus.png</texture>
 					</control>
 					<control type="label">
-						<posx>340</posx>
-						<posy>0</posy>
+						<left>340</left>
+						<top>0</top>
 						<height>58</height>
 						<width>681</width>
 						<align>center</align>
@@ -46,15 +46,15 @@
 				</itemlayout>
 				<focusedlayout height="58" width="681">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>58</height>
 						<width>681</width>
 						<texture>dialogs_context_focus.png</texture>
 					</control>
 					<control type="label">
-						<posx>340</posx>
-						<posy>0</posy>
+						<left>340</left>
+						<top>0</top>
 						<height>58</height>
 						<width>681</width>
 						<align>center</align>

@@ -14,24 +14,24 @@
 	<animation effect="slide" time="0" tween="cubic" easing="out" end="600,0" condition="Window.IsVisible(addoninformation)">Conditional</animation>
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>-30</posy>
+			<left>0</left>
+			<top>-30</top>
 			<width>681</width>
 			<height>58</height>
 			<texture>gradient_focus.png</texture>
 			<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>-75</posy>
+			<left>0</left>
+			<top>-75</top>
 			<width>681</width>
 			<height>58</height>
 			<texture>dialogs_context_nofocus.png</texture>
 			<colordiffuse>F9FFFFFF</colordiffuse>
 		</control>
 		<control type="label">
-			<posx>120</posx>
-			<posy>-63</posy>
+			<left>120</left>
+			<top>-63</top>
 			<width>450</width>
 			<height>60</height>
 			<align>center</align>
@@ -41,8 +41,8 @@
 		</control>
 		<control type="image" id="999">
 			<!-- background image -->
-			<posx>0</posx>
-			<posy>-75</posy>
+			<left>0</left>
+			<top>-75</top>
 			<width>684</width>
 			<height>1080</height>
 			<texture></texture>
@@ -50,23 +50,23 @@
 		<control type="image" id="997">
 			<!-- top image -->
 			<description>top image</description>
-			<posx>-3</posx>
-			<posy>-40</posy>
+			<left>-3</left>
+			<top>-40</top>
 			<width>694</width>
 			<height>40</height>
 			<texture></texture>
 		</control>
 		<control type="image" id="998">
 			<!-- bottom image -->
-			<posx>-3</posx>
-			<posy>-75</posy>
+			<left>-3</left>
+			<top>-75</top>
 			<width>694</width>
 			<height>40</height>
 			<texture></texture>
 		</control>
 		<control type="grouplist" id="996">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>681</width>
 			<height max="1005">auto</height>
 			<itemgap>0</itemgap>
@@ -81,6 +81,7 @@
 				<label>31671</label>
 				<visible>System.AddonIsEnabled(script.libraryeditor) + [Container.Content(Movies) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 			</control>
+
 			<control type="button" id="1031">
 				<include>DialogContext_Button</include>
 				<onleft>Dialog.Close(contextmenu)</onleft>

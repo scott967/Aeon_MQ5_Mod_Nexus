@@ -14,8 +14,8 @@
 			<!-- default group -->
 			<include>Animation_Window</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>84</posy>
+				<left>0</left>
+				<top>84</top>
 				<width>1920</width>
 				<height>45</height>
 				<texture>shadow_h.png</texture>
@@ -23,8 +23,8 @@
 			</control>
 			<!-- Left Panel -->
 			<control type="group">
-				<posx>0</posx>
-				<posy>128</posy>
+				<left>0</left>
+				<top>128</top>
 				<width>930</width>
 				<height>970</height>
 				<animation effect="slide" start="-960" end="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
@@ -32,16 +32,16 @@
 				<animation effect="fade" time="200" start="75" end="100" reversible="false" condition="Control.HasFocus(20)">Conditional</animation>
 				<animation effect="fade" time="200" start="100" end="75" reversible="false" condition="Control.HasFocus(21)">Conditional</animation>
 				<control type="image">
-					<posx>930</posx>
-					<posy>0</posy>
+					<left>930</left>
+					<top>0</top>
 					<width>45</width>
 					<height>952</height>
 					<texture>shadow.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>930</width>
 					<height>952</height>
 					<texture>darkgrey.png</texture>
@@ -49,8 +49,8 @@
 					<animation effect="fade" end="85" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>930</width>
 					<height>82</height>
 					<texture>darkgrey.png</texture>
@@ -58,8 +58,8 @@
 					<animation effect="fade" end="85" condition="true">Conditional</animation>
 				</control>
 				<control type="label" id="101">
-					<posx>30</posx>
-					<posy>20</posy>
+					<left>30</left>
+					<top>20</top>
 					<width>712</width>
 					<height>75</height>
 					<font>Font_22</font>
@@ -67,8 +67,8 @@
 					<textcolor>FFFFFAF0</textcolor>
 				</control>
 				<control type="label">
-					<posx>908</posx>
-					<posy>24</posy>
+					<left>758</left>
+					<top>24</top>
 					<width>150</width>
 					<height>75</height>
 					<align>right</align>
@@ -80,8 +80,8 @@
 			<!-- Left list -->
 			<control type="list" id="20">
 				<viewtype label="31450">list</viewtype>
-				<posx>0</posx>
-				<posy>210</posy>
+				<left>0</left>
+				<top>210</top>
 				<width>930</width>
 				<height>772</height>
 				<scrolltime>0</scrolltime>
@@ -94,15 +94,15 @@
 				<animation effect="fade" time="200" start="100" end="75" reversible="false" condition="Control.HasFocus(21)">Conditional</animation>
 				<itemlayout height="75">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>930</width>
 						<height>1</height>
 						<texture>line.png</texture>
 					</control>
 					<control type="label">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>750</width>
 						<height>75</height>
 						<font>Font_18</font>
@@ -112,8 +112,8 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<posx>852</posx>
-						<posy>0</posy>
+						<left>852</left>
+						<top>0</top>
 						<width>128</width>
 						<height>75</height>
 						<font>Font_18</font>
@@ -126,23 +126,23 @@
 				</itemlayout>
 				<focusedlayout height="75">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>930</width>
 						<height>1</height>
 						<texture>line.png</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>930</width>
 						<height>75</height>
 						<texture>settings_button_focus.png</texture>
 						<visible>Control.HasFocus(20)</visible>
 					</control>
 					<control type="label">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>750</width>
 						<height>75</height>
 						<font>Font_18</font>
@@ -152,8 +152,8 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<posx>852</posx>
-						<posy>0</posy>
+						<left>852</left>
+						<top>0</top>
 						<width>128</width>
 						<height>75</height>
 						<font>Font_18</font>
@@ -164,8 +164,8 @@
 						<label>[UPPERCASE]$INFO[ListItem.Size][/UPPERCASE]</label>
 					</control>
 					<control type="label">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>750</width>
 						<height>75</height>
 						<font>Font_18</font>
@@ -176,8 +176,8 @@
 						<visible>!Control.HasFocus(20)</visible>
 					</control>
 					<control type="label">
-						<posx>852</posx>
-						<posy>0</posy>
+						<left>852</left>
+						<top>0</top>
 						<width>128</width>
 						<height>62</height>
 						<font>Font_18</font>
@@ -192,8 +192,8 @@
 			</control>
 			<!-- Right Panel -->
 			<control type="group">
-				<posx>990</posx>
-				<posy>128</posy>
+				<left>990</left>
+				<top>128</top>
 				<width>930</width>
 				<height>970</height>
 				<animation effect="slide" start="960" end="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
@@ -201,16 +201,16 @@
 				<animation effect="fade" time="200" start="75" end="100" reversible="false" condition="Control.HasFocus(21)">Conditional</animation>
 				<animation effect="fade" time="200" start="100" end="75" reversible="false" condition="Control.HasFocus(20)">Conditional</animation>
 				<control type="image">
-					<posx>-45</posx>
-					<posy>0</posy>
+					<left>-45</left>
+					<top>0</top>
 					<width>45</width>
 					<height>952</height>
 					<texture flipx="true">shadow.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>930</width>
 					<height>952</height>
 					<texture>darkgrey.png</texture>
@@ -218,8 +218,8 @@
 					<animation effect="fade" end="85" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>930</width>
 					<height>82</height>
 					<texture>darkgrey.png</texture>
@@ -227,8 +227,8 @@
 					<animation effect="fade" end="85" condition="true">Conditional</animation>
 				</control>
 				<control type="label" id="102">
-					<posx>30</posx>
-					<posy>20</posy>
+					<left>30</left>
+					<top>20</top>
 					<width>712</width>
 					<height>75</height>
 					<font>Font_22</font>
@@ -236,8 +236,8 @@
 					<textcolor>FFFFFAF0</textcolor>
 				</control>
 				<control type="label">
-					<posx>908</posx>
-					<posy>24</posy>
+					<left>758</left>
+					<top>24</top>
 					<width>150</width>
 					<height>75</height>
 					<align>right</align>
@@ -249,8 +249,8 @@
 			<!-- Right list -->
 			<control type="list" id="21">
 				<viewtype label="31450">list</viewtype>
-				<posx>990</posx>
-				<posy>210</posy>
+				<left>990</left>
+				<top>210</top>
 				<width>930</width>
 				<height>772</height>
 				<scrolltime>0</scrolltime>
@@ -263,15 +263,15 @@
 				<animation effect="fade" time="200" start="100" end="75" reversible="false" condition="Control.HasFocus(20)">Conditional</animation>
 				<itemlayout height="75">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>930</width>
 						<height>1</height>
 						<texture>line.png</texture>
 					</control>
 					<control type="label">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>750</width>
 						<height>75</height>
 						<font>Font_18</font>
@@ -281,8 +281,8 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<posx>852</posx>
-						<posy>0</posy>
+						<left>852</left>
+						<top>0</top>
 						<width>128</width>
 						<height>75</height>
 						<font>Font_18</font>
@@ -295,23 +295,23 @@
 				</itemlayout>
 				<focusedlayout height="75">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>930</width>
 						<height>1</height>
 						<texture>line.png</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>930</width>
 						<height>75</height>
 						<texture>settings_button_focus.png</texture>
 						<visible>Control.HasFocus(21)</visible>
 					</control>
 					<control type="label">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>750</width>
 						<height>75</height>
 						<font>Font_18</font>
@@ -321,8 +321,8 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<posx>852</posx>
-						<posy>0</posy>
+						<left>852</left>
+						<top>0</top>
 						<width>128</width>
 						<height>75</height>
 						<font>Font_18</font>
@@ -333,8 +333,8 @@
 						<label>[UPPERCASE]$INFO[ListItem.Size][/UPPERCASE]</label>
 					</control>
 					<control type="label">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>750</width>
 						<height>75</height>
 						<font>Font_18</font>
@@ -345,8 +345,8 @@
 						<visible>!Control.HasFocus(21)</visible>
 					</control>
 					<control type="label">
-						<posx>852</posx>
-						<posy>0</posy>
+						<left>852</left>
+						<top>0</top>
 						<width>128</width>
 						<height>62</height>
 						<font>Font_18</font>

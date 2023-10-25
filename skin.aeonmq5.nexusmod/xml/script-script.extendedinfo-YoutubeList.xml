@@ -141,7 +141,7 @@
 							<textcolor>FFFAFAFA</textcolor>
 						</control>
 						<control type="label">
-							<left>30</left>
+							<left>-350</left>
 							<top>-25</top>
 							<width>380</width>
 							<height>5</height>
@@ -224,7 +224,7 @@
 							<textcolor>FFFAFAFA</textcolor>
 						</control>
 						<control type="label">
-							<left>30</left>
+							<left>-350</left>
 							<top>-25</top>
 							<width>380</width>
 							<height>5</height>
@@ -311,7 +311,7 @@
 				<label>$ADDON[script.extendedinfo 32023]</label>
 			</control>
 			<control type="label">
-				<left>0</left>
+				<left>-1900</left>
 				<top>0</top>
 				<height>40</height>
 				<aligny>center</aligny>

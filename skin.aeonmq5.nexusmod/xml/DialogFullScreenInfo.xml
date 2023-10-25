@@ -19,8 +19,8 @@
 				<texture>$VAR[value_studiosicon]</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<height>225</height>
 				<width>1920</width>
 				<texture flipy="true">shadow_mask.png</texture>
@@ -28,8 +28,8 @@
 			</control>
 			<control type="label">
 				<!-- Title or Original Title -->
-				<posx>45</posx>
-				<posy>12</posy>
+				<left>45</left>
+				<top>12</top>
 				<width>1650</width>
 				<height>60</height>
 				<font>Font_40</font>
@@ -40,8 +40,8 @@
 			</control>
 			<control type="label">
 				<!-- Year/Tagline/Channel (CR chapter info) -->
-				<posx>45</posx>
-				<posy>82</posy>
+				<left>45</left>
+				<top>82</top>
 				<width>1650</width>
 				<height>38</height>
 				<font>Font_18A</font>
@@ -52,8 +52,8 @@
 			</control>
 			<control type="image">
 				<!-- User Star -->
-				<posx>1650</posx>
-				<posy>15</posy>
+				<left>1650</left>
+				<top>15</top>
 				<width>110</width>
 				<height>110</height>
 				<align>center</align>
@@ -63,8 +63,8 @@
 				<visible>!String.IsEmpty(VideoPlayer.UserRating) + !VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="label">
-				<posx>1659</posx>
-				<posy>30</posy>
+				<left>1659</left>
+				<top>30</top>
 				<width>90</width>
 				<height>90</height>
 				<align>center</align>
@@ -76,8 +76,8 @@
 			</control>
 			<control type="image">
 				<!-- Scraped Star -->
-				<posx>1768</posx>
-				<posy>15</posy>
+				<left>1768</left>
+				<top>15</top>
 				<width>110</width>
 				<height>110</height>
 				<align>center</align>
@@ -87,8 +87,8 @@
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="label">
-				<posx>1778</posx>
-				<posy>30</posy>
+				<left>1778</left>
+				<top>30</top>
 				<width>90</width>
 				<height>90</height>
 				<align>center</align>
@@ -106,8 +106,8 @@
 			<animation effect="slide" time="400" start="0,0" end="0,1200" easing="in" tween="cubic">Hidden</animation>
 			<visible>![Window.IsActive(SubtitleSearch) | Window.IsActive(pvrchannelguide) | Window.IsActive(pvrosdchannels) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)]</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>825</posy>
+				<left>0</left>
+				<top>825</top>
 				<height>255</height>
 				<width>1920</width>
 				<texture>shadow_mask.png</texture>
@@ -118,15 +118,15 @@
 				<animation effect="slide" start="0,0" end="0,-38" time="300" tween="cubic" easing="out" condition="Player.Forwarding | Player.IsTempo">Conditional</animation>
 				<visible>!VideoPlayer.Content(liveTV)</visible>
 				<control type="progress" id="23">
-					<posx>30</posx>
-					<posy>996</posy>
+					<left>30</left>
+					<top>996</top>
 					<width>375</width>
 					<height>15</height>
 					<info>Player.Progress</info>
 				</control>
 				<control type="ranges" id="2889">
-					<posx>30</posx>
-					<posy>988</posy>
+					<left>30</left>
+					<top>988</top>
 					<width>375</width>
 					<height>15</height>
 					<info>Player.Chapters</info>
@@ -134,8 +134,8 @@
 					<!-- <animation effect="fade" time="200">VisibleChange</animation> -->
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>1020</posy>
+					<left>45</left>
+					<top>1020</top>
 					<width>345</width>
 					<height>38</height>
 					<font>Font_23</font>
@@ -148,15 +148,15 @@
 				<animation effect="slide" start="0,0" end="0,-38" time="300" tween="cubic" easing="out" condition="Player.Forwarding | Player.IsTempo">Conditional</animation>
 				<visible>VideoPlayer.Content(liveTV)</visible>
 				<control type="progress" id="23">
-					<posx>30</posx>
-					<posy>996</posy>
+					<left>30</left>
+					<top>996</top>
 					<width>375</width>
 					<height>15</height>
 					<info>PVR.EpgEventProgress</info>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>1020</posy>
+					<left>45</left>
+					<top>1020</top>
 					<width>345</width>
 					<height>38</height>
 					<font>Font_23</font>
@@ -166,8 +166,8 @@
 				</control>
 				<control type="label">
 					<!-- Timeshift -->
-					<posx>1282</posx>
-					<posy>996</posy>
+					<left>1102</left>
+					<top>996</top>
 					<width>180</width>
 					<height>38</height>
 					<align>right</align>
@@ -178,8 +178,9 @@
 					<visible>PVR.IsTimeShift</visible>
 				</control>
 				<control type="label">
-					<posx>1282</posx>
-					<posy>1020</posy>
+					<!-- ON -->
+					<left>1102</left>
+					<top>1020</top>
 					<width>180</width>
 					<height>38</height>
 					<align>right</align>
@@ -189,8 +190,8 @@
 					<visible>PVR.IsTimeshift</visible>
 				</control>
 				<control type="image">
-					<posx>1287</posx>
-					<posy>998</posy>
+					<left>1287</left>
+					<top>998</top>
 					<height>60</height>
 					<width>1</width>
 					<texture>line_v.png</texture>
@@ -202,8 +203,8 @@
 				<visible>!String.Contains(skin.string(videofurniture),hide) | Player.Paused</visible>
 				<control type="label">
 					<!-- Current Time -->
-					<posx>1492</posx>
-					<posy>996</posy>
+					<left>1312</left>
+					<top>996</top>
 					<width>180</width>
 					<height>38</height>
 					<align>right</align>
@@ -213,8 +214,8 @@
 					<label>31310</label>
 				</control>
 				<control type="label">
-					<posx>1492</posx>
-					<posy>1020</posy>
+					<left>1312</left>
+					<top>1020</top>
 					<width>180</width>
 					<height>38</height>
 					<align>right</align>
@@ -223,16 +224,16 @@
 					<label>$INFO[System.Time]</label>
 				</control>
 				<control type="image">
-					<posx>1497</posx>
-					<posy>998</posy>
+					<left>1497</left>
+					<top>998</top>
 					<height>60</height>
 					<width>1</width>
 					<texture>line_v.png</texture>
 				</control>
 				<control type="label">
 					<!-- Remaining Time -->
-					<posx>1702</posx>
-					<posy>996</posy>
+					<left>1500</left>
+					<top>996</top>
 					<width>202</width>
 					<height>38</height>
 					<align>right</align>
@@ -242,8 +243,8 @@
 					<label>31991</label>
 				</control>
 				<control type="label">
-					<posx>1702</posx>
-					<posy>1020</posy>
+					<left>1500</left>
+					<top>1020</top>
 					<width>202</width>
 					<height>38</height>
 					<align>right</align>
@@ -253,8 +254,8 @@
 					<visible>!VideoPlayer.Content(liveTV)</visible>
 				</control>
 				<control type="label">
-					<posx>1702</posx>
-					<posy>1020</posy>
+					<left>1500</left>
+					<top>1020</top>
 					<width>202</width>
 					<height>38</height>
 					<align>right</align>
@@ -264,16 +265,16 @@
 					<visible>VideoPlayer.Content(liveTV)</visible>
 				</control>
 				<control type="image">
-					<posx>1707</posx>
-					<posy>998</posy>
+					<left>1707</left>
+					<top>998</top>
 					<height>60</height>
 					<width>1</width>
 					<texture>line_v.png</texture>
 				</control>
 				<control type="label">
 					<!-- Ends At -->
-					<posx>1875</posx>
-					<posy>996</posy>
+					<left>1695</left>
+					<top>996</top>
 					<width>180</width>
 					<height>38</height>
 					<align>right</align>
@@ -284,8 +285,8 @@
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
-					<posx>1875</posx>
-					<posy>1020</posy>
+					<left>1695</left>
+					<top>1020</top>
 					<width>180</width>
 					<height>38</height>
 					<align>right</align>
@@ -295,8 +296,8 @@
 					<visible>!VideoPlayer.Content(liveTV)</visible>
 				</control>
 				<control type="label">
-					<posx>1875</posx>
-					<posy>1020</posy>
+					<left>1695</left>
+					<top>1020</top>
 					<width>180</width>
 					<height>38</height>
 					<align>right</align>
@@ -308,7 +309,7 @@
 			</control>
 		</control>
 		<control type="group">	<!-- main info panel only furniture full and partial unless paused slide up when tempo fwd rwd -->
-			<posy>-105</posy>
+			<top>-105</top>
 			<animation effect="slide" time="400" start="0,1200" end="0,0" easing="out" tween="cubic">WindowOpen</animation>
 			<animation effect="slide" time="400" start="0,1200" end="0,0" easing="out" tween="cubic">Visible</animation>
 			<animation effect="slide" time="400" start="0,0" end="0,1200" easing="in" tween="cubic">WindowClose</animation>
@@ -318,16 +319,16 @@
 			<visible>![[String.Contains(skin.string(videofurniture),hide) + !Player.Paused] | Window.IsActive(SubtitleSearch) | Window.IsActive(pvrchannelguide) | Window.IsActive(pvrosdchannels) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)]</visible>
 			<control type="image">
 				<!-- Barra de flags -->
-				<posx>330</posx>
-				<posy>1023</posy>
+				<left>330</left>
+				<top>1023</top>
 				<height>46</height>
 				<width>1090</width>
 				<colordiffuse>$VAR[value_flagsbar]</colordiffuse>
 				<texture>whitebar_h.png</texture>
 			</control>
 			<control type="grouplist">	<!-- Flags -->
-				<posx>345</posx>
-				<posy>1008</posy>
+				<left>345</left>
+				<top>1008</top>
 				<orientation>horizontal</orientation>
 				<itemgap>20</itemgap>
 				<control type="image">
@@ -378,8 +379,8 @@
 			</control>
 			<control type="image">
 				<!-- Logo e Clearart -->
-				<posx>1620</posx>
-				<posy>110</posy>
+				<left>1620</left>
+				<top>110</top>
 				<width>270</width>
 				<height>510</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
@@ -387,8 +388,8 @@
 			</control>
 			<control type="image">
 				<!-- Fundo -->
-				<posx>0</posx>
-				<posy>654</posy>
+				<left>0</left>
+				<top>654</top>
 				<width>1920</width>
 				<height>450</height>
 				<texture>widget_fullscreen.png</texture>
@@ -397,8 +398,8 @@
 			</control>
 			<control type="image">
 				<!-- Barra de titulos -->
-				<posx>0</posx>
-				<posy>675</posy>
+				<left>0</left>
+				<top>675</top>
 				<width>1920</width>
 				<height>30</height>
 				<texture>darkgrey.png</texture>
@@ -411,8 +412,8 @@
 				<animation effect="rotate" end="-360" center="auto" time="8000" loop="true" reversible="false" condition="String.IsEqual(skin.string(cdart_seconds),8000)">Conditional</animation>
 				<animation effect="rotate" end="-360" center="auto" time="16000" loop="true" reversible="false" condition="String.IsEqual(skin.string(cdart_seconds),16000)">Conditional</animation>
 				<animation effect="rotate" end="-360" center="auto" time="20000" loop="true" reversible="false" condition="String.IsEqual(skin.string(cdart_seconds),20000)">Conditional</animation>
-				<posx>30</posx>
-				<posy>540</posy>
+				<left>30</left>
+				<top>540</top>
 				<width>270</width>
 				<height>270</height>
 				<texture diffuse="cdart_diffuse.png" background="true">$VAR[value_videodisc]</texture>
@@ -420,8 +421,8 @@
 				<visible>!String.IsEmpty(Player.Art(discart))</visible>
 			</control>
 			<control type="image">
-				<posx>12</posx>
-				<posy>676</posy>
+				<left>12</left>
+				<top>676</top>
 				<width>291</width>
 				<height>402</height>
 				<texture>darkgrey.png</texture>
@@ -429,8 +430,8 @@
 			</control>
 			<control type="image">
 				<!-- Poster/cover -->
-				<posx>15</posx>
-				<posy>676</posy>
+				<left>15</left>
+				<top>676</top>
 				<width>285</width>
 				<height>402</height>
 				<texture>$VAR[value_thumbfullscreen]</texture>
@@ -439,8 +440,8 @@
 			</control>
 			<control type="label">
 				<!-- Plot -->
-				<posx>330</posx>
-				<posy>670</posy>
+				<left>330</left>
+				<top>670</top>
 				<width>450</width>
 				<height>38</height>
 				<align>left</align>
@@ -451,8 +452,8 @@
 			</control>
 			<control type="textbox">
 				<!-- Plot -->
-				<posx>330</posx>
-				<posy>720</posy>
+				<left>330</left>
+				<top>720</top>
 				<width>930</width>
 				<height>270</height>
 				<font>Font_18A</font>
@@ -465,8 +466,8 @@
 				<visible>!VideoPlayer.Content(LiveTV) + !VideoPlayer.Content(musicvideos)</visible>
 				<control type="label">
 					<!-- Starring -->
-					<posx>1320</posx>
-					<posy>670</posy>
+					<left>1320</left>
+					<top>670</top>
 					<width>450</width>
 					<height>38</height>
 					<align>left</align>
@@ -477,8 +478,8 @@
 				</control>
 				<control type="textbox">
 					<!-- Cast -->
-					<posx>1320</posx>
-					<posy>720</posy>
+					<left>1320</left>
+					<top>720</top>
 					<width>570</width>
 					<height>285</height>
 					<font>Font_18A</font>
@@ -491,8 +492,8 @@
 				<visible>VideoPlayer.Content(musicvideos)</visible>
 				<control type="label">
 					<!-- Album | Artist -->
-					<posx>1320</posx>
-					<posy>670</posy>
+					<left>1320</left>
+					<top>670</top>
 					<width>450</width>
 					<height>38</height>
 					<align>left</align>
@@ -503,8 +504,8 @@
 				</control>
 				<control type="textbox">
 					<!-- Album -->
-					<posx>1320</posx>
-					<posy>720</posy>
+					<left>1320</left>
+					<top>720</top>
 					<width>570</width>
 					<height>345</height>
 					<font>Font_18A</font>
@@ -524,8 +525,8 @@
 				<effect type="slide" time="400" start="0,0" end="0,1200" easing="in" tween="cubic" />
 			</animation>
 			<control type="group">
-				<posx>-750</posx>
-				<posy>1040</posy>
+				<left>-750</left>
+				<top>1040</top>
 				<width>748</width>
 				<height>42</height>
 				<animation effect="slide" end="300,0" time="200" condition="Player.Forwarding2x | Player.IsTempo">Conditional</animation>
@@ -534,8 +535,8 @@
 				<animation effect="slide" end="638,0" time="200" condition="Player.Forwarding16x">Conditional</animation>
 				<animation effect="slide" end="748,0" time="200" condition="Player.Forwarding32x">Conditional</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>748</width>
 					<height>42</height>
 					<texture flipy="true">osd_button_reverse.png</texture>
@@ -546,8 +547,8 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>1920</posx>
-				<posy>1040</posy>
+				<left>1920</left>
+				<top>1040</top>
 				<width>748</width>
 				<height>42</height>
 				<animation effect="slide" end="-300,0" time="200" condition="Player.Rewinding2x">Conditional</animation>
@@ -556,8 +557,8 @@
 				<animation effect="slide" end="-638,0" time="200" condition="Player.Rewinding16x">Conditional</animation>
 				<animation effect="slide" end="-748,0" time="200" condition="Player.Rewinding32x">Conditional</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>748</width>
 					<height>42</height>
 					<texture flipy="true" flipx="true">osd_button_reverse.png</texture>
@@ -570,8 +571,8 @@
 		</control>
 		<control type="label">
 			<!-- Pause -->
-			<posx>-480</posx>
-			<posy>270</posy>
+			<left>-480</left>
+			<top>270</top>
 			<width>2880</width>
 			<height>158</height>
 			<align>center</align>

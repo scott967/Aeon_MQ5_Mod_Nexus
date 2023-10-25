@@ -17,8 +17,8 @@
 		<control type="group">	<!-- Background video/music viz display -->
 			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<texture>black.png</texture>
@@ -27,16 +27,16 @@
 				<visible>Player.HasMedia</visible>
 			</control>
 			<control type="videowindow">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<visible>Player.HasVideo</visible>
 				<animation effect="slide" start="0,0" end="-3000,0" time="0">WindowClose</animation>
 			</control>
 			<control type="visualisation">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<visible>PVR.IsPlayingRadio + [String.Contains(Skin.String(vis_bgradio),vis) | String.Contains(Skin.String(vis_bgradio),fanartmix)]</visible>
@@ -69,8 +69,8 @@
 				<animation effect="slide" start="0,0" end="450,0" time="0" easing="in" tween="cubic" condition="Control.IsVisible(11) | Control.IsVisible(12)">Conditional</animation>
 				<visible>[PVR.IsRecording | PVR.HasNonRecordingTimer | PVR.HasReminder] + ![Player.HasMedia | Control.HasFocus(9920) | ControlGroup(9000).HasFocus]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>750</width>
 					<height>39</height>
 					<texture>widgets_panel.png</texture>
@@ -78,8 +78,8 @@
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="image">
-					<posx>30</posx>
-					<posy>8</posy>
+					<left>30</left>
+					<top>8</top>
 					<width>22</width>
 					<height>22</height>
 					<aspectratio>keep</aspectratio>
@@ -87,8 +87,8 @@
 					<visible>PVR.HasNonRecordingTimer</visible>
 				</control>
 				<control type="image">
-					<posx>30</posx>
-					<posy>8</posy>
+					<left>30</left>
+					<top>8</top>
 					<width>30</width>
 					<height>22</height>
 					<aspectratio>keep</aspectratio>
@@ -96,8 +96,8 @@
 					<visible>PVR.IsRecording</visible>
 				</control>
 				<control type="label">
-					<posx>705</posx>
-					<posy>3</posy>
+					<left>75</left>
+					<top>3</top>
 					<width>630</width>
 					<height>30</height>
 					<align>right</align>
@@ -122,24 +122,24 @@
 				<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 				<include>EPGMenu</include>	<!-- image backgrounds and headings -->
 				<control type="image">
-					<posx>360</posx>
-					<posy>196</posy>
+					<left>360</left>
+					<top>196</top>
 					<width>472</width>
 					<height>658</height>
 					<texture>grey.png</texture>
 					<colordiffuse>20FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1590</posx>
-					<posy>196</posy>
+					<left>1590</left>
+					<top>196</top>
 					<width>270</width>
 					<height>658</height>
 					<texture>grey.png</texture>
 					<colordiffuse>20FFFFFF</colordiffuse>
 				</control>
 				<control type="panel" id="50">	<!-- default view -->
-					<posx>0</posx>
-					<posy>195</posy>
+					<left>0</left>
+					<top>195</top>
 					<width>1920</width>
 					<height>660</height>
 					<onup>50</onup>
@@ -154,16 +154,16 @@
 							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>360</width>
 							<height>4</height>
 							<texture>divider.png</texture>
 							<colordiffuse>90FFFFFF</colordiffuse>
 						</control>
 						<control type="image">
-							<posx>360</posx>
-							<posy>1</posy>
+							<left>360</left>
+							<top>1</top>
 							<width>1560</width>
 							<height>57</height>
 							<aspectratio>stretch</aspectratio>
@@ -171,8 +171,8 @@
 							<texture>settings_button_focus.png</texture>
 						</control>
 						<control type="label">
-							<posx>345</posx>
-							<posy>0</posy>
+							<left>345</left>
+							<top>0</top>
 							<width>525</width>
 							<height>60</height>
 							<align>center</align>
@@ -182,8 +182,8 @@
 							<info>ListItem.Date</info>
 						</control>
 						<control type="label">
-							<posx>885</posx>
-							<posy>1</posy>
+							<left>885</left>
+							<top>1</top>
 							<width>885</width>
 							<height>57</height>
 							<align>left</align>
@@ -193,32 +193,32 @@
 							<info>ListItem.Label</info>
 						</control>
 						<control type="image">
-							<posx>1620</posx>
-							<posy>15</posy>
+							<left>1620</left>
+							<top>15</top>
 							<width>45</width>
 							<height>30</height>
 							<texture>pvr_isrecording.png</texture>
 							<visible>ListItem.IsRecording</visible>
 						</control>
 						<control type="image">
-							<posx>1620</posx>
-							<posy>15</posy>
+							<left>1620</left>
+							<top>15</top>
 							<width>30</width>
 							<height>30</height>
 							<texture>pvr_hastimer.png</texture>
 							<visible>!ListItem.IsRecording  + !ListItem.HasReminder + !String.IsEmpty(ListItem.Date)</visible>
 						</control>
 						<control type="image">
-							<posx>1620</posx>
-							<posy>15</posy>
+							<left>1620</left>
+							<top>15</top>
 							<width>30</width>
 							<height>30</height>
 							<texture>pvr_hasreminder.png</texture>
 							<visible>!ListItem.IsRecording  + ListItem.HasReminder</visible>
 						</control>
 						<control type="label">
-							<posx>1680</posx>
-							<posy>1</posy>
+							<left>1680</left>
+							<top>1</top>
 							<width>165</width>
 							<height>57</height>
 							<align>left</align>
@@ -230,8 +230,8 @@
 					</itemlayout>
 					<focusedlayout height="60" width="1920">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>357</width>
 							<height>60</height>
 							<texture>settings_button.png</texture>
@@ -239,8 +239,8 @@
 							<visible>!String.IsEmpty(ListItem.ChannelName)</visible>
 						</control>
 						<control type="image">
-							<posx>360</posx>
-							<posy>1</posy>
+							<left>360</left>
+							<top>1</top>
 							<width>1560</width>
 							<height>57</height>
 							<aspectratio>stretch</aspectratio>
@@ -252,8 +252,8 @@
 							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
 						<control type="label">
-							<posx>345</posx>
-							<posy>0</posy>
+							<left>345</left>
+							<top>0</top>
 							<width>525</width>
 							<height>60</height>
 							<align>center</align>
@@ -263,8 +263,8 @@
 							<info>ListItem.Date</info>
 						</control>
 						<control type="label">
-							<posx>885</posx>
-							<posy>1</posy>
+							<left>885</left>
+							<top>1</top>
 							<width>885</width>
 							<height>57</height>
 							<align>left</align>
@@ -274,32 +274,32 @@
 							<info>ListItem.Label</info>
 						</control>
 						<control type="image">
-							<posx>1620</posx>
-							<posy>15</posy>
+							<left>1620</left>
+							<top>15</top>
 							<width>45</width>
 							<height>30</height>
 							<texture>pvr_isrecording.png</texture>
 							<visible>ListItem.IsRecording</visible>
 						</control>
 						<control type="image">
-							<posx>1620</posx>
-							<posy>15</posy>
+							<left>1620</left>
+							<top>15</top>
 							<width>30</width>
 							<height>30</height>
 							<texture>pvr_hastimer.png</texture>
 							<visible>!ListItem.IsRecording  + !ListItem.HasReminder + !String.IsEmpty(ListItem.Date)</visible>
 						</control>
 						<control type="image">
-							<posx>1620</posx>
-							<posy>15</posy>
+							<left>1620</left>
+							<top>15</top>
 							<width>30</width>
 							<height>30</height>
 							<texture>pvr_hasreminder.png</texture>
 							<visible>!ListItem.IsRecording  + ListItem.HasReminder</visible>
 						</control>
 						<control type="label">
-							<posx>1680</posx>
-							<posy>1</posy>
+							<left>1680</left>
+							<top>1</top>
 							<width>165</width>
 							<height>57</height>
 							<align>left</align>
@@ -312,8 +312,8 @@
 				</control>
 				<control type="scrollbar" id="73">
 					<include>ScrollBar_Vertical</include>
-					<posx>1868</posx>
-					<posy>202</posy>
+					<left>1868</left>
+					<top>202</top>
 					<height>645</height>
 					<onleft>11</onleft>
 					<onright>9900</onright>

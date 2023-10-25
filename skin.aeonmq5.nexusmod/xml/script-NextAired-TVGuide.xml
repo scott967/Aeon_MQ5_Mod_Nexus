@@ -32,8 +32,8 @@
 				<animation effect="slide" time="400" start="0,0" end="0,-375" easing="inout" tween="cubic">Hidden</animation>
 				<visible>![String.IsEqual(ListItem.Label,..) | Control.HasFocus(9920)]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<height>450</height>
 					<width>1920</width>
 					<texture flipy="true">shadow_mask.png</texture>
@@ -41,8 +41,8 @@
 				</control>
 				<control type="label">
 					<!-- Title -->
-					<posx>45</posx>
-					<posy>12</posy>
+					<left>45</left>
+					<top>12</top>
 					<width>1650</width>
 					<height>60</height>
 					<font>Font_40</font>
@@ -53,8 +53,8 @@
 					<scrollout>false</scrollout>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>80</posy>
+					<left>45</left>
+					<top>80</top>
 					<width>1650</width>
 					<height>38</height>
 					<font>Font_18A</font>
@@ -70,15 +70,15 @@
 				<animation effect="slide" start="0,0" end="0,1200" time="400" tween="cubic" easing="in" condition="Control.HasFocus(9920)">Conditional</animation>
 				<animation effect="slide" end="0,60" time="500" tween="sine" easing="out" condition="Skin.HasSetting(nonextairedmediaflags)">Conditional</animation>
 				<control type="group">
-					<posy>45</posy>
+					<top>45</top>
 					<animation effect="slide" start="0,450" end="0,0" time="500" tween="sine" easing="out">WindowOpen</animation>
 					<animation effect="slide" start="0,450" end="0,0" time="500" tween="sine" easing="out">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 					<visible>!Skin.HasSetting(nonextairedmediaflags)</visible>
 					<control type="image">
 						<!-- Footer Bar -->
-						<posx>0</posx>
-						<posy>765</posy>
+						<left>0</left>
+						<top>765</top>
 						<width>1920</width>
 						<height>270</height>
 						<colordiffuse>$VAR[value_flagsbar]</colordiffuse>
@@ -86,8 +86,8 @@
 						<include>Animation_FloorGlass</include>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>765</posy>
+						<left>0</left>
+						<top>765</top>
 						<width>1920</width>
 						<height>270</height>
 						<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
@@ -96,8 +96,8 @@
 					</control>
 					<control type="grouplist">
 						<!-- Etiquetas -->
-						<posx>30</posx>
-						<posy>968</posy>
+						<left>30</left>
+						<top>968</top>
 						<orientation>horizontal</orientation>
 						<itemgap>39</itemgap>
 						<control type="label">
@@ -126,49 +126,49 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>975</posy>
+						<left>0</left>
+						<top>975</top>
 						<height>63</height>
 						<width>1920</width>
 						<texture>gradient_small.png</texture>
 					</control>
 				</control>
 				<control type="group">
-					<posy>45</posy>
+					<top>45</top>
 					<animation effect="slide" start="-150,0" end="0,0" time="250">WindowOpen</animation>
 					<animation effect="fade" time="250">WindowOpen</animation>
 					<animation effect="fade" time="250">WindowClose</animation>
 					<include>ViewBack</include>
 					<!-- Fundo -->
 					<control type="image">
-						<posx>150</posx>
-						<posy>128</posy>
+						<left>150</left>
+						<top>128</top>
 						<width>45</width>
 						<height>848</height>
 						<texture>shadow.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>128</posy>
+						<left>0</left>
+						<top>128</top>
 						<width>150</width>
 						<height>848</height>
 						<texture>grey.png</texture>
 						<colordiffuse>90FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>147</posx>
-						<posy>128</posy>
+						<left>147</left>
+						<top>128</top>
 						<width>3</width>
 						<height>848</height>
 						<texture>separator_v.png</texture>
 					</control>
 					<control type="group">
 						<description>Day labels</description>
-						<posx>0</posx>
-						<posy>128</posy>
+						<left>0</left>
+						<top>128</top>
 						<control type="group">
-							<posy>0</posy>
+							<top>0</top>
 							<control type="label">
 								<!-- Monday -->
 								<include>NextAiredLabelDay</include>
@@ -194,7 +194,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<posy>124</posy>
+							<top>124</top>
 							<control type="label">
 								<!-- Tuesday -->
 								<include>NextAiredLabelDay</include>
@@ -220,7 +220,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<posy>248</posy>
+							<top>248</top>
 							<control type="label">
 								<!-- Wednesday -->
 								<include>NextAiredLabelDay</include>
@@ -246,7 +246,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<posy>368</posy>
+							<top>368</top>
 							<control type="label">
 								<!-- Thursday -->
 								<include>NextAiredLabelDay</include>
@@ -272,7 +272,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<posy>486</posy>
+							<top>486</top>
 							<control type="label">
 								<!-- Friday -->
 								<include>NextAiredLabelDay</include>
@@ -298,7 +298,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<posy>604</posy>
+							<top>604</top>
 							<control type="label">
 								<!-- Saturday -->
 								<include>NextAiredLabelDay</include>
@@ -324,7 +324,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<posy>723</posy>
+							<top>723</top>
 							<control type="label">
 								<!-- Sunday -->
 								<include>NextAiredLabelDay</include>
@@ -351,8 +351,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>128</posy>
+						<left>0</left>
+						<top>128</top>
 						<width>156</width>
 						<height>848</height>
 						<texture>menu_glass.png</texture>
@@ -360,13 +360,13 @@
 					</control>
 				</control>
 				<control type="group">
-					<posx>30</posx>
-					<posy>33</posy>
+					<left>30</left>
+					<top>33</top>
 					<control type="group" id="51">
 						<!-- Monday -->
 						<control type="list" id="200">
-							<posx>142</posx>
-							<posy>0</posy>
+							<left>142</left>
+							<top>0</top>
 							<width>1800</width>
 							<height>852</height>
 							<orientation>horizontal</orientation>
@@ -442,14 +442,14 @@
 						<control type="scrollbar" id="80">
 							<include>NextAiredHorizontalScrollBar</include>
 							<visible>Control.HasFocus(200) | Control.HasFocus(80)</visible>
-							<posy>262</posy>
+							<top>262</top>
 							<onup>200</onup>
 							<ondown>201</ondown>
 						</control>
 						<!-- Tuesday -->
 						<control type="list" id="201">
-							<posx>142</posx>
-							<posy>124</posy>
+							<left>142</left>
+							<top>124</top>
 							<width>1800</width>
 							<height>852</height>
 							<orientation>horizontal</orientation>
@@ -525,14 +525,14 @@
 						<control type="scrollbar" id="81">
 							<include>NextAiredHorizontalScrollBar</include>
 							<visible>Control.HasFocus(201) | Control.HasFocus(81)</visible>
-							<posy>382</posy>
+							<top>382</top>
 							<onup>201</onup>
 							<ondown>202</ondown>
 						</control>
 						<!-- Wednesday -->
 						<control type="list" id="202">
-							<posx>142</posx>
-							<posy>248</posy>
+							<left>142</left>
+							<top>248</top>
 							<width>1800</width>
 							<height>852</height>
 							<orientation>horizontal</orientation>
@@ -608,14 +608,14 @@
 						<control type="scrollbar" id="82">
 							<include>NextAiredHorizontalScrollBar</include>
 							<visible>Control.HasFocus(202) | Control.HasFocus(82)</visible>
-							<posy>502</posy>
+							<top>502</top>
 							<onup>202</onup>
 							<ondown>203</ondown>
 						</control>
 						<!-- Thursday -->
 						<control type="list" id="203">
-							<posx>142</posx>
-							<posy>368</posy>
+							<left>142</left>
+							<top>368</top>
 							<width>1800</width>
 							<height>852</height>
 							<orientation>horizontal</orientation>
@@ -691,14 +691,14 @@
 						<control type="scrollbar" id="83">
 							<include>NextAiredHorizontalScrollBar</include>
 							<visible>Control.HasFocus(203) | Control.HasFocus(83)</visible>
-							<posy>622</posy>
+							<top>622</top>
 							<onup>203</onup>
 							<ondown>204</ondown>
 						</control>
 						<!-- Friday -->
 						<control type="list" id="204">
-							<posx>142</posx>
-							<posy>486</posy>
+							<left>142</left>
+							<top>486</top>
 							<width>1800</width>
 							<height>852</height>
 							<orientation>horizontal</orientation>
@@ -774,14 +774,14 @@
 						<control type="scrollbar" id="84">
 							<include>NextAiredHorizontalScrollBar</include>
 							<visible>Control.HasFocus(204) | Control.HasFocus(84)</visible>
-							<posy>742</posy>
+							<top>742</top>
 							<onup>204</onup>
 							<ondown>205</ondown>
 						</control>
 						<!-- Saturday -->
 						<control type="list" id="205">
-							<posx>142</posx>
-							<posy>604</posy>
+							<left>142</left>
+							<top>604</top>
 							<width>1800</width>
 							<height>852</height>
 							<orientation>horizontal</orientation>
@@ -857,14 +857,14 @@
 						<control type="scrollbar" id="85">
 							<include>NextAiredHorizontalScrollBar</include>
 							<visible>Control.HasFocus(205) | Control.HasFocus(85)</visible>
-							<posy>862</posy>
+							<top>862</top>
 							<onup>205</onup>
 							<ondown>206</ondown>
 						</control>
 						<!-- Sunday -->
 						<control type="list" id="206">
-							<posx>142</posx>
-							<posy>723</posy>
+							<left>142</left>
+							<top>723</top>
 							<width>1800</width>
 							<height>852</height>
 							<orientation>horizontal</orientation>
@@ -940,7 +940,7 @@
 						<control type="scrollbar" id="86">
 							<include>NextAiredHorizontalScrollBar</include>
 							<visible>Control.HasFocus(206) | Control.HasFocus(86)</visible>
-							<posy>982</posy>
+							<top>982</top>
 							<onup>206</onup>
 							<ondown>200</ondown>
 						</control>
@@ -955,8 +955,8 @@
 					<animation effect="slide" start="0,0" end="0,-105" time="50" tween="cubic" easing="in" condition="Control.HasFocus(160)">Conditional</animation>
 					<visible>Skin.HasSetting(nextaireddate)</visible>
 					<control type="image">
-						<posx>1170</posx>
-						<posy>0</posy>
+						<left>1170</left>
+						<top>0</top>
 						<width>750</width>
 						<height>39</height>
 						<texture flipx="true">widgets_panel.png</texture>
@@ -964,16 +964,16 @@
 						<include>Animation_HomeGlass</include>
 					</control>
 					<control type="image">
-						<posx>1215</posx>
-						<posy>-28</posy>
+						<left>1215</left>
+						<top>-28</top>
 						<width>94</width>
 						<height>94</height>
 						<aspectratio align="left" aligny="top">keep</aspectratio>
 						<texture diffuse="weather_mask.png" background="true">$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
 					</control>
 					<control type="label">
-						<posx>1328</posx>
-						<posy>4</posy>
+						<left>1328</left>
+						<top>4</top>
 						<width>690</width>
 						<height>30</height>
 						<align>left</align>

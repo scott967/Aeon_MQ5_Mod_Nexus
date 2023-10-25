@@ -21,8 +21,8 @@
 				<label>31370</label>
 			</control>
 			<control type="grouplist" id="9001">
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>1560</width>
 				<height>412</height>
 				<itemgap>0</itemgap>
@@ -42,8 +42,8 @@
 			</control>
 			<control type="list" id="2">
 				<viewtype>list</viewtype>
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>1560</width>
 				<height>412</height>
 				<itemgap>0</itemgap>
@@ -57,8 +57,8 @@
 				<visible>Container(9000).HasFocus(6)</visible>
 				<itemlayout width="1485" height="60">
 					<control type="label">
-						<posx>75</posx>
-						<posy>0</posy>
+						<left>75</left>
+						<top>0</top>
 						<width>1335</width>
 						<height>60</height>
 						<align>left</align>
@@ -69,8 +69,8 @@
 						<visible>!String.IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>0</posy>
+						<left>75</left>
+						<top>0</top>
 						<width>1335</width>
 						<height>60</height>
 						<align>left</align>
@@ -83,16 +83,16 @@
 				</itemlayout>
 				<focusedlayout width="1485" height="60">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1560</width>
 						<height>60</height>
 						<texture>settings_button_focus.png</texture>
 						<visible>Control.HasFocus(2)</visible>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>0</posy>
+						<left>75</left>
+						<top>0</top>
 						<width>1335</width>
 						<height>60</height>
 						<align>left</align>
@@ -103,8 +103,8 @@
 						<visible>![String.IsEmpty(ListItem.Label2) | Control.HasFocus(2)]</visible>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>0</posy>
+						<left>75</left>
+						<top>0</top>
 						<width>1335</width>
 						<height>60</height>
 						<align>left</align>
@@ -115,8 +115,8 @@
 						<visible>String.IsEmpty(ListItem.Label2) + !Control.HasFocus(2)</visible>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>0</posy>
+						<left>75</left>
+						<top>0</top>
 						<width>1335</width>
 						<height>60</height>
 						<align>left</align>
@@ -127,8 +127,8 @@
 						<visible>!String.IsEmpty(ListItem.Label2) + Control.HasFocus(2)</visible>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>0</posy>
+						<left>75</left>
+						<top>0</top>
 						<width>1335</width>
 						<height>60</height>
 						<align>left</align>
@@ -148,8 +148,8 @@
 			</control>
 			<control type="list" id="9000">
 				<viewtype>list</viewtype>
-				<posx>0</posx>
-				<posy>180</posy>
+				<left>0</left>
+				<top>180</top>
 				<width>374</width>
 				<height>900</height>
 				<onup>9000</onup>
@@ -196,8 +196,8 @@
 				</content>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>375</width>
 				<height>1080</height>
 				<texture>menu_glass.png</texture>

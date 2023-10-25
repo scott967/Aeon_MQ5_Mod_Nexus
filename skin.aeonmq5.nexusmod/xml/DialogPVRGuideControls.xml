@@ -16,8 +16,8 @@
 				<onclick>Action(close)</onclick>
 		</control>
 		<!-- <control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<texture>black.png</texture>
@@ -37,8 +37,8 @@
 					<label>$VAR[PVRGuideControlsHelpText]</label>
 				</control>
 			<control type="list" id="100">
-				<posx>795</posx>
-				<posy>970</posy>
+				<left>795</left>
+				<top>970</top>
 				<height>300</height>
 				<width>1485</width>
 				<ondown>Action(close)</ondown>
@@ -50,7 +50,7 @@
 				<focusposition>2</focusposition>
 				<itemlayout width="76" height="45">
 					<control type="image">
-						<posy>33</posy>
+						<top>33</top>
 						<width>69</width>
 						<height>69</height>
 						<texture>$INFO[ListItem.Icon]</texture>
@@ -59,7 +59,7 @@
 				</itemlayout>
 				<focusedlayout width="76" height="45">
 					<control type="image">
-						<posy>33</posy>
+						<top>33</top>
 						<width>69</width>
 						<height>69</height>
 						<texture>$INFO[ListItem.Icon]</texture>

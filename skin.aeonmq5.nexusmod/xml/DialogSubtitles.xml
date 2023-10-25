@@ -212,7 +212,7 @@
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image" id="110">
-				<left>1215</left>
+				<left>114</left>
 				<top>788</top>
 				<width>1101</width>
 				<height>45</height>
@@ -248,8 +248,8 @@
 				</control>
 			</control>
 			<control type="label" id="100">
-				<posx>-30</posx>
-				<posy>-30</posy>
+				<left>-30</left>
+				<top>-30</top>
 				<width>1</width>
 				<height>1</height>
 				<label></label>

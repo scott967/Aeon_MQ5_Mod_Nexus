@@ -36,8 +36,8 @@
 		<visible>[String.Contains(skin.string(panel_seconds),1) + System.IdleTime(1) | String.Contains(skin.string(panel_seconds),2) + System.IdleTime(2) | String.Contains(skin.string(panel_seconds),3) + System.IdleTime(3) | String.Contains(skin.string(panel_seconds),4) + System.IdleTime(4) | String.Contains(skin.string(panel_seconds),5) + System.IdleTime(5)] +  [[String.Contains(skin.string(wallvideopanel),auto) + !$EXP[IsPVRRecordings]] | [String.Contains(skin.string(wallpvrpanel),auto) +$EXP[IsPVRRecordings]]] + Control.HasFocus(56)</visible>
 	</include>
 	<include name="Wall_ThumbDimmer">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<texture>darkgrey.png</texture>
 		<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 		<animation effect="fade" start="100" end="45" condition="true">Conditional</animation>
@@ -52,8 +52,8 @@
 			<visible>Control.IsVisible(56)</visible>
 			<control type="panel" id="56">
 				<viewtype label="31805">Panel</viewtype>
-				<posx>0</posx>
-				<posy>136</posy>
+				<left>0</left>
+				<top>136</top>
 				<width>2062</width>
 				<height>830</height>
 				<onleft>9900</onleft>
@@ -71,8 +71,8 @@
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
-							<posx>3</posx>
-							<posy>3</posy>
+							<left>3</left>
+							<top>3</top>
 							<width>141</width>
 							<height>201</height>
 							<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -80,8 +80,8 @@
 							<aspectratio align="center">stretch</aspectratio>
 						</control>
 						<control type="image">
-							<posx>110</posx>
-							<posy>1</posy>
+							<left>110</left>
+							<top>1</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -95,8 +95,8 @@
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
-							<posx>3</posx>
-							<posy>3</posy>
+							<left>3</left>
+							<top>3</top>
 							<width>186</width>
 							<height>262</height>
 							<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -104,8 +104,8 @@
 							<aspectratio align="center">stretch</aspectratio>
 						</control>
 						<control type="image">
-							<posx>156</posx>
-							<posy>-2</posy>
+							<left>156</left>
+							<top>-2</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -119,8 +119,8 @@
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
-							<posx>27</posx>
-							<posy>3</posy>
+							<left>27</left>
+							<top>3</top>
 							<width>290</width>
 							<height>408</height>
 							<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -128,8 +128,8 @@
 							<aspectratio align="center">stretch</aspectratio>
 						</control>
 						<control type="image">
-							<posx>270</posx>
-							<posy>-2</posy>
+							<left>270</left>
+							<top>-2</top>
 							<width>52</width>
 							<height>52</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -143,8 +143,8 @@
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
-							<posx>6</posx>
-							<posy>30</posy>
+							<left>6</left>
+							<top>30</top>
 							<width>162</width>
 							<height>234</height>
 							<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -152,8 +152,8 @@
 						</control>
 						<control type="image">
 							<!-- Case -->
-							<posx>-9</posx>
-							<posy>-8</posy>
+							<left>-9</left>
+							<top>-8</top>
 							<width>202</width>
 							<height>296</height>
 							<colordiffuse>$VAR[value_videocase0]</colordiffuse>
@@ -162,8 +162,8 @@
 						</control>
 						<control type="image">
 							<!-- Codec -->
-							<posx>64</posx>
-							<posy>-6</posy>
+							<left>64</left>
+							<top>-6</top>
 							<width>51</width>
 							<height>51</height>
 							<align>center</align>
@@ -172,8 +172,8 @@
 							<texture>$VAR[value_videocodec0]</texture>
 						</control>
 						<control type="image">
-							<posx>134</posx>
-							<posy>30</posy>
+							<left>134</left>
+							<top>30</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -187,8 +187,8 @@
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
-							<posx>6</posx>
-							<posy>22</posy>
+							<left>6</left>
+							<top>22</top>
 							<width>186</width>
 							<height>248</height>
 							<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -196,8 +196,8 @@
 						</control>
 						<control type="image">
 							<!-- Case -->
-							<posx>-9</posx>
-							<posy>-15</posy>
+							<left>-9</left>
+							<top>-15</top>
 							<width>225</width>
 							<height>308</height>
 							<colordiffuse>$VAR[value_videocase0]</colordiffuse>
@@ -206,8 +206,8 @@
 						</control>
 						<control type="image">
 							<!-- Codec -->
-							<posx>75</posx>
-							<posy>-12</posy>
+							<left>75</left>
+							<top>-12</top>
 							<width>51</width>
 							<height>51</height>
 							<align>center</align>
@@ -216,8 +216,8 @@
 							<texture>$VAR[value_videocodec0]</texture>
 						</control>
 						<control type="image">
-							<posx>152</posx>
-							<posy>26</posy>
+							<left>152</left>
+							<top>26</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -231,8 +231,8 @@
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
-							<posx>36</posx>
-							<posy>38</posy>
+							<left>36</left>
+							<top>38</top>
 							<width>262</width>
 							<height>366</height>
 							<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -240,8 +240,8 @@
 						</control>
 						<control type="image">
 							<!-- Case -->
-							<posx>12</posx>
-							<posy>-22</posy>
+							<left>12</left>
+							<top>-22</top>
 							<width>322</width>
 							<height>462</height>
 							<colordiffuse>$VAR[value_videocase0]</colordiffuse>
@@ -250,8 +250,8 @@
 						</control>
 						<control type="image">
 							<!-- Codec -->
-							<posx>132</posx>
-							<posy>-18</posy>
+							<left>132</left>
+							<top>-18</top>
 							<width>75</width>
 							<height>75</height>
 							<align>center</align>
@@ -260,8 +260,8 @@
 							<texture>$VAR[value_videocodec0]</texture>
 						</control>
 						<control type="image">
-							<posx>244</posx>
-							<posy>36</posy>
+							<left>244</left>
+							<top>36</top>
 							<width>52</width>
 							<height>52</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -289,8 +289,8 @@
 						</animation>
 						<visible>![String.IsEmpty(ListItem.Art(discart)) | Skin.HasSetting(nowalldiscart_video) | ListItem.IsCollection] + Window.IsActive(videos)</visible>
 						<control type="image">
-							<posx>63</posx>
-							<posy>15</posy>
+							<left>63</left>
+							<top>15</top>
 							<width>165</width>
 							<height>165</height>
 							<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -301,8 +301,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>141</width>
 						<height>201</height>
 						<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -314,8 +314,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>110</posx>
-						<posy>1</posy>
+						<left>110</left>
+						<top>1</top>
 						<width>38</width>
 						<height>38</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -346,8 +346,8 @@
 						</animation>
 						<visible>![String.IsEmpty(ListItem.Art(discart)) | Skin.HasSetting(nowalldiscart_video) | ListItem.IsCollection] + Window.IsActive(videos)</visible>
 						<control type="image">
-							<posx>81</posx>
-							<posy>15</posy>
+							<left>81</left>
+							<top>15</top>
 							<width>218</width>
 							<height>218</height>
 							<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -358,8 +358,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>186</width>
 						<height>262</height>
 						<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -371,8 +371,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>158</posx>
-						<posy>-3</posy>
+						<left>158</left>
+						<top>-3</top>
 						<width>38</width>
 						<height>38</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -403,8 +403,8 @@
 						</animation>
 						<visible>![String.IsEmpty(ListItem.Art(discart)) | Skin.HasSetting(nowalldiscart_video) | ListItem.IsCollection] + Window.IsActive(videos)</visible>
 						<control type="image">
-							<posx>140</posx>
-							<posy>30</posy>
+							<left>140</left>
+							<top>30</top>
 							<width>345</width>
 							<height>345</height>
 							<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -415,8 +415,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>27</posx>
-						<posy>3</posy>
+						<left>27</left>
+						<top>3</top>
 						<width>290</width>
 						<height>408</height>
 						<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -428,8 +428,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>270</posx>
-						<posy>-2</posy>
+						<left>270</left>
+						<top>-2</top>
 						<width>52</width>
 						<height>52</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -460,8 +460,8 @@
 						</animation>
 						<visible>![[String.IsEmpty(ListItem.Art(discart)) + String.IsEmpty(ListItem.Art(poster))] | Skin.HasSetting(nowalldiscart_video) | ListItem.IsCollection] + Window.IsActive(videos)</visible>
 						<control type="image">
-							<posx>56</posx>
-							<posy>18</posy>
+							<left>56</left>
+							<top>18</top>
 							<width>225</width>
 							<height>225</height>
 							<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -472,8 +472,8 @@
 							<visible>!String.IsEmpty(ListItem.Art(discart))</visible>
 						</control>
 						<control type="image">
-							<posx>56</posx>
-							<posy>18</posy>
+							<left>56</left>
+							<top>18</top>
 							<width>225</width>
 							<height>225</height>
 							<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(poster)]</texture>
@@ -485,8 +485,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>6</posx>
-						<posy>30</posy>
+						<left>6</left>
+						<top>30</top>
 						<width>162</width>
 						<height>234</height>
 						<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -498,8 +498,8 @@
 					</control>
 					<control type="image">
 						<!-- Case -->
-						<posx>-9</posx>
-						<posy>-8</posy>
+						<left>-9</left>
+						<top>-8</top>
 						<width>202</width>
 						<height>296</height>
 						<colordiffuse>$VAR[value_videocase0]</colordiffuse>
@@ -512,8 +512,8 @@
 					</control>
 					<control type="image">
 						<!-- Codec -->
-						<posx>64</posx>
-						<posy>-6</posy>
+						<left>64</left>
+						<top>-6</top>
 						<width>51</width>
 						<height>51</height>
 						<align>center</align>
@@ -526,8 +526,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>134</posx>
-						<posy>30</posy>
+						<left>134</left>
+						<top>30</top>
 						<width>38</width>
 						<height>38</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -558,8 +558,8 @@
 						</animation>
 						<visible>![String.IsEmpty(ListItem.Art(discart)) | Skin.HasSetting(nowalldiscart_video) | ListItem.IsCollection] + Window.IsActive(videos)</visible>
 						<control type="image">
-							<posx>68</posx>
-							<posy>12</posy>
+							<left>68</left>
+							<top>12</top>
 							<width>240</width>
 							<height>240</height>
 							<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -570,8 +570,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>6</posx>
-						<posy>22</posy>
+						<left>6</left>
+						<top>22</top>
 						<width>186</width>
 						<height>248</height>
 						<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -583,8 +583,8 @@
 					</control>
 					<control type="image">
 						<!-- Estojo -->
-						<posx>-9</posx>
-						<posy>-15</posy>
+						<left>-9</left>
+						<top>-15</top>
 						<width>225</width>
 						<height>308</height>
 						<colordiffuse>$VAR[value_videocase0]</colordiffuse>
@@ -597,8 +597,8 @@
 					</control>
 					<control type="image">
 						<!-- Codec -->
-						<posx>75</posx>
-						<posy>-12</posy>
+						<left>75</left>
+						<top>-12</top>
 						<width>51</width>
 						<height>51</height>
 						<align>center</align>
@@ -611,8 +611,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>152</posx>
-						<posy>26</posy>
+						<left>152</left>
+						<top>26</top>
 						<width>38</width>
 						<height>38</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -643,8 +643,8 @@
 						</animation>
 						<visible>![String.IsEmpty(ListItem.Art(discart)) | Skin.HasSetting(nowalldiscart_video) | ListItem.IsCollection] + Window.IsActive(videos)</visible>
 						<control type="image">
-							<posx>114</posx>
-							<posy>20</posy>
+							<left>114</left>
+							<top>20</top>
 							<width>360</width>
 							<height>360</height>
 							<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -655,8 +655,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>36</posx>
-						<posy>38</posy>
+						<left>36</left>
+						<top>38</top>
 						<width>262</width>
 						<height>366</height>
 						<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -668,8 +668,8 @@
 					</control>
 					<control type="image">
 						<!-- Estojo -->
-						<posx>12</posx>
-						<posy>-22</posy>
+						<left>12</left>
+						<top>-22</top>
 						<width>322</width>
 						<height>462</height>
 						<colordiffuse>$VAR[value_videocase0]</colordiffuse>
@@ -682,8 +682,8 @@
 					</control>
 					<control type="image">
 						<!-- Codec -->
-						<posx>132</posx>
-						<posy>-18</posy>
+						<left>132</left>
+						<top>-18</top>
 						<width>75</width>
 						<height>75</height>
 						<align>center</align>
@@ -696,8 +696,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>244</posx>
-						<posy>36</posy>
+						<left>244</left>
+						<top>36</top>
 						<width>52</width>
 						<height>52</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -733,16 +733,16 @@
 				<include>Wall_Plot</include>
 				<visible>[String.Contains(skin.string(wallvideogrid),default) + Skin.HasSetting(nowallvideocase) + !String.IsEqual(ListItem.Label,..)] + [Container.Content(movies) | Container.Content(musicvideos)] | String.Contains(skin.string(wallvideogrid),default) + !String.IsEqual(ListItem.Label,..) + ![Container.Content(movies) | Container.Content(musicvideos)]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>8</posy>
+					<left>0</left>
+					<top>8</top>
 					<width>750</width>
 					<height>38</height>
 					<texture>gradient_focus.png</texture>
 					<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>750</width>
 					<height>22</height>
 					<textcolor>FFFFFAF0</textcolor>
@@ -752,16 +752,16 @@
 					<visible>!String.IsEqual(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>38</posy>
+					<left>0</left>
+					<top>38</top>
 					<width>750</width>
 					<height>3</height>
 					<align>left</align>
 					<texture flipx="true">divider.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>0</posx>
-					<posy>45</posy>
+					<left>0</left>
+					<top>45</top>
 					<width>750</width>
 					<height>170</height>
 					<label>$VAR[value_plot]</label>
@@ -789,16 +789,16 @@
 				<include>Wall_Plot</include>
 				<visible>String.Contains(skin.string(wallvideogrid),default) + ![Skin.HasSetting(nowallvideocase) | String.IsEqual(ListItem.Label,..)] + [Container.Content(movies) | Container.Content(musicvideos)]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>8</posy>
+					<left>0</left>
+					<top>8</top>
 					<width>675</width>
 					<height>38</height>
 					<texture>gradient_focus.png</texture>
 					<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>675</width>
 					<height>22</height>
 					<textcolor>FFFFFAF0</textcolor>
@@ -808,16 +808,16 @@
 					<visible>!String.IsEqual(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>38</posy>
+					<left>0</left>
+					<top>38</top>
 					<width>675</width>
 					<height>3</height>
 					<align>left</align>
 					<texture flipx="true">divider.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>0</posx>
-					<posy>45</posy>
+					<left>0</left>
+					<top>45</top>
 					<width>675</width>
 					<height>234</height>
 					<label>$VAR[value_plot]</label>
@@ -844,16 +844,16 @@
 				<include>Wall_Plot</include>
 				<visible>String.Contains(skin.string(wallvideogrid),mid) + !String.IsEqual(ListItem.Label,..)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>8</posy>
+					<left>0</left>
+					<top>8</top>
 					<width>750</width>
 					<height>38</height>
 					<texture>gradient_focus.png</texture>
 					<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>750</width>
 					<height>22</height>
 					<textcolor>FFFFFAF0</textcolor>
@@ -863,16 +863,16 @@
 					<visible>!String.IsEqual(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>38</posy>
+					<left>0</left>
+					<top>38</top>
 					<width>750</width>
 					<height>3</height>
 					<align>left</align>
 					<texture flipx="true">divider.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>0</posx>
-					<posy>45</posy>
+					<left>0</left>
+					<top>45</top>
 					<width>750</width>
 					<height>234</height>
 					<label>$VAR[value_plot]</label>
@@ -894,16 +894,16 @@
 				<include>Wall_Plot</include>
 				<visible>String.Contains(skin.string(wallvideogrid),big) + !String.IsEqual(ListItem.Label,..)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>8</posy>
+					<left>0</left>
+					<top>8</top>
 					<width>690</width>
 					<height>38</height>
 					<texture>gradient_focus.png</texture>
 					<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>690</width>
 					<height>22</height>
 					<textcolor>FFFFFAF0</textcolor>
@@ -913,16 +913,16 @@
 					<visible>!String.IsEqual(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>38</posy>
+					<left>0</left>
+					<top>38</top>
 					<width>690</width>
 					<height>3</height>
 					<align>left</align>
 					<texture flipx="true">divider.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>0</posx>
-					<posy>45</posy>
+					<left>0</left>
+					<top>45</top>
 					<width>690</width>
 					<height>363</height>
 					<label>$VAR[value_plot]</label>
@@ -940,8 +940,8 @@
 			<visible>Control.IsVisible(56)</visible>
 			<control type="panel" id="56">
 				<viewtype label="31805">Panel</viewtype>
-				<posx>0</posx>
-				<posy>136</posy>
+				<left>0</left>
+				<top>136</top>
 				<width>2062</width>
 				<height>830</height>
 				<onleft>9900</onleft>
@@ -957,8 +957,8 @@
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
-							<posx>3</posx>
-							<posy>3</posy>
+							<left>3</left>
+							<top>3</top>
 							<width>141</width>
 							<height>201</height>
 							<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -966,8 +966,8 @@
 							<aspectratio align="center">stretch</aspectratio>
 						</control>
 						<control type="image">
-							<posx>110</posx>
-							<posy>1</posy>
+							<left>110</left>
+							<top>1</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[pvr_overlay]</texture>
@@ -980,8 +980,8 @@
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
-							<posx>3</posx>
-							<posy>3</posy>
+							<left>3</left>
+							<top>3</top>
 							<width>186</width>
 							<height>262</height>
 							<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -989,8 +989,8 @@
 							<aspectratio align="center">stretch</aspectratio>
 						</control>
 						<control type="image">
-							<posx>156</posx>
-							<posy>-2</posy>
+							<left>156</left>
+							<top>-2</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[pvr_overlay]</texture>
@@ -1003,8 +1003,8 @@
 					<control type="group">
 						<include>Wall_Dimmer</include>
 						<control type="image">
-							<posx>27</posx>
-							<posy>3</posy>
+							<left>27</left>
+							<top>3</top>
 							<width>290</width>
 							<height>408</height>
 							<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -1012,8 +1012,8 @@
 							<aspectratio align="center">stretch</aspectratio>
 						</control>
 						<control type="image">
-							<posx>270</posx>
-							<posy>-2</posy>
+							<left>270</left>
+							<top>-2</top>
 							<width>52</width>
 							<height>52</height>
 							<texture>$VAR[pvr_overlay]</texture>
@@ -1024,8 +1024,8 @@
 				</itemlayout>
 				<focusedlayout condition=" String.Contains(skin.string(wallpvrgrid),default)" width="148" height="207">	<!-- normal -->
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>141</width>
 						<height>201</height>
 						<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -1037,8 +1037,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>110</posx>
-						<posy>1</posy>
+						<left>110</left>
+						<top>1</top>
 						<width>38</width>
 						<height>38</height>
 						<texture>$VAR[pvr_overlay]</texture>
@@ -1052,8 +1052,8 @@
 				</focusedlayout>
 				<focusedlayout condition="String.Contains(skin.string(wallpvrgrid),mid)" width="192" height="276">	<!-- medium -->
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>186</width>
 						<height>262</height>
 						<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -1065,8 +1065,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>158</posx>
-						<posy>-3</posy>
+						<left>158</left>
+						<top>-3</top>
 						<width>38</width>
 						<height>38</height>
 						<texture>$VAR[pvr_overlay]</texture>
@@ -1080,8 +1080,8 @@
 				</focusedlayout>
 				<focusedlayout condition="String.Contains(skin.string(wallpvrgrid),big)" width="315" height="414">	<!-- large -->
 					<control type="image">
-						<posx>27</posx>
-						<posy>3</posy>
+						<left>27</left>
+						<top>3</top>
 						<width>290</width>
 						<height>408</height>
 						<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -1093,8 +1093,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>270</posx>
-						<posy>-2</posy>
+						<left>270</left>
+						<top>-2</top>
 						<width>52</width>
 						<height>52</height>
 						<texture>$VAR[pvr_overlay]</texture>
@@ -1130,16 +1130,16 @@
 				<include>Wall_Plot</include>
 				<visible>[String.Contains(skin.string(wallpvrgrid),default) + Skin.HasSetting(nowallpvrcase) + !String.IsEqual(ListItem.Label,..)]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>8</posy>
+					<left>0</left>
+					<top>8</top>
 					<width>750</width>
 					<height>38</height>
 					<texture>gradient_focus.png</texture>
 					<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>750</width>
 					<height>22</height>
 					<textcolor>FFFFFAF0</textcolor>
@@ -1149,16 +1149,16 @@
 					<visible>!String.IsEqual(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>38</posy>
+					<left>0</left>
+					<top>38</top>
 					<width>750</width>
 					<height>3</height>
 					<align>left</align>
 					<texture flipx="true">divider.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>0</posx>
-					<posy>45</posy>
+					<left>0</left>
+					<top>45</top>
 					<width>750</width>
 					<height>170</height>
 					<label>$VAR[value_plot]</label>
@@ -1186,16 +1186,16 @@
 				<include>Wall_Plot</include>
 				<visible>String.Contains(skin.string(wallpvrgrid),default) + ![Skin.HasSetting(nowallpvrcase) | String.IsEqual(ListItem.Label,..)]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>8</posy>
+					<left>0</left>
+					<top>8</top>
 					<width>675</width>
 					<height>38</height>
 					<texture>gradient_focus.png</texture>
 					<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>675</width>
 					<height>22</height>
 					<textcolor>FFFFFAF0</textcolor>
@@ -1205,16 +1205,16 @@
 					<visible>!String.IsEqual(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>38</posy>
+					<left>0</left>
+					<top>38</top>
 					<width>675</width>
 					<height>3</height>
 					<align>left</align>
 					<texture flipx="true">divider.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>0</posx>
-					<posy>45</posy>
+					<left>0</left>
+					<top>45</top>
 					<width>675</width>
 					<height>234</height>
 					<label>$VAR[value_plot]</label>
@@ -1241,16 +1241,16 @@
 				<include>Wall_Plot</include>
 				<visible>String.Contains(skin.string(wallpvrgrid),mid) + !String.IsEqual(ListItem.Label,..)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>8</posy>
+					<left>0</left>
+					<top>8</top>
 					<width>750</width>
 					<height>38</height>
 					<texture>gradient_focus.png</texture>
 					<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>750</width>
 					<height>22</height>
 					<textcolor>FFFFFAF0</textcolor>
@@ -1260,16 +1260,16 @@
 					<visible>!String.IsEqual(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>38</posy>
+					<left>0</left>
+					<top>38</top>
 					<width>750</width>
 					<height>3</height>
 					<align>left</align>
 					<texture flipx="true">divider.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>0</posx>
-					<posy>45</posy>
+					<left>0</left>
+					<top>45</top>
 					<width>750</width>
 					<height>234</height>
 					<label>$VAR[value_plot]</label>
@@ -1291,16 +1291,16 @@
 				<include>Wall_Plot</include>
 				<visible>String.Contains(skin.string(wallpvrgrid),big) + !String.IsEqual(ListItem.Label,..)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>8</posy>
+					<left>0</left>
+					<top>8</top>
 					<width>690</width>
 					<height>38</height>
 					<texture>gradient_focus.png</texture>
 					<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>690</width>
 					<height>22</height>
 					<textcolor>FFFFFAF0</textcolor>
@@ -1310,16 +1310,16 @@
 					<visible>!String.IsEqual(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>38</posy>
+					<left>0</left>
+					<top>38</top>
 					<width>690</width>
 					<height>3</height>
 					<align>left</align>
 					<texture flipx="true">divider.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>0</posx>
-					<posy>45</posy>
+					<left>0</left>
+					<top>45</top>
 					<width>690</width>
 					<height>363</height>
 					<label>$VAR[value_plot]</label>
@@ -1336,8 +1336,8 @@
 			<visible>Control.IsVisible(56)</visible>
 			<control type="panel" id="56">
 				<viewtype label="31805">Panel</viewtype>
-				<posx>0</posx>
-				<posy>140</posy>
+				<left>0</left>
+				<top>140</top>
 				<width>1928</width>
 				<height>803</height>
 				<onleft>9900</onleft>
@@ -1349,8 +1349,8 @@
 				<itemlayout condition="String.Contains(skin.string(wallmusicgrid),default) + ![Container.Content(albums) + !Skin.HasSetting(nowallaudiocase)]" width="160" height="160">
 					<!-- tamanho normal -->
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>154</width>
 						<height>154</height>
 						<texture fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1359,8 +1359,8 @@
 						<visible>![Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)]</visible>
 					</control>
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>154</width>
 						<height>154</height>
 						<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">genres/256.png</texture>
@@ -1369,8 +1369,8 @@
 						<visible>Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)</visible>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>10</posy>
+						<left>10</left>
+						<top>10</top>
 						<width>140</width>
 						<height>140</height>
 						<font>Font_18A</font>
@@ -1385,16 +1385,16 @@
 				<itemlayout condition="String.Contains(skin.string(wallmusicgrid),default) + [Container.Content(albums) + !Skin.HasSetting(nowallaudiocase)]" width="160" height="160">
 					<!-- tamanho normal -->
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>154</width>
 						<height>154</height>
 						<texture>thumb_box_cd.png</texture>
 						<aspectratio align="center">stretch</aspectratio>
 					</control>
 					<control type="image">
-						<posx>26</posx>
-						<posy>8</posy>
+						<left>26</left>
+						<top>8</top>
 						<width>126</width>
 						<height>142</height>
 						<texture diffuse="thumb_box_diffuse.png" fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1404,8 +1404,8 @@
 				<itemlayout condition="String.Contains(skin.string(wallmusicgrid),mid) + ![Container.Content(albums) + !Skin.HasSetting(nowallaudiocase)]" width="273" height="276">
 					<!-- tamanho medio -->
 					<control type="image">
-						<posx>8</posx>
-						<posy>3</posy>
+						<left>8</left>
+						<top>3</top>
 						<width>254</width>
 						<height>254</height>
 						<texture fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1414,8 +1414,8 @@
 						<visible>![Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)]</visible>
 					</control>
 					<control type="image">
-						<posx>8</posx>
-						<posy>3</posy>
+						<left>8</left>
+						<top>3</top>
 						<width>254</width>
 						<height>254</height>
 						<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">genres/256.png</texture>
@@ -1424,8 +1424,8 @@
 						<visible>Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)</visible>
 					</control>
 					<control type="label">
-						<posx>15</posx>
-						<posy>10</posy>
+						<left>15</left>
+						<top>10</top>
 						<width>248</width>
 						<height>248</height>
 						<font>Font_18A</font>
@@ -1440,16 +1440,16 @@
 				<itemlayout condition="String.Contains(skin.string(wallmusicgrid),mid) + [Container.Content(albums) + !Skin.HasSetting(nowallaudiocase)]" width="273" height="276">
 					<!-- tamanho normal -->
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>258</width>
 						<height>258</height>
 						<texture>thumb_box_cd.png</texture>
 						<aspectratio align="center">stretch</aspectratio>
 					</control>
 					<control type="image">
-						<posx>39</posx>
-						<posy>8</posy>
+						<left>39</left>
+						<top>8</top>
 						<width>212</width>
 						<height>240</height>
 						<texture diffuse="thumb_box_diffuse.png" fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1459,8 +1459,8 @@
 				<itemlayout condition="String.Contains(skin.string(wallmusicgrid),big) + ![Container.Content(albums) + !Skin.HasSetting(nowallaudiocase)]" width="482" height="414">
 					<!-- tamanho grande -->
 					<control type="image">
-						<posx>33</posx>
-						<posy>3</posy>
+						<left>33</left>
+						<top>3</top>
 						<width>390</width>
 						<height>390</height>
 						<texture fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1469,8 +1469,8 @@
 						<visible>![Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)]</visible>
 					</control>
 					<control type="image">
-						<posx>33</posx>
-						<posy>3</posy>
+						<left>33</left>
+						<top>3</top>
 						<width>390</width>
 						<height>390</height>
 						<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">genres/256.png</texture>
@@ -1479,8 +1479,8 @@
 						<visible>Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)</visible>
 					</control>
 					<control type="label">
-						<posx>40</posx>
-						<posy>10</posy>
+						<left>40</left>
+						<top>10</top>
 						<width>393</width>
 						<height>393</height>
 						<font>Font_18A</font>
@@ -1495,16 +1495,16 @@
 				<itemlayout condition="String.Contains(skin.string(wallmusicgrid),big) + [Container.Content(albums) + !Skin.HasSetting(nowallaudiocase)]" width="482" height="414">
 					<!-- tamanho normal -->
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>400</width>
 						<height>400</height>
 						<texture>thumb_box_cd.png</texture>
 						<aspectratio align="center">stretch</aspectratio>
 					</control>
 					<control type="image">
-						<posx>58</posx>
-						<posy>12</posy>
+						<left>58</left>
+						<top>12</top>
 						<width>326</width>
 						<height>372</height>
 						<texture diffuse="thumb_box_diffuse.png" fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1514,8 +1514,8 @@
 				<focusedlayout condition="String.Contains(skin.string(wallmusicgrid),default) + !Container.Content(albums)" width="160" height="160">
 					<!-- tamanho normal -->
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>154</width>
 						<height>154</height>
 						<texture fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1528,8 +1528,8 @@
 						<visible>![Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)]</visible>
 					</control>
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>154</width>
 						<height>154</height>
 						<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">genres/256.png</texture>
@@ -1542,8 +1542,8 @@
 						<visible>Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)</visible>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>10</posy>
+						<left>10</left>
+						<top>10</top>
 						<width>140</width>
 						<height>140</height>
 						<font>Font_18A</font>
@@ -1578,8 +1578,8 @@
 						</animation>
 						<visible>![String.IsEmpty(ListItem.Art(discart)) | Skin.HasSetting(nowalldiscart_audio)] + Window.IsActive(music)</visible>
 						<control type="image">
-							<posx>93</posx>
-							<posy>13</posy>
+							<left>93</left>
+							<top>13</top>
 							<width>135</width>
 							<height>135</height>
 							<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -1590,8 +1590,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>154</width>
 						<height>154</height>
 						<texture fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1622,8 +1622,8 @@
 						</animation>
 						<visible>![String.IsEmpty(ListItem.Art(discart)) | Skin.HasSetting(nowalldiscart_audio)] + Window.IsActive(music)</visible>
 						<control type="image">
-							<posx>83</posx>
-							<posy>13</posy>
+							<left>83</left>
+							<top>13</top>
 							<width>135</width>
 							<height>135</height>
 							<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -1634,8 +1634,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>154</width>
 						<height>154</height>
 						<texture>thumb_box_cd.png</texture>
@@ -1646,8 +1646,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>26</posx>
-						<posy>8</posy>
+						<left>26</left>
+						<top>8</top>
 						<width>126</width>
 						<height>142</height>
 						<texture diffuse="thumb_box_diffuse.png" fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1661,8 +1661,8 @@
 				<focusedlayout condition="String.Contains(skin.string(wallmusicgrid),mid) + !Container.Content(albums)" width="273" height="276">
 					<!-- tamanho medio -->
 					<control type="image">
-						<posx>8</posx>
-						<posy>3</posy>
+						<left>8</left>
+						<top>3</top>
 						<width>262</width>
 						<height>262</height>
 						<texture fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1675,8 +1675,8 @@
 						<visible>![Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)]</visible>
 					</control>
 					<control type="image">
-						<posx>8</posx>
-						<posy>3</posy>
+						<left>8</left>
+						<top>3</top>
 						<width>262</width>
 						<height>262</height>
 						<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">genres/256.png</texture>
@@ -1689,8 +1689,8 @@
 						<visible>Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)</visible>
 					</control>
 					<control type="label">
-						<posx>15</posx>
-						<posy>10</posy>
+						<left>15</left>
+						<top>10</top>
 						<width>248</width>
 						<height>248</height>
 						<font>Font_18A</font>
@@ -1725,8 +1725,8 @@
 						</animation>
 						<visible>![String.IsEmpty(ListItem.Art(discart)) | Skin.HasSetting(nowalldiscart_audio)] + Window.IsActive(music)</visible>
 						<control type="image">
-							<posx>148</posx>
-							<posy>12</posy>
+							<left>148</left>
+							<top>12</top>
 							<width>240</width>
 							<height>240</height>
 							<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -1737,8 +1737,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>6</posx>
-						<posy>3</posy>
+						<left>6</left>
+						<top>3</top>
 						<width>262</width>
 						<height>262</height>
 						<texture fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1769,8 +1769,8 @@
 						</animation>
 						<visible>![String.IsEmpty(ListItem.Art(discart)) | Skin.HasSetting(nowalldiscart_audio)] + Window.IsActive(music)</visible>
 						<control type="image">
-							<posx>128</posx>
-							<posy>12</posy>
+							<left>128</left>
+							<top>12</top>
 							<width>240</width>
 							<height>240</height>
 							<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -1781,8 +1781,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>262</width>
 						<height>262</height>
 						<texture>thumb_box_cd.png</texture>
@@ -1793,8 +1793,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>40</posx>
-						<posy>9</posy>
+						<left>40</left>
+						<top>9</top>
 						<width>216</width>
 						<height>244</height>
 						<texture diffuse="thumb_box_diffuse.png" fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1808,8 +1808,8 @@
 				<focusedlayout condition="String.Contains(skin.string(wallmusicgrid),big) + !Container.Content(albums)" width="482" height="414">
 					<!-- tamanho grande -->
 					<control type="image">
-						<posx>33</posx>
-						<posy>3</posy>
+						<left>33</left>
+						<top>3</top>
 						<width>408</width>
 						<height>408</height>
 						<texture fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1822,8 +1822,8 @@
 						<visible>![Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)]</visible>
 					</control>
 					<control type="image">
-						<posx>33</posx>
-						<posy>3</posy>
+						<left>33</left>
+						<top>3</top>
 						<width>408</width>
 						<height>408</height>
 						<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">genres/256.png</texture>
@@ -1836,8 +1836,8 @@
 						<visible>Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)</visible>
 					</control>
 					<control type="label">
-						<posx>40</posx>
-						<posy>10</posy>
+						<left>40</left>
+						<top>10</top>
 						<width>393</width>
 						<height>393</height>
 						<font>Font_18A</font>
@@ -1872,8 +1872,8 @@
 						</animation>
 						<visible>![String.IsEmpty(ListItem.Art(discart)) | Skin.HasSetting(nowalldiscart_audio)] + Window.IsActive(music)</visible>
 						<control type="image">
-							<posx>264</posx>
-							<posy>20</posy>
+							<left>264</left>
+							<top>20</top>
 							<width>360</width>
 							<height>360</height>
 							<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -1884,8 +1884,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>26</posx>
-						<posy>3</posy>
+						<left>26</left>
+						<top>3</top>
 						<width>408</width>
 						<height>408</height>
 						<texture fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1916,8 +1916,8 @@
 						</animation>
 						<visible>![String.IsEmpty(ListItem.Art(discart)) | Skin.HasSetting(nowalldiscart_audio)] + Window.IsActive(music)</visible>
 						<control type="image">
-							<posx>204</posx>
-							<posy>20</posy>
+							<left>204</left>
+							<top>20</top>
 							<width>360</width>
 							<height>360</height>
 							<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -1928,8 +1928,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>408</width>
 						<height>408</height>
 						<texture>thumb_box_cd.png</texture>
@@ -1940,8 +1940,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>58</posx>
-						<posy>12</posy>
+						<left>58</left>
+						<top>12</top>
 						<width>334</width>
 						<height>380</height>
 						<texture diffuse="thumb_box_diffuse.png" fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
@@ -1962,8 +1962,8 @@
 			<visible>Control.IsVisible(56)</visible>
 			<control type="panel" id="56">
 				<viewtype label="31805">Panel</viewtype>
-				<posx>0</posx>
-				<posy>150</posy>
+				<left>0</left>
+				<top>150</top>
 				<width>1928</width>
 				<height>801</height>
 				<onleft>9900</onleft>
@@ -1975,8 +1975,8 @@
 				<itemlayout condition="String.Contains(skin.string(wallprogramsgrid),default)" width="160" height="160">
 					<!-- tamanho normal -->
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>154</width>
 						<height>154</height>
 						<texture fallback="DefaultAddon.png" background="true">$VAR[value_poster]</texture>
@@ -1992,8 +1992,8 @@
 				<itemlayout condition="String.Contains(skin.string(wallprogramsgrid),mid)" width="273" height="276">
 					<!-- tamanho medio -->
 					<control type="image">
-						<posx>8</posx>
-						<posy>3</posy>
+						<left>8</left>
+						<top>3</top>
 						<width>262</width>
 						<height>262</height>
 						<texture fallback="DefaultAddon.png" background="true">$VAR[value_poster]</texture>
@@ -2009,8 +2009,8 @@
 				<itemlayout condition="String.Contains(skin.string(wallprogramsgrid),big)" width="482" height="414">
 					<!-- tamanho grande -->
 					<control type="image">
-						<posx>33</posx>
-						<posy>3</posy>
+						<left>33</left>
+						<top>3</top>
 						<width>408</width>
 						<height>408</height>
 						<texture fallback="DefaultAddon.png" background="true">$VAR[value_poster]</texture>
@@ -2026,8 +2026,8 @@
 				<focusedlayout condition="String.Contains(skin.string(wallprogramsgrid),default)" width="160" height="160">
 					<!-- tamanho normal -->
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>154</width>
 						<height>154</height>
 						<texture fallback="DefaultAddon.png" background="true">$VAR[value_poster]</texture>
@@ -2042,8 +2042,8 @@
 				<focusedlayout condition="String.Contains(skin.string(wallprogramsgrid),mid)" width="273" height="276">
 					<!-- tamanho medio -->
 					<control type="image">
-						<posx>8</posx>
-						<posy>3</posy>
+						<left>8</left>
+						<top>3</top>
 						<width>262</width>
 						<height>262</height>
 						<texture fallback="DefaultAddon.png" background="true">$VAR[value_poster]</texture>
@@ -2058,8 +2058,8 @@
 				<focusedlayout condition="String.Contains(skin.string(wallprogramsgrid),big)" width="482" height="414">
 					<!-- tamanho grande -->
 					<control type="image">
-						<posx>33</posx>
-						<posy>3</posy>
+						<left>33</left>
+						<top>3</top>
 						<width>408</width>
 						<height>408</height>
 						<texture fallback="DefaultAddon.png" background="true">$VAR[value_poster]</texture>
@@ -2081,8 +2081,8 @@
 			<visible>Control.IsVisible(56)</visible>
 			<control type="panel" id="56">
 				<viewtype label="31805">Panel</viewtype>
-				<posx>0</posx>
-				<posy>150</posy>
+				<left>0</left>
+				<top>150</top>
 				<width>1928</width>
 				<height>801</height>
 				<onleft>9900</onleft>
@@ -2094,8 +2094,8 @@
 				<itemlayout condition="String.Contains(skin.string(wallpicsgrid),default)" width="160" height="160">
 					<!-- tamanho normal -->
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>154</width>
 						<height>154</height>
 						<texture fallback="DefaultAddon.png" background="true">$VAR[value_poster]</texture>
@@ -2111,8 +2111,8 @@
 				<itemlayout condition="String.Contains(skin.string(wallpicsgrid),mid)" width="273" height="276">
 					<!-- tamanho medio -->
 					<control type="image">
-						<posx>8</posx>
-						<posy>3</posy>
+						<left>8</left>
+						<top>3</top>
 						<width>262</width>
 						<height>262</height>
 						<texture fallback="DefaultAddon.png" background="true">$VAR[value_poster]</texture>
@@ -2128,8 +2128,8 @@
 				<itemlayout condition="String.Contains(skin.string(wallpicsgrid),big)" width="482" height="414">
 					<!-- tamanho grande -->
 					<control type="image">
-						<posx>33</posx>
-						<posy>3</posy>
+						<left>33</left>
+						<top>3</top>
 						<width>408</width>
 						<height>408</height>
 						<texture fallback="DefaultAddon.png" background="true">$VAR[value_poster]</texture>
@@ -2145,8 +2145,8 @@
 				<focusedlayout condition="String.Contains(skin.string(wallpicsgrid),default)" width="160" height="160">
 					<!-- tamanho normal -->
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
+						<left>3</left>
+						<top>3</top>
 						<width>154</width>
 						<height>154</height>
 						<texture fallback="DefaultAddon.png" background="true">$VAR[value_poster]</texture>
@@ -2161,8 +2161,8 @@
 				<focusedlayout condition="String.Contains(skin.string(wallpicsgrid),mid)" width="273" height="276">
 					<!-- tamanho medio -->
 					<control type="image">
-						<posx>8</posx>
-						<posy>3</posy>
+						<left>8</left>
+						<top>3</top>
 						<width>262</width>
 						<height>262</height>
 						<texture fallback="DefaultAddon.png" background="true">$VAR[value_poster]</texture>
@@ -2177,8 +2177,8 @@
 				<focusedlayout condition="String.Contains(skin.string(wallpicsgrid),big)" width="482" height="414">
 					<!-- tamanho grande -->
 					<control type="image">
-						<posx>33</posx>
-						<posy>3</posy>
+						<left>33</left>
+						<top>3</top>
 						<width>408</width>
 						<height>408</height>
 						<texture fallback="DefaultAddon.png" background="true">$VAR[value_poster]</texture>

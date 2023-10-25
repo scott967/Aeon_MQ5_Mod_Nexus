@@ -5,7 +5,7 @@
 <!-- Krypton 9.1.16/9.1.19/9.2.1 window IDs/9.2.3 -->
 <!-- Leia 10.3.0/10.4.0/10.6.2 -->
 <!-- Matrix 11.0.4/11.1.1/11.2.0/11.3.0 -->
-<!-- Nexus 12.3.0/12.5.0 -->
+<!-- Nexus 12.3.0/12.5.0/12.6.0 -->
 <!-- 9100 Main selector menu list -->
 <!-- 9001 - general settings -->
 <!-- 9002 Home window settings -->
@@ -36,8 +36,8 @@
 			<include>SettingsBack</include>
 			<!-- Menu da direita -->
 			<control type="image">
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>1560</width>
 				<height>900</height>
 				<aspectratio>stretch</aspectratio>
@@ -53,8 +53,8 @@
 			</control>
 			<control type="label">
 				<!-- Labels do rodape -->
-				<posx>444</posx>
-				<posy>998</posy>
+				<left>444</left>
+				<top>998</top>
 				<width>1200</width>
 				<height>75</height>
 				<aligny>center</aligny>
@@ -65,8 +65,8 @@
 			<control type="grouplist" id="9001">				<!-- General Settings -->
 				<visible>Container(9100).HasFocus(16)</visible>
 				<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>1560</width>
 				<height>891</height>
 				<onleft>9100</onleft>
@@ -166,8 +166,8 @@
 			<control type="grouplist" id="9002">				<!-- Home Main Menu  -->
 				<visible>Container(9100).HasFocus(17)</visible>
 				<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>1560</width>
 				<height>780</height>
 				<onleft>9100</onleft>
@@ -295,8 +295,8 @@
 			<control type="grouplist" id="9006">				<!--  Main Menu Widgets -->
 				<visible>Container(9100).HasFocus(18)</visible>
 				<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>1560</width>
 				<height>780</height>
 				<onleft>9100</onleft>
@@ -692,8 +692,8 @@
 				<!-- nao trocar ids -->
 				<visible>Container(9100).HasFocus(32)</visible>
 				<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>1560</width>
 				<height>741</height>
 				<onleft>9100</onleft>
@@ -734,7 +734,7 @@
 				</control>
 				<control type="button" id="1163">
 					<!-- reset -->
-					<posy>60</posy>
+					<top>60</top>
 					<label>31421</label>
 					<onup>9100</onup>
 					<ondown>9100</ondown>
@@ -750,8 +750,8 @@
 				<visible>Container(9100).HasFocus(32)</visible>
 				<include>Animation_Fade</include>
 				<control type="image">
-					<posx>360</posx>
-					<posy>624</posy>
+					<left>360</left>
+					<top>624</top>
 					<width>1560</width>
 					<height>374</height>
 					<texture>darkgrey.png</texture>
@@ -760,15 +760,15 @@
 				</control>
 				<control type="image">
 					<!-- Fundo borda -->
-					<posx>420</posx>
-					<posy>616</posy>
+					<left>420</left>
+					<top>616</top>
 					<width>663</width>
 					<height>390</height>
 					<texture>fanartframe.png</texture>
 				</control>
 				<control type="image">
-					<posx>424</posx>
-					<posy>639</posy>
+					<left>424</left>
+					<top>639</top>
 					<width>654</width>
 					<height>344</height>
 					<aspectratio>keep</aspectratio>
@@ -777,8 +777,8 @@
 					<include>Animation_Fade</include>
 				</control>
 				<control type="textbox">
-					<posx>1102</posx>
-					<posy>636</posy>
+					<left>1102</left>
+					<top>636</top>
 					<width>750</width>
 					<height>300</height>
 					<textcolor>FFFFFAF0</textcolor>
@@ -792,8 +792,8 @@
 				<visible>Container(9100).HasFocus(31)</visible>
 				<!--<control type="grouplist" id="9010">
 					<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
-					<posx>240</posx>
-					<posy>120</posy>
+					<left>240</left>
+					<top>120</top>
 					<width>1040</width>
 					<height>494</height>
 					<onleft>9100</onleft>
@@ -809,8 +809,8 @@
 					<selected>Skin.HasSetting(externalvideocase)</selected>
 				</control> -->
 				<control type="image">
-					<posx>360</posx>
-					<posy>502</posy>
+					<left>360</left>
+					<top>502</top>
 					<width>1560</width>
 					<height>322</height>
 					<texture>shadow_mask.png</texture>
@@ -818,8 +818,8 @@
 					<animation effect="fade" start="100" end="85" condition="true">conditional</animation>
 				</control>
 				<control type="image">
-					<posx>630</posx>
-					<posy>465</posy>
+					<left>630</left>
+					<top>465</top>
 					<width>75</width>
 					<height>150</height>
 					<texture flipx="true">arrow_settings.png</texture>
@@ -829,8 +829,8 @@
 					<visible>Control.HasFocus(403)</visible>
 				</control>
 				<control type="image">
-					<posx>1500</posx>
-					<posy>465</posy>
+					<left>1500</left>
+					<top>465</top>
 					<width>75</width>
 					<height>150</height>
 					<texture>arrow_settings.png</texture>
@@ -841,8 +841,8 @@
 				</control>
 				<control type="wraplist" id="403">
 				<!-- List of current video cases with case color (set by list 165) and case codec icon (set by list 150) -->
-					<posx>477</posx>
-					<posy>352</posy>
+					<left>477</left>
+					<top>352</top>
 					<height>450</height>
 					<width>1200</width>
 					<onup>9100</onup>
@@ -858,16 +858,16 @@
 					<focusedlayout width="900" height="450">  <!-- only focused case is visible-->
 						<control type="image">
 							<!-- reflexo -->
-							<posx>502</posx>
-							<posy>342</posy>
+							<left>502</left>
+							<top>342</top>
 							<width>234</width>
 							<height>330</height>
 							<aspectratio>stretch</aspectratio>
 							<texture flipy="true" diffuse="thumb_box_reflect.png">DefaultVideoPoster.png</texture>
 						</control>
 						<control type="image">
-							<posx>502</posx>
-							<posy>48</posy>
+							<left>502</left>
+							<top>48</top>
 							<width>234</width>
 							<height>330</height>
 							<aspectratio>stretch</aspectratio>
@@ -1006,8 +1006,8 @@
 						</control>
 						<!-- codec icon displayed on case -->
 						<control type="image">
-							<posx>588</posx>
-							<posy>3</posy>
+							<left>588</left>
+							<top>3</top>
 							<width>68</width>
 							<height>68</height>
 							<align>center</align>
@@ -1101,23 +1101,23 @@
 				</control>
 				<control type="group">
 					<!-- Estojo virtual -->
-					<posx>960</posx>
-					<posy>352</posy>
+					<left>960</left>
+					<top>352</top>
 					<animation effect="fade" time="200">Visible</animation>
 					<animation effect="fade" time="200">Hidden</animation>
 					<visible>Control.Hasfocus(150) | ControlGroup(165).HasFocus</visible>
 					<control type="image">
 						<!-- reflexo -->
-						<posx>22</posx>
-						<posy>392</posy>
+						<left>22</left>
+						<top>392</top>
 						<width>234</width>
 						<height>330</height>
 						<aspectratio>stretch</aspectratio>
 						<texture flipy="true" diffuse="thumb_box_reflect.png">DefaultVideoPoster.png</texture>
 					</control>
 					<control type="image">
-						<posx>22</posx>
-						<posy>48</posy>
+						<left>22</left>
+						<top>48</top>
 						<width>234</width>
 						<height>330</height>
 						<aspectratio>stretch</aspectratio>
@@ -1125,8 +1125,8 @@
 					</control>
 					<control type="image">
 						<!-- reflexo -->
-						<posx>0</posx>
-						<posy>358</posy>
+						<left>0</left>
+						<top>358</top>
 						<width>285</width>
 						<height>405</height>
 						<aspectratio>stretch</aspectratio>
@@ -1134,8 +1134,8 @@
 						<colordiffuse>$VAR[value_casepreviewcolors]</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>285</width>
 						<height>405</height>
 						<aspectratio>stretch</aspectratio>
@@ -1144,32 +1144,32 @@
 					</control>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>780</posy>
+					<left>360</left>
+					<top>780</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>974</posy>
+					<left>360</left>
+					<top>974</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>825</posy>
+					<left>360</left>
+					<top>825</top>
 					<width>1560</width>
 					<height>150</height>
 					<texture>black.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>870</posy>
+					<left>360</left>
+					<top>870</top>
 					<width>1560</width>
 					<height>60</height>
 					<texture>grey.png</texture>
@@ -1177,8 +1177,8 @@
 				<control type="list" id="150">
 					<!-- Codec list to display on case first select case color on list 165 then icon here. Note that you can display a fixed flag image per case, or use a video codec selected codec flag image, or none image-->
 					<!-- "Custom_code" is the specific codec to change (eg codec_bluray) -->
-					<posx>370</posx>
-					<posy>870</posy>
+					<left>370</left>
+					<top>870</top>
 					<width>1540</width>
 					<height>120</height>
 					<onup>9100</onup>
@@ -1188,16 +1188,16 @@
 					<focusposition>0</focusposition>
 					<itemlayout width="140" height="60">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1</width>
 							<height>60</height>
 							<texture>flagseparator.png</texture>
 							<colordiffuse>FF101010</colordiffuse>
 						</control>
 						<control type="image">
-							<posx>17</posx>
-							<posy>0</posy>
+							<left>17</left>
+							<top>0</top>
 							<height>60</height>
 							<width>105</width>
 							<texture>$INFO[ListItem.Icon]</texture>
@@ -1207,8 +1207,8 @@
 					</itemlayout>
 					<focusedlayout width="140" height="60">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<height>60</height>
 							<width>150</width>
 							<texture>grey.png</texture>
@@ -1218,8 +1218,8 @@
 							<visible>Control.Hasfocus(150)</visible>
 						</control>
 						<control type="image">
-							<posx>17</posx>
-							<posy>0</posy>
+							<left>17</left>
+							<top>0</top>
 							<height>60</height>
 							<width>105</width>
 							<texture>$INFO[ListItem.Icon]</texture>
@@ -1227,8 +1227,8 @@
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 						</control>
 						<control type="image">
-							<posx>17</posx>
-							<posy>75</posy>
+							<left>17</left>
+							<top>75</top>
 							<width>105</width>
 							<height>30</height>
 							<texture flipy="true">arrow_settings_down.png</texture>
@@ -1307,23 +1307,23 @@
 					</content>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>870</posy>
+					<left>360</left>
+					<top>870</top>
 					<width>1560</width>
 					<height>60</height>
 					<texture>gradient_small.png</texture>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>870</posy>
+					<left>360</left>
+					<top>870</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>885</posy>
+					<left>360</left>
+					<top>885</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
@@ -1331,42 +1331,42 @@
 				</control>
 				<control type="group">
 					<!-- Seletor de cores do estojo -->
-					<posx>360</posx>
+					<left>360</left>
 					<control type="image">
-						<posx>0</posx>
-						<posy>135</posy>
+						<left>0</left>
+						<top>135</top>
 						<width>1560</width>
 						<height>45</height>
 						<texture>shadow_h.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>328</posy>
+						<left>0</left>
+						<top>328</top>
 						<width>1560</width>
 						<height>45</height>
 						<texture flipy="true">shadow_h.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>180</posy>
+						<left>0</left>
+						<top>180</top>
 						<width>1560</width>
 						<height>150</height>
 						<texture>black.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>225</posy>
+						<left>0</left>
+						<top>225</top>
 						<width>1560</width>
 						<height>60</height>
 						<texture>grey.png</texture>
 						<colordiffuse>20FFFFFF</colordiffuse>
 					</control>
 					<control type="grouplist" id="165">	<!-- List of available case colors to select for list 403 case "custom_case" is set in 403 to appropriate case (eg case_bluray) -->
-						<posx>102</posx>
-						<posy>222</posy>
+						<left>102</left>
+						<top>222</top>
 						<width>13650</width>
 						<height>76</height>
 						<itemgap>15</itemgap>
@@ -1389,8 +1389,8 @@
 							<visible>Container(403).HasFocus(1)</visible>
 						</control>
 						<control type="colorbutton" id="4032">
-							<!-- <posx>1300</posx>
-							<posy>100</posy> -->
+							<!-- <left>1300</left>
+							<top>100</top> -->
 							<width>320</width>
 							<label></label>
 							<aligny>center</aligny>
@@ -1408,8 +1408,8 @@
 							<visible>Container(403).HasFocus(2)</visible>
 						</control>
 						<control type="colorbutton" id="4033">
-							<!-- <posx>1300</posx>
-							<posy>100</posy> -->
+							<!-- <left>1300</left>
+							<top>100</top> -->
 							<width>320</width>
 							<label></label>
 							<aligny>center</aligny>
@@ -1427,8 +1427,8 @@
 							<visible>Container(403).HasFocus(3)</visible>
 						</control>
 						<control type="colorbutton" id="4034">
-							<!-- <posx>1300</posx>
-							<posy>100</posy> -->
+							<!-- <left>1300</left>
+							<top>100</top> -->
 							<width>320</width>
 							<label></label>
 							<aligny>center</aligny>
@@ -1446,8 +1446,8 @@
 							<visible>Container(403).HasFocus(4)</visible>
 						</control>
 						<control type="colorbutton" id="4035">
-							<!-- <posx>1300</posx>
-							<posy>100</posy> -->
+							<!-- <left>1300</left>
+							<top>100</top> -->
 							<width>320</width>
 							<label></label>
 							<aligny>center</aligny>
@@ -1465,8 +1465,8 @@
 							<visible>Container(403).HasFocus(5)</visible>
 						</control>
 						<control type="colorbutton" id="4036">
-							<!-- <posx>1300</posx>
-							<posy>100</posy> -->
+							<!-- <left>1300</left>
+							<top>100</top> -->
 							<width>320</width>
 							<label></label>
 							<aligny>center</aligny>
@@ -1484,8 +1484,8 @@
 							<visible>Container(403).HasFocus(6)</visible>
 						</control>
 						<control type="colorbutton" id="4037">
-							<!-- <posx>1300</posx>
-							<posy>100</posy> -->
+							<!-- <left>1300</left>
+							<top>100</top> -->
 							<width>320</width>
 							<label></label>
 							<aligny>center</aligny>
@@ -1503,8 +1503,8 @@
 							<visible>Container(403).HasFocus(7)</visible>
 						</control>
 						<control type="colorbutton" id="4038">
-							<!-- <posx>1300</posx>
-							<posy>100</posy> -->
+							<!-- <left>1300</left>
+							<top>100</top> -->
 							<width>320</width>
 							<label></label>
 							<aligny>center</aligny>
@@ -1522,8 +1522,8 @@
 							<visible>Container(403).HasFocus(8)</visible>
 						</control>
 						<control type="colorbutton" id="4039">
-							<!-- <posx>1300</posx>
-							<posy>100</posy> -->
+							<!-- <left>1300</left>
+							<top>100</top> -->
 							<width>320</width>
 							<label></label>
 							<aligny>center</aligny>
@@ -1541,8 +1541,8 @@
 							<visible>Container(403).HasFocus(9)</visible>
 						</control>
 						<control type="colorbutton" id="40310">
-							<!-- <posx>1300</posx>
-							<posy>100</posy> -->
+							<!-- <left>1300</left>
+							<top>100</top> -->
 							<width>320</width>
 							<label></label>
 							<aligny>center</aligny>
@@ -1564,11 +1564,11 @@
 			</control>
 			<!-- ########################################################## SELETOR DE ETIQUETA ASSISTIDO ########################################################## -->
 			<control type="group">
-				<posx>360</posx>
+				<left>360</left>
 				<visible>Container(9100).HasFocus(33)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>502</posy>
+					<left>0</left>
+					<top>502</top>
 					<width>1560</width>
 					<height>322</height>
 					<texture>shadow_mask.png</texture>
@@ -1577,8 +1577,8 @@
 				</control>
 				<control type="image">
 					<!-- reflexo -->
-					<posx>622</posx>
-					<posy>736</posy>
+					<left>622</left>
+					<top>736</top>
 					<width>234</width>
 					<height>330</height>
 					<aspectratio align="center" aligny="top">keep</aspectratio>
@@ -1586,8 +1586,8 @@
 					<bordertexture flipy="true" diffuse="thumb_reflect.png" border="-2">black.png</bordertexture>
 				</control>
 				<control type="image">
-					<posx>622</posx>
-					<posy>400</posy>
+					<left>622</left>
+					<top>400</top>
 					<width>234</width>
 					<height>330</height>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
@@ -1595,8 +1595,8 @@
 					<bordertexture border="-2">black.png</bordertexture>
 				</control>
 				<control type="image">
-					<posx>795</posx>
-					<posy>398</posy>
+					<left>795</left>
+					<top>398</top>
 					<width>60</width>
 					<height>60</height>
 					<texture>$VAR[value_watchedstyle]</texture>
@@ -1604,39 +1604,39 @@
 					<fadetime>FanartCrossFadeTime</fadetime>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>780</posy>
+					<left>0</left>
+					<top>780</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>974</posy>
+					<left>0</left>
+					<top>974</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>825</posy>
+					<left>0</left>
+					<top>825</top>
 					<width>1560</width>
 					<height>150</height>
 					<texture>black.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>870</posy>
+					<left>0</left>
+					<top>870</top>
 					<width>1560</width>
 					<height>60</height>
 					<texture>grey.png</texture>
 				</control>
 				<control type="list" id="200">
-					<posx>188</posx>
-					<posy>870</posy>
+					<left>188</left>
+					<top>870</top>
 					<width>1500</width>
 					<height>120</height>
 					<onup>210</onup>
@@ -1646,16 +1646,16 @@
 					<focusposition>0</focusposition>
 					<itemlayout width="180" height="60">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1</width>
 							<height>60</height>
 							<texture>flagseparator.png</texture>
 							<colordiffuse>FF101010</colordiffuse>
 						</control>
 						<control type="image">
-							<posx>63</posx>
-							<posy>4</posy>
+							<left>63</left>
+							<top>4</top>
 							<height>52</height>
 							<width>52</width>
 							<texture>$INFO[ListItem.Icon]</texture>
@@ -1664,8 +1664,8 @@
 					</itemlayout>
 					<focusedlayout width="180" height="60">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<height>60</height>
 							<width>180</width>
 							<texture>grey.png</texture>
@@ -1675,16 +1675,16 @@
 							<visible>Control.Hasfocus(200)</visible>
 						</control>
 						<control type="image">
-							<posx>63</posx>
-							<posy>4</posy>
+							<left>63</left>
+							<top>4</top>
 							<height>52</height>
 							<width>52</width>
 							<texture>$INFO[ListItem.Icon]</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 						</control>
 						<control type="image">
-							<posx>30</posx>
-							<posy>75</posy>
+							<left>30</left>
+							<top>75</top>
 							<width>120</width>
 							<height>30</height>
 							<texture flipy="true">arrow_settings_down.png</texture>
@@ -1732,23 +1732,23 @@
 					</content>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>870</posy>
+					<left>0</left>
+					<top>870</top>
 					<width>1560</width>
 					<height>60</height>
 					<texture>gradient_small.png</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>870</posy>
+					<left>0</left>
+					<top>870</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>885</posy>
+					<left>0</left>
+					<top>885</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
@@ -1757,40 +1757,40 @@
 				<control type="group">
 					<!-- Seletor de cores da etiqueta -->
 					<control type="image">
-						<posx>0</posx>
-						<posy>135</posy>
+						<left>0</left>
+						<top>135</top>
 						<width>1560</width>
 						<height>45</height>
 						<texture>shadow_h.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>328</posy>
+						<left>0</left>
+						<top>328</top>
 						<width>1560</width>
 						<height>45</height>
 						<texture flipy="true">shadow_h.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>180</posy>
+						<left>0</left>
+						<top>180</top>
 						<width>1560</width>
 						<height>150</height>
 						<texture>black.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>225</posy>
+						<left>0</left>
+						<top>225</top>
 						<width>1560</width>
 						<height>60</height>
 						<texture>grey.png</texture>
 						<colordiffuse>20FFFFFF</colordiffuse>
 					</control>
 					<control type="grouplist" id="210">
-						<posx>60</posx>
-						<posy>232</posy>
+						<left>60</left>
+						<top>232</top>
 						<width>13650</width>
 						<height>45</height>
 						<onup>9100</onup>
@@ -1971,8 +1971,8 @@
 				</control>
 				<control type="label">
 					<!-- Nome da cor -->
-					<posx>60</posx>
-					<posy>291</posy>
+					<left>60</left>
+					<top>291</top>
 					<width>1410</width>
 					<height>45</height>
 					<align>left</align>
@@ -1985,8 +1985,8 @@
 			<control type="grouplist" id="9009">				<!-- Disc -->
 				<visible>Container(9100).HasFocus(34)</visible>
 				<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>1560</width>
 				<height>891</height>
 				<onleft>9100</onleft>
@@ -2006,8 +2006,8 @@
 			<control type="group">
 				<visible>Container(9100).HasFocus(34)</visible>
 				<control type="image">
-					<posx>360</posx>
-					<posy>488</posy>
+					<left>360</left>
+					<top>488</top>
 					<width>1560</width>
 					<height>262</height>
 					<texture>shadow_mask.png</texture>
@@ -2015,8 +2015,8 @@
 					<animation effect="fade" start="100" end="85" condition="true">conditional</animation>
 				</control>
 				<control type="image">
-					<posx>630</posx>
-					<posy>412</posy>
+					<left>630</left>
+					<top>412</top>
 					<width>75</width>
 					<height>150</height>
 					<texture flipx="true">arrow_settings.png</texture>
@@ -2026,8 +2026,8 @@
 					<visible>Control.HasFocus(404)</visible>
 				</control>
 				<control type="image">
-					<posx>1500</posx>
-					<posy>412</posy>
+					<left>1500</left>
+					<top>412</top>
 					<width>75</width>
 					<height>150</height>
 					<texture>arrow_settings.png</texture>
@@ -2037,8 +2037,8 @@
 					<visible>Control.HasFocus(404)</visible>
 				</control>
 				<control type="wraplist" id="404">
-					<posx>477</posx>
-					<posy>270</posy>
+					<left>477</left>
+					<top>270</top>
 					<height>450</height>
 					<width>1200</width>
 					<onup>9009</onup>
@@ -2057,8 +2057,8 @@
 							<animation effect="slide" start="0,0" end="180,0" time="800" delay="300" tween="sine" easing="inout" condition="Control.Hasfocus(270)">Conditional</animation>
 							<control type="image">
 								<include>Animation_CDart</include>
-								<posx>532</posx>
-								<posy>56</posy>
+								<left>532</left>
+								<top>56</top>
 								<width>315</width>
 								<height>315</height>
 								<texture>$INFO[ListItem.Icon]</texture>
@@ -2069,8 +2069,8 @@
 						</control>
 						<control type="image">
 							<!-- reflexo -->
-							<posx>360</posx>
-							<posy>384</posy>
+							<left>360</left>
+							<top>384</top>
 							<width>330</width>
 							<height>330</height>
 							<aspectratio align="center" aligny="top">keep</aspectratio>
@@ -2079,8 +2079,8 @@
 							<visible>Container(404).HasFocus(1)</visible>
 						</control>
 						<control type="image">
-							<posx>360</posx>
-							<posy>48</posy>
+							<left>360</left>
+							<top>48</top>
 							<width>330</width>
 							<height>330</height>
 							<aspectratio align="center" aligny="bottom">keep</aspectratio>
@@ -2092,8 +2092,8 @@
 							<animation effect="slide" start="0,0" end="150,0" time="800" delay="300" tween="sine" easing="inout" condition="Control.Hasfocus(270)">Conditional</animation>
 							<control type="image">
 								<include>Animation_CDart</include>
-								<posx>525</posx>
-								<posy>82</posy>
+								<left>525</left>
+								<top>82</top>
 								<width>255</width>
 								<height>255</height>
 								<texture>$INFO[ListItem.Icon]</texture>
@@ -2104,8 +2104,8 @@
 						</control>
 						<control type="image">
 							<!-- reflexo -->
-							<posx>420</posx>
-							<posy>384</posy>
+							<left>420</left>
+							<top>384</top>
 							<width>234</width>
 							<height>330</height>
 							<aspectratio align="center" aligny="top">stretch</aspectratio>
@@ -2114,8 +2114,8 @@
 							<visible>Container(404).HasFocus(2)</visible>
 						</control>
 						<control type="image">
-							<posx>420</posx>
-							<posy>48</posy>
+							<left>420</left>
+							<top>48</top>
 							<width>234</width>
 							<height>330</height>
 							<aspectratio align="center" aligny="bottom">stretch</aspectratio>
@@ -2142,39 +2142,39 @@
 					</content>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>705</posy>
+					<left>360</left>
+					<top>705</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>974</posy>
+					<left>360</left>
+					<top>974</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>750</posy>
+					<left>360</left>
+					<top>750</top>
 					<width>1560</width>
 					<height>225</height>
 					<texture>black.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>802</posy>
+					<left>360</left>
+					<top>802</top>
 					<width>1560</width>
 					<height>120</height>
 					<texture>grey.png</texture>
 				</control>
 				<control type="list" id="270">
-					<posx>540</posx>
-					<posy>802</posy>
+					<left>540</left>
+					<top>802</top>
 					<width>1200</width>
 					<height>180</height>
 					<onup>404</onup>
@@ -2184,16 +2184,16 @@
 					<focusposition>0</focusposition>
 					<itemlayout width="240" height="120">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1</width>
 							<height>120</height>
 							<texture>flagseparator.png</texture>
 							<colordiffuse>FF101010</colordiffuse>
 						</control>
 						<control type="image">
-							<posx>68</posx>
-							<posy>8</posy>
+							<left>68</left>
+							<top>8</top>
 							<height>105</height>
 							<width>105</width>
 							<texture>$INFO[ListItem.Icon]</texture>
@@ -2202,8 +2202,8 @@
 					</itemlayout>
 					<focusedlayout width="240" height="120">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<height>120</height>
 							<width>240</width>
 							<texture>grey.png</texture>
@@ -2213,16 +2213,16 @@
 							<visible>Control.Hasfocus(270)</visible>
 						</control>
 						<control type="image">
-							<posx>68</posx>
-							<posy>8</posy>
+							<left>68</left>
+							<top>8</top>
 							<height>105</height>
 							<width>105</width>
 							<texture>$INFO[ListItem.Icon]</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 						</control>
 						<control type="image">
-							<posx>68</posx>
-							<posy>142</posy>
+							<left>68</left>
+							<top>142</top>
 							<width>105</width>
 							<height>30</height>
 							<texture flipy="true">arrow_settings_down.png</texture>
@@ -2260,23 +2260,23 @@
 					</content>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>802</posy>
+					<left>360</left>
+					<top>802</top>
 					<width>1560</width>
 					<height>120</height>
 					<texture>gradient_small.png</texture>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>802</posy>
+					<left>360</left>
+					<top>802</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>878</posy>
+					<left>360</left>
+					<top>878</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
@@ -2285,8 +2285,8 @@
 			</control>
 			<control type="scrollbar" id="80">
 				<include>ScrollBar_Vertical</include>
-				<posx>1860</posx>
-				<posy>180</posy>
+				<left>1860</left>
+				<top>180</top>
 				<height>780</height>
 				<onleft>9004</onleft>
 				<onright>9100</onright>
@@ -2296,8 +2296,8 @@
 			</control>
 			<control type="scrollbar" id="81">
 				<include>ScrollBar_Vertical</include>
-				<posx>1860</posx>
-				<posy>202</posy>
+				<left>1860</left>
+				<top>202</top>
 				<height>398</height>
 				<onleft>9004</onleft>
 				<onright>9100</onright>
@@ -2307,8 +2307,8 @@
 			</control>
 			<control type="scrollbar" id="82">
 				<include>ScrollBar_Vertical</include>
-				<posx>1860</posx>
-				<posy>202</posy>
+				<left>1860</left>
+				<top>202</top>
 				<height>465</height>
 				<onleft>9004</onleft>
 				<onright>260</onright>
@@ -2318,8 +2318,8 @@
 			</control>
 			<control type="scrollbar" id="83">
 				<include>ScrollBar_Vertical</include>
-				<posx>1860</posx>
-				<posy>202</posy>
+				<left>1860</left>
+				<top>202</top>
 				<height>698</height>
 				<onleft>9002</onleft>
 				<onright>260</onright>
@@ -2329,8 +2329,8 @@
 			</control>
 			<control type="scrollbar" id="84">
 				<include>ScrollBar_Vertical</include>
-				<posx>1860</posx>
-				<posy>202</posy>
+				<left>1860</left>
+				<top>202</top>
 				<height>398</height>
 				<onleft>9011</onleft>
 				<onright>9100</onright>
@@ -2340,8 +2340,8 @@
 			</control>
 			<control type="scrollbar" id="85">
 				<include>ScrollBar_Vertical</include>
-				<posx>1860</posx>
-				<posy>178</posy>
+				<left>1860</left>
+				<top>178</top>
 				<height>898</height>
 				<onleft>9001</onleft>
 				<onright>9100</onright>
@@ -2352,8 +2352,8 @@
 			<control type="grouplist" id="9004">				<!-- Themes -->
 				<visible>Container(9100).HasFocus(22)</visible>
 				<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>1560</width>
 				<height>412</height>
 				<onleft>9100</onleft>
@@ -2447,8 +2447,8 @@
 				<visible>Container(9100).HasFocus(22)</visible>
 				<include>Animation_Fade</include>
 				<control type="image">
-					<posx>360</posx>
-					<posy>624</posy>
+					<left>360</left>
+					<top>624</top>
 					<width>1560</width>
 					<height>374</height>
 					<texture>darkgrey.png</texture>
@@ -2457,15 +2457,15 @@
 				</control>
 				<control type="image">
 					<!-- Fundo borda -->
-					<posx>420</posx>
-					<posy>616</posy>
+					<left>420</left>
+					<top>616</top>
 					<width>663</width>
 					<height>390</height>
 					<texture>fanartframe.png</texture>
 				</control>
 				<control type="multiimage">
-					<posx>424</posx>
-					<posy>639</posy>
+					<left>424</left>
+					<top>639</top>
 					<width>654</width>
 					<height>344</height>
 					<timeperimage>2000</timeperimage>
@@ -2475,8 +2475,8 @@
 					<imagepath fallback="special://skin/backgrounds/extras/default.jpg" background="true">$VAR[value_mainmenubg_preview]</imagepath>
 				</control>
 				<control type="textbox">
-					<posx>1102</posx>
-					<posy>636</posy>
+					<left>1102</left>
+					<top>636</top>
 					<width>750</width>
 					<height>300</height>
 					<textcolor>FFFFFAF0</textcolor>
@@ -2488,8 +2488,8 @@
 			<control type="grouplist" id="9005">				<!-- Styles -->
 				<visible>Container(9100).HasFocus(23)</visible>
 				<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>1560</width>
 				<height>480</height>
 				<onleft>9100</onleft>
@@ -2553,8 +2553,8 @@
 				<visible>Container(9100).HasFocus(23) | ControlGroup(9005).HasFocus</visible>
 				<include>Animation_Fade</include>
 				<control type="image">
-					<posx>360</posx>
-					<posy>930</posy>
+					<left>360</left>
+					<top>930</top>
 					<width>608</width>
 					<height>32</height>
 					<texture>widgets_panel.png</texture>
@@ -2562,8 +2562,8 @@
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="label">
-					<posx>922</posx>
-					<posy>932</posy>
+					<left>382</left>
+					<top>932</top>
 					<width>540</width>
 					<height>30</height>
 					<align>right</align>
@@ -2574,8 +2574,8 @@
 				</control>
 				<include>VirtualMenuBar</include>
 				<control type="image">
-					<posx>360</posx>
-					<posy>858</posy>
+					<left>360</left>
+					<top>858</top>
 					<width>1560</width>
 					<height>1</height>
 					<texture>separator.png</texture>
@@ -2583,8 +2583,8 @@
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>930</posy>
+					<left>360</left>
+					<top>930</top>
 					<width>1560</width>
 					<height>1</height>
 					<texture>separator.png</texture>
@@ -2592,16 +2592,16 @@
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>813</posy>
+					<left>360</left>
+					<top>813</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>930</posy>
+					<left>360</left>
+					<top>930</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
@@ -2609,8 +2609,8 @@
 				</control>
 				<include>VirtualMenu</include>
 				<control type="image">
-					<posx>360</posx>
-					<posy>858</posy>
+					<left>360</left>
+					<top>858</top>
 					<width>1560</width>
 					<height>72</height>
 					<aspectratio>stretch</aspectratio>
@@ -2618,8 +2618,8 @@
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>858</posy>
+					<left>360</left>
+					<top>858</top>
 					<width>1560</width>
 					<height>72</height>
 					<aspectratio>stretch</aspectratio>
@@ -2628,35 +2628,35 @@
 				</control>
 				<control type="group">
 					<!-- Grupo da transparencia dos estilos -->
-					<posx>360</posx>
-					<posy>488</posy>
+					<left>360</left>
+					<top>488</top>
 					<control type="image">
-						<posx>0</posx>
-						<posy>135</posy>
+						<left>0</left>
+						<top>135</top>
 						<width>1560</width>
 						<height>45</height>
 						<texture>shadow_h.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>328</posy>
+						<left>0</left>
+						<top>328</top>
 						<width>1560</width>
 						<height>45</height>
 						<texture flipy="true">shadow_h.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>180</posy>
+						<left>0</left>
+						<top>180</top>
 						<width>1560</width>
 						<height>150</height>
 						<texture>black.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>225</posy>
+						<left>0</left>
+						<top>225</top>
 						<width>1560</width>
 						<height>60</height>
 						<texture>grey.png</texture>
@@ -2664,8 +2664,8 @@
 					</control>
 					<control type="label">
 						<!-- Nome da transparencia -->
-						<posx>60</posx>
-						<posy>291</posy>
+						<left>60</left>
+						<top>291</top>
 						<width>1410</width>
 						<height>45</height>
 						<align>left</align>
@@ -2677,8 +2677,8 @@
 					</control>
 					<control type="grouplist" id="260">
 						<!-- Nivel de transparencia dos estilos -->
-						<posx>60</posx>
-						<posy>232</posy>
+						<left>60</left>
+						<top>232</top>
 						<width>1815</width>
 						<height>45</height>
 						<itemgap>15</itemgap>
@@ -2788,8 +2788,8 @@
 			<control type="grouplist" id="9008">				<!-- Fonts -->
 				<visible>Container(9100).HasFocus(24)</visible>
 				<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>1560</width>
 				<height>480</height>
 				<onleft>Skin.Reset(fonte)</onleft>
@@ -2859,8 +2859,8 @@
 			<control type="grouplist" id="9011">				<!-- Icons/Backgrounds -->
 				<visible>Container(9100).HasFocus(35)</visible>
 				<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>1560</width>
 				<height>891</height>
 				<onleft>9100</onleft>
@@ -2932,8 +2932,8 @@
 				<include>Animation_Fade</include>
 				<include>VirtualMenuBar</include>
 				<control type="image">
-					<posx>360</posx>
-					<posy>858</posy>
+					<left>360</left>
+					<top>858</top>
 					<width>1560</width>
 					<height>1</height>
 					<texture>separator.png</texture>
@@ -2941,8 +2941,8 @@
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>930</posy>
+					<left>360</left>
+					<top>930</top>
 					<width>1560</width>
 					<height>1</height>
 					<texture>separator.png</texture>
@@ -2950,16 +2950,16 @@
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>813</posy>
+					<left>360</left>
+					<top>813</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>930</posy>
+					<left>360</left>
+					<top>930</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
@@ -2967,8 +2967,8 @@
 				</control>
 				<include>VirtualMenu</include>
 				<control type="image">
-					<posx>360</posx>
-					<posy>858</posy>
+					<left>360</left>
+					<top>858</top>
 					<width>1560</width>
 					<height>72</height>
 					<aspectratio>stretch</aspectratio>
@@ -2976,8 +2976,8 @@
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>360</posx>
-					<posy>858</posy>
+					<left>360</left>
+					<top>858</top>
 					<width>1560</width>
 					<height>72</height>
 					<aspectratio>stretch</aspectratio>
@@ -2989,14 +2989,14 @@
 				<visible>Container(9100).HasFocus(19)</visible>
 				<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
 				<control type="group">
-					<!-- Status da biblioteca -->
+					<!-- Library Status-->
 					<animation effect="slide" start="0,0" end="0,-750" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highertotals) + !Skin.HasSetting(highermainmenu)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-420" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highertotals) + Skin.HasSetting(highermainmenu)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-330" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
 					<visible>!Skin.HasSetting(nohometotals)</visible>
 					<control type="image">
-						<posx>360</posx>
-						<posy>930</posy>
+						<left>360</left>
+						<top>930</top>
 						<width>608</width>
 						<height>32</height>
 						<texture>widgets_panel.png</texture>
@@ -3004,8 +3004,8 @@
 						<include>Animation_HomeGlass</include>
 					</control>
 					<control type="label">
-						<posx>922</posx>
-						<posy>932</posy>
+						<left>382</left>
+						<top>932</top>
 						<width>540</width>
 						<height>30</height>
 						<align>right</align>
@@ -3016,14 +3016,14 @@
 					</control>
 				</control>
 				<control type="group">
-					<!-- Data e clima -->
+					<!-- Weatehr and Time -->
 					<animation effect="slide" start="0,0" end="0,-750" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highertime) + !Skin.HasSetting(highermainmenu)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-420" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highertime) + Skin.HasSetting(highermainmenu)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-330" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
 					<visible>!Skin.HasSetting(nohometime)</visible>
 					<control type="image">
-						<posx>1312</posx>
-						<posy>930</posy>
+						<left>1312</left>
+						<top>930</top>
 						<width>608</width>
 						<height>32</height>
 						<texture flipx="true">widgets_panel.png</texture>
@@ -3031,15 +3031,15 @@
 						<include>Animation_HomeGlass</include>
 					</control>
 					<control type="label">
-						<posx>1358</posx>
-						<posy>932</posy>
+						<left>1358</left>
+						<top>932</top>
 						<width>540</width>
 						<height>30</height>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>Font_14A</font>
 						<textcolor>FFFFFAF0</textcolor>
-						<label>$INFO[Window(home).Property(Movies.Count)][COLOR=50FFFAF0] | [/COLOR][COLOR=$VAR[value_headercolor]]$LOCALIZE[16101]: [/COLOR]$INFO[Window(home).Property(Movies.UnWatched)]</label>
+						<label>$VAR[value_weather_date]</label>
 					</control>
 				</control>
 				<control type="group">
@@ -3050,8 +3050,8 @@
 					<animation effect="slide" start="0,0" end="480,0" condition="String.Contains(skin.string(widgetsnumber),4)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="240,0" condition="String.Contains(skin.string(widgetsnumber),8)">Conditional</animation>
 					<control type="image">
-						<posx>360</posx>
-						<posy>558</posy>
+						<left>360</left>
+						<top>558</top>
 						<width>1560</width>
 						<height>300</height>
 						<texture>$VAR[value_widgets_back]</texture>
@@ -3059,8 +3059,8 @@
 						<animation effect="fade" start="100" end="85" condition="true">conditional</animation>
 					</control>
 					<control type="grouplist">
-						<posx>420</posx>
-						<posy>660</posy>
+						<left>420</left>
+						<top>660</top>
 						<width>1500</width>
 						<height>202</height>
 						<itemgap>16</itemgap>
@@ -3116,8 +3116,8 @@
 					<animation effect="slide" start="0,0" end="0,-330" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
 					<include>VirtualMenuBar</include>
 					<control type="image">
-						<posx>360</posx>
-						<posy>858</posy>
+						<left>360</left>
+						<top>858</top>
 						<width>1560</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -3125,8 +3125,8 @@
 						<include>Animation_HomeGlass</include>
 					</control>
 					<control type="image">
-						<posx>360</posx>
-						<posy>930</posy>
+						<left>360</left>
+						<top>930</top>
 						<width>1560</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -3134,16 +3134,16 @@
 						<include>Animation_HomeGlass</include>
 					</control>
 					<control type="image">
-						<posx>360</posx>
-						<posy>813</posy>
+						<left>360</left>
+						<top>813</top>
 						<width>1560</width>
 						<height>45</height>
 						<texture>shadow_h.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>360</posx>
-						<posy>930</posy>
+						<left>360</left>
+						<top>930</top>
 						<width>1560</width>
 						<height>45</height>
 						<texture flipy="true">shadow_h.png</texture>
@@ -3151,8 +3151,8 @@
 					</control>
 					<include>VirtualMenu</include>
 					<control type="image">
-						<posx>360</posx>
-						<posy>858</posy>
+						<left>360</left>
+						<top>858</top>
 						<width>1560</width>
 						<height>72</height>
 						<aspectratio>stretch</aspectratio>
@@ -3160,8 +3160,8 @@
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>360</posx>
-						<posy>858</posy>
+						<left>360</left>
+						<top>858</top>
 						<width>1560</width>
 						<height>72</height>
 						<aspectratio>stretch</aspectratio>
@@ -3174,8 +3174,8 @@
 						Home furniture Menu position -->
 					<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 					<animation effect="slide" start="0,0" end="0,-330" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
-					<posx>360</posx>
-					<posy>825</posy>
+					<left>360</left>
+					<top>825</top>
 					<width>1560</width>
 					<height>150</height>
 					<onclick>Skin.ToggleSetting(highermainmenu)</onclick>
@@ -3192,8 +3192,8 @@
 					<!-- Home Menu furniture position -->
 					<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 					<animation effect="slide" start="0,0" end="0,-330" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
-					<posx>360</posx>
-					<posy>630</posy>
+					<left>360</left>
+					<top>630</top>
 					<width>1560</width>
 					<height>345</height>
 					<onclick>Skin.ToggleSetting(highermainmenu)</onclick>
@@ -3212,8 +3212,8 @@
 					<animation effect="slide" start="0,0" end="0,-750" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highertotals) + !Skin.HasSetting(highermainmenu)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-420" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highertotals) + Skin.HasSetting(highermainmenu)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-330" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
-					<posx>360</posx>
-					<posy>922</posy>
+					<left>360</left>
+					<top>922</top>
 					<width>630</width>
 					<height>45</height>
 					<onclick>Skin.ToggleSetting(highertotals)</onclick>
@@ -3227,13 +3227,13 @@
 					<visible>!Skin.HasSetting(nohometotals)</visible>
 				</control>
 				<control type="button" id="9018">
-					<!-- Time -->
+					<!-- Weather and Time -->
 					<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 					<animation effect="slide" start="0,0" end="0,-750" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highertime) + !Skin.HasSetting(highermainmenu)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-420" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highertime) + Skin.HasSetting(highermainmenu)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-330" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
-					<posx>1290</posx>
-					<posy>922</posy>
+					<left>1290</left>
+					<top>922</top>
 					<width>630</width>
 					<height>45</height>
 					<onclick>Skin.ToggleSetting(highertime)</onclick>
@@ -3252,8 +3252,8 @@
 					<animation effect="slide" start="0,0" end="0,-405" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(higherwidgets) + !Skin.HasSetting(highermainmenu)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-75" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(higherwidgets) + Skin.HasSetting(highermainmenu)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-330" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
-					<posx>360</posx>
-					<posy>630</posy>
+					<left>360</left>
+					<top>630</top>
 					<width>1560</width>
 					<height>225</height>
 					<onclick>Skin.ToggleSetting(higherwidgets)</onclick>
@@ -3267,11 +3267,11 @@
 				</control>
 			</control>
 			<control type="group">				<!-- Seletor de cores -->
-				<posx>360</posx>
+				<left>360</left>
 				<visible>Container(9100).HasFocus(20)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>795</posy>
+					<left>0</left>
+					<top>795</top>
 					<width>1560</width>
 					<height>188</height>
 					<texture>darkgrey.png</texture>
@@ -3280,8 +3280,8 @@
 				</control>
 				<control type="label">
 					<!-- Preview -->
-					<posx>15</posx>
-					<posy>802</posy>
+					<left>15</left>
+					<top>802</top>
 					<width>450</width>
 					<height>45</height>
 					<align>left</align>
@@ -3291,8 +3291,8 @@
 					<label>31083</label>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>848</posy>
+					<left>0</left>
+					<top>848</top>
 					<width>1560</width>
 					<height>60</height>
 					<texture>settings_button_focus.png</texture>
@@ -3300,8 +3300,8 @@
 				</control>
 				<control type="label">
 					<!-- Skin: build highlight -->
-					<posx>480</posx>
-					<posy>855</posy>
+					<left>480</left>
+					<top>855</top>
 					<width>600</width>
 					<height>45</height>
 					<align>center</align>
@@ -3314,8 +3314,8 @@
 				</control>
 				<control type="label">
 					<!-- Skin: build black -->
-					<posx>480</posx>
-					<posy>922</posy>
+					<left>480</left>
+					<top>922</top>
 					<width>600</width>
 					<height>45</height>
 					<align>center</align>
@@ -3328,32 +3328,32 @@
 				</control>
 				<control type="image">
 					<!-- Grupo da transparencia -->
-					<posx>0</posx>
-					<posy>135</posy>
+					<left>0</left>
+					<top>135</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>328</posy>
+					<left>0</left>
+					<top>328</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>180</posy>
+					<left>0</left>
+					<top>180</top>
 					<width>1560</width>
 					<height>150</height>
 					<texture>black.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>225</posy>
+					<left>0</left>
+					<top>225</top>
 					<width>1560</width>
 					<height>60</height>
 					<texture>grey.png</texture>
@@ -3361,8 +3361,8 @@
 				</control>
 				<control type="label">
 					<!-- Current transparency level -->
-					<posx>60</posx>
-					<posy>291</posy>
+					<left>60</left>
+					<top>291</top>
 					<width>1410</width>
 					<height>45</height>
 					<align>left</align>
@@ -3374,8 +3374,8 @@
 				</control>
 				<control type="grouplist" id="250">
 					<!-- Transparency select buttons -->
-					<posx>60</posx>
-					<posy>232</posy>
+					<left>60</left>
+					<top>232</top>
 					<width>1815</width>
 					<height>45</height>
 					<itemgap>15</itemgap>
@@ -3464,32 +3464,32 @@
 				</control>
 				<control type="image">
 					<!-- Grupo das texturas -->
-					<posx>0</posx>
-					<posy>330</posy>
+					<left>0</left>
+					<top>330</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>524</posy>
+					<left>0</left>
+					<top>524</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>375</posy>
+					<left>0</left>
+					<top>375</top>
 					<width>1560</width>
 					<height>150</height>
 					<texture>black.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>420</posy>
+					<left>0</left>
+					<top>420</top>
 					<width>1560</width>
 					<height>60</height>
 					<texture>grey.png</texture>
@@ -3497,8 +3497,8 @@
 				</control>
 				<control type="label">
 					<!-- Color in use for panels -->
-					<posx>60</posx>
-					<posy>486</posy>
+					<left>60</left>
+					<top>486</top>
 					<width>1410</width>
 					<height>45</height>
 					<align>left</align>
@@ -3509,8 +3509,8 @@
 				</control>
 				<control type="grouplist" id="100">
 					<!-- Panel color select buttons -->
-					<posx>60</posx>
-					<posy>428</posy>
+					<left>60</left>
+					<top>428</top>
 					<width>1815</width>
 					<height>45</height>
 					<itemgap>15</itemgap>
@@ -3736,32 +3736,32 @@
 				</control>
 				<control type="image">
 					<!-- Grupo dos titulos -->
-					<posx>0</posx>
-					<posy>525</posy>
+					<left>0</left>
+					<top>525</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>718</posy>
+					<left>0</left>
+					<top>718</top>
 					<width>1560</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>570</posy>
+					<left>0</left>
+					<top>570</top>
 					<width>1560</width>
 					<height>150</height>
 					<texture>black.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>615</posy>
+					<left>0</left>
+					<top>615</top>
 					<width>1560</width>
 					<height>60</height>
 					<texture>grey.png</texture>
@@ -3769,8 +3769,8 @@
 				</control>
 				<control type="label">
 					<!-- Color in use for titles -->
-					<posx>60</posx>
-					<posy>680</posy>
+					<left>60</left>
+					<top>680</top>
 					<width>1410</width>
 					<height>45</height>
 					<align>left</align>
@@ -3781,8 +3781,8 @@
 				</control>
 				<control type="grouplist" id="125">
 					<!-- Title color select buttons -->
-					<posx>60</posx>
-					<posy>622</posy>
+					<left>60</left>
+					<top>622</top>
 					<width>1815</width>
 					<height>45</height>
 					<itemgap>15</itemgap>
@@ -4016,8 +4016,8 @@
 					<label>31202</label>
 				</control>
 				<control type="list" id="9100">	<!--  main left side menu -->
-					<posx>0</posx>
-					<posy>180</posy>
+					<left>0</left>
+					<top>180</top>
 					<width>360</width>
 					<height>990</height>
 					<!-- <orientation>vertical</orientation> -->
@@ -4143,8 +4143,8 @@
 					</content>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>375</width>
 					<height>1080</height>
 					<texture background="true">menu_glass.png</texture>

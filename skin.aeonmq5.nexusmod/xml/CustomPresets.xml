@@ -8,24 +8,24 @@
 		<control type="group">
 			<include>Animation_DialogPopup</include>
 			<control type="image">
-				<posx>615</posx>
-				<posy>195</posy>
+				<left>615</left>
+				<top>195</top>
 				<width>681</width>
 				<height>58</height>
 				<texture>gradient_focus.png</texture>
 				<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>615</posx>
-				<posy>150</posy>
+				<left>615</left>
+				<top>150</top>
 				<width>681</width>
 				<height>58</height>
 				<texture>dialogs_context_nofocus.png</texture>
 				<colordiffuse>F9FFFFFF</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>735</posx>
-				<posy>162</posy>
+				<left>735</left>
+				<top>162</top>
 				<width>450</width>
 				<height>60</height>
 				<align>center</align>
@@ -34,8 +34,8 @@
 				<textcolor>$VAR[value_headercolor]</textcolor>
 			</control>
 			<control type="grouplist" id="9060">
-				<posx>615</posx>
-				<posy>225</posy>
+				<left>615</left>
+				<top>225</top>
 				<width>681</width>
 				<height max="1005">auto</height>
 				<itemgap>0</itemgap>

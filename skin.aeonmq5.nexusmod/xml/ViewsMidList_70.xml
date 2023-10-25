@@ -29,7 +29,7 @@
 		<include>Animation_ViewsCDart</include>
 	</include>
 	<include name="MidListInfoTitle">
-		<posx>0</posx>
+		<left>0</left>
 		<height>33</height>
 		<width>150</width>
 		<font>Font_17A</font>
@@ -40,7 +40,7 @@
 		<textoffsety>0</textoffsety>
 	</include>
 	<include name="MidListInfo">
-		<posx>0</posx>
+		<left>-280</left>
 		<height>33</height>
 		<width>280</width>
 		<font>Font_17A</font>
@@ -66,8 +66,8 @@
 				<onright>70</onright>
 			</control>
 			<control type="image">
-				<posx>45</posx>
-				<posy>21</posy>
+				<left>45</left>
+				<top>21</top>
 				<width>1826</width>
 				<height>58</height>
 				<texture>black.png</texture>
@@ -76,8 +76,8 @@
 			<!-- ##########       BACKGROUND SHADING AND BEVELS       ########## -->
 			<control type="image">
 				<description>SHADING OF ENTIRE WINDOW (EXCEPT FOOTER ICONS)</description>
-				<posx>0</posx>
-				<posy>-45</posy>
+				<left>0</left>
+				<top>-45</top>
 				<width>1920</width>
 				<height>1020</height>
 				<texture>darkgrey.png</texture>
@@ -86,8 +86,8 @@
 			</control>
 			<control type="image">
 				<description>GRADIENT ABOVE ENTIRE WINDOW</description>
-				<posx>0</posx>
-				<posy>-45</posy>
+				<left>0</left>
+				<top>-45</top>
 				<width>1920</width>
 				<height>120</height>
 				<texture flipy="true">gradient_small.png</texture>
@@ -96,8 +96,8 @@
 			</control>
 			<control type="image">
 				<description>SHADOW/BEVEL ALONG BOTTOM</description>
-				<posx>0</posx>
-				<posy>933</posy>
+				<left>0</left>
+				<top>933</top>
 				<width>1928</width>
 				<height>45</height>
 				<texture>shadow_h.png</texture>
@@ -106,8 +106,8 @@
 			</control>
 			<control type="image">
 				<description>DARKER SHADOW BEHIND ITEM LIST</description>
-				<posx>465</posx>
-				<posy>198</posy>
+				<left>465</left>
+				<top>198</top>
 				<width>900</width>
 				<height>555</height>
 				<texture>darkgrey.png</texture>
@@ -116,8 +116,8 @@
 			</control>
 			<control type="image">
 				<description>SHADOW/BEVEL ALONG TOP OF LIST ITEMS</description>
-				<posx>465</posx>
-				<posy>198</posy>
+				<left>465</left>
+				<top>198</top>
 				<width>900</width>
 				<height>45</height>
 				<texture flipy="true">shadow_h.png</texture>
@@ -126,8 +126,8 @@
 			</control>
 			<control type="image">
 				<description>SHADOW/BEVEL ALONG BOTTOM OF LIST ITEMS</description>
-				<posx>465</posx>
-				<posy>708</posy>
+				<left>465</left>
+				<top>708</top>
 				<width>900</width>
 				<height>45</height>
 				<texture>shadow_h.png</texture>
@@ -136,8 +136,8 @@
 			</control>
 			<control type="image">
 				<description>SEPERATING SHADOW IMAGE TO LEFT OF ITEM LIST (LEFT COLUMN)</description>
-				<posx>465</posx>
-				<posy>198</posy>
+				<left>465</left>
+				<top>198</top>
 				<width>45</width>
 				<height>555</height>
 				<texture>shadow.png</texture>
@@ -145,8 +145,8 @@
 			</control>
 			<control type="image">
 				<description>SEPERATING SHADOW IMAGE TO RIGHT OF ITEM LIST (RIGHT COLUMN)</description>
-				<posx>1320</posx>
-				<posy>198</posy>
+				<left>1320</left>
+				<top>198</top>
 				<width>45</width>
 				<height>555</height>
 				<texture flipx="true">shadow.png</texture>
@@ -163,8 +163,8 @@
 					<animation effect="slide" time="400" start="-600,0" end="0,0" tween="cubic" easing="inout">Hidden</animation>
 					<control type="image">
 						<description>MUSIC CLEARLOGO - listitem</description>
-						<posx>1440</posx>
-						<posy>750</posy>
+						<left>1440</left>
+						<top>750</top>
 						<width>450</width>
 						<height>195</height>
 						<texture background="true" fallback="transparent.png">$INFO[ListItem.Art(artist.clearlogo)]</texture>
@@ -174,8 +174,8 @@
 					</control>
 					<control type="image">
 						<description>MUSIC CLEARLOGO - listitem</description>
-						<posx>1440</posx>
-						<posy>750</posy>
+						<left>1440</left>
+						<top>750</top>
 						<width>450</width>
 						<height>195</height>
 						<texture background="true" fallback="transparent.png">$INFO[ListItem.Art(clearlogo)]</texture>
@@ -185,8 +185,8 @@
 					</control>
 					<control type="image">
 						<description>MUSIC CLEARLOGO - music player and video player</description>
-						<posx>1440</posx>
-						<posy>750</posy>
+						<left>1440</left>
+						<top>750</top>
 						<width>450</width>
 						<height>195</height>
 						<texture background="true" fallback="transparent.png">$INFO[Player.Art(artist.clearlogo)]</texture>
@@ -202,8 +202,8 @@
 					<visible>Control.HasFocus(9915) | [Window.IsActive(videos) | Window.IsActive(videoplaylist)] + Skin.HasSetting(midlistplotvideo) + !String.IsEmpty(Control.GetLabel(7011)) | [Window.IsActive(musicplaylist) | Window.IsActive(music)] + Skin.HasSetting(midlistplotaudio) + !String.IsEmpty(Control.GetLabel(7011))</visible>
 					<control type="image">
 						<description>INFO PANEL SHADOW/BEVEL EFFECT</description>
-						<posx>1401</posx>
-						<posy>-105</posy>
+						<left>1401</left>
+						<top>-105</top>
 						<width>45</width>
 						<height>1080</height>
 						<texture>shadow.png</texture>
@@ -211,8 +211,8 @@
 					</control>
 					<control type="image">
 						<description>INFO PANEL BACKGROUND SHADING</description>
-						<posx>1402</posx>
-						<posy>-105</posy>
+						<left>1402</left>
+						<top>-105</top>
 						<width>518</width>
 						<height>1080</height>
 						<texture>darkgrey.png</texture>
@@ -222,8 +222,8 @@
 					</control>
 					<control type="label">
 						<description>INFO PANEL PLOT TITLE (listitem movie tv show season episode set)</description>
-						<posx>1432</posx>
-						<posy>15</posy>
+						<left>1432</left>
+						<top>15</top>
 						<height>33</height>
 						<width>232</width>
 						<font>Font_17A</font>
@@ -233,8 +233,8 @@
 					</control>
 					<control type="label">
 						<description>INFO PANEL PLOT TITLE (now playing movie or episode)</description>
-						<posx>1432</posx>
-						<posy>-20</posy>
+						<left>1432</left>
+						<top>-20</top>
 						<height>66</height>
 						<width>440</width>
 						<font>Font_17A</font>
@@ -244,8 +244,8 @@
 					</control>
 					<control type="label">
 						<description>INFO PANEL ARTIST BIO TITLE (listitem)</description>
-						<posx>1432</posx>
-						<posy>15</posy>
+						<left>1432</left>
+						<top>15</top>
 						<height>33</height>
 						<width>232</width>
 						<font>Font_17A</font>
@@ -255,8 +255,8 @@
 					</control>
 					<control type="label">
 						<description>INFO PANEL REVIEW TITLE - listitem mv album song</description>
-						<posx>1432</posx>
-						<posy>8</posy>
+						<left>1432</left>
+						<top>8</top>
 						<height>33</height>
 						<width>232</width>
 						<font>Font_17A</font>
@@ -266,8 +266,8 @@
 					</control>
 					<control type="label">
 						<description>INFO PANEL NOW PLAYING REVIEW TITLE - music player/video player</description>
-						<posx>1432</posx>
-						<posy>-20</posy>
+						<left>1432</left>
+						<top>-20</top>
 						<height>66</height>
 						<width>440</width>
 						<aligny>center</aligny>
@@ -278,16 +278,16 @@
 					</control>
 					<control type="image">
 						<description>LINE ABOVE PLOT DISPLAY</description>
-						<posx>1418</posx>
-						<posy>56</posy>
+						<left>1418</left>
+						<top>56</top>
 						<width>488</width>
 						<height>1</height>
 						<texture>line.png</texture>
 					</control>
 					<control type="textbox">
 						<description>INFO PANEL PLOT DISPLAY</description>
-						<posx>1432</posx>
-						<posy>75</posy>
+						<left>1432</left>
+						<top>75</top>
 						<width>458</width>
 						<height>195</height>
 						<align>left</align>
@@ -297,8 +297,8 @@
 					</control>
 					<control type="image">
 						<description>LINE BELOW PLOT DISPLAY</description>
-						<posx>1418</posx>
-						<posy>273</posy>
+						<left>1418</left>
+						<top>273</top>
 						<width>488</width>
 						<height>1</height>
 						<texture>line.png</texture>
@@ -314,8 +314,8 @@
 				<visible>!Control.HasFocus(9915) + ![Container.content(genres) | Container.Content(roles) | Container.Content(sources)]</visible>
 				<control type="image">
 					<description>CLEARART DISPLAY VIDEO 1000x562 / 500x281 - listitem</description>
-					<posx>1402</posx>
-					<posy>13</posy>
+					<left>1402</left>
+					<top>13</top>
 					<width>480</width>
 					<height>270</height>
 					<texture background="true">$INFO[ListItem.Art(clearart)]</texture>
@@ -325,8 +325,8 @@
 				</control>
 				<control type="image">
 					<description>CLEARART DISPLAY MUSIC - listitem</description>
-					<posx>1483</posx>
-					<posy>92</posy>
+					<left>1483</left>
+					<top>92</top>
 					<width>310</width>
 					<height>195</height>
 					<texture background="true">$INFO[ListItem.Art(clearart)]</texture>
@@ -336,8 +336,8 @@
 				</control>
 				<control type="image">
 					<description>CLEARART DISPLAY MUSIC - player</description>
-					<posx>1483</posx>
-					<posy>92</posy>
+					<left>1483</left>
+					<top>92</top>
 					<width>310</width>
 					<height>195</height>
 					<texture background="true">$INFO[Player.Art(artist.clearart)]</texture>
@@ -347,8 +347,8 @@
 				</control>
 				<control type="image">
 					<description>CLEARART DISPLAY FOR TV SEASONS</description>
-					<posx>1402</posx>
-					<posy>13</posy>
+					<left>1402</left>
+					<top>13</top>
 					<width>480</width>
 					<height>270</height>
 					<texture background="true">$INFO[ListItem.Art(tvshow.clearart)]</texture>
@@ -358,8 +358,8 @@
 				</control>
 				<control type="image">
 					<description>MOVIE  THUMB(LANDSCAPE) IF NO CLEAR ART 1000x562</description>
-					<posx>1402</posx>
-					<posy>13</posy>
+					<left>1402</left>
+					<top>13</top>
 					<width>480</width>
 					<height>270</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
@@ -369,8 +369,8 @@
 				</control>
 				<control type="image">
 					<description>FANART WINDOW BACKGROUND 16:9</description>
-					<posx>1402</posx>
-					<posy>288</posy>
+					<left>1402</left>
+					<top>288</top>
 					<width>480</width>
 					<height>270</height>
 					<texture>darkgrey.png</texture>					
@@ -378,8 +378,8 @@
 				</control>
 				<control type="image">
 					<description>FANART WINDOW DEFAULT</description>
-					<posx>1402</posx>
-					<posy>288</posy>
+					<left>1402</left>
+					<top>288</top>
 					<width>480</width>
 					<height>270</height>
 					<aspectratio>stretch</aspectratio>
@@ -390,8 +390,8 @@
 				</control>
 				<control type="image">
 					<description>FANART WINDOW EPISODE/MV in music THUMB</description>
-					<posx>1402</posx>
-					<posy>288</posy>
+					<left>1402</left>
+					<top>288</top>
 					<width>480</width>
 					<height>270</height>
 					<aspectratio>stretch</aspectratio>
@@ -402,8 +402,8 @@
 				</control>
 				<control type="multiimage">
 					<description>FANART WINDOW EXTRA CROSSFADE - video listitem extrafanart</description>
-					<posx>1407</posx>
-					<posy>291</posy>
+					<left>1407</left>
+					<top>291</top>
 					<width>471</width>
 					<height>264</height>
 					<aspectratio>stretch</aspectratio>
@@ -421,8 +421,8 @@
 				</control>
 				<control type="multiimage">
 					<description>FANART WINDOW EXTRA CROSSFADE - video listitem fanart[nn]</description>
-					<posx>1407</posx>
-					<posy>291</posy>
+					<left>1407</left>
+					<top>291</top>
 					<width>471</width>
 					<height>264</height>
 					<aspectratio>stretch</aspectratio>
@@ -440,8 +440,8 @@
 				</control>
 				<control type="multiimage">
 					<description>FANART WINDOW EXTRA CROSSFADE - listitem song extrafanart</description>
-					<posx>1407</posx>
-					<posy>291</posy>
+					<left>1407</left>
+					<top>291</top>
 					<width>471</width>
 					<height>264</height>
 					<aspectratio>stretch</aspectratio>
@@ -454,8 +454,8 @@
 				</control>
 				<control type="multiimage">
 					<description>FANART WINDOW EXTRA CROSSFADE - listitem song fanart[nn]</description>
-					<posx>1407</posx>
-					<posy>291</posy>
+					<left>1407</left>
+					<top>291</top>
 					<width>471</width>
 					<height>264</height>
 					<aspectratio>stretch</aspectratio>
@@ -468,8 +468,8 @@
 				</control>
 				<control type="multiimage">
 					<description>FANART WINDOW EXTRA CROSSFADE - music/video player extrafanart</description>
-					<posx>1407</posx>
-					<posy>291</posy>
+					<left>1407</left>
+					<top>291</top>
 					<width>471</width>
 					<height>264</height>
 					<aspectratio>stretch</aspectratio>
@@ -484,8 +484,8 @@
 				</control>
 				<control type="multiimage">
 					<description>FANART WINDOW EXTRA CROSSFADE - music/video player fanart[nn]</description>
-					<posx>1407</posx>
-					<posy>291</posy>
+					<left>1407</left>
+					<top>291</top>
 					<width>471</width>
 					<height>264</height>
 					<aspectratio>stretch</aspectratio>
@@ -500,8 +500,8 @@
 				</control>
 				<control type="multiimage">
 					<description>FANART WINDOW EXTRA CROSSFADE - custom music artist or song - listitem extrafanart</description>
-					<posx>1407</posx>
-					<posy>291</posy>
+					<left>1407</left>
+					<top>291</top>
 					<width>471</width>
 					<height>264</height>
 					<aspectratio>stretch</aspectratio>
@@ -516,8 +516,8 @@
 				</control>
 				<control type="multiimage">
 					<description>FANART WINDOW EXTRA CROSSFADE - custom music player extrafanart</description>
-					<posx>1407</posx>
-					<posy>291</posy>
+					<left>1407</left>
+					<top>291</top>
 					<width>471</width>
 					<height>264</height>
 					<aspectratio>stretch</aspectratio>
@@ -531,8 +531,8 @@
 				</control>
 				<control type="multiimage">
 					<description>FANART WINDOW EXTRA CROSSFADE - video player - artist extrafanart</description>
-					<posx>1407</posx>
-					<posy>291</posy>
+					<left>1407</left>
+					<top>291</top>
 					<width>471</width>
 					<height>264</height>
 					<aspectratio>stretch</aspectratio>
@@ -546,8 +546,8 @@
 				</control>
 				<control type="image">
 					<description>GRADIENT BELOW FANART DISPLAY</description>
-					<posx>1406</posx>
-					<posy>560</posy>
+					<left>1406</left>
+					<top>560</top>
 					<width>474</width>
 					<height>270</height>
 					<texture flipy="true">gradient_small.png</texture>
@@ -556,15 +556,15 @@
 				</control>
 				<!-- ##########         AUDIO / LANGUAGE FLAGS  - Video not playing (listitem)         ########## -->
 				<control type="group" id="7013">
-					<posx>1432</posx>
-					<posy>578</posy>
+					<left>1432</left>
+					<top>578</top>
 					<visible>!Skin.HasSetting(nolanguageflags) + ![Window.IsVisible(videoplaylist) + Player.HasVideo] + ![Window.Isvisible(musicplaylist) + [Player.HasAudio | [Player.HasVideo + VideoPlayer.Content(musicvideos)]]] + !String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
 					<include>AudioandSub</include>
 				</control>
 				<!-- ##########         AUDIO / LANGUAGE FLAGS  - Video now playing (video player)         ########## -->
 				<control type="group" id="7014">
-					<posx>1432</posx>
-					<posy>578</posy>
+					<left>1432</left>
+					<top>578</top>
 					<visible>!Skin.HasSetting(nolanguageflags) + Player.HasVideo + [Window.IsVisible(videoplaylist) | [Window.IsVisible(musicplaylist) + VideoPlayer.Content(musicvideos)]] </visible>
 					<include>AudioandSubNowPlaying</include>
 				</control>
@@ -572,8 +572,8 @@
 				<!-- ##########          MINI DISC COLLECTION (RIGHT COLUMN) DISPLAY         ########## -->
 				<control type="grouplist">
 					<description>COLLECTION MINI DISC ART</description>
-					<posx>1342</posx>
-					<posy>578</posy>
+					<left>1342</left>
+					<top>578</top>
 					<width>600</width>
 					<align>center</align>
 					<orientation>horizontal</orientation>
@@ -654,8 +654,8 @@
 				<visible>String.IsEqual(ListItem.DBType,genre) + Window.IsActive(videos)</visible>
 				<control type="image">
 					<description>FANART WINDOW BACKGROUND</description>
-					<posx>1402</posx>
-					<posy>288</posy>
+					<left>1402</left>
+					<top>288</top>
 					<width>480</width>
 					<height>270</height>
 					<texture>darkgrey.png</texture>
@@ -664,8 +664,8 @@
 				</control>
 				<control type="image">
 					<description>FANART WINDOW BORDER</description>
-					<posx>1402</posx>
-					<posy>288</posy>
+					<left>1402</left>
+					<top>288</top>
 					<width>480</width>
 					<height>270</height>
 					<texture>banner_glass.png</texture>
@@ -673,8 +673,8 @@
 				</control>
 				<control type="image">
 					<description>FANART WINDOW DEFAULT</description>
-					<posx>1402</posx>
-					<posy>288</posy>
+					<left>1402</left>
+					<top>288</top>
 					<width>480</width>
 					<height>270</height>
 					<aspectratio>stretch</aspectratio>
@@ -684,8 +684,8 @@
 				</control>
 				<control type="image">
 					<description>GRADIENT BELOW FANART DISPLAY</description>
-					<posx>1406</posx>
-					<posy>560</posy>
+					<left>1406</left>
+					<top>560</top>
 					<width>474</width>
 					<height>270</height>
 					<texture flipy="true">gradient_small.png</texture>
@@ -702,8 +702,8 @@
 				<visible>[String.IsEqual(ListItem.DBType,genre) | String.IsEqual(ListItem.DBType,role) | String.IsEqual(ListItem.DBType,source) | [Container.Content(files) + String.IsEmpty(ListItem.DBType)]] + Window.IsActive(music)</visible>
 				<control type="image">
 					<description>FANART WINDOW BACKGROUND</description>
-					<posx>1402</posx>
-					<posy>288</posy>
+					<left>1402</left>
+					<top>288</top>
 					<width>480</width>
 					<height>270</height>
 					<texture>darkgrey.png</texture>
@@ -712,8 +712,8 @@
 				</control>
 				<control type="image">
 					<description>FANART WINDOW BORDER</description>
-					<posx>1402</posx>
-					<posy>288</posy>
+					<left>1402</left>
+					<top>288</top>
 					<width>480</width>
 					<height>270</height>
 					<texture>banner_glass.png</texture>
@@ -721,8 +721,8 @@
 				</control>
 				<control type="image">
 					<description>FANART WINDOW DEFAULT</description>
-					<posx>1402</posx>
-					<posy>288</posy>
+					<left>1402</left>
+					<top>288</top>
 					<width>480</width>
 					<height>270</height>
 					<aspectratio>stretch</aspectratio>
@@ -732,8 +732,8 @@
 				</control>
 				<control type="image">
 					<description>GRADIENT BELOW FANART DISPLAY</description>
-					<posx>1406</posx>
-					<posy>560</posy>
+					<left>1406</left>
+					<top>560</top>
 					<width>474</width>
 					<height>270</height>
 					<texture flipy="true">gradient_small.png</texture>
@@ -747,8 +747,8 @@
 				<visible>$EXP[HasDetailInfo]</visible>
 				<control type="grouplist"> <!-- high labels -->
 					<visible>![Control.IsVisible(7013) | Control.IsVisible(7014)]</visible>
-					<posx>1428</posx>
-					<posy>600</posy>
+					<left>1428</left>
+					<top>600</top>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
 					<control type="label">
@@ -818,8 +818,8 @@
 				</control>
 				<control type="grouplist"> <!-- low labels -->
 					<visible>[Control.IsVisible(7013) | Control.IsVisible(7014)]</visible>
-					<posx>1428</posx>
-					<posy>682</posy>
+					<left>1428</left>
+					<top>682</top>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
 					<control type="label">
@@ -889,8 +889,8 @@
 				</control>
 				<control type="grouplist"> <!-- high values -->
 					<visible>![Control.IsVisible(7013) | Control.IsVisible(7014)]</visible>
-					<posx>1579</posx>
-					<posy>600</posy>
+					<left>1579</left>
+					<top>600</top>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
 					<control type="label">
@@ -953,8 +953,8 @@
 				</control>
 				<control type="grouplist"> <!-- low values -->
 					<visible>[Control.IsVisible(7013) | Control.IsVisible(7014)]</visible>
-					<posx>1579</posx>
-					<posy>682</posy>
+					<left>1579</left>
+					<top>682</top>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
 					<control type="label">
@@ -1020,8 +1020,8 @@
 			<!-- ##########          MAIN ITEM LIST          ########## -->
 			<control type="fixedlist" id="70">
 				<viewtype label="31448">list</viewtype>
-				<posx>465</posx>
-				<posy>213</posy>
+				<left>465</left>
+				<top>213</top>
 				<width>900</width>
 				<height>532</height>
 				<pagecontrol>80</pagecontrol>
@@ -1038,16 +1038,16 @@
 					<description>ARTIST LIST ITEMS WITH NO SLIM LIST</description>
 					<control type="image">
 						<description>LINE BETWEEN LIST ITEMS</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>898</width>
 						<height>1</height>
 						<texture>line.png</texture>
 					</control>
 					<control type="label">
 						<description>LIST ITEM TEXT</description>
-						<posx>30</posx>
-						<posy>1</posy>
+						<left>30</left>
+						<top>1</top>
 						<width>675</width>
 						<height>45</height>
 						<font>Font_18A</font>
@@ -1060,16 +1060,16 @@
 					<description>ARTIST LIST ITEMS WITH SLIM LIST</description>
 					<control type="image">
 						<description>LINE BETWEEN LIST ITEMS</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>898</width>
 						<height>1</height>
 						<texture>line.png</texture>
 					</control>
 					<control type="label">
 						<description>LIST ITEM TEXT</description>
-						<posx>30</posx>
-						<posy>1</posy>
+						<left>30</left>
+						<top>1</top>
 						<width>675</width>
 						<height>40</height>
 						<font>Font_18A</font>
@@ -1082,16 +1082,16 @@
 					<description>VIDEO AND MUSIC LIST ITEMS WITH NO SLIM LIST</description>
 					<control type="image">
 						<description>LINE BETWEEN LIST ITEMS</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>898</width>
 						<height>1</height>
 						<texture>line.png</texture>
 					</control>
 					<control type="label">
 						<description>LIST ITEM TEXT</description>
-						<posx>30</posx>
-						<posy>1</posy>
+						<left>30</left>
+						<top>1</top>
 						<width>675</width>
 						<height>45</height>
 						<font>Font_18A</font>
@@ -1100,8 +1100,8 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<posx>720</posx>
-						<posy>10</posy>
+						<left>720</left>
+						<top>10</top>
 						<width>98</width>
 						<height>20</height>
 						<texture>$VAR[User_Rating_Stars]</texture>
@@ -1110,8 +1110,8 @@
 					</control>
 					<control type="image">
 						<description>LIST ITEM "WATCHED" INDICATOR</description>
-						<posx>825</posx>
-						<posy>4</posy>
+						<left>825</left>
+						<top>4</top>
 						<width>38</width>
 						<height>38</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -1123,16 +1123,16 @@
 					<description>VIDEO AND MUSIC LIST ITEMS WITH SLIM LIST</description>
 					<control type="image">
 						<description>LINE BETWEEN LIST ITEMS</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>898</width>
 						<height>1</height>
 						<texture>line.png</texture>
 					</control>
 					<control type="label">
 						<description>LIST ITEM TEXT</description>
-						<posx>30</posx>
-						<posy>1</posy>
+						<left>30</left>
+						<top>1</top>
 						<width>675</width>
 						<height>40</height>
 						<font>Font_18A</font>
@@ -1141,8 +1141,8 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<posx>720</posx>
-						<posy>15</posy>
+						<left>720</left>
+						<top>15</top>
 						<width>98</width>
 						<height>20</height>
 						<texture>$VAR[User_Rating_Stars]</texture>
@@ -1151,8 +1151,8 @@
 					</control>
 					<control type="image">
 						<description>LIST ITEM "WATCHED" INDICATOR</description>
-						<posx>825</posx>
-						<posy>4</posy>
+						<left>825</left>
+						<top>4</top>
 						<width>42</width>
 						<height>42</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -1164,16 +1164,16 @@
 					<description>ARTIST LIST ITEMS WITH SLIM LIST</description>
 					<control type="image">
 						<description>LINE BETWEEN LIST ITEMS</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>900</width>
 						<height>45</height>
 						<texture>settings_button_focus.png</texture>
 					</control>
 					<control type="label">
 						<description>LIST ITEM TEXT</description>
-						<posx>30</posx>
-						<posy>1</posy>
+						<left>30</left>
+						<top>1</top>
 						<width>675</width>
 						<height>45</height>
 						<font>Font_18A</font>
@@ -1186,16 +1186,16 @@
 					<description>ARTIST LIST ITEMS WITH NO SLIM LIST</description>
 					<control type="image">
 						<description>LINE BETWEEN LIST ITEMS</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>900</width>
 						<height>75</height>
 						<texture>settings_button_focus.png</texture>
 					</control>
 					<control type="label">
 						<description>LIST ITEM MAIN TEXT</description>
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>675</width>
 						<height>45</height>
 						<font>Font_22A</font>
@@ -1205,8 +1205,8 @@
 					</control>
 					<control type="label">
 						<description>LIST ITEM SUB TEXT</description>
-						<posx>30</posx>
-						<posy>44</posy>
+						<left>30</left>
+						<top>44</top>
 						<width>675</width>
 						<height>24</height>
 						<font>Font_17A</font>
@@ -1221,16 +1221,16 @@
 					<description>VIDEO AND MUSIC LIST ITEMS WITH SLIM LIST</description>
 					<control type="image">
 						<description>LINE BETWEEN LIST ITEMS</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>900</width>
 						<height>45</height>
 						<texture>settings_button_focus.png</texture>
 					</control>
 					<control type="label">
 						<description>LIST ITEM TEXT</description>
-						<posx>30</posx>
-						<posy>1</posy>
+						<left>30</left>
+						<top>1</top>
 						<width>675</width>
 						<height>45</height>
 						<font>Font_18A</font>
@@ -1239,8 +1239,8 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<posx>720</posx>
-						<posy>15</posy>
+						<left>720</left>
+						<top>15</top>
 						<width>98</width>
 						<height>20</height>
 						<texture>$VAR[User_Rating_Stars]</texture>
@@ -1249,8 +1249,8 @@
 					</control>
 					<control type="image">
 						<description>LIST ITEM "WATCHED" INDICATOR</description>
-						<posx>825</posx>
-						<posy>0</posy>
+						<left>825</left>
+						<top>0</top>
 						<width>45</width>
 						<height>45</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -1262,16 +1262,16 @@
 					<description>VIDEO AND MUSIC LIST ITEMS WITH NO SLIM LIST</description>
 					<control type="image">
 						<description>LINE BETWEEN LIST ITEMS</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>900</width>
 						<height>75</height>
 						<texture>settings_button_focus.png</texture>
 					</control>
 					<control type="label">
 						<description>LIST ITEM MAIN TEXT</description>
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>675</width>
 						<height>45</height>
 						<font>Font_22A</font>
@@ -1281,8 +1281,8 @@
 					</control>
 					<control type="label">
 						<description>LIST ITEM SUB TEXT</description>
-						<posx>30</posx>
-						<posy>44</posy>
+						<left>30</left>
+						<top>44</top>
 						<width>675</width>
 						<height>24</height>
 						<font>Font_17A</font>
@@ -1293,8 +1293,8 @@
 						<visible>!String.IsEqual(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
-						<posx>720</posx>
-						<posy>10</posy>
+						<left>720</left>
+						<top>10</top>
 						<width>98</width>
 						<height>20</height>
 						<texture>$VAR[User_Rating_Stars]</texture>
@@ -1303,8 +1303,8 @@
 					</control>
 					<control type="image">
 						<description>LIST ITEM "WATCHED" INDICATOR</description>
-						<posx>825</posx>
-						<posy>15</posy>
+						<left>825</left>
+						<top>15</top>
 						<width>45</width>
 						<height>45</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -1327,8 +1327,8 @@
 			<!-- ##########          BANNER DISPLAY          ########## -->
 			<control type="image">
 				<description>BANNER BACKGROUND</description>
-				<posx>465</posx>
-				<posy>16</posy>
+				<left>465</left>
+				<top>16</top>
 				<width>900</width>
 				<height>159</height>
 				<texture>darkgrey.png</texture>
@@ -1338,8 +1338,8 @@
 			</control>
 			<control type="image">
 				<description>BANNER BORDER</description>
-				<posx>465</posx>
-				<posy>16</posy>
+				<left>465</left>
+				<top>16</top>
 				<width>900</width>
 				<height>159</height>
 				<texture>banner_glass.png</texture>
@@ -1348,8 +1348,8 @@
 			</control>
 			<control type="image">
 				<description>BANNER BORDER</description>
-				<posx>465</posx>
-				<posy>16</posy>
+				<left>465</left>
+				<top>16</top>
 				<width>900</width>
 				<height>159</height>
 				<texture>banner_glass.png</texture>
@@ -1358,8 +1358,8 @@
 			</control>
 			<control type="image">
 				<description>BANNER IMAGE</description>
-				<posx>465</posx>
-				<posy>16</posy>
+				<left>465</left>
+				<top>16</top>
 				<width>900</width>
 				<height>159</height>
 				<bordersize>3,2,3,2</bordersize>
@@ -1370,8 +1370,8 @@
 			</control>
 			<control type="image">
 				<description>BANNER IMAGE</description>
-				<posx>465</posx>
-				<posy>16</posy>
+				<left>465</left>
+				<top>16</top>
 				<width>900</width>
 				<height>159</height>
 				<bordersize>3,2,3,2</bordersize>
@@ -1382,8 +1382,8 @@
 			</control>
 			<control type="label">
 				<description>IF NO BANNER IMAGE THEN SHOW TEXT TITLE</description>
-				<posx>465</posx>
-				<posy>16</posy>
+				<left>465</left>
+				<top>16</top>
 				<width>900</width>
 				<height>159</height>
 				<font>Font_50</font>
@@ -1396,8 +1396,8 @@
 			</control>
 			<control type="label">
 				<description>IF NO BANNER IMAGE THEN SHOW TEXT TITLE</description>
-				<posx>465</posx>
-				<posy>16</posy>
+				<left>465</left>
+				<top>16</top>
 				<width>900</width>
 				<height>159</height>
 				<font>Font_50</font>
@@ -1412,8 +1412,8 @@
 			<!-- ##########          Video ClearLogo DISPLAY          ########## -->
 			<control type="image">
 				<description>VIDEO CLEARLOGO DISPLAY</description>
-				<posx>465</posx>
-				<posy>765</posy>
+				<left>465</left>
+				<top>765</top>
 				<width>900</width>
 				<height>180</height>
 				<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
@@ -1423,8 +1423,8 @@
 			</control>
 			<control type="image">
 				<description>LOGO REFLECTION</description>
-				<posx>465</posx>
-				<posy>938</posy>
+				<left>465</left>
+				<top>938</top>
 				<width>900</width>
 				<height>180</height>
 				<fadetime>FanartCrossFadeTime</fadetime>
@@ -1434,8 +1434,8 @@
 			</control>
 			<control type="image">
 				<description>TV SHOW (SEASON) CLEARLOGO DISPLAY</description>
-				<posx>465</posx>
-				<posy>765</posy>
+				<left>465</left>
+				<top>765</top>
 				<width>900</width>
 				<height>180</height>
 				<texture background="true">$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
@@ -1445,8 +1445,8 @@
 			</control>
 			<control type="image">
 				<description>TV SHOW (SEASON) LOGO REFLECTION</description>
-				<posx>465</posx>
-				<posy>938</posy>
+				<left>465</left>
+				<top>938</top>
 				<width>900</width>
 				<height>180</height>
 				<fadetime>FanartCrossFadeTime</fadetime>
@@ -1458,8 +1458,8 @@
 			<!-- ##########          TV SHOW CHARACTER ART DISPLAY          ########## -->
 			<control type="image">
 				<description>TV SHOW CHARACTER ART (SHOW DISPLAY)</description>
-				<posx>68</posx>
-				<posy>16</posy>
+				<left>68</left>
+				<top>16</top>
 				<width>329</width>
 				<height>329</height>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
@@ -1467,8 +1467,8 @@
 			</control>
 			<control type="image">
 				<description>TV SHOW CHARACTER ART (SEASON DISPLAY)</description>
-				<posx>68</posx>
-				<posy>16</posy>
+				<left>68</left>
+				<top>16</top>
 				<width>329</width>
 				<height>329</height>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
@@ -1476,8 +1476,8 @@
 			</control>
 			<control type="image">
 				<description>TV SHOW THUMB IF NO CHARACTER ART (SHOW DISPLAY)</description>
-				<posx>38</posx>
-				<posy>142</posy>
+				<left>38</left>
+				<top>142</top>
 				<width>390</width>
 				<height>150</height>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
@@ -1487,8 +1487,8 @@
 			</control>
 			<control type="image">
 				<description>TV SHOW THUMB IF NO CHARACTER ART (SEASON DISPLAY)</description>
-				<posx>38</posx>
-				<posy>142</posy>
+				<left>38</left>
+				<top>142</top>
 				<width>390</width>
 				<height>150</height>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
@@ -1500,8 +1500,8 @@
 			<!-- ##########          DISC ART DISPLAY          ########## -->
 			<control type="group">
 				<description>SINGLE DISC ART</description>
-				<posx>45</posx>
-				<posy>300</posy>
+				<left>45</left>
+				<top>300</top>
 				<visible>Control.IsVisible(70)</visible>
 				<animation effect="slide" time="1000" start="-600,0" end="0,0" tween="cubic" easing="out">WindowOpen</animation>
 				<animation effect="slide" time="1000" start="-600,0" end="0,0" tween="cubic" easing="out">Visible</animation>
@@ -1524,8 +1524,8 @@
 					<visible>![[String.IsEmpty(ListItem.Art(discart)) + [String.IsEmpty(ListItem.Art(poster)) | [Skin.HasSetting(nodisctvshow) + [Container.content(tvshows) | Container.Content(seasons)]]]] | Skin.HasSetting(nomidlistdiscart) | ListItem.IsCollection] + Window.IsActive(videos) + Control.IsVisible(9923)</visible>
 					<control type="image">
 						<description>THIS IS WHERE YOU CHANGE DISC SIZE AND POSITION</description>
-						<posx>1</posx>
-						<posy>-225</posy>
+						<left>1</left>
+						<top>-225</top>
 						<width>375</width>
 						<height>375</height>
 						<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -1537,8 +1537,8 @@
 					</control>
 					<control type="image">
 						<description>THIS IS WHERE YOU CHANGE DISC SIZE AND POSITION</description>
-						<posx>1</posx>
-						<posy>-225</posy>
+						<left>1</left>
+						<top>-225</top>
 						<width>375</width>
 						<height>375</height>
 						<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -1551,8 +1551,8 @@
 				</control>
 				<control type="grouplist">
 					<description>COLLECTION DISC ART</description>
-					<posx>3</posx>
-					<posy>-285</posy>
+					<left>3</left>
+					<top>-285</top>
 					<orientation>vertical</orientation>
 					<itemgap>-333</itemgap>
 					<animation type="WindowOpen">
@@ -1627,8 +1627,8 @@
 					<visible>![!Skin.HasSetting(nomidlistvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] | Window.IsActive(musicplaylist) | Window.IsActive(music)]</visible>
 					<control type="image">
 						<description>MOVIES / PHOTOS / FILES REFLECTION</description>
-						<posx>-8</posx>
-						<posy>628</posy>
+						<left>-8</left>
+						<top>628</top>
 						<width>390</width>
 						<height>570</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -1638,8 +1638,8 @@
 					</control>
 					<control type="image">
 						<description>MOVIES / PHOTOS / FILES</description>
-						<posx>-8</posx>
-						<posy>52</posy>
+						<left>-8</left>
+						<top>52</top>
 						<width>390</width>
 						<height>570</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -1655,8 +1655,8 @@
 					<visible>!Skin.HasSetting(nomidlistvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] + ![Window.IsActive(musicplaylist) | Window.IsActive(music)]</visible>
 					<control type="image">
 						<description>MOVIE POSTER REFLECTION</description>
-						<posx>-8</posx>
-						<posy>651</posy>
+						<left>-8</left>
+						<top>651</top>
 						<width>382</width>
 						<height>525</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -1665,8 +1665,8 @@
 					</control>
 					<control type="image">
 						<description>MOVIE CASE REFLECTION</description>
-						<posx>-39</posx>
-						<posy>597</posy>
+						<left>-39</left>
+						<top>597</top>
 						<width>468</width>
 						<height>652</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -1676,8 +1676,8 @@
 					</control>
 					<control type="image">
 						<description>MOVIE POSTER</description>
-						<posx>-8</posx>
-						<posy>64</posy>
+						<left>-8</left>
+						<top>64</top>
 						<width>382</width>
 						<height>555</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -1685,8 +1685,8 @@
 					</control>
 					<control type="image">
 						<description>MOVIE CASE</description>
-						<posx>-39</posx>
-						<posy>-18</posy>
+						<left>-39</left>
+						<top>-18</top>
 						<width>468</width>
 						<height>682</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -1695,8 +1695,8 @@
 					</control>
 					<control type="image">
 						<description>MOVIE CODEC</description>
-						<posx>140</posx>
-						<posy>-12</posy>
+						<left>140</left>
+						<top>-12</top>
 						<width>105</width>
 						<height>105</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -1712,8 +1712,8 @@
 					<visible>[[Window.IsActive(musicplaylist) | Window.IsActive(music)] + [Skin.HasSetting(nomidlistaudiocase) | String.IsEqual(ListItem.DBType,artist) | Container.Content(genres) | Container.Content(roles) | Container.Content(sources)]]</visible>
 					<control type="image">
 						<!-- Musica reflexo -->
-						<posx>-8</posx>
-						<posy>630</posy>
+						<left>-8</left>
+						<top>630</top>
 						<width>368</width>
 						<height>525</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -1723,8 +1723,8 @@
 					</control>
 					<control type="image">
 						<!-- Musica -->
-						<posx>-8</posx>
-						<posy>98</posy>
+						<left>-8</left>
+						<top>98</top>
 						<width>368</width>
 						<height>525</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -1739,8 +1739,8 @@
 					<visible>[[Window.IsActive(musicplaylist) | Window.IsActive(music)] + !Skin.HasSetting(nomidlistaudiocase) + !String.IsEqual(ListItem.DBType,artist) + ![Container.Content(genres) | Contaiiner.Content(roles)]]</visible>
 					<control type="image">
 						<!-- Musica/Estojo reflexo-->
-						<posx>27</posx>
-						<posy>630</posy>
+						<left>27</left>
+						<top>630</top>
 						<width>345</width>
 						<height>345</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -1749,16 +1749,16 @@
 					</control>
 					<control type="image">
 						<!-- Estojo reflexo -->
-						<posx>-30</posx>
-						<posy>627</posy>
+						<left>-30</left>
+						<top>627</top>
 						<width>417</width>
 						<height>364</height>
 						<texture flipy="true" diffuse="thumb_box_reflect.png">thumb_box_cd.png</texture>
 					</control>
 					<control type="image">
 						<!-- Musica -->
-						<posx>27</posx>
-						<posy>291</posy>
+						<left>27</left>
+						<top>291</top>
 						<width>345</width>
 						<height>345</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -1768,8 +1768,8 @@
 					</control>
 					<control type="image">
 						<!-- Music videos in m3u playlists -->
-						<posx>27</posx>
-						<posy>291</posy>
+						<left>27</left>
+						<top>291</top>
 						<width>345</width>
 						<height>345</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
@@ -1779,8 +1779,8 @@
 					</control>
 					<control type="image">
 						<!-- Estojo -->
-						<posx>-30</posx>
-						<posy>285</posy>
+						<left>-30</left>
+						<top>285</top>
 						<width>417</width>
 						<height>364</height>
 						<texture>thumb_box_cd.png</texture>
@@ -1791,8 +1791,8 @@
 			<!-- ##########           DISC ART DISPLAY     ########## -->
 			<control type="scrollbar" id="80">
 				<include>ScrollBar_Vertical</include>
-				<posx>1320</posx>
-				<posy>202</posy>
+				<left>1320</left>
+				<top>202</top>
 				<height>548</height>
 				<onright>9900</onright>
 				<onleft>70</onleft>

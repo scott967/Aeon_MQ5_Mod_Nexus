@@ -5,21 +5,21 @@
 <!-- Nexus add colorbutton 12.2.0/12.3.0 --> 
 <includes>
 	<default type="image">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<texture />
 	</default>
 	<default type="label">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<label />
 		<font>Font_20</font>
 		<scrollspeed>40</scrollspeed>
 		<textcolor>FFFFFAF0</textcolor>
 	</default>
 	<default type="button">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1560</width>
 		<height>60</height>
 		<font>Font_20</font>
@@ -35,8 +35,8 @@
 		<scroll>true</scroll>
 	</default>
 	<default type="togglebutton">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1560</width>
 		<height>60</height>
 		<font>Font_20</font>
@@ -53,8 +53,8 @@
 		<scroll>true</scroll>
 	</default>
 	<default type="radiobutton">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1560</width>
 		<height>60</height>
 		<font>Font_20</font>
@@ -76,8 +76,8 @@
 		<scroll>true</scroll>
 	</default>
 	<default type="colorbutton">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1560</width>
 		<height>60</height>
 		<font>Font_20</font>
@@ -127,8 +127,8 @@
 		<texturerightfocus>multiplex_arrowfocus.png</texturerightfocus>
 	</default>
 	<default type="listcontrolex">
-		<posx>411</posx>
-		<posy>330</posy>
+		<left>411</left>
+		<top>330</top>
 		<width>660</width>
 		<height>390</height>
 		<spinwidth>18</spinwidth>
@@ -153,16 +153,16 @@
 		<aligny>center</aligny>
 	</default>
 	<default type="fadelabel">
-		<posx>82</posx>
-		<posy>530</posy>
+		<left>82</left>
+		<top>530</top>
 		<width>270</width>
 		<align>left</align>
 		<font>Font_20</font>
 		<textcolor>FFFFFAF0</textcolor>
 	</default>
 	<default type="textbox">
-		<posx>330</posx>
-		<posy>330</posy>
+		<left>330</left>
+		<top>330</top>
 		<width>615</width>
 		<height>405</height>
 		<spinwidth>24</spinwidth>
@@ -183,8 +183,8 @@
 		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="spincontrolex">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1560</width>
 		<height>60</height>
 		<font>Font_20</font>
@@ -207,8 +207,8 @@
 		<reverse>yes</reverse>
 	</default>
 	<default type="sliderex">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<height>60</height>
 		<texturenofocus></texturenofocus>
 		<texturefocus>settings_button_focus.png</texturefocus>
@@ -226,8 +226,8 @@
 		<aligny>center</aligny>
 	</default>
 	<default type="checkmark">
-		<posx>312</posx>
-		<posy>249</posy>
+		<left>312</left>
+		<top>249</top>
 		<textcolor>FFFFFAF0</textcolor>
 		<disabledcolor>FF505050</disabledcolor>
 		<font>Font_20</font>
@@ -240,8 +240,8 @@
 		<shadow>no</shadow>
 	</default>
 	<default type="edit">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>450</width>
 		<height>52</height>
 		<texturenofocus></texturenofocus>

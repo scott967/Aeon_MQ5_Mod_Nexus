@@ -14,38 +14,38 @@
 			<include>Animation_Window</include>
 			<control type="group">
 				<!-- right group -->
-				<posx>75</posx>
+				<left>75</left>
 				<animation effect="slide" start="900,0" end="0,0" time="1000" tween="cubic" easing="out">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="900,0" time="1000" tween="cubic" easing="out">WindowClose</animation>
 				<animation effect="slide" start="1200,0" end="0,0" time="1000" tween="cubic" easing="out">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
 				<control type="image">
-					<posx>1208</posx>
-					<posy>69</posy>
+					<left>1208</left>
+					<top>69</top>
 					<width>638</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1208</posx>
-					<posy>112</posy>
+					<left>1208</left>
+					<top>112</top>
 					<width>638</width>
 					<height>968</height>
 					<texture>black.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1208</posx>
-					<posy>680</posy>
+					<left>1208</left>
+					<top>680</top>
 					<width>638</width>
 					<height>402</height>
 					<texture>black.png</texture>
 					<colordiffuse>90FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1260</posx>
-					<posy>142</posy>
+					<left>1260</left>
+					<top>142</top>
 					<width>540</width>
 					<height>540</height>
 					<fadetime>FanartCrossFadeTime</fadetime>
@@ -54,8 +54,8 @@
 					<bordertexture border="-2">black.png</bordertexture>
 				</control>
 				<control type="image">
-					<posx>1260</posx>
-					<posy>690</posy>
+					<left>1260</left>
+					<top>690</top>
 					<width>540</width>
 					<height>540</height>
 					<fadetime>FanartCrossFadeTime</fadetime>
@@ -64,8 +64,8 @@
 					<bordertexture flipy="true" border="-2" diffuse="thumb_reflect.png">black.png</bordertexture>
 				</control>
 				<control type="textbox">
-					<posx>1290</posx>
-					<posy>694</posy>
+					<left>1290</left>
+					<top>694</top>
 					<width>465</width>
 					<height>262</height>
 					<font>Font_18A</font>
@@ -81,32 +81,32 @@
 				<animation effect="slide" time="700" start="-1200,0" end="0,0" tween="cubic" easing="out">Visible</animation>
 				<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>69</posy>
+					<left>0</left>
+					<top>69</top>
 					<width>1282</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1282</posx>
-					<posy>112</posy>
+					<left>1282</left>
+					<top>112</top>
 					<width>45</width>
 					<height>968</height>
 					<texture>shadow.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>112</posy>
+					<left>0</left>
+					<top>112</top>
 					<width>1282</width>
 					<height>968</height>
 					<texture>black.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>112</posy>
+					<left>0</left>
+					<top>112</top>
 					<width>1282</width>
 					<height>90</height>
 					<texture>black.png</texture>
@@ -114,8 +114,8 @@
 				</control>
 				<control type="label" id="1">
 					<!-- header label -->
-					<posx>68</posx>
-					<posy>136</posy>
+					<left>68</left>
+					<top>136</top>
 					<width>1156</width>
 					<height>34</height>
 					<font>Font_23</font>
@@ -125,8 +125,8 @@
 				<control type="list" id="450">
 					<!-- Common List -->
 					<viewtype label="31801">list</viewtype>
-					<posx>0</posx>
-					<posy>237</posy>
+					<left>0</left>
+					<top>237</top>
 					<width>1282</width>
 					<height>705</height>
 					<pagecontrol>80</pagecontrol>
@@ -137,15 +137,15 @@
 					<preloaditems>2</preloaditems>
 					<itemlayout height="60">
 						<control type="image">
-							<posx>15</posx>
-							<posy>58</posy>
+							<left>15</left>
+							<top>58</top>
 							<width>1252</width>
 							<height>1</height>
 							<texture>line.png</texture>
 						</control>
 						<control type="label">
-							<posx>68</posx>
-							<posy>0</posy>
+							<left>68</left>
+							<top>0</top>
 							<width>1140</width>
 							<height>62</height>
 							<font>Font_18</font>
@@ -156,16 +156,16 @@
 					</itemlayout>
 					<focusedlayout height="60">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1282</width>
 							<height>62</height>
 							<texture>settings_button_focus.png</texture>
 							<animation effect="fade" start="100" end="50" time="0" condition="!Control.Hasfocus(450)">conditional</animation>
 						</control>
 						<control type="label">
-							<posx>68</posx>
-							<posy>0</posy>
+							<left>68</left>
+							<top>0</top>
 							<width>1140</width>
 							<height>62</height>
 							<font>Font_20</font>
@@ -178,8 +178,8 @@
 			</control>
 			<control type="scrollbar" id="80">
 				<include>ScrollBar_Vertical</include>
-				<posx>322</posx>
-				<posy>210</posy>
+				<left>322</left>
+				<top>210</top>
 				<height>477</height>
 				<onleft>450</onleft>
 				<onright>450</onright>

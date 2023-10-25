@@ -11,8 +11,8 @@
 			<animation effect="slide" start="0,-1050" end="0,0" time="500" tween="sine" easing="out">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="0,-1050" time="500" tween="sine" easing="out">WindowClose</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1020</height>
 				<texture>black.png</texture>
@@ -20,27 +20,27 @@
 			</control>
 			<control type="group">
 				<!-- Grupo da transparencia dos estilos -->
-				<posx>0</posx>
-				<posy>690</posy>
+				<left>0</left>
+				<top>690</top>
 				<control type="image">
-					<posx>0</posx>
-					<posy>328</posy>
+					<left>0</left>
+					<top>328</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>180</posy>
+					<left>0</left>
+					<top>180</top>
 					<width>1920</width>
 					<height>150</height>
 					<texture>black.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>225</posy>
+					<left>0</left>
+					<top>225</top>
 					<width>1920</width>
 					<height>60</height>
 					<texture>grey.png</texture>
@@ -48,8 +48,8 @@
 				</control>
 				<control type="label">
 					<!-- Nome da transparencia -->
-					<posx>0</posx>
-					<posy>291</posy>
+					<left>0</left>
+					<top>291</top>
 					<width>1920</width>
 					<height>45</height>
 					<align>center</align>
@@ -61,8 +61,8 @@
 				</control>
 				<control type="grouplist" id="260">
 					<!-- Nivel de transparencia dos estilos -->
-					<posx>660</posx>
-					<posy>232</posy>
+					<left>660</left>
+					<top>232</top>
 					<width>1200</width>
 					<height>45</height>
 					<itemgap>15</itemgap>

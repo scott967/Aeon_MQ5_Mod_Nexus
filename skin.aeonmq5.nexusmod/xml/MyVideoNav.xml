@@ -23,8 +23,8 @@
 		<control type="group">	<!--  group for folder extrafanart checks -->
 			<visible>Skin.HasSetting(use_folderarts)</visible>
 			<control type="list" id="5020"><!-- check if video movies tvshows musicvideos sets has extrafanartfanart -->
-				<posx>-500</posx>
-				<posy>-500</posy>
+				<left>-500</left>
+				<top>-500</top>
 				<height>400</height>
 				<width>50</width>
 				<visible>![String.StartsWith(ListItem.Path,Plugin) | ListItem.IsParentFolder] + [[Container.Content(movies) + !Skin.HasSetting(trailers) + String.Contains(skin.string(moviesfanart),extra)] | [Container.Content(tvshows) + String.Contains(skin.string(tvshowsfanart),extra)] | [Container.Content(musicvideos) + String.Contains(skin.string(musicvideosfanart),extra)]]</visible>
@@ -33,8 +33,8 @@
 				<content target="filemanager">$INFO[ListItem.Path]extrafanart\</content>
 			</control>
 			<control type="list" id="5021"><!-- check if video seasons has extrafanart -->
-				<posx>-500</posx>
-				<posy>-500</posy>
+				<left>-500</left>
+				<top>-500</top>
 				<height>400</height>
 				<width>50</width>
 				<visible>Container.Content(seasons) + String.Contains(skin.string(seasonsfanart),extra) + ![ListItem.IsParentFolder | String.StartsWith(ListItem.Path,Plugin)]</visible>
@@ -43,8 +43,8 @@
 				<content target="filemanager">$INFO[ListItem.Path,,extrafanart/]</content>
 			</control>
 			<control type="list" id="5022"><!-- check if video episodes has extrafanart in parent folder (episodes in season folders) -->
-				<posx>-500</posx>
-				<posy>-500</posy>
+				<left>-500</left>
+				<top>-500</top>
 				<height>400</height>
 				<width>50</width>
 				<visible>Container.Content(episodes) + String.Contains(skin.string(episodesfanart),extra) + ![ListItem.IsParentFolder | String.StartsWith(ListItem.Path,Plugin)]</visible>
@@ -77,16 +77,16 @@
 			<visible>Container.Content(episodes) + String.Contains(skin.string(episodesfanart),seasons)</visible>
 		</control>
 		<control type="list" id="5026">	<!-- invisible list to get album art for musicvideos -->
-			<posx>-500</posx>
-			<posy>0</posy>
+			<left>-500</left>
+			<top>0</top>
 			<visible>Container.Content(albums)</visible>
 			<itemlayout/>
 			<focusedlayout/>
 			<content sortby="track" sortorder="ascending">musicdb://albums/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22album%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Label]%22%5d%7d%5d%7d%2c%22type%22%3a%22albums%22%7d</content>
 		</control>
 		<control type="fixedlist" id="5027"> <!-- invisible list to get number movies in set -->
-			<posx>-500</posx>
-			<posy>0</posy>
+			<left>-500</left>
+			<top>0</top>
 			<visible>ListItem.IsCollection</visible>
 			<itemlayout></itemlayout>
 			<focusedlayout></focusedlayout>
@@ -115,8 +115,8 @@
 		<!-- currently playing video in background -->
 		<include>LiveBG</include>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<texture>black.png</texture>
@@ -174,14 +174,14 @@
 			<!-- Flags bar 540-720 -->
 			<control type="group">
 				<!-- Grupo ocultar flags ou fanart -->
-				<posy>45</posy>
+				<top>45</top>
 				<include condition="Skin.HasSetting(view3dwall_video)">View3DWall</include>
 				<!-- 67,68 -->
 				<include>Animation_HiddenView</include>
 				<control type="image">
 					<!-- Footer Bar/footer bar -->
-					<posx>0</posx>
-					<posy>765</posy>
+					<left>0</left>
+					<top>765</top>
 					<width>1920</width>
 					<height>270</height>
 					<colordiffuse>$VAR[value_flagsbar]</colordiffuse>
@@ -189,8 +189,8 @@
 					<include>Animation_FloorGlass</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>765</posy>
+					<left>0</left>
+					<top>765</top>
 					<width>1920</width>
 					<height>270</height>
 					<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
@@ -203,8 +203,8 @@
 					<animation effect="slide" start="0,0" end="0,450" time="500" tween="sine" easing="out">Hidden</animation>
 					<visible>!Control.IsVisible(57) + [String.Contains(skin.string(mediaflags),on) | String.Contains(skin.string(mediaflags),auto) + Control.IsVisible(9921)]</visible>
 					<control type="grouplist">		<!-- Etiquetas/tags -->
-						<posx>30</posx>
-						<posy>968</posy>
+						<left>30</left>
+						<top>968</top>
 						<orientation>horizontal</orientation>
 						<itemgap>22</itemgap>
 						<control type="image">
@@ -232,13 +232,13 @@
 							<width>188</width>
 							<visible>!String.IsEmpty(ListItem.Title)</visible>
 							<control type="image">
-								<posx>8</posx>
+								<left>8</left>
 								<include>FlagImage</include>
 								<texture>flags/rating.png</texture>
 							</control>
 							<control type="label">
-								<posx>20</posx>
-								<posy>2</posy>
+								<left>20</left>
+								<top>2</top>
 								<width>134</width>
 								<height>75</height>
 								<align>center</align>
@@ -248,7 +248,7 @@
 								<label fallback="NR">$INFO[ListItem.Rating]</label>
 							</control>
 							<control type="image">
-								<posx>188</posx>
+								<left>188</left>
 								<include>FlagSeparator</include>
 							</control>
 						</control>
@@ -317,13 +317,13 @@
 							<width>188</width>
 							<visible>!String.IsEmpty(Control.GetLabel(556))</visible>
 							<control type="image">
-								<posx>8</posx>
+								<left>8</left>
 								<include>FlagImage</include>
 								<texture>flags/externaldrive.png</texture>
 							</control>
 							<control type="label">
-								<posx>20</posx>
-								<posy>2</posy>
+								<left>20</left>
+								<top>2</top>
 								<width>134</width>
 								<height>75</height>
 								<align>center</align>
@@ -333,7 +333,7 @@
 								<label>$VAR[value_drive]</label>
 							</control>
 							<control type="image">
-								<posx>188</posx>
+								<left>188</left>
 								<include>FlagSeparator</include>
 							</control>
 						</control>
@@ -356,8 +356,8 @@
 								<texture>flags/percentplayed.png</texture>
 							</control>
 							<control type="label">
-								<posx>18</posx>
-								<posy>2</posy>
+								<left>18</left>
+								<top>2</top>
 								<width>134</width>
 								<height>75</height>
 								<align>center</align>
@@ -374,8 +374,8 @@
 						<label>$VAR[value_drive]</label>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>975</posy>
+						<left>0</left>
+						<top>975</top>
 						<height>63</height>
 						<width>1920</width>
 						<texture>gradient_small.png</texture>
@@ -387,7 +387,7 @@
 			<!-- title bar 0-270 -->
 			<!-- NOT for wide, lowlist, glasslist, rightlist, midlist, multilist -->
 			<control type="group"><!-- Title Subtitle -->
-				<posy>-45</posy>
+				<top>-45</top>
 				<animation effect="slide" time="400" start="0,-375" end="0,0" easing="inout" tween="cubic">WindowOpen</animation>
 				<animation effect="slide" time="400" start="0,-375" end="0,0" easing="inout" tween="cubic">Visible</animation>
 				<animation effect="slide" time="400" start="0,0" end="0,-375" easing="inout" tween="cubic">WindowClose</animation>
@@ -395,8 +395,8 @@
 				<animation effect="slide" end="0,-30" time="500" tween="sine" easing="out" condition="![Skin.HasSetting(videoinfobar) | Skin.HasSetting(videodate)]">Conditional</animation>
 				<visible>[Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(56) | Control.IsVisible(58) | Control.IsVisible(60) | Control.IsVisible(61) | Control.IsVisible(62) | Control.IsVisible(63) | Control.IsVisible(64) | Control.IsVisible(65) | Control.IsVisible(66) | Control.IsVisible(67) | Control.IsVisible(68) | Control.IsVisible(69)] + ![ControlGroup(9000).HasFocus | Control.HasFocus(9920) | Control.IsVisible(9922) | Control.HasFocus(9940) | Window.IsActive(movieinformation)]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>1920</width>
 					<height>450</height>
 					<texture flipy="true">shadow_mask.png</texture>
@@ -407,8 +407,8 @@
 					<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
 					<control type="label">
 						<!-- Title -->
-						<posx>45</posx>
-						<posy>87</posy>
+						<left>45</left>
+						<top>87</top>
 						<width>1125</width>
 						<height>60</height>
 						<aligny>center</aligny>
@@ -422,8 +422,8 @@
 					</control>
 					<control type="image">
 						<!-- clearlogo -->
-						<posx>45</posx>
-						<posy>87</posy>
+						<left>45</left>
+						<top>87</top>
 						<width>450</width>
 						<height>68</height>
 						<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
@@ -433,8 +433,8 @@
 					</control>
 					<!--  edit for MV artist -->
 					<control type="label">
-						<posx>45</posx>
-						<posy>160</posy>
+						<left>45</left>
+						<top>160</top>
 						<width>1125</width>
 						<height>38</height>
 						<aligny>center</aligny>
@@ -447,8 +447,8 @@
 						<visible>!Skin.HasSetting(nomoviestagline) + !Container.Content(musicvideos)</visible>
 					</control>
 					<control type="label">
-						<posx>45</posx>
-						<posy>160</posy>
+						<left>45</left>
+						<top>160</top>
 						<width>1125</width>
 						<height>38</height>
 						<aligny>center</aligny>
@@ -461,8 +461,8 @@
 						<visible>Container.Content(musicvideos)</visible>
 					</control>
 					<control type="label">
-						<posx>45</posx>
-						<posy>195</posy>
+						<left>45</left>
+						<top>195</top>
 						<width>1125</width>
 						<height>38</height>
 						<aligny>center</aligny>
@@ -480,8 +480,8 @@
 					<visible>String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
 					<control type="label">
 						<!-- Title -->
-						<posx>45</posx>
-						<posy>87</posy>
+						<left>45</left>
+						<top>87</top>
 						<width>1650</width>
 						<height>60</height>
 						<aligny>center</aligny>
@@ -495,8 +495,8 @@
 					</control>
 					<control type="image">
 						<!-- clearlogo -->
-						<posx>45</posx>
-						<posy>87</posy>
+						<left>45</left>
+						<top>87</top>
 						<width>450</width>
 						<height>68</height>
 						<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
@@ -506,8 +506,8 @@
 					</control>
 					<!--  edit for MV artist -->
 					<control type="label">
-						<posx>45</posx>
-						<posy>160</posy>
+						<left>45</left>
+						<top>160</top>
 						<width>1650</width>
 						<height>38</height>
 						<aligny>center</aligny>
@@ -520,8 +520,8 @@
 						<visible>!Skin.HasSetting(nomoviestagline) + !Container.Content(musicvideos)</visible>
 					</control>
 					<control type="label">
-						<posx>45</posx>
-						<posy>160</posy>
+						<left>45</left>
+						<top>160</top>
 						<width>1125</width>
 						<height>38</height>
 						<aligny>center</aligny>
@@ -534,8 +534,8 @@
 						<visible>Container.Content(musicvideos)</visible>
 					</control>
 					<control type="label">
-						<posx>45</posx>
-						<posy>195</posy>
+						<left>45</left>
+						<top>195</top>
 						<width>1650</width>
 						<height>38</height>
 						<aligny>center</aligny>
@@ -554,7 +554,7 @@
 			<!-- TV Show next aired bar  0-270 -->
 			<!-- ONLY for wide, lowlist, rightlist -->
 			<control type="group"><!-- only subtitle -->
-				<posy>-45</posy>
+				<top>-45</top>
 				<animation effect="slide" time="400" start="0,-375" end="0,0" easing="inout" tween="cubic">WindowOpen</animation>
 				<animation effect="slide" time="400" start="0,-375" end="0,0" easing="inout" tween="cubic">Visible</animation>
 				<animation effect="slide" time="400" start="0,0" end="0,-375" easing="inout" tween="cubic">WindowClose</animation>
@@ -563,8 +563,8 @@
 				<animation effect="slide" end="0,30" time="500" tween="sine" easing="out" condition="!String.IsEmpty(ListItem.Property(AudioLanguage.1))">Conditional</animation>
 				<visible>[Control.IsVisible(51) | Control.IsVisible(55) | Control.IsVisible(59)] + ![ControlGroup(9000).HasFocus | Control.HasFocus(9920) | Control.IsVisible(9922) | Control.HasFocus(9940) | Window.IsActive(movieinformation) | Skin.HasSetting(notvshowstagline) | String.IsEmpty(Control.GetLabel(555)) | String.IsEqual(ListItem.Label,..) | Skin.HasSetting(notvshowstagline)]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>1920</width>
 					<height>450</height>
 					<texture flipy="true">shadow_mask.png</texture>
@@ -572,8 +572,8 @@
 					<animation effect="fade" end="75" condition="true">Conditional</animation>
 				</control>
 				<control type="label" id="555">
-					<posx>45</posx>
-					<posy>105</posy>
+					<left>45</left>
+					<top>105</top>
 					<width>825</width>
 					<height>38</height>
 					<aligny>center</aligny>
@@ -598,14 +598,14 @@
 				<animation effect="slide" end="-1170,0" time="0" condition="Control.IsVisible(59)">Conditional</animation>
 				<animation effect="slide" end="0,-30" time="500" tween="sine" easing="out" condition="![Skin.HasSetting(videoinfobar) | Skin.HasSetting(videodate)]">Conditional</animation>
 				<visible>![Control.IsVisible(70) | Skin.HasSetting(nolanguageflags) | String.IsEqual(ListItem.Label,..) | String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) | Control.IsVisible(51) | Control.HasFocus(9920) | Control.HasFocus(9940) | Control.IsVisible(9922) | Window.IsActive(movieinformation) | Window.IsVisible(1110)]</visible>
-				<posx>1215</posx>
-				<posy>52</posy>
+				<left>1215</left>
+				<top>52</top>
 				<include>AudioandSub</include>
 			</control>
 			<!--  all views included here -->
 			<control type="group">
 				<!-- Grupo vistas -->
-				<posy>45</posy>
+				<top>45</top>
 				<include>Animation_HiddenView</include>
 				<!-- ViewTypes -->
 				<include>ViewWide</include>

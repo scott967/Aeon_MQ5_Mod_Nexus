@@ -10,16 +10,16 @@
 			<!-- default group -->
 			<include>Animation_Window</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<texture>black.png</texture>
 			</control>
 			<control type="multiimage">
 				<!-- Fanart -->
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<aspectratio>keep</aspectratio>
@@ -27,8 +27,8 @@
 			</control>
 			<control type="group">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<height>225</height>
 					<width>1920</width>
 					<texture flipy="true">shadow_mask.png</texture>
@@ -36,8 +36,8 @@
 				</control>
 				<control type="label">
 					<!-- Title -->
-					<posx>45</posx>
-					<posy>12</posy>
+					<left>45</left>
+					<top>12</top>
 					<width>1650</width>
 					<height>60</height>
 					<font>Font_40</font>
@@ -47,8 +47,8 @@
 					<scrollout>false</scrollout>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>75</posy>
+					<left>45</left>
+					<top>75</top>
 					<width>1650</width>
 					<height>38</height>
 					<font>Font_21A</font>
@@ -59,8 +59,8 @@
 				</control>
 				<control type="image">
 					<!-- Star -->
-					<posx>1768</posx>
-					<posy>8</posy>
+					<left>1768</left>
+					<top>8</top>
 					<width>110</width>
 					<height>110</height>
 					<align>center</align>
@@ -69,8 +69,8 @@
 					<colordiffuse>FFFFFAF0</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>1778</posx>
-					<posy>22</posy>
+					<left>1778</left>
+					<top>22</top>
 					<width>90</width>
 					<height>90</height>
 					<align>center</align>
@@ -80,8 +80,8 @@
 					<textcolor>FF101010</textcolor>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>120</posy>
+					<left>0</left>
+					<top>120</top>
 					<width>1920</width>
 					<height>579</height>
 					<texture>darkgrey.png</texture>
@@ -89,30 +89,30 @@
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>1920</width>
 					<height>120</height>
 					<texture>gradient_small.png</texture>
 				</control>
 				<control type="image">
-					<posx>308</posx>
-					<posy>120</posy>
+					<left>308</left>
+					<top>120</top>
 					<height>285</height>
 					<width>3</width>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>204</posy>
+					<left>0</left>
+					<top>204</top>
 					<height>3</height>
 					<width>1029</width>
 					<texture>separator.png</texture>
 				</control>
 				<control type="label">
 					<!-- Year -->
-					<posx>330</posx>
-					<posy>120</posy>
+					<left>330</left>
+					<top>120</top>
 					<height>60</height>
 					<width>165</width>
 					<align>left</align>
@@ -123,8 +123,8 @@
 				</control>
 				<control type="label">
 					<!-- Genre -->
-					<posx>330</posx>
-					<posy>158</posy>
+					<left>330</left>
+					<top>158</top>
 					<height>60</height>
 					<width>660</width>
 					<align>left</align>
@@ -137,8 +137,8 @@
 				</control>
 				<control type="label">
 					<!-- Original Title/Movies - Premiered/TvShows -->
-					<posx>285</posx>
-					<posy>210</posy>
+					<right>285r</right>
+					<top>210</top>
 					<height>40</height>
 					<width>300</width>
 					<align>right</align>
@@ -148,8 +148,8 @@
 					<textcolor>$VAR[value_headercolor]</textcolor>
 				</control>
 				<control type="label">
-					<posx>330</posx>
-					<posy>210</posy>
+					<left>330</left>
+					<top>210</top>
 					<height>40</height>
 					<width>660</width>
 					<align>left</align>
@@ -162,8 +162,8 @@
 				</control>
 				<control type="label">
 					<!-- Developer -->
-					<posx>285</posx>
-					<posy>240</posy>
+					<right>285r</right>
+					<top>240</top>
 					<height>40</height>
 					<width>300</width>
 					<align>right</align>
@@ -173,8 +173,8 @@
 					<textcolor>$VAR[value_headercolor]</textcolor>
 				</control>
 				<control type="label">
-					<posx>330</posx>
-					<posy>240</posy>
+					<left>330</left>
+					<top>240</top>
 					<height>40</height>
 					<width>660</width>
 					<align>left</align>
@@ -187,8 +187,8 @@
 				</control>
 				<control type="label">
 					<!-- Publisher -->
-					<posx>285</posx>
-					<posy>270</posy>
+					<right>285r</right>
+					<top>270</top>
 					<height>40</height>
 					<width>300</width>
 					<align>right</align>
@@ -198,8 +198,8 @@
 					<textcolor>$VAR[value_headercolor]</textcolor>
 				</control>
 				<control type="label">
-					<posx>330</posx>
-					<posy>270</posy>
+					<left>330</left>
+					<top>270</top>
 					<height>40</height>
 					<width>660</width>
 					<align>left</align>
@@ -212,8 +212,8 @@
 				</control>
 				<control type="label">
 					<!-- Perspective -->
-					<posx>285</posx>
-					<posy>300</posy>
+					<right>285r</right>
+					<top>300</top>
 					<height>40</height>
 					<width>300</width>
 					<align>right</align>
@@ -223,8 +223,8 @@
 					<textcolor>$VAR[value_headercolor]</textcolor>
 				</control>
 				<control type="label">
-					<posx>330</posx>
-					<posy>300</posy>
+					<left>330</left>
+					<top>300</top>
 					<height>40</height>
 					<width>660</width>
 					<align>left</align>
@@ -237,8 +237,8 @@
 				</control>
 				<control type="label">
 					<!-- Region -->
-					<posx>285</posx>
-					<posy>330</posy>
+					<right>285r</right>
+					<top>330</top>
 					<height>40</height>
 					<width>300</width>
 					<align>right</align>
@@ -248,8 +248,8 @@
 					<textcolor>$VAR[value_headercolor]</textcolor>
 				</control>
 				<control type="label">
-					<posx>330</posx>
-					<posy>330</posy>
+					<left>330</left>
+					<top>330</top>
 					<height>40</height>
 					<width>660</width>
 					<align>left</align>
@@ -261,16 +261,16 @@
 					<scrollout>false</scrollout>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>405</posy>
+					<left>0</left>
+					<top>405</top>
 					<height>3</height>
 					<width>1029</width>
 					<texture>separator.png</texture>
 				</control>
 				<control type="textbox">
 					<!-- Plot -->
-					<posx>45</posx>
-					<posy>420</posy>
+					<left>45</left>
+					<top>420</top>
 					<width>952</width>
 					<height>262</height>
 					<align>justify</align>
@@ -281,8 +281,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb -->
-					<posx>1030</posx>
-					<posy>120</posy>
+					<left>1030</left>
+					<top>120</top>
 					<height>579</height>
 					<width>844</width>
 					<aspectratio align="left">keep</aspectratio>
@@ -291,8 +291,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb -->
-					<posx>1030</posx>
-					<posy>120</posy>
+					<left>1030</left>
+					<top>120</top>
 					<height>579</height>
 					<width>844</width>
 					<aspectratio align="left">keep</aspectratio>
@@ -301,8 +301,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 1 big -->
-					<posx>1030</posx>
-					<posy>120</posy>
+					<left>1030</left>
+					<top>120</top>
 					<height>579</height>
 					<width>844</width>
 					<aspectratio align="left">keep</aspectratio>
@@ -311,8 +311,8 @@
 				</control>
 				<control type="image" id="2710">
 					<!-- Thumb Gameinfoupper -->
-					<posx>1030</posx>
-					<posy>120</posy>
+					<left>1030</left>
+					<top>120</top>
 					<height>579</height>
 					<width>844</width>
 					<aspectratio align="left">keep</aspectratio>
@@ -321,8 +321,8 @@
 				</control>
 				<control type="image" id="2720">
 					<!-- Thumb Gameinfolower -->
-					<posx>1030</posx>
-					<posy>120</posy>
+					<left>1030</left>
+					<top>120</top>
 					<height>579</height>
 					<width>844</width>
 					<aspectratio align="left">keep</aspectratio>
@@ -331,8 +331,8 @@
 				</control>
 				<control type="image" id="2730">
 					<!-- Thumb Gameinfoleft -->
-					<posx>1030</posx>
-					<posy>120</posy>
+					<left>1030</left>
+					<top>120</top>
 					<height>579</height>
 					<width>844</width>
 					<aspectratio align="left">keep</aspectratio>
@@ -341,8 +341,8 @@
 				</control>
 				<control type="image" id="2740">
 					<!-- Thumb Gameinforight -->
-					<posx>1030</posx>
-					<posy>120</posy>
+					<left>1030</left>
+					<top>120</top>
 					<height>579</height>
 					<width>844</width>
 					<aspectratio align="left">keep</aspectratio>
@@ -351,8 +351,8 @@
 				</control>
 				<control type="videowindow" id="2800">
 					<!-- Video Window Small -->
-					<posx>1030</posx>
-					<posy>120</posy>
+					<left>1030</left>
+					<top>120</top>
 					<height>579</height>
 					<width>844</width>
 					<aspectratio align="left">keep</aspectratio>
@@ -361,8 +361,8 @@
 				<control type="button">
 					<!-- click absorber -->
 					<description>click absorber</description>
-					<posx>1030</posx>
-					<posy>120</posy>
+					<left>1030</left>
+					<top>120</top>
 					<height>579</height>
 					<width>844</width>
 					<texturefocus></texturefocus>
@@ -372,8 +372,8 @@
 				<control type="videowindow">
 					<!-- Video Window Big -->
 					<description>video control</description>
-					<posx>1030</posx>
-					<posy>120</posy>
+					<left>1030</left>
+					<top>120</top>
 					<height>579</height>
 					<width>844</width>
 					<aspectratio align="left">keep</aspectratio>
@@ -381,8 +381,8 @@
 				</control>
 				<control type="button">
 					<!-- click absorber -->
-					<posx>1030</posx>
-					<posy>120</posy>
+					<left>1030</left>
+					<top>120</top>
 					<height>579</height>
 					<width>844</width>
 					<texturefocus></texturefocus>
@@ -390,23 +390,23 @@
 					<visible>!String.IsEmpty(ListItem.Property(videosizebig))</visible>
 				</control>
 				<control type="image">
-					<posx>1029</posx>
-					<posy>120</posy>
+					<left>1029</left>
+					<top>120</top>
 					<height>579</height>
 					<width>3</width>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>120</posy>
+					<left>0</left>
+					<top>120</top>
 					<height>3</height>
 					<width>1920</width>
 					<texture>separator.png</texture>
 				</control>
 				<control type="image">
 					<!-- Fundo do rodape -->
-					<posx>0</posx>
-					<posy>975</posy>
+					<left>0</left>
+					<top>975</top>
 					<width>1920</width>
 					<height>105</height>
 					<colordiffuse>FFFFF0F0</colordiffuse>
@@ -414,8 +414,8 @@
 				</control>
 				<control type="grouplist">
 					<!-- Etiquetas -->
-					<posx>51</posx>
-					<posy>1023</posy>
+					<left>51</left>
+					<top>1023</top>
 					<orientation>horizontal</orientation>
 					<itemgap>52</itemgap>
 					<animation effect="slide" start="0,450" end="0,0" time="500" tween="sine" easing="out">WindowOpen</animation>
@@ -424,15 +424,15 @@
 					<visible>Control.HasFocus(149)</visible>
 				</control>
 				<control type="group">
-					<posx>0</posx>
-					<posy>1028</posy>
+					<left>0</left>
+					<top>1028</top>
 					<animation effect="slide" start="0,450" end="0,0" time="500" tween="sine" easing="out">WindowOpen</animation>
 					<animation effect="slide" start="0,450" end="0,0" time="500" tween="sine" easing="out">Visible</animation>
 					<animation effect="slide" start="0,0" end="0,450" time="500" tween="sine" easing="in">Hidden</animation>
 					<visible>Control.HasFocus(151)</visible>
 					<control type="label">
-						<posx>45</posx>
-						<posy>0</posy>
+						<left>45</left>
+						<top>0</top>
 						<width>600</width>
 						<height>40</height>
 						<align>left</align>
@@ -442,8 +442,8 @@
 						<textcolor>FF101010</textcolor>
 					</control>
 					<control type="label">
-						<posx>472</posx>
-						<posy>24</posy>
+						<left>472</left>
+						<top>24</top>
 						<width>975</width>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -455,24 +455,24 @@
 					</control>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>1020</posy>
+					<left>0</left>
+					<top>1020</top>
 					<height>64</height>
 					<width>1920</width>
 					<texture>gradient_small.png</texture>
 				</control>
 				<control type="image">
 					<!-- Cast -->
-					<posx>0</posx>
-					<posy>1018</posy>
+					<left>0</left>
+					<top>1018</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>741</posy>
+					<left>0</left>
+					<top>741</top>
 					<height>279</height>
 					<width>1920</width>
 					<texture>darkgrey.png</texture>
@@ -482,8 +482,8 @@
 				<!-- Game List -->
 				<control type="group" id="1000">
 					<control type="wraplist" id="59">
-						<posx>825</posx>
-						<posy>15</posy>
+						<left>825</left>
+						<top>15</top>
 						<height>90</height>
 						<width>952</width>
 						<onleft>1000</onleft>
@@ -495,8 +495,8 @@
 				</control>
 				<control type="list" id="151">
 					<viewtype label="List">List Info</viewtype>
-					<posx>45</posx>
-					<posy>738</posy>
+					<left>45</left>
+					<top>738</top>
 					<width>1830</width>
 					<height>330</height>
 					<onup>3001</onup>
@@ -506,8 +506,8 @@
 					<focusposition>3</focusposition>
 					<itemlayout height="255" width="450">
 						<control type="image">
-							<posx>0</posx>
-							<posy>8</posy>
+							<left>0</left>
+							<top>8</top>
 							<width>450</width>
 							<height>240</height>
 							<aligny>center</aligny>
@@ -520,8 +520,8 @@
 					</itemlayout>
 					<focusedlayout height="255" width="450">
 						<control type="image">
-							<posx>0</posx>
-							<posy>8</posy>
+							<left>0</left>
+							<top>8</top>
 							<width>450</width>
 							<height>240</height>
 							<aligny>center</aligny>
@@ -534,8 +534,8 @@
 							<visible>!Control.HasFocus(151)</visible>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>8</posy>
+							<left>0</left>
+							<top>8</top>
 							<width>450</width>
 							<height>240</height>
 							<aligny>center</aligny>
@@ -576,27 +576,27 @@
 				</control>
 				<control type="group">
 					<!-- Menu bar -->
-					<posx>0</posx>
-					<posy>698</posy>
+					<left>0</left>
+					<top>698</top>
 					<control type="image">
-						<posx>0</posx>
-						<posy>-45</posy>
+						<left>0</left>
+						<top>-45</top>
 						<width>1920</width>
 						<height>45</height>
 						<texture>shadow_h.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>1920</width>
 						<height>45</height>
 						<texture flipy="true">shadow_h.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1920</width>
 						<height>45</height>
 						<texture>darkgrey.png</texture>
@@ -604,8 +604,8 @@
 						<include>Animation_HomeGlass2</include>
 					</control>
 					<control type="list" id="3001">
-						<posx>0</posx>
-						<posy>4</posy>
+						<left>0</left>
+						<top>4</top>
 						<width>1920</width>
 						<height>38</height>
 						<onup>9900</onup>
@@ -616,15 +616,15 @@
 						<focusposition>0</focusposition>
 						<itemlayout height="38" width="960">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1</width>
 								<height>38</height>
 								<texture>separator_v.png</texture>
 							</control>
 							<control type="label">
-								<posx>0</posx>
-								<posy>1</posy>
+								<left>0</left>
+								<top>1</top>
 								<height>38</height>
 								<width>960</width>
 								<align>center</align>
@@ -636,23 +636,23 @@
 						</itemlayout>
 						<focusedlayout height="38" width="960">
 							<control type="image">
-								<posx>0</posx>
-								<posy>-2</posy>
+								<left>0</left>
+								<top>-2</top>
 								<width>960</width>
 								<height>40</height>
 								<texture>settings_button_focus.png</texture>
 								<visible>Control.Hasfocus(3001)</visible>
 							</control>
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1</width>
 								<height>38</height>
 								<texture>separator_v.png</texture>
 							</control>
 							<control type="label">
-								<posx>0</posx>
-								<posy>1</posy>
+								<left>0</left>
+								<top>1</top>
 								<height>38</height>
 								<width>960</width>
 								<align>center</align>
@@ -663,8 +663,8 @@
 								<visible>Control.Hasfocus(3001)</visible>
 							</control>
 							<control type="label">
-								<posx>0</posx>
-								<posy>1</posy>
+								<left>0</left>
+								<top>1</top>
 								<height>38</height>
 								<width>960</width>
 								<align>center</align>
@@ -698,8 +698,8 @@
 					<include>InvisibleButton</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>1920</width>
 					<height>1080</height>
 					<texture>darkgrey.png</texture>
@@ -708,8 +708,8 @@
 					<visible>Control.HasFocus(160)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>1920</width>
 					<height>1080</height>
 					<texture>hive_back.png</texture>
@@ -719,8 +719,8 @@
 				</control>
 				<control type="image">
 					<description>Cover image</description>
-					<posx>-1920</posx>
-					<posy>70</posy>
+					<left>-1920</left>
+					<top>70</top>
 					<width>1920</width>
 					<height>960</height>
 					<texture background="true">$INFO[Container(151).ListItem.Icon]</texture>
@@ -733,8 +733,8 @@
 					<visible>Control.HasFocus(160)</visible>
 					<animation effect="slide" start="0,0" end="0,-120" time="600" delay="1000" tween="cubic" easing="inout" condition="Control.HasFocus(160)">Conditional</animation>
 					<control type="image">
-						<posx>0</posx>
-						<posy>1140</posy>
+						<left>0</left>
+						<top>1140</top>
 						<height>60</height>
 						<width>1920</width>
 						<texture>darkgrey.png</texture>
@@ -742,8 +742,8 @@
 						<include>Animation_HomeGlass2</include>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>1140</posy>
+						<left>0</left>
+						<top>1140</top>
 						<height>60</height>
 						<width>1920</width>
 						<align>center</align>
@@ -755,8 +755,8 @@
 						<scrollout>false</scrollout>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>1140</posy>
+						<left>0</left>
+						<top>1140</top>
 						<height>60</height>
 						<width>1920</width>
 						<texture>gradient_small.png</texture>
@@ -764,8 +764,8 @@
 				</control>
 				<control type="label" id="4000">
 					<description>Messages</description>
-					<posx>15</posx>
-					<posy>840</posy>
+					<left>15</left>
+					<top>840</top>
 					<width>1020</width>
 					<height>15</height>
 					<align>left</align>

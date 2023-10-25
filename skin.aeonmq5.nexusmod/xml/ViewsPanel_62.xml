@@ -8,8 +8,8 @@
 <includes>
 	<!--##################################################################################   VISTA PANEL - ID 62   ##################################################################################-->
 	<include name="Panel_Dimmer">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<texture>darkgrey.png</texture>
 		<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 		<animation effect="fade" start="100" end="45" condition="true">Conditional</animation>
@@ -29,8 +29,8 @@
 				<!-- Movies/TVShows Poster/Programs/Music -->
 				<control type="panel" id="62">
 					<viewtype label="31818">icon</viewtype>
-					<posx>758</posx>
-					<posy>165</posy>
+					<left>758</left>
+					<top>165</top>
 					<width>1080</width>
 					<height>765</height>
 					<scrolltime>200</scrolltime>
@@ -44,16 +44,16 @@
 					<visible>!Container.Content(years)</visible>
 					<itemlayout condition="Window.IsVisible(tvrecordings) | Window.IsVisible(radiorecordings)" width="180" height="255">
 						<control type="image">
-							<posx>12</posx>
-							<posy>9</posy>
+							<left>12</left>
+							<top>9</top>
 							<width>150</width>
 							<height>212</height>
 							<texture fallback="DefaultVideoPoster.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
-							<posx>122</posx>
-							<posy>8</posy>
+							<left>122</left>
+							<top>8</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[pvr_overlay]</texture>
@@ -69,16 +69,16 @@
 					<itemlayout condition="Window.IsActive(videos) + Skin.HasSetting(nopanelvideocase) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) | Skin.HasSetting(nopanelvideocase) + [Container.Content(musicvideos) + !Skin.HasSetting(panelbigicon) | Container.Content(sets)] | Container.Content(tvshows) + !Skin.HasSetting(noviewpanelposter)  | Container.Content(seasons) | Window.IsActive(videos) + Container.Content(genres)" width="180" height="255">
 						<!-- Poster no case -->
 						<control type="image">
-							<posx>12</posx>
-							<posy>9</posy>
+							<left>12</left>
+							<top>9</top>
 							<width>150</width>
 							<height>212</height>
 							<texture fallback="DefaultVideoPoster.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
-							<posx>122</posx>
-							<posy>8</posy>
+							<left>122</left>
+							<top>8</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -94,16 +94,16 @@
 					<itemlayout condition="Container.Content(musicvideos) + Skin.HasSetting(panelbigicon)" width="270" height="225">
 						<!-- music videos big icons -->
 						<control type="image">
-							<posx>12</posx>
-							<posy>9</posy>
+							<left>12</left>
+							<top>9</top>
 							<width>262</width>
 							<height>180</height>
 							<texture fallback="DefaultVideoPoster.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
-							<posx>234</posx>
-							<posy>8</posy>
+							<left>234</left>
+							<top>8</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -119,8 +119,8 @@
 					<itemlayout condition="Container.Content(episodes)" width="360" height="270">
 						<!-- EPISODIOS -->
 						<control type="image">
-							<posx>12</posx>
-							<posy>9</posy>
+							<left>12</left>
+							<top>9</top>
 							<width>330</width>
 							<height>195</height>
 							<fadetime>FanartCrossFadeTime</fadetime>
@@ -129,8 +129,8 @@
 							<bordertexture border="-2">black.png</bordertexture>
 						</control>
 						<control type="image">
-							<posx>309</posx>
-							<posy>170</posy>
+							<left>309</left>
+							<top>170</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -139,8 +139,8 @@
 							<visible>![Skin.HasSetting(nooverlays) | String.Contains(skin.string(stylewatched),2) | String.Contains(skin.string(stylewatched),3)] + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
 						</control>
 						<control type="image">
-							<posx>309</posx>
-							<posy>170</posy>
+							<left>309</left>
+							<top>170</top>
 							<width>38</width>
 							<height>38</height>
 							<texture flipy="true">$VAR[value_watchedstyle]</texture>
@@ -158,8 +158,8 @@
 						<!-- ESTOJO -->
 						<control type="image">
 							<!-- Poster com estojo -->
-							<posx>14</posx>
-							<posy>27</posy>
+							<left>14</left>
+							<top>27</top>
 							<width>148</width>
 							<height>212</height>
 							<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -168,8 +168,8 @@
 						</control>
 						<control type="image">
 							<!-- Estojo -->
-							<posx>0</posx>
-							<posy>-8</posy>
+							<left>0</left>
+							<top>-8</top>
 							<width>184</width>
 							<height>267</height>
 							<fadetime>FanartCrossFadeTime</fadetime>
@@ -179,8 +179,8 @@
 						</control>
 						<control type="image">
 							<!-- Codec -->
-							<posx>70</posx>
-							<posy>-6</posy>
+							<left>70</left>
+							<top>-6</top>
 							<width>45</width>
 							<height>45</height>
 							<fadetime>FanartCrossFadeTime</fadetime>
@@ -190,8 +190,8 @@
 							<texture>$VAR[value_videocodec0]</texture>
 						</control>
 						<control type="image">
-							<posx>126</posx>
-							<posy>26</posy>
+							<left>126</left>
+							<top>26</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -208,8 +208,8 @@
 						<!-- ARTE -->
 						<control type="image">
 							<!-- clearlogo e clearart -->
-							<posx>12</posx>
-							<posy>9</posy>
+							<left>12</left>
+							<top>9</top>
 							<width>150</width>
 							<height>212</height>
 							<texture fallback="aeon_logo_small.png" background="true">$VAR[value_logoandclearart]</texture>
@@ -217,8 +217,8 @@
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
-							<posx>122</posx>
-							<posy>38</posy>
+							<left>122</left>
+							<top>38</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -228,8 +228,8 @@
 					</itemlayout>
 					<itemlayout condition="!Window.IsActive(videos) + ![Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)]" width="180" height="180">
 						<control type="image">
-							<posx>9</posx>
-							<posy>9</posy>
+							<left>9</left>
+							<top>9</top>
 							<width>158</width>
 							<height>158</height>
 							<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
@@ -237,8 +237,8 @@
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
-							<posx>122</posx>
-							<posy>8</posy>
+							<left>122</left>
+							<top>8</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -253,8 +253,8 @@
 					</itemlayout>
 					<itemlayout condition="!Window.IsActive(videos) + [Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)]" width="180" height="180">
 						<control type="image">
-							<posx>9</posx>
-							<posy>9</posy>
+							<left>9</left>
+							<top>9</top>
 							<width>158</width>
 							<height>158</height>
 							<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">genres/256.png</texture>
@@ -262,8 +262,8 @@
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<posx>16</posx>
-							<posy>16</posy>
+							<left>16</left>
+							<top>16</top>
 							<width>142</width>
 							<height>142</height>
 							<font>Font_18A</font>
@@ -281,8 +281,8 @@
 					</itemlayout>
 					<focusedlayout condition="$EXP[IsPVRRecordings]" width="180" height="255">
 						<control type="image">
-							<posx>12</posx>
-							<posy>9</posy>
+							<left>12</left>
+							<top>9</top>
 							<width>150</width>
 							<height>212</height>
 							<texture fallback="DefaultVideoPoster.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
@@ -293,8 +293,8 @@
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
-							<posx>122</posx>
-							<posy>8</posy>
+							<left>122</left>
+							<top>8</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[pvr_overlay]</texture>
@@ -309,8 +309,8 @@
 					<focusedlayout condition="Window.IsActive(videos) + Skin.HasSetting(nopanelvideocase) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) | Skin.HasSetting(nopanelvideocase) + [Container.Content(musicvideos) + !Skin.HasSetting(panelbigicon) | Container.Content(sets)] | Container.Content(tvshows) + !Skin.HasSetting(noviewpanelposter)  | Container.Content(seasons) | Window.IsActive(videos) + Container.Content(genres)" width="180" height="255">
 						<!-- Poster no case -->
 						<control type="image">
-							<posx>12</posx>
-							<posy>9</posy>
+							<left>12</left>
+							<top>9</top>
 							<width>150</width>
 							<height>212</height>
 							<texture fallback="DefaultVideoPoster.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
@@ -321,8 +321,8 @@
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
-							<posx>122</posx>
-							<posy>8</posy>
+							<left>122</left>
+							<top>8</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -337,8 +337,8 @@
 					<focusedlayout condition="Container.Content(musicvideos) + Skin.HasSetting(panelbigicon)" width="270" height="225">
 						<!-- music video big icons -->
 						<control type="image">
-							<posx>12</posx>
-							<posy>9</posy>
+							<left>12</left>
+							<top>9</top>
 							<width>262</width>
 							<height>180</height>
 							<texture fallback="DefaultVideoPoster.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
@@ -349,8 +349,8 @@
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
-							<posx>234</posx>
-							<posy>8</posy>
+							<left>234</left>
+							<top>8</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -365,8 +365,8 @@
 					<focusedlayout condition="Container.Content(episodes)" width="360" height="270">
 						<!-- EPISODIOS -->
 						<control type="image">
-							<posx>12</posx>
-							<posy>9</posy>
+							<left>12</left>
+							<top>9</top>
 							<width>330</width>
 							<height>195</height>
 							<fadetime>FanartCrossFadeTime</fadetime>
@@ -379,8 +379,8 @@
 							</animation>
 						</control>
 						<control type="image">
-							<posx>310</posx>
-							<posy>171</posy>
+							<left>310</left>
+							<top>171</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -393,8 +393,8 @@
 							<visible>![Skin.HasSetting(nooverlays) | String.Contains(skin.string(stylewatched),2) | String.Contains(skin.string(stylewatched),3)] + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
 						</control>
 						<control type="image">
-							<posx>310</posx>
-							<posy>171</posy>
+							<left>310</left>
+							<top>171</top>
 							<width>38</width>
 							<height>38</height>
 							<texture flipy="true">$VAR[value_watchedstyle]</texture>
@@ -410,8 +410,8 @@
 					<focusedlayout condition="Window.IsActive(videos) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) + !Skin.HasSetting(nopanelvideocase)  | !Skin.HasSetting(nopanelvideocase) + [Container.Content(musicvideos) + !Skin.HasSetting(panelbigicon) | Container.Content(sets)]" width="180" height="258">
 						<!-- ESTOJO -->
 						<control type="image">
-							<posx>14</posx>
-							<posy>27</posy>
+							<left>14</left>
+							<top>27</top>
 							<width>148</width>
 							<height>212</height>
 							<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -423,8 +423,8 @@
 						</control>
 						<control type="image">
 							<!-- Estojo -->
-							<posx>0</posx>
-							<posy>-8</posy>
+							<left>0</left>
+							<top>-8</top>
 							<width>184</width>
 							<height>267</height>
 							<fadetime>FanartCrossFadeTime</fadetime>
@@ -438,8 +438,8 @@
 						</control>
 						<control type="image">
 							<!-- Codec -->
-							<posx>70</posx>
-							<posy>-6</posy>
+							<left>70</left>
+							<top>-6</top>
 							<width>45</width>
 							<height>45</height>
 							<fadetime>FanartCrossFadeTime</fadetime>
@@ -453,8 +453,8 @@
 							</animation>
 						</control>
 						<control type="image">
-							<posx>126</posx>
-							<posy>26</posy>
+							<left>126</left>
+							<top>26</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -469,8 +469,8 @@
 					<focusedlayout condition="Window.IsActive(videos) + [Container.Content(movies) | Container.Content(tvshows)] + Skin.HasSetting(noviewpanelposter)" width="180" height="180">
 						<control type="image">
 							<!-- clearlogo e clearart -->
-							<posx>12</posx>
-							<posy>9</posy>
+							<left>12</left>
+							<top>9</top>
 							<width>150</width>
 							<height>212</height>
 							<texture fallback="aeon_logo_small.png" background="true">$VAR[value_logoandclearart]</texture>
@@ -481,8 +481,8 @@
 							</animation>
 						</control>
 						<control type="image">
-							<posx>122</posx>
-							<posy>38</posy>
+							<left>122</left>
+							<top>38</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -496,8 +496,8 @@
 					</focusedlayout>
 					<focusedlayout condition="!Window.IsActive(videos) + ![Container.Content(genres) | Container.Content(roles) | Container.Content(sources)| String.IsEqual(Container.FolderName,roles)]" width="180" height="180">
 						<control type="image">
-							<posx>9</posx>
-							<posy>9</posy>
+							<left>9</left>
+							<top>9</top>
 							<width>158</width>
 							<height>158</height>
 							<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
@@ -508,8 +508,8 @@
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
-							<posx>122</posx>
-							<posy>8</posy>
+							<left>122</left>
+							<top>8</top>
 							<width>38</width>
 							<height>38</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -523,8 +523,8 @@
 					</focusedlayout>
 					<focusedlayout condition="!Window.IsActive(videos) + [Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)]" width="180" height="180">
 						<control type="image">
-							<posx>9</posx>
-							<posy>9</posy>
+							<left>9</left>
+							<top>9</top>
 							<width>158</width>
 							<height>158</height>
 							<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">genres/256.png</texture>
@@ -535,8 +535,8 @@
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<posx>16</posx>
-							<posy>16</posy>
+							<left>16</left>
+							<top>16</top>
 							<width>142</width>
 							<height>142</height>
 							<font>Font_18A</font>
@@ -556,18 +556,18 @@
 				<animation effect="slide" time="700" start="-1200,0" end="0,0" tween="cubic" easing="out">Visible</animation>
 				<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
 				<visible>Control.IsVisible(62)</visible>
-				<posx>90</posx>
-				<posy>120</posy>
+				<left>90</left>
+				<top>120</top>
 				<control type="image">
-					<posx>-8</posx>
-					<posy>40</posy>
+					<left>-8</left>
+					<top>40</top>
 					<width>626</width>
 					<height>360</height>
 					<texture>fanartframe.png</texture>
 				</control>
 				<control type="image">
-					<posx>15</posx>
-					<posy>63</posy>
+					<left>15</left>
+					<top>63</top>
 					<width>580</width>
 					<height>315</height>
 					<texture fallback="DefaultExtraThumbs.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
@@ -576,8 +576,8 @@
 					<visible>!Container.Content(genres) + !String.IsEqual(ListItem.DBType,musicvideo) + ![Window.IsVisible(tvrecordings) | Window.IsVisible(radiorecordings)]</visible>
 				</control>
 				<control type="image">
-					<posx>15</posx>
-					<posy>63</posy>
+					<left>15</left>
+					<top>63</top>
 					<width>580</width>
 					<height>315</height>
 					<texture fallback="DefaultLiveTV.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
@@ -586,8 +586,8 @@
 					<visible>Window.IsVisible(tvrecordings) | Window.IsVisible(radiorecordings)</visible>
 				</control>
 				<control type="image">
-					<posx>148</posx>
-					<posy>63</posy>
+					<left>148</left>
+					<top>63</top>
 					<width>315</width>
 					<height>315</height>
 					<texture fallback="DefaultExtraThumbs.png" background="true">$INFO[ListItem.Art(cover)]</texture>
@@ -596,8 +596,8 @@
 					<visible>String.IsEqual(ListItem.DBType,musicvideo)</visible>
 				</control>
 				<control type="image">
-					<posx>15</posx>
-					<posy>63</posy>
+					<left>15</left>
+					<top>63</top>
 					<width>580</width>
 					<height>315</height>
 					<texture fallback="DefaultExtraThumbs.png" background="true">$INFO[Skin.String(custom_musicgenreicons.path)]$INFO[ListItem.Label]$INFO[Skin.String(custom_musicgenreicons.ext)]</texture>
@@ -606,8 +606,8 @@
 					<visible>!Window.IsActive(videos) + Container.Content(genres)</visible>
 				</control>
 				<control type="label">
-					<posx>15</posx>
-					<posy>393</posy>
+					<left>15</left>
+					<top>393</top>
 					<width>580</width>
 					<height>22</height>
 					<textcolor>FFFFFAF0</textcolor>
@@ -617,16 +617,16 @@
 					<visible>!String.IsEqual(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>15</posx>
-					<posy>434</posy>
+					<left>15</left>
+					<top>434</top>
 					<width>580</width>
 					<height>3</height>
 					<align>left</align>
 					<texture flipx="true">divider.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>15</posx>
-					<posy>447</posy>
+					<left>15</left>
+					<top>447</top>
 					<width>580</width>
 					<height>394</height>
 					<label>$VAR[value_plot]</label>
@@ -637,8 +637,8 @@
 			<!-- Scroll Bar -->
 			<control type="scrollbar" id="80">
 				<include>ScrollBar_Vertical</include>
-				<posx>1845</posx>
-				<posy>166</posy>
+				<left>1845</left>
+				<top>166</top>
 				<height>706</height>
 				<onleft>62</onleft>
 				<onright>62</onright>

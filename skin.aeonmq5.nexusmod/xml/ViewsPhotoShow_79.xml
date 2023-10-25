@@ -13,22 +13,22 @@
 			<visible>Control.IsVisible(79)</visible>
 			<control type="group" id="304">
 				<!-- painel das miniaturas -->
-				<posx>0</posx>
-				<posy>681</posy>
+				<left>0</left>
+				<top>681</top>
 				<animation effect="slide" start="0,0" end="0,450" time="600" easing="out" tween="sine">Hidden</animation>
 				<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 				<visible>!Control.IsVisible(105)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>-44</posy>
+					<left>0</left>
+					<top>-44</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>1920</width>
 					<height>399</height>
 					<texture>darkgrey.png</texture>
@@ -36,24 +36,24 @@
 					<animation effect="fade" end="95" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>30</posx>
-					<posy>9</posy>
+					<left>30</left>
+					<top>9</top>
 					<width>28</width>
 					<height>332</height>
 					<texture flipx="true">photoshow_arrow.png</texture>
 					<animation effect="slide" start="-150" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
 				</control>
 				<control type="image">
-					<posx>1862</posx>
-					<posy>9</posy>
+					<left>1862</left>
+					<top>9</top>
 					<width>28</width>
 					<height>332</height>
 					<texture>photoshow_arrow.png</texture>
 					<animation effect="slide" start="150" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
 				</control>
 				<control type="label">
-					<posx>96</posx>
-					<posy>352</posy>
+					<left>96</left>
+					<top>352</top>
 					<width>1728</width>
 					<font>Font_18A</font>
 					<label>$INFO[Container.CurrentItem]/$INFO[Container.NumItems] | $INFO[ListItem.Label]</label>
@@ -61,8 +61,8 @@
 					<visible>!Control.HasFocus(80) + [Container(79).Column(0) | Container(79).Column(1) | Container(79).Column(2)]</visible>
 				</control>
 				<control type="label">
-					<posx>1824</posx>
-					<posy>352</posy>
+					<left>96</left>
+					<top>352</top>
 					<width>1728</width>
 					<align>right</align>
 					<font>Font_18A</font>
@@ -73,8 +73,8 @@
 			</control>
 			<control type="panel" id="79">
 				<viewtype label="31817">icon</viewtype>
-				<posx>66</posx>
-				<posy>682</posy>
+				<left>66</left>
+				<top>682</top>
 				<width>1756</width>
 				<height>378</height>
 				<pagecontrol>80</pagecontrol>
@@ -84,8 +84,8 @@
 				<scrolltime>450</scrolltime>
 				<itemlayout width="288" height="288">
 					<control type="image">
-						<posx>30</posx>
-						<posy>30</posy>
+						<left>30</left>
+						<top>30</top>
 						<width>288</width>
 						<height>288</height>
 						<aspectratio scalediffuse="true">keep</aspectratio>
@@ -96,8 +96,8 @@
 				</itemlayout>
 				<focusedlayout width="288" height="288">
 					<control type="image">
-						<posx>27</posx>
-						<posy>30</posy>
+						<left>27</left>
+						<top>30</top>
 						<width>288</width>
 						<height>288</height>
 						<aspectratio scalediffuse="true">keep</aspectratio>
@@ -109,22 +109,22 @@
 				</focusedlayout>
 			</control>
 			<control type="group">
-				<posy>930</posy>
+				<top>930</top>
 				<animation effect="slide" start="0,180" end="0,0" time="600" easing="in" tween="sine">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 				<animation effect="slide" start="0,0" end="0,150" time="200" tween="cubic" easing="inout" condition="System.IdleTime(8)">Conditional</animation>
 				<visible>Control.IsVisible(105)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>-44</posy>
+					<left>0</left>
+					<top>-44</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>1920</width>
 					<height>150</height>
 					<texture>darkgrey.png</texture>
@@ -132,8 +132,8 @@
 					<animation effect="fade" end="95" condition="true">Conditional</animation>
 				</control>
 				<control type="label">
-					<posx>30</posx>
-					<posy>36</posy>
+					<left>30</left>
+					<top>36</top>
 					<width>112</width>
 					<height>75</height>
 					<align>center</align>
@@ -144,8 +144,8 @@
 				</control>
 				<control type="label">
 					<!-- Nome da foto -->
-					<posx>145</posx>
-					<posy>36</posy>
+					<left>145</left>
+					<top>36</top>
 					<font>Font_18A</font>
 					<height>75</height>
 					<aligny>center</aligny>
@@ -154,8 +154,8 @@
 				</control>
 				<control type="label">
 					<!-- Detalhes -->
-					<posx>1890</posx>
-					<posy>15</posy>
+					<left>1290</left>
+					<top>15</top>
 					<width>600</width>
 					<height>150</height>
 					<align>right</align>
@@ -165,8 +165,8 @@
 					<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>968</posy>
+					<left>0</left>
+					<top>968</top>
 					<width>1920</width>
 					<height>112</height>
 					<texture>gradient_small.png</texture>
@@ -182,8 +182,8 @@
 			</control>
 			<control type="scrollbar" id="80">
 				<include>ScrollBar_Horizontal</include>
-				<posx>100</posx>
-				<posy>1010</posy>
+				<left>100</left>
+				<top>1010</top>
 				<width>1720</width>
 				<onup>79</onup>
 				<ondown>195</ondown>

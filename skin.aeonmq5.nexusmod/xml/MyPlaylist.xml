@@ -17,7 +17,7 @@
 		<include condition="Window.IsVisible(musicplaylist)">MusicPLWindow</include>
 		<include condition="Window.IsVisible(videoplaylist)">VideoPLWindow</include>
 		<control type="group">
-			<posy>47</posy>
+			<top>47</top>
 			<include>ContainerViewPage</include>
 			<visible>Window.IsActive(musicplaylist)</visible>
 		</control>

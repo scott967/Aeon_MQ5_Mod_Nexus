@@ -13,8 +13,8 @@
 			<ondown>Dialog.Close(640)</ondown>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<texture>black.png</texture>
@@ -30,26 +30,26 @@
 				<effect type="slide" start="-758,0" end="0,0" time="300" easing="inout" tween="cubic" />
 				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
-			<posx>1920</posx>
-			<posy>0</posy>
+			<left>1920</left>
+			<top>0</top>
 			<control type="image">
-				<posx>-15</posx>
-				<posy>0</posy>
+				<left>-15</left>
+				<top>0</top>
 				<width>45</width>
 				<height>1080</height>
 				<texture flipx="true">shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>30</posx>
-				<posy>0</posy>
+				<left>30</left>
+				<top>0</top>
 				<width>780</width>
 				<height>1080</height>
 				<texture>darkgrey.png</texture>
 			</control>
 			<control type="label">
-				<posx>60</posx>
-				<posy>30</posy>
+				<left>60</left>
+				<top>30</top>
 				<width>675</width>
 				<height>45</height>
 				<label>31911</label>
@@ -60,15 +60,15 @@
 				<include>Animation_Fade</include>
 			</control>
 			<control type="image">
-				<posx>60</posx>
-				<posy>105</posy>
+				<left>60</left>
+				<top>105</top>
 				<width>675</width>
 				<height>3</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="textbox">
-				<posx>60</posx>
-				<posy>135</posy>
+				<left>60</left>
+				<top>135</top>
 				<width>675</width>
 				<height>750</height>
 				<align>justify</align>

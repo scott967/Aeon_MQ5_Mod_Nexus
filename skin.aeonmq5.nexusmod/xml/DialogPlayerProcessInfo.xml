@@ -4,6 +4,15 @@
 <window>
 	<controls>
 		<!-- This was the old codecinfo provided in full screen video -->
+		<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>800</width>
+				<height>300</height>
+				<texture>black.png</texture>
+				<colordiffuse>90FFFFFF</colordiffuse>
+				<include>Animation_Fade</include>
+		</control>
 		<control type="grouplist">
 			<left>15</left>
 			<top>15</top>
@@ -65,9 +74,27 @@
 				<width>1605</width>
 				<height>30</height>
 				<aligny>bottom</aligny>
-				<label>$INFO[System.Memory(used.percent),Memory Used: ,       ]$INFO[System.CpuUsage,$LOCALIZE[13271] ]</label>
+				<label>$INFO[System.Memory(used.percent),Memory Used: ,       ]$INFO[System.CpuUsage,$LOCALIZE[13271] ,       ]</label>
 				<font>Font_18A</font>
 				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<width>1605</width>
+				<height>30</height>
+				<aligny>bottom</aligny>
+				<label>$INFO[System.SupportedHDRTypes,$LOCALIZE[39174]: ,     ]%INFO[VideoPlayer.HdrType,$INFO[14211] $INFO[20474]]</label>
+				<font>Font_18A</font>
+				<shadowcolor>black</shadowcolor>
+				<visible>!String.IsEmpty(System.SupportedHDRTypes)</visible>
+			</control>
+			<control type="label">
+				<width>1605</width>
+				<height>30</height>
+				<aligny>bottom</aligny>
+				<label>$LOCALIZE[39174]: $LOCALIZE[36623]</label>
+				<font>Font_18A</font>
+				<shadowcolor>black</shadowcolor>
+				<visible>String.IsEmpty(System.SupportedHDRTypes)</visible>
 			</control>
 		</control>
 		<!--  Addl Live TV data for CodecInfo -->

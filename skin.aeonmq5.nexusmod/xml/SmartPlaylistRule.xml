@@ -6,28 +6,28 @@
 	<defaultcontrol always="true">15</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<include>Animation_DialogPopup</include>
 	<controls>
 		<control type="image">
-			<posx>280</posx>
-			<posy>294</posy>
+			<left>280</left>
+			<top>294</top>
 			<width>45</width>
 			<height>474</height>
 			<texture flipx="true">shadow.png</texture>
 			<colordiffuse>C3FFFFFF</colordiffuse>
 		</control>
 		<control type="group">
-			<posx>324</posx>
-			<posy>294</posy>
+			<left>324</left>
+			<top>294</top>
 			<width>1270</width>
 			<height>492</height>
 			<control type="image">
 				<!-- Fundo -->
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1292</width>
 				<height>474</height>
 				<texture>darkgrey.png</texture>
@@ -35,8 +35,8 @@
 			</control>
 			<control type="image">
 				<!-- Fundo do titulo -->
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1292</width>
 				<height>75</height>
 				<texture>black.png</texture>
@@ -44,8 +44,8 @@
 			</control>
 			<control type="label">
 				<!-- Titulo -->
-				<posx>30</posx>
-				<posy>15</posy>
+				<left>30</left>
+				<top>15</top>
 				<width>1038</width>
 				<align>center</align>
 				<label>21421</label>
@@ -54,8 +54,8 @@
 			</control>
 			<control type="label" id="0">
 				<!-- Rule match label -->
-				<posx>38</posx>
-				<posy>112</posy>
+				<left>38</left>
+				<top>112</top>
 				<width>720</width>
 				<label>21422</label>
 				<font>Font_18</font>
@@ -64,8 +64,8 @@
 			<control type="group" id="9001">
 				<control type="button" id="15">
 					<!-- Rule Field -->
-					<posx>0</posx>
-					<posy>165</posy>
+					<left>0</left>
+					<top>165</top>
 					<width>510</width>
 					<height>62</height>
 					<font>Font_18</font>
@@ -82,8 +82,8 @@
 				</control>
 				<control type="button" id="16">
 					<!-- Rule operator -->
-					<posx>544</posx>
-					<posy>165</posy>
+					<left>544</left>
+					<top>165</top>
 					<width>504</width>
 					<height>62</height>
 					<font>Font_18</font>
@@ -102,8 +102,8 @@
 			<control type="edit" id="17">
 				<!-- Value Button -->
 				<textoffsetx>18</textoffsetx>
-				<posx>0</posx>
-				<posy>303</posy>
+				<left>0</left>
+				<top>303</top>
 				<width>1048</width>
 				<height>66</height>
 				<font>Font_20</font>
@@ -119,32 +119,32 @@
 			</control>
 			<control type="image">
 				<!-- Options -->
-				<posx>1006</posx>
-				<posy>0</posy>
+				<left>1006</left>
+				<top>0</top>
 				<width>45</width>
 				<height>474</height>
 				<texture flipx="true">shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>1294</posx>
-				<posy>0</posy>
+				<left>1294</left>
+				<top>0</top>
 				<width>45</width>
 				<height>474</height>
 				<texture>shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>1050</posx>
-				<posy>0</posy>
+				<left>1050</left>
+				<top>0</top>
 				<width>244</width>
 				<height>474</height>
 				<texture>grey.png</texture>
 				<colordiffuse>90FFFFFF</colordiffuse>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>1050</posx>
-				<posy>165</posy>
+				<left>1050</left>
+				<top>165</top>
 				<control type="button" id="20">
 					<!-- Browse -->
 					<include>SettingsDialogButton</include>
@@ -165,8 +165,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>1038</posx>
-				<posy>0</posy>
+				<left>1038</left>
+				<top>0</top>
 				<width>256</width>
 				<height>474</height>
 				<texture flipx="true">menu_glass.png</texture>

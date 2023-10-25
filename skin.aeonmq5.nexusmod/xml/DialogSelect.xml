@@ -8,8 +8,8 @@
 <window>
 	<defaultcontrol>3</defaultcontrol>
 	<coordinates>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="image">
@@ -22,39 +22,39 @@
 			<include>Animation_Fade</include>
 			<control type="group">
 				<!-- right group except for game video select -->
-				<posx>75</posx>
+				<left>75</left>
 				<animation effect="slide" start="900,0" end="0,0" time="1000" tween="cubic" easing="out">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="900,0" time="1000" tween="cubic" easing="out">WindowClose</animation>
 				<animation effect="slide" start="1200,0" end="0,0" time="1000" tween="cubic" easing="out">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
 				<visible>![Player.HasVideo | Player.HasGame]</visible>
 				<control type="image">
-					<posx>1208</posx>
-					<posy>69</posy>
+					<left>1208</left>
+					<top>69</top>
 					<width>638</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1208</posx>
-					<posy>112</posy>
+					<left>1208</left>
+					<top>112</top>
 					<width>638</width>
 					<height>968</height>
 					<texture>black.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1208</posx>
-					<posy>680</posy>
+					<left>1208</left>
+					<top>680</top>
 					<width>638</width>
 					<height>402</height>
 					<texture>black.png</texture>
 					<colordiffuse>90FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1260</posx>
-					<posy>142</posy>
+					<left>1260</left>
+					<top>142</top>
 					<width>540</width>
 					<height>540</height>
 					<fadetime>FanartCrossFadeTime</fadetime>
@@ -63,8 +63,8 @@
 					<bordertexture border="-2">black.png</bordertexture>
 				</control>
 				<control type="image">
-					<posx>1260</posx>
-					<posy>690</posy>
+					<left>1260</left>
+					<top>690</top>
 					<width>540</width>
 					<height>540</height>
 					<fadetime>FanartCrossFadeTime</fadetime>
@@ -73,8 +73,8 @@
 					<bordertexture flipy="true" border="-2" diffuse="thumb_reflect.png">black.png</bordertexture>
 				</control>
 				<control type="textbox">
-					<posx>1278</posx>
-					<posy>694</posy>
+					<left>1278</left>
+					<top>694</top>
 					<width>506</width>
 					<height>262</height>
 					<font>Font_18A</font>
@@ -83,39 +83,39 @@
 				</control>
 			</control>
 			<control type="group">				<!-- right group game video select -->
-				<posx>75</posx>
+				<left>75</left>
 				<animation effect="slide" start="900,0" end="0,0" time="1000" tween="cubic" easing="out">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="900,0" time="1000" tween="cubic" easing="out">WindowClose</animation>
 				<animation effect="slide" start="1200,0" end="0,0" time="1000" tween="cubic" easing="out">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
 				<visible>[Window.IsActive(gamestretchmode) | Window.IsActive(gamevideofilter) | Window.IsActive(gamevideorotation)]</visible>
 				<control type="image">
-					<posx>1208</posx>
-					<posy>69</posy>
+					<left>1208</left>
+					<top>69</top>
 					<width>638</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1208</posx>
-					<posy>112</posy>
+					<left>1208</left>
+					<top>112</top>
 					<width>638</width>
 					<height>968</height>
 					<texture>black.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1208</posx>
-					<posy>680</posy>
+					<left>1208</left>
+					<top>680</top>
 					<width>638</width>
 					<height>402</height>
 					<texture>black.png</texture>
 					<colordiffuse>90FFFFFF</colordiffuse>
 				</control>
 				<control type="textbox" id="12">
-					<posx>1278</posx>
-					<posy>694</posy>
+					<left>1278</left>
+					<top>694</top>
 					<width>506</width>
 					<height>262</height>
 					<font>Font_18A</font>
@@ -129,32 +129,32 @@
 				<animation effect="slide" start="-1200,0" end="0,0" time="700" tween="cubic" easing="out">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>69</posy>
+					<left>0</left>
+					<top>69</top>
 					<width>1282</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1282</posx>
-					<posy>112</posy>
+					<left>1282</left>
+					<top>112</top>
 					<width>45</width>
 					<height>968</height>
 					<texture>shadow.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>112</posy>
+					<left>0</left>
+					<top>112</top>
 					<width>1282</width>
 					<height>968</height>
 					<texture>black.png</texture>
 					<colordiffuse>90FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>112</posy>
+					<left>0</left>
+					<top>112</top>
 					<width>1282</width>
 					<height>90</height>
 					<texture>black.png</texture>
@@ -162,8 +162,8 @@
 				</control>
 				<control type="label" id="1">
 					<!-- header label -->
-					<posx>68</posx>
-					<posy>136</posy>
+					<left>68</left>
+					<top>136</top>
 					<width>1156</width>
 					<height>34</height>
 					<font>Font_23</font>
@@ -175,8 +175,8 @@
 					<control type="list" id="3">
 						<!-- Common List -->
 						<viewtype label="31801">list</viewtype>
-						<posx>0</posx>
-						<posy>237</posy>
+						<left>0</left>
+						<top>237</top>
 						<width>1282</width>
 						<height>705</height>
 						<pagecontrol>61</pagecontrol>
@@ -189,15 +189,15 @@
 						<preloaditems>2</preloaditems>
 						<itemlayout height="60">
 							<control type="image">
-								<posx>15</posx>
-								<posy>58</posy>
+								<left>15</left>
+								<top>58</top>
 								<width>1252</width>
 								<height>1</height>
 								<texture>line.png</texture>
 							</control>
 							<control type="label">
-								<posx>68</posx>
-								<posy>0</posy>
+								<left>68</left>
+								<top>0</top>
 								<width>1140</width>
 								<height>62</height>
 								<font>Font_23</font>
@@ -208,16 +208,16 @@
 						</itemlayout>
 						<focusedlayout height="60">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<height>60</height>
 								<width>1282</width>
 								<texture>settings_button_focus.png</texture>
 								<animation effect="fade" start="100" end="50" time="0" condition="!Control.Hasfocus(3)">conditional</animation>
 							</control>
 							<control type="label">
-								<posx>68</posx>
-								<posy>0</posy>
+								<left>68</left>
+								<top>0</top>
 								<width>1140</width>
 								<height>62</height>
 								<font>Font_23</font>
@@ -230,8 +230,8 @@
 					<control type="list" id="6">
 						<!-- Addon List -->
 						<viewtype label="31801">list</viewtype>
-						<posx>0</posx>
-						<posy>237</posy>
+						<left>0</left>
+						<top>237</top>
 						<width>1282</width>
 						<height>705</height>
 						<pagecontrol>61</pagecontrol>
@@ -245,15 +245,15 @@
 						<animation effect="fade" start="100" end="50" time="200" condition="!Control.HasFocus(6)">Conditional</animation>
 						<itemlayout height="98">
 							<control type="image">
-								<posx>15</posx>
-								<posy>96</posy>
+								<left>15</left>
+								<top>96</top>
 								<width>1252</width>
 								<height>1</height>
 								<texture>line.png</texture>
 							</control>
 							<control type="label">
-								<posx>68</posx>
-								<posy>0</posy>
+								<left>68</left>
+								<top>0</top>
 								<width>1140</width>
 								<height>62</height>
 								<font>Font_23</font>
@@ -262,8 +262,8 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>68</posx>
-								<posy>62</posy>
+								<left>68</left>
+								<top>62</top>
 								<height>24</height>
 								<width>1140</width>
 								<font>Font_18A</font>
@@ -274,8 +274,8 @@
 								<visible>String.IsEmpty(ListItem.AddonCreator)+ String.IsEmpty(ListItem.Property(extension))</visible>
 							</control>
 							<control type="label">
-								<posx>68</posx>
-								<posy>62</posy>
+								<left>68</left>
+								<top>62</top>
 								<height>24</height>
 								<width>1140</width>
 								<font>Font_18A</font>
@@ -286,8 +286,8 @@
 								<visible>!String.IsEmpty(ListItem.AddonCreator) + String.IsEmpty(ListItem.Property(extension))</visible>
 							</control>
 							<control type="label">
-								<posx>68</posx>
-								<posy>62</posy>
+								<left>68</left>
+								<top>62</top>
 								<height>24</height>
 								<width>1140</width>
 								<font>Font_18A</font>
@@ -300,16 +300,16 @@
 						</itemlayout>
 						<focusedlayout height="98">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1282</width>
 								<height>98</height>
 								<texture>settings_button_focus.png</texture>
 								<animation effect="fade" start="100" end="50" time="0" condition="!Control.Hasfocus(6)">conditional</animation>
 							</control>
 							<control type="label">
-								<posx>68</posx>
-								<posy>0</posy>
+								<left>68</left>
+								<top>0</top>
 								<width>1140</width>
 								<height>62</height>
 								<font>Font_23</font>
@@ -318,8 +318,8 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>68</posx>
-								<posy>62</posy>
+								<left>68</left>
+								<top>62</top>
 								<width>1140</width>
 								<height>24</height>
 								<font>Font_18A</font>
@@ -330,8 +330,8 @@
 								<visible>String.IsEmpty(ListItem.AddonCreator)+ String.IsEmpty(ListItem.Property(extension))</visible>
 							</control>
 							<control type="label">
-								<posx>68</posx>
-								<posy>62</posy>
+								<left>68</left>
+								<top>62</top>
 								<width>1140</width>
 								<height>24</height>
 								<font>Font_18A</font>
@@ -342,8 +342,8 @@
 								<visible>!String.IsEmpty(ListItem.AddonCreator) + String.IsEmpty(ListItem.Property(extension))</visible>
 							</control>
 							<control type="label">
-								<posx>68</posx>
-								<posy>62</posy>
+								<left>68</left>
+								<top>62</top>
 								<height>24</height>
 								<width>1140</width>
 								<font>Font_18A</font>
@@ -358,8 +358,8 @@
 					<!-- ScrollBar -->
 					<control type="scrollbar" id="61">
 						<include>ScrollBar_Vertical</include>
-						<posx>1252</posx>
-						<posy>237</posy>
+						<left>1252</left>
+						<top>237</top>
 						<height>705</height>
 						<onleft condition="Control.IsVisible(3)">3</onleft>
 						<onleft condition="Control.IsVisible(6)">6</onleft>
@@ -372,8 +372,8 @@
 				<control type="group">					<!-- Used for games video settings -->
 					<visible>Window.IsActive(gamestretchmode) | Window.IsActive(gamevideofilter) | Window.IsActive(gamevideorotation)</visible>
 					<control type="image">
-						<posx>0</posx>
-						<posy>202</posy>
+						<left>0</left>
+						<top>202</top>
 						<width>1282</width>
 						<height>968</height>
 						<texture>black.png</texture>
@@ -382,8 +382,8 @@
 					<!-- ScrollBar -->
 					<control type="scrollbar" id="62">
 						<include>ScrollBar_Vertical</include>
-						<posx>1252</posx>
-						<posy>237</posy>
+						<left>1252</left>
+						<top>237</top>
 						<height>705</height>
 						<onleft>11</onleft>
 						<onright>11</onright>
@@ -392,8 +392,8 @@
 						<visible allowhiddenfocus="true">Control.HasFocus(62) | Control.HasFocus(11)</visible>
 					</control>
 					<control type="panel" id="11">
-						<posx>45</posx>
-						<posy>237</posy>
+						<left>45</left>
+						<top>237</top>
 						<height>726</height>
 						<width>1237</width>
 						<orientation>vertical</orientation>
@@ -404,8 +404,8 @@
 						<ondown>11</ondown>
 						<itemlayout width="1237" height="242">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>430</width>
 								<height>240</height>
 								<texture>black.png</texture>
@@ -414,8 +414,8 @@
 								<colordiffuse>FFFFFFFF</colordiffuse>
 							</control>
 							<control type="gamewindow">
-								<posx>3</posx>
-								<posy>3</posy>
+								<left>3</left>
+								<top>3</top>
 								<width>424</width>
 								<height>234</height>
 								<videofilter>$INFO[ListItem.Property(game.videofilter)]</videofilter>
@@ -423,8 +423,8 @@
 								<rotation>$INFO[ListItem.Property(game.videorotation)]</rotation>
 							</control>
 							<control type="label">
-								<posy>90</posy>
-								<posx>565</posx>
+								<top>90</top>
+								<left>565</left>
 								<height>62</height>
 								<width>715</width>
 								<aligny>center</aligny>
@@ -435,8 +435,8 @@
 						</itemlayout>
 						<focusedlayout width="1237" height="242">
 						<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>430</width>
 								<height>240</height>
 								<texture>black.png</texture>
@@ -445,8 +445,8 @@
 								<colordiffuse>FFFFFFFF</colordiffuse>
 							</control>
 							<control type="gamewindow">
-								<posx>3</posx>
-								<posy>3</posy>
+								<left>3</left>
+								<top>3</top>
 								<width>424</width>
 								<height>234</height>
 								<videofilter>$INFO[ListItem.Property(game.videofilter)]</videofilter>
@@ -454,16 +454,16 @@
 								<rotation>$INFO[ListItem.Property(game.videorotation)]</rotation>
 							</control>
 							<control type="image">
-								<posx>495</posx>
-								<posy>72</posy>
+								<left>495</left>
+								<top>72</top>
 								<height>98</height>
 								<width>715</width>
 								<texture>settings_button_focus.png</texture>
 								<animation effect="fade" start="100" end="50" time="0" condition="Control.Hasfocus(11)">conditional</animation>
 							</control>
 							<control type="label">
-								<posy>90</posy>
-								<posx>565</posx>
+								<top>90</top>
+								<left>565</left>
 								<height>62</height>
 								<width>715</width>
 								<aligny>center</aligny>
@@ -478,8 +478,8 @@
 				<visible>![Window.IsActive(gamestretchmode) | Window.IsActive(gamevideofilter) | Window.IsActive(gamevideorotation)]</visible>
 				<control type="button" id="5">
 					<description>OK button</description>
-					<posx>900</posx>
-					<posy>945</posy>
+					<left>585</left>
+					<top>945</top>
 					<width>315</width>
 					<height>52</height>
 					<!-- <label>186</label> -->
@@ -503,8 +503,8 @@
 				</control>
 				<control type="button" id="7">
 					<description>Cancel Button</description>
-					<posx>270</posx>
-					<posy>945</posy>
+					<left>-45</left>
+					<top>945</top>
 					<width>315</width>
 					<height>52</height>
 					<label>222</label>
@@ -527,8 +527,8 @@
 				</control>
 				<control type="button" id="8">
 					<description>3rd button</description>
-					<posx>585</posx>
-					<posy>945</posy>
+					<left>270</left>
+					<top>945</top>
 					<width>315</width>
 					<height>52</height>
 					<label></label>

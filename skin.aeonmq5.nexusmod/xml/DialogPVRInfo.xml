@@ -13,24 +13,24 @@
 		<control type="group">
 			<include>Animation_DialogPopup</include>
 			<control type="image">
-				<posx>165</posx>
-				<posy>0</posy>
+				<left>165</left>
+				<top>0</top>
 				<width>45</width>
 				<height>1080</height>
 				<texture flipx="true">shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>1710</posx>
-				<posy>0</posy>
+				<left>1710</left>
+				<top>0</top>
 				<width>45</width>
 				<height>1080</height>
 				<texture>shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>210</posx>
-				<posy>0</posy>
+				<left>210</left>
+				<top>0</top>
 				<width>1500</width>
 				<height>1080</height>
 				<texture>darkgrey.png</texture>
@@ -38,16 +38,16 @@
 				<include>Animation_DefaultGlass</include>
 			</control>
 			<control type="image">
-				<posx>210</posx>
-				<posy>0</posy>
+				<left>210</left>
+				<top>0</top>
 				<width>1500</width>
 				<height>120</height>
 				<texture>black.png</texture>
 				<colordiffuse>90FFFFFF</colordiffuse>
 			</control>
 			<control type="label" id="2">
-				<posx>322</posx>
-				<posy>34</posy>
+				<left>322</left>
+				<top>34</top>
 				<width>1278</width>
 				<height>45</height>
 				<label>$LOCALIZE[19047]</label>
@@ -59,8 +59,8 @@
 			</control>
 			<control type="label">
 				<!-- Nome do programa -->
-				<posx>322</posx>
-				<posy>135</posy>
+				<left>322</left>
+				<top>135</top>
 				<width>1278</width>
 				<height>45</height>
 				<align>center</align>
@@ -71,12 +71,12 @@
 				<scroll>true</scroll>
 			</control>
 			<control type="group">
-				<posx>622</posx>
-				<posy>214</posy>
+				<left>622</left>
+				<top>214</top>
 				<control type="label">
 					<!-- Hora/Data -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>978</width>
 					<height>38</height>
 					<align>left</align>
@@ -88,8 +88,8 @@
 				<control type="label">
 					<!-- Duracao -->
 					<description>Duration</description>
-					<posx>0</posx>
-					<posy>52</posy>
+					<left>0</left>
+					<top>52</top>
 					<width>978</width>
 					<height>38</height>
 					<align>left</align>
@@ -100,8 +100,8 @@
 				</control>
 				<control type="label">
 					<!-- Canal -->
-					<posx>0</posx>
-					<posy>105</posy>
+					<left>0</left>
+					<top>105</top>
 					<width>978</width>
 					<height>38</height>
 					<align>left</align>
@@ -112,8 +112,8 @@
 				</control>
 				<control type="label">
 					<!-- Gereno -->
-					<posx>0</posx>
-					<posy>158</posy>
+					<left>0</left>
+					<top>158</top>
 					<width>978</width>
 					<height>38</height>
 					<align>left</align>
@@ -124,24 +124,24 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>322</posx>
-				<posy>195</posy>
+				<left>322</left>
+				<top>195</top>
 				<width>1238</width>
 				<height>3</height>
 				<align>left</align>
 				<texture flipx="true">divider.png</texture>
 			</control>
 			<control type="image">
-				<posx>322</posx>
-				<posy>428</posy>
+				<left>322</left>
+				<top>428</top>
 				<width>1238</width>
 				<height>3</height>
 				<align>left</align>
 				<texture flipx="true">divider.png</texture>
 			</control>
 			<control type="textbox" id="400">
-				<posx>322</posx>
-				<posy>450</posy>
+				<left>322</left>
+				<top>450</top>
 				<width>1278</width>
 				<height>390</height>
 				<align>justify</align>
@@ -151,16 +151,16 @@
 				<autoscroll delay="20000" time="3000" repeat="20000">!Skin.HasSetting(noallowscroll)</autoscroll>
 			</control>
 			<control type="image">
-				<posx>210</posx>
-				<posy>900</posy>
+				<left>210</left>
+				<top>900</top>
 				<height>60</height>
 				<width>1500</width>
 				<texture>black.png</texture>
 				<colordiffuse>90FFFFFF</colordiffuse>
 			</control>
 			<control type="grouplist" id="9001">
-				<posx>210</posx>
-				<posy>900</posy>
+				<left>210</left>
+				<top>900</top>
 				<onup>60</onup>
 				<ondown>60</ondown>
 				<orientation>horizontal</orientation>

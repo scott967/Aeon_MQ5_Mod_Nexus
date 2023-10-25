@@ -8,12 +8,12 @@
 	<defaultcontrol always="true">22</defaultcontrol>
 	<controls>
 		<control type="group">
-			<posy>120</posy>
+			<top>120</top>
 			<include>Animation_DialogPopup</include>
 			<visible>!Window.IsVisible(smartplaylistrule)</visible>
 			<control type="image">
-				<posx>256</posx>
-				<posy>60</posy>
+				<left>256</left>
+				<top>60</top>
 				<width>45</width>
 				<height>722</height>
 				<texture flipx="true">shadow.png</texture>
@@ -21,8 +21,8 @@
 			</control>
 			<control type="image">
 				<!-- Fundo -->
-				<posx>300</posx>
-				<posy>60</posy>
+				<left>300</left>
+				<top>60</top>
 				<width>1312</width>
 				<height>722</height>
 				<texture>darkgrey.png</texture>
@@ -30,8 +30,8 @@
 			</control>
 			<control type="image">
 				<!-- Fundo do titulo -->
-				<posx>300</posx>
-				<posy>60</posy>
+				<left>300</left>
+				<top>60</top>
 				<width>1312</width>
 				<height>75</height>
 				<texture>black.png</texture>
@@ -39,8 +39,8 @@
 			</control>
 			<control type="label" id="2">
 				<!-- Titulo -->
-				<posx>330</posx>
-				<posy>75</posy>
+				<left>330</left>
+				<top>75</top>
 				<width>1035</width>
 				<align>center</align>
 				<font>Font_23</font>
@@ -49,8 +49,8 @@
 			<control type="group" id="9002">
 				<control type="button" id="22">
 					<!-- type -->
-					<posx>300</posx>
-					<posy>135</posy>
+					<left>300</left>
+					<top>135</top>
 					<width>1066</width>
 					<label>467</label>
 					<height>60</height>
@@ -68,16 +68,16 @@
 				</control>
 				<control type="label" id="0">
 					<!-- name of playlist -->
-					<posx>360</posx>
-					<posy>210</posy>
+					<left>360</left>
+					<top>210</top>
 					<width>630</width>
 					<font>Font_18</font>
 					<textcolor>$VAR[value_headercolor]</textcolor>
 					<label>21433</label>
 				</control>
 				<control type="image">
-					<posx>300</posx>
-					<posy>255</posy>
+					<left>300</left>
+					<top>255</top>
 					<width>1066</width>
 					<height>60</height>
 					<texture>black.png</texture>
@@ -86,8 +86,8 @@
 				</control>
 				<control type="button" id="12">
 					<!-- name of playlist -->
-					<posx>300</posx>
-					<posy>255</posy>
+					<left>300</left>
+					<top>255</top>
 					<width>1066</width>
 					<height>60</height>
 					<textwidth>945</textwidth>
@@ -109,8 +109,8 @@
 				</control>
 				<control type="label">
 					<!-- find items where -->
-					<posx>360</posx>
-					<posy>322</posy>
+					<left>360</left>
+					<top>322</top>
 					<width>630</width>
 					<align>left</align>
 					<font>Font_18</font>
@@ -119,8 +119,8 @@
 				</control>
 				<control type="list" id="10">
 					<!-- Rules -->
-					<posx>300</posx>
-					<posy>368</posy>
+					<left>300</left>
+					<top>368</top>
 					<width>1066</width>
 					<height>184</height>
 					<onup>12</onup>
@@ -129,8 +129,8 @@
 					<ondown>16</ondown>
 					<itemlayout height="60" width="1066">
 						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>600</width>
 							<height>58</height>
 							<aligny>center</aligny>
@@ -142,8 +142,8 @@
 					</itemlayout>
 					<focusedlayout height="60" width="1066">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1066</width>
 							<height>60</height>
 							<texture>black.png</texture>
@@ -151,8 +151,8 @@
 							<visible>![Control.HasFocus(10) | Control.HasFocus(13) | Control.HasFocus(14) | Control.HasFocus(15)]</visible>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1066</width>
 							<height>60</height>
 							<texture>settings_button_focus.png</texture>
@@ -160,8 +160,8 @@
 							<visible>Control.HasFocus(10) | Control.HasFocus(13) | Control.HasFocus(14) | Control.HasFocus(15)</visible>
 						</control>
 						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>600</width>
 							<height>58</height>
 							<aligny>center</aligny>
@@ -173,8 +173,8 @@
 							<visible>![Control.HasFocus(10) | Control.HasFocus(13) | Control.HasFocus(14) | Control.HasFocus(15)]</visible>
 						</control>
 						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>600</width>
 							<height>58</height>
 							<aligny>center</aligny>
@@ -188,8 +188,8 @@
 				</control>
 				<control type="button" id="16">
 					<!-- items must match -->
-					<posx>300</posx>
-					<posy>540</posy>
+					<left>300</left>
+					<top>540</top>
 					<width>1066</width>
 					<label>21424</label>
 					<height>60</height>
@@ -208,8 +208,8 @@
 				</control>
 				<control type="button" id="17">
 					<!-- limit to -->
-					<posx>300</posx>
-					<posy>600</posy>
+					<left>300</left>
+					<top>600</top>
 					<width>1066</width>
 					<label>21427</label>
 					<height>60</height>
@@ -227,8 +227,8 @@
 				</control>
 				<control type="button" id="18">
 					<!-- order by -->
-					<posx>300</posx>
-					<posy>660</posy>
+					<left>300</left>
+					<top>660</top>
 					<width>532</width>
 					<label>581</label>
 					<height>60</height>
@@ -248,8 +248,8 @@
 				</control>
 				<control type="button" id="19">
 					<!-- ascending / descending -->
-					<posx>832</posx>
-					<posy>660</posy>
+					<left>832</left>
+					<top>660</top>
 					<height>60</height>
 					<width>532</width>
 					<label>580</label>
@@ -270,8 +270,8 @@
 				<!-- new controls for grouping in Gotham  -->
 				<control type="button" id="23">
 					<!-- group by -->
-					<posx>300</posx>
-					<posy>720</posy>
+					<left>300</left>
+					<top>720</top>
 					<width>532</width>
 					<label>21458</label>
 					<height>60</height>
@@ -290,8 +290,8 @@
 				</control>
 				<control type="radiobutton" id="24">
 					<!-- mixed -->
-					<posx>832</posx>
-					<posy>720</posy>
+					<left>832</left>
+					<top>720</top>
 					<height>60</height>
 					<width>532</width>
 					<label>$LOCALIZE[467]: $LOCALIZE[21459]</label>
@@ -308,32 +308,32 @@
 			</control>
 			<control type="image">
 				<!-- Options -->
-				<posx>1323</posx>
-				<posy>60</posy>
+				<left>1323</left>
+				<top>60</top>
 				<width>45</width>
 				<height>722</height>
 				<texture flipx="true">shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>1612</posx>
-				<posy>60</posy>
+				<left>1612</left>
+				<top>60</top>
 				<width>45</width>
 				<height>722</height>
 				<texture>shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>1368</posx>
-				<posy>60</posy>
+				<left>1368</left>
+				<top>60</top>
 				<width>244</width>
 				<height>722</height>
 				<texture>grey.png</texture>
 				<colordiffuse>90FFFFFF</colordiffuse>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>1368</posx>
-				<posy>368</posy>
+				<left>1368</left>
+				<top>368</top>
 				<control type="button" id="13">
 					<!-- Add -->
 					<include>SettingsDialogButton</include>
@@ -366,8 +366,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>1356</posx>
-				<posy>60</posy>
+				<left>1356</left>
+				<top>60</top>
 				<width>256</width>
 				<height>722</height>
 				<texture flipx="true">menu_glass.png</texture>

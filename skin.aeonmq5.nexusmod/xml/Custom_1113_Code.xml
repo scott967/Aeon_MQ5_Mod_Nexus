@@ -10,14 +10,14 @@
 	<onunload condition="Window.IsActive(Home)">AlarmClock(firstfocus,SetFocus(9100),0:01,true)</onunload>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="image">
 			<!-- Kiosk Code -->
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<texture>darkgrey.png</texture>
@@ -53,8 +53,8 @@
 		<control type="group">
 			<include>Animation_DialogPopup</include>
 			<control type="image">
-				<posx>525</posx>
-				<posy>368</posy>
+				<left>525</left>
+				<top>368</top>
 				<width>180</width>
 				<height>180</height>
 				<align>left</align>
@@ -63,8 +63,8 @@
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="image">
-				<posx>540</posx>
-				<posy>292</posy>
+				<left>540</left>
+				<top>292</top>
 				<width>150</width>
 				<height>180</height>
 				<align>left</align>
@@ -74,8 +74,8 @@
 				<animation effect="slide" start="0,0" end="0,-45" time="400" tween="circle" easing="in" condition="String.Contains(skin.string(codestep),step3)">Conditional</animation>
 			</control>
 			<control type="label">
-				<posx>750</posx>
-				<posy>338</posy>
+				<left>750</left>
+				<top>338</top>
 				<width>870</width>
 				<height>57</height>
 				<font>Font_32</font>
@@ -85,8 +85,8 @@
 				<label>[COLOR=$VAR[value_headercolor]]$VAR[value_kioskcodecondition][/COLOR]</label>
 			</control>
 			<control type="label">
-				<posx>750</posx>
-				<posy>435</posy>
+				<left>750</left>
+				<top>435</top>
 				<width>705</width>
 				<height>180</height>
 				<font>Font_24</font>

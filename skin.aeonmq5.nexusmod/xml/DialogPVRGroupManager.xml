@@ -12,24 +12,24 @@
 			<visible>!Window.IsVisible(FileBrowser)</visible>
 			<include>Animation_DialogPopup</include>
 			<control type="image">
-				<posx>165</posx>
-				<posy>0</posy>
+				<left>165</left>
+				<top>0</top>
 				<width>45</width>
 				<height>1080</height>
 				<texture flipx="true">shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>1710</posx>
-				<posy>0</posy>
+				<left>1710</left>
+				<top>0</top>
 				<width>45</width>
 				<height>1080</height>
 				<texture>shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>210</posx>
-				<posy>0</posy>
+				<left>210</left>
+				<top>0</top>
 				<width>1500</width>
 				<height>1080</height>
 				<texture>darkgrey.png</texture>
@@ -37,8 +37,8 @@
 				<animation effect="fade" end="85" condition="true">Conditional</animation>
 			</control>
 			<control type="image">
-				<posx>210</posx>
-				<posy>0</posy>
+				<left>210</left>
+				<top>0</top>
 				<width>1500</width>
 				<height>120</height>
 				<texture>black.png</texture>
@@ -46,8 +46,8 @@
 			</control>
 			<control type="label">
 				<description>header label Group management</description>
-				<posx>322</posx>
-				<posy>34</posy>
+				<left>322</left>
+				<top>34</top>
 				<width>1278</width>
 				<height>45</height>
 				<label>$LOCALIZE[19143]</label>
@@ -59,8 +59,8 @@
 			</control>
 			<control type="group">
 				<description>Chan Group list</description>
-				<posx>245</posx>
-				<posy>105</posy>
+				<left>245</left>
+				<top>105</top>
 				<control type="label">
 					<description>name label Avail Groups</description>
 					<left>0</left>
@@ -98,8 +98,8 @@
 					</itemlayout>
 					<focusedlayout height="45" width="375">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>375</width>
 							<height>45</height>
 							<texture>settings_button_focus.png</texture>
@@ -117,8 +117,8 @@
 				</control>
 				<control type="scrollbar" id="73">
 					<include>ScrollBar_Vertical</include>
-					<posx>0</posx>
-					<posy>75</posy>
+					<left>0</left>
+					<top>75</top>
 					<height>525</height>
 					<onleft>9002</onleft>
 					<onright>13</onright>
@@ -132,8 +132,8 @@
 				<top>105</top>
 				<control type="label" id="21">
 					<description>name label</description>
-					<posx>30</posx>
-					<posy>0</posy>
+					<left>30</left>
+					<top>0</top>
 					<height>45</height>
 					<font>Font_18</font>
 					<align>left</align>
@@ -155,16 +155,16 @@
 					<itemgap>0</itemgap>
 					<itemlayout height="45" width="440">
 						<control type="image">
-							<posx>45</posx>
-							<posy>3</posy>
+							<left>45</left>
+							<top>3</top>
 							<width>78</width>
 							<height>39</height>
 							<aspectratio>keep</aspectratio>
 							<texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
-							<posx>137</posx>
-							<posy>0</posy>
+							<left>137</left>
+							<top>0</top>
 							<width>440</width>
 							<height>45</height>
 							<font>Font_18</font>
@@ -177,8 +177,8 @@
 					</itemlayout>
 					<focusedlayout height="45" width="440">
 						<control type="image">
-							<posx>40</posx>
-							<posy>0</posy>
+							<left>40</left>
+							<top>0</top>
 							<width>400</width>
 							<height>45</height>
 							<texture>settings_button_focus.png</texture>
@@ -186,8 +186,8 @@
 							<animation effect="fade" start="100" end="50" time="50" condition="!Control.Hasfocus(20)">conditional</animation>
 						</control>
 						<control type="image">
-							<posx>45</posx>
-							<posy>0</posy>
+							<left>45</left>
+							<top>0</top>
 							<width>88</width>
 							<height>45</height>
 							<texture>black.png</texture>
@@ -195,16 +195,16 @@
 							<animation effect="fade" end="70" condition="true">Conditional</animation>
 						</control>
 						<control type="image">
-							<posx>50</posx>
-							<posy>3</posy>
+							<left>50</left>
+							<top>3</top>
 							<width>78</width>
 							<height>39</height>
 							<aspectratio>keep</aspectratio>
 							<texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
-							<posx>137</posx>
-							<posy>0</posy>
+							<left>137</left>
+							<top>0</top>
 							<width>400</width>
 							<height>45</height>
 							<font>Font_18</font>
@@ -216,8 +216,8 @@
 							<visible>Control.HasFocus(11)</visible>
 						</control>
 						<control type="label">
-							<posx>137</posx>
-							<posy>0</posy>
+							<left>137</left>
+							<top>0</top>
 							<width>400</width>
 							<height>45</height>
 							<font>Font_18</font>
@@ -232,8 +232,8 @@
 				</control>
 				<control type="scrollbar" id="71">
 					<include>ScrollBar_Vertical</include>
-					<posx>-20</posx>
-					<posy>75</posy>
+					<left>-20</left>
+					<top>75</top>
 					<height>525</height>
 					<onleft>13</onleft>
 					<onright>11</onright>
@@ -270,16 +270,16 @@
 					<itemgap>0</itemgap>
 					<itemlayout height="45" width="440">
 						<control type="image">
-							<posx>45</posx>
-							<posy>3</posy>
+							<left>45</left>
+							<top>3</top>
 							<width>78</width>
 							<height>39</height>
 							<aspectratio>keep</aspectratio>
 							<texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
-							<posx>137</posx>
-							<posy>0</posy>
+							<left>137</left>
+							<top>0</top>
 							<width>375</width>
 							<height>45</height>
 							<font>Font_18</font>
@@ -292,8 +292,8 @@
 					</itemlayout>
 					<focusedlayout height="45" width="440">
 						<control type="image">
-							<posx>40</posx>
-							<posy>0</posy>
+							<left>40</left>
+							<top>0</top>
 							<width>400</width>
 							<height>45</height>
 							<texture>settings_button_focus.png</texture>
@@ -301,8 +301,8 @@
 							<animation effect="fade" start="100" end="50" time="50" condition="!Control.Hasfocus(20)">conditional</animation>
 						</control>
 						<control type="image">
-							<posx>45</posx>
-							<posy>0</posy>
+							<left>45</left>
+							<top>0</top>
 							<width>88</width>
 							<height>45</height>
 							<texture>black.png</texture>
@@ -310,16 +310,16 @@
 							<animation effect="fade" end="70" condition="true">Conditional</animation>
 						</control>
 						<control type="image">
-							<posx>50</posx>
-							<posy>3</posy>
+							<left>50</left>
+							<top>3</top>
 							<width>78</width>
 							<height>39</height>
 							<aspectratio>keep</aspectratio>
 							<texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
-							<posx>137</posx>
-							<posy>0</posy>
+							<left>137</left>
+							<top>0</top>
 							<width>400</width>
 							<height>45</height>
 							<font>Font_18</font>
@@ -331,8 +331,8 @@
 							<visible>Control.HasFocus(12)</visible>
 						</control>
 						<control type="label">
-							<posx>137</posx>
-							<posy>0</posy>
+							<left>137</left>
+							<top>0</top>
 							<width>400</width>
 							<height>45</height>
 							<font>Font_18</font>
@@ -347,8 +347,8 @@
 				</control>
 				<control type="scrollbar" id="72">
 					<include>ScrollBar_Vertical</include>
-					<posx>-20</posx>
-					<posy>75</posy>
+					<left>-20</left>
+					<top>75</top>
 					<height>525</height>
 					<onleft>11</onleft>
 					<onright>12</onright>
@@ -358,11 +358,11 @@
 			</control>
 			<control type="group" id="9002">  <!-- group actions -->
 				<control type="group">
-					<posx>460</posx>
-					<posy>730</posy>
+					<left>460</left>
+					<top>730</top>
 					<control type="label">
-						<posx>45</posx>
-						<posy>0</posy>
+						<left>45</left>
+						<top>0</top>
 						<width>570</width>
 						<height>30</height>
 						<font>Font_18</font>
@@ -373,8 +373,8 @@
 						<!-- add grp -->
 						<textoffsetx>50</textoffsetx>
 						<include>PVRSearchButtonSmall</include>
-						<posx>0</posx>
-						<posy>55</posy>
+						<left>0</left>
+						<top>55</top>
 						<label>$LOCALIZE[31993]</label>
 						<onleft>13</onleft>
 						<onright>27</onright>
@@ -385,8 +385,8 @@
 						<!-- rename grp -->
 						<textoffsetx>50</textoffsetx>
 						<include>PVRSearchButtonSmall</include>
-						<posx>334</posx>
-						<posy>55</posy>
+						<left>334</left>
+						<top>55</top>
 						<label>$LOCALIZE[31994]</label>
 						<onleft>26</onleft>
 						<onright>34</onright>
@@ -398,8 +398,8 @@
 						<textoffsetx>17</textoffsetx>
 						<width>360</width>
 						<include>PVRSearchButtonSmall</include>
-						<posx>668</posx>
-						<posy>55</posy>
+						<left>668</left>
+						<top>55</top>
 						<label>$LOCALIZE[19174]</label>
 						<altlabel>$LOCALIZE[19173]</altlabel>
 						<usealttexture>!String.IsEmpty(Window.Property(IsRadio))</usealttexture>
@@ -412,8 +412,8 @@
 						<!-- delete grp -->
 						<textoffsetx>50</textoffsetx>
 						<include>PVRSearchButtonSmall</include>
-						<posx>334</posx>
-						<posy>100</posy>
+						<left>334</left>
+						<top>100</top>
 						<label>$LOCALIZE[31995]</label>
 						<onleft>25</onleft>
 						<onright>13</onright>
@@ -426,8 +426,8 @@
 						<radioposx>195</radioposx>
 						<include>PVRSearchButtonSmall</include>
 						<include>Animation_Fade</include>
-						<posx>0</posx>
-						<posy>100</posy>
+						<left>0</left>
+						<top>100</top>
 						<label>$LOCALIZE[19289]</label>
 						<onleft>13</onleft>
 						<onright>28</onright>
@@ -437,30 +437,30 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>615</posx>
-				<posy>123</posy>
+				<left>615</left>
+				<top>123</top>
 				<width>3</width>
 				<height>570</height>
 				<texture>separator_v.png</texture>
 			</control>
 			<control type="image">
-				<posx>1065</posx>
-				<posy>123</posy>
+				<left>1065</left>
+				<top>123</top>
 				<width>3</width>
 				<height>570</height>
 				<texture>separator_v.png</texture>
 			</control>
 			<control type="image">
-				<posx>210</posx>
-				<posy>900</posy>
+				<left>210</left>
+				<top>900</top>
 				<height>60</height>
 				<width>1500</width>
 				<texture>black.png</texture>
 				<colordiffuse>90FFFFFF</colordiffuse>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>210</posx>
-				<posy>900</posy>
+				<left>210</left>
+				<top>900</top>
 				<onup>13</onup>
 				<ondown>13</ondown>
 				<orientation>horizontal</orientation>

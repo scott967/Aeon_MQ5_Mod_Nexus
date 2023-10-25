@@ -10,54 +10,54 @@
 			<!-- Default group -->
 			<include>Animation_DialogPopup</include>
 			<control type="image">
-				<posx>704</posx>
-				<posy>258</posy>
+				<left>704</left>
+				<top>258</top>
 				<width>45</width>
 				<height>483</height>
 				<texture flipx="true">shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>1172</posx>
-				<posy>258</posy>
+				<left>1172</left>
+				<top>258</top>
 				<width>45</width>
 				<height>483</height>
 				<texture>shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>748</posx>
-				<posy>260</posy>
+				<left>748</left>
+				<top>260</top>
 				<width>423</width>
 				<height>1</height>
 				<texture>grey.png</texture>
 			</control>
 			<control type="image">
-				<posx>748</posx>
-				<posy>333</posy>
+				<left>748</left>
+				<top>333</top>
 				<width>423</width>
 				<height>1</height>
 				<texture>grey.png</texture>
 			</control>
 			<control type="image" id="0">
-				<posx>748</posx>
-				<posy>258</posy>
+				<left>748</left>
+				<top>258</top>
 				<width>423</width>
 				<height>562</height>
 				<texture>black.png</texture>
 				<colordiffuse>E9FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>752</posx>
-				<posy>261</posy>
+				<left>752</left>
+				<top>261</top>
 				<width>417</width>
 				<height>69</height>
 				<texture>black.png</texture>
 				<colordiffuse>90FFFFFF</colordiffuse>
 			</control>
 			<control type="label" id="1">
-				<posx>759</posx>
-				<posy>261</posy>
+				<left>759</left>
+				<top>261</top>
 				<width>402</width>
 				<height>69</height>
 				<font>Font_23</font>
@@ -67,8 +67,8 @@
 				<scrollout>false</scrollout>
 			</control>
 			<control type="image">
-				<posx>752</posx>
-				<posy>758</posy>
+				<left>752</left>
+				<top>758</top>
 				<width>417</width>
 				<height>60</height>
 				<texture>grey.png</texture>
@@ -76,8 +76,8 @@
 			</control>
 			<control type="label" id="4">
 				<description>Edit Text</description>
-				<posx>765</posx>
-				<posy>758</posy>
+				<left>765</left>
+				<top>758</top>
 				<width>390</width>
 				<height>60</height>
 				<font>Font_24A</font>
@@ -86,13 +86,13 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="group">
-				<posx>752</posx>
-				<posy>336</posy>
+				<left>752</left>
+				<top>336</top>
 				<control type="button" id="11">
 					<description>'1' button</description>
 					<include>Objects_KeyboardSingle</include>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>102</width>
 					<height>102</height>
 					<onleft>14</onleft>
@@ -104,8 +104,8 @@
 				<control type="button" id="12">
 					<description>'2' button</description>
 					<include>Objects_KeyboardSingle</include>
-					<posx>105</posx>
-					<posy>0</posy>
+					<left>105</left>
+					<top>0</top>
 					<width>102</width>
 					<height>102</height>
 					<onleft>11</onleft>
@@ -117,8 +117,8 @@
 				<control type="button" id="13">
 					<description>'3' button</description>
 					<include>Objects_KeyboardSingle</include>
-					<posx>210</posx>
-					<posy>0</posy>
+					<left>210</left>
+					<top>0</top>
 					<width>102</width>
 					<height>102</height>
 					<onleft>12</onleft>
@@ -130,8 +130,8 @@
 				<control type="button" id="14">
 					<description>'4' button</description>
 					<include>Objects_KeyboardSingle</include>
-					<posx>315</posx>
-					<posy>0</posy>
+					<left>315</left>
+					<top>0</top>
 					<width>102</width>
 					<height>102</height>
 					<onleft>13</onleft>
@@ -143,8 +143,8 @@
 				<control type="button" id="15">
 					<description>'5' button</description>
 					<include>Objects_KeyboardSingle</include>
-					<posx>0</posx>
-					<posy>105</posy>
+					<left>0</left>
+					<top>105</top>
 					<width>102</width>
 					<height>102</height>
 					<onleft>14</onleft>
@@ -156,8 +156,8 @@
 				<control type="button" id="16">
 					<description>'6' button</description>
 					<include>Objects_KeyboardSingle</include>
-					<posx>105</posx>
-					<posy>105</posy>
+					<left>105</left>
+					<top>105</top>
 					<width>102</width>
 					<height>102</height>
 					<onleft>15</onleft>
@@ -169,8 +169,8 @@
 				<control type="button" id="17">
 					<description>'7' button</description>
 					<include>Objects_KeyboardSingle</include>
-					<posx>210</posx>
-					<posy>105</posy>
+					<left>210</left>
+					<top>105</top>
 					<width>102</width>
 					<height>102</height>
 					<onleft>16</onleft>
@@ -182,8 +182,8 @@
 				<control type="button" id="18">
 					<description>'8' button</description>
 					<include>Objects_KeyboardSingle</include>
-					<posx>315</posx>
-					<posy>105</posy>
+					<left>315</left>
+					<top>105</top>
 					<width>102</width>
 					<height>102</height>
 					<onleft>17</onleft>
@@ -195,8 +195,8 @@
 				<control type="button" id="19">
 					<description>'9' button</description>
 					<include>Objects_KeyboardSingle</include>
-					<posx>0</posx>
-					<posy>210</posy>
+					<left>0</left>
+					<top>210</top>
 					<width>102</width>
 					<height>102</height>
 					<onleft>18</onleft>
@@ -208,8 +208,8 @@
 				<control type="button" id="10">
 					<description>'0' button</description>
 					<include>Objects_KeyboardSingle</include>
-					<posx>105</posx>
-					<posy>210</posy>
+					<left>105</left>
+					<top>210</top>
 					<width>102</width>
 					<height>102</height>
 					<onleft>19</onleft>
@@ -221,8 +221,8 @@
 				<control type="button" id="20">
 					<description>prev button</description>
 					<include>Objects_KeyboardSingle</include>
-					<posx>210</posx>
-					<posy>210</posy>
+					<left>210</left>
+					<top>210</top>
 					<width>102</width>
 					<height>102</height>
 					<onleft>10</onleft>
@@ -234,8 +234,8 @@
 				<control type="button" id="22">
 					<description>next button</description>
 					<include>Objects_KeyboardSingle</include>
-					<posx>315</posx>
-					<posy>210</posy>
+					<left>315</left>
+					<top>210</top>
 					<width>102</width>
 					<height>102</height>
 					<onleft>20</onleft>
@@ -247,8 +247,8 @@
 				<control type="button" id="23">
 					<description>Backspace button</description>
 					<include>Objects_KeyboardDouble</include>
-					<posx>0</posx>
-					<posy>315</posy>
+					<left>0</left>
+					<top>315</top>
 					<width>207</width>
 					<height>102</height>
 					<label>20181</label>
@@ -261,8 +261,8 @@
 				<control type="button" id="21">
 					<description>'OK' button</description>
 					<include>Objects_KeyboardDouble</include>
-					<posx>210</posx>
-					<posy>315</posy>
+					<left>210</left>
+					<top>315</top>
 					<width>207</width>
 					<height>102</height>
 					<label>20177</label>

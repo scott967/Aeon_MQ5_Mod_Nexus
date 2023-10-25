@@ -1249,8 +1249,8 @@
 	</include>
 	<include name="MenuCustom">
 		<control type="image">
-			<posx>1530</posx>
-			<posy>82</posy>
+			<left>1530</left>
+			<top>82</top>
 			<width>390</width>
 			<height>998</height>
 			<texture>black.png</texture>
@@ -1258,8 +1258,8 @@
 		</control>
 		<control type="scrollbar" id="80">
 			<include>ScrollBar_Vertical</include>
-			<posx>1875</posx>
-			<posy>120</posy>
+			<left>1875</left>
+			<top>120</top>
 			<height>960</height>
 			<onleft>452</onleft>
 			<onright>9000</onright>
@@ -1271,8 +1271,8 @@
 <!--  Each action has a corresponding CustomSub file -->
 		<control type="list" id="452">
 			<viewtype>list</viewtype>
-			<posx>1530</posx>
-			<posy>84</posy>
+			<left>1530</left>
+			<top>84</top>
 			<height>990</height>
 			<width>390</width>
 			<onleft>450</onleft>
@@ -1287,8 +1287,8 @@
 			<itemlayout width="390" height="45">
 				<control type="image">
 					<!-- branco -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1297,8 +1297,8 @@
 				</control>
 				<control type="image">
 					<!-- salmao -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1307,8 +1307,8 @@
 				</control>
 				<control type="image">
 					<!-- roxo claro -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1317,8 +1317,8 @@
 				</control>
 				<control type="image">
 					<!-- agua -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1327,8 +1327,8 @@
 				</control>
 				<control type="image">
 					<!-- bege -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1337,8 +1337,8 @@
 				</control>
 				<control type="image">
 					<!-- violeta -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1347,8 +1347,8 @@
 				</control>
 				<control type="image">
 					<!-- azul escuro -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1357,8 +1357,8 @@
 				</control>
 				<control type="image">
 					<!-- chocolate -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1367,8 +1367,8 @@
 				</control>
 				<control type="image">
 					<!-- vermelho escuro -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1377,8 +1377,8 @@
 				</control>
 				<control type="image">
 					<!-- ciano -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1387,8 +1387,8 @@
 				</control>
 				<control type="image">
 					<!-- dourado -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1397,8 +1397,8 @@
 				</control>
 				<control type="image">
 					<!-- verde -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1406,16 +1406,16 @@
 					<visible>String.IsEqual(ListItem.Property(id),video)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>4</height>
 					<texture>divider.png</texture>
 					<colordiffuse>90FFFFFF</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>30</posx>
-					<posy>0</posy>
+					<left>30</left>
+					<top>0</top>
 					<height>45</height>
 					<width>315</width>
 					<align>left</align>
@@ -1428,8 +1428,8 @@
 			<focusedlayout width="390" height="45">
 				<control type="image">
 					<!-- branco -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1439,8 +1439,8 @@
 				</control>
 				<control type="image">
 					<!-- salmao -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1450,8 +1450,8 @@
 				</control>
 				<control type="image">
 					<!-- roxo claro -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1461,8 +1461,8 @@
 				</control>
 				<control type="image">
 					<!-- agua -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1472,8 +1472,8 @@
 				</control>
 				<control type="image">
 					<!-- bege -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1483,8 +1483,8 @@
 				</control>
 				<control type="image">
 					<!-- violeta -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1494,8 +1494,8 @@
 				</control>
 				<control type="image">
 					<!-- azul escuro -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1505,8 +1505,8 @@
 				</control>
 				<control type="image">
 					<!-- chocolate -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1516,8 +1516,8 @@
 				</control>
 				<control type="image">
 					<!-- vermelho escuro -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1527,8 +1527,8 @@
 				</control>
 				<control type="image">
 					<!-- ciano -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1538,8 +1538,8 @@
 				</control>
 				<control type="image">
 					<!-- dourado -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1549,8 +1549,8 @@
 				</control>
 				<control type="image">
 					<!-- verde -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>45</height>
 					<texture>grey.png</texture>
@@ -1559,8 +1559,8 @@
 					<visible>String.IsEqual(ListItem.Property(id),video)</visible>
 				</control>
 				<control type="label">
-					<posx>30</posx>
-					<posy>0</posy>
+					<left>30</left>
+					<top>0</top>
 					<height>45</height>
 					<width>315</width>
 					<align>left</align>
@@ -1571,8 +1571,8 @@
 					<visible>!Control.HasFocus(452)</visible>
 				</control>
 				<control type="label">
-					<posx>30</posx>
-					<posy>0</posy>
+					<left>30</left>
+					<top>0</top>
 					<height>45</height>
 					<width>315</width>
 					<align>left</align>
@@ -2737,8 +2737,8 @@
 		</control>
 		<control type="scrollbar" id="81">
 			<include>ScrollBar_Vertical</include>
-			<posx>1875</posx>
-			<posy>90</posy>
+			<left>1875</left>
+			<top>90</top>
 			<height>975</height>
 			<onleft>453</onleft>
 			<onright>9000</onright>
@@ -2749,8 +2749,8 @@
 		<control type="list" id="453">
 			<!-- Select submenu to clone-->
 			<viewtype>list</viewtype>
-			<posx>1530</posx>
-			<posy>84</posy>
+			<left>1530</left>
+			<top>84</top>
 			<height>996</height>
 			<width>390</width>
 			<onleft>450</onleft>
@@ -2764,16 +2764,16 @@
 			<visible>Control.Hasfocus(114) | Control.Hasfocus(453)</visible>
 			<itemlayout width="390" height="60">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>4</height>
 					<texture>divider.png</texture>
 					<colordiffuse>90FFFFFF</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -2785,16 +2785,16 @@
 			</itemlayout>
 			<focusedlayout width="390" height="60">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>60</height>
 					<texture>settings_button_focus.png</texture>
 					<visible>Control.HasFocus(453)</visible>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -2805,8 +2805,8 @@
 					<visible>!Control.HasFocus(453)</visible>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -2943,8 +2943,8 @@
 		</control>
 		<control type="scrollbar" id="82">
 			<include>ScrollBar_Vertical</include>
-			<posx>1875</posx>
-			<posy>90</posy>
+			<left>1875</left>
+			<top>90</top>
 			<height>975</height>
 			<onleft>454</onleft>
 			<onright>9000</onright>
@@ -2955,8 +2955,8 @@
 		<control type="list" id="454">
 			<!-- Select to copy to disk -->
 			<viewtype>list</viewtype>
-			<posx>1530</posx>
-			<posy>84</posy>
+			<left>1530</left>
+			<top>84</top>
 			<height>945</height>
 			<width>390</width>
 			<onleft>450</onleft>
@@ -2970,16 +2970,16 @@
 			<visible>Control.Hasfocus(82) | Control.Hasfocus(115) | Control.Hasfocus(454)</visible>
 			<itemlayout width="390" height="60">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>4</height>
 					<texture>divider.png</texture>
 					<colordiffuse>90FFFFFF</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -2991,16 +2991,16 @@
 			</itemlayout>
 			<focusedlayout width="390" height="60">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>60</height>
 					<texture>settings_button_focus.png</texture>
 					<visible>Control.HasFocus(454)</visible>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -3011,8 +3011,8 @@
 					<visible>!Control.HasFocus(454)</visible>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -3168,8 +3168,8 @@
 		</control>
 		<control type="scrollbar" id="83">
 			<include>ScrollBar_Vertical</include>
-			<posx>1875</posx>
-			<posy>90</posy>
+			<left>1875</left>
+			<top>90</top>
 			<height>975</height>
 			<onleft>455</onleft>
 			<onright>9000</onright>
@@ -3180,8 +3180,8 @@
 		<control type="list" id="455">
 			<!-- Seletor aplicar propriedades -->
 			<viewtype>list</viewtype>
-			<posx>1530</posx>
-			<posy>84</posy>
+			<left>1530</left>
+			<top>84</top>
 			<height>945</height>
 			<width>390</width>
 			<onleft>450</onleft>
@@ -3195,16 +3195,16 @@
 			<visible>Control.Hasfocus(83) | Control.Hasfocus(116) | Control.Hasfocus(455)</visible>
 			<itemlayout width="390" height="60">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>4</height>
 					<texture>divider.png</texture>
 					<colordiffuse>90FFFFFF</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -3216,16 +3216,16 @@
 			</itemlayout>
 			<focusedlayout width="390" height="60">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>60</height>
 					<texture>settings_button_focus.png</texture>
 					<visible>Control.HasFocus(455)</visible>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -3236,8 +3236,8 @@
 					<visible>!Control.HasFocus(455)</visible>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -3426,8 +3426,8 @@
 		</control>
 		<control type="scrollbar" id="84">
 			<include>ScrollBar_Vertical</include>
-			<posx>1875</posx>
-			<posy>90</posy>
+			<left>1875</left>
+			<top>90</top>
 			<height>975</height>
 			<onleft>456</onleft>
 			<onright>9000</onright>
@@ -3438,8 +3438,8 @@
 		<control type="list" id="456">
 			<!-- Seletor pre-definicoes - criar -->
 			<viewtype>list</viewtype>
-			<posx>1530</posx>
-			<posy>84</posy>
+			<left>1530</left>
+			<top>84</top>
 			<height>945</height>
 			<width>390</width>
 			<onleft>450</onleft>
@@ -3453,16 +3453,16 @@
 			<visible>Control.Hasfocus(84) | Control.Hasfocus(118) | Control.Hasfocus(456)</visible>
 			<itemlayout width="390" height="60">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>4</height>
 					<texture>divider.png</texture>
 					<colordiffuse>90FFFFFF</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -3474,16 +3474,16 @@
 			</itemlayout>
 			<focusedlayout width="390" height="60">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>60</height>
 					<texture>settings_button_focus.png</texture>
 					<visible>Control.HasFocus(456)</visible>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -3494,8 +3494,8 @@
 					<visible>!Control.HasFocus(456)</visible>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -4761,8 +4761,8 @@
 		</control>
 		<control type="scrollbar" id="85">
 			<include>ScrollBar_Vertical</include>
-			<posx>1875</posx>
-			<posy>90</posy>
+			<left>1875</left>
+			<top>90</top>
 			<height>975</height>
 			<onleft>457</onleft>
 			<onright>9000</onright>
@@ -4773,8 +4773,8 @@
 		<control type="list" id="457">
 			<!-- Seletor pre-definicoes - aplicar -->
 			<viewtype>list</viewtype>
-			<posx>1530</posx>
-			<posy>84</posy>
+			<left>1530</left>
+			<top>84</top>
 			<height>945</height>
 			<width>390</width>
 			<onleft>450</onleft>
@@ -4788,16 +4788,16 @@
 			<visible>Control.Hasfocus(85) | Control.Hasfocus(119) | Control.Hasfocus(457)</visible>
 			<itemlayout width="390" height="60">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>4</height>
 					<texture>divider.png</texture>
 					<colordiffuse>90FFFFFF</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -4809,16 +4809,16 @@
 			</itemlayout>
 			<focusedlayout width="390" height="60">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>390</width>
 					<height>60</height>
 					<texture>settings_button_focus.png</texture>
 					<visible>Control.HasFocus(457)</visible>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -4829,8 +4829,8 @@
 					<visible>!Control.HasFocus(457)</visible>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>0</posy>
+					<left>45</left>
+					<top>0</top>
 					<height>60</height>
 					<width>300</width>
 					<align>left</align>
@@ -4890,15 +4890,15 @@
 			</content>
 		</control>
 		<control type="image">
-			<posx>1530</posx>
-			<posy>82</posy>
+			<left>1530</left>
+			<top>82</top>
 			<width>45</width>
 			<height>998</height>
 			<texture>shadow.png</texture>
 		</control>
 		<control type="grouplist" id="450">  <!-- buttons to control customization -->
-			<posx>450</posx>
-			<posy>180</posy>
+			<left>450</left>
+			<top>180</top>
 			<height>720</height>
 			<width>1080</width>
 			<onleft>9000</onleft>

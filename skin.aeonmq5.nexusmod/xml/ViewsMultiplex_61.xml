@@ -7,7 +7,7 @@
 <includes>
 	<!--##################################################################################   VISTA MULTIPLEX - ID 61   #############################################################################-->
 	<include name="MultiplexLabel_Fanart">
-		<posx>0</posx>
+		<left>0</left>
 		<height>30</height>
 		<width>518</width>
 		<font>Font_18A</font>
@@ -19,14 +19,14 @@
 		<scroll>true</scroll>
 	</include>
 	<include name="MultiplexLabel_Extrathumbs">
-		<posx>450</posx>
+		<left>450</left>
 		<width>465</width>
 		<height>20</height>
 		<font>Font_18A</font>
 		<textcolor>$VAR[value_headercolor]</textcolor>
 	</include>
 	<include name="MultiplexValue_Extrathumbs">
-		<posx>450</posx>
+		<left>450</left>
 		<width>465</width>
 		<height>20</height>
 		<align>left</align>
@@ -47,8 +47,8 @@
 	</include>
 	<include name="Multiplex_Content">
 		<viewtype label="31803">list</viewtype>
-		<posx>0</posx>
-		<posy>540</posy>
+		<left>0</left>
+		<top>540</top>
 		<width>1920</width>
 		<height>540</height>
 		<onup condition="String.IsEqual(skin.string(multiplexvideopanel),manual) + !String.IsEqual(ListItem.Label,..)">9961</onup>
@@ -64,8 +64,8 @@
 		<itemlayout condition="Skin.HasSetting(nomultiplexvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(genres) | Container.Content(addons) | Window.IsActive(programs)" width="208" height="570">
 			<control type="image">
 				<!-- poster reflexo sem estojo -->
-				<posx>0</posx>
-				<posy>374</posy>
+				<left>0</left>
+				<top>374</top>
 				<width>207</width>
 				<height>308</height>
 				<aspectratio align="center" aligny="top">stretch</aspectratio>
@@ -74,8 +74,8 @@
 			</control>
 			<control type="image">
 				<!-- poster sem estojo -->
-				<posx>0</posx>
-				<posy>60</posy>
+				<left>0</left>
+				<top>60</top>
 				<width>207</width>
 				<height>308</height>
 				<aspectratio align="center" aligny="bottom">stretch</aspectratio>
@@ -83,8 +83,8 @@
 				<bordertexture border="-2">black.png</bordertexture>
 			</control>
 			<control type="image">
-				<posx>162</posx>
-				<posy>56</posy>
+				<left>162</left>
+				<top>56</top>
 				<width>45</width>
 				<height>45</height>
 				<texture>$VAR[value_watchedstyle]</texture>
@@ -95,8 +95,8 @@
 		<itemlayout condition="!Skin.HasSetting(nomultiplexvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]" width="208" height="570">
 			<control type="image">
 				<!-- poster reflexo com estojo -->
-				<posx>1</posx>
-				<posy>410</posy>
+				<left>1</left>
+				<top>410</top>
 				<width>196</width>
 				<height>297</height>
 				<aspectratio align="center" aligny="top">stretch</aspectratio>
@@ -104,8 +104,8 @@
 			</control>
 			<control type="image">
 				<!-- poster com estojo -->
-				<posx>1</posx>
-				<posy>90</posy>
+				<left>1</left>
+				<top>90</top>
 				<width>196</width>
 				<height>297</height>
 				<aspectratio align="center" aligny="bottom">stretch</aspectratio>
@@ -113,8 +113,8 @@
 			</control>
 			<control type="image">
 				<!-- Estojo reflexo -->
-				<posx>-16</posx>
-				<posy>378</posy>
+				<left>-16</left>
+				<top>378</top>
 				<width>243</width>
 				<height>380</height>
 				<fadetime>FanartCrossFadeTime</fadetime>
@@ -124,8 +124,8 @@
 			</control>
 			<control type="image">
 				<!-- Estojo -->
-				<posx>-16</posx>
-				<posy>39</posy>
+				<left>-16</left>
+				<top>39</top>
 				<width>243</width>
 				<height>380</height>
 				<fadetime>FanartCrossFadeTime</fadetime>
@@ -134,8 +134,8 @@
 				<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 			</control>
 			<control type="image">
-				<posx>153</posx>
-				<posy>87</posy>
+				<left>153</left>
+				<top>87</top>
 				<width>45</width>
 				<height>45</height>
 				<texture>$VAR[value_watchedstyle]</texture>
@@ -144,8 +144,8 @@
 			</control>
 			<control type="image">
 				<!-- Codec -->
-				<posx>76</posx>
-				<posy>44</posy>
+				<left>76</left>
+				<top>44</top>
 				<width>62</width>
 				<height>62</height>
 				<fadetime>FanartCrossFadeTime</fadetime>
@@ -158,8 +158,8 @@
 		<focusedlayout condition="Skin.HasSetting(nomultiplexvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(genres) | Container.Content(addons) | Window.IsActive(programs)" width="262" height="570">
 			<control type="image">
 				<!-- borda destaque -->
-				<posx>-30</posx>
-				<posy>9</posy>
+				<left>-30</left>
+				<top>9</top>
 				<width>334</width>
 				<height>429</height>
 				<aspectratio align="center" aligny="bottom">stretch</aspectratio>
@@ -169,8 +169,8 @@
 			</control>
 			<control type="image">
 				<!-- poster reflexo sem estojo -->
-				<posx>8</posx>
-				<posy>420</posy>
+				<left>8</left>
+				<top>420</top>
 				<width>262</width>
 				<height>381</height>
 				<aspectratio align="center" aligny="top">stretch</aspectratio>
@@ -180,8 +180,8 @@
 			</control>
 			<control type="image">
 				<!-- poster  sem estojo -->
-				<posx>8</posx>
-				<posy>33</posy>
+				<left>8</left>
+				<top>33</top>
 				<width>262</width>
 				<height>381</height>
 				<aspectratio align="center" aligny="bottom">stretch</aspectratio>
@@ -190,8 +190,8 @@
 				<animation effect="zoom" start="100" end="110" center="202,382" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 			</control>
 			<control type="image">
-				<posx>214</posx>
-				<posy>27</posy>
+				<left>214</left>
+				<top>27</top>
 				<width>60</width>
 				<height>60</height>
 				<texture>$VAR[value_watchedstyle]</texture>
@@ -203,8 +203,8 @@
 		<focusedlayout condition="!Skin.HasSetting(nomultiplexvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]" width="262" height="570">
 			<control type="image">
 				<!-- poster reflexo com estojo -->
-				<posx>15</posx>
-				<posy>432</posy>
+				<left>15</left>
+				<top>432</top>
 				<width>237</width>
 				<height>350</height>
 				<aspectratio align="center" aligny="top">stretch</aspectratio>
@@ -213,8 +213,8 @@
 			</control>
 			<control type="image">
 				<!-- poster  com estojo -->
-				<posx>15</posx>
-				<posy>60</posy>
+				<left>15</left>
+				<top>60</top>
 				<width>237</width>
 				<height>350</height>
 				<aspectratio align="center" aligny="bottom">stretch</aspectratio>
@@ -223,8 +223,8 @@
 			</control>
 			<control type="image">
 				<!-- Estojo reflexo -->
-				<posx>-6</posx>
-				<posy>396</posy>
+				<left>-6</left>
+				<top>396</top>
 				<width>294</width>
 				<height>438</height>
 				<fadetime>FanartCrossFadeTime</fadetime>
@@ -235,8 +235,8 @@
 			</control>
 			<control type="image">
 				<!-- Estojo -->
-				<posx>-6</posx>
-				<posy>6</posy>
+				<left>-6</left>
+				<top>6</top>
 				<width>294</width>
 				<height>438</height>
 				<fadetime>FanartCrossFadeTime</fadetime>
@@ -246,8 +246,8 @@
 				<animation effect="zoom" start="100" end="110" center="202,382" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 			</control>
 			<control type="image">
-				<posx>201</posx>
-				<posy>62</posy>
+				<left>201</left>
+				<top>62</top>
 				<width>52</width>
 				<height>52</height>
 				<texture>$VAR[value_watchedstyle]</texture>
@@ -257,8 +257,8 @@
 			</control>
 			<control type="image">
 				<!-- Codec -->
-				<posx>106</posx>
-				<posy>14</posy>
+				<left>106</left>
+				<top>14</top>
 				<width>64</width>
 				<height>64</height>
 				<fadetime>FanartCrossFadeTime</fadetime>
@@ -288,16 +288,16 @@
 				<animation effect="slide" start="0,0" end="0,-900" time="500" tween="sine" easing="out">Hidden</animation>
 				<visible>[Control.HasFocus(9961) | String.IsEqual(skin.string(multiplexvideopanel),alwayson) | String.IsEqual(skin.string(multiplexvideopanel),auto) + Control.IsVisible(9921)] + [[String.Contains(skin.string(multiplexlayout),fanart) + ![String.IsEqual(ListItem.Label,..) | Container.Content(years) | Container.Content(genres) | Container.Content(actors)]] | String.Contains(ListItem.DBType,set)]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>84</posy>
+					<left>0</left>
+					<top>84</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>128</posy>
+					<left>0</left>
+					<top>128</top>
 					<width>1920</width>
 					<height>795</height>
 					<texture flipy="true" diffuse="shadow_mask.png">darkgrey.png</texture>
@@ -305,8 +305,8 @@
 					<animation effect="fade" end="85" condition="true">Conditional</animation>
 				</control>
 				<control type="grouplist">
-					<posx>45</posx>
-					<posy>156</posy>
+					<left>45</left>
+					<top>156</top>
 					<orientation>vertical</orientation>
 					<itemgap>15</itemgap>
 					<visible>!Container.Content(addons)</visible>
@@ -340,22 +340,22 @@
 					</control>
 				</control>
 				<control type="image">
-					<posx>600</posx>
-					<posy>128</posy>
+					<left>600</left>
+					<top>128</top>
 					<width>3</width>
 					<height>410</height>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="image">
-					<posx>1208</posx>
-					<posy>128</posy>
+					<left>1208</left>
+					<top>128</top>
 					<width>3</width>
 					<height>410</height>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>634</posx>
-					<posy>156</posy>
+					<left>634</left>
+					<top>156</top>
 					<width>540</width>
 					<height>363</height>
 					<font>Font_18A</font>
@@ -363,15 +363,15 @@
 					<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>537</posy>
+					<left>0</left>
+					<top>537</top>
 					<width>1920</width>
 					<height>3</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="image">
-					<posx>1185</posx>
-					<posy>159</posy>
+					<left>1185</left>
+					<top>159</top>
 					<width>750</width>
 					<height>352</height>
 					<aspectratio>keep</aspectratio>
@@ -385,16 +385,16 @@
 				<animation effect="slide" start="0,0" end="0,-900" time="500" tween="sine" easing="out">Hidden</animation>
 				<visible>[Control.HasFocus(9961) | String.IsEqual(skin.string(multiplexvideopanel),alwayson) | String.IsEqual(skin.string(multiplexvideopanel),auto) + Control.IsVisible(9921)] + String.Contains(skin.string(multiplexlayout),extrathumbs) + ![String.IsEqual(ListItem.Label,..) | Container.Content(years) | Container.Content(genres) | Container.Content(actors) | String.Contains(ListItem.DBType,set)]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>84</posy>
+					<left>0</left>
+					<top>84</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>128</posy>
+					<left>0</left>
+					<top>128</top>
 					<width>1920</width>
 					<height>795</height>
 					<texture flipy="true" diffuse="shadow_mask.png">darkgrey.png</texture>
@@ -403,8 +403,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 1 fundo -->
-					<posx>22</posx>
-					<posy>128</posy>
+					<left>22</left>
+					<top>128</top>
 					<width>362</width>
 					<height>210</height>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
@@ -413,8 +413,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 1 -->
-					<posx>30</posx>
-					<posy>135</posy>
+					<left>30</left>
+					<top>135</top>
 					<width>346</width>
 					<height>195</height>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
@@ -424,8 +424,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 2 fundo -->
-					<posx>22</posx>
-					<posy>330</posy>
+					<left>22</left>
+					<top>330</top>
 					<width>362</width>
 					<height>210</height>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
@@ -434,8 +434,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 2 -->
-					<posx>30</posx>
-					<posy>338</posy>
+					<left>30</left>
+					<top>338</top>
 					<width>346</width>
 					<height>195</height>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
@@ -445,8 +445,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 3 fundo -->
-					<posx>1536</posx>
-					<posy>128</posy>
+					<left>1536</left>
+					<top>128</top>
 					<width>362</width>
 					<height>210</height>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
@@ -455,8 +455,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 3 -->
-					<posx>1544</posx>
-					<posy>135</posy>
+					<left>1544</left>
+					<top>135</top>
 					<width>346</width>
 					<height>195</height>
 					<aspectratio align="right" aligny="bottom">stretch</aspectratio>
@@ -466,8 +466,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 4 fundo -->
-					<posx>1536</posx>
-					<posy>330</posy>
+					<left>1536</left>
+					<top>330</top>
 					<width>362</width>
 					<height>210</height>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
@@ -476,8 +476,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 4 -->
-					<posx>1544</posx>
-					<posy>338</posy>
+					<left>1544</left>
+					<top>338</top>
 					<width>346</width>
 					<height>195</height>
 					<aspectratio align="right" aligny="bottom">stretch</aspectratio>
@@ -487,78 +487,78 @@
 				</control>
 				<control type="label">
 					<include>MultiplexLabel_Extrathumbs</include>
-					<posy>156</posy>
+					<top>156</top>
 					<label>$VAR[value_ground1_label]</label>
 				</control>
 				<control type="fadelabel">
 					<include>MultiplexValue_Extrathumbs</include>
-					<posy>186</posy>
+					<top>186</top>
 					<label>$VAR[value_ground1_value]</label>
 				</control>
 				<control type="label">
 					<include>MultiplexLabel_Extrathumbs</include>
-					<posy>231</posy>
+					<top>231</top>
 					<label>$VAR[value_ground2_label]</label>
 				</control>
 				<control type="fadelabel">
 					<include>MultiplexValue_Extrathumbs</include>
-					<posy>261</posy>
+					<top>261</top>
 					<label>$VAR[value_ground2_value]</label>
 				</control>
 				<control type="label">
 					<include>MultiplexLabel_Extrathumbs</include>
-					<posy>306</posy>
+					<top>306</top>
 					<label>$VAR[value_ground3_label]</label>
 				</control>
 				<control type="fadelabel">
 					<include>MultiplexValue_Extrathumbs</include>
-					<posy>336</posy>
+					<top>336</top>
 					<label>$VAR[value_ground3_value]</label>
 				</control>
 				<control type="label">
 					<include>MultiplexLabel_Extrathumbs</include>
-					<posy>381</posy>
+					<top>381</top>
 					<label>$VAR[value_ground4_label]</label>
 				</control>
 				<control type="fadelabel">
 					<include>MultiplexValue_Extrathumbs</include>
-					<posy>411</posy>
+					<top>411</top>
 					<label>$VAR[value_ground4_value]</label>
 				</control>
 				<control type="label">
 					<include>MultiplexLabel_Extrathumbs</include>
-					<posy>456</posy>
+					<top>456</top>
 					<label>$VAR[value_ground5_label]</label>
 				</control>
 				<control type="fadelabel">
 					<include>MultiplexValue_Extrathumbs</include>
-					<posy>486</posy>
+					<top>486</top>
 					<label>$VAR[value_ground5_value]</label>
 				</control>
 				<control type="image">
-					<posx>412</posx>
-					<posy>128</posy>
+					<left>412</left>
+					<top>128</top>
 					<width>3</width>
 					<height>410</height>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>128</posy>
+					<left>960</left>
+					<top>128</top>
 					<width>3</width>
 					<height>410</height>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="image">
-					<posx>1508</posx>
-					<posy>128</posy>
+					<left>1508</left>
+					<top>128</top>
 					<width>3</width>
 					<height>410</height>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>998</posx>
-					<posy>156</posy>
+					<left>998</left>
+					<top>156</top>
 					<width>465</width>
 					<height>363</height>
 					<font>Font_18A</font>
@@ -566,8 +566,8 @@
 					<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>537</posy>
+					<left>0</left>
+					<top>537</top>
 					<width>1920</width>
 					<height>3</height>
 					<texture>separator.png</texture>
@@ -577,8 +577,8 @@
 			<include condition="!Skin.HasSetting(multiplexfixedlist)">MultiplexWrapList</include>
 			<control type="scrollbar" id="80">
 				<include>ScrollBar_Horizontal</include>
-				<posx>285</posx>
-				<posy>920</posy>
+				<left>285</left>
+				<top>920</top>
 				<width>1350</width>
 				<onup>61</onup>
 				<ondown>9920</ondown>

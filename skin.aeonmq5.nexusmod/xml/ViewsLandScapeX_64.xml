@@ -4,7 +4,7 @@
 <includes>
 	<!--##################################################################################   VISTA LANDSCAPEX - ID 64   #############################################################################-->
 	<include name="LandScapeXLabel">
-		<posx>0</posx>
+		<left>0</left>
 		<height>30</height>
 		<width>450</width>
 		<font>Font_18A</font>
@@ -26,16 +26,16 @@
 				<animation effect="slide" start="0,0" end="0,-900" time="500" tween="sine" easing="out">Hidden</animation>
 				<visible>String.Contains(skin.string(landscapexlayout),fanart) + !String.IsEqual(ListItem.Label,..)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>84</posy>
+					<left>0</left>
+					<top>84</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>128</posy>
+					<left>0</left>
+					<top>128</top>
 					<width>1920</width>
 					<height>450</height>
 					<texture>darkgrey.png</texture>
@@ -43,8 +43,8 @@
 					<animation effect="fade" end="85" condition="true">Conditional</animation>
 				</control>
 				<control type="grouplist">
-					<posx>90</posx>
-					<posy>156</posy>
+					<left>90</left>
+					<top>156</top>
 					<orientation>vertical</orientation>
 					<itemgap>15</itemgap>
 					<control type="label">
@@ -77,22 +77,22 @@
 					</control>
 				</control>
 				<control type="image">
-					<posx>578</posx>
-					<posy>128</posy>
+					<left>578</left>
+					<top>128</top>
 					<width>3</width>
 					<height>410</height>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="image">
-					<posx>1185</posx>
-					<posy>128</posy>
+					<left>1185</left>
+					<top>128</top>
 					<width>3</width>
 					<height>410</height>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>615</posx>
-					<posy>156</posy>
+					<left>615</left>
+					<top>156</top>
 					<width>540</width>
 					<height>352</height>
 					<font>Font_18A</font>
@@ -100,15 +100,15 @@
 					<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>537</posy>
+					<left>0</left>
+					<top>537</top>
 					<width>1920</width>
 					<height>3</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="image">
-					<posx>1218</posx>
-					<posy>159</posy>
+					<left>1218</left>
+					<top>159</top>
 					<width>600</width>
 					<height>352</height>
 					<aspectratio>keep</aspectratio>
@@ -118,8 +118,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>531</posy>
+				<left>0</left>
+				<top>531</top>
 				<width>1920</width>
 				<height>45</height>
 				<texture>shadow_h.png</texture>
@@ -127,16 +127,16 @@
 				<include>Animation_Fade</include>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>975</posy>
+				<left>0</left>
+				<top>975</top>
 				<width>1920</width>
 				<height>45</height>
 				<texture flipy="true">shadow_h.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>574</posy>
+				<left>0</left>
+				<top>574</top>
 				<width>1920</width>
 				<height>400</height>
 				<texture>darkgrey.png</texture>
@@ -145,8 +145,8 @@
 			</control>
 			<control type="panel" id="64">
 				<viewtype label="31804">icon</viewtype>
-				<posx>142</posx>
-				<posy>582</posy>
+				<left>142</left>
+				<top>582</top>
 				<width>1665</width>
 				<height>400</height>
 				<onup>9900</onup>
@@ -158,8 +158,8 @@
 				<visible>Container.Content(tvshows) | Container.Content(episodes)</visible>
 				<itemlayout height="201" width="303">
 					<control type="image">
-						<posx>68</posx>
-						<posy>6</posy>
+						<left>68</left>
+						<top>6</top>
 						<width>288</width>
 						<height>174</height>
 						<texture>landscapex_back.png</texture>
@@ -168,8 +168,8 @@
 						<include>Animation_Fade</include>
 					</control>
 					<control type="image">
-						<posx>64</posx>
-						<posy>1</posy>
+						<left>64</left>
+						<top>1</top>
 						<width>294</width>
 						<height>183</height>
 						<bordersize>8</bordersize>
@@ -178,8 +178,8 @@
 						<visible>!String.IsEqual(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
-						<posx>64</posx>
-						<posy>1</posy>
+						<left>64</left>
+						<top>1</top>
 						<width>294</width>
 						<height>183</height>
 						<bordersize>8</bordersize>
@@ -188,8 +188,8 @@
 						<visible>String.IsEqual(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
-						<posx>303</posx>
-						<posy>15</posy>
+						<left>303</left>
+						<top>15</top>
 						<width>45</width>
 						<height>45</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -198,8 +198,8 @@
 						<visible>![Skin.HasSetting(nooverlays) | String.Contains(skin.string(stylewatched),2) | String.Contains(skin.string(stylewatched),3)] + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
 					</control>
 					<control type="image">
-						<posx>303</posx>
-						<posy>129</posy>
+						<left>303</left>
+						<top>129</top>
 						<width>45</width>
 						<height>45</height>
 						<texture flipy="true">$VAR[value_watchedstyle]</texture>
@@ -210,8 +210,8 @@
 				</itemlayout>
 				<focusedlayout height="201" width="303">
 					<control type="image">
-						<posx>68</posx>
-						<posy>6</posy>
+						<left>68</left>
+						<top>6</top>
 						<width>288</width>
 						<height>174</height>
 						<texture>landscapex_back.png</texture>
@@ -222,8 +222,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>68</posx>
-						<posy>6</posy>
+						<left>68</left>
+						<top>6</top>
 						<width>288</width>
 						<height>174</height>
 						<texture>landscapex_back.png</texture>
@@ -234,8 +234,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>64</posx>
-						<posy>1</posy>
+						<left>64</left>
+						<top>1</top>
 						<width>294</width>
 						<height>183</height>
 						<bordersize>8</bordersize>
@@ -248,8 +248,8 @@
 						<visible>!String.IsEqual(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
-						<posx>64</posx>
-						<posy>1</posy>
+						<left>64</left>
+						<top>1</top>
 						<width>294</width>
 						<height>183</height>
 						<bordersize>8</bordersize>
@@ -262,8 +262,8 @@
 						<visible>String.IsEqual(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
-						<posx>303</posx>
-						<posy>15</posy>
+						<left>303</left>
+						<top>15</top>
 						<width>45</width>
 						<height>45</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -275,8 +275,8 @@
 						<visible>![Skin.HasSetting(nooverlays) | String.Contains(skin.string(stylewatched),2) | String.Contains(skin.string(stylewatched),3)] + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
 					</control>
 					<control type="image">
-						<posx>303</posx>
-						<posy>129</posy>
+						<left>303</left>
+						<top>129</top>
 						<width>45</width>
 						<height>45</height>
 						<texture flipy="true">$VAR[value_watchedstyle]</texture>
@@ -291,8 +291,8 @@
 			</control>
 			<control type="scrollbar" id="80">
 				<include>ScrollBar_Vertical</include>
-				<posx>1770</posx>
-				<posy>582</posy>
+				<left>1770</left>
+				<top>582</top>
 				<height>392</height>
 				<onleft>64</onleft>
 				<onright>9920</onright>

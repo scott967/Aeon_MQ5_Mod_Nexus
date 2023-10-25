@@ -6,8 +6,8 @@
 	<defaultcontrol>7010</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="image">
@@ -25,8 +25,8 @@
 			</control>
 			<!-- Settings List -->
 			<control type="group" id="7010">
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>1560</width>
 				<height>741</height>
 				<!-- Offline scrapers -->
@@ -34,8 +34,8 @@
 					<!-- Scraper List -->
 					<control type="list" id="5600">
 						<hitrect x="0" y="0" w="0" h="0" />
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1560</width>
 						<height>60</height>
 						<onleft>5600</onleft>
@@ -48,16 +48,16 @@
 						<itemlayout height="1" width="1560"></itemlayout>
 						<focusedlayout height="60" width="1560">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1560</width>
 								<height>60</height>
 								<texture>settings_button_focus.png</texture>
 								<visible>[Control.HasFocus(5601) | Control.HasFocus(5602)]</visible>
 							</control>
 							<control type="label">
-								<posx>75</posx>
-								<posy>0</posy>
+								<left>75</left>
+								<top>0</top>
 								<width>300</width>
 								<height>60</height>
 								<font>Font_18</font>
@@ -68,8 +68,8 @@
 								<visible>![Control.HasFocus(5601) | Control.HasFocus(5602)]</visible>
 							</control>
 							<control type="label">
-								<posx>75</posx>
-								<posy>0</posy>
+								<left>75</left>
+								<top>0</top>
 								<width>300</width>
 								<height>60</height>
 								<font>Font_18</font>
@@ -80,8 +80,8 @@
 								<visible>[Control.HasFocus(5601) | Control.HasFocus(5602)]</visible>
 							</control>
 							<control type="label">
-								<posx>818</posx>
-								<posy>0</posy>
+								<right>818r</right>
+								<top>0</top>
 								<width>555</width>
 								<height>60</height>
 								<font>Font_18</font>
@@ -92,8 +92,8 @@
 								<visible>![Control.HasFocus(5601) | Control.HasFocus(5602)]</visible>
 							</control>
 							<control type="label">
-								<posx>818</posx>
-								<posy>0</posy>
+								<right>818r</right>
+								<top>0</top>
 								<width>555</width>
 								<height>60</height>
 								<font>Font_18</font>
@@ -107,8 +107,8 @@
 					</control>
 					<control type="button" id="5601">
 						<description>Menu Item Next Button</description>
-						<posx>1390</posx>
-						<posy>-16</posy>
+						<left>1390</left>
+						<top>-16</top>
 						<width>60</width>
 						<height>98</height>
 						<label></label>
@@ -123,8 +123,8 @@
 					</control>
 					<control type="button" id="5602">
 						<description>Menu Item Prev Button</description>
-						<posx>1450</posx>
-						<posy>-16</posy>
+						<left>1450</left>
+						<top>-16</top>
 						<width>60</width>
 						<height>98</height>
 						<label></label>
@@ -139,8 +139,8 @@
 					</control>
 					<!-- descfile per game -->
 					<control type="radiobutton" id="5550">
-						<posx>0</posx>
-						<posy>74</posy>
+						<left>0</left>
+						<top>74</top>
 						<label>$ADDON[script.games.rom.collection.browser 32702]</label>
 						<onleft>7000</onleft>
 						<onright>6000</onright>
@@ -151,8 +151,8 @@
 					<!-- Path game desc -->
 					<control type="button" id="5520">
 						<description>Path game desc</description>
-						<posx>0</posx>
-						<posy>147</posy>
+						<left>0</left>
+						<top>147</top>
 						<visible>true</visible>
 						<label>$INFO[ListItem.Label]</label>
 						<align>right</align>
@@ -163,8 +163,8 @@
 						<onright>6000</onright>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>147</posy>
+						<left>75</left>
+						<top>147</top>
 						<width>300</width>
 						<height>60</height>
 						<font>Font_18</font>
@@ -175,8 +175,8 @@
 						<visible>!Control.HasFocus(5520)</visible>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>147</posy>
+						<left>75</left>
+						<top>147</top>
 						<width>300</width>
 						<height>60</height>
 						<font>Font_18</font>
@@ -189,8 +189,8 @@
 					<!-- Game desc file mask -->
 					<control type="button" id="5530">
 						<description>Game desc file mask</description>
-						<posx>0</posx>
-						<posy>220</posy>
+						<left>0</left>
+						<top>220</top>
 						<visible>true</visible>
 						<label>$INFO[ListItem.Label]</label>
 						<align>right</align>
@@ -203,8 +203,8 @@
 						<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_editScraper_descFilePerGame)">Conditional</animation>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>220</posy>
+						<left>75</left>
+						<top>220</top>
 						<width>390</width>
 						<height>60</height>
 						<font>Font_18</font>
@@ -216,8 +216,8 @@
 						<visible>!Control.HasFocus(5530)</visible>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>220</posy>
+						<left>75</left>
+						<top>220</top>
 						<width>390</width>
 						<height>60</height>
 						<font>Font_18</font>
@@ -231,8 +231,8 @@
 					<!-- Parse instruction -->
 					<control type="radiobutton" id="5540">
 						<description>Parse instruction</description>
-						<posx>0</posx>
-						<posy>294</posy>
+						<left>0</left>
+						<top>294</top>
 						<visible>true</visible>
 						<label>$INFO[ListItem.Label]</label>
 						<align>right</align>
@@ -243,8 +243,8 @@
 						<onright>6000</onright>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>294</posy>
+						<left>75</left>
+						<top>294</top>
 						<width>300</width>
 						<height>60</height>
 						<font>Font_18</font>
@@ -255,8 +255,8 @@
 						<visible>!Control.HasFocus(5540)</visible>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>294</posy>
+						<left>75</left>
+						<top>294</top>
 						<width>300</width>
 						<height>60</height>
 						<font>Font_18</font>
@@ -268,8 +268,8 @@
 					</control>
 					<!-- Search by crc -->
 					<control type="radiobutton" id="5560">
-						<posx>0</posx>
-						<posy>368</posy>
+						<left>0</left>
+						<top>368</top>
 						<label>$ADDON[script.games.rom.collection.browser 32706]</label>
 						<onleft>7000</onleft>
 						<onright>6000</onright>
@@ -278,8 +278,8 @@
 					</control>
 					<!-- Use foldername as crc -->
 					<control type="radiobutton" id="5580">
-						<posx>0</posx>
-						<posy>441</posy>
+						<left>0</left>
+						<top>441</top>
 						<label>$ADDON[script.games.rom.collection.browser 32707]</label>
 						<onleft>7000</onleft>
 						<onright>6000</onright>
@@ -288,8 +288,8 @@
 					</control>
 					<!-- Use filename as crc -->
 					<control type="radiobutton" id="5590">
-						<posx>0</posx>
-						<posy>514</posy>
+						<left>0</left>
+						<top>514</top>
 						<label>$ADDON[script.games.rom.collection.browser 32708]</label>
 						<onleft>7000</onleft>
 						<onright>6000</onright>
@@ -299,8 +299,8 @@
 					<!-- Remoce scraper -->
 					<control type="button" id="5610">
 						<description>Remove scraper</description>
-						<posx>0</posx>
-						<posy>588</posy>
+						<left>0</left>
+						<top>588</top>
 						<visible>true</visible>
 						<label>$ADDON[script.games.rom.collection.browser 32709]</label>
 						<align>left</align>
@@ -313,8 +313,8 @@
 					<!-- Add scraper -->
 					<control type="button" id="5620">
 						<description>Add scraper</description>
-						<posx>0</posx>
-						<posy>662</posy>
+						<left>0</left>
+						<top>662</top>
 						<visible>true</visible>
 						<label>$ADDON[script.games.rom.collection.browser 32710]</label>
 						<align>left</align>
@@ -327,8 +327,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>360</posx>
-				<posy>933</posy>
+				<left>360</left>
+				<top>933</top>
 				<width>1560</width>
 				<height>60</height>
 				<texture>darkgrey.png</texture>
@@ -336,8 +336,8 @@
 				<animation effect="fade" end="85" condition="true">Conditional</animation>
 			</control>
 			<control type="grouplist" id="9001">
-				<posx>360</posx>
-				<posy>933</posy>
+				<left>360</left>
+				<top>933</top>
 				<itemgap>0</itemgap>
 				<onup>7000</onup>
 				<ondown>7000</ondown>
@@ -364,8 +364,8 @@
 				<label>31202</label>
 			</control>
 			<control type="list" id="7000">
-				<posx>0</posx>
-				<posy>180</posy>
+				<left>0</left>
+				<top>180</top>
 				<width>374</width>
 				<height>900</height>
 				<onleft>7010</onleft>

@@ -35,8 +35,8 @@
 		<animation effect="fade" start="100" end="0" time="100">WindowClose</animation>
 		<animation effect="fade" start="100" end="0" time="750" condition="Player.HasMedia + System.IdleTime(8)">Conditional</animation>
 		<animation effect="fade" start="100" end="0" time="300" condition="Control.HasFocus(510) | Control.HasFocus(600)">Conditional</animation>
-		<posx>0</posx>
-		<posy>796</posy>
+		<left>0</left>
+		<top>796</top>
 		<width>1920</width>
 		<height>120</height>
 		<ondown condition="!Skin.HasSetting(highermainmenu)">Skin.SetBool(submode)</ondown>
@@ -54,7 +54,7 @@
 		<itemlayout width="639" height="120">
 			<control type="label">
 				<left>20</left>
-				<posy>3</posy>
+				<top>3</top>
 				<height>120</height>
 				<width>600</width>
 				<align>center</align>
@@ -66,7 +66,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<posy>6</posy>
+				<top>6</top>
 				<height>105</height>
 				<width>600</width>
 				<align>center</align>
@@ -78,7 +78,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<posy>9</posy>
+				<top>9</top>
 				<height>105</height>
 				<width>600</width>
 				<align>center</align>
@@ -90,7 +90,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<posy>6</posy>
+				<top>6</top>
 				<height>105</height>
 				<width>600</width>
 				<align>center</align>
@@ -102,7 +102,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<posy>10</posy>
+				<top>10</top>
 				<height>105</height>
 				<width>600</width>
 				<align>center</align>
@@ -114,7 +114,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<posy>4</posy>
+				<top>4</top>
 				<height>105</height>
 				<width>600</width>
 				<align>center</align>
@@ -126,7 +126,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<posy>10</posy>
+				<top>10</top>
 				<height>105</height>
 				<width>600</width>
 				<align>center</align>
@@ -138,7 +138,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<posy>-2</posy>
+				<top>-2</top>
 				<height>105</height>
 				<width>600</width>
 				<align>center</align>
@@ -152,7 +152,7 @@
 		<focusedlayout width="639" height="120">
 			<control type="label">
 				<left>20</left>
-				<posy>3</posy>
+				<top>3</top>
 				<height>120</height>
 				<width>600</width>
 				<align>center</align>
@@ -165,7 +165,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<posy>6</posy>
+				<top>6</top>
 				<height>105</height>
 				<width>600</width>
 				<align>center</align>
@@ -178,7 +178,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<posy>9</posy>
+				<top>9</top>
 				<height>105</height>
 				<width>600</width>
 				<align>center</align>
@@ -191,7 +191,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<posy>6</posy>
+				<top>6</top>
 				<height>105</height>
 				<width>600</width>
 				<align>center</align>
@@ -204,7 +204,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<posy>10</posy>
+				<top>10</top>
 				<height>105</height>
 				<width>600</width>
 				<align>center</align>
@@ -217,7 +217,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<posy>4</posy>
+				<top>4</top>
 				<height>105</height>
 				<width>600</width>
 				<align>center</align>
@@ -230,7 +230,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<posy>10</posy>
+				<top>10</top>
 				<height>105</height>
 				<width>600</width>
 				<align>center</align>
@@ -243,7 +243,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<posy>-2</posy>
+				<top>-2</top>
 				<height>105</height>
 				<width>600</width>
 				<align>center</align>
@@ -261,16 +261,16 @@
 	</include>
 	<include name="SubMenuDefault">
 		<control type="image">
-			<posx>0</posx>
-			<posy>932</posy>
+			<left>0</left>
+			<top>932</top>
 			<width>1920</width>
 			<height>45</height>
 			<texture>shadow_h.png</texture>
 			<colordiffuse>C3FFFFFF</colordiffuse>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>976</posy>
+			<left>0</left>
+			<top>976</top>
 			<width>1920</width>
 			<height>183</height>
 			<aligny>top</aligny>
@@ -280,8 +280,8 @@
 		</control>
 		<control type="button" id="9101">
 			<!-- Botao vazio -->
-			<posx>0</posx>
-			<posy>980</posy>
+			<left>0</left>
+			<top>980</top>
 			<width>310</width>
 			<height>48</height>
 			<onup>Close</onup>
@@ -313,8 +313,8 @@
 	<!-- ######################################################################### Submenu Lista Vertical ######################################################################### -->
 	<include name="SubmenuVList">
 		<viewtype>list</viewtype>
-		<posx>0</posx>
-		<posy>82</posy>
+		<left>0</left>
+		<top>82</top>
 		<width>495</width>
 		<height>892</height>
 		<onleft>Close</onleft>
@@ -325,8 +325,8 @@
 		<itemlayout width="420" height="50">
 			<control type="image">
 				<!-- azul -->
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>447</width>
 				<height>50</height>
 				<texture>grey.png</texture>
@@ -335,8 +335,8 @@
 			</control>
 			<control type="image">
 				<!-- vermelho -->
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>447</width>
 				<height>50</height>
 				<texture>grey.png</texture>
@@ -345,8 +345,8 @@
 			</control>
 			<control type="image">
 				<!-- amarelo -->
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>447</width>
 				<height>50</height>
 				<texture>grey.png</texture>
@@ -354,16 +354,16 @@
 				<visible>Window.IsVisible(6000) + String.IsEmpty(ListItem.Property(id))</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>447</width>
 				<height>4</height>
 				<texture>divider.png</texture>
 				<colordiffuse>90FFFFFF</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>195</posx>
-				<posy>3</posy>
+				<left>195</left>
+				<top>3</top>
 				<height>45</height>
 				<width>390</width>
 				<align>left</align>
@@ -375,8 +375,8 @@
 		</itemlayout>
 		<focusedlayout width="420" height="50">
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>450</width>
 				<height>50</height>
 				<texture>settings_button.png</texture>
@@ -387,8 +387,8 @@
 			</control>
 			<control type="image">
 				<!-- azul -->
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>447</width>
 				<height>50</height>
 				<texture>grey.png</texture>
@@ -398,8 +398,8 @@
 			</control>
 			<control type="image">
 				<!-- vermelho -->
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>447</width>
 				<height>50</height>
 				<texture>grey.png</texture>
@@ -409,8 +409,8 @@
 			</control>
 			<control type="image">
 				<!-- amarelo -->
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>447</width>
 				<height>50</height>
 				<texture>grey.png</texture>
@@ -419,8 +419,8 @@
 				<visible>Window.IsVisible(6000) + String.IsEmpty(ListItem.Property(id))</visible>
 			</control>
 			<control type="label">
-				<posx>195</posx>
-				<posy>3</posy>
+				<left>195</left>
+				<top>3</top>
 				<height>45</height>
 				<width>390</width>
 				<align>left</align>
@@ -434,8 +434,8 @@
 	<!-- ######################################################################### Submenu Lista Horizontal ######################################################################### -->
 	<include name="SubmenuHList">
 		<viewtype>list</viewtype>
-		<posx>0</posx>
-		<posy>980</posy>
+		<left>0</left>
+		<top>980</top>
 		<width>1920</width>
 		<height>99</height>
 		<onup>300</onup>
@@ -448,15 +448,15 @@
 		<focusposition>3</focusposition>
 		<itemlayout width="320" height="50">
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1</width>
 				<height>50</height>
 				<texture>separator_v.png</texture>
 			</control>
 			<control type="label">
 				<left>3</left>
-				<posy>0</posy>
+				<top>0</top>
 				<height>50</height>
 				<width>314</width>
 				<align>center</align>
@@ -468,8 +468,8 @@
 		</itemlayout>
 		<focusedlayout width="320" height="50">
 			<control type="image">
-				<posx>3</posx>
-				<posy>-2</posy>
+				<left>3</left>
+				<top>-2</top>
 				<width>314</width>
 				<height>50</height>
 				<texture>topmenu_button_nofocus.png</texture>
@@ -477,7 +477,7 @@
 			</control>
 			<control type="label">
 				<left>3</left>
-				<posy>0</posy>
+				<top>0</top>
 				<height>50</height>
 				<width>314</width>
 				<align>center</align>
@@ -491,8 +491,8 @@
 	<include name="SubmenuGoTo">
 		<control type="button" id="5200">
 			<!-- Para menu -->
-			<posx>0</posx>
-			<posy>1035</posy>
+			<left>0</left>
+			<top>1035</top>
 			<width>225</width>
 			<height>44</height>
 			<onleft>9000</onleft>
@@ -511,8 +511,8 @@
 			<colordiffuse>F9FFFFFF</colordiffuse>
 		</control>
 		<control type="image">
-			<posx>30</posx>
-			<posy>1040</posy>
+			<left>30</left>
+			<top>1040</top>
 			<width>33</width>
 			<height>33</height>
 			<texture>$VAR[value_arrow1]</texture>

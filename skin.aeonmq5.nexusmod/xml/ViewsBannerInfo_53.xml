@@ -4,7 +4,7 @@
 <includes>
 	<!--##################################################################################   VISTA BANNER - ID 53   ##################################################################################-->
 	<include name="BannerInfoLabel">
-		<posx>0</posx>
+		<left>0</left>
 		<height>30</height>
 		<width>428</width>
 		<font>Font_18A</font>
@@ -22,22 +22,22 @@
 			<!-- Fundo -->
 			<visible>Control.IsVisible(53)</visible>
 			<control type="image">
-				<posx>598</posx>
-				<posy>128</posy>
+				<left>598</left>
+				<top>128</top>
 				<width>3</width>
 				<height>308</height>
 				<texture>separator_v.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>435</posy>
+				<left>0</left>
+				<top>435</top>
 				<width>1920</width>
 				<height>3</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="textbox">
-				<posx>627</posx>
-				<posy>153</posy>
+				<left>627</left>
+				<top>153</top>
 				<width>638</width>
 				<height>266</height>
 				<font>Font_18A</font>
@@ -46,15 +46,15 @@
 				<include>Animation_Fade</include>
 			</control>
 			<control type="image">
-				<posx>1290</posx>
-				<posy>128</posy>
+				<left>1290</left>
+				<top>128</top>
 				<width>3</width>
 				<height>308</height>
 				<texture>separator_v.png</texture>
 			</control>
 			<control type="image">
-				<posx>1170</posx>
-				<posy>159</posy>
+				<left>1170</left>
+				<top>159</top>
 				<width>750</width>
 				<height>255</height>
 				<aspectratio>keep</aspectratio>
@@ -63,8 +63,8 @@
 				<fadetime>FanartCrossFadeTime</fadetime>
 			</control>
 			<control type="grouplist">
-				<posx>150</posx>
-				<posy>156</posy>
+				<left>150</left>
+				<top>156</top>
 				<orientation>vertical</orientation>
 				<itemgap>8</itemgap>
 				<control type="label">
@@ -99,8 +99,8 @@
 			<control type="panel" id="53">
 				<!-- Banner Info -->
 				<viewtype label="31812">Wide Icon</viewtype>
-				<posx>142</posx>
-				<posy>447</posy>
+				<left>142</left>
+				<top>447</top>
 				<width>1665</width>
 				<height>525</height>
 				<onup>53</onup>
@@ -130,8 +130,8 @@
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="image">
-						<posx>492</posx>
-						<posy>4</posy>
+						<left>492</left>
+						<top>4</top>
 						<width>40</width>
 						<height>40</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -176,8 +176,8 @@
 						<animation effect="zoom" center="auto" start="90" end="110" time="600" tween="back" easing="out" reversible="false" condition="Skin.HasSetting(bannerinfozoom)">Focus</animation>
 					</control>
 					<control type="image">
-						<posx>492</posx>
-						<posy>4</posy>
+						<left>492</left>
+						<top>4</top>
 						<width>40</width>
 						<height>40</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -190,8 +190,8 @@
 			<control type="scrollbar" id="80">
 				<!--Banner Info-->
 				<include>ScrollBar_Vertical</include>
-				<posx>1800</posx>
-				<posy>442</posy>
+				<left>1800</left>
+				<top>442</top>
 				<height>525</height>
 				<onleft>53</onleft>
 				<onright>9920</onright>

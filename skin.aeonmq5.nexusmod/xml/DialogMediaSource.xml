@@ -8,50 +8,50 @@
 	<defaultcontrol>11</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<include>Animation_DialogPopup</include>
 	<controls>
 		<control type="group">
-			<posx>326</posx>
-			<posy>285</posy>
+			<left>326</left>
+			<top>285</top>
 			<width>1270</width>
 			<height>492</height>
 			<visible>!Window.isVisible(contentsettings)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1270</width>
 				<height>1</height>
 				<texture>grey.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>490</posy>
+				<left>0</left>
+				<top>490</top>
 				<width>1270</width>
 				<height>1</height>
 				<texture>grey.png</texture>
 			</control>
 			<control type="image">
-				<posx>-45</posx>
-				<posy>0</posy>
+				<left>-45</left>
+				<top>0</top>
 				<width>45</width>
 				<height>492</height>
 				<texture flipx="true">shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1270</width>
 				<height>492</height>
 				<texture>darkgrey.png</texture>
 				<colordiffuse>F0FFFFFF</colordiffuse>
 			</control>
 			<control type="list" id="10">
-				<posx>60</posx>
-				<posy>80</posy>
+				<left>60</left>
+				<top>80</top>
 				<width>908</width>
 				<height>246</height>
 				<onup>12</onup>
@@ -61,8 +61,8 @@
 				<scrolltime>0</scrolltime>
 				<itemlayout height="62">
 					<control type="label">
-						<posx>8</posx>
-						<posy>0</posy>
+						<left>8</left>
+						<top>0</top>
 						<width>908</width>
 						<height>48</height>
 						<font>Font_18A</font>
@@ -75,8 +75,8 @@
 				</itemlayout>
 				<focusedlayout height="62">
 					<control type="label">
-						<posx>8</posx>
-						<posy>0</posy>
+						<left>8</left>
+						<top>0</top>
 						<width>908</width>
 						<height>48</height>
 						<font>Font_18A</font>
@@ -89,15 +89,15 @@
 				</focusedlayout>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>58</posy>
+				<left>0</left>
+				<top>58</top>
 				<width>1023</width>
 				<height>1</height>
 				<texture>black.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1023</width>
 				<height>60</height>
 				<texture>black.png</texture>
@@ -105,8 +105,8 @@
 			</control>
 			<control type="label" id="2">
 				<!-- header -->
-				<posx>15</posx>
-				<posy>9</posy>
+				<left>15</left>
+				<top>9</top>
 				<width>1010</width>
 				<height>42</height>
 				<align>center</align>
@@ -116,23 +116,23 @@
 				<label>31348</label>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>388</posy>
+				<left>0</left>
+				<top>388</top>
 				<width>1023</width>
 				<height>1</height>
 				<texture>black.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>330</posy>
+				<left>0</left>
+				<top>330</top>
 				<width>1023</width>
 				<height>60</height>
 				<texture>black.png</texture>
 				<colordiffuse>90FFFFFF</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>15</posx>
-				<posy>338</posy>
+				<left>15</left>
+				<top>338</top>
 				<width>1010</width>
 				<height>42</height>
 				<align>center</align>
@@ -143,32 +143,32 @@
 			</control>
 			<control type="image">
 				<!-- Options -->
-				<posx>980</posx>
-				<posy>0</posy>
+				<left>980</left>
+				<top>0</top>
 				<width>45</width>
 				<height>492</height>
 				<texture flipx="true">shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>1269</posx>
-				<posy>0</posy>
+				<left>1269</left>
+				<top>0</top>
 				<width>45</width>
 				<height>492</height>
 				<texture>shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>1024</posx>
-				<posy>0</posy>
+				<left>1024</left>
+				<top>0</top>
 				<width>244</width>
 				<height>492</height>
 				<texture>grey.png</texture>
 				<colordiffuse>90FFFFFF</colordiffuse>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>1024</posx>
-				<posy>63</posy>
+				<left>1024</left>
+				<top>63</top>
 				<control type="button" id="11">
 					<!-- Browse -->
 					<include>SettingsDialogButton</include>
@@ -212,8 +212,8 @@
 			</control>
 			<control type="edit" id="12">
 				<!-- name -->
-				<posx>27</posx>
-				<posy>398</posy>
+				<left>27</left>
+				<top>398</top>
 				<width>980</width>
 				<height>66</height>
 				<font>Font_18</font>

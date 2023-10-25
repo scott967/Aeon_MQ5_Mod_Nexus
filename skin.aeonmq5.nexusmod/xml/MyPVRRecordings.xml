@@ -19,8 +19,8 @@
 		<control type="group">	<!-- Background visualization -->
 			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<texture>black.png</texture>
@@ -29,16 +29,16 @@
 				<visible>Player.HasMedia</visible>
 			</control>
 			<control type="videowindow">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<visible>Player.HasVideo</visible>
 				<animation effect="slide" start="0,0" end="-3000,0" time="0">WindowClose</animation>
 			</control>
 			<control type="visualisation">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<visible>PVR.IsPlayingRadio + [String.Contains(Skin.String(vis_bgradio),vis) | String.Contains(Skin.String(vis_bgradio),fanartmix)]</visible>
@@ -78,21 +78,21 @@
 				<visible>![Container.OnNext | Container.OnPrevious]</visible>
 			</control>
 			<control type="group">	<!-- All views  flags -->
-				<posy>45</posy>
+				<top>45</top>
 				<visible>!Control.IsVisible(57) + [String.Contains(skin.string(mediaflags),on) | String.Contains(skin.string(mediaflags),auto) + Control.IsVisible(9921)]</visible>
 				<include>Animation_HiddenView</include>
 				<control type="image">
 					<!-- Footer Bar -->
-					<posx>0</posx>
-					<posy>765</posy>
+					<left>0</left>
+					<top>765</top>
 					<width>1920</width>
 					<height>270</height>
 					<colordiffuse>$VAR[value_flagsbar]</colordiffuse>
 					<texture>shadow_mask.png</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>765</posy>
+					<left>0</left>
+					<top>765</top>
 					<width>1920</width>
 					<height>270</height>
 					<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
@@ -106,8 +106,8 @@
 					<visible>!Skin.HasSetting(nomediaflags)</visible>
 					<control type="grouplist">
 						<!-- Etiquetas -->
-						<posx>30</posx>
-						<posy>968</posy>
+						<left>30</left>
+						<top>968</top>
 						<orientation>horizontal</orientation>
 						<itemgap>39</itemgap>
 						<control type="image">
@@ -124,13 +124,13 @@
 							<!-- Rating -->
 							<visible>!String.IsEmpty(ListItem.Rating)</visible>
 							<control type="image">
-								<posx>8</posx>
+								<left>8</left>
 								<include>FlagImage</include>
 								<texture>flags/rating.png</texture>
 							</control>
 							<control type="label">
-								<posx>20</posx>
-								<posy>2</posy>
+								<left>20</left>
+								<top>2</top>
 								<width>134</width>
 								<height>75</height>
 								<align>center</align>
@@ -140,7 +140,7 @@
 								<label>$INFO[ListItem.Rating]</label>
 							</control>
 							<control type="image">
-								<posx>188</posx>
+								<left>188</left>
 								<include>FlagSeparator</include>
 							</control>
 						</control>
@@ -212,8 +212,8 @@
 								<texture>flags/percentplayed.png</texture>
 							</control>
 							<control type="label">
-								<posx>18</posx>
-								<posy>2</posy>
+								<left>18</left>
+								<top>2</top>
 								<width>134</width>
 								<height>75</height>
 								<align>center</align>
@@ -225,8 +225,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>975</posy>
+						<left>0</left>
+						<top>975</top>
 						<height>63</height>
 						<width>1920</width>
 						<texture>gradient_small.png</texture>
@@ -234,7 +234,7 @@
 				</control>
 			</control>
 			<control type="group">		<!-- Title/air date (poster/wall/panel includes the lisitem label) -->
-				<posy>-22</posy>
+				<top>-22</top>
 				<animation effect="slide" time="400" start="0,-375" end="0,0" easing="inout" tween="cubic">WindowOpen</animation>
 				<animation effect="slide" time="400" start="0,-375" end="0,0" easing="inout" tween="cubic">Visible</animation>
 				<animation effect="slide" time="400" start="0,0" end="0,-375" easing="inout" tween="cubic">WindowClose</animation>
@@ -244,8 +244,8 @@
 				<!-- <visible>![ControlGroup(9000).HasFocus | Control.HasFocus(9920) | Control.IsVisible(9922) | Control.HasFocus(9940) | Window.IsActive(movieinformation)]</visible> -->
 				<visible>![ControlGroup(9000).HasFocus | Control.HasFocus(9920) | Control.IsVisible(9922) | Control.HasFocus(9940) | Window.IsActive(pvrrecordinginfo)]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>90</posy>
+					<left>0</left>
+					<top>90</top>
 					<width>1920</width>
 					<height>360</height>
 					<texture flipy="true">shadow_mask.png</texture>
@@ -256,8 +256,8 @@
 					<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
 					<control type="label">
 						<!-- Title -->
-						<posx>45</posx>
-						<posy>72</posy>
+						<left>45</left>
+						<top>72</top>
 						<width>1125</width>
 						<height>60</height>
 						<font>Font_40</font>
@@ -270,8 +270,8 @@
 					</control>
 					<control type="image">
 						<!-- clearlogo -->
-						<posx>45</posx>
-						<posy>72</posy>
+						<left>45</left>
+						<top>72</top>
 						<width>450</width>
 						<height>68</height>
 						<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
@@ -281,8 +281,8 @@
 					</control>
 					<control type="label">
 						<!-- air date -->
-						<posx>45</posx>
-						<posy>142</posy>
+						<left>45</left>
+						<top>142</top>
 						<width>1125</width>
 						<height>38</height>
 						<font>Font_21A</font>
@@ -298,8 +298,8 @@
 					<visible>String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
 					<control type="label">
 						<!-- Title -->
-						<posx>45</posx>
-						<posy>72</posy>
+						<left>45</left>
+						<top>72</top>
 						<width>1650</width>
 						<height>60</height>
 						<font>Font_40</font>
@@ -312,8 +312,8 @@
 					</control>
 					<control type="image">
 						<!-- clearlogo -->
-						<posx>45</posx>
-						<posy>72</posy>
+						<left>45</left>
+						<top>72</top>
 						<width>450</width>
 						<height>68</height>
 						<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
@@ -323,8 +323,8 @@
 					</control>
 					<control type="label">
 						<!-- air date -->
-						<posx>45</posx>
-						<posy>142</posy>
+						<left>45</left>
+						<top>142</top>
 						<width>1125</width>
 						<height>38</height>
 						<font>Font_21A</font>
@@ -347,37 +347,37 @@
 				<animation effect="slide" end="-1170,0" time="0" condition="Control.IsVisible(59)">Conditional</animation>
 				<animation effect="slide" end="0,-30" time="500" tween="sine" easing="out" condition="!Skin.HasSetting(pvrdate)">Conditional</animation>
 				<visible>![Skin.HasSetting(nolanguageflags) | String.IsEqual(ListItem.Label,..) | String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) | Control.IsVisible(51) | Control.HasFocus(9920) | Control.HasFocus(9940) | Control.IsVisible(9922) | Window.IsActive(movieinformation)]</visible>
-				<posx>1215</posx>
-				<posy>52</posy>
+				<left>1215</left>
+				<top>52</top>
 				<include>AudioandSub</include>
 			</control>
 			<control type="group">	<!-- default view group Wide View 51-->
 				<animation effect="fade" time="400">VisibleChange</animation>
 				<visible>Control.IsVisible(51)</visible>
-				<posy>45</posy>
+				<top>45</top>
 				<control type="group">
 					<animation effect="slide" time="500" start="-1200,0" end="0,0" tween="cubic" easing="out">WindowOpen</animation>
 					<animation effect="slide" time="500" start="-1200,0" end="0,0" tween="cubic" easing="out">Visible</animation>
 					<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
 					<control type="image">
-						<posx>0</posx>
-						<posy>54</posy>
+						<left>0</left>
+						<top>54</top>
 						<width>960</width>
 						<height>45</height>
 						<texture>shadow_h.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>975</posy>
+						<left>0</left>
+						<top>975</top>
 						<width>1920</width>
 						<height>45</height>
 						<texture flipy="true">shadow_h.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>98</posy>
+						<left>0</left>
+						<top>98</top>
 						<width>960</width>
 						<height>878</height>
 						<texture>darkgrey.png</texture>
@@ -385,8 +385,8 @@
 						<animation effect="fade" end="95" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
-						<posx>690</posx>
-						<posy>98</posy>
+						<left>690</left>
+						<top>98</top>
 						<width>240</width>
 						<height>876</height>
 						<texture>grey.png</texture>
@@ -401,8 +401,8 @@
 					</control>
 					<control type="list" id="51">
 						<viewtype label="31813">list</viewtype>
-						<posx>0</posx>
-						<posy>98</posy>
+						<left>0</left>
+						<top>98</top>
 						<width>960</width>
 						<height>876</height>
 						<pagecontrol>73</pagecontrol>
@@ -413,15 +413,15 @@
 						<preloaditems>2</preloaditems>
 						<itemlayout height="60">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1108</width>
 								<height>1</height>
 								<texture>line.png</texture>
 							</control>
 							<control type="label">
-								<posx>68</posx>
-								<posy>1</posy>
+								<left>68</left>
+								<top>1</top>
 								<width>555</width>
 								<height>60</height>
 								<font>Font_22</font>
@@ -430,8 +430,8 @@
 								<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
 							</control>
 							<control type="label">
-								<posx>690</posx>
-								<posy>0</posy>
+								<left>690</left>
+								<top>0</top>
 								<width>240</width>
 								<height>60</height>
 								<font>Font_18A</font>
@@ -441,8 +441,8 @@
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						<!-- 	<control type="image">
-								<posx>907</posx>
-								<posy>8</posy>
+								<left>907</left>
+								<top>8</top>
 								<width>45</width>
 								<height>45</height>
 								<texture>$VAR[value_watchedstyle]</texture>
@@ -450,8 +450,8 @@
 								<visible>!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
 							</control> -->
 							<control type="image">
-								<posx>907</posx>
-								<posy>8</posy>
+								<left>907</left>
+								<top>8</top>
 								<width>45</width>
 								<height>45</height>
 								<texture>$VAR[pvr_overlay]</texture>
@@ -461,16 +461,16 @@
 						</itemlayout>
 						<focusedlayout height="60">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>960</width>
 								<height>60</height>
 								<texture>settings_button_focus.png</texture>
 								<animation effect="fade" start="100" end="30" time="0" condition="!Control.Hasfocus(51)">conditional</animation>
 							</control>
 							<control type="label">
-								<posx>68</posx>
-								<posy>1</posy>
+								<left>68</left>
+								<top>1</top>
 								<width>555</width>
 								<height>60</height>
 								<font>Font_22</font>
@@ -479,8 +479,8 @@
 								<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
 							</control>
 							<control type="label">
-								<posx>690</posx>
-								<posy>0</posy>
+								<left>690</left>
+								<top>0</top>
 								<width>240</width>
 								<height>60</height>
 								<font>Font_18A</font>
@@ -490,8 +490,8 @@
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
 							<control type="image">
-								<posx>907</posx>
-								<posy>8</posy>
+								<left>907</left>
+								<top>8</top>
 								<width>45</width>
 								<height>45</height>
 								<texture>$VAR[value_watchedstyle]</texture>
@@ -502,8 +502,8 @@
 					</control>
 					<control type="scrollbar" id="73">
 						<include>ScrollBar_Vertical</include>
-						<posx>8</posx>
-						<posy>102</posy>
+						<left>8</left>
+						<top>102</top>
 						<height>870</height>
 						<onleft>9900</onleft>
 						<onright>51</onright>
@@ -512,23 +512,23 @@
 					</control>
 				</control>
 				<control type="group">	<!--  view 51 right group -->
-					<posx>960</posx>
-					<posy>0</posy>
+					<left>960</left>
+					<top>0</top>
 					<animation effect="slide" time="1000" start="900,0" end="0,0" tween="cubic" easing="out">WindowOpen</animation>
 					<animation effect="slide" time="1000" start="900,0" end="0,0" tween="cubic" easing="out">Visible</animation>
 					<animation effect="fade" time="400" start="100" end="0">Hidden</animation>
 					<visible>Control.IsVisible(51)</visible>
 					<control type="image">
-						<posx>-44</posx>
-						<posy>-105</posy>
+						<left>-44</left>
+						<top>-105</top>
 						<width>45</width>
 						<height>1080</height>
 						<texture flipx="true">shadow.png</texture>
 						<colordiffuse>C3FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>-105</posy>
+						<left>0</left>
+						<top>-105</top>
 						<width>960</width>
 						<height>1080</height>
 						<texture>darkgrey.png</texture>
@@ -536,8 +536,8 @@
 						<animation effect="fade" end="85" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>594</posy>
+						<left>0</left>
+						<top>594</top>
 						<width>960</width>
 						<height>381</height>
 						<texture>darkgrey.png</texture>
@@ -547,8 +547,8 @@
 						<visible>!Control.HasFocus(562)</visible>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>-105</posy>
+						<left>0</left>
+						<top>-105</top>
 						<width>960</width>
 						<height>1080</height>
 						<texture>black.png</texture>
@@ -562,8 +562,8 @@
 							<include>Animation_Fade</include>
 							<control type="image">
 								<!-- reflexo -->
-								<posx>30</posx>
-								<posy>602</posy>
+								<left>30</left>
+								<top>602</top>
 								<width>900</width>
 								<height>550</height>
 								<fadetime>FanartCrossFadeTime</fadetime>
@@ -573,8 +573,8 @@
 							</control>
 							<control type="image">
 								<!-- miniatura -->
-								<posx>30</posx>
-								<posy>45</posy>
+								<left>30</left>
+								<top>45</top>
 								<width>900</width>
 								<height>550</height>
 								<fadetime>FanartCrossFadeTime</fadetime>
@@ -584,8 +584,8 @@
 							</control>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>615</posy>
+							<left>30</left>
+							<top>615</top>
 							<width>600</width>
 							<height>45</height>
 							<aligny>center</aligny>
@@ -595,8 +595,8 @@
 							<visible>!ListItem.IsFolder</visible>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>663</posy>
+							<left>30</left>
+							<top>663</top>
 							<width>600</width>
 							<height>45</height>
 							<aligny>center</aligny>
@@ -606,8 +606,8 @@
 							<visible>!ListItem.IsFolder</visible>
 						</control>
 						<control type="textbox">
-							<posx>30</posx>
-							<posy>708</posy>
+							<left>30</left>
+							<top>708</top>
 							<width>895</width>
 							<height>300</height>
 							<label>$INFO[ListItem.Plot]</label>
@@ -616,8 +616,8 @@
 							<autoscroll delay="20000" time="3000" repeat="20000">!Skin.HasSetting(noallowscroll)</autoscroll>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>860</posy>
+							<left>0</left>
+							<top>860</top>
 							<width>960</width>
 							<height>116</height>
 							<texture>gradient_small.png</texture>
@@ -627,7 +627,7 @@
 			</control>
 			<!-- end Wide View 51 -->
 			<control type="group">
-				<posy>45</posy>
+				<top>45</top>
 				<include condition="Skin.HasSetting(viewposter_recordings)">ViewPoster</include>
 				<!-- 54 -->
 				<include condition="Skin.HasSetting(viewlowlist_recordings)">ViewLowList</include>
@@ -647,8 +647,8 @@
 				<visible>Control.IsVisible(56) | Control.IsVisible(51) | Control.IsVisible(54) | Control.Isvisible(55) | Control.IsVisible(59) | Control.IsVisible(62) | Control.IsVisible(71)</visible>
 				<control type="label">
 					<description>Disk usage text</description>
-					<posx>1425</posx>
-					<posy>1020</posy>
+					<left>1425</left>
+					<top>1020</top>
 					<width>435</width>
 					<height>30</height>
 					<label>[UPPERCASE]$INFO[PVR.backenddiskspace][/UPPERCASE]</label>
@@ -660,8 +660,8 @@
 				</control>
 				<control type="progress">
 					<description>Disk usage bar</description>
-					<posx>1425</posx>
-					<posy>1058</posy>
+					<left>1425</left>
+					<top>1058</top>
 					<width>435</width>
 					<height>18</height>&gt;
 					<info>PVR.backenddiskspaceprogr</info><visible>!Integer.IsGreater(PVR.backenddiskspaceprogr,100)</visible></control>
@@ -670,8 +670,8 @@
 				<visible>Control.IsVisible(57)</visible>
 				<control type="label">
 					<description>Disk usage text</description>
-					<posx>8</posx>
-					<posy>1020</posy>
+					<left>8</left>
+					<top>1020</top>
 					<width>435</width>
 					<height>30</height>
 					<label>[UPPERCASE]$INFO[PVR.backenddiskspace][/UPPERCASE]</label>
@@ -683,8 +683,8 @@
 				</control>
 				<control type="label">
 					<description>Disk usage text</description>
-					<posx>8</posx>
-					<posy>1020</posy>
+					<left>8</left>
+					<top>1020</top>
 					<width>435</width>
 					<height>30</height>
 					<label>[UPPERCASE]$INFO[PVR.backenddiskspace][/UPPERCASE]</label>
@@ -696,8 +696,8 @@
 				</control>
 				<control type="progress">
 					<description>Disk usage bar</description>
-					<posx>8</posx>
-					<posy>1058</posy>
+					<left>8</left>
+					<top>1058</top>
 					<width>435</width>
 					<height>18</height>&gt;
 					<info>PVR.backenddiskspaceprogr</info>
@@ -712,8 +712,8 @@
 				<animation effect="slide" start="0,0" end="450,0" time="0" easing="in" tween="cubic" condition="Control.IsVisible(11) | Control.IsVisible(12)">Conditional</animation>
 				<visible>[PVR.IsRecording | PVR.HasNonRecordingTimer | PVR.HasReminder] + ![Player.HasMedia | Control.HasFocus(9920) | ControlGroup(9000).HasFocus]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>750</width>
 					<height>39</height>
 					<texture>widgets_panel.png</texture>
@@ -721,8 +721,8 @@
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="image">
-					<posx>30</posx>
-					<posy>8</posy>
+					<left>30</left>
+					<top>8</top>
 					<width>22</width>
 					<height>22</height>
 					<aspectratio>keep</aspectratio>
@@ -730,8 +730,8 @@
 					<visible>PVR.HasNonRecordingTimer</visible>
 				</control>
 				<control type="image">
-					<posx>30</posx>
-					<posy>8</posy>
+					<left>30</left>
+					<top>8</top>
 					<width>30</width>
 					<height>22</height>
 					<aspectratio>keep</aspectratio>
@@ -739,8 +739,8 @@
 					<visible>PVR.IsRecording</visible>
 				</control>
 				<control type="label">
-					<posx>705</posx>
-					<posy>3</posy>
+					<left>75</left>
+					<top>3</top>
 					<width>630</width>
 					<height>30</height>
 					<align>right</align>

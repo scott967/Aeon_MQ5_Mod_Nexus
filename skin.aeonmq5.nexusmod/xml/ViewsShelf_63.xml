@@ -18,8 +18,8 @@
 				<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
 				<control type="fixedlist" id="63">
 					<viewtype label="31809">list</viewtype>
-					<posx>-45</posx>
-					<posy>315</posy>
+					<left>-45</left>
+					<top>315</top>
 					<height>922</height>
 					<width>2850</width>
 					<onleft>63</onleft>
@@ -37,20 +37,20 @@
 					<visible>![Container.Content(episodes) | Container.Content(years)]</visible>
 					<itemlayout width="264" height="368" condition="Window.IsActive(videos) | Window.IsActive(videoplaylist) | Window.IsActive(programs)">
 						<control type="group">
-							<posx>225</posx>
-							<posy>0</posy>
+							<left>225</left>
+							<top>0</top>
 							<control type="image">
 								<!-- Estojo reflexo -->
-								<posx>-3</posx>
-								<posy>544</posy>
+								<left>-3</left>
+								<top>544</top>
 								<width>42</width>
 								<height>456</height>
 								<texture>shelf_case_reflect.png</texture>
 							</control>
 							<control type="image">
 								<!-- Estojo -->
-								<posx>-3</posx>
-								<posy>200</posy>
+								<left>-3</left>
+								<top>200</top>
 								<width>42</width>
 								<height>355</height>
 								<texture>shelf_case.png</texture>
@@ -58,8 +58,8 @@
 							</control>
 							<control type="image">
 								<!-- Borda reflexo -->
-								<posx>-225</posx>
-								<posy>550</posy>
+								<left>-225</left>
+								<top>550</top>
 								<width>244</width>
 								<height>362</height>
 								<texture flipy="true" diffuse="thumb_shelf_reflect.png">thumb_shelf_border.png</texture>
@@ -69,8 +69,8 @@
 							</control>
 							<control type="image">
 								<!-- Poster reflexo -->
-								<posx>-225</posx>
-								<posy>552</posy>
+								<left>-225</left>
+								<top>552</top>
 								<width>243</width>
 								<height>362</height>
 								<texture flipy="true" diffuse="thumb_shelf_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -79,8 +79,8 @@
 							</control>
 							<control type="image">
 								<!-- Borda -->
-								<posx>-224</posx>
-								<posy>196</posy>
+								<left>-224</left>
+								<top>196</top>
 								<width>243</width>
 								<height>362</height>
 								<texture>thumb_shelf_diffuse.png</texture>
@@ -89,8 +89,8 @@
 							</control>
 							<control type="image">
 								<!-- Poster -->
-								<posx>-224</posx>
-								<posy>196</posy>
+								<left>-224</left>
+								<top>196</top>
 								<width>243</width>
 								<height>362</height>
 								<texture diffuse="thumb_shelf_diffuse.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -98,8 +98,8 @@
 								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="image">
-								<posx>-42</posx>
-								<posy>200</posy>
+								<left>-42</left>
+								<top>200</top>
 								<width>60</width>
 								<height>60</height>
 								<texture>$VAR[value_watchedstyle]</texture>
@@ -110,12 +110,12 @@
 					</itemlayout>
 					<focusedlayout width="330" height="772" condition="Window.IsActive(videos) | Window.IsActive(videoplaylist) | Window.IsActive(programs)">
 						<control type="group">
-							<posx>210</posx>
-							<posy>0</posy>
+							<left>210</left>
+							<top>0</top>
 							<control type="image">
 								<!-- Estojo reflexo -->
-								<posx>66</posx>
-								<posy>568</posy>
+								<left>66</left>
+								<top>568</top>
 								<width>54</width>
 								<height>495</height>
 								<texture>shelf_case_reflect.png</texture>
@@ -126,8 +126,8 @@
 							</control>
 							<control type="image">
 								<!-- Estojo -->
-								<posx>66</posx>
-								<posy>138</posy>
+								<left>66</left>
+								<top>138</top>
 								<width>54</width>
 								<height>441</height>
 								<texture>shelf_case.png</texture>
@@ -138,8 +138,8 @@
 							</control>
 							<control type="image">
 								<!-- Borda reflexo -->
-								<posx>-222</posx>
-								<posy>574</posy>
+								<left>-222</left>
+								<top>574</top>
 								<width>320</width>
 								<height>450</height>
 								<texture flipy="true" diffuse="thumb_shelf_reflect.png">thumb_shelf_border.png</texture>
@@ -152,8 +152,8 @@
 							</control>
 							<control type="image">
 								<!-- Poster reflexo  -->
-								<posx>-222</posx>
-								<posy>576</posy>
+								<left>-222</left>
+								<top>576</top>
 								<width>316</width>
 								<height>450</height>
 								<texture flipy="true" diffuse="thumb_shelf_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -165,8 +165,8 @@
 							</control>
 							<control type="image">
 								<!-- Borda -->
-								<posx>-222</posx>
-								<posy>134</posy>
+								<left>-222</left>
+								<top>134</top>
 								<width>316</width>
 								<height>450</height>
 								<texture>thumb_shelf_diffuse.png</texture>
@@ -178,8 +178,8 @@
 							</control>
 							<control type="image">
 								<!-- Poster  -->
-								<posx>-222</posx>
-								<posy>134</posy>
+								<left>-222</left>
+								<top>134</top>
 								<width>316</width>
 								<height>450</height>
 								<texture diffuse="thumb_shelf_diffuse.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
@@ -190,8 +190,8 @@
 								</animation>
 							</control>
 							<control type="image">
-								<posx>18</posx>
-								<posy>136</posy>
+								<left>18</left>
+								<top>136</top>
 								<width>75</width>
 								<height>75</height>
 								<texture>$VAR[value_watchedstyle]</texture>
@@ -205,19 +205,19 @@
 					</focusedlayout>
 					<itemlayout width="264" height="368" condition="Window.IsActive(musicplaylist) | Window.IsActive(music)">
 						<control type="group">
-							<posx>225</posx>
-							<posy>90</posy>
+							<left>225</left>
+							<top>90</top>
 							<control type="image">
-								<posx>-3</posx>
-								<posy>200</posy>
+								<left>-3</left>
+								<top>200</top>
 								<width>39</width>
 								<height>240</height>
 								<texture>shelf_case.png</texture>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
 							<!-- <control type="image">
-								<posx>-3</posx>
-								<posy>426</posy>
+								<left>-3</left>
+								<top>426</top>
 								<width>60</width>
 								<height>456</height>
 								<texture>shelf_case_botton.png</texture>
@@ -225,15 +225,15 @@
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control> -->
 							<control type="image">
-								<posx>-224</posx>
-								<posy>196</posy>
+								<left>-224</left>
+								<top>196</top>
 								<width>243</width>
 								<height>243</height>
 								<texture>thumb_cdmask_diffuse.png</texture>
 							</control>
 							<control type="image">
-								<posx>-224</posx>
-								<posy>196</posy>
+								<left>-224</left>
+								<top>196</top>
 								<width>243</width>
 								<height>243</height>
 								<texture diffuse="thumb_cdmask_diffuse.png" background="true">$VAR[value_poster]</texture>
@@ -241,8 +241,8 @@
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
 							<!-- <control type="image">
-								<posx>-225</posx>
-								<posy>435</posy>
+								<left>-225</left>
+								<top>435</top>
 								<width>243</width>
 								<height>243</height>
 								<texture flipy="true">thumb_shelf_border_diffuse.png</texture>
@@ -252,8 +252,8 @@
 								<animation effect="fade" start="0" end="30" time="0" condition="true">Conditional</animation>
 							</control> -->
 							<control type="image">
-								<posx>-225</posx>
-								<posy>435</posy>
+								<left>-225</left>
+								<top>435</top>
 								<width>243</width>
 								<height>243</height>
 								<texture flipy="true" diffuse="thumb_cdmask_diffuse.png" background="true">$VAR[value_poster]</texture>
@@ -266,11 +266,11 @@
 					</itemlayout>
 					<focusedlayout width="330" height="772" condition="Window.IsActive(musicplaylist) | Window.IsActive(music)">
 						<control type="group">
-							<posx>210</posx>
-							<posy>90</posy>
+							<left>210</left>
+							<top>90</top>
 							<control type="image">
-								<posx>66</posx>
-								<posy>140</posy>
+								<left>66</left>
+								<top>140</top>
 								<width>54</width>
 								<height>309</height>
 								<texture>shelf_case.png</texture>
@@ -281,8 +281,8 @@
 								</animation>
 							</control>
 							<!-- <control type="image">
-								<posx>72</posx>
-								<posy>434</posy>
+								<left>72</left>
+								<top>434</top>
 								<width>72</width>
 								<height>456</height>
 								<texture>shelf_case_botton.png</texture>
@@ -293,8 +293,8 @@
 								</animation>
 							</control> -->
 							<control type="image">
-								<posx>-222</posx>
-								<posy>135</posy>
+								<left>-222</left>
+								<top>135</top>
 								<width>316</width>
 								<height>316</height>
 								<texture>thumb_cdmask_diffuse.png</texture>
@@ -305,8 +305,8 @@
 								</animation>
 							</control>
 							<control type="image">
-								<posx>-222</posx>
-								<posy>453</posy>
+								<left>-222</left>
+								<top>453</top>
 								<width>316</width>
 								<height>316</height>
 								<texture flipy="true">thumb_cdmask_diffuse.png</texture>
@@ -318,8 +318,8 @@
 								</animation>
 							</control>
 							<control type="image">
-								<posx>-222</posx>
-								<posy>135</posy>
+								<left>-222</left>
+								<top>135</top>
 								<width>316</width>
 								<height>316</height>
 								<texture diffuse="thumb_cdmask_diffuse.png" background="true">$VAR[value_poster]</texture>
@@ -330,8 +330,8 @@
 								</animation>
 							</control>
 							<control type="image">
-								<posx>-219</posx>
-								<posy>447</posy>
+								<left>-219</left>
+								<top>447</top>
 								<width>316</width>
 								<height>316</height>
 								<texture flipy="true">thumb_cdmask_diffuse.png</texture>
@@ -343,8 +343,8 @@
 								</animation>
 							</control>
 							<control type="image">
-								<posx>-222</posx>
-								<posy>447</posy>
+								<left>-222</left>
+								<top>447</top>
 								<width>316</width>
 								<height>316</height>
 								<texture flipy="true" diffuse="thumb_cdmask_diffuse.png" background="true">$VAR[value_poster]</texture>
@@ -361,8 +361,8 @@
 			</control>
 			<control type="scrollbar" id="80">
 				<include>ScrollBar_Horizontal</include>
-				<posx>458</posx>
-				<posy>920</posy>
+				<left>458</left>
+				<top>920</top>
 				<width>1005</width>
 				<onup>63</onup>
 				<ondown>9920</ondown>

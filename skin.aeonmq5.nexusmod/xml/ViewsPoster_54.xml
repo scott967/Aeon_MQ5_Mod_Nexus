@@ -8,7 +8,7 @@
 <includes>
 	<!--##################################################################################   VISTA POSTER - ID 54   #############################################################################-->
 	<include name="PosterLabel">
-		<posx>0</posx>
+		<left>0</left>
 		<height>30</height>
 		<width>458</width>
 		<font>Font_18A</font>
@@ -31,8 +31,8 @@
 	</include>
 	<include name="Poster_Content">
 		<viewtype label="31808">list</viewtype>
-		<posx>-132</posx>
-		<posy>180</posy>
+		<left>-132</left>
+		<top>180</top>
 		<width>2130</width>
 		<height>600</height>
 		<onleft>54</onleft>
@@ -47,8 +47,8 @@
 		<visible>!Container.Content(years)</visible>
 		<itemlayout condition="!$EXP[IsPVRRecordings]" width="447" height="540">
 			<control type="image">
-				<posx>0</posx>
-				<posy>9</posy>
+				<left>0</left>
+				<top>9</top>
 				<width>390</width>
 				<height>525</height>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
@@ -56,8 +56,8 @@
 				<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
 			</control>
 			<control type="image">
-				<posx>315</posx>
-				<posy>472</posy>
+				<left>315</left>
+				<top>472</top>
 				<width>60</width>
 				<height>60</height>
 				<texture>$VAR[pvr_overlay]</texture>
@@ -68,8 +68,8 @@
 		</itemlayout>
 		<itemlayout condition="![Window.IsActive(musicplaylist) | Window.IsActive(music)]" width="447" height="540">
 			<control type="image">
-				<posx>0</posx>
-				<posy>9</posy>
+				<left>0</left>
+				<top>9</top>
 				<width>390</width>
 				<height>525</height>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
@@ -77,8 +77,8 @@
 				<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
 			</control>
 			<control type="image">
-				<posx>315</posx>
-				<posy>472</posy>
+				<left>315</left>
+				<top>472</top>
 				<width>60</width>
 				<height>60</height>
 				<texture>$VAR[value_watchedstyle]</texture>
@@ -87,8 +87,8 @@
 				<visible>![Skin.HasSetting(nooverlays) | String.Contains(skin.string(stylewatched),2) | String.Contains(skin.string(stylewatched),3)] + String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Control.HasFocus(54)</visible>
 			</control>
 			<control type="image">
-				<posx>316</posx>
-				<posy>478</posy>
+				<left>316</left>
+				<top>478</top>
 				<width>60</width>
 				<height>60</height>
 				<texture flipy="true">$VAR[value_watchedstyle]</texture>
@@ -99,8 +99,8 @@
 		</itemlayout>
 		<itemlayout condition="Window.IsActive(musicplaylist) | Window.IsActive(music) + ![Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)]" width="447" height="540">
 			<control type="image">
-				<posx>0</posx>
-				<posy>9</posy>
+				<left>0</left>
+				<top>9</top>
 				<width>390</width>
 				<height>525</height>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
@@ -108,8 +108,8 @@
 				<texture fallback="DefaultAudioCover.png" background="true">$VAR[value_poster]</texture>
 			</control>
 			<control type="image">
-				<posx>315</posx>
-				<posy>472</posy>
+				<left>315</left>
+				<top>472</top>
 				<width>60</width>
 				<height>60</height>
 				<texture>$VAR[value_watchedstyle]</texture>
@@ -118,8 +118,8 @@
 				<visible>![Skin.HasSetting(nooverlays) | String.Contains(skin.string(stylewatched),2) | String.Contains(skin.string(stylewatched),3)] + String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Control.HasFocus(54)</visible>
 			</control>
 			<control type="image">
-				<posx>316</posx>
-				<posy>478</posy>
+				<left>316</left>
+				<top>478</top>
 				<width>60</width>
 				<height>60</height>
 				<texture flipy="true">$VAR[value_watchedstyle]</texture>
@@ -130,8 +130,8 @@
 		</itemlayout>
 		<itemlayout condition="Window.IsActive(musicplaylist) | Window.IsActive(music) + [Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)]" width="447" height="540">
 			<control type="image">
-				<posx>0</posx>
-				<posy>9</posy>
+				<left>0</left>
+				<top>9</top>
 				<width>390</width>
 				<height>525</height>
 				<bordertexture border="-2">black.png</bordertexture>
@@ -140,8 +140,8 @@
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label">
-				<posx>8</posx>
-				<posy>16</posy>
+				<left>8</left>
+				<top>16</top>
 				<width>375</width>
 				<height>510</height>
 				<font>Font_18A</font>
@@ -154,8 +154,8 @@
 		</itemlayout>
 		<focusedlayout condition="$EXP[IsPVRRecordings]" width="447" height="540">
 			<control type="image">
-				<posx>0</posx>
-				<posy>9</posy>
+				<left>0</left>
+				<top>9</top>
 				<width>390</width>
 				<height>525</height>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
@@ -164,8 +164,8 @@
 				<animation reversible="false" effect="zoom" end="120" center="auto" time="200">Focus</animation>
 			</control>
 			<control type="image">
-				<posx>315</posx>
-				<posy>472</posy>
+				<left>315</left>
+				<top>472</top>
 				<width>60</width>
 				<height>60</height>
 				<texture>$VAR[pvr_overlay]</texture>
@@ -178,8 +178,8 @@
 		</focusedlayout>
 		<focusedlayout condition="![Window.IsActive(musicplaylist) | Window.IsActive(music)]" width="447" height="540">
 			<control type="image">
-				<posx>0</posx>
-				<posy>9</posy>
+				<left>0</left>
+				<top>9</top>
 				<width>390</width>
 				<height>525</height>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
@@ -188,8 +188,8 @@
 				<animation reversible="false" effect="zoom" end="120" center="auto" time="200">Focus</animation>
 			</control>
 			<control type="image">
-				<posx>315</posx>
-				<posy>472</posy>
+				<left>315</left>
+				<top>472</top>
 				<width>60</width>
 				<height>60</height>
 				<texture>$VAR[value_watchedstyle]</texture>
@@ -200,8 +200,8 @@
 				<visible>![Skin.HasSetting(nooverlays) | String.Contains(skin.string(stylewatched),2) | String.Contains(skin.string(stylewatched),3)] + String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Control.HasFocus(54)</visible>
 			</control>
 			<control type="image">
-				<posx>316</posx>
-				<posy>478</posy>
+				<left>316</left>
+				<top>478</top>
 				<width>60</width>
 				<height>60</height>
 				<texture flipy="true">$VAR[value_watchedstyle]</texture>
@@ -214,8 +214,8 @@
 		</focusedlayout>
 		<focusedlayout condition="Window.IsActive(musicplaylist) | Window.IsActive(music) + ![Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)]" width="447" height="540">
 			<control type="image">
-				<posx>0</posx>
-				<posy>9</posy>
+				<left>0</left>
+				<top>9</top>
 				<width>390</width>
 				<height>525</height>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
@@ -224,8 +224,8 @@
 				<animation reversible="false" effect="zoom" end="120" center="auto" time="200">Focus</animation>
 			</control>
 			<control type="image">
-				<posx>315</posx>
-				<posy>472</posy>
+				<left>315</left>
+				<top>472</top>
 				<width>60</width>
 				<height>60</height>
 				<texture>$VAR[value_watchedstyle]</texture>
@@ -236,8 +236,8 @@
 				<visible>![Skin.HasSetting(nooverlays) | String.Contains(skin.string(stylewatched),2) | String.Contains(skin.string(stylewatched),3)] + String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Control.HasFocus(54)</visible>
 			</control>
 			<control type="image">
-				<posx>316</posx>
-				<posy>478</posy>
+				<left>316</left>
+				<top>478</top>
 				<width>60</width>
 				<height>60</height>
 				<texture flipy="true">$VAR[value_watchedstyle]</texture>
@@ -250,8 +250,8 @@
 		</focusedlayout>
 		<focusedlayout condition="Window.IsActive(musicplaylist) | Window.IsActive(music) + [Container.Content(genres) | Container.Content(roles) | Container.Content(sources) | String.IsEqual(Container.FolderName,roles)]" width="447" height="540">
 			<control type="image">
-				<posx>0</posx>
-				<posy>9</posy>
+				<left>0</left>
+				<top>9</top>
 				<width>390</width>
 				<height>525</height>
 				<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">genres/256.png</texture>
@@ -261,8 +261,8 @@
 				<animation reversible="false" effect="zoom" end="120" center="auto" time="200">Focus</animation>
 			</control>
 			<control type="label">
-				<posx>8</posx>
-				<posy>16</posy>
+				<left>8</left>
+				<top>16</top>
 				<width>375</width>
 				<height>510</height>
 				<font>Font_18A</font>
@@ -291,8 +291,8 @@
 				<animation effect="fade" start="100" end="0" time="50">Hidden</animation>
 				<visible>!String.IsEmpty(ListItem.Art(discart)) + !Skin.HasSetting(noposterdiscart) + Window.IsActive(videos) + Control.IsVisible(9923)</visible>
 				<control type="image">
-					<posx>746</posx>
-					<posy>548</posy>
+					<left>746</left>
+					<top>548</top>
 					<width>420</width>
 					<height>420</height>
 					<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
@@ -305,8 +305,8 @@
 			<include>ViewBack</include>
 			<!-- Fundo -->
 			<control type="image">
-				<posx>0</posx>
-				<posy>772</posy>
+				<left>0</left>
+				<top>772</top>
 				<width>1920</width>
 				<height>201</height>
 				<texture>black.png</texture>
@@ -315,8 +315,8 @@
 			</control>
 			<control type="image" id="1008">
 				<!-- clearlogo e clearart -->
-				<posx>1552</posx>
-				<posy>810</posy>
+				<left>1552</left>
+				<top>810</top>
 				<width>330</width>
 				<height>165</height>
 				<aligny>center</aligny>
@@ -326,30 +326,30 @@
 				<visible>!Skin.HasSetting(noartpostervideo)</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>772</posy>
+				<left>0</left>
+				<top>772</top>
 				<width>1920</width>
 				<height>3</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="image">
-				<posx>525</posx>
-				<posy>774</posy>
+				<left>525</left>
+				<top>774</top>
 				<width>3</width>
 				<height>201</height>
 				<texture>separator_v.png</texture>
 			</control>
 			<control type="image">
-				<posx>1530</posx>
-				<posy>774</posy>
+				<left>1530</left>
+				<top>774</top>
 				<width>3</width>
 				<height>201</height>
 				<texture>separator_v.png</texture>
 				<visible>![String.IsEmpty(Control.GetLabel(1008)) | Skin.HasSetting(noartpostervideo)]</visible>
 			</control>
 			<control type="grouplist">	<!-- Info panel 11/12/13/14/16/17 -->
-				<posx>45</posx>
-				<posy>778</posy>
+				<left>45</left>
+				<top>778</top>
 				<orientation>vertical</orientation>
 				<itemgap>2</itemgap>
 				<visible>![Container.Content(addons) | Container.Content(genres) | String.IsEmpty(ListItem.DBType)]  | [Window.IsVisible(tvrecordings) | Window.IsVisible(radiorecordings)]</visible>
@@ -384,8 +384,8 @@
 				</control>
 			</control>
 			<control type="textbox">
-				<posx>549</posx>
-				<posy>788</posy>
+				<left>549</left>
+				<top>788</top>
 				<width>960</width>
 				<height>170</height>
 				<textcolor>FFFFFAF0</textcolor>
@@ -395,8 +395,8 @@
 				<visible>![String.IsEmpty(Control.GetLabel(1008)) | Skin.HasSetting(noartpostervideo)]</visible>
 			</control>
 			<control type="textbox">
-				<posx>549</posx>
-				<posy>788</posy>
+				<left>549</left>
+				<top>788</top>
 				<width>1328</width>
 				<height>170</height>
 				<textcolor>FFFFFAF0</textcolor>
@@ -409,8 +409,8 @@
 			<include condition="!Skin.HasSetting(posterfixedlist)">PosterWrapList</include>
 			<control type="scrollbar" id="80">
 				<include>ScrollBar_Horizontal</include>
-				<posx>285</posx>
-				<posy>720</posy>
+				<left>285</left>
+				<top>720</top>
 				<width>1350</width>
 				<onup>54</onup>
 				<ondown>9920</ondown>

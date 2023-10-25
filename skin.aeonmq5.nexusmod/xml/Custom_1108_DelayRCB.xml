@@ -15,8 +15,8 @@
 		<control type="group">
 			<include>Animation_DialogPopup</include>
 			<control type="grouplist" id="9060">
-				<posx>615</posx>
-				<posy>420</posy>
+				<left>615</left>
+				<top>420</top>
 				<width>681</width>
 				<height max="1005">auto</height>
 				<itemgap>0</itemgap>

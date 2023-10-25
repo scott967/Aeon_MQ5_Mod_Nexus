@@ -6,59 +6,59 @@
 	<defaultcontrol>3</defaultcontrol>
 	<controls>
 		<control type="group">
-			<posx>326</posx>
-			<posy>150</posy>
+			<left>326</left>
+			<top>150</top>
 			<width>1270</width>
 			<height>780</height>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1270</width>
 				<height>1</height>
 				<texture>grey.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>778</posy>
+				<left>0</left>
+				<top>778</top>
 				<width>1270</width>
 				<height>1</height>
 				<texture>grey.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1270</width>
 				<height>780</height>
 				<texture>darkgrey.png</texture>
 				<colordiffuse>F0FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>-45</posx>
-				<posy>0</posy>
+				<left>-45</left>
+				<top>0</top>
 				<width>45</width>
 				<height>780</height>
 				<texture flipx="true">shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>748</posx>
-				<posy>0</posy>
+				<left>748</left>
+				<top>0</top>
 				<width>45</width>
 				<height>780</height>
 				<texture>shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1020</width>
 				<height>780</height>
 				<texture>black.png</texture>
 				<colordiffuse>90FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1020</width>
 				<height>48</height>
 				<texture>black.png</texture>
@@ -66,8 +66,8 @@
 			</control>
 			<control type="label">
 				<!-- header -->
-				<posx>45</posx>
-				<posy>0</posy>
+				<left>45</left>
+				<top>0</top>
 				<width>1020</width>
 				<height>48</height>
 				<align>left</align>
@@ -78,8 +78,8 @@
 			</control>
 			<control type="grouplist" id="3">
 				<description>controller profiles</description>
-				<posx>0</posx>
-				<posy>124</posy>
+				<left>0</left>
+				<top>124</top>
 				<width>225</width>
 				<height>656</height>
 				<itemgap>0</itemgap>
@@ -90,8 +90,8 @@
 			</control>
 			<control type="grouplist" id="5">
 				<description>buttons</description>
-				<posx>750</posx>
-				<posy>124</posy>
+				<left>750</left>
+				<top>124</top>
 				<width>225</width>
 				<height>656</height>
 				<itemgap>0</itemgap>
@@ -117,15 +117,15 @@
 				<texture>separator.png</texture>
 			</control>
 			<control type="gamecontroller" id="31">
-				<posx>232</posx>
-				<posy>180</posy>
+				<left>232</left>
+				<top>180</top>
 				<width>495</width>
 				<height>375</height>
 			</control>
 			<control type="label">
 				<!-- Heading label Controller config-->
-				<posx>45</posx>
-				<posy>60</posy>
+				<left>45</left>
+				<top>60</top>
 				<width>225</width>
 				<height>48</height>
 				<align>left</align>
@@ -135,8 +135,8 @@
 				<label>$LOCALIZE[35050]</label>
 			</control>
 			<control type="label">
-				<posx>795</posx>
-				<posy>60</posy>
+				<left>795</left>
+				<top>60</top>
 				<width>225</width>
 				<height>48</height>
 				<align>left</align>
@@ -145,24 +145,24 @@
 				<textcolor>$VAR[value_headercolor]</textcolor>
 			</control>
 			<control type="label">
-				<posx>750</posx>
-				<posy>60</posy>
+				<left>750</left>
+				<top>60</top>
 				<width>480</width>
 				<height>60</height>
 				<aligny>center</aligny>
 				<textcolor>$VAR[value_headercolor]</textcolor>
 			</control>
 			<control type="image">
-				<posx>1269</posx>
-				<posy>0</posy>
+				<left>1269</left>
+				<top>0</top>
 				<width>45</width>
 				<height>780</height>
 				<texture>shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>1020</posx>
-				<posy>0</posy>
+				<left>1020</left>
+				<top>0</top>
 				<width>244</width>
 				<height>780</height>
 				<texture>grey.png</texture>
@@ -170,8 +170,8 @@
 			</control>
 			<control type="scrollbar" id="61">
 				<include>ScrollBar_Vertical</include>
-				<posx>975</posx>
-				<posy>124</posy>
+				<left>975</left>
+				<top>124</top>
 				<height>600</height>
 				<onleft>5</onleft>
 				<onright>9000</onright>
@@ -179,8 +179,8 @@
 				<onup>61</onup>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>1020</posx>
-				<posy>63</posy>
+				<left>1020</left>
+				<top>63</top>
 				<onleft>61</onleft>
 				<onright>3</onright>
 				<control type="button" id="18">

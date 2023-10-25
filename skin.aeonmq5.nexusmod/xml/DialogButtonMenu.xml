@@ -9,31 +9,31 @@
 	<defaultcontrol always="true">4112</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="group">
 			<include>Animation_DialogPopup</include>
 			<control type="image">
-				<posx>615</posx>
-				<posy>195</posy>
+				<left>615</left>
+				<top>195</top>
 				<width>681</width>
 				<height>58</height>
 				<texture>gradient_focus.png</texture>
 				<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>615</posx>
-				<posy>150</posy>
+				<left>615</left>
+				<top>150</top>
 				<width>681</width>
 				<height>58</height>
 				<texture>dialogs_context_nofocus.png</texture>
 				<colordiffuse>F9FFFFFF</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>735</posx>
-				<posy>150</posy>
+				<left>735</left>
+				<top>150</top>
 				<width>450</width>
 				<height>60</height>
 				<align>center</align>
@@ -43,8 +43,8 @@
 				<textcolor>$VAR[value_headercolor]</textcolor>
 			</control>
 			<control type="list" id="4112">
-				<posx>615</posx>
-				<posy>225</posy>
+				<left>615</left>
+				<top>225</top>
 				<width>681</width>
 				<height>675</height>
 				<onleft>Dialog.Close(shutdownmenu)</onleft>
@@ -55,15 +55,15 @@
 				<focusposition>0</focusposition>
 				<itemlayout height="58" width="681">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>681</width>
 						<height>58</height>
 						<texture>dialogs_context_nofocus.png</texture>
 					</control>
 					<control type="label">
-						<posx>18</posx>
-						<posy>0</posy>
+						<left>18</left>
+						<top>0</top>
 						<height>58</height>
 						<width>645</width>
 						<align>center</align>
@@ -75,16 +75,16 @@
 				</itemlayout>
 				<focusedlayout height="58" width="681">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>681</width>
 						<height>58</height>
 						<texture>dialogs_context_focus.png</texture>
 					</control>
 					<control type="label">
 						<left>18</left>
-						<posx>340</posx>
-						<posy>0</posy>
+						<left>340</left>
+						<top>0</top>
 						<height>58</height>
 						<width>645</width>
 						<align>center</align>

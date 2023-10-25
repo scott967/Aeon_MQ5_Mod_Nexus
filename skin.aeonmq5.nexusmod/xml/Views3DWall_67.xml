@@ -14,200 +14,200 @@
 	</include>
 	<include name="View3DWallMovies">
 		<control type="group">
-			<posx>195</posx>
-			<posy>-2</posy>
+			<left>195</left>
+			<top>-2</top>
 			<visible>Control.IsVisible(67)</visible>
 			<control type="group" id="7013">
 				<animation effect="rotatey" center="1920" start="-15" end="-15" time="0" condition="true">Conditional</animation>
 				<animation reversible="false" effect="slide" start="0,0" end="-246,0" time="400" tween="quadratic" easing="out">Hidden</animation>
 				<visible>Container.OnNext</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-10]</texture>
 				</control>
 				<control type="image">
-					<posx>246</posx>
-					<posy>0</posy>
+					<left>246</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-9]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>0</posy>
+					<left>492</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-8]</texture>
 				</control>
 				<control type="image">
-					<posx>738</posx>
-					<posy>0</posy>
+					<left>738</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-7]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>0</posy>
+					<left>984</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-6]</texture>
 				</control>
 				<control type="image">
-					<posx>1230</posx>
-					<posy>0</posy>
+					<left>1230</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-5]</texture>
 				</control>
 				<control type="image">
-					<posx>1476</posx>
-					<posy>0</posy>
+					<left>1476</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-4]</texture>
 				</control>
 				<control type="image">
-					<posx>1722</posx>
-					<posy>0</posy>
+					<left>1722</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-3]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>360</posy>
+					<left>0</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-3]</texture>
 				</control>
 				<control type="image">
-					<posx>246</posx>
-					<posy>360</posy>
+					<left>246</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-2]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>360</posy>
+					<left>492</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-1]</texture>
 				</control>
 				<control type="image">
-					<posx>738</posx>
-					<posy>360</posy>
+					<left>738</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster0]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>360</posy>
+					<left>984</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster1]</texture>
 				</control>
 				<control type="image">
-					<posx>1230</posx>
-					<posy>360</posy>
+					<left>1230</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster2]</texture>
 				</control>
 				<control type="image">
-					<posx>1476</posx>
-					<posy>360</posy>
+					<left>1476</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster3]</texture>
 				</control>
 				<control type="image">
-					<posx>1722</posx>
-					<posy>360</posy>
+					<left>1722</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster4]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>720</posy>
+					<left>0</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster4]</texture>
 				</control>
 				<control type="image">
-					<posx>246</posx>
-					<posy>720</posy>
+					<left>246</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster5]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>720</posy>
+					<left>492</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster6]</texture>
 				</control>
 				<control type="image">
-					<posx>738</posx>
-					<posy>720</posy>
+					<left>738</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster7]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>720</posy>
+					<left>984</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster8]</texture>
 				</control>
 				<control type="image">
-					<posx>1230</posx>
-					<posy>720</posy>
+					<left>1230</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster9]</texture>
 				</control>
 				<control type="image">
-					<posx>1476</posx>
-					<posy>720</posy>
+					<left>1476</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster10]</texture>
 				</control>
 				<control type="image">
-					<posx>1722</posx>
-					<posy>720</posy>
+					<left>1722</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -219,192 +219,192 @@
 				<animation reversible="false" effect="slide" start="0,0" end="246,0" time="400" tween="quadratic" easing="out">Hidden</animation>
 				<visible>Container.OnPrevious</visible>
 				<control type="image">
-					<posx>-246</posx>
-					<posy>0</posy>
+					<left>-246</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-9]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-8]</texture>
 				</control>
 				<control type="image">
-					<posx>246</posx>
-					<posy>0</posy>
+					<left>246</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-7]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>0</posy>
+					<left>492</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-6]</texture>
 				</control>
 				<control type="image">
-					<posx>738</posx>
-					<posy>0</posy>
+					<left>738</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-5]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>0</posy>
+					<left>984</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-4]</texture>
 				</control>
 				<control type="image">
-					<posx>1230</posx>
-					<posy>0</posy>
+					<left>1230</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-3]</texture>
 				</control>
 				<control type="image">
-					<posx>1476</posx>
-					<posy>0</posy>
+					<left>1476</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-2]</texture>
 				</control>
 				<control type="image">
-					<posx>-246</posx>
-					<posy>360</posy>
+					<left>-246</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-2]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>360</posy>
+					<left>0</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-1]</texture>
 				</control>
 				<control type="image">
-					<posx>246</posx>
-					<posy>360</posy>
+					<left>246</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster0]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>360</posy>
+					<left>492</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster1]</texture>
 				</control>
 				<control type="image">
-					<posx>738</posx>
-					<posy>360</posy>
+					<left>738</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster2]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>360</posy>
+					<left>984</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster3]</texture>
 				</control>
 				<control type="image">
-					<posx>1230</posx>
-					<posy>360</posy>
+					<left>1230</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster4]</texture>
 				</control>
 				<control type="image">
-					<posx>1476</posx>
-					<posy>360</posy>
+					<left>1476</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster5]</texture>
 				</control>
 				<control type="image">
-					<posx>-246</posx>
-					<posy>720</posy>
+					<left>-246</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster5]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>720</posy>
+					<left>0</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster6]</texture>
 				</control>
 				<control type="image">
-					<posx>246</posx>
-					<posy>720</posy>
+					<left>246</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster7]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>720</posy>
+					<left>492</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster8]</texture>
 				</control>
 				<control type="image">
-					<posx>738</posx>
-					<posy>720</posy>
+					<left>738</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster9]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>720</posy>
+					<left>984</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster10]</texture>
 				</control>
 				<control type="image">
-					<posx>1230</posx>
-					<posy>720</posy>
+					<left>1230</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster11]</texture>
 				</control>
 				<control type="image">
-					<posx>1476</posx>
-					<posy>720</posy>
+					<left>1476</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -418,168 +418,168 @@
 				</animation>
 				<visible>!Control.IsVisible(7013) + !Control.IsVisible(7014)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-9]</texture>
 				</control>
 				<control type="image">
-					<posx>246</posx>
-					<posy>0</posy>
+					<left>246</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-8]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>0</posy>
+					<left>492</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-7]</texture>
 				</control>
 				<control type="image">
-					<posx>738</posx>
-					<posy>0</posy>
+					<left>738</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-6]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>0</posy>
+					<left>984</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-5]</texture>
 				</control>
 				<control type="image">
-					<posx>1230</posx>
-					<posy>0</posy>
+					<left>1230</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-4]</texture>
 				</control>
 				<control type="image">
-					<posx>1476</posx>
-					<posy>0</posy>
+					<left>1476</left>
+					<top>0</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-3]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>360</posy>
+					<left>0</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-2]</texture>
 				</control>
 				<control type="image">
-					<posx>246</posx>
-					<posy>360</posy>
+					<left>246</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-1]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>360</posy>
+					<left>492</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster0]</texture>
 				</control>
 				<control type="image">
-					<posx>738</posx>
-					<posy>360</posy>
+					<left>738</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster1]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>360</posy>
+					<left>984</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster2]</texture>
 				</control>
 				<control type="image">
-					<posx>1230</posx>
-					<posy>360</posy>
+					<left>1230</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster3]</texture>
 				</control>
 				<control type="image">
-					<posx>1476</posx>
-					<posy>360</posy>
+					<left>1476</left>
+					<top>360</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster4]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>720</posy>
+					<left>0</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster5]</texture>
 				</control>
 				<control type="image">
-					<posx>246</posx>
-					<posy>720</posy>
+					<left>246</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster6]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>720</posy>
+					<left>492</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster7]</texture>
 				</control>
 				<control type="image">
-					<posx>738</posx>
-					<posy>720</posy>
+					<left>738</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster8]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>720</posy>
+					<left>984</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster9]</texture>
 				</control>
 				<control type="image">
-					<posx>1230</posx>
-					<posy>720</posy>
+					<left>1230</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster10]</texture>
 				</control>
 				<control type="image">
-					<posx>1476</posx>
-					<posy>720</posy>
+					<left>1476</left>
+					<top>720</top>
 					<width>246</width>
 					<height>363</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -589,8 +589,8 @@
 		</control>
 		<control type="wraplist" id="67">
 			<visible>![Container.Content(episodes) | Container.Content(sets) | Container.Content(years)]</visible>
-			<posx>-502</posx>
-			<posy>292</posy>
+			<left>-502</left>
+			<top>292</top>
 			<width>2604</width>
 			<height>543</height>
 			<onleft>67</onleft>
@@ -608,8 +608,8 @@
 			<itemlayout width="372" height="543" />
 			<focusedlayout width="372" height="543">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>372</width>
 					<height>543</height>
 					<texture></texture>
@@ -619,8 +619,8 @@
 		<control type="group">
 			<visible>Control.IsVisible(67)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>-150</posy>
+				<left>0</left>
+				<top>-150</top>
 				<width>1920</width>
 				<height>1230</height>
 				<texture>3dwall_vignette.png</texture>
@@ -628,8 +628,8 @@
 			<control type="group">
 				<animation reversible="true" effect="zoom" start="100" end="95" center="auto" time="300" tween="quadratic" easing="in" condition="Control.IsVisible(7013) | Control.IsVisible(7014)">Conditional</animation>
 				<control type="image">
-					<posx>555</posx>
-					<posy>204</posy>
+					<left>555</left>
+					<top>204</top>
 					<width>492</width>
 					<height>669</height>
 					<texture border="-15" diffuse="thumb_3dwall_mask2.png">thumb_frame.png</texture>
@@ -639,8 +639,8 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>615</posx>
-					<posy>264</posy>
+					<left>615</left>
+					<top>264</top>
 					<width>372</width>
 					<height>549</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -651,8 +651,8 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>916</posx>
-					<posy>261</posy>
+					<left>916</left>
+					<top>261</top>
 					<width>75</width>
 					<height>75</height>
 					<texture>$VAR[value_watchedstyle]</texture>
@@ -666,8 +666,8 @@
 					<visible>!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
 				</control>
 				<control type="image">
-					<posx>615</posx>
-					<posy>264</posy>
+					<left>615</left>
+					<top>264</top>
 					<width>372</width>
 					<height>549</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -676,8 +676,8 @@
 					<visible>Control.IsVisible(7013) + !String.IsEqual(ListItem(-1).Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>615</posx>
-					<posy>264</posy>
+					<left>615</left>
+					<top>264</top>
 					<width>372</width>
 					<height>549</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -687,8 +687,8 @@
 				</control>
 				<control type="scrollbar" id="80">
 					<include>ScrollBar_Horizontal</include>
-					<posx>458</posx>
-					<posy>994</posy>
+					<left>458</left>
+					<top>994</top>
 					<width>1005</width>
 					<onup>67</onup>
 					<ondown>9920</ondown>
@@ -703,8 +703,8 @@
 					<effect type="fade" start="0" end="100" time="2000" delay="1000" />
 				</animation>
 				<control type="label">
-					<posx>45</posx>
-					<posy>270</posy>
+					<left>45</left>
+					<top>270</top>
 					<width>525</width>
 					<height>22</height>
 					<textcolor>FFFFFAF0</textcolor>
@@ -714,16 +714,16 @@
 					<visible>!String.IsEqual(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>310</posy>
+					<left>0</left>
+					<top>310</top>
 					<width>525</width>
 					<height>3</height>
 					<align>left</align>
 					<texture flipx="true">divider.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>45</posx>
-					<posy>322</posy>
+					<left>45</left>
+					<top>322</top>
 					<width>525</width>
 					<height>489</height>
 					<label>$VAR[value_plot]</label>
@@ -736,168 +736,168 @@
 	<!-- Episodes -->
 	<include name="View3DWallEpisodes">
 		<control type="group">
-			<posx>195</posx>
-			<posy>0</posy>
+			<left>195</left>
+			<top>0</top>
 			<visible>Control.IsVisible(68)</visible>
 			<control type="group" id="7027">
 				<animation effect="rotatey" center="1920" start="-15" end="-15" time="0" condition="true">Conditional</animation>
 				<animation reversible="false" effect="slide" start="0,0" end="-480,0" time="400" tween="quadratic" easing="out">Hidden</animation>
 				<visible>Container.OnNext</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>10</posy>
+					<left>0</left>
+					<top>10</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-6]</texture>
 				</control>
 				<control type="image">
-					<posx>480</posx>
-					<posy>10</posy>
+					<left>480</left>
+					<top>10</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-5]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>10</posy>
+					<left>960</left>
+					<top>10</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-4]</texture>
 				</control>
 				<control type="image">
-					<posx>1440</posx>
-					<posy>10</posy>
+					<left>1440</left>
+					<top>10</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-3]</texture>
 				</control>
 				<control type="image">
-					<posx>1920</posx>
-					<posy>10</posy>
+					<left>1920</left>
+					<top>10</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-2]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>274</posy>
+					<left>0</left>
+					<top>274</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-2]</texture>
 				</control>
 				<control type="image">
-					<posx>480</posx>
-					<posy>274</posy>
+					<left>480</left>
+					<top>274</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-1]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>274</posy>
+					<left>960</left>
+					<top>274</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster0]</texture>
 				</control>
 				<control type="image">
-					<posx>1440</posx>
-					<posy>274</posy>
+					<left>1440</left>
+					<top>274</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster1]</texture>
 				</control>
 				<control type="image">
-					<posx>1920</posx>
-					<posy>274</posy>
+					<left>1920</left>
+					<top>274</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster2]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>538</posy>
+					<left>0</left>
+					<top>538</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster2]</texture>
 				</control>
 				<control type="image">
-					<posx>480</posx>
-					<posy>538</posy>
+					<left>480</left>
+					<top>538</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster3]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>538</posy>
+					<left>960</left>
+					<top>538</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster4]</texture>
 				</control>
 				<control type="image">
-					<posx>1440</posx>
-					<posy>538</posy>
+					<left>1440</left>
+					<top>538</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster5]</texture>
 				</control>
 				<control type="image">
-					<posx>1920</posx>
-					<posy>538</posy>
+					<left>1920</left>
+					<top>538</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster6]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>802</posy>
+					<left>0</left>
+					<top>802</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster7]</texture>
 				</control>
 				<control type="image">
-					<posx>480</posx>
-					<posy>802</posy>
+					<left>480</left>
+					<top>802</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster7]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>802</posy>
+					<left>960</left>
+					<top>802</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster8]</texture>
 				</control>
 				<control type="image">
-					<posx>1440</posx>
-					<posy>802</posy>
+					<left>1440</left>
+					<top>802</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster9]</texture>
 				</control>
 				<control type="image">
-					<posx>1920</posx>
-					<posy>802</posy>
+					<left>1920</left>
+					<top>802</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -909,160 +909,160 @@
 				<animation reversible="false" effect="slide" start="0,0" end="480,0" time="400" tween="quadratic" easing="out">Hidden</animation>
 				<visible>Container.OnPrevious</visible>
 				<control type="image">
-					<posx>-480</posx>
-					<posy>10</posy>
+					<left>-480</left>
+					<top>10</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-5]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>10</posy>
+					<left>0</left>
+					<top>10</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-4]</texture>
 				</control>
 				<control type="image">
-					<posx>480</posx>
-					<posy>10</posy>
+					<left>480</left>
+					<top>10</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-3]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>10</posy>
+					<left>960</left>
+					<top>10</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-2]</texture>
 				</control>
 				<control type="image">
-					<posx>1440</posx>
-					<posy>10</posy>
+					<left>1440</left>
+					<top>10</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-1]</texture>
 				</control>
 				<control type="image">
-					<posx>-480</posx>
-					<posy>274</posy>
+					<left>-480</left>
+					<top>274</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-1]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>274</posy>
+					<left>0</left>
+					<top>274</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster0]</texture>
 				</control>
 				<control type="image">
-					<posx>480</posx>
-					<posy>274</posy>
+					<left>480</left>
+					<top>274</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster1]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>274</posy>
+					<left>960</left>
+					<top>274</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster2]</texture>
 				</control>
 				<control type="image">
-					<posx>1440</posx>
-					<posy>274</posy>
+					<left>1440</left>
+					<top>274</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster3]</texture>
 				</control>
 				<control type="image">
-					<posx>-480</posx>
-					<posy>538</posy>
+					<left>-480</left>
+					<top>538</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster3]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>538</posy>
+					<left>0</left>
+					<top>538</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster4]</texture>
 				</control>
 				<control type="image">
-					<posx>480</posx>
-					<posy>538</posy>
+					<left>480</left>
+					<top>538</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster5]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>538</posy>
+					<left>960</left>
+					<top>538</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster6]</texture>
 				</control>
 				<control type="image">
-					<posx>1440</posx>
-					<posy>538</posy>
+					<left>1440</left>
+					<top>538</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster7]</texture>
 				</control>
 				<control type="image">
-					<posx>-480</posx>
-					<posy>802</posy>
+					<left>-480</left>
+					<top>802</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster7]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>802</posy>
+					<left>0</left>
+					<top>802</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster8]</texture>
 				</control>
 				<control type="image">
-					<posx>480</posx>
-					<posy>802</posy>
+					<left>480</left>
+					<top>802</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster9]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>802</posy>
+					<left>960</left>
+					<top>802</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster10]</texture>
 				</control>
 				<control type="image">
-					<posx>1440</posx>
-					<posy>802</posy>
+					<left>1440</left>
+					<top>802</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1076,128 +1076,128 @@
 				</animation>
 				<visible>!Control.IsVisible(7027) + !Control.IsVisible(7028)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>10</posy>
+					<left>0</left>
+					<top>10</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-5]</texture>
 				</control>
 				<control type="image">
-					<posx>480</posx>
-					<posy>10</posy>
+					<left>480</left>
+					<top>10</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-4]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>10</posy>
+					<left>960</left>
+					<top>10</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-3]</texture>
 				</control>
 				<control type="image">
-					<posx>1440</posx>
-					<posy>10</posy>
+					<left>1440</left>
+					<top>10</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-2]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>274</posy>
+					<left>0</left>
+					<top>274</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster-1]</texture>
 				</control>
 				<control type="image">
-					<posx>480</posx>
-					<posy>274</posy>
+					<left>480</left>
+					<top>274</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster0]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>274</posy>
+					<left>960</left>
+					<top>274</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster1]</texture>
 				</control>
 				<control type="image">
-					<posx>1440</posx>
-					<posy>274</posy>
+					<left>1440</left>
+					<top>274</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster2]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>538</posy>
+					<left>0</left>
+					<top>538</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster3]</texture>
 				</control>
 				<control type="image">
-					<posx>480</posx>
-					<posy>538</posy>
+					<left>480</left>
+					<top>538</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster4]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>538</posy>
+					<left>960</left>
+					<top>538</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster5]</texture>
 				</control>
 				<control type="image">
-					<posx>1440</posx>
-					<posy>538</posy>
+					<left>1440</left>
+					<top>538</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster6]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>802</posy>
+					<left>0</left>
+					<top>802</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster7]</texture>
 				</control>
 				<control type="image">
-					<posx>480</posx>
-					<posy>802</posy>
+					<left>480</left>
+					<top>802</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster8]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>802</posy>
+					<left>960</left>
+					<top>802</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="thumb_3dwall_mask.png" background="true">$VAR[value_poster9]</texture>
 				</control>
 				<control type="image">
-					<posx>1440</posx>
-					<posy>802</posy>
+					<left>1440</left>
+					<top>802</top>
 					<width>480</width>
 					<height>267</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1207,8 +1207,8 @@
 		</control>
 		<control type="wraplist" id="68">
 			<visible>Container.Content(episodes)</visible>
-			<posx>-840</posx>
-			<posy>267</posy>
+			<left>-840</left>
+			<top>267</top>
 			<width>1920</width>
 			<height>267</height>
 			<onleft>68</onleft>
@@ -1226,8 +1226,8 @@
 			<itemlayout width="480" height="267" />
 			<focusedlayout width="480" height="267">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>480</width>
 					<height>267</height>
 					<texture></texture>
@@ -1237,8 +1237,8 @@
 		<control type="group">
 			<visible>Control.IsVisible(68)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>-150</posy>
+				<left>0</left>
+				<top>-150</top>
 				<width>1920</width>
 				<height>1230</height>
 				<texture>3dwall_vignette.png</texture>
@@ -1246,8 +1246,8 @@
 			<control type="group">
 				<animation reversible="true" effect="zoom" start="100" end="95" center="auto" time="300" tween="quadratic" easing="in" condition="Control.IsVisible(7027) | Control.IsVisible(7028)">Conditional</animation>
 				<control type="image">
-					<posx>548</posx>
-					<posy>105</posy>
+					<left>548</left>
+					<top>105</top>
 					<width>810</width>
 					<height>495</height>
 					<texture border="-60" diffuse="thumb_episode_mask.png">thumb_episode_frame.png</texture>
@@ -1257,8 +1257,8 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>592</posx>
-					<posy>150</posy>
+					<left>592</left>
+					<top>150</top>
 					<width>720</width>
 					<height>405</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1269,8 +1269,8 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>592</posx>
-					<posy>150</posy>
+					<left>592</left>
+					<top>150</top>
 					<width>720</width>
 					<height>405</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1279,8 +1279,8 @@
 					<visible>Control.IsVisible(7027) + !String.IsEqual(ListItem(-1).Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>592</posx>
-					<posy>150</posy>
+					<left>592</left>
+					<top>150</top>
 					<width>720</width>
 					<height>405</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1295,8 +1295,8 @@
 				</animation>
 				<control type="scrollbar" id="81">
 					<include>ScrollBar_Horizontal</include>
-					<posx>458</posx>
-					<posy>994</posy>
+					<left>458</left>
+					<top>994</top>
 					<width>1005</width>
 					<onup>68</onup>
 					<ondown>68</ondown>
@@ -1306,8 +1306,8 @@
 					<visible allowhiddenfocus="true">Control.IsVisible(68) + Control.HasFocus(60)</visible>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>150</posy>
+					<left>45</left>
+					<top>150</top>
 					<width>525</width>
 					<height>22</height>
 					<textcolor>FFFFFAF0</textcolor>
@@ -1317,16 +1317,16 @@
 					<visible>!String.IsEqual(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>188</posy>
+					<left>0</left>
+					<top>188</top>
 					<width>525</width>
 					<height>3</height>
 					<align>left</align>
 					<texture flipx="true">divider.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>45</posx>
-					<posy>195</posy>
+					<left>45</left>
+					<top>195</top>
 					<width>525</width>
 					<height>480</height>
 					<label>$VAR[value_plot]</label>

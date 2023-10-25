@@ -7,8 +7,8 @@
 <includes>
 	<!--##################################################################################   VISTA ShowCase - ID 66   ##################################################################################-->
 	<include name="EpisodeShowCaseThumbDimensions">
-		<posx>-222</posx>
-		<posy>140</posy>
+		<left>-222</left>
+		<top>140</top>
 		<width>351</width>
 		<height>216</height>
 	</include>
@@ -19,29 +19,29 @@
 		<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
 	</include>
 	<include name="EpisodeShowCaseThumbReflectionDimensions">
-		<posx>-222</posx>
-		<posy>357</posy>
+		<left>-222</left>
+		<top>357</top>
 		<width>351</width>
 		<height>216</height>
 	</include>
 	<include name="ShowCasePoster">
-		<posx>74</posx>
-		<posy>12</posy>
+		<left>74</left>
+		<top>12</top>
 		<width>260</width>
 		<height>381</height>
 		<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 	</include>
 	<include name="ShowCasePosterReflect">
-		<posx>74</posx>
-		<posy>394</posy>
+		<left>74</left>
+		<top>394</top>
 		<width>260</width>
 		<height>381</height>
 		<aspectratio align="center" aligny="top">stretch</aspectratio>
 		<colordiffuse>50FFFFFF</colordiffuse>
 	</include>
 	<include name="WatchedShowCase">
-		<posx>284</posx>
-		<posy>9</posy>
+		<left>284</left>
+		<top>9</top>
 		<width>52</width>
 		<height>52</height>
 		<texture>$VAR[value_watchedstyle]</texture>
@@ -49,28 +49,28 @@
 		<visible>!Skin.HasSetting(nooverlays)</visible>
 	</include>
 	<include name="ShowCaseThumbReflect">
-		<posx>84</posx>
-		<posy>400</posy>
+		<left>84</left>
+		<top>400</top>
 		<width>228</width>
 		<height>318</height>
 		<aspectratio align="center" aligny="top">scale</aspectratio>
 	</include>
 	<include name="ShowCaseThumbCaseReflect">
-		<posx>63</posx>
-		<posy>369</posy>
+		<left>63</left>
+		<top>369</top>
 		<width>284</width>
 		<height>390</height>
 	</include>
 	<include name="ShowCaseCase">
-		<posx>84</posx>
-		<posy>64</posy>
+		<left>84</left>
+		<top>64</top>
 		<width>228</width>
 		<height>318</height>
 		<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 	</include>
 	<include name="ShowCaseCodec">
-		<posx>174</posx>
-		<posy>27</posy>
+		<left>174</left>
+		<top>27</top>
 		<width>57</width>
 		<height>57</height>
 		<align>center</align>
@@ -78,14 +78,14 @@
 		<aspectratio>keep</aspectratio>
 	</include>
 	<include name="ShowCaseThumbCase">
-		<posx>63</posx>
-		<posy>21</posy>
+		<left>63</left>
+		<top>21</top>
 		<width>284</width>
 		<height>390</height>
 	</include>
 	<include name="WatchedShowCaseCase">
-		<posx>261</posx>
-		<posy>70</posy>
+		<left>261</left>
+		<top>70</top>
 		<width>52</width>
 		<height>52</height>
 		<texture>$VAR[value_watchedstyle]</texture>
@@ -94,15 +94,15 @@
 		<visible>!Skin.HasSetting(nooverlays)</visible>
 	</include>
 	<include name="ShowCaseCaseFlat">
-		<posx>84</posx>
-		<posy>56</posy>
+		<left>84</left>
+		<top>56</top>
 		<width>232</width>
 		<height>330</height>
 		<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 	</include>
 	<include name="ShowCaseCodecFlat">
-		<posx>171</posx>
-		<posy>3</posy>
+		<left>171</left>
+		<top>3</top>
 		<width>69</width>
 		<height>69</height>
 		<align>center</align>
@@ -110,28 +110,28 @@
 		<aspectratio>keep</aspectratio>
 	</include>
 	<include name="ShowCaseThumbCaseFlat">
-		<posx>63</posx>
-		<posy>0</posy>
+		<left>63</left>
+		<top>0</top>
 		<width>286</width>
 		<height>418</height>
 		<aspectratio>stretch</aspectratio>
 	</include>
 	<include name="ShowCaseThumbReflectFlat">
-		<posx>84</posx>
-		<posy>410</posy>
+		<left>84</left>
+		<top>410</top>
 		<width>232</width>
 		<height>328</height>
 		<aspectratio align="center" aligny="top">scale</aspectratio>
 	</include>
 	<include name="ShowCaseThumbCaseReflectFlat">
-		<posx>63</posx>
-		<posy>375</posy>
+		<left>63</left>
+		<top>375</top>
 		<width>286</width>
 		<height>418</height>
 		<aspectratio>stretch</aspectratio>
 	</include>
 	<include name="ShowCaseLabel_Fanart">
-		<posx>0</posx>
+		<left>0</left>
 		<height>30</height>
 		<width>518</width>
 		<font>Font_18A</font>
@@ -143,14 +143,14 @@
 		<scroll>true</scroll>
 	</include>
 	<include name="ShowCaseLabel_Extrathumbs">
-		<posx>450</posx>
+		<left>450</left>
 		<width>472</width>
 		<height>20</height>
 		<font>Font_18A</font>
 		<textcolor>$VAR[value_headercolor]</textcolor>
 	</include>
 	<include name="ShowCaseValue_Extrathumbs">
-		<posx>450</posx>
+		<left>450</left>
 		<width>472</width>
 		<height>20</height>
 		<align>left</align>
@@ -171,8 +171,8 @@
 	</include>
 	<include name="MovieShowCase_List_Content">
 		<viewtype label="31802">list</viewtype>
-		<posx>-124</posx>
-		<posy>540</posy>
+		<left>-124</left>
+		<top>540</top>
 		<width>2169</width>
 		<height>525</height>
 		<onleft>66</onleft>
@@ -329,8 +329,8 @@
 				<visible>Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes)]</visible>
 			</control>
 			<control type="image">
-				<posx>56</posx>
-				<posy>135</posy>
+				<left>56</left>
+				<top>135</top>
 				<width>75</width>
 				<height>75</height>
 				<texture>$VAR[value_watchedstyle]</texture>
@@ -360,8 +360,8 @@
 					<visible>[Skin.HasSetting(flattenshowcase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] | !Window.IsActive(Videos) + Skin.HasSetting(flattenshowcasemusic)]</visible>
 				</control>
 				<control type="image">
-					<posx>56</posx>
-					<posy>135</posy>
+					<left>56</left>
+					<top>135</top>
 					<width>75</width>
 					<height>75</height>
 					<texture>$VAR[value_watchedstyle]</texture>
@@ -374,13 +374,13 @@
 	<include name="ShowCaseMovies">
 		<control type="group">
 			<control type="group" id="6001">
-				<posy>540</posy>
+				<top>540</top>
 				<camera x="960" y="810" />
 				<visible>Container.OnNext + !String.IsEqual(container(66).numitems,1) + ![Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(programs)]]</visible>
 				<animation effect="slide" end="-135,0" time="210" reversible="false">Hidden</animation>
 				<control type="group">
 					<!-- -7 -->
-					<posx>15</posx>
+					<left>15</left>
 					<visible>Container.OnNext</visible>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-7).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="fade" start="100" end="0" time="210" reversible="false">Hidden</animation>
@@ -389,42 +389,42 @@
 				</control>
 				<control type="group">
 					<!-- -6 -->
-					<posx>150</posx>
+					<left>150</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-6).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="0" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb-6</include>
 				</control>
 				<control type="group">
 					<!-- -5 -->
-					<posx>285</posx>
+					<left>285</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-5).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb-5</include>
 				</control>
 				<control type="group">
 					<!-- -4 -->
-					<posx>420</posx>
+					<left>420</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-4).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="270" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb-4</include>
 				</control>
 				<control type="group">
 					<!-- -3 -->
-					<posx>555</posx>
+					<left>555</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-3).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="405" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb-3</include>
 				</control>
 				<control type="group">
 					<!-- -2 -->
-					<posx>690</posx>
+					<left>690</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-2).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="540" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb-2</include>
 				</control>
 				<control type="group">
 					<!-- 9 - fix to load poster -->
-					<posx>1770</posx>
+					<left>1770</left>
 					<visible>!Container.OnNext</visible>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(9).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="fade" start="0" end="0" delay="0" time="0" reversible="false">Visible</animation>
@@ -457,7 +457,7 @@
 				</control>
 				<control type="group">
 					<!-- 8 - fix to load poster -->
-					<posx>1770</posx>
+					<left>1770</left>
 					<visible>!Container.OnNext</visible>
 					<animation effect="fade" start="0" end="0" delay="0" time="0" reversible="false">Visible</animation>
 					<control type="group">
@@ -488,7 +488,7 @@
 				</control>
 				<control type="group">
 					<!-- 7 -->
-					<posx>1770</posx>
+					<left>1770</left>
 					<visible>!Container.OnNext</visible>
 					<animation effect="fade" start="0" end="0" delay="0" time="0" reversible="false">Visible</animation>
 					<control type="group">
@@ -508,7 +508,7 @@
 				</control>
 				<control type="group">
 					<!-- 6 -->
-					<posx>1635</posx>
+					<left>1635</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(6).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<visible>!Container.OnNext</visible>
 					<animation effect="fade" start="0" end="100" delay="0" time="210" reversible="false">Visible</animation>
@@ -517,35 +517,35 @@
 				</control>
 				<control type="group">
 					<!-- 5 -->
-					<posx>1500</posx>
+					<left>1500</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(5).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="2070" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb5</include>
 				</control>
 				<control type="group">
 					<!-- 4 -->
-					<posx>1365</posx>
+					<left>1365</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(4).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="1935" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb4</include>
 				</control>
 				<control type="group">
 					<!-- 3 -->
-					<posx>1230</posx>
+					<left>1230</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(3).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="1800" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb3</include>
 				</control>
 				<control type="group">
 					<!-- 2 -->
-					<posx>1095</posx>
+					<left>1095</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(2).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="1665" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb2</include>
 				</control>
 				<control type="group">
 					<!-- 1 -->
-					<posx>960</posx>
+					<left>960</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(1).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="1530" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb1</include>
@@ -554,7 +554,7 @@
 					<visible>Container.OnNext</visible>
 					<animation effect="slide" end="75,0" time="210" reversible="false">Hidden</animation>
 					<control type="group">
-						<posx>825</posx>
+						<left>825</left>
 						<visible>Container.OnNext</visible>
 						<visible>!String.IsEmpty(Container(66).ListItemNoWrap(0).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 						<animation effect="rotatey" center="1395" start="0" end="-55" time="210" reversible="false" tween="quadratic" easing="in">Hidden</animation>
@@ -562,7 +562,7 @@
 						<include>VideoShowCaseThumb0</include>
 					</control>
 					<control type="group">
-						<posx>758</posx>
+						<left>758</left>
 						<visible>Container.OnNext</visible>
 						<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-1).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 						<animation effect="rotatey" center="608" start="0" end="-55" time="210" reversible="false" tween="quadratic" easing="out">Hidden</animation>
@@ -571,13 +571,13 @@
 				</control>
 			</control>
 			<control type="group" id="6002">
-				<posy>540</posy>
+				<top>540</top>
 				<camera x="960" y="810" />
 				<visible>Container.OnPrevious + !String.IsEqual(container(66).numitems,1) + ![Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(programs)]]</visible>
 				<animation effect="slide" end="135,0" time="210" reversible="false">Hidden</animation>
 				<control type="group">
 					<!-- 7 -->
-					<posx>1500</posx>
+					<left>1500</left>
 					<visible>Container.OnPrevious</visible>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(7).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="fade" start="100" end="0" time="210" reversible="false">Hidden</animation>
@@ -586,42 +586,42 @@
 				</control>
 				<control type="group">
 					<!-- 6 -->
-					<posx>1365</posx>
+					<left>1365</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(6).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="1935" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb6</include>
 				</control>
 				<control type="group">
 					<!-- 5 -->
-					<posx>1230</posx>
+					<left>1230</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(5).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="1800" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb5</include>
 				</control>
 				<control type="group">
 					<!-- 4 -->
-					<posx>1095</posx>
+					<left>1095</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(4).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="1665" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb4</include>
 				</control>
 				<control type="group">
 					<!-- 3 -->
-					<posx>960</posx>
+					<left>960</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(3).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="1530" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb3</include>
 				</control>
 				<control type="group">
 					<!-- 2 -->
-					<posx>825</posx>
+					<left>825</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(2).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="1395" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb2</include>
 				</control>
 				<control type="group">
 					<!-- -8 -->
-					<posx>-270</posx>
+					<left>-270</left>
 					<visible>!Container.OnPrevious</visible>
 					<animation effect="fade" start="0" end="0" delay="0" time="0" reversible="false">Visible</animation>
 					<control type="group">
@@ -653,7 +653,7 @@
 				</control>
 				<control type="group">
 					<!-- -6 -->
-					<posx>-120</posx>
+					<left>-120</left>
 					<visible>!Container.OnPrevious</visible>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-6).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="fade" start="0" end="100" time="210" reversible="false">Visible</animation>
@@ -662,35 +662,35 @@
 				</control>
 				<control type="group">
 					<!-- -5 -->
-					<posx>15</posx>
+					<left>15</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-5).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="-135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb-5</include>
 				</control>
 				<control type="group">
 					<!-- -4 -->
-					<posx>150</posx>
+					<left>150</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-4).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="0" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb-4</include>
 				</control>
 				<control type="group">
 					<!-- -3 -->
-					<posx>285</posx>
+					<left>285</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-3).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb-3</include>
 				</control>
 				<control type="group">
 					<!-- -2 -->
-					<posx>420</posx>
+					<left>420</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-2).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="270" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb-2</include>
 				</control>
 				<control type="group">
 					<!-- -1 -->
-					<posx>555</posx>
+					<left>555</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-1).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="405" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<include>VideoShowCaseThumb-1</include>
@@ -701,7 +701,7 @@
 					<animation effect="slide" end="-75,0" time="210" reversible="false">Hidden</animation>
 					<control type="group">
 						<visible>!String.IsEmpty(Container(66).ListItemNoWrap(0).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-						<posx>690</posx>
+						<left>690</left>
 						<visible>Container.OnPrevious</visible>
 						<animation effect="rotatey" center="540" start="0" end="55" time="210" reversible="false" tween="quadratic" easing="in">Hidden</animation>
 						<animation effect="rotatey" center="540" start="-55" end="-55" time="0" condition="true">Conditional</animation>
@@ -709,7 +709,7 @@
 					</control>
 					<control type="group">
 						<visible>!String.IsEmpty(Container(66).ListItemNoWrap(1).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-						<posx>758</posx>
+						<left>758</left>
 						<visible>Container.OnPrevious</visible>
 						<animation effect="rotatey" center="1328" start="0" end="55" time="210" reversible="false" tween="quadratic" easing="out">Hidden</animation>
 						<include>VideoShowCaseThumb1</include>
@@ -722,14 +722,14 @@
 				<animation effect="fade" start="100" end="0" time="800">Hidden</animation>
 			</control>
 			<control type="group" id="6000">
-				<posy>540</posy>
+				<top>540</top>
 				<animation effect="fade" time="500">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<visible>[[!Control.IsVisible(6001) + !Control.IsVisible(6002) | String.IsEqual(container(66).numitems,1)]] + Control.IsVisible(960)</visible>
 				<camera x="960" y="810" />
 				<control type="group">
 					<!-- -6 -->
-					<posx>15</posx>
+					<left>15</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-6).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="-135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(programs)]]">
@@ -740,7 +740,7 @@
 				</control>
 				<control type="group">
 					<!-- -5 -->
-					<posx>150</posx>
+					<left>150</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-5).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="0" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(programs)]]">
@@ -751,7 +751,7 @@
 				</control>
 				<control type="group">
 					<!-- -4 -->
-					<posx>285</posx>
+					<left>285</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-4).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(programs)]]">
@@ -762,7 +762,7 @@
 				</control>
 				<control type="group">
 					<!-- -3 -->
-					<posx>420</posx>
+					<left>420</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-3).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="270" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(programs)]]">
@@ -773,7 +773,7 @@
 				</control>
 				<control type="group">
 					<!-- -2 -->
-					<posx>555</posx>
+					<left>555</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-2).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="405" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(programs)]]">
@@ -784,7 +784,7 @@
 				</control>
 				<control type="group">
 					<!-- -1 -->
-					<posx>690</posx>
+					<left>690</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(-1).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="540" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 					<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(programs)]]">
@@ -795,7 +795,7 @@
 				</control>
 				<control type="group">
 					<!-- 6 -->
-					<posx>1500</posx>
+					<left>1500</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(6).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="2070" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(programs)]]">
@@ -806,7 +806,7 @@
 				</control>
 				<control type="group">
 					<!-- 5 -->
-					<posx>1365</posx>
+					<left>1365</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(5).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="1935" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(programs)]]">
@@ -817,7 +817,7 @@
 				</control>
 				<control type="group">
 					<!-- 4 -->
-					<posx>1230</posx>
+					<left>1230</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(4).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="1800" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(programs)]]">
@@ -828,7 +828,7 @@
 				</control>
 				<control type="group">
 					<!-- 3 -->
-					<posx>1095</posx>
+					<left>1095</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(3).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="1665" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(programs)]]">
@@ -839,7 +839,7 @@
 				</control>
 				<control type="group">
 					<!-- 2 -->
-					<posx>960</posx>
+					<left>960</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(2).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="1530" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(programs)]]">
@@ -850,7 +850,7 @@
 				</control>
 				<control type="group">
 					<!-- 1 -->
-					<posx>825</posx>
+					<left>825</left>
 					<visible>!String.IsEmpty(Container(66).ListItemNoWrap(1).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 					<animation effect="rotatey" center="1395" start="55" end="55" time="0" condition="true">Conditional</animation>
 					<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(programs)]]">
@@ -861,7 +861,7 @@
 				</control>
 				<control type="group">
 					<!-- 0 -->
-					<posx>758</posx>
+					<left>758</left>
 					<include>VideoShowCaseThumb0</include>
 				</control>
 			</control>
@@ -1710,16 +1710,16 @@
 				<animation effect="slide" start="0,0" end="0,-900" time="500" tween="sine" easing="out">Hidden</animation>
 				<visible>[Control.HasFocus(9966) | String.IsEqual(skin.string(showcasevideopanel),alwayson) | String.IsEqual(skin.string(showcasevideopanel),auto) + Control.IsVisible(9921)] + String.Contains(skin.string(showcaselayout),fanart) + ![String.IsEqual(ListItem.Label,..) | Container.Content(years) | Container.Content(genres) | Container.Content(actors)]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>84</posy>
+					<left>0</left>
+					<top>84</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>128</posy>
+					<left>0</left>
+					<top>128</top>
 					<width>1920</width>
 					<height>795</height>
 					<texture flipy="true" diffuse="shadow_mask.png">darkgrey.png</texture>
@@ -1727,8 +1727,8 @@
 					<animation effect="fade" end="85" condition="true">Conditional</animation>
 				</control>
 				<control type="grouplist">
-					<posx>45</posx>
-					<posy>156</posy>
+					<left>45</left>
+					<top>156</top>
 					<orientation>vertical</orientation>
 					<itemgap>15</itemgap>
 					<visible>!Container.Content(addons)</visible>
@@ -1763,22 +1763,22 @@
 					</control>
 				</control>
 				<control type="image">
-					<posx>600</posx>
-					<posy>128</posy>
+					<left>600</left>
+					<top>128</top>
 					<width>3</width>
 					<height>410</height>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="image">
-					<posx>1208</posx>
-					<posy>128</posy>
+					<left>1208</left>
+					<top>128</top>
 					<width>3</width>
 					<height>410</height>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>634</posx>
-					<posy>156</posy>
+					<left>634</left>
+					<top>156</top>
 					<width>540</width>
 					<height>363</height>
 					<font>Font_18A</font>
@@ -1786,15 +1786,15 @@
 					<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>537</posy>
+					<left>0</left>
+					<top>537</top>
 					<width>1920</width>
 					<height>3</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="image">
-					<posx>1185</posx>
-					<posy>159</posy>
+					<left>1185</left>
+					<top>159</top>
 					<width>750</width>
 					<height>352</height>
 					<aspectratio>keep</aspectratio>
@@ -1809,16 +1809,16 @@
 				<animation effect="slide" start="0,0" end="0,-900" time="500" tween="sine" easing="out">Hidden</animation>
 				<visible>[Control.HasFocus(9966) | String.IsEqual(skin.string(showcasevideopanel),alwayson) | String.IsEqual(skin.string(showcasevideopanel),auto) + Control.IsVisible(9921)] + String.Contains(skin.string(showcaselayout),extrathumbs) + ![String.IsEqual(ListItem.Label,..) | Container.Content(years) | Container.Content(genres) | Container.Content(actors)]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>84</posy>
+					<left>0</left>
+					<top>84</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>128</posy>
+					<left>0</left>
+					<top>128</top>
 					<width>1920</width>
 					<height>795</height>
 					<texture flipy="true" diffuse="shadow_mask.png">darkgrey.png</texture>
@@ -1827,8 +1827,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 1 fundo -->
-					<posx>22</posx>
-					<posy>128</posy>
+					<left>22</left>
+					<top>128</top>
 					<width>362</width>
 					<height>210</height>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
@@ -1837,8 +1837,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 1 -->
-					<posx>30</posx>
-					<posy>135</posy>
+					<left>30</left>
+					<top>135</top>
 					<width>346</width>
 					<height>195</height>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
@@ -1848,8 +1848,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 2 fundo -->
-					<posx>22</posx>
-					<posy>330</posy>
+					<left>22</left>
+					<top>330</top>
 					<width>362</width>
 					<height>210</height>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
@@ -1858,8 +1858,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 2 -->
-					<posx>30</posx>
-					<posy>338</posy>
+					<left>30</left>
+					<top>338</top>
 					<width>346</width>
 					<height>195</height>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
@@ -1869,8 +1869,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 3 fundo -->
-					<posx>1536</posx>
-					<posy>128</posy>
+					<left>1536</left>
+					<top>128</top>
 					<width>362</width>
 					<height>210</height>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
@@ -1879,8 +1879,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 3 -->
-					<posx>1544</posx>
-					<posy>135</posy>
+					<left>1544</left>
+					<top>135</top>
 					<width>346</width>
 					<height>195</height>
 					<aspectratio align="right" aligny="bottom">stretch</aspectratio>
@@ -1890,8 +1890,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 4 fundo -->
-					<posx>1536</posx>
-					<posy>330</posy>
+					<left>1536</left>
+					<top>330</top>
 					<width>362</width>
 					<height>210</height>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
@@ -1900,8 +1900,8 @@
 				</control>
 				<control type="image">
 					<!-- Thumb 4 -->
-					<posx>1544</posx>
-					<posy>338</posy>
+					<left>1544</left>
+					<top>338</top>
 					<width>346</width>
 					<height>195</height>
 					<aspectratio align="right" aligny="bottom">stretch</aspectratio>
@@ -1911,78 +1911,78 @@
 				</control>
 				<control type="label">
 					<include>ShowCaseLabel_Extrathumbs</include>
-					<posy>156</posy>
+					<top>156</top>
 					<label>$VAR[value_ground1_label]</label>
 				</control>
 				<control type="fadelabel">
 					<include>ShowCaseValue_Extrathumbs</include>
-					<posy>186</posy>
+					<top>186</top>
 					<label>$VAR[value_ground1_value]</label>
 				</control>
 				<control type="label">
 					<include>ShowCaseLabel_Extrathumbs</include>
-					<posy>231</posy>
+					<top>231</top>
 					<label>$VAR[value_ground2_label]</label>
 				</control>
 				<control type="fadelabel">
 					<include>ShowCaseValue_Extrathumbs</include>
-					<posy>261</posy>
+					<top>261</top>
 					<label>$VAR[value_ground2_value]</label>
 				</control>
 				<control type="label">
 					<include>ShowCaseLabel_Extrathumbs</include>
-					<posy>306</posy>
+					<top>306</top>
 					<label>$VAR[value_ground3_label]</label>
 				</control>
 				<control type="fadelabel">
 					<include>ShowCaseValue_Extrathumbs</include>
-					<posy>336</posy>
+					<top>336</top>
 					<label>$VAR[value_ground3_value]</label>
 				</control>
 				<control type="label">
 					<include>ShowCaseLabel_Extrathumbs</include>
-					<posy>381</posy>
+					<top>381</top>
 					<label>$VAR[value_ground4_label]</label>
 				</control>
 				<control type="fadelabel">
 					<include>ShowCaseValue_Extrathumbs</include>
-					<posy>411</posy>
+					<top>411</top>
 					<label>$VAR[value_ground4_value]</label>
 				</control>
 				<control type="label">
 					<include>ShowCaseLabel_Extrathumbs</include>
-					<posy>456</posy>
+					<top>456</top>
 					<label>$VAR[value_ground5_label]</label>
 				</control>
 				<control type="fadelabel">
 					<include>ShowCaseValue_Extrathumbs</include>
-					<posy>486</posy>
+					<top>486</top>
 					<label>$VAR[value_ground5_value]</label>
 				</control>
 				<control type="image">
-					<posx>412</posx>
-					<posy>128</posy>
+					<left>412</left>
+					<top>128</top>
 					<width>3</width>
 					<height>410</height>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>128</posy>
+					<left>960</left>
+					<top>128</top>
 					<width>3</width>
 					<height>410</height>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="image">
-					<posx>1508</posx>
-					<posy>128</posy>
+					<left>1508</left>
+					<top>128</top>
 					<width>3</width>
 					<height>410</height>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>998</posx>
-					<posy>156</posy>
+					<left>998</left>
+					<top>156</top>
 					<width>465</width>
 					<height>363</height>
 					<font>Font_18A</font>
@@ -1990,8 +1990,8 @@
 					<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>537</posy>
+					<left>0</left>
+					<top>537</top>
 					<width>1920</width>
 					<height>3</height>
 					<texture>separator.png</texture>
@@ -2002,8 +2002,8 @@
 			<include>ShowCaseMovies</include>
 			<control type="scrollbar" id="80">
 				<include>ScrollBar_Horizontal</include>
-				<posx>285</posx>
-				<posy>920</posy>
+				<left>285</left>
+				<top>920</top>
 				<width>1350</width>
 				<onup>66</onup>
 				<ondown>9920</ondown>

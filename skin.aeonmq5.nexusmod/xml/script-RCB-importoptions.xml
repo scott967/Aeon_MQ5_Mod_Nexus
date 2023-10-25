@@ -5,13 +5,13 @@
 	<defaultcontrol>5211</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<texture>black.png</texture>
@@ -20,58 +20,58 @@
 		</control>
 		<control type="group">
 			<include>Animation_DialogPopup</include>
-			<posx>326</posx>
-			<posy>285</posy>
+			<left>326</left>
+			<top>285</top>
 			<width>1270</width>
 			<height>492</height>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1270</width>
 				<height>1</height>
 				<texture>grey.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>490</posy>
+				<left>0</left>
+				<top>490</top>
 				<width>1270</width>
 				<height>1</height>
 				<texture>grey.png</texture>
 			</control>
 			<control type="image">
-				<posx>-45</posx>
-				<posy>0</posy>
+				<left>-45</left>
+				<top>0</top>
 				<width>45</width>
 				<height>492</height>
 				<texture flipx="true">shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1270</width>
 				<height>492</height>
 				<texture>darkgrey.png</texture>
 				<colordiffuse>F0FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>58</posy>
+				<left>0</left>
+				<top>58</top>
 				<width>1270</width>
 				<height>1</height>
 				<texture>black.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1270</width>
 				<height>60</height>
 				<texture>black.png</texture>
 				<colordiffuse>90FFFFFF</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>0</posx>
-				<posy>9</posy>
+				<left>0</left>
+				<top>9</top>
 				<width>1270</width>
 				<height>42</height>
 				<align>center</align>
@@ -82,8 +82,8 @@
 			</control>
 			<control type="list" id="5210">
 				<hitrect x="0" y="0" w="0" h="0" />
-				<posx>0</posx>
-				<posy>64</posy>
+				<left>0</left>
+				<top>64</top>
 				<width>1270</width>
 				<height>630</height>
 				<itemgap>0</itemgap>
@@ -97,8 +97,8 @@
 				<itemlayout height="1" width="1125"></itemlayout>
 				<focusedlayout height="42" width="1270">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1270</width>
 						<height>42</height>
 						<texture>grey.png</texture>
@@ -106,8 +106,8 @@
 						<visible>[Control.HasFocus(5211) | Control.HasFocus(5212)]</visible>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>6</posy>
+						<left>75</left>
+						<top>6</top>
 						<width>300</width>
 						<height>30</height>
 						<font>Font_18</font>
@@ -118,8 +118,8 @@
 						<visible>![Control.HasFocus(5211) | Control.HasFocus(5212)]</visible>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>6</posy>
+						<left>75</left>
+						<top>6</top>
 						<width>300</width>
 						<height>30</height>
 						<font>Font_18</font>
@@ -130,8 +130,8 @@
 						<visible>[Control.HasFocus(5211) | Control.HasFocus(5212)]</visible>
 					</control>
 					<control type="label">
-						<posx>615</posx>
-						<posy>6</posy>
+						<right>615r</right>
+						<top>6</top>
 						<width>495</width>
 						<height>30</height>
 						<font>Font_18</font>
@@ -142,8 +142,8 @@
 						<visible>![Control.HasFocus(5211) | Control.HasFocus(5212)]</visible>
 					</control>
 					<control type="label">
-						<posx>615</posx>
-						<posy>6</posy>
+						<right>615r</right>
+						<top>6</top>
 						<width>495</width>
 						<height>30</height>
 						<font>Font_18</font>
@@ -157,8 +157,8 @@
 			</control>
 			<control type="button" id="5211">
 				<description>Menu Item Next Button</description>
-				<posx>1113</posx>
-				<posy>38</posy>
+				<left>1113</left>
+				<top>38</top>
 				<width>60</width>
 				<height>98</height>
 				<label></label>
@@ -174,8 +174,8 @@
 			</control>
 			<control type="button" id="5212">
 				<description>Menu Item Prev Button</description>
-				<posx>1173</posx>
-				<posy>38</posy>
+				<left>1173</left>
+				<top>38</top>
 				<width>60</width>
 				<height>98</height>
 				<label></label>
@@ -192,8 +192,8 @@
 			<!-- Scraping mode -->
 			<control type="list" id="5220">
 				<hitrect x="0" y="0" w="0" h="0" />
-				<posx>0</posx>
-				<posy>106</posy>
+				<left>0</left>
+				<top>106</top>
 				<width>1270</width>
 				<height>42</height>
 				<onleft>5220</onleft>
@@ -205,8 +205,8 @@
 				<itemlayout height="1" width="1125"></itemlayout>
 				<focusedlayout height="42" width="1270">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1270</width>
 						<height>42</height>
 						<texture>grey.png</texture>
@@ -214,8 +214,8 @@
 						<visible>[Control.HasFocus(5222) | Control.HasFocus(5223)]</visible>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>6</posy>
+						<left>75</left>
+						<top>6</top>
 						<width>300</width>
 						<height>30</height>
 						<font>Font_18</font>
@@ -226,8 +226,8 @@
 						<visible>![Control.HasFocus(5222) | Control.HasFocus(5223)]</visible>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>6</posy>
+						<left>75</left>
+						<top>6</top>
 						<width>300</width>
 						<height>30</height>
 						<font>Font_18</font>
@@ -238,8 +238,8 @@
 						<visible>[Control.HasFocus(5222) | Control.HasFocus(5223)]</visible>
 					</control>
 					<control type="label">
-						<posx>615</posx>
-						<posy>6</posy>
+						<right>615r</right>
+						<top>6</top>
 						<width>495</width>
 						<height>30</height>
 						<font>Font_18</font>
@@ -250,8 +250,8 @@
 						<visible>![Control.HasFocus(5222) | Control.HasFocus(5223)]</visible>
 					</control>
 					<control type="label">
-						<posx>615</posx>
-						<posy>6</posy>
+						<right>615r</right>
+						<top>6</top>
 						<width>495</width>
 						<height>30</height>
 						<font>Font_18</font>
@@ -265,8 +265,8 @@
 			</control>
 			<control type="button" id="5222">
 				<description>Menu Item Next Button</description>
-				<posx>1113</posx>
-				<posy>78</posy>
+				<left>1113</left>
+				<top>78</top>
 				<width>60</width>
 				<height>98</height>
 				<label></label>
@@ -281,8 +281,8 @@
 			</control>
 			<control type="button" id="5223">
 				<description>Menu Item Prev Button</description>
-				<posx>1173</posx>
-				<posy>78</posy>
+				<left>1173</left>
+				<top>78</top>
 				<width>60</width>
 				<height>98</height>
 				<label></label>
@@ -296,8 +296,8 @@
 				<ondown>5330</ondown>
 			</control>
 			<control type="radiobutton" id="5330">
-				<posx>0</posx>
-				<posy>148</posy>
+				<left>0</left>
+				<top>148</top>
 				<width>1270</width>
 				<height>42</height>
 				<font>Font_18</font>
@@ -311,13 +311,13 @@
 				<onclick>Skin.ToggleSetting(rcb_overwriteImportOptions)</onclick>
 			</control>
 			<control type="group">
-				<posx>0</posx>
-				<posy>190</posy>
+				<left>0</left>
+				<top>190</top>
 				<!-- Scraper 1 -->
 				<control type="list" id="5270">
 					<hitrect x="0" y="0" w="0" h="0" />
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>1270</width>
 					<height>42</height>
 					<onleft>5272</onleft>
@@ -330,8 +330,8 @@
 					<itemlayout height="1" width="1125"></itemlayout>
 					<focusedlayout height="42" width="1270">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1270</width>
 							<height>42</height>
 							<texture>grey.png</texture>
@@ -339,8 +339,8 @@
 							<visible>[Control.HasFocus(5271) | Control.HasFocus(5272)]</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>6</posy>
+							<left>75</left>
+							<top>6</top>
 							<width>300</width>
 							<height>30</height>
 							<font>Font_18</font>
@@ -352,8 +352,8 @@
 							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>6</posy>
+							<left>75</left>
+							<top>6</top>
 							<width>300</width>
 							<height>30</height>
 							<font>Font_18</font>
@@ -365,8 +365,8 @@
 							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
 						</control>
 						<control type="label">
-							<posx>615</posx>
-							<posy>6</posy>
+							<right>615r</right>
+							<top>6</top>
 							<width>495</width>
 							<height>30</height>
 							<font>Font_18</font>
@@ -378,8 +378,8 @@
 							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
 						</control>
 						<control type="label">
-							<posx>615</posx>
-							<posy>6</posy>
+							<right>615r</right>
+							<top>6</top>
 							<width>495</width>
 							<height>30</height>
 							<font>Font_18</font>
@@ -394,8 +394,8 @@
 				</control>
 				<control type="button" id="5271">
 					<description>Menu Item Next Button</description>
-					<posx>1113</posx>
-					<posy>-28</posy>
+					<left>1113</left>
+					<top>-28</top>
 					<width>60</width>
 					<height>98</height>
 					<label></label>
@@ -411,8 +411,8 @@
 				</control>
 				<control type="button" id="5272">
 					<description>Menu Item Prev Button</description>
-					<posx>1173</posx>
-					<posy>-28</posy>
+					<left>1173</left>
+					<top>-28</top>
 					<width>60</width>
 					<height>98</height>
 					<label></label>
@@ -429,8 +429,8 @@
 				<!-- Scraper 2 -->
 				<control type="list" id="5280">
 					<hitrect x="0" y="0" w="0" h="0" />
-					<posx>0</posx>
-					<posy>42</posy>
+					<left>0</left>
+					<top>42</top>
 					<width>1270</width>
 					<height>42</height>
 					<onleft>5280</onleft>
@@ -442,8 +442,8 @@
 					<itemlayout height="1" width="1125"></itemlayout>
 					<focusedlayout height="42" width="1270">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1270</width>
 							<height>42</height>
 							<texture>grey.png</texture>
@@ -451,8 +451,8 @@
 							<visible>[Control.HasFocus(5281) | Control.HasFocus(5282)]</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>6</posy>
+							<left>75</left>
+							<top>6</top>
 							<width>300</width>
 							<height>30</height>
 							<font>Font_18</font>
@@ -464,8 +464,8 @@
 							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>6</posy>
+							<left>75</left>
+							<top>6</top>
 							<width>300</width>
 							<height>30</height>
 							<font>Font_18</font>
@@ -477,8 +477,8 @@
 							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
 						</control>
 						<control type="label">
-							<posx>615</posx>
-							<posy>6</posy>
+							<right>615r</right>
+							<top>6</top>
 							<width>495</width>
 							<height>30</height>
 							<font>Font_18</font>
@@ -490,8 +490,8 @@
 							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
 						</control>
 						<control type="label">
-							<posx>615</posx>
-							<posy>6</posy>
+							<right>615r</right>
+							<top>6</top>
 							<width>495</width>
 							<height>30</height>
 							<font>Font_18</font>
@@ -506,8 +506,8 @@
 				</control>
 				<control type="button" id="5281">
 					<description>Menu Item Next Button</description>
-					<posx>1113</posx>
-					<posy>14</posy>
+					<left>1113</left>
+					<top>14</top>
 					<width>60</width>
 					<height>98</height>
 					<label></label>
@@ -523,8 +523,8 @@
 				</control>
 				<control type="button" id="5282">
 					<description>Menu Item Prev Button</description>
-					<posx>1173</posx>
-					<posy>14</posy>
+					<left>1173</left>
+					<top>14</top>
 					<width>60</width>
 					<height>98</height>
 					<label></label>
@@ -541,8 +541,8 @@
 				<!-- Scraper 3 -->
 				<control type="list" id="5290">
 					<hitrect x="0" y="0" w="0" h="0" />
-					<posx>0</posx>
-					<posy>84</posy>
+					<left>0</left>
+					<top>84</top>
 					<width>1270</width>
 					<height>42</height>
 					<onleft>5290</onleft>
@@ -554,8 +554,8 @@
 					<itemlayout height="1" width="1125"></itemlayout>
 					<focusedlayout height="42" width="1270">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1270</width>
 							<height>42</height>
 							<texture>grey.png</texture>
@@ -563,8 +563,8 @@
 							<visible>[Control.HasFocus(5291) | Control.HasFocus(5292)]</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>6</posy>
+							<left>75</left>
+							<top>6</top>
 							<width>300</width>
 							<height>30</height>
 							<font>Font_18</font>
@@ -576,8 +576,8 @@
 							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>6</posy>
+							<left>75</left>
+							<top>6</top>
 							<width>300</width>
 							<height>30</height>
 							<font>Font_18</font>
@@ -589,8 +589,8 @@
 							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
 						</control>
 						<control type="label">
-							<posx>615</posx>
-							<posy>6</posy>
+							<right>615r</right>
+							<top>6</top>
 							<width>495</width>
 							<height>30</height>
 							<font>Font_18</font>
@@ -602,8 +602,8 @@
 							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
 						</control>
 						<control type="label">
-							<posx>615</posx>
-							<posy>6</posy>
+							<right>615r</right>
+							<top>6</top>
 							<width>495</width>
 							<height>30</height>
 							<font>Font_18</font>
@@ -618,8 +618,8 @@
 				</control>
 				<control type="button" id="5291">
 					<description>Menu Item Next Button</description>
-					<posx>1113</posx>
-					<posy>56</posy>
+					<left>1113</left>
+					<top>56</top>
 					<width>60</width>
 					<height>98</height>
 					<label></label>
@@ -635,8 +635,8 @@
 				</control>
 				<control type="button" id="5292">
 					<description>Menu Item Prev Button</description>
-					<posx>1173</posx>
-					<posy>56</posy>
+					<left>1173</left>
+					<top>56</top>
 					<width>60</width>
 					<height>98</height>
 					<label></label>
@@ -652,8 +652,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>442</posy>
+				<left>0</left>
+				<top>442</top>
 				<width>1270</width>
 				<height>60</height>
 				<texture>black.png</texture>
@@ -661,12 +661,12 @@
 			</control>
 			<!-- Save and Cancel -->
 			<control type="group">
-				<posx>210</posx>
-				<posy>442</posy>
+				<left>210</left>
+				<top>442</top>
 				<control type="button" id="5300">
 					<description>Import</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>450</width>
 					<height>45</height>
 					<align>center</align>
@@ -681,8 +681,8 @@
 				</control>
 				<control type="button" id="5310">
 					<description>Cancel</description>
-					<posx>450</posx>
-					<posy>0</posy>
+					<left>450</left>
+					<top>0</top>
 					<width>450</width>
 					<height>45</height>
 					<align>center</align>

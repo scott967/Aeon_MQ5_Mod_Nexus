@@ -20,16 +20,16 @@
 			</control>
 			<!-- Settings List -->
 			<control type="group">
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>1560</width>
 				<height>741</height>
 				<!-- Rom Collection List -->
 				<control type="list" id="5210">
 					<hitrect x="0" y="0" w="0" h="0" />
 					<visible>!Container(7000).Hasfocus(5)</visible>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>1560</width>
 					<height>60</height>
 					<onleft>5210</onleft>
@@ -41,16 +41,16 @@
 					<itemlayout height="1" width="1560"></itemlayout>
 					<focusedlayout height="60" width="1560">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1560</width>
 							<height>60</height>
 							<texture>settings_button_focus.png</texture>
 							<visible>[Control.HasFocus(5211) | Control.HasFocus(5212)]</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>0</posy>
+							<left>75</left>
+							<top>0</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -61,8 +61,8 @@
 							<visible>![Control.HasFocus(5211) | Control.HasFocus(5212)]</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>0</posy>
+							<left>75</left>
+							<top>0</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -73,8 +73,8 @@
 							<visible>[Control.HasFocus(5211) | Control.HasFocus(5212)]</visible>
 						</control>
 						<control type="label">
-							<posx>818</posx>
-							<posy>0</posy>
+							<right>818r</right>
+							<top>0</top>
 							<width>555</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -85,8 +85,8 @@
 							<visible>![Control.HasFocus(5211) | Control.HasFocus(5212)]</visible>
 						</control>
 						<control type="label">
-							<posx>818</posx>
-							<posy>0</posy>
+							<right>818r</right>
+							<top>0</top>
 							<width>555</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -101,8 +101,8 @@
 				<control type="button" id="5211">
 					<description>Menu Item Next Button</description>
 					<visible>!Container(7000).Hasfocus(5)</visible>
-					<posx>1390</posx>
-					<posy>-16</posy>
+					<left>1390</left>
+					<top>-16</top>
 					<width>60</width>
 					<height>98</height>
 					<label></label>
@@ -118,8 +118,8 @@
 				<control type="button" id="5212">
 					<description>Menu Item Prev Button</description>
 					<visible>!Container(7000).Hasfocus(5)</visible>
-					<posx>1450</posx>
-					<posy>-16</posy>
+					<left>1450</left>
+					<top>-16</top>
 					<width>60</width>
 					<height>98</height>
 					<label></label>
@@ -136,14 +136,14 @@
 					<!-- Game Import -->
 					<control type="group" id="7001">
 						<visible>Container(7000).Hasfocus(1)</visible>
-						<posx>0</posx>
-						<posy>74</posy>
+						<left>0</left>
+						<top>74</top>
 						<pagecontrol>60</pagecontrol>
 						<!-- Rom Path -->
 						<control type="button" id="5240">
 							<description>Rom Path</description>
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<label>$ADDON[script.games.rom.collection.browser 32606]</label>
 							<align>right</align>
 							<onup>5211</onup>
@@ -152,8 +152,8 @@
 							<onright>6000</onright>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>0</posy>
+							<left>75</left>
+							<top>0</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -164,8 +164,8 @@
 							<visible>!Control.HasFocus(5240)</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>0</posy>
+							<left>75</left>
+							<top>0</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -178,8 +178,8 @@
 						<!-- Rom file mask -->
 						<control type="button" id="5250">
 							<description>Rom file mask</description>
-							<posx>0</posx>
-							<posy>74</posy>
+							<left>0</left>
+							<top>74</top>
 							<label>$ADDON[script.games.rom.collection.browser 32607]</label>
 							<align>right</align>
 							<onup>5240</onup>
@@ -188,8 +188,8 @@
 							<onright>6000</onright>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>74</posy>
+							<left>75</left>
+							<top>74</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -200,8 +200,8 @@
 							<visible>!Control.HasFocus(5250)</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>74</posy>
+							<left>75</left>
+							<top>74</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -213,8 +213,8 @@
 						</control>
 						<!-- Ignore on scan -->
 						<control type="radiobutton" id="5330">
-							<posx>0</posx>
-							<posy>147</posy>
+							<left>0</left>
+							<top>147</top>
 							<label>$ADDON[script.games.rom.collection.browser 32608]</label>
 							<onleft>7000</onleft>
 							<onright>6000</onright>
@@ -223,8 +223,8 @@
 						</control>
 						<!-- Allow update -->
 						<control type="radiobutton" id="5400">
-							<posx>0</posx>
-							<posy>220</posy>
+							<left>0</left>
+							<top>220</top>
 							<label>$ADDON[script.games.rom.collection.browser 32609]</label>
 							<onleft>7000</onleft>
 							<onright>6000</onright>
@@ -234,8 +234,8 @@
 						<!-- Max folder depth -->
 						<control type="button" id="5410">
 							<description>Max folder depth</description>
-							<posx>0</posx>
-							<posy>294</posy>
+							<left>0</left>
+							<top>294</top>
 							<align>right</align>
 							<onup>5400</onup>
 							<ondown>5420</ondown>
@@ -243,8 +243,8 @@
 							<onright>6000</onright>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>294</posy>
+							<left>75</left>
+							<top>294</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -255,8 +255,8 @@
 							<visible>!Control.HasFocus(5410)</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>294</posy>
+							<left>75</left>
+							<top>294</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -269,8 +269,8 @@
 						<!-- Disk indicator -->
 						<control type="button" id="5420">
 							<description>Disk indicator</description>
-							<posx>0</posx>
-							<posy>368</posy>
+							<left>0</left>
+							<top>368</top>
 							<align>right</align>
 							<onup>5410</onup>
 							<ondown>5430</ondown>
@@ -278,8 +278,8 @@
 							<onright>6000</onright>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>368</posy>
+							<left>75</left>
+							<top>368</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -290,8 +290,8 @@
 							<visible>!Control.HasFocus(5420)</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>368</posy>
+							<left>75</left>
+							<top>368</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -302,8 +302,8 @@
 							<visible>Control.HasFocus(5420)</visible>
 						</control>
 						<control type="radiobutton" id="5430">
-							<posx>0</posx>
-							<posy>441</posy>
+							<left>0</left>
+							<top>441</top>
 							<label>$ADDON[script.games.rom.collection.browser 32612]</label>
 							<onleft>7000</onleft>
 							<onright>6000</onright>
@@ -314,14 +314,14 @@
 					<!-- Import Game data -->
 					<control type="group" id="7002">
 						<visible>Container(7000).Hasfocus(2)</visible>
-						<posx>0</posx>
-						<posy>74</posy>
+						<left>0</left>
+						<top>74</top>
 						<!-- Scrapers -->
 						<!-- Scraper 1 -->
 						<control type="list" id="5290">
 							<hitrect x="0" y="0" w="0" h="0" />
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1560</width>
 							<height>60</height>
 							<onleft>5280</onleft>
@@ -334,16 +334,16 @@
 							<itemlayout height="1" width="1560"></itemlayout>
 							<focusedlayout height="60" width="1560">
 								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
+									<left>0</left>
+									<top>0</top>
 									<width>1560</width>
 									<height>60</height>
 									<texture>settings_button_focus.png</texture>
 									<visible>[Control.HasFocus(5291) | Control.HasFocus(5292)]</visible>
 								</control>
 								<control type="label">
-									<posx>75</posx>
-									<posy>0</posy>
+									<left>75</left>
+									<top>0</top>
 									<width>300</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -354,8 +354,8 @@
 									<visible>![Control.HasFocus(5291) | Control.HasFocus(5292)]</visible>
 								</control>
 								<control type="label">
-									<posx>75</posx>
-									<posy>0</posy>
+									<left>75</left>
+									<top>0</top>
 									<width>300</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -366,8 +366,8 @@
 									<visible>[Control.HasFocus(5291) | Control.HasFocus(5292)]</visible>
 								</control>
 								<control type="label">
-									<posx>818</posx>
-									<posy>0</posy>
+									<right>818r</right>
+									<top>0</top>
 									<width>555</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -378,8 +378,8 @@
 									<visible>![Control.HasFocus(5291) | Control.HasFocus(5292)]</visible>
 								</control>
 								<control type="label">
-									<posx>818</posx>
-									<posy>0</posy>
+									<right>818r</right>
+									<top>0</top>
 									<width>555</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -393,8 +393,8 @@
 						</control>
 						<control type="button" id="5291">
 							<description>Menu Item Next Button</description>
-							<posx>1390</posx>
-							<posy>-16</posy>
+							<left>1390</left>
+							<top>-16</top>
 							<width>60</width>
 							<height>98</height>
 							<label></label>
@@ -409,8 +409,8 @@
 						</control>
 						<control type="button" id="5292">
 							<description>Menu Item Prev Button</description>
-							<posx>1450</posx>
-							<posy>-16</posy>
+							<left>1450</left>
+							<top>-16</top>
 							<width>60</width>
 							<height>98</height>
 							<label></label>
@@ -426,8 +426,8 @@
 						<!-- Scraper 2 -->
 						<control type="list" id="5300">
 							<hitrect x="0" y="0" w="0" h="0" />
-							<posx>0</posx>
-							<posy>74</posy>
+							<left>0</left>
+							<top>74</top>
 							<width>1560</width>
 							<height>60</height>
 							<onleft>5290</onleft>
@@ -439,16 +439,16 @@
 							<itemlayout height="1" width="1560"></itemlayout>
 							<focusedlayout height="60" width="1560">
 								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
+									<left>0</left>
+									<top>0</top>
 									<width>1560</width>
 									<height>60</height>
 									<texture>settings_button_focus.png</texture>
 									<visible>[Control.HasFocus(5301) | Control.HasFocus(5302)]</visible>
 								</control>
 								<control type="label">
-									<posx>75</posx>
-									<posy>0</posy>
+									<left>75</left>
+									<top>0</top>
 									<width>300</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -459,8 +459,8 @@
 									<visible>![Control.HasFocus(5301) | Control.HasFocus(5302)]</visible>
 								</control>
 								<control type="label">
-									<posx>75</posx>
-									<posy>0</posy>
+									<left>75</left>
+									<top>0</top>
 									<width>300</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -471,8 +471,8 @@
 									<visible>[Control.HasFocus(5301) | Control.HasFocus(5302)]</visible>
 								</control>
 								<control type="label">
-									<posx>818</posx>
-									<posy>0</posy>
+									<right>818r</right>
+									<top>0</top>
 									<width>555</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -483,8 +483,8 @@
 									<visible>![Control.HasFocus(5301) | Control.HasFocus(5302)]</visible>
 								</control>
 								<control type="label">
-									<posx>818</posx>
-									<posy>0</posy>
+									<right>818r</right>
+									<top>0</top>
 									<width>555</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -498,8 +498,8 @@
 						</control>
 						<control type="button" id="5301">
 							<description>Menu Item Next Button</description>
-							<posx>1390</posx>
-							<posy>56</posy>
+							<left>1390</left>
+							<top>56</top>
 							<width>60</width>
 							<height>98</height>
 							<label></label>
@@ -514,8 +514,8 @@
 						</control>
 						<control type="button" id="5302">
 							<description>Menu Item Prev Button</description>
-							<posx>1450</posx>
-							<posy>56</posy>
+							<left>1450</left>
+							<top>56</top>
 							<width>60</width>
 							<height>98</height>
 							<label></label>
@@ -531,8 +531,8 @@
 						<!-- Scraper 3 -->
 						<control type="list" id="5310">
 							<hitrect x="0" y="0" w="0" h="0" />
-							<posx>0</posx>
-							<posy>147</posy>
+							<left>0</left>
+							<top>147</top>
 							<width>1560</width>
 							<height>60</height>
 							<onleft>5302</onleft>
@@ -544,16 +544,16 @@
 							<itemlayout height="1" width="1560"></itemlayout>
 							<focusedlayout height="60" width="1560">
 								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
+									<left>0</left>
+									<top>0</top>
 									<width>1560</width>
 									<height>60</height>
 									<texture>settings_button_focus.png</texture>
 									<visible>[Control.HasFocus(5311) | Control.HasFocus(5312)]</visible>
 								</control>
 								<control type="label">
-									<posx>75</posx>
-									<posy>0</posy>
+									<left>75</left>
+									<top>0</top>
 									<width>300</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -564,8 +564,8 @@
 									<visible>![Control.HasFocus(5311) | Control.HasFocus(5312)]</visible>
 								</control>
 								<control type="label">
-									<posx>75</posx>
-									<posy>0</posy>
+									<left>75</left>
+									<top>0</top>
 									<width>300</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -576,8 +576,8 @@
 									<visible>[Control.HasFocus(5311) | Control.HasFocus(5312)]</visible>
 								</control>
 								<control type="label">
-									<posx>818</posx>
-									<posy>0</posy>
+									<right>818r</right>
+									<top>0</top>
 									<width>555</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -588,8 +588,8 @@
 									<visible>![Control.HasFocus(5311) | Control.HasFocus(5312)]</visible>
 								</control>
 								<control type="label">
-									<posx>818</posx>
-									<posy>0</posy>
+									<right>818r</right>
+									<top>0</top>
 									<width>555</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -603,8 +603,8 @@
 						</control>
 						<control type="button" id="5311">
 							<description>Menu Item Next Button</description>
-							<posx>1390</posx>
-							<posy>130</posy>
+							<left>1390</left>
+							<top>130</top>
 							<width>60</width>
 							<height>98</height>
 							<label></label>
@@ -619,8 +619,8 @@
 						</control>
 						<control type="button" id="5312">
 							<description>Menu Item Prev Button</description>
-							<posx>1450</posx>
-							<posy>130</posy>
+							<left>1450</left>
+							<top>130</top>
 							<width>60</width>
 							<height>98</height>
 							<label></label>
@@ -635,12 +635,12 @@
 						</control>
 						<!-- Media Path -->
 						<control type="group">
-							<posx>0</posx>
-							<posy>220</posy>
+							<left>0</left>
+							<top>220</top>
 							<control type="list" id="5260">
 								<hitrect x="0" y="0" w="0" h="0" />
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1560</width>
 								<height>60</height>
 								<onleft>7000</onleft>
@@ -653,16 +653,16 @@
 								<itemlayout height="1" width="1560"></itemlayout>
 								<focusedlayout height="60" width="1560">
 									<control type="image">
-										<posx>0</posx>
-										<posy>0</posy>
+										<left>0</left>
+										<top>0</top>
 										<width>1560</width>
 										<height>60</height>
 										<texture>settings_button_focus.png</texture>
 										<visible>[Control.HasFocus(5261) | Control.HasFocus(5262)]</visible>
 									</control>
 									<control type="label">
-										<posx>75</posx>
-										<posy>0</posy>
+										<left>75</left>
+										<top>0</top>
 										<width>300</width>
 										<height>60</height>
 										<font>Font_18</font>
@@ -673,8 +673,8 @@
 										<visible>![Control.HasFocus(5261) | Control.HasFocus(5262)]</visible>
 									</control>
 									<control type="label">
-										<posx>75</posx>
-										<posy>0</posy>
+										<left>75</left>
+										<top>0</top>
 										<width>300</width>
 										<height>60</height>
 										<font>Font_18</font>
@@ -685,8 +685,8 @@
 										<visible>[Control.HasFocus(5261) | Control.HasFocus(5262)]</visible>
 									</control>
 									<control type="label">
-										<posx>818</posx>
-										<posy>0</posy>
+										<right>818r</right>
+										<top>0</top>
 										<width>555</width>
 										<height>60</height>
 										<font>Font_18</font>
@@ -697,8 +697,8 @@
 										<visible>![Control.HasFocus(5261) | Control.HasFocus(5262)]</visible>
 									</control>
 									<control type="label">
-										<posx>818</posx>
-										<posy>0</posy>
+										<right>818r</right>
+										<top>0</top>
 										<width>555</width>
 										<height>60</height>
 										<font>Font_18</font>
@@ -712,8 +712,8 @@
 							</control>
 							<control type="button" id="5261">
 								<description>Menu Item Next Button</description>
-								<posx>1390</posx>
-								<posy>-16</posy>
+								<left>1390</left>
+								<top>-16</top>
 								<width>60</width>
 								<height>98</height>
 								<label></label>
@@ -728,8 +728,8 @@
 							</control>
 							<control type="button" id="5262">
 								<description>Menu Item Prev Button</description>
-								<posx>1450</posx>
-								<posy>-16</posy>
+								<left>1450</left>
+								<top>-16</top>
 								<width>60</width>
 								<height>98</height>
 								<label></label>
@@ -745,8 +745,8 @@
 							<!-- Media Path -->
 							<control type="button" id="5270">
 								<description>Media Path</description>
-								<posx>0</posx>
-								<posy>74</posy>
+								<right>0r</right>
+								<top>74</top>
 								<label>$ADDON[script.games.rom.collection.browser 32617]</label>
 								<align>right</align>
 								<aligny>center</aligny>
@@ -756,8 +756,8 @@
 								<onright>6000</onright>
 							</control>
 							<control type="label">
-								<posx>75</posx>
-								<posy>74</posy>
+								<left>75</left>
+								<top>74</top>
 								<width>300</width>
 								<height>60</height>
 								<font>Font_18</font>
@@ -768,8 +768,8 @@
 								<visible>!Control.HasFocus(5270)</visible>
 							</control>
 							<control type="label">
-								<posx>75</posx>
-								<posy>74</posy>
+								<left>75</left>
+								<top>74</top>
 								<width>300</width>
 								<height>60</height>
 								<font>Font_18</font>
@@ -782,8 +782,8 @@
 							<!-- File Mask -->
 							<control type="button" id="5280">
 								<description>Media File Mask</description>
-								<posx>0</posx>
-								<posy>147</posy>
+								<left>0</left>
+								<top>147</top>
 								<label>$ADDON[script.games.rom.collection.browser 32618]</label>
 								<align>right</align>
 								<aligny>center</aligny>
@@ -793,8 +793,8 @@
 								<onright>6000</onright>
 							</control>
 							<control type="label">
-								<posx>75</posx>
-								<posy>147</posy>
+								<left>75</left>
+								<top>147</top>
 								<width>300</width>
 								<height>60</height>
 								<font>Font_18</font>
@@ -805,8 +805,8 @@
 								<visible>!Control.HasFocus(5280)</visible>
 							</control>
 							<control type="label">
-								<posx>75</posx>
-								<posy>147</posy>
+								<left>75</left>
+								<top>147</top>
 								<width>300</width>
 								<height>60</height>
 								<font>Font_18</font>
@@ -818,8 +818,8 @@
 							</control>
 							<control type="button" id="5490">
 								<description>Remove Media path</description>
-								<posx>0</posx>
-								<posy>220</posy>
+								<left>0</left>
+								<top>220</top>
 								<label>$ADDON[script.games.rom.collection.browser 32619]</label>
 								<align>left</align>
 								<aligny>center</aligny>
@@ -830,8 +830,8 @@
 							</control>
 							<control type="button" id="5500">
 								<description>Add Media path</description>
-								<posx>0</posx>
-								<posy>294</posy>
+								<left>0</left>
+								<top>294</top>
 								<label>$ADDON[script.games.rom.collection.browser 32620]</label>
 								<align>left</align>
 								<aligny>center</aligny>
@@ -845,13 +845,13 @@
 					<!-- Game Browsing -->
 					<control type="group" id="7002">
 						<visible>Container(7000).Hasfocus(3)</visible>
-						<posx>0</posx>
-						<posy>60</posy>
+						<left>0</left>
+						<top>60</top>
 						<control type="list" id="5320">
 							<hitrect x="0" y="0" w="0" h="0" />
 							<enable>false</enable>
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1560</width>
 							<height>60</height>
 							<onleft>5320</onleft>
@@ -863,16 +863,16 @@
 							<itemlayout height="1" width="1560"></itemlayout>
 							<focusedlayout height="60" width="1560">
 								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
+									<left>0</left>
+									<top>0</top>
 									<width>1560</width>
 									<height>60</height>
 									<texture>settings_button_focus.png</texture>
 									<visible>[Control.HasFocus(5321) | Control.HasFocus(5322)]</visible>
 								</control>
 								<control type="label">
-									<posx>75</posx>
-									<posy>0</posy>
+									<left>75</left>
+									<top>0</top>
 									<width>450</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -883,8 +883,8 @@
 									<visible>![Control.HasFocus(5321) | Control.HasFocus(5322)]</visible>
 								</control>
 								<control type="label">
-									<posx>75</posx>
-									<posy>0</posy>
+									<left>75</left>
+									<top>0</top>
 									<width>450</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -895,8 +895,8 @@
 									<visible>[Control.HasFocus(5321) | Control.HasFocus(5322)]</visible>
 								</control>
 								<control type="label">
-									<posx>818</posx>
-									<posy>0</posy>
+									<right>818r</right>
+									<top>0</top>
 									<width>555</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -907,8 +907,8 @@
 									<visible>![Control.HasFocus(5321) | Control.HasFocus(5322)]</visible>
 								</control>
 								<control type="label">
-									<posx>818</posx>
-									<posy>0</posy>
+									<right>818r</right>
+									<top>0</top>
 									<width>555</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -922,8 +922,8 @@
 						</control>
 						<control type="button" id="5321">
 							<description>Menu Item Next Button</description>
-							<posx>1390</posx>
-							<posy>-16</posy>
+							<left>1390</left>
+							<top>-16</top>
 							<width>60</width>
 							<height>98</height>
 							<label></label>
@@ -938,8 +938,8 @@
 						</control>
 						<control type="button" id="5322">
 							<description>Menu Item Prev Button</description>
-							<posx>1450</posx>
-							<posy>-16</posy>
+							<left>1450</left>
+							<top>-16</top>
 							<width>60</width>
 							<height>98</height>
 							<label></label>
@@ -955,8 +955,8 @@
 						<control type="list" id="5340">
 							<hitrect x="0" y="0" w="0" h="0" />
 							<enable>false</enable>
-							<posx>0</posx>
-							<posy>60</posy>
+							<left>0</left>
+							<top>60</top>
 							<width>1560</width>
 							<height>60</height>
 							<onleft>5340</onleft>
@@ -968,16 +968,16 @@
 							<itemlayout height="1" width="1560"></itemlayout>
 							<focusedlayout height="60" width="1560">
 								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
+									<left>0</left>
+									<top>0</top>
 									<width>1560</width>
 									<height>60</height>
 									<texture>settings_button_focus.png</texture>
 									<visible>[Control.HasFocus(5341) | Control.HasFocus(5342)]</visible>
 								</control>
 								<control type="label">
-									<posx>75</posx>
-									<posy>0</posy>
+									<left>75</left>
+									<top>0</top>
 									<width>450</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -988,8 +988,8 @@
 									<visible>![Control.HasFocus(5341) | Control.HasFocus(5342)]</visible>
 								</control>
 								<control type="label">
-									<posx>75</posx>
-									<posy>0</posy>
+									<left>75</left>
+									<top>0</top>
 									<width>450</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -1000,8 +1000,8 @@
 									<visible>[Control.HasFocus(5341) | Control.HasFocus(5342)]</visible>
 								</control>
 								<control type="label">
-									<posx>818</posx>
-									<posy>0</posy>
+									<left>818</left>
+									<top>0</top>
 									<width>555</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -1012,8 +1012,8 @@
 									<visible>![Control.HasFocus(5341) | Control.HasFocus(5342)]</visible>
 								</control>
 								<control type="label">
-									<posx>818</posx>
-									<posy>0</posy>
+									<right>818r</right>
+									<top>0</top>
 									<width>555</width>
 									<height>60</height>
 									<font>Font_18</font>
@@ -1027,8 +1027,8 @@
 						</control>
 						<control type="button" id="5341">
 							<description>Menu Item Next Button</description>
-							<posx>1390</posx>
-							<posy>42</posy>
+							<left>1390</left>
+							<top>42</top>
 							<width>60</width>
 							<height>98</height>
 							<label></label>
@@ -1043,8 +1043,8 @@
 						</control>
 						<control type="button" id="5342">
 							<description>Menu Item Prev Button</description>
-							<posx>1450</posx>
-							<posy>42</posy>
+							<left>1450</left>
+							<top>42</top>
 							<width>60</width>
 							<height>98</height>
 							<label></label>
@@ -1059,8 +1059,8 @@
 						</control>
 						<control type="radiobutton" id="5350">
 							<!-- Autoplay Main -->
-							<posx>0</posx>
-							<posy>120</posy>
+							<left>0</left>
+							<top>120</top>
 							<label>$ADDON[script.games.rom.collection.browser 32623]</label>
 							<onleft>7000</onleft>
 							<onright>6000</onright>
@@ -1069,8 +1069,8 @@
 						</control>
 						<control type="radiobutton" id="5360">
 							<!-- Autoplay Info -->
-							<posx>0</posx>
-							<posy>180</posy>
+							<left>0</left>
+							<top>180</top>
 							<label>$ADDON[script.games.rom.collection.browser 32636]</label>
 							<onleft>7000</onleft>
 							<onright>6000</onright>
@@ -1081,14 +1081,14 @@
 					<!-- Game Launching -->
 					<control type="group" id="7003">
 						<visible>Container(7000).Hasfocus(4)</visible>
-						<posx>0</posx>
-						<posy>60</posy>
+						<left>0</left>
+						<top>60</top>
 						<height>300</height>
 						<!-- Emulator Cmd -->
 						<control type="button" id="5220">
 							<description>EmuCmd</description>
-							<posx>0</posx>
-							<posy>0</posy>
+							<right>0r</right>
+							<top>0</top>
 							<height>60</height>
 							<label>$INFO[ListItem.Label]</label>
 							<align>right</align>
@@ -1099,8 +1099,8 @@
 							<onright>6000</onright>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>0</posy>
+							<left>75</left>
+							<top>0</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -1111,8 +1111,8 @@
 							<visible>!Control.Hasfocus(5220)</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>0</posy>
+							<left>75</left>
+							<top>0</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -1125,8 +1125,8 @@
 						<!-- Emulator Params -->
 						<control type="button" id="5230">
 							<description>EmuParams</description>
-							<posx>0</posx>
-							<posy>68</posy>
+							<right>0r</right>
+							<top>68</top>
 							<height>60</height>
 							<align>right</align>
 							<aligny>center</aligny>
@@ -1136,8 +1136,8 @@
 							<onright>6000</onright>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>68</posy>
+							<left>75</left>
+							<top>68</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -1148,8 +1148,8 @@
 							<visible>!Control.Hasfocus(5230)</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>68</posy>
+							<left>75</left>
+							<top>68</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -1161,8 +1161,8 @@
 						</control>
 						<!-- Use emu solo -->
 						<control type="radiobutton" id="5440">
-							<posx>0</posx>
-							<posy>135</posy>
+							<left>0</left>
+							<top>135</top>
 							<height>60</height>
 							<label>$ADDON[script.games.rom.collection.browser 32626]</label>
 							<onleft>7000</onleft>
@@ -1172,8 +1172,8 @@
 						</control>
 						<!-- Use Popen -->
 						<control type="radiobutton" id="5530">
-							<posx>0</posx>
-							<posy>202</posy>
+							<left>0</left>
+							<top>202</top>
 							<height>60</height>
 							<label>$ADDON[script.games.rom.collection.browser 32627]</label>
 							<onleft>7000</onleft>
@@ -1183,8 +1183,8 @@
 						</control>
 						<!-- Do not extract zip files -->
 						<control type="radiobutton" id="5450">
-							<posx>0</posx>
-							<posy>270</posy>
+							<left>0</left>
+							<top>270</top>
 							<height>60</height>
 							<label>$ADDON[script.games.rom.collection.browser 32628]</label>
 							<onleft>7000</onleft>
@@ -1195,8 +1195,8 @@
 						<!-- Savestate path -->
 						<control type="button" id="5460">
 							<description>Savestates</description>
-							<posx>0</posx>
-							<posy>338</posy>
+							<left>0</left>
+							<top>338</top>
 							<height>60</height>
 							<align>right</align>
 							<aligny>center</aligny>
@@ -1206,8 +1206,8 @@
 							<onright>6000</onright>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>338</posy>
+							<left>75</left>
+							<top>338</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -1218,8 +1218,8 @@
 							<visible>!Control.Hasfocus(5460)</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>338</posy>
+							<left>75</left>
+							<top>338</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -1232,8 +1232,8 @@
 						<!-- Savestate file mask -->
 						<control type="button" id="5470">
 							<description>Savestates</description>
-							<posx>0</posx>
-							<posy>405</posy>
+							<left>0</left>
+							<top>405</top>
 							<height>60</height>
 							<align>right</align>
 							<aligny>center</aligny>
@@ -1243,8 +1243,8 @@
 							<onright>6000</onright>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>405</posy>
+							<left>75</left>
+							<top>405</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -1255,8 +1255,8 @@
 							<visible>!Control.Hasfocus(5470)</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>405</posy>
+							<left>75</left>
+							<top>405</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -1269,8 +1269,8 @@
 						<!-- Savestate params -->
 						<control type="button" id="5480">
 							<description>Savestates</description>
-							<posx>0</posx>
-							<posy>472</posy>
+							<left>0</left>
+							<top>472</top>
 							<height>60</height>
 							<align>right</align>
 							<aligny>center</aligny>
@@ -1280,8 +1280,8 @@
 							<onright>6000</onright>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>472</posy>
+							<left>75</left>
+							<top>472</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -1292,8 +1292,8 @@
 							<visible>!Control.Hasfocus(5480)</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>472</posy>
+							<left>75</left>
+							<top>472</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -1306,8 +1306,8 @@
 						<!-- PreCmd -->
 						<control type="button" id="5510">
 							<description>Pre-Launch Command</description>
-							<posx>0</posx>
-							<posy>540</posy>
+							<left>0</left>
+							<top>540</top>
 							<height>60</height>
 							<align>right</align>
 							<aligny>center</aligny>
@@ -1317,8 +1317,8 @@
 							<onright>6000</onright>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>540</posy>
+							<left>75</left>
+							<top>540</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -1329,8 +1329,8 @@
 							<visible>!Control.Hasfocus(5510)</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>540</posy>
+							<left>75</left>
+							<top>540</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -1343,8 +1343,8 @@
 						<!-- PostCmd -->
 						<control type="button" id="5520">
 							<description>Post-Launch Command</description>
-							<posx>0</posx>
-							<posy>608</posy>
+							<left>0</left>
+							<top>608</top>
 							<height>60</height>
 							<align>right</align>
 							<aligny>center</aligny>
@@ -1355,8 +1355,8 @@
 							<onright>6000</onright>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>608</posy>
+							<left>75</left>
+							<top>608</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -1367,8 +1367,8 @@
 							<visible>!Control.Hasfocus(5520)</visible>
 						</control>
 						<control type="label">
-							<posx>75</posx>
-							<posy>608</posy>
+							<left>75</left>
+							<top>608</top>
 							<width>300</width>
 							<height>60</height>
 							<font>Font_18</font>
@@ -1382,8 +1382,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>360</posx>
-				<posy>933</posy>
+				<left>360</left>
+				<top>933</top>
 				<width>1560</width>
 				<height>60</height>
 				<texture>darkgrey.png</texture>
@@ -1391,8 +1391,8 @@
 				<animation effect="fade" end="85" condition="true">Conditional</animation>
 			</control>
 			<control type="grouplist" id="9001">
-				<posx>360</posx>
-				<posy>933</posy>
+				<left>360</left>
+				<top>933</top>
 				<itemgap>0</itemgap>
 				<onup>7000</onup>
 				<ondown>7000</ondown>
@@ -1420,8 +1420,8 @@
 			</control>
 			<control type="group">
 				<control type="list" id="7000">
-					<posx>0</posx>
-					<posy>180</posy>
+					<left>0</left>
+					<top>180</top>
 					<width>374</width>
 					<height>900</height>
 					<onleft>7010</onleft>
@@ -1466,8 +1466,8 @@
 					</content>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>375</width>
 					<height>1080</height>
 					<texture>menu_glass.png</texture>

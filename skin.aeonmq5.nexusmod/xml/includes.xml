@@ -373,8 +373,8 @@
 	</include>
 <!-- ######################################################################### Fonts for Home menu ######################################################################### -->
 	<include name="Font1">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1920</width>
 		<height>104</height>
 		<font>Font_60</font>
@@ -384,8 +384,8 @@
 		<scroll>true</scroll>
 	</include>
 	<include name="Font2">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1920</width>
 		<height>104</height>
 		<font>Font_60h</font>
@@ -396,8 +396,8 @@
 		<scroll>true</scroll>
 	</include>
 	<include name="Font3">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1920</width>
 		<height>102</height>
 		<font>Font_60b</font>
@@ -408,8 +408,8 @@
 		<scroll>true</scroll>
 	</include>
 	<include name="Font4">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1920</width>
 		<height>104</height>
 		<font>Font_60c</font>
@@ -419,8 +419,8 @@
 		<scroll>true</scroll>
 	</include>
 	<include name="Font5">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1920</width>
 		<height>104</height>
 		<font>Font_60d</font>
@@ -431,8 +431,8 @@
 		<scroll>true</scroll>
 	</include>
 	<include name="Font6">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1920</width>
 		<height>104</height>
 		<font>Font_60e</font>
@@ -443,8 +443,8 @@
 		<scroll>true</scroll>
 	</include>
 	<include name="Font7">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1920</width>
 		<height>104</height>
 		<font>Font_60f</font>
@@ -455,8 +455,8 @@
 		<scroll>true</scroll>
 	</include>
 	<include name="Font8">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1920</width>
 		<height>102</height>
 		<font>Font_60g</font>
@@ -468,8 +468,8 @@
 	</include>
 <!-- ######################################################################### Backgrounds / Dimensions ######################################################################### -->
 	<include name="InvisibleButton">
-		<posx>-30</posx>
-		<posy>-30</posy>
+		<left>-30</left>
+		<top>-30</top>
 		<width>1</width>
 		<height>1</height>
 		<label></label>
@@ -512,8 +512,8 @@
 		<animation effect="slide" start="-15,-15" end="15,15" time="5000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(visanimation_panscan) + Window.IsActive(visualisation) + !PVR.IsPlayingRadio">Conditional</animation>
 	</include>
 	<include name="WindowBG">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1920</width>
 		<height>1080</height>
 		<timeperimage>6000</timeperimage>
@@ -526,8 +526,8 @@
 		<animation effect="slide" start="-15,-15" end="15,15" time="5000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(visanimation_panscan) + Window.IsActive(visualisation)">Conditional</animation>
 	</include>
 	<include name="HomeBG">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>1920</width>
 		<height>1080</height>
 		<include condition="String.IsEqual(skin.string(homebg_seconds),5000)">Animation_Timer1</include>
@@ -550,8 +550,8 @@
 	</include>
 	<include name="BGBlack">
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<texture>black.png</texture>
@@ -565,8 +565,8 @@
 	</include>
 	<include name="DefaultSettings">
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<texture>black.png</texture>
@@ -1059,16 +1059,16 @@
 				<onfocus>SetFocus(9000)</onfocus>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<texture>hive_back.png</texture>
 			</control>
 			<control type="image">
 				<!-- Skin Logo -->
-				<posx>735</posx>
-				<posy>324</posy>
+				<left>735</left>
+				<top>324</top>
 				<width>450</width>
 				<height>254</height>
 				<align>left</align>
@@ -1076,8 +1076,8 @@
 				<texture>aeonmq5_logo.png</texture>
 			</control>
 			<control type="label">
-				<posx>150</posx>
-				<posy>585</posy>
+				<left>150</left>
+				<top>585</top>
 				<width>1620</width>
 				<height>180</height>
 				<align>center</align>
@@ -1111,8 +1111,8 @@
 			<include>Animation_Fade</include>
 			<visible>Control.HasFocus(9930) + Player.HasVideo + !Skin.HasSetting(fullscreentrailer)</visible>
 			<control type="image">
-				<posx>240</posx>
-				<posy>120</posy>
+				<left>240</left>
+				<top>120</top>
 				<width>1440</width>
 				<height>840</height>
 				<aspectratio>stretch</aspectratio>
@@ -1123,15 +1123,15 @@
 				<include>Animation_HomeGlass</include>
 			</control>
 			<control type="videowindow" id="8">
-				<posx>267</posx>
-				<posy>153</posy>
+				<left>267</left>
+				<top>153</top>
 				<width>1386</width>
 				<height>774</height>
 				<animation effect="slide" start="0,0" end="-3000,0" time="0">WindowClose</animation>
 			</control>
 			<control type="progress" id="23">
-				<posx>273</posx>
-				<posy>952</posy>
+				<left>273</left>
+				<top>952</top>
 				<width>1372</width>
 				<height>22</height>
 				<info>Player.Progress</info>
@@ -1139,8 +1139,8 @@
 				<visible>!Player.Paused</visible>
 			</control>
 			<control type="label">
-				<posx>510</posx>
-				<posy>987</posy>
+				<left>510</left>
+				<top>987</top>
 				<width>900</width>
 				<height>38</height>
 				<align>center</align>
@@ -1150,8 +1150,8 @@
 				<visible>!Player.Paused</visible>
 			</control>
 			<control type="image">
-				<posx>267</posx>
-				<posy>153</posy>
+				<left>267</left>
+				<top>153</top>
 				<width>1386</width>
 				<height>774</height>
 				<texture>black.png</texture>
@@ -1160,8 +1160,8 @@
 			</control>
 			<control type="label">
 				<!-- Paused Label -->
-				<posx>392</posx>
-				<posy>630</posy>
+				<left>392</left>
+				<top>630</top>
 				<width>1138</width>
 				<height>42</height>
 				<aligny>center</aligny>
@@ -1174,8 +1174,8 @@
 			</control>
 			<control type="label" id="24">
 				<!-- Buffering Dialog -->
-				<posx>392</posx>
-				<posy>720</posy>
+				<left>392</left>
+				<top>720</top>
 				<width>1138</width>
 				<height>42</height>
 				<aligny>center</aligny>
@@ -1190,8 +1190,8 @@
 	</include>
 	<include name="Glass">
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>470</width>
 			<height>1080</height>
 			<texture>menu_glass.png</texture>
@@ -1200,24 +1200,24 @@
 	</include>
 	<include name="LiveBG">
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<texture>black.png</texture>
 			<visible>Player.HasVideo + [!Window.IsActive(home) + Skin.HasSetting(livebg) | Window.IsActive(home) + Skin.HasSetting(homevisvideo) | [Window.IsActive(videoplaylist) | Window.IsActive(musicplaylist)] + !Skin.HasSetting(noliveplaylistbg)]</visible>
 		</control>
 		<control type="videowindow">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<aspectratio>keep</aspectratio>
 			<visible>Player.HasVideo + [!Window.IsActive(home) + Skin.HasSetting(livebg) | Window.IsActive(home) + Skin.HasSetting(homevisvideo) | [Window.IsActive(videoplaylist) | Window.IsActive(musicplaylist)] + !Skin.HasSetting(noliveplaylistbg)]</visible>
 		</control>
 		<control type="visualisation">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
@@ -1285,31 +1285,31 @@
 	</include>
 	<include name="BackMenuV">
 		<control type="image">
-			<posx>450</posx>
-			<posy>0</posy>
+			<left>450</left>
+			<top>0</top>
 			<width>45</width>
 			<height>1080</height>
 			<texture>shadow.png</texture>
 			<colordiffuse>C3FFFFFF</colordiffuse>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>450</width>
 			<height>1080</height>
 			<texture>grey.png</texture>
 			<colordiffuse>90FFFFFF</colordiffuse>
 		</control>
 		<control type="image">
-			<posx>447</posx>
-			<posy>0</posy>
+			<left>447</left>
+			<top>0</top>
 			<width>3</width>
 			<height>1080</height>
 			<texture>separator_v.png</texture>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>1032</posy>
+			<left>0</left>
+			<top>1032</top>
 			<width>447</width>
 			<height>4</height>
 			<texture flipx="true">divider.png</texture>
@@ -1318,24 +1318,24 @@
 	</include>
 	<include name="ViewBack">
 		<control type="image">
-			<posx>0</posx>
-			<posy>84</posy>
+			<left>0</left>
+			<top>84</top>
 			<width>1920</width>
 			<height>45</height>
 			<texture>shadow_h.png</texture>
 			<colordiffuse>C3FFFFFF</colordiffuse>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>975</posy>
+			<left>0</left>
+			<top>975</top>
 			<width>1920</width>
 			<height>45</height>
 			<texture flipy="true">shadow_h.png</texture>
 			<colordiffuse>C3FFFFFF</colordiffuse>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>128</posy>
+			<left>0</left>
+			<top>128</top>
 			<width>1920</width>
 			<height>848</height>
 			<texture>darkgrey.png</texture>
@@ -1345,16 +1345,16 @@
 	</include>
 	<include name="SettingsBack">
 		<control type="image">
-			<posx>360</posx>
-			<posy>46</posy>
+			<left>360</left>
+			<top>46</top>
 			<width>1560</width>
 			<height>45</height>
 			<texture>shadow_h.png</texture>
 			<colordiffuse>C3FFFFFF</colordiffuse>
 		</control>
 		<control type="image">
-			<posx>360</posx>
-			<posy>90</posy>
+			<left>360</left>
+			<top>90</top>
 			<width>1560</width>
 			<height>990</height>
 			<texture>darkgrey.png</texture>
@@ -1364,32 +1364,32 @@
 	</include>
 	<include name="SettingsMenu">
 		<control type="image">
-			<posx>360</posx>
-			<posy>0</posy>
+			<left>360</left>
+			<top>0</top>
 			<width>45</width>
 			<height>1080</height>
 			<texture>shadow.png</texture>
 			<colordiffuse>C3FFFFFF</colordiffuse>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>360</width>
 			<height>1080</height>
 			<texture>grey.png</texture>
 			<colordiffuse>90FFFFFF</colordiffuse>
 		</control>
 		<control type="image">
-			<posx>357</posx>
-			<posy>0</posy>
+			<left>357</left>
+			<top>0</top>
 			<width>3</width>
 			<height>1080</height>
 			<texture>separator_v.png</texture>
 		</control>
 	</include>
 	<include name="SettingsSectionTitle">
-		<posx>30</posx>
-		<posy>105</posy>
+		<left>30</left>
+		<top>105</top>
 		<width>1485</width>
 		<height>74</height>
 		<align>left</align>
@@ -1398,8 +1398,8 @@
 		<textcolor>E4101010</textcolor>
 	</include>
 	<include name="SettingsContentTitle">
-		<posx>435</posx>
-		<posy>105</posy>
+		<left>435</left>
+		<top>105</top>
 		<width>1350</width>
 		<height>74</height>
 		<align>left</align>
@@ -1410,8 +1410,8 @@
 		<scrollout>false</scrollout>
 	</include>
 	<include name="SettingsLabel">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>358</width>
 		<height>60</height>
 		<textoffsety>0</textoffsety>
@@ -1423,8 +1423,8 @@
 		<selectedcolor>FFFFFAF0</selectedcolor>
 	</include>
 	<include name="SettingsLabelFocus">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>358</width>
 		<height>60</height>
 		<textoffsety>0</textoffsety>
@@ -1436,8 +1436,8 @@
 		<selectedcolor>FFFFFAF0</selectedcolor>
 	</include>
 	<include name="SettingsImage">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>358</width>
 		<height>60</height>
 		<texture>settings_button.png</texture>
@@ -1445,8 +1445,8 @@
 		<include>Animation_DefaultGlass</include>
 	</include>
 	<include name="SettingsButton">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>358</width>
 		<height>60</height>
 		<textoffsety>0</textoffsety>
@@ -1464,8 +1464,8 @@
 		<pulseonselect>no</pulseonselect>
 	</include>
 	<include name="SettingsButton2">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>358</width>
 		<height>60</height>
 		<textoffsety>0</textoffsety>
@@ -1484,8 +1484,8 @@
 		<pulseonselect>no</pulseonselect>
 	</include>
 	<include name="SettingsBottomButton">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>495</width>
 		<height>60</height>
 		<align>center</align>
@@ -1503,8 +1503,8 @@
 		<colordiffuse>B6FFFFFF</colordiffuse>
 	</include>
 	<include name="SettingsDialogButton">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>244</width>
 		<height>62</height>
 		<font>Font_18</font>
@@ -1519,8 +1519,8 @@
 		<colordiffuse>F9FFFFFF</colordiffuse>
 	</include>
 	<include name="SettingsWidgets">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>105</width>
 		<height>202</height>
 		<texture>widget_furniture.png</texture>
@@ -1528,12 +1528,12 @@
 	<include name="TopMenuButtonFilter">
 		<width>411</width>
 		<height>38</height>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</include>
 	<include name="TopMenuFilter">
-		<posx>15</posx>
-		<posy>-2</posy>
+		<left>15</left>
+		<top>-2</top>
 		<width>381</width>
 		<height>38</height>
 		<align>left</align>
@@ -1542,8 +1542,8 @@
 		<textcolor>E4101010</textcolor>
 	</include>
 	<include name="TopMenuFilterFocus">
-		<posx>15</posx>
-		<posy>-2</posy>
+		<left>15</left>
+		<top>-2</top>
 		<width>381</width>
 		<height>38</height>
 		<align>left</align>
@@ -1552,8 +1552,8 @@
 		<textcolor>FFFFFAF0</textcolor>
 	</include>
 	<include name="ButtonColor">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>45</width>
 		<height>45</height>
 		<label></label>
@@ -1562,15 +1562,15 @@
 		<animation effect="zoom" center="auto" start="90" end="140" time="600" tween="back" easing="out" reversible="false">Focus</animation>
 	</include>
 	<include name="CaseSelector">
-		<posx>480</posx>
-		<posy>0</posy>
+		<left>480</left>
+		<top>0</top>
 		<width>285</width>
 		<height>405</height>
 		<aspectratio>stretch</aspectratio>
 	</include>
 	<include name="CaseSelectorReflect">
-		<posx>480</posx>
-		<posy>364</posy>
+		<left>480</left>
+		<top>364</top>
 		<width>285</width>
 		<height>405</height>
 		<aspectratio align="center" aligny="top">stretch</aspectratio>
@@ -1601,8 +1601,8 @@
 		<font>Font_18A</font>
 	</include>
 	<include name="Objects_OSDSeekForward">
-		<posx>705</posx>
-		<posy>0</posy>
+		<left>-43</left>
+		<top>0</top>
 		<width>748</width>
 		<height>42</height>
 		<aligny>center</aligny>
@@ -1612,8 +1612,8 @@
 		<include>Animation_Fade</include>
 	</include>
 	<include name="Objects_OSDSeekReverse">
-		<posx>44</posx>
-		<posy>0</posy>
+		<left>44</left>
+		<top>0</top>
 		<width>748</width>
 		<height>42</height>
 		<aligny>center</aligny>
@@ -1638,8 +1638,8 @@
 		<textcolor>$VAR[value_flagscolor]</textcolor>
 	</include>
 	<include name="FlagSeparator">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>2</width>
 		<height>75</height>
 		<texture>flagseparator.png</texture>
@@ -1665,8 +1665,8 @@
 	<!-- #########################################################################  Audio and Subtitles Tags ######################################################################### -->
 	<include name="AudioandSub">
 		<control type="image">
-			<posx>0</posx>
-			<posy>-60</posy>
+			<left>0</left>
+			<top>-60</top>
 			<height>225</height>
 			<width>1920</width>
 			<texture flipy="true">shadow_mask.png</texture>
@@ -1677,8 +1677,8 @@
 			<visible>Control.IsVisible(55) | Control.IsVisible(57) | Control.IsVisible(59)</visible>
 		</control>
 		<control type="image">
-			<posx>-22</posx>
-			<posy>0</posy>
+			<left>-22</left>
+			<top>0</top>
 			<width>3</width>
 			<height>90</height>
 			<texture>line_v.png</texture>
@@ -1687,8 +1687,8 @@
 		</control>
 		<control type="image">
 			<!-- Audio -->
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>38</width>
 			<height>38</height>
 			<texture>osd_audio.png</texture>
@@ -1698,8 +1698,8 @@
 			<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
 		</control>
 		<control type="label">
-			<posx>60</posx>
-			<posy>-6</posy>
+			<left>60</left>
+			<top>-6</top>
 			<width>555</width>
 			<height>38</height>
 			<font>Font_17A</font>
@@ -1711,77 +1711,77 @@
 			<visible>!Skin.HasSetting(Use_lang_flags)</visible>
 		</control>
 		<control type="group">
-			<posx>60</posx>
-			<posy>0</posy>
+			<left>60</left>
+			<top>0</top>
 			<height>38</height>
 			<width>555</width>
 			<visible>Skin.HasSetting(Use_lang_flags)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<height>38</height>
 				<width>38</width>
 				<texture>$INFO[ListItem.Property(AudioLanguage.1),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>45</posx>
-				<posy>-2</posy>
+				<left>45</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(AudioLanguage.2),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>90</posx>
-				<posy>-2</posy>
+				<left>90</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(AudioLanguage.3),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>135</posx>
-				<posy>-2</posy>
+				<left>135</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(AudioLanguage.4),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>180</posx>
-				<posy>-2</posy>
+				<left>180</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(AudioLanguage.5),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>225</posx>
-				<posy>-2</posy>
+				<left>225</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(AudioLanguage.6),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>270</posx>
-				<posy>-2</posy>
+				<left>270</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(AudioLanguage.7),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>315</posx>
-				<posy>-2</posy>
+				<left>315</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(AudioLanguage.8),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>360</posx>
-				<posy>-2</posy>
+				<left>360</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(AudioLanguage.9),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>405</posx>
-				<posy>-2</posy>
+				<left>405</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(AudioLanguage.10),flags/countries/,.png]</texture>
@@ -1789,8 +1789,8 @@
 		</control>
 		<control type="image">
 			<!-- Legenda -->
-			<posx>0</posx>
-			<posy>45</posy>
+			<left>0</left>
+			<top>45</top>
 			<width>38</width>
 			<height>38</height>
 			<texture>osd_subtitle.png</texture>
@@ -1801,8 +1801,8 @@
 			<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
 		</control>
 		<control type="label">
-			<posx>60</posx>
-			<posy>39</posy>
+			<left>60</left>
+			<top>39</top>
 			<width>555</width>
 			<height>38</height>
 			<font>Font_17A</font>
@@ -1815,78 +1815,78 @@
 			<visible>!Skin.HasSetting(Use_lang_flags)</visible>
 		</control>
 		<control type="group">
-			<posx>60</posx>
-			<posy>45</posy>
+			<left>60</left>
+			<top>45</top>
 			<height>38</height>
 			<width>555</width>
 			<animation effect="slide" end="0,-42" time="0" tween="sine" easing="out" condition="String.IsEmpty(ListItem.Property(SubtitleLanguage.1))">Conditional</animation>
 			<visible>Skin.HasSetting(Use_lang_flags)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>-2</posy>
+				<left>0</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(SubtitleLanguage.1),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>45</posx>
-				<posy>-2</posy>
+				<left>45</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(SubtitleLanguage.2),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>90</posx>
-				<posy>-2</posy>
+				<left>90</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(SubtitleLanguage.3),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>135</posx>
-				<posy>-2</posy>
+				<left>135</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(SubtitleLanguage.4),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>180</posx>
-				<posy>-2</posy>
+				<left>180</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(SubtitleLanguage.5),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>225</posx>
-				<posy>-2</posy>
+				<left>225</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(SubtitleLanguage.6),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>270</posx>
-				<posy>-2</posy>
+				<left>270</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(SubtitleLanguage.7),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>315</posx>
-				<posy>-2</posy>
+				<left>315</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(SubtitleLanguage.8),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>360</posx>
-				<posy>-2</posy>
+				<left>360</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(SubtitleLanguage.9),flags/countries/,.png]</texture>
 			</control>
 			<control type="image">
-				<posx>405</posx>
-				<posy>-2</posy>
+				<left>405</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[ListItem.Property(SubtitleLanguage.10),flags/countries/,.png]</texture>
@@ -1896,8 +1896,8 @@
 <!-- #########################################################################  Audio and Subtitles Tags Now Playing ######################################################################### -->
 	<include name="AudioandSubNowPlaying">
 		<control type="image">
-			<posx>0</posx>
-			<posy>-60</posy>
+			<left>0</left>
+			<top>-60</top>
 			<height>225</height>
 			<width>1920</width>
 			<texture flipy="true">shadow_mask.png</texture>
@@ -1908,8 +1908,8 @@
 			<visible>Control.IsVisible(55) | Control.IsVisible(57) | Control.IsVisible(59)</visible>
 		</control>
 		<control type="image">
-			<posx>-22</posx>
-			<posy>0</posy>
+			<left>-22</left>
+			<top>0</top>
 			<width>3</width>
 			<height>90</height>
 			<texture>line_v.png</texture>
@@ -1918,8 +1918,8 @@
 		</control>
 		<control type="image">
 			<!-- Audio -->
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>38</width>
 			<height>38</height>
 			<texture>osd_audio.png</texture>
@@ -1929,8 +1929,8 @@
 			<visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible>
 		</control>
 		<control type="label">
-			<posx>60</posx>
-			<posy>-6</posy>
+			<left>60</left>
+			<top>-6</top>
 			<width>555</width>
 			<height>38</height>
 			<font>Font_18A</font>
@@ -1942,14 +1942,14 @@
 			<visible>!Skin.HasSetting(Use_lang_flags)</visible>
 		</control>
 		<control type="group">
-			<posx>60</posx>
-			<posy>0</posy>
+			<left>60</left>
+			<top>0</top>
 			<height>38</height>
 			<width>555</width>
 			<visible>Skin.HasSetting(Use_lang_flags)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>-2</posy>
+				<left>0</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[VideoPlayer.AudioLanguage,flags/countries/,.png]</texture>
@@ -1957,8 +1957,8 @@
 		</control>
 		<control type="image">
 			<!-- Legenda -->
-			<posx>0</posx>
-			<posy>45</posy>
+			<left>0</left>
+			<top>45</top>
 			<width>38</width>
 			<height>38</height>
 			<texture>osd_subtitle.png</texture>
@@ -1969,8 +1969,8 @@
 			<visible>!String.IsEmpty(VideoPlayer.SubtitleLanguage)</visible>
 		</control>
 		<control type="label">
-			<posx>60</posx>
-			<posy>39</posy>
+			<left>60</left>
+			<top>39</top>
 			<width>555</width>
 			<height>38</height>
 			<font>Font_18A</font>
@@ -1983,15 +1983,15 @@
 			<visible>!Skin.HasSetting(Use_lang_flags)</visible>
 		</control>
 		<control type="group">
-			<posx>60</posx>
-			<posy>45</posy>
+			<left>60</left>
+			<top>45</top>
 			<height>38</height>
 			<width>555</width>
 			<animation effect="slide" end="0,-42" time="0" tween="sine" easing="out" condition="String.IsEmpty(VideoPlayer.SubtitleLanguage)">Conditional</animation>
 			<visible>Skin.HasSetting(Use_lang_flags)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>-2</posy>
+				<left>0</left>
+				<top>-2</top>
 				<height>43</height>
 				<width>43</width>
 				<texture>$INFO[VideoPlayer.SubtitleLanguage,flags/countries/,.png]</texture>
@@ -2001,8 +2001,8 @@
 	<!-- #########################################################################  Para tela de toque ######################################################################### -->
 	<include name="TouchScreen">
 		<control type="button" id="5202">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>60</width>
 			<height>60</height>
 			<onclick>Back</onclick>
@@ -2015,8 +2015,8 @@
 			<visible>Skin.HasSetting(touchscreen) + !Control.HasFocus(9920)</visible>
 		</control>
 		<control type="button" id="5201">
-			<posx>1860</posx>
-			<posy>0</posy>
+			<left>1860</left>
+			<top>0</top>
 			<width>60</width>
 			<height>60</height>
 			<onclick>SetFocus(9900)</onclick>
@@ -2031,8 +2031,8 @@
 	</include>
 	<!-- ######################################################################### Next Aired ######################################################################### -->
 	<include name="NextAiredThumb">
-		<posx>0</posx>
-		<posy>147</posy>
+		<left>0</left>
+		<top>147</top>
 		<width>150</width>
 		<height>112</height>
 		<aspectratio>keep</aspectratio>
@@ -2040,8 +2040,8 @@
 		<include>Animation_Fade</include>
 	</include>
 	<include name="NextAiredThumbFocus">
-		<posx>0</posx>
-		<posy>147</posy>
+		<left>0</left>
+		<top>147</top>
 		<width>150</width>
 		<height>112</height>
 		<aspectratio>keep</aspectratio>
@@ -2052,8 +2052,8 @@
 		</animation>
 	</include>
 	<include name="NextAiredThumbBanner">
-		<posx>30</posx>
-		<posy>158</posy>
+		<left>30</left>
+		<top>158</top>
 		<width>525</width>
 		<height>90</height>
 		<aspectratio>stretch</aspectratio>
@@ -2061,8 +2061,8 @@
 		<include>Animation_Fade</include>
 	</include>
 	<include name="NextAiredThumbBannerFocus">
-		<posx>30</posx>
-		<posy>158</posy>
+		<left>30</left>
+		<top>158</top>
 		<width>525</width>
 		<height>90</height>
 		<aspectratio>stretch</aspectratio>
@@ -2073,8 +2073,8 @@
 		</animation>
 	</include>
 	<include name="NextAiredThumbLogo">
-		<posx>30</posx>
-		<posy>158</posy>
+		<left>30</left>
+		<top>158</top>
 		<width>525</width>
 		<height>90</height>
 		<align>center</align>
@@ -2084,8 +2084,8 @@
 		<include>Animation_Fade</include>
 	</include>
 	<include name="NextAiredThumbLogoFocus">
-		<posx>30</posx>
-		<posy>158</posy>
+		<left>30</left>
+		<top>158</top>
 		<width>525</width>
 		<height>90</height>
 		<align>center</align>
@@ -2098,13 +2098,13 @@
 		</animation>
 	</include>
 	<include name="NextAiredHorizontalScrollBar">
-		<posx>458</posx>
+		<left>458</left>
 		<width>1005</width>
 		<height>12</height>
 		<include>ScrollBar_Horizontal</include>
 	</include>
 	<include name="NextAiredButtomDay">
-		<posx>0</posx>
+		<left>0</left>
 		<width>148</width>
 		<height>124</height>
 		<texture>settings_button_large.png</texture>
@@ -2113,7 +2113,7 @@
 		<include>Animation_Fade</include>
 	</include>
 	<include name="NextAiredLabelDay">
-		<posx>42</posx>
+		<left>42</left>
 		<width>135</width>
 		<height>124</height>
 		<font>Font_20</font>
@@ -2122,7 +2122,7 @@
 		<textcolor>E4101010</textcolor>
 	</include>
 	<include name="NextAiredLabelDaySelect">
-		<posx>42</posx>
+		<left>42</left>
 		<width>135</width>
 		<height>124</height>
 		<font>Font_23</font>
@@ -2139,16 +2139,16 @@
 	<!-- ######################################################################### Dialogs ######################################################################### -->
 	<include name="Dialogs_Bar">
 		<control type="image">
-			<posx>0</posx>
-			<posy>46</posy>
+			<left>0</left>
+			<top>46</top>
 			<width>1920</width>
 			<height>45</height>
 			<texture flipy="true">shadow_h.png</texture>
 			<colordiffuse>C3FFFFFF</colordiffuse>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>-6</posy>
+			<left>0</left>
+			<top>-6</top>
 			<height>50</height>
 			<width>1920</width>
 			<aligny>top</aligny>
@@ -2157,8 +2157,8 @@
 			<include>Animation_HomeGlass</include>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>-6</posy>
+			<left>0</left>
+			<top>-6</top>
 			<height>52</height>
 			<width>1920</width>
 			<aligny>top</aligny>
@@ -2169,16 +2169,16 @@
 	</include>
 	<include name="Dialogs_DoubleBar">
 		<control type="image">
-			<posx>0</posx>
-			<posy>92</posy>
+			<left>0</left>
+			<top>92</top>
 			<width>1920</width>
 			<height>45</height>
 			<texture flipy="true">shadow_h.png</texture>
 			<colordiffuse>C3FFFFFF</colordiffuse>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>-6</posy>
+			<left>0</left>
+			<top>-6</top>
 			<height>94</height>
 			<width>1920</width>
 			<aligny>top</aligny>
@@ -2187,8 +2187,8 @@
 			<include>Animation_HomeGlass</include>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>-6</posy>
+			<left>0</left>
+			<top>-6</top>
 			<height>98</height>
 			<width>1920</width>
 			<aligny>top</aligny>
@@ -2198,14 +2198,14 @@
 		</control>
 	</include>
 	<include name="Dialogs_Progress">
-		<posx>15</posx>
-		<posy>41</posy>
+		<left>15</left>
+		<top>41</top>
 		<width>1890</width>
 		<height>4</height>
 	</include>
 	<include name="Dialogs_Label1">
-		<posx>15</posx>
-		<posy>2</posy>
+		<left>15</left>
+		<top>2</top>
 		<width>750</width>
 		<height>39</height>
 		<align>left</align>
@@ -2216,7 +2216,7 @@
 	</include>
 	<include name="Dialogs_Label2">
 		<right>15</right>
-		<posy>2</posy>
+		<top>2</top>
 		<width>750</width>
 		<height>39</height>
 		<align>right</align>
@@ -2226,8 +2226,8 @@
 		<scroll>true</scroll>
 	</include>
 	<include name="Dialogs_Label3">
-		<posx>15</posx>
-		<posy>48</posy>
+		<left>15</left>
+		<top>48</top>
 		<width>705</width>
 		<height>40</height>
 		<align>left</align>
@@ -2237,8 +2237,8 @@
 		<scroll>true</scroll>
 	</include>
 	<include name="Dialogs_Label4">
-		<posx>1905</posx>
-		<posy>48</posy>
+		<left>1200</left>
+		<top>48</top>
 		<width>705</width>
 		<height>40</height>
 		<align>right</align>
@@ -2248,8 +2248,8 @@
 		<scroll>true</scroll>
 	</include>
 	<include name="DialogContext_Button">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<height>58</height>
 		<width>681</width>
 		<onleft>Close</onleft>
@@ -2266,8 +2266,8 @@
 		<colordiffuse>F9FFFFFF</colordiffuse>
 	</include>
 	<include name="DialogTextBox">
-		<posx>1155</posx>
-		<posy>-10</posy>
+		<left>405</left>
+		<top>-10</top>
 		<width>750</width>
 		<height>95</height>
 		<align>right</align>
@@ -2278,16 +2278,16 @@
 	<!-- #########################################################################  Menu Virtual ######################################################################### -->
 	<include name="VirtualMenuBar">
 		<control type="image">
-			<posx>360</posx>
-			<posy>858</posy>
+			<left>360</left>
+			<top>858</top>
 			<width>1560</width>
 			<height>74</height>
 			<texture>$VAR[value_mainmenu_aux]</texture>
 			<colordiffuse>$VAR[value_mainmenu_styleglass]</colordiffuse>
 		</control>
 		<control type="image">
-			<posx>360</posx>
-			<posy>858</posy>
+			<left>360</left>
+			<top>858</top>
 			<width>1560</width>
 			<height>72</height>
 			<aspectratio>stretch</aspectratio>
@@ -2296,8 +2296,8 @@
 			<visible>![String.IsEqual(skin.string(style),mystyle) | String.IsEqual(skin.string(style),extrapack)]</visible>
 		</control>
 		<control type="multiimage">
-			<posx>360</posx>
-			<posy>858</posy>
+			<left>360</left>
+			<top>858</top>
 			<width>1560</width>
 			<height>72</height>
 			<aspectratio>stretch</aspectratio>
@@ -2312,16 +2312,16 @@
 	<!-- #########################################################################  Menu Virtual ######################################################################### -->
 	<include name="VirtualMenu">
 		<control type="wraplist">
-			<posx>360</posx>
-			<posy>858</posy>
+			<left>360</left>
+			<top>858</top>
 			<width>1560</width>
 			<height>72</height>
 			<orientation>horizontal</orientation>
 			<focusposition>1</focusposition>
 			<itemlayout width="519" height="72">
 				<control type="label">
-					<posx>260</posx>
-					<posy>1</posy>
+					<left>260</left>
+					<top>1</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2332,8 +2332,8 @@
 					<visible>String.IsEqual(skin.string(font),font1) + !Skin.HasSetting(fonte) | String.IsEqual(skin.string(tempfont),font1) + Skin.HasSetting(fonte)</visible>
 				</control>
 				<control type="label">
-					<posx>260</posx>
-					<posy>1</posy>
+					<left>260</left>
+					<top>1</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2344,8 +2344,8 @@
 					<visible>String.IsEqual(skin.string(font),font2) + !Skin.HasSetting(fonte) | String.IsEqual(skin.string(tempfont),font2) + Skin.HasSetting(fonte)</visible>
 				</control>
 				<control type="label">
-					<posx>260</posx>
-					<posy>1</posy>
+					<left>260</left>
+					<top>1</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2356,8 +2356,8 @@
 					<visible>String.IsEqual(skin.string(font),font3) + !Skin.HasSetting(fonte) | String.IsEqual(skin.string(tempfont),font3) + Skin.HasSetting(fonte)</visible>
 				</control>
 				<control type="label">
-					<posx>260</posx>
-					<posy>1</posy>
+					<left>260</left>
+					<top>1</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2368,8 +2368,8 @@
 					<visible>String.IsEqual(skin.string(font),font4) + !Skin.HasSetting(fonte) | String.IsEqual(skin.string(tempfont),font4) + Skin.HasSetting(fonte)</visible>
 				</control>
 				<control type="label">
-					<posx>260</posx>
-					<posy>6</posy>
+					<left>260</left>
+					<top>6</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2380,8 +2380,8 @@
 					<visible>String.IsEqual(skin.string(font),font5) + !Skin.HasSetting(fonte) | String.IsEqual(skin.string(tempfont),font5) + Skin.HasSetting(fonte)</visible>
 				</control>
 				<control type="label">
-					<posx>260</posx>
-					<posy>3</posy>
+					<left>260</left>
+					<top>3</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2392,8 +2392,8 @@
 					<visible>String.IsEqual(skin.string(font),font6) + !Skin.HasSetting(fonte) | String.IsEqual(skin.string(tempfont),font6) + Skin.HasSetting(fonte)</visible>
 				</control>
 				<control type="label">
-					<posx>260</posx>
-					<posy>4</posy>
+					<left>260</left>
+					<top>4</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2404,8 +2404,8 @@
 					<visible>String.IsEqual(skin.string(font),font7) + !Skin.HasSetting(fonte) | String.IsEqual(skin.string(tempfont),font7) + Skin.HasSetting(fonte)</visible>
 				</control>
 				<control type="label">
-					<posx>260</posx>
-					<posy>-2</posy>
+					<left>260</left>
+					<top>-2</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2418,8 +2418,8 @@
 			</itemlayout>
 			<focusedlayout width="519" height="72">
 				<control type="label">
-					<posx>260</posx>
-					<posy>1</posy>
+					<left>260</left>
+					<top>1</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2430,8 +2430,8 @@
 					<visible>String.IsEqual(skin.string(font),font1) + !Skin.HasSetting(fonte) | String.IsEqual(skin.string(tempfont),font1) + Skin.HasSetting(fonte)</visible>
 				</control>
 				<control type="label">
-					<posx>260</posx>
-					<posy>1</posy>
+					<left>260</left>
+					<top>1</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2442,8 +2442,8 @@
 					<visible>String.IsEqual(skin.string(font),font2) + !Skin.HasSetting(fonte) | String.IsEqual(skin.string(tempfont),font2) + Skin.HasSetting(fonte)</visible>
 				</control>
 				<control type="label">
-					<posx>260</posx>
-					<posy>1</posy>
+					<left>260</left>
+					<top>1</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2454,8 +2454,8 @@
 					<visible>String.IsEqual(skin.string(font),font3) + !Skin.HasSetting(fonte) | String.IsEqual(skin.string(tempfont),font3) + Skin.HasSetting(fonte)</visible>
 				</control>
 				<control type="label">
-					<posx>260</posx>
-					<posy>1</posy>
+					<left>260</left>
+					<top>1</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2466,8 +2466,8 @@
 					<visible>String.IsEqual(skin.string(font),font4) + !Skin.HasSetting(fonte) | String.IsEqual(skin.string(tempfont),font4) + Skin.HasSetting(fonte)</visible>
 				</control>
 				<control type="label">
-					<posx>260</posx>
-					<posy>6</posy>
+					<left>260</left>
+					<top>6</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2478,8 +2478,8 @@
 					<visible>String.IsEqual(skin.string(font),font5) + !Skin.HasSetting(fonte) | String.IsEqual(skin.string(tempfont),font5) + Skin.HasSetting(fonte)</visible>
 				</control>
 				<control type="label">
-					<posx>260</posx>
-					<posy>3</posy>
+					<left>260</left>
+					<top>3</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2490,8 +2490,8 @@
 					<visible>String.IsEqual(skin.string(font),font6) + !Skin.HasSetting(fonte) | String.IsEqual(skin.string(tempfont),font6) + Skin.HasSetting(fonte)</visible>
 				</control>
 				<control type="label">
-					<posx>260</posx>
-					<posy>4</posy>
+					<left>260</left>
+					<top>4</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2502,8 +2502,8 @@
 					<visible>String.IsEqual(skin.string(font),font7) + !Skin.HasSetting(fonte) | String.IsEqual(skin.string(tempfont),font7) + Skin.HasSetting(fonte)</visible>
 				</control>
 				<control type="label">
-					<posx>260</posx>
-					<posy>-2</posy>
+					<left>260</left>
+					<top>-2</top>
 					<height>72</height>
 					<width>489</width>
 					<align>center</align>
@@ -2540,8 +2540,8 @@
 			<animation effect="slide" start="0,0" end="0,-105" time="400" tween="cubic" easing="in" condition="Control.HasFocus(9920) | Control.IsVisible(608) | ControlGroup(9000).HasFocus | Window.IsVisible(volumebar) | Window.IsVisible(notification) | Library.IsScanningVideo | Library.IsScanningMusic | Window.IsVisible(extendedprogressdialog) | Window.IsVisible(1110) | Window.IsVisible(1103)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-105" time="50" tween="cubic" easing="in" condition="Control.HasFocus(160)">Conditional</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>750</width>
 				<height>39</height>
 				<texture>widgets_panel.png</texture>
@@ -2549,8 +2549,8 @@
 				<include>Animation_HomeGlass</include>
 			</control>
 			<control type="grouplist">
-				<posx>40</posx>
-				<posy>5</posy>
+				<left>40</left>
+				<top>5</top>
 				<width>750</width>
 				<height>30</height>
 				<orientation>horizontal</orientation>
@@ -2590,8 +2590,8 @@
 				</control>
 			</control>
 			<control type="label">  <!-- info for current view -->
-				<posx>705</posx>
-				<posy>3</posy>
+				<left>30</left>
+				<top>3</top>
 				<width>675</width>
 				<height>30</height>
 				<align>right</align>
@@ -2613,8 +2613,8 @@
 			<animation effect="slide" start="0,0" end="0,-105" time="400" tween="cubic" easing="in" condition="Control.HasFocus(9920) | Control.IsVisible(608) | ControlGroup(9000).HasFocus | Window.IsVisible(volumebar) | Window.IsVisible(notification) | Library.IsScanningVideo | Library.IsScanningMusic | Window.IsVisible(extendedprogressdialog) | Window.IsVisible(1110) | Window.IsVisible(1103) | [[Window.IsActive(tvchannels) | Window.IsActive(radiochannels)] + [Player.HasMedia + System.IdleTime(8)]]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-105" time="50" tween="cubic" easing="in" condition="Control.HasFocus(160)">Conditional</animation>
 			<control type="image">
-				<posx>1170</posx>
-				<posy>0</posy>
+				<left>1170</left>
+				<top>0</top>
 				<width>750</width>
 				<height>39</height>
 				<texture flipx="true">widgets_panel.png</texture>
@@ -2622,16 +2622,16 @@
 				<include>Animation_HomeGlass</include>
 			</control>
 			<control type="image">
-				<posx>1215</posx>
-				<posy>-28</posy>
+				<left>1215</left>
+				<top>-28</top>
 				<width>94</width>
 				<height>94</height>
 				<aspectratio align="left" aligny="top">keep</aspectratio>
 				<texture diffuse="weather_mask.png" background="true">$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
 			</control>
 			<control type="label">
-				<posx>1328</posx>
-				<posy>3</posy>
+				<left>1328</left>
+				<top>3</top>
 				<width>570</width>
 				<height>30</height>
 				<align>left</align>
@@ -2649,8 +2649,8 @@
 			<include>Animation_TopPopup</include>
 			<visible>![Library.IsScanningVideo | Library.IsScanningMusic]</visible>
 			<control type="image">
-				<posx>-75</posx>
-				<posy>-72</posy>
+				<left>-75</left>
+				<top>-72</top>
 				<width>225</width>
 				<height>225</height>
 				<align>left</align>
@@ -2659,8 +2659,8 @@
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label">
-				<posx>30</posx>
-				<posy>-2</posy>
+				<left>30</left>
+				<top>-2</top>
 				<width>330</width>
 				<height>34</height>
 				<font>Font_23</font>
@@ -2671,8 +2671,8 @@
 				<scrollout>false</scrollout>
 			</control>
 			<control type="fadelabel">
-				<posx>30</posx>
-				<posy>42</posy>
+				<left>30</left>
+				<top>42</top>
 				<width>330</width>
 				<height>30</height>
 				<font>Font_18A</font>
@@ -2695,16 +2695,16 @@
 			<animation effect="slide" start="0,0" end="0,105" time="300" easing="inout" tween="cubic">Hidden</animation>
 			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 			<control type="image">
-				<posx>360</posx>
-				<posy>992</posy>
+				<left>360</left>
+				<top>992</top>
 				<width>1560</width>
 				<height>45</height>
 				<texture>shadow_h.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>360</posx>
-				<posy>1035</posy>
+				<left>360</left>
+				<top>1035</top>
 				<height>45</height>
 				<width>1560</width>
 				<aligny>top</aligny>
@@ -2713,8 +2713,8 @@
 				<include>Animation_HomeGlass</include>
 			</control>
 			<control type="image">
-				<posx>360</posx>
-				<posy>1038</posy>
+				<left>360</left>
+				<top>1038</top>
 				<height>42</height>
 				<width>1560</width>
 				<aligny>top</aligny>
@@ -2723,8 +2723,8 @@
 				<include>Animation_HomeGlass</include>
 			</control>
 			<control type="rss" id="1">
-				<posx>368</posx>
-				<posy>1038</posy>
+				<left>368</left>
+				<top>1038</top>
 				<aligny>top</aligny>
 				<width>1545</width>
 				<height>30</height>
@@ -2749,8 +2749,8 @@
 			<visible>system.getbool(lookandfeel.enablerssfeeds) + ![Skin.HasSetting(submode) | Window.IsVisible(1114)]</visible>
 			<!-- custom subSmart -->
 			<control type="image">
-				<posx>150</posx>
-				<posy>1041</posy>
+				<left>150</left>
+				<top>1041</top>
 				<height>39</height>
 				<width>1770</width>
 				<aligny>top</aligny>
@@ -2759,8 +2759,8 @@
 				<include>Animation_HomeGlass</include>
 			</control>
 			<control type="rss" id="1">
-				<posx>190</posx>
-				<posy>1035</posy>
+				<left>190</left>
+				<top>1035</top>
 				<width>1710</width>
 				<height>30</height>
 				<urlset>1</urlset>
@@ -2776,8 +2776,8 @@
 	<!-- ######################################################################### ScrollLabel ######################################################################### -->
 	<include name="ScrollLabel">
 		<control type="group">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>495</width>
 			<height>348</height>
 			<animation effect="slide" end="510,495" time="0" condition="Control.IsVisible(51)">Conditional</animation>
@@ -2800,8 +2800,8 @@
 			<animation effect="fade" start="100" end="0" time="500" delay="200">Hidden</animation>
 			<visible>!Window.IsVisible(MusicPlaylist) + [!Skin.HasSetting(noscrollletters) + Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556])]]</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>105</width>
 				<height>105</height>
 				<align>center</align>
@@ -2809,8 +2809,8 @@
 				<texture>scrolllabel_back.png</texture>
 			</control>
 			<control type="label">
-				<posx>1</posx>
-				<posy>0</posy>
+				<left>1</left>
+				<top>0</top>
 				<width>105</width>
 				<height>105</height>
 				<align>center</align>
@@ -2823,8 +2823,8 @@
 	</include>
 	<include name="ScrollGamesLabel">
 		<control type="group">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>495</width>
 			<height>348</height>
 			<animation effect="slide" end="510,495" time="0" condition="Control.IsVisible(50)">Conditional</animation>
@@ -2834,8 +2834,8 @@
 			<animation effect="fade" start="100" end="0" time="500" delay="200">Hidden</animation>
 			<visible>!Skin.HasSetting(noscrollletters) + Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556])]</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>105</width>
 				<height>105</height>
 				<align>center</align>
@@ -2843,8 +2843,8 @@
 				<texture>scrolllabel_back.png</texture>
 			</control>
 			<control type="label">
-				<posx>1</posx>
-				<posy>0</posy>
+				<left>1</left>
+				<top>0</top>
 				<width>105</width>
 				<height>105</height>
 				<align>center</align>
@@ -3036,8 +3036,8 @@
 	</include>
 	<include name="VideoOSD_Content">
 		<viewtype>list</viewtype>
-		<posx>225</posx>
-		<posy>172</posy>
+		<left>225</left>
+		<top>172</top>
 		<height>300</height>
 		<width>1470</width>
 		<onleft>100</onleft>
@@ -3050,7 +3050,7 @@
 		<focusposition>6</focusposition>
 		<itemlayout width="112" height="120">
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -3059,7 +3059,7 @@
 				<colordiffuse>30FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -3069,7 +3069,7 @@
 				<visible>Skin.HasSetting(customosd) + !String.IsEmpty(ListItem.Property(condition))</visible>
 			</control>
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -3081,7 +3081,7 @@
 		</itemlayout>
 		<focusedlayout width="112" height="120">
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -3092,8 +3092,8 @@
 				<visible>!Skin.HasSetting(customosd)</visible>
 			</control>
 			<control type="label">
-				<posx>-72</posx>
-				<posy>80</posy>
+				<left>-72</left>
+				<top>80</top>
 				<width>262</width>
 				<height>45</height>
 				<align>center</align>
@@ -3103,7 +3103,7 @@
 				<visible>!Skin.HasSetting(customosd)</visible>
 			</control>
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -3114,8 +3114,8 @@
 				<visible>Skin.HasSetting(customosd) + !String.IsEmpty(ListItem.Property(condition))</visible>
 			</control>
 			<control type="label">
-				<posx>4</posx>
-				<posy>80</posy>
+				<left>4</left>
+				<top>80</top>
 				<width>112</width>
 				<height>45</height>
 				<align>center</align>
@@ -3126,7 +3126,7 @@
 				<visible>Skin.HasSetting(customosd) + !String.IsEmpty(ListItem.Property(condition))</visible>
 			</control>
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -3137,8 +3137,8 @@
 				<visible>Skin.HasSetting(customosd) + String.IsEmpty(ListItem.Property(condition))</visible>
 			</control>
 			<control type="label">
-				<posx>4</posx>
-				<posy>80</posy>
+				<left>4</left>
+				<top>80</top>
 				<width>112</width>
 				<height>45</height>
 				<align>center</align>
@@ -3518,8 +3518,8 @@
 	</include>
 	<include name="AudioOSD_Content">
 		<viewtype>list</viewtype>
-		<posx>225</posx>
-		<posy>172</posy>
+		<left>225</left>
+		<top>172</top>
 		<height>300</height>
 		<width>1470</width>
 		<onleft>101</onleft>
@@ -3532,7 +3532,7 @@
 		<focusposition>6</focusposition>
 		<itemlayout width="112" height="120">
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -3541,7 +3541,7 @@
 				<colordiffuse>30FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -3551,7 +3551,7 @@
 				<visible>Skin.HasSetting(customosd) + !String.IsEmpty(ListItem.Property(condition))</visible>
 			</control>
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -3563,7 +3563,7 @@
 		</itemlayout>
 		<focusedlayout width="112" height="120">
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -3574,7 +3574,7 @@
 				<visible>!Skin.HasSetting(customosd)</visible>
 			</control>
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -3585,7 +3585,7 @@
 				<visible>Skin.HasSetting(customosd) + !String.IsEmpty(ListItem.Property(condition))</visible>
 			</control>
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -4542,8 +4542,8 @@
 	</include>
 	<include name="ContainerViewPage">
 		<control type="label">
-			<posx>1808</posx>
-			<posy>968</posy>
+			<left>1808</left>
+			<top>968</top>
 			<width>112</width>
 			<height>75</height>
 			<align>center</align>
@@ -4554,8 +4554,8 @@
 			<visible>[String.IsEqual(Container.Content,songs) | String.IsEqual(Container.Content,musicvideos) | String.IsEqual(Container.Content,movies) | String.IsEqual(Container.Content,episodes)] + !Integer.IsEqual(Container.CurrentItem,0)</visible>
 		</control>
 		<control type="label">
-			<posx>1808</posx>
-			<posy>968</posy>
+			<left>1808</left>
+			<top>968</top>
 			<width>112</width>
 			<height>75</height>
 			<align>center</align>
@@ -4566,8 +4566,8 @@
 			<visible>[String.IsEqual(Container.Content,songs) | String.IsEqual(Container.Content,musicvideos) | String.IsEqual(Container.Content,movies) | String.IsEqual(Container.Content,episodes)] + Integer.IsEqual(Container.CurrentItem,0)</visible>
 		</control>
 		<control type="label">
-			<posx>1808</posx>
-			<posy>968</posy>
+			<left>1808</left>
+			<top>968</top>
 			<width>112</width>
 			<height>75</height>
 			<align>center</align>
@@ -4578,8 +4578,8 @@
 			<visible>![String.IsEqual(Container.Content,songs) | String.IsEqual(Container.Content,musicvideos) | String.IsEqual(Container.Content,movies) | String.IsEqual(Container.Content,episodes)] + !Integer.IsEqual(Container.CurrentItem,0) + !Control.IsVisible(71)</visible>
 		</control>
 		<control type="label">
-			<posx>848</posx>
-			<posy>968</posy>
+			<left>848</left>
+			<top>968</top>
 			<width>112</width>
 			<height>75</height>
 			<align>center</align>
@@ -4590,8 +4590,8 @@
 			<visible>![String.IsEqual(Container.Content,songs) | String.IsEqual(Container.Content,musicvideos) | String.IsEqual(Container.Content,movies) | String.IsEqual(Container.Content,episodes)] + !Integer.IsEqual(Container.CurrentItem,0) + Control.IsVisible(71)</visible>
 		</control>
 		<control type="label">
-			<posx>1808</posx>
-			<posy>968</posy>
+			<left>1808</left>
+			<top>968</top>
 			<width>112</width>
 			<height>75</height>
 			<align>center</align>
@@ -4602,8 +4602,8 @@
 			<visible>![String.IsEqual(Container.Content,songs) | String.IsEqual(Container.Content,musicvideos) | String.IsEqual(Container.Content,movies) | String.IsEqual(Container.Content,episodes)] + !Integer.IsEqual(Container.CurrentItem,0) + Control.IsVisible(71)  + !Integer.IsEqual(Container(715).NumItems,0)</visible>
 		</control>
 		<control type="label">
-			<posx>1808</posx>
-			<posy>968</posy>
+			<left>1808</left>
+			<top>968</top>
 			<width>112</width>
 			<height>75</height>
 			<align>center</align>
@@ -4614,8 +4614,8 @@
 			<visible>![String.IsEqual(Container.Content,songs) | String.IsEqual(Container.Content,musicvideos) | String.IsEqual(Container.Content,movies) | String.IsEqual(Container.Content,episodes)] + Integer.IsEqual(Container.CurrentItem,0) + !Control.IsVisible(71)</visible>
 		</control>
 		<control type="label">
-			<posx>848</posx>
-			<posy>968</posy>
+			<left>848</left>
+			<top>968</top>
 			<width>112</width>
 			<height>75</height>
 			<align>center</align>
@@ -4626,8 +4626,8 @@
 			<visible>![String.IsEqual(Container.Content,songs) | String.IsEqual(Container.Content,musicvideos) | String.IsEqual(Container.Content,movies) | String.IsEqual(Container.Content,episodes)] + Integer.IsEqual(Container.CurrentItem,0) + Control.IsVisible(71)</visible>
 		</control>
 		<control type="label">
-			<posx>1808</posx>
-			<posy>968</posy>
+			<left>1808</left>
+			<top>968</top>
 			<width>112</width>
 			<height>75</height>
 			<align>center</align>
@@ -4651,8 +4651,8 @@
 	</include>
 	<include name="GameOSD_Content">
 		<viewtype>list</viewtype>
-		<posx>225</posx>
-		<posy>172</posy>
+		<left>225</left>
+		<top>172</top>
 		<height>300</height>
 		<width>1470</width>
 		<onleft>100</onleft>
@@ -4665,7 +4665,7 @@
 		<focusposition>6</focusposition>
 		<itemlayout width="112" height="120">
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -4674,7 +4674,7 @@
 				<colordiffuse>30FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -4684,7 +4684,7 @@
 				<visible>Skin.HasSetting(customosd) + !String.IsEmpty(ListItem.Property(condition))</visible>
 			</control>
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -4696,7 +4696,7 @@
 		</itemlayout>
 		<focusedlayout width="112" height="120">
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -4707,8 +4707,8 @@
 				<visible>!Skin.HasSetting(customosd)</visible>
 			</control>
 			<control type="label">
-				<posx>-72</posx>
-				<posy>80</posy>
+				<left>-72</left>
+				<top>80</top>
 				<width>262</width>
 				<height>45</height>
 				<align>center</align>
@@ -4718,7 +4718,7 @@
 				<visible>!Skin.HasSetting(customosd)</visible>
 			</control>
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -4729,8 +4729,8 @@
 				<visible>Skin.HasSetting(customosd) + !String.IsEmpty(ListItem.Property(condition))</visible>
 			</control>
 			<control type="label">
-				<posx>4</posx>
-				<posy>80</posy>
+				<left>4</left>
+				<top>80</top>
 				<width>112</width>
 				<height>45</height>
 				<align>center</align>
@@ -4741,7 +4741,7 @@
 				<visible>Skin.HasSetting(customosd) + !String.IsEmpty(ListItem.Property(condition))</visible>
 			</control>
 			<control type="image">
-				<posx>20</posx>
+				<left>20</left>
 				<width>75</width>
 				<height>75</height>
 				<align>center</align>
@@ -4752,8 +4752,8 @@
 				<visible>Skin.HasSetting(customosd) + String.IsEmpty(ListItem.Property(condition))</visible>
 			</control>
 			<control type="label">
-				<posx>4</posx>
-				<posy>80</posy>
+				<left>4</left>
+				<top>80</top>
 				<width>112</width>
 				<height>45</height>
 				<align>center</align>
@@ -4888,8 +4888,8 @@
 		</content>
 	</include>
 	<include name="video_fanartfadelabel">
-			<posx>-500</posx>
-			<posy>-500</posy>
+			<left>-500</left>
+			<top>-500</top>
 			<width>1</width>
 			<height>1</height>
 			<info>ListItem.Art(fanart)</info>
@@ -4948,8 +4948,8 @@
 			<resetonlabelchange>true</resetonlabelchange>
 	</include>
 	<include name="video_fanartfadelabel715">
-			<posx>-500</posx>
-			<posy>-500</posy>
+			<left>-500</left>
+			<top>-500</top>
 			<width>1</width>
 			<height>1</height>
 			<info>Container(715).ListItem(0).Art(fanart)</info>
@@ -4986,8 +4986,8 @@
 			<resetonlabelchange>true</resetonlabelchange>
 	</include>
 	<include name="music_fanartfadelabel">
-			<posx>-500</posx>
-			<posy>-500</posy>
+			<left>-500</left>
+			<top>-500</top>
 			<width>1</width>
 			<height>1</height>
 			<info>ListItem.Art(fanart)</info>

@@ -13,22 +13,22 @@
 			<include>InvisibleButton</include>
 		</control>
 		<control type="group">		<!-- Menu bar in customize mode  -->
-			<posy>0</posy>
+			<top>0</top>
 			<include>Animation_TopPopup</include>
 			<visible>Skin.HasSetting(customosd)</visible>
 			<include>Dialogs_Bar</include>
 			<control type="image">
 				<!-- ativado azul -->
-				<posx>75</posx>
-				<posy>8</posy>
+				<left>75</left>
+				<top>8</top>
 				<width>60</width>
 				<height>28</height>
 				<texture>grey.png</texture>
 				<colordiffuse>FF007399</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>150</posx>
-				<posy>6</posy>
+				<left>150</left>
+				<top>6</top>
 				<width>375</width>
 				<align>left</align>
 				<font>Font_18A</font>
@@ -39,16 +39,16 @@
 			</control>
 			<control type="image">
 				<!-- desativado vermelho -->
-				<posx>375</posx>
-				<posy>8</posy>
+				<left>375</left>
+				<top>8</top>
 				<width>60</width>
 				<height>28</height>
 				<texture>grey.png</texture>
 				<colordiffuse>FFB20000</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>450</posx>
-				<posy>6</posy>
+				<left>450</left>
+				<top>6</top>
 				<width>375</width>
 				<align>left</align>
 				<font>Font_18A</font>
@@ -59,14 +59,14 @@
 			</control>
 		</control>
 		<control type="group">
-			<posy>780</posy>
+			<top>780</top>
 			<animation effect="slide" time="400" start="0,300" end="0,0" easing="out" tween="cubic">WindowOpen</animation>
 			<animation effect="slide" time="400" start="0,300" end="0,0" easing="out" tween="cubic">Visible</animation>
 			<animation effect="slide" time="400" start="0,0" end="0,300" easing="in" tween="cubic">WindowClose</animation>
 			<animation effect="slide" time="400" start="0,0" end="0,300" easing="in" tween="cubic">Hidden</animation>
 			<control type="group">	<!-- Seek Widget Forward -->
-				<posx>-750</posx>
-				<posy>57</posy>
+				<left>-750</left>
+				<top>57</top>
 				<width>748</width>
 				<height>42</height>
 				<animation effect="slide" end="300,0" time="200" condition="Player.Forwarding2x">Conditional</animation>
@@ -75,8 +75,8 @@
 				<animation effect="slide" end="638,0" time="200" condition="Player.Forwarding16x">Conditional</animation>
 				<animation effect="slide" end="748,0" time="200" condition="Player.Forwarding32x">Conditional</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>748</width>
 					<height>42</height>
 					<texture flipy="true">osd_button_reverse.png</texture>
@@ -87,8 +87,8 @@
 				</control>
 			</control>
 			<control type="group">	<!-- Seek Widget Rewind -->
-				<posx>1920</posx>
-				<posy>57</posy>
+				<left>1920</left>
+				<top>57</top>
 				<width>748</width>
 				<height>42</height>
 				<animation effect="slide" end="-300,0" time="200" condition="Player.Rewinding2x">Conditional</animation>
@@ -97,8 +97,8 @@
 				<animation effect="slide" end="-638,0" time="200" condition="Player.Rewinding16x">Conditional</animation>
 				<animation effect="slide" end="-748,0" time="200" condition="Player.Rewinding32x">Conditional</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>748</width>
 					<height>42</height>
 					<texture flipy="true" flipx="true">osd_button_reverse.png</texture>
@@ -110,16 +110,16 @@
 			</control>
 			<control type="image">
 				<!-- Barra de fundo -->
-				<posx>0</posx>
-				<posy>54</posy>
+				<left>0</left>
+				<top>54</top>
 				<width>1920</width>
 				<height>45</height>
 				<texture>shadow_h.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>98</posy>
+				<left>0</left>
+				<top>98</top>
 				<height>202</height>
 				<width>1920</width>
 				<texture>darkgrey.png</texture>
@@ -130,15 +130,15 @@
 			<include condition="!Skin.HasSetting(audioosdfixedlist)">AudioOSDWrapList</include>
 			<include condition="Skin.HasSetting(audioosdfixedlist)">AudioOSDFixedList</include>
 			<control type="progress">
-				<posx>45</posx>
-				<posy>110</posy>
+				<left>45</left>
+				<top>110</top>
 				<width>1830</width>
 				<height>38</height>
 				<info>Player.Progress</info>
 			</control>
 			<control type="slider" id="888">
-				<posx>58</posx>
-				<posy>112</posy>
+				<left>58</left>
+				<top>112</top>
 				<width>1803</width>
 				<height>32</height>
 				<onup>Dialog.Close(musicosd)</onup>
@@ -150,8 +150,8 @@
 				<animation effect="fade" time="200">VisibleChange</animation>
 			</control>
 			<control type="label">
-				<posx>135</posx>
-				<posy>108</posy>
+				<left>135</left>
+				<top>108</top>
 				<width>1650</width>
 				<height>45</height>
 				<align>center</align>
@@ -163,8 +163,8 @@
 			</control>
 			<control type="label">
 				<!-- OSD Menu item names -->
-				<posx>480</posx>
-				<posy>250</posy>
+				<left>480</left>
+				<top>250</top>
 				<width>960</width>
 				<height>38</height>
 				<align>center</align>
@@ -177,8 +177,8 @@
 				<visible>!Skin.HasSetting(customosd)</visible>
 				<control type="label">
 					<!-- hora atual -->
-					<posx>45</posx>
-					<posy>195</posy>
+					<left>45</left>
+					<top>195</top>
 					<width>450</width>
 					<height>38</height>
 					<font>Font_18A</font>
@@ -186,8 +186,8 @@
 					<label>31310</label>
 				</control>
 				<control type="label">
-					<posx>45</posx>
-					<posy>232</posy>
+					<left>45</left>
+					<top>232</top>
 					<width>450</width>
 					<height>38</height>
 					<font>Font_32</font>
@@ -195,8 +195,8 @@
 					<label>$INFO[System.Time]</label>
 				</control>
 				<control type="label">	<!-- timeshift -->
-					<posx>1420</posx>
-					<posy>232</posy>
+					<left>970</left>
+					<top>232</top>
 					<width>450</width>
 					<height>38</height>
 					<align>right</align>
@@ -207,8 +207,8 @@
 				</control>
 				<control type="label">
 					<!-- termino -->
-					<posx>1875</posx>
-					<posy>195</posy>
+					<left>1425</left>
+					<top>195</top>
 					<width>450</width>
 					<height>38</height>
 					<align>right</align>
@@ -217,8 +217,8 @@
 					<label>31311</label>
 				</control>
 				<control type="label">
-					<posx>1875</posx>
-					<posy>232</posy>
+					<left>1425</left>
+					<top>232</top>
 					<width>450</width>
 					<height>38</height>
 					<align>right</align>
@@ -228,15 +228,15 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>172</posy>
+				<left>0</left>
+				<top>172</top>
 				<height>135</height>
 				<width>1920</width>
 				<texture>gradient_small.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>98</posy>
+				<left>0</left>
+				<top>98</top>
 				<height>202</height>
 				<width>1920</width>
 				<colordiffuse>99FFFFFF</colordiffuse>

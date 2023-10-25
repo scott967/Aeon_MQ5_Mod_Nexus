@@ -5,11 +5,11 @@
 	<defaultcontrol>9000</defaultcontrol>
 	<controls>
 		<control type="group">
-			<posy>120</posy>
+			<top>120</top>
 			<include>Animation_DialogPopup</include>
 			<control type="image">
-				<posx>256</posx>
-				<posy>60</posy>
+				<left>256</left>
+				<top>60</top>
 				<width>45</width>
 				<height>722</height>
 				<texture flipx="true">shadow.png</texture>
@@ -17,8 +17,8 @@
 			</control>
 			<control type="image">
 				<!-- Fundo -->
-				<posx>300</posx>
-				<posy>60</posy>
+				<left>300</left>
+				<top>60</top>
 				<width>1388</width>
 				<height>722</height>
 				<texture>darkgrey.png</texture>
@@ -26,8 +26,8 @@
 			</control>
 			<control type="image">
 				<!-- Fundo do titulo -->
-				<posx>300</posx>
-				<posy>60</posy>
+				<left>300</left>
+				<top>60</top>
 				<width>1388</width>
 				<height>75</height>
 				<texture>black.png</texture>
@@ -35,8 +35,8 @@
 			</control>
 			<control type="label">
 				<!-- Header title -->
-				<posx>330</posx>
-				<posy>75</posy>
+				<left>330</left>
+				<top>75</top>
 				<width>1035</width>
 				<align>center</align>
 				<label>$LOCALIZE[15020]</label>
@@ -45,8 +45,8 @@
 			</control>
 			<control type="label">
 				<!-- Mode step -->
-				<posx>394</posx>
-				<posy>135</posy>
+				<left>394</left>
+				<top>135</top>
 				<width>300</width>
 				<height>45</height>
 				<align>left</align>
@@ -57,8 +57,8 @@
 			</control>
 			<control type="image">
 				<!-- Mode process arrow -->
-				<posx>435</posx>
-				<posy>240</posy>
+				<left>435</left>
+				<top>240</top>
 				<width>15</width>
 				<height>75</height>
 				<texture flipy="true">arrow.png</texture>
@@ -66,8 +66,8 @@
 			</control>
 			<control type="image">
 				<!-- Mode process arrow -->
-				<posx>435</posx>
-				<posy>360</posy>
+				<left>435</left>
+				<top>360</top>
 				<width>15</width>
 				<height>75</height>
 				<texture flipy="true">arrow.png</texture>
@@ -75,8 +75,8 @@
 			</control>
 			<control type="image">
 				<!-- Mode process arrow -->
-				<posx>435</posx>
-				<posy>480</posy>
+				<left>435</left>
+				<top>480</top>
 				<width>15</width>
 				<height>75</height>
 				<texture flipy="true">arrow.png</texture>
@@ -84,8 +84,8 @@
 			</control>
 			<control type="image">
 				<!-- Mode process arrow -->
-				<posx>435</posx>
-				<posy>600</posy>
+				<left>435</left>
+				<top>600</top>
 				<width>15</width>
 				<height>75</height>
 				<texture flipy="true">arrow.png</texture>
@@ -93,8 +93,8 @@
 			</control>
 			<control type="list" id="9000">
 				<!-- Mode list -->
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<width>315</width>
 				<height>600</height>
 				<onup>9000</onup>
@@ -105,8 +105,8 @@
 				<itemlayout width="300" height="120">
 					<control type="label">
 						<!-- mode step -->
-						<posx>15</posx>
-						<posy>-60</posy>
+						<left>15</left>
+						<top>-60</top>
 						<width>270</width>
 						<font>Font_18</font>
 						<aligny>center</aligny>
@@ -117,8 +117,8 @@
 				<focusedlayout width="300" height="120">
 					<control type="label">
 						<!-- mode step -->
-						<posx>15</posx>
-						<posy>-60</posy>
+						<left>15</left>
+						<top>-60</top>
 						<width>270</width>
 						<font>Font_18</font>
 						<aligny>center</aligny>
@@ -126,16 +126,16 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>60</height>
 						<texture>settings_button_focus.png</texture>
 						<visible>Control.HasFocus(9000)</visible>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>60</height>
 						<texture>settings_button_focus.png</texture>
@@ -177,12 +177,12 @@
 				</content>
 			</control>
 			<control type="group" id="200">
-				<posx>360</posx>
-				<posy>180</posy>
+				<left>360</left>
+				<top>180</top>
 				<control type="label">
 					<!-- inactive mode header -->
-					<posx>375</posx>
-					<posy>255</posy>
+					<left>375</left>
+					<top>255</top>
 					<width>600</width>
 					<height>45</height>
 					<aligny>center</aligny>
@@ -193,8 +193,8 @@
 				</control>
 				<control type="list" id="20">
 					<!-- Inactive modes -->
-					<posx>375</posx>
-					<posy>300</posy>
+					<left>375</left>
+					<top>300</top>
 					<height>300</height>
 					<width>600</width>
 					<onleft>9000</onleft>
@@ -214,7 +214,7 @@
 							<visible>!String.IsEqual(ListItem.Icon,"")</visible>
 						</control>
 						<control type="label">
-							<posx>72</posx>
+							<left>72</left>
 							<width>525</width>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -233,7 +233,7 @@
 							<aspectratio aligny="center" align="left">keep</aspectratio>
 						</control>
 						<control type="image">
-							<posy>0</posy>
+							<top>0</top>
 							<width>600</width>
 							<height>60</height>
 							<texture>settings_button_focus.png</texture>
@@ -241,7 +241,7 @@
 							<visible>Control.HasFocus(20)</visible>
 						</control>
 						<control type="label">
-							<posx>72</posx>
+							<left>72</left>
 							<width>525</width>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -254,8 +254,8 @@
 				</control>
 				<control type="scrollbar" id="60">
 					<include>ScrollBar_Vertical</include>
-					<posx>975</posx>
-					<posy>300</posy>
+					<left>975</left>
+					<top>300</top>
 					<height>270</height>
 					<onleft>20</onleft>
 					<onright>21</onright>
@@ -265,8 +265,8 @@
 				</control>
 				<control type="label">
 					<!-- current mode -->
-					<posx>375</posx>
-					<posy>-45</posy>
+					<left>375</left>
+					<top>-45</top>
 					<width>600</width>
 					<height>45</height>
 					<align>left</align>
@@ -277,8 +277,8 @@
 				</control>
 				<control type="list" id="21">
 					<!-- active modes -->
-					<posx>375</posx>
-					<posy>15</posy>
+					<left>375</left>
+					<top>15</top>
 					<width>600</width>
 					<height>300</height>
 					<onup>20</onup>
@@ -289,16 +289,16 @@
 					<scrolltime>200</scrolltime>
 					<itemlayout width="600" height="120">
 						<control type="image">
-							<posx>8</posx>
-							<posy>8</posy>
+							<left>8</left>
+							<top>8</top>
 							<width>105</width>
 							<height>105</height>
 							<texture fallback="DefaultAudioDSP.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
-							<posx>120</posx>
-							<posy>0</posy>
+							<left>120</left>
+							<top>0</top>
 							<width>480</width>
 							<height>68</height>
 							<font>Font_18</font>
@@ -307,8 +307,8 @@
 							<label>$INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
 						</control>
 						<control type="textbox">
-							<posx>120</posx>
-							<posy>75</posy>
+							<left>120</left>
+							<top>75</top>
 							<width>480</width>
 							<height>45</height>
 							<font>Font_18A</font>
@@ -318,7 +318,7 @@
 					</itemlayout>
 					<focusedlayout width="600" height="120">
 						<control type="image">
-							<posy>0</posy>
+							<top>0</top>
 							<width>600</width>
 							<height>120</height>
 							<texture>settings_button_focus.png</texture>
@@ -326,16 +326,16 @@
 							<visible>Control.HasFocus(21)</visible>
 						</control>
 						<control type="image">
-							<posx>8</posx>
-							<posy>8</posy>
+							<left>8</left>
+							<top>8</top>
 							<width>105</width>
 							<height>105</height>
 							<texture fallback="DefaultAudioDSP.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
-							<posx>120</posx>
-							<posy>0</posy>
+							<left>120</left>
+							<top>0</top>
 							<width>480</width>
 							<height>68</height>
 							<font>Font_18</font>
@@ -344,8 +344,8 @@
 							<label>$INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
 						</control>
 						<control type="textbox">
-							<posx>120</posx>
-							<posy>75</posy>
+							<left>120</left>
+							<top>75</top>
 							<width>480</width>
 							<height>45</height>
 							<font>Font_18A</font>
@@ -358,8 +358,8 @@
 				</control>
 				<control type="scrollbar" id="61">
 					<include>ScrollBar_Vertical</include>
-					<posx>975</posx>
-					<posy>15</posy>
+					<left>975</left>
+					<top>15</top>
 					<height>270</height>
 					<onleft>21</onleft>
 					<onright>20</onright>
@@ -370,8 +370,8 @@
 			</control>
 			<control type="textbox">
 				<description>current mode description label</description>
-				<posx>435</posx>
-				<posy>867</posy>
+				<left>435</left>
+				<top>867</top>
 				<width>1110</width>
 				<height>90</height>
 				<font>Font_18A</font>
@@ -382,24 +382,24 @@
 			</control>
 			<control type="image">
 				<!-- Actions background-->
-				<posx>1323</posx>
-				<posy>60</posy>
+				<left>1323</left>
+				<top>60</top>
 				<width>45</width>
 				<height>722</height>
 				<texture flipx="true">shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>1688</posx>
-				<posy>60</posy>
+				<left>1688</left>
+				<top>60</top>
 				<width>45</width>
 				<height>722</height>
 				<texture>shadow.png</texture>
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>1368</posx>
-				<posy>60</posy>
+				<left>1368</left>
+				<top>60</top>
 				<width>320</width>
 				<height>722</height>
 				<texture>grey.png</texture>
@@ -407,8 +407,8 @@
 			</control>
 			<control type="grouplist" id="9001">
 				<!-- Action buttons -->
-				<posx>1368</posx>
-				<posy>142</posy>
+				<left>1368</left>
+				<top>142</top>
 				<control type="radiobutton" id="22">
 					<!-- Add -->
 					<include>SettingsDialogButton</include>
@@ -439,8 +439,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>1356</posx>
-				<posy>60</posy>
+				<left>1356</left>
+				<top>60</top>
 				<width>256</width>
 				<height>722</height>
 				<texture flipx="true">menu_glass.png</texture>

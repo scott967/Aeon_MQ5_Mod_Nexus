@@ -8,8 +8,8 @@
 		<control type="group">	<!-- main group -->
 			<include>Animation_Window</include>
 			<!-- <control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<texture>black.png</texture>
@@ -17,16 +17,16 @@
 				<include>Animation_Fade</include>
 			</control> -->
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<texture fallback="black.png">$INFO[Window.Property(ImageFilter)]</texture>
 				<include>Animation_VisibleChange</include>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<animation effect="fade" start="100" end="60" time="0" condition="true">Conditional</animation>

@@ -7,11 +7,11 @@
 	<views>570</views>
 	<controls>
 		<control type="group">
-			<posy>120</posy>
+			<top>120</top>
 			<include>Animation_DialogPopup</include>
 			<control type="image">
-				<posx>256</posx>
-				<posy>60</posy>
+				<left>256</left>
+				<top>60</top>
 				<width>45</width>
 				<height>722</height>
 				<texture flipx="true">shadow.png</texture>
@@ -19,8 +19,8 @@
 			</control>
 			<control type="image">
 				<!-- Fundo -->
-				<posx>300</posx>
-				<posy>60</posy>
+				<left>300</left>
+				<top>60</top>
 				<width>1312</width>
 				<height>722</height>
 				<texture>darkgrey.png</texture>
@@ -28,8 +28,8 @@
 			</control>
 			<control type="image">
 				<!-- Fundo do titulo -->
-				<posx>300</posx>
-				<posy>60</posy>
+				<left>300</left>
+				<top>60</top>
 				<width>1066</width>
 				<height>75</height>
 				<texture>black.png</texture>
@@ -49,8 +49,8 @@
 			<control type="group" id="9002">
 				<control type="list" id="570">
 					<!-- Events -->
-					<posx>300</posx>
-					<posy>135</posy>
+					<left>300</left>
+					<top>135</top>
 					<width>1066</width>
 					<height>600</height>
 					<onup>570</onup>
@@ -62,8 +62,8 @@
 					<pagecontrol>80</pagecontrol>
 					<itemlayout height="120" width="1066">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>120</width>
 							<height>117</height>
 							<aspectratio>keep</aspectratio>
@@ -91,7 +91,7 @@
 							<label>$INFO[ListItem.Property(Event.Description)]</label>
 						</control>
 						<control type="label">
-							<left>750</left>
+							<left>450</left>
 							<top>0</top>
 							<width>300</width>
 							<height>45</height>
@@ -104,16 +104,16 @@
 					</itemlayout>
 					<focusedlayout height="120" width="1066">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1066</width>
 							<height>120</height>
 							<texture>black.png</texture>
 							<colordiffuse>40FFFFFF</colordiffuse>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1066</width>
 							<height>120</height>
 							<texture>settings_button_focus.png</texture>
@@ -130,8 +130,8 @@
 							<bordersize>2</bordersize>
 						</control>
 						<control type="label">
-							<posx>135</posx>
-							<posy>0</posy>
+							<left>135</left>
+							<top>0</top>
 							<width>600</width>
 							<height>58</height>
 							<aligny>center</aligny>
@@ -152,7 +152,7 @@
 							<label>$INFO[ListItem.Property(Event.Description)]</label>
 						</control>
 						<control type="label">
-							<left>750</left>
+							<left>450</left>
 							<top>0</top>
 							<width>300</width>
 							<height>60</height>
@@ -166,8 +166,8 @@
 				</control>
 				<control type="scrollbar" id="80">
 					<include>ScrollBar_Vertical</include>
-					<posx>1350</posx>
-					<posy>202</posy>
+					<left>1350</left>
+					<top>202</top>
 					<height>645</height>
 					<onleft>570</onleft>
 					<onright>9000</onright>
@@ -177,36 +177,36 @@
 				</control>
 				<control type="image">
 					<!-- Options -->
-					<posx>1323</posx>
-					<posy>60</posy>
+					<left>1323</left>
+					<top>60</top>
 					<width>45</width>
 					<height>722</height>
 					<texture flipx="true">shadow.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1612</posx>
-					<posy>60</posy>
+					<left>1612</left>
+					<top>60</top>
 					<width>45</width>
 					<height>722</height>
 					<texture>shadow.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1368</posx>
-					<posy>60</posy>
+					<left>1368</left>
+					<top>60</top>
 					<width>244</width>
 					<height>722</height>
 					<texture>grey.png</texture>
 					<colordiffuse>90FFFFFF</colordiffuse>
 				</control>
 				<control type="grouplist" id="9000">
-					<posx>1368</posx>
-					<posy>368</posy>
+					<left>1368</left>
+					<top>368</top>
 					<control type="togglebutton" id="4">
 						<!-- ascending / descending -->
-						<posx>15</posx>
-						<posy>60</posy>
+						<left>15</left>
+						<top>60</top>
 						<height>62</height>
 						<width>225</width>
 						<label>21431</label>
@@ -228,8 +228,8 @@
 					</control>
 					<control type="radiobutton" id="22">
 						<!-- Show (only) current level -->
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>62</height>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -278,8 +278,8 @@
 					</control>
 				</control>
 				<control type="image">
-					<posx>1356</posx>
-					<posy>60</posy>
+					<left>1356</left>
+					<top>60</top>
 					<width>256</width>
 					<height>722</height>
 					<texture flipx="true">menu_glass.png</texture>

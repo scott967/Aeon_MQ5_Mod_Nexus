@@ -5,14 +5,14 @@
 <!-- Krypton 9.1.16/9.1.19/9.2.1 windowIDs/9.2.2 -->
 <!-- Leia 10.3.0/10.5.1 /10.6.0/10.6.2-->
 <!-- Matrix 11.0.1/11.0.4/11.0.5/11.1.1/11.2.0/11.3.0 -->
-<!-- Nexus 12.2.0/12.3.0/12.5.0 -->
+<!-- Nexus 12.2.0/12.3.0/12.5.0/12.7.0 top left -->
 <!-- Includes:  Quickfix InvisibleButton Playlists HomeBG Animation_Fade LiveBG Animation_Window HomeRSS Animation_HomeGlass Animation_CDart  Animation_HomeNowPlaying Animation_Widgets Animation_HomeGlass2 Animation_HomeFade -->
 <!-- NextTracksContent Animation_HomePanel HomeFlagSeparator HomeFlagLabel mf_contentmovies -->
 <!-- Main Menu fixedlist/wraplist 9000 mainmenu_content (layout) and menu_content (content) in IncludesMainMenu -->
 <!--
 
 
-Group 604: now playing panel and next tracks panel top left/right
+Group 604: now playing panel and next tracks panel 603 top left/right
 Group 605: disc art bottom left
 Group 606: PVR recording/next recording bottom left
 Group 601: Details panel for skin widgets panel (includesmenuwidgets) 510
@@ -57,8 +57,8 @@ Group 602: Widgets
 		<control type="group"><!-- folderarts check -->
 			<visible>Skin.HasSetting(use_folderarts)</visible>
 			<control type="list" id="7044"><!-- was invisible button 5044 check if artist info has extrafanart note: if artist info entry is normalized it isn't found -->
-				<posx>-500</posx>
-				<posy>-500</posy>
+				<left>-500</left>
+				<top>-500</top>
 				<height>400</height>
 				<width>50</width>
 				<visible>Player.HasAudio + !PVR.IsPlayingRadio + Skin.HasSetting(customlogo) + !String.IsEmpty(Skin.String(CustomMusicLogoPath))</visible>
@@ -67,8 +67,8 @@ Group 602: Widgets
 				<content target="filemanager">$INFO[Skin.String(CustomMusicLogoPath)]$INFO[MusicPlayer.Artist]\extrafanart\</content>
 			</control>
 			<control type="list" id="7045"><!-- was 5045 check if video has extrafanartfanart -->
-				<posx>-500</posx>
-				<posy>-500</posy>
+				<left>-500</left>
+				<top>-500</top>
 				<height>400</height>
 				<width>50</width>
 				<visible>Player.HasVideo + !String.StartsWith(Player.FolderPath,Plugin) + !String.StartsWith(Player.FolderPath,pvr) + !PVR.IsPlayingTV</visible>
@@ -77,8 +77,8 @@ Group 602: Widgets
 				<content target="filemanager">$INFO[Player.FolderPath]extrafanart\</content>
 			</control>
 			<control type="list" id="7046"><!-- was 5046 check if video parent has extrafanart (MVs/episodes in seasons)  -->
-				<posx>-500</posx>
-				<posy>-500</posy>
+				<left>-500</left>
+				<top>-500</top>
 				<height>400</height>
 				<width>50</width>
 				<visible>Player.HasVideo + !String.StartsWith(Player.FolderPath,Plugin) + !String.StartsWith(Player.FolderPath,pvr) + !PVR.IsPlayingTV</visible>
@@ -172,8 +172,8 @@ Group 602: Widgets
 				<animation effect="slide" start="0,0" end="-750,0" time="400" tween="cubic" easing="inout">Hidden</animation>
 				<visible>Player.HasMedia + ![PVR.IsPlayingTv | PVR.IsPlayingRadio | PVR.IsPlayingRecording] + ![Skin.HasSetting(nohomecdart) | Skin.HasSetting(submode) | Control.IsVisible(606)]</visible>
 				<control type="image">
-					<posx>90</posx>
-					<posy>1041</posy>
+					<left>90</left>
+					<top>1041</top>
 					<width>675</width>
 					<height>39</height>
 					<texture flipy="true">widgets_panel.png</texture>
@@ -181,16 +181,16 @@ Group 602: Widgets
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="image">
-					<posx>135</posx>
-					<posy>1046</posy>
+					<left>135</left>
+					<top>1046</top>
 					<width>22</width>
 					<height>30</height>
 					<texture>arrow_settings.png</texture>
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="label">
-					<posx>170</posx>
-					<posy>1046</posy>
+					<left>170</left>
+					<top>1046</top>
 					<width>555</width>
 					<height>30</height>
 					<align>left</align>
@@ -202,8 +202,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<include>Animation_CDart</include>
-					<posx>-128</posx>
-					<posy>952</posy>
+					<left>-128</left>
+					<top>952</top>
 					<width>255</width>
 					<height>255</height>
 					<texture diffuse="cdart_diffuse.png" background="true">$VAR[value_audiodisc]</texture>
@@ -212,8 +212,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<include>Animation_CDart</include>
-					<posx>-128</posx>
-					<posy>952</posy>
+					<left>-128</left>
+					<top>952</top>
 					<width>255</width>
 					<height>255</height>
 					<texture diffuse="cdart_diffuse.png" background="true">$VAR[value_videodisc]</texture>
@@ -229,16 +229,16 @@ Group 602: Widgets
 				<animation effect="slide" start="0,0" end="-750,0" time="400" tween="cubic" easing="inout">Hidden</animation>
 				<visible>[String.IsEqual(Container(9000).ListItem.Property(id),livetv) |  String.IsEqual(Container(9000).ListItem.Property(id),livetvepg) |  String.IsEqual(Container(9000).ListItem.Property(id),livetvrecords)] + !Skin.HasSetting(submode) + [PVR.IsRecording | PVR.HasNonRecordingTimer]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>945</posy>
+					<left>0</left>
+					<top>945</top>
 					<width>675</width>
 					<height>135</height>
 					<texture flipx="true">shadow_mask_v.png</texture>
 					<colordiffuse>E4101010</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>144</posx>
-					<posy>952</posy>
+					<left>144</left>
+					<top>952</top>
 					<width>22</width>
 					<height>22</height>
 					<aspectratio>keep</aspectratio>
@@ -246,8 +246,8 @@ Group 602: Widgets
 					<visible>PVR.HasNonRecordingTimer + !PVR.IsRecording</visible>
 				</control>
 				<control type="image">
-					<posx>144</posx>
-					<posy>952</posy>
+					<left>144</left>
+					<top>952</top>
 					<width>30</width>
 					<height>22</height>
 					<aspectratio>keep</aspectratio>
@@ -255,8 +255,8 @@ Group 602: Widgets
 					<visible>PVR.IsRecording</visible>
 				</control>
 				<control type="textbox">
-					<posx>142</posx>
-					<posy>946</posy>
+					<left>142</left>
+					<top>946</top>
 					<width>555</width>
 					<height>135</height>
 					<align>left</align>
@@ -269,8 +269,8 @@ Group 602: Widgets
 					<scrolltime>200</scrolltime>
 				</control>
 				<control type="image">
-					<posx>9</posx>
-					<posy>952</posy>
+					<left>9</left>
+					<top>952</top>
 					<width>120</width>
 					<height>120</height>
 					<aligny>center</aligny>
@@ -281,15 +281,15 @@ Group 602: Widgets
 			</control>
 			<control type="group" id="604">  <!-- top left now playing art + data panel / Top right next tracks-->
 				<!-- Tocando agora (now playing) -->
-				<posy>-75</posy>
+				<top>-75</top>
 				<include condition="![Skin.HasSetting(higherwidgets) | Skin.HasSetting(highermainmenu)]">Animation_HomeNowPlaying</include>
 				<include condition="Skin.HasSetting(higherwidgets) | Skin.HasSetting(highermainmenu)">Animation_Widgets</include>
 				<animation effect="slide" start="0,0" end="0,330" condition="Skin.HasSetting(higherwidgets) + !Skin.HasSetting(highermainmenu)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,578" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
 				<visible>Player.HasMedia + ![Control.HasFocus(510) | Control.HasFocus(5100) | String.IsEqual(Container(9000).ListItem.Property(id),weather) + !Skin.HasSetting(noweatherwidget) | String.IsEqual(Container(9000).ListItem.Property(id),settings) + !Skin.HasSetting(nosystemwidget) | Skin.HasSetting(nonowplayingpanel) | Skin.HasSetting(highermainmenu) + Skin.HasSetting(submode)]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>578</posy>
+					<left>0</left>
+					<top>578</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
@@ -298,8 +298,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<!-- Fundo -->
-					<posx>0</posx>
-					<posy>30</posy>
+					<left>0</left>
+					<top>30</top>
 					<width>1920</width>
 					<height>600</height>
 					<texture>details_back.png</texture>
@@ -309,8 +309,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<!-- Fundo -->
-					<posx>0</posx>
-					<posy>30</posy>
+					<left>0</left>
+					<top>30</top>
 					<width>1920</width>
 					<height>570</height>
 					<texture>details_back.png</texture>
@@ -320,8 +320,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<!-- album thumb (cover) from the next track list -->
-					<posx>60</posx>
-					<posy>135</posy>
+					<left>60</left>
+					<top>135</top>
 					<width>375</width>
 					<height>375</height>
 					<aspectratio align="left" aligny="center">keep</aspectratio>
@@ -332,8 +332,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<!-- Fundo borda -->
-					<posx>30</posx>
-					<posy>120</posy>
+					<left>30</left>
+					<top>120</top>
 					<width>712</width>
 					<height>417</height>
 					<texture>fanartframe.png</texture>
@@ -341,8 +341,8 @@ Group 602: Widgets
 				</control>
 				<control type="multiimage">
 					<!-- show AS 2.X fanart if avail else player artist fanart else default background -->
-					<posx>52</posx>
-					<posy>141</posy>
+					<left>52</left>
+					<top>141</top>
 					<width>666</width>
 					<height>375</height>
 					<timeperimage>5000</timeperimage>
@@ -354,8 +354,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<!-- show AS 3.X fanart if avail else player artist fanart else default background -->
-					<posx>52</posx>
-					<posy>141</posy>
+					<left>52</left>
+					<top>141</top>
 					<width>666</width>
 					<height>375</height>
 					<aspectratio>keep</aspectratio>
@@ -365,8 +365,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<!-- Logo -->
-					<posx>75</posx>
-					<posy>150</posy>
+					<left>75</left>
+					<top>150</top>
 					<width>165</width>
 					<height>90</height>
 					<aspectratio align="left" aligny="top">keep</aspectratio>
@@ -375,20 +375,20 @@ Group 602: Widgets
 					<visible>Player.HasAudio</visible>
 				</control>
 				<control type="videowindow" id="8">  <!-- show unless we have video playing full screen -->
-					<posx>52</posx>
-					<posy>141</posy>
+					<left>52</left>
+					<top>141</top>
 					<width>666</width>
 					<height>375</height>
 					<animation effect="slide" start="0,0" end="-3000,0" time="0">WindowClose</animation>
 					<visible>!Skin.HasSetting(homevisvideo)</visible>
 				</control>
 				<control type="group">
-					<posx>750</posx>
+					<left>750</left>
 					<animation effect="slide" start="0,0" end="-292,0" time="50" easing="inout" tween="sine" condition="Control.HasFocus(603)">Conditional</animation>
 					<control type="label">
 						<!-- Now Playing Data block top center NOW PLAYING or  SELECTING TRACKS -->
-						<posx>0</posx>
-						<posy>128</posy>
+						<left>0</left>
+						<top>128</top>
 						<width>450</width>
 						<height>45</height>
 						<align>left</align>
@@ -398,8 +398,8 @@ Group 602: Widgets
 						<scroll>true</scroll>
 					</control>
 					<control type="image">
-						<posx>200</posx>
-						<posy>133</posy>
+						<left>200</left>
+						<top>133</top>
 						<width>225</width>
 						<height>45</height>
 						<texture>$VAR[User_Rating_Stars]</texture>
@@ -408,8 +408,8 @@ Group 602: Widgets
 						<!-- <visible>String.IsEqual(skin.font,Massive) + !Control.HasFocus(603)</visible> -->
 					</control>
 					<control type="image">
-						<posx>200</posx>
-						<posy>133</posy>
+						<left>200</left>
+						<top>133</top>
 						<width>150</width>
 						<height>30</height>
 						<texture>$VAR[User_Rating_Stars]</texture>
@@ -419,8 +419,8 @@ Group 602: Widgets
 					</control>
 					<control type="label">
 						<!-- Titulo -->
-						<posx>0</posx>
-						<posy>174</posy>
+						<left>0</left>
+						<top>174</top>
 						<width>525</width>
 						<height>45</height>
 						<align>left</align>
@@ -432,8 +432,8 @@ Group 602: Widgets
 					</control>
 					<control type="label">
 						<!-- Titulo -->
-						<posx>0</posx>
-						<posy>174</posy>
+						<left>0</left>
+						<top>174</top>
 						<width>825</width>
 						<height>45</height>
 						<align>left</align>
@@ -445,8 +445,8 @@ Group 602: Widgets
 					</control>
 					<control type="label">
 						<!-- Subtitulo -->
-						<posx>0</posx>
-						<posy>220</posy>
+						<left>0</left>
+						<top>220</top>
 						<width>525</width>
 						<height>30</height>
 						<align>left</align>
@@ -458,8 +458,8 @@ Group 602: Widgets
 					</control>
 					<control type="label">
 						<!-- Subtitulo -->
-						<posx>0</posx>
-						<posy>220</posy>
+						<left>0</left>
+						<top>220</top>
 						<width>825</width>
 						<height>30</height>
 						<align>left</align>
@@ -471,8 +471,8 @@ Group 602: Widgets
 					</control>
 					<control type="label">
 						<!-- Detalhes da faixa em reproducao -->
-						<posx>0</posx>
-						<posy>262</posy>
+						<left>0</left>
+						<top>262</top>
 						<width>525</width>
 						<height>150</height>
 						<align>left</align>
@@ -483,8 +483,8 @@ Group 602: Widgets
 						<visible>Control.HasFocus(603)</visible>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>268</posy>
+						<left>0</left>
+						<top>268</top>
 						<width>525</width>
 						<height>3</height>
 						<align>left</align>
@@ -492,8 +492,8 @@ Group 602: Widgets
 						<visible>![String.IsEmpty(MusicPlayer.offset(1).Artist) | Skin.HasSetting(nonexttracks)] + Player.HasAudio</visible>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>268</posy>
+						<left>0</left>
+						<top>268</top>
 						<width>825</width>
 						<height>3</height>
 						<align>left</align>
@@ -502,8 +502,8 @@ Group 602: Widgets
 					</control>
 					<control type="textbox">
 						<!-- Plot -->
-						<posx>0</posx>
-						<posy>272</posy>
+						<left>0</left>
+						<top>272</top>
 						<width>525</width>
 						<height>245</height>
 						<label>$VAR[value_playerplot]</label>
@@ -514,8 +514,8 @@ Group 602: Widgets
 					</control>
 					<control type="textbox">
 						<!-- Plot -->
-						<posx>0</posx>
-						<posy>272</posy>
+						<left>0</left>
+						<top>272</top>
 						<width>825</width>
 						<height>245</height>
 						<label>$VAR[value_playerplot]</label>
@@ -528,8 +528,8 @@ Group 602: Widgets
 				<control type="group">	<!-- Next tracks heading top right -->
 					<visible>![String.IsEmpty(MusicPlayer.offset(1).Artist) | Skin.HasSetting(nonexttracks)] + Player.HasAudio</visible>
 					<control type="label">
-						<posx>1305</posx>
-						<posy>128</posy>
+						<left>1305</left>
+						<top>128</top>
 						<width>825</width>
 						<height>45</height>
 						<align>left</align>
@@ -540,8 +540,8 @@ Group 602: Widgets
 						<scrollout>false</scrollout>
 					</control>
 					<control type="label">
-						<posx>1305</posx>
-						<posy>172</posy>
+						<left>1305</left>
+						<top>172</top>
 						<width>825</width>
 						<height>45</height>
 						<align>left</align>
@@ -552,8 +552,8 @@ Group 602: Widgets
 						<scrollout>false</scrollout>
 					</control>
 					<control type="panel" id="603">  <!-- Next tracks top right -->
-						<posx>1305</posx>
-						<posy>225</posy>
+						<left>1305</left>
+						<top>225</top>
 						<width>615</width>
 						<height>315</height>
 						<onup>603</onup>
@@ -567,16 +567,16 @@ Group 602: Widgets
 						<include>Animation_HomeFade</include>
 						<itemlayout width="615" height="45">
 							<control type="image">
-								<posx>3</posx>
-								<posy>3</posy>
+								<left>3</left>
+								<top>3</top>
 								<width>38</width>
 								<height>38</height>
 								<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio align="center">stretch</aspectratio>
 							</control>
 							<control type="label">
-								<posx>21</posx>
-								<posy>8</posy>
+								<left>10</left>
+								<top>8</top>
 								<width>75</width>
 								<height>27</height>
 								<align>right</align>
@@ -586,8 +586,8 @@ Group 602: Widgets
 								<textcolor>$VAR[value_headercolor]</textcolor>
 							</control>
 							<control type="label">
-								<posx>96</posx>
-								<posy>8</posy>
+								<left>96</left>
+								<top>8</top>
 								<width>495</width>
 								<height>27</height>
 								<align>left</align>
@@ -599,24 +599,24 @@ Group 602: Widgets
 						</itemlayout>
 						<focusedlayout width="615" height="45">
 							<control type="image">
-								<posx>0</posx>
-								<posy>1</posy>
+								<left>0</left>
+								<top>1</top>
 								<width>618</width>
 								<height>42</height>
 								<texture>gradient_focus.png</texture>
 								<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 							</control>
 							<control type="image">
-								<posx>3</posx>
-								<posy>3</posy>
+								<left>3</left>
+								<top>3</top>
 								<width>38</width>
 								<height>38</height>
 								<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio align="center">stretch</aspectratio>
 							</control>
 							<control type="label">
-								<posx>21</posx>
-								<posy>8</posy>
+								<left>10</left>
+								<top>8</top>
 								<width>75</width>
 								<height>27</height>
 								<align>right</align>
@@ -626,8 +626,8 @@ Group 602: Widgets
 								<textcolor>$VAR[value_headercolor]</textcolor>
 							</control>
 							<control type="label">
-								<posx>96</posx>
-								<posy>8</posy>
+								<left>96</left>
+								<top>8</top>
 								<width>495</width>
 								<height>27</height>
 								<align>left</align>
@@ -642,16 +642,16 @@ Group 602: Widgets
 				</control>
 			</control>
 			<control type="group" id="601">  <!-- Details panel for skin widgets panel (includesmenuwidgets) 510 -->
-				<posx>0</posx>
-				<posy>-450</posy>
+				<left>0</left>
+				<top>-450</top>
 				<include condition="![Skin.HasSetting(higherwidgets) | Skin.HasSetting(highermainmenu)]">Animation_HomePanel</include>
 				<include condition="Skin.HasSetting(higherwidgets) | Skin.HasSetting(highermainmenu)">Animation_Widgets</include>
 				<animation effect="slide" start="0,0" end="0,705" condition="Skin.HasSetting(higherwidgets) + !Skin.HasSetting(highermainmenu)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,960" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
 				<visible>Control.HasFocus(510) + ![String.IsEqual(Container(9000).ListItem.Property(id),favourites) | String.Contains(Container(9000).ListItem.Property(id),mymenu) | Skin.HasSetting(nodetailspanel)]</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>578</posy>
+					<left>0</left>
+					<top>578</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
@@ -660,8 +660,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<!-- Fundo -->
-					<posx>0</posx>
-					<posy>30</posy>
+					<left>0</left>
+					<top>30</top>
 					<width>1920</width>
 					<height>600</height>
 					<texture>details_back.png</texture>
@@ -671,8 +671,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<!-- Fundo -->
-					<posx>0</posx>
-					<posy>30</posy>
+					<left>0</left>
+					<top>30</top>
 					<width>1920</width>
 					<height>585</height>
 					<texture>details_back.png</texture>
@@ -682,8 +682,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<!-- Thumb video (not episode thumb) 2:3 -->
-					<posx>60</posx>
-					<posy>135</posy>
+					<left>60</left>
+					<top>135</top>
 					<width>250</width>
 					<height>375</height>
 					<aspectratio align="left" aligny="center">stretch</aspectratio>
@@ -694,8 +694,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<!-- EPG Icon livetv -->
-					<posx>60</posx>
-					<posy>135</posy>
+					<left>60</left>
+					<top>135</top>
 					<width>250</width>
 					<height>375</height>
 					<aspectratio align="left" aligny="center">keep</aspectratio>
@@ -706,8 +706,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<!-- Channel Icon livetv -->
-					<posx>60</posx>
-					<posy>135</posy>
+					<left>60</left>
+					<top>135</top>
 					<width>250</width>
 					<height>375</height>
 					<aspectratio align="left" aligny="center">keep</aspectratio>
@@ -718,8 +718,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<!-- Thumb audio -->
-					<posx>60</posx>
-					<posy>135</posy>
+					<left>60</left>
+					<top>135</top>
 					<width>375</width>
 					<height>375</height>
 					<aspectratio align="left" aligny="center">scale</aspectratio>
@@ -730,8 +730,8 @@ Group 602: Widgets
 				</control>
 				<control type="image">
 					<!-- Thumb addon -->
-					<posx>60</posx>
-					<posy>135</posy>
+					<left>60</left>
+					<top>135</top>
 					<width>375</width>
 					<height>375</height>
 					<aspectratio align="left" aligny="center">scale</aspectratio>
@@ -743,8 +743,8 @@ Group 602: Widgets
 				<control type="group">
 					<!-- Episode tvshow and MV thumb 16:9 -->
 					<control type="image">
-						<posx>30</posx>
-						<posy>120</posy>
+						<left>30</left>
+						<top>120</top>
 						<width>712</width>
 						<height>417</height>
 						<aspectratio align="left" aligny="center">scale</aspectratio>
@@ -752,8 +752,8 @@ Group 602: Widgets
 						<visible>!String.IsEmpty(Container(510).ListItem.Property(Thumbnail))</visible>
 					</control>
 					<control type="image">
-						<posx>52</posx>
-						<posy>141</posy>
+						<left>52</left>
+						<top>141</top>
 						<width>666</width>
 						<height>375</height>
 						<aspectratio align="left" aligny="center">scale</aspectratio>
@@ -762,13 +762,13 @@ Group 602: Widgets
 					</control>
 				</control>
 				<control type="group">
-					<posx>360</posx>
+					<left>360</left>
 					<animation effect="slide" end="112,0" condition="String.IsEqual(Container(9000).ListItem.Property(id),music) | String.Contains(Container(9000).ListItem.Property(id),apl) | String.Contains(Container(9000).ListItem.Property(id),programs)">Conditional</animation>
 					<animation effect="slide" end="405,0" condition="!String.IsEmpty(Container(510).ListItem.Property(Thumbnail))">Conditional</animation>
 					<control type="grouplist">
 						<!-- Etiquetas -->
-						<posx>0</posx>
-						<posy>128</posy>
+						<left>0</left>
+						<top>128</top>
 						<orientation>horizontal</orientation>
 						<itemgap>4</itemgap>
 						<visible>Control.HasFocus(510) | Control.HasFocus(5100)</visible>
@@ -924,16 +924,16 @@ Group 602: Widgets
 						</control>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>183</posy>
+						<left>0</left>
+						<top>183</top>
 						<width>825</width>
 						<height>38</height>
 						<texture>gradient_focus.png</texture>
 						<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>180</posy>
+						<left>0</left>
+						<top>180</top>
 						<width>825</width>
 						<height>3</height>
 						<align>left</align>
@@ -941,8 +941,8 @@ Group 602: Widgets
 					</control>
 					<control type="label">
 						<!-- Genres -->
-						<posx>8</posx>
-						<posy>183</posy>
+						<left>8</left>
+						<top>183</top>
 						<width>825</width>
 						<height>30</height>
 						<align>left</align>
@@ -954,8 +954,8 @@ Group 602: Widgets
 					</control>
 					<control type="label">
 						<!-- Type -->
-						<posx>8</posx>
-						<posy>183</posy>
+						<left>8</left>
+						<top>183</top>
 						<width>825</width>
 						<height>30</height>
 						<align>left</align>
@@ -966,8 +966,8 @@ Group 602: Widgets
 						<scroll>true</scroll>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>218</posy>
+						<left>0</left>
+						<top>218</top>
 						<width>825</width>
 						<height>3</height>
 						<align>left</align>
@@ -975,8 +975,8 @@ Group 602: Widgets
 					</control>
 					<control type="textbox">
 						<!-- Plot video / Description Music / Summary addons -->
-						<posx>8</posx>
-						<posy>225</posy>
+						<left>8</left>
+						<top>225</top>
 						<width>825</width>
 						<height>298</height>
 						<label>$INFO[Container(510).ListItem.Property(Plot)]$INFO[Container(510).ListItem.Plot]$INFO[Container(510).ListItem.Property(Summary)]</label>
@@ -985,8 +985,8 @@ Group 602: Widgets
 						<autoscroll delay="20000" time="3000" repeat="20000">!Skin.HasSetting(noallowscroll)</autoscroll>
 					</control>
 					<control type="progress">
-						<posx>8</posx>
-						<posy>530</posy>
+						<left>8</left>
+						<top>530</top>
 						<width>825</width>
 						<height>30</height>
 						<info>Container(510).ListItem.Progress</info>
@@ -1064,7 +1064,7 @@ Group 602: Widgets
 				<include condition="![String.IsEmpty(skin.string(weatherwidget)) | Skin.HasSetting(noweatherwidget)]">mf_weather</include>
 				<include condition="![String.IsEmpty(skin.string(pvrwidget)) | Skin.HasSetting(nopvrwidget)]">mf_contentpvr_tv</include>
 			</control>
-			<control type="group">  <!-- Library status -->
+			<control type="group">  <!-- Library status (skinsettings furniture B9017) -->
 				<!-- Status da biblioteca -->
 				<animation effect="slide" start="-750,0" end="0,0" time="500" delay="2000" tween="sine" easing="out" condition="Window.Previous(Startup)">WindowOpen</animation>
 				<animation effect="slide" start="-750,0" end="0,0" time="500" delay="1000" tween="sine" easing="out" condition="!Window.Previous(Startup)">WindowOpen</animation>
@@ -1076,8 +1076,8 @@ Group 602: Widgets
 				<visible>[String.IsEqual(Container(9000).ListItem.Property(id),movies) + Library.HasContent(Movies) | String.IsEqual(Container(9000).ListItem.Property(id),tvshows) + Library.HasContent(TVShows) | String.IsEqual(Container(9000).ListItem.Property(id),concerts) + Library.HasContent(MusicVideos) | String.IsEqual(Container(9000).ListItem.Property(id),music) + Library.HasContent(Music) | String.IsEqual(Container(9000).ListItem.Property(id),favourites) + !String.IsEmpty(Window(0).Property(Favourite.1.Name)) | String.Contains(Container(9000).ListItem.Property(id),vpl) | String.Contains(Container(9000).ListItem.Property(id),apl)] + ![Player.HasMedia + System.IdleTime(8) | Skin.HasSetting(nohometotals) | Control.HasFocus(510) | Skin.HasSetting(highertotals) + [Window.IsVisible(volumebar) | Window.IsVisible(notification) | Library.IsScanningVideo | Library.IsScanningMusic | Window.IsVisible(extendedprogressdialog)]]</visible>
 				<!-- 151 was 614 extendedprogress -->
 				<control type="image">
-					<posx>0</posx>
-					<posy>908</posy>
+					<left>0</left>
+					<top>908</top>
 					<width>750</width>
 					<height>39</height>
 					<texture>widgets_panel.png</texture>
@@ -1085,8 +1085,8 @@ Group 602: Widgets
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="label">
-					<posx>705</posx>
-					<posy>912</posy>
+					<left>30</left>
+					<top>912</top>
 					<width>675</width>
 					<height>30</height>
 					<align>right</align>
@@ -1098,7 +1098,7 @@ Group 602: Widgets
 					<scroll>true</scroll>
 				</control>
 			</control>
-			<control type="group">  <!-- date/weather -->
+			<control type="group">  <!-- date/weather (skinsettings furniture B9018 -->
 				<!-- Data e clima -->
 				<visible>![Skin.HasSetting(nohometime) | Skin.HasSetting(highertime) + [Window.IsVisible(volumebar) | Window.IsVisible(notification) | Library.IsScanningVideo | Library.IsScanningMusic | Window.IsVisible(extendedprogressdialog)]]</visible>
 				<animation effect="slide" start="1920,0" end="0,0" time="500" delay="1000" tween="sine" easing="out">WindowOpen</animation>
@@ -1106,8 +1106,8 @@ Group 602: Widgets
 				<animation effect="slide" start="0,0" end="0,-594" condition="Skin.HasSetting(highertime) + Skin.HasSetting(highermainmenu)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,-315" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
 				<control type="image">
-					<posx>1170</posx>
-					<posy>908</posy>
+					<left>1170</left>
+					<top>908</top>
 					<width>750</width>
 					<height>39</height>
 					<texture flipx="true">widgets_panel.png</texture>
@@ -1115,16 +1115,16 @@ Group 602: Widgets
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="image">
-					<posx>1215</posx>
-					<posy>879</posy>
+					<left>1215</left>
+					<top>879</top>
 					<width>94</width>
 					<height>94</height>
 					<aspectratio align="left" aligny="top">keep</aspectratio>
 					<texture diffuse="weather_mask.png" background="true">$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
 				</control>
 				<control type="label">
-					<posx>1328</posx>
-					<posy>912</posy>
+					<left>1328</left>
+					<top>912</top>
 					<width>570</width>
 					<height>30</height>
 					<align>left</align>
@@ -1138,8 +1138,8 @@ Group 602: Widgets
 					<animation effect="slide" start="0,0" end="-112,0" condition="![String.IsEqual(Weather.Plugin,weather.openweathermap.extended) | String.IsEqual(Weather.Plugin,weather.ozweather) | String.IsEqual(Weather.Plugin,weather.worldweatheronline) | String.IsEqual(Weather.Plugin,weather.wunderground) | String.IsEqual(Weather.Plugin,weather.yahoo) | String.IsEqual(Weather.Plugin,weather.weatherbit.io) | String.IsEqual(Weather.Plugin,weather.multi)]">Conditional</animation>
 				</control>
 				<control type="label">
-					<posx>1328</posx>
-					<posy>912</posy>
+					<left>1328</left>
+					<top>912</top>
 					<width>570</width>
 					<height>30</height>
 					<align>left</align>
@@ -1162,8 +1162,8 @@ Group 602: Widgets
 				<animation effect="slide" start="0,0" end="0,-592" condition="Skin.HasSetting(highertime) + Skin.HasSetting(highermainmenu)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,-315" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
 				<control type="image">
-					<posx>1388</posx>
-					<posy>777</posy>
+					<left>1388</left>
+					<top>777</top>
 					<width>750</width>
 					<height>42</height>
 					<texture flipx="true" flipy="true">widgets_panel.png</texture>
@@ -1171,8 +1171,8 @@ Group 602: Widgets
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="list" id="600">  <!--  player controls -->
-					<posx>1455</posx>
-					<posy>747</posy>
+					<left>1455</left>
+					<top>747</top>
 					<height>300</height>
 					<width>600</width>
 					<ondown>9000</ondown>
@@ -1186,7 +1186,7 @@ Group 602: Widgets
 					<focusposition>0</focusposition>
 					<itemlayout width="46" height="60">
 						<control type="image">
-							<posy>33</posy>
+							<top>33</top>
 							<width>36</width>
 							<height>36</height>
 							<info>ListItem.Icon</info>
@@ -1196,7 +1196,7 @@ Group 602: Widgets
 					</itemlayout>
 					<focusedlayout width="46" height="60">
 						<control type="image">
-							<posy>33</posy>
+							<top>33</top>
 							<width>36</width>
 							<height>36</height>
 							<info>ListItem.Icon</info>
@@ -1205,7 +1205,7 @@ Group 602: Widgets
 							<visible>!Control.HasFocus(600)</visible>
 						</control>
 						<control type="image">
-							<posy>33</posy>
+							<top>33</top>
 							<width>36</width>
 							<height>36</height>
 							<info>ListItem.Icon</info>
@@ -1322,8 +1322,8 @@ Group 602: Widgets
 				<animation effect="slide" start="0,0" end="0,-315" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
 				<visible>Control.HasFocus(510)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>908</posy>
+					<left>0</left>
+					<top>908</top>
 					<width>750</width>
 					<height>39</height>
 					<texture>widgets_panel.png</texture>
@@ -1331,8 +1331,8 @@ Group 602: Widgets
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="label">
-					<posx>705</posx>
-					<posy>912</posy>
+					<left>30</left>
+					<top>912</top>
 					<width>675</width>
 					<height>30</height>
 					<align>right</align>
@@ -1348,8 +1348,8 @@ Group 602: Widgets
 				<animation effect="slide" start="0,0" end="0,-315" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(highermainmenu)">Conditional</animation>
 				<visible>String.IsEqual(skin.string(defaultsettings),2)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>818</posy>
+					<left>0</left>
+					<top>818</top>
 					<width>1920</width>
 					<height>90</height>
 					<texture>$VAR[value_mainmenu_aux]</texture>
@@ -1357,8 +1357,8 @@ Group 602: Widgets
 				</control>
 				<control type="multiimage">
 					<!-- Barra de estilos -->
-					<posx>0</posx>
-					<posy>818</posy>
+					<left>0</left>
+					<top>818</top>
 					<width>1920</width>
 					<height>90</height>
 					<timeperimage>6000</timeperimage>
@@ -1368,8 +1368,8 @@ Group 602: Widgets
 					<colordiffuse>$VAR[value_mainmenu_styleglass]</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>818</posy>
+					<left>0</left>
+					<top>818</top>
 					<width>1920</width>
 					<height>1</height>
 					<texture>separator.png</texture>
@@ -1377,8 +1377,8 @@ Group 602: Widgets
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>908</posy>
+					<left>0</left>
+					<top>908</top>
 					<width>1920</width>
 					<height>1</height>
 					<texture>separator.png</texture>
@@ -1386,16 +1386,16 @@ Group 602: Widgets
 					<include>Animation_HomeGlass</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>774</posy>
+					<left>0</left>
+					<top>774</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>908</posy>
+					<left>0</left>
+					<top>908</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture flipy="true">shadow_h.png</texture>
@@ -1404,8 +1404,8 @@ Group 602: Widgets
 				<include condition="Skin.HasSetting(mainmenufixedlist)">MainMenuFixedList</include>
 				<include condition="!Skin.HasSetting(mainmenufixedlist)">MainMenuWrapList</include>
 				<control type="progress">
-					<posx>0</posx>
-					<posy>800</posy>
+					<left>0</left>
+					<top>800</top>
 					<width>1920</width>
 					<height>128</height>
 					<info>Player.Progress</info>
@@ -1415,8 +1415,8 @@ Group 602: Widgets
 					<visible>Player.HasMedia + System.IdleTime(8) + !VideoPlayer.Content(liveTV)</visible>
 				</control>
 				<control type="progress">
-					<posx>0</posx>
-					<posy>800</posy>
+					<left>0</left>
+					<top>800</top>
 					<width>1920</width>
 					<height>128</height>
 					<info2>PVR.TimeshiftProgressEpgStart</info2>
@@ -1427,8 +1427,8 @@ Group 602: Widgets
 					<visible>System.IdleTime(8) + VideoPlayer.Content(liveTV)</visible>
 				</control>
 				<control type="grouplist">	<!-- play  progress -->
-					<posx>0</posx>
-					<posy>807</posy>
+					<left>0</left>
+					<top>807</top>
 					<width>1920</width>
 					<height>105</height>
 					<itemgap>0</itemgap>
@@ -1480,8 +1480,8 @@ Group 602: Widgets
 					</control>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>818</posy>
+					<left>0</left>
+					<top>818</top>
 					<width>1920</width>
 					<height>92</height>
 					<aspectratio>stretch</aspectratio>
@@ -1489,8 +1489,8 @@ Group 602: Widgets
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>818</posy>
+					<left>0</left>
+					<top>818</top>
 					<width>1920</width>
 					<height>92</height>
 					<aspectratio>stretch</aspectratio>
@@ -1499,8 +1499,8 @@ Group 602: Widgets
 				</control>
 			</control>
 			<control type="button" id="5201">
-				<posx>1830</posx>
-				<posy>990</posy>
+				<left>1830</left>
+				<top>990</top>
 				<width>90</width>
 				<height>90</height>
 				<onclick>Skin.SetBool(submode)</onclick>

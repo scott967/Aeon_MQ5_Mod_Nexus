@@ -5,7 +5,7 @@
 <includes>
 	<!--##################################################################################   VISTA SHOWART- ID 60   ##################################################################################-->
 	<include name="ShowArtLabel">
-		<posx>0</posx>
+		<left>0</left>
 		<height>30</height>
 		<width>600</width>
 		<font>Font_18A</font>
@@ -28,8 +28,8 @@
 	</include>
 	<include name="ShowArt_Content">
 		<viewtype label="31821">list</viewtype>
-		<posx>90</posx>
-		<posy>796</posy>
+		<left>90</left>
+		<top>796</top>
 		<width>1740</width>
 		<height>450</height>
 		<pagecontrol>80</pagecontrol>
@@ -45,8 +45,8 @@
 		<itemlayout width="360" height="450">
 			<control type="image">
 				<!-- reflexo -->
-				<posx>0</posx>
-				<posy>172</posy>
+				<left>0</left>
+				<top>172</top>
 				<width>270</width>
 				<height>171</height>
 				<aspectratio align="center" aligny="top">stretch</aspectratio>
@@ -54,16 +54,16 @@
 			</control>
 			<control type="image">
 				<!-- clearlogo e clearart -->
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>270</width>
 				<height>171</height>
 				<texture fallback="aeon_logo_small.png" background="true">$VAR[value_logoandclearart]</texture>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
 			</control>
 			<control type="image">
-				<posx>228</posx>
-				<posy>128</posy>
+				<left>228</left>
+				<top>128</top>
 				<width>45</width>
 				<height>45</height>
 				<texture>$VAR[value_watchedstyle]</texture>
@@ -72,8 +72,8 @@
 				<visible>![Skin.HasSetting(nooverlays) | String.Contains(skin.string(stylewatched),2) | String.Contains(skin.string(stylewatched),3)] + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
 			</control>
 			<control type="image">
-				<posx>228</posx>
-				<posy>128</posy>
+				<left>228</left>
+				<top>128</top>
 				<width>45</width>
 				<height>45</height>
 				<texture flipy="true">$VAR[value_watchedstyle]</texture>
@@ -85,8 +85,8 @@
 		<focusedlayout width="360" height="450">
 			<control type="image">
 				<!-- reflexo -->
-				<posx>30</posx>
-				<posy>172</posy>
+				<left>30</left>
+				<top>172</top>
 				<width>270</width>
 				<height>171</height>
 				<aspectratio align="center" aligny="top">stretch</aspectratio>
@@ -95,8 +95,8 @@
 			</control>
 			<control type="image">
 				<!-- clearlogo e clearart -->
-				<posx>30</posx>
-				<posy>0</posy>
+				<left>30</left>
+				<top>0</top>
 				<width>270</width>
 				<height>171</height>
 				<texture fallback="aeon_logo_small.png" background="true">$VAR[value_logoandclearart]</texture>
@@ -104,8 +104,8 @@
 				<animation effect="zoom" start="100" end="125" center="158,172" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 			</control>
 			<control type="image">
-				<posx>258</posx>
-				<posy>128</posy>
+				<left>258</left>
+				<top>128</top>
 				<width>45</width>
 				<height>45</height>
 				<texture>$VAR[value_watchedstyle]</texture>
@@ -115,8 +115,8 @@
 				<visible>![Skin.HasSetting(nooverlays) | String.Contains(skin.string(stylewatched),2) | String.Contains(skin.string(stylewatched),3)] + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
 			</control>
 			<control type="image">
-				<posx>258</posx>
-				<posy>128</posy>
+				<left>258</left>
+				<top>128</top>
 				<width>45</width>
 				<height>45</height>
 				<texture flipy="true">$VAR[value_watchedstyle]</texture>
@@ -145,16 +145,16 @@
 				<animation effect="slide" start="0,0" end="0,-900" time="500" tween="sine" easing="out">Hidden</animation>
 				<visible>[Control.HasFocus(9960) | String.IsEqual(skin.string(showartvideopanel),alwayson) | String.IsEqual(skin.string(showartvideopanel),auto) + Control.IsVisible(9921)] + !String.IsEqual(ListItem.Label,..)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>84</posy>
+					<left>0</left>
+					<top>84</top>
 					<width>1920</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>128</posy>
+					<left>0</left>
+					<top>128</top>
 					<width>1920</width>
 					<height>795</height>
 					<texture flipy="true" diffuse="shadow_mask.png">darkgrey.png</texture>
@@ -162,15 +162,15 @@
 					<animation effect="fade" end="85" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>728</posx>
-					<posy>128</posy>
+					<left>728</left>
+					<top>128</top>
 					<width>3</width>
 					<height>652</height>
 					<texture>separator_v.png</texture>
 				</control>
 				<control type="grouplist">
-					<posx>90</posx>
-					<posy>156</posy>
+					<left>90</left>
+					<top>156</top>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
 					<visible>!Container.Content(addons)</visible>
@@ -204,15 +204,15 @@
 					</control>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>387</posy>
+					<left>0</left>
+					<top>387</top>
 					<width>728</width>
 					<height>3</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>90</posx>
-					<posy>405</posy>
+					<left>90</left>
+					<top>405</top>
 					<width>600</width>
 					<height>362</height>
 					<font>Font_18A</font>
@@ -220,15 +220,15 @@
 					<autoscroll delay="10000" time="2000" repeat="10000">!Skin.HasSetting(noallowscroll)</autoscroll>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>780</posy>
+					<left>0</left>
+					<top>780</top>
 					<width>1920</width>
 					<height>3</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="image">
-					<posx>772</posx>
-					<posy>96</posy>
+					<left>772</left>
+					<top>96</top>
 					<width>1042</width>
 					<height>720</height>
 					<aspectratio>keep</aspectratio>
@@ -241,8 +241,8 @@
 			<include condition="!Skin.HasSetting(showartfixedlist)">ShowArtWrapList</include>
 			<control type="scrollbar" id="80">
 				<include>ScrollBar_Horizontal</include>
-				<posx>458</posx>
-				<posy>920</posy>
+				<left>458</left>
+				<top>920</top>
 				<width>1005</width>
 				<onup>SetFocus(60)</onup>
 				<ondown>9920</ondown>

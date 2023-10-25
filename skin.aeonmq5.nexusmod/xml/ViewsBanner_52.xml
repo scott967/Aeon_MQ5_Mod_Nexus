@@ -41,8 +41,8 @@
 			<visible>Control.IsVisible(52)</visible>
 			<control type="panel" id="52">
 				<viewtype label="31811">Wide Icon</viewtype>
-				<posx>75</posx>
-				<posy>147</posy>
+				<left>75</left>
+				<top>147</top>
 				<width>1800</width>
 				<height>822</height>
 				<onleft>9900</onleft>
@@ -73,8 +73,8 @@
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
-							<posx>819</posx>
-							<posy>9</posy>
+							<left>819</left>
+							<top>9</top>
 							<width>60</width>
 							<height>60</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -95,8 +95,8 @@
 						<animation effect="zoom" center="auto" start="90" end="110" time="600" tween="back" easing="out" reversible="false" condition="Skin.HasSetting(bannerzoom)">Focus</animation>
 					</control>
 					<control type="image">
-						<posx>819</posx>
-						<posy>9</posy>
+						<left>819</left>
+						<top>9</top>
 						<width>60</width>
 						<height>60</height>
 						<texture>$VAR[value_watchedstyle]</texture>
@@ -119,16 +119,16 @@
 				<include>Banner_Plot</include>
 				<visible>!String.IsEqual(ListItem.Label,..)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>15</posy>
+					<left>0</left>
+					<top>15</top>
 					<width>750</width>
 					<height>38</height>
 					<texture>gradient_focus.png</texture>
 					<colordiffuse>$VAR[value_headercolor]</colordiffuse>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>8</posy>
+					<left>0</left>
+					<top>8</top>
 					<width>750</width>
 					<height>22</height>
 					<textcolor>FFFFFAF0</textcolor>
@@ -138,16 +138,16 @@
 					<visible>!String.IsEqual(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>45</posy>
+					<left>0</left>
+					<top>45</top>
 					<width>750</width>
 					<height>3</height>
 					<align>left</align>
 					<texture flipx="true">divider.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>0</posx>
-					<posy>52</posy>
+					<left>0</left>
+					<top>52</top>
 					<width>855</width>
 					<height>162</height>
 					<label>$VAR[value_plot]</label>
@@ -158,8 +158,8 @@
 			<control type="scrollbar" id="80">
 				<!--Banner-->
 				<include>ScrollBar_Vertical</include>
-				<posx>1860</posx>
-				<posy>138</posy>
+				<left>1860</left>
+				<top>138</top>
 				<height>822</height>
 				<onleft>52</onleft>
 				<onright>9920</onright>

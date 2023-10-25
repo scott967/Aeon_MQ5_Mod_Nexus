@@ -11,8 +11,8 @@
 			<animation effect="slide" end="0,1080" time="450" tween="sine" condition="!Control.HasFocus(132) + !ControlGroup(5000).HasFocus">WindowClose</animation>
 			<animation effect="slide" end="-749,0" time="450" tween="sine" easing="inout" condition="!Control.HasFocus(132) + !ControlGroup(5000).HasFocus">Conditional</animation>
 			<!-- <control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>2701</width>
 				<height>1080</height>
 				<texture>black.png</texture>
@@ -20,16 +20,16 @@
 				<include>Animation_VisibleChange</include>
 			</control> -->
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>2701</width>
 				<height>1080</height>
 				<texture fallback="black.png">$INFO[Window.Property(ImageFilter)]</texture>
 				<include>Animation_VisibleChange</include>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>2701</width>
 				<height>1080</height>
 				<animation effect="fade" start="100" end="60" time="0" condition="true">Conditional</animation>

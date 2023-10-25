@@ -12,15 +12,15 @@
 	<onunload>Dialog.Close(1107)</onunload><!-- custom Next Tracks -->
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<texture>hive_back.png</texture>
 		</control>
 		<control type="visualisation" id="2">	<!-- music -->
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
@@ -28,8 +28,8 @@
 			<visible>!PVR.IsPlayingRadio + [String.IsEqual(skin.string(vis_bg),fanartmix) | String.IsEqual(skin.string(vis_bg),slideshowmix) | String.IsEqual(skin.string(vis_bg),slideshowmosaicmix) | String.IsEqual(skin.string(vis_bg),vis)]</visible>
 		</control>
 		<control type="visualisation" id="2">	<!-- radio -->
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
@@ -59,8 +59,8 @@
 			<control type="group">
 			<visible>Skin.HasSetting(use_folderarts)</visible>
 			<control type="list" id="7043"><!-- check if lib path has extrafanart -->
-				<posx>-500</posx>
-				<posy>-500</posy>
+				<left>-500</left>
+				<top>-500</top>
 				<height>400</height>
 				<width>50</width>
 				<visible>Player.HasAudio</visible>
@@ -69,8 +69,8 @@
 				<content target="filemanager">$INFO[Player.FolderPath,,../extrafanart/]</content>
 			</control>
 			<control type="list" id="7044">	<!-- check if artist info has extrafanart note: if artist info entry is normalized it isn't found -->
-				<posx>-500</posx>
-				<posy>-500</posy>
+				<left>-500</left>
+				<top>-500</top>
 				<height>400</height>
 				<width>50</width>
 				<visible>Player.HasAudio</visible>
@@ -129,38 +129,38 @@
 				<control type="multiimage">
 					<!-- Artist SlideShow Mosaic 1 -->
 					<include>MosaicBG</include>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 				</control>
 				<control type="multiimage">
 					<!-- Artist SlideShow Mosaic 2 -->
 					<include>MosaicBG</include>
-					<posx>640</posx>
-					<posy>0</posy>
+					<left>640</left>
+					<top>0</top>
 				</control>
 				<control type="multiimage">
 					<!-- Artist SlideShow Mosaic 3 -->
 					<include>MosaicBG</include>
-					<posx>1280</posx>
-					<posy>0</posy>
+					<left>1280</left>
+					<top>0</top>
 				</control>
 				<control type="multiimage">
 					<!-- Artist SlideShow Mosaic 4 -->
 					<include>MosaicBG</include>
-					<posx>0</posx>
-					<posy>540</posy>
+					<left>0</left>
+					<top>540</top>
 				</control>
 				<control type="multiimage">
 					<!-- Artist SlideShow Mosaic 5 -->
 					<include>MosaicBG</include>
-					<posx>640</posx>
-					<posy>540</posy>
+					<left>640</left>
+					<top>540</top>
 				</control>
 				<control type="multiimage">
 					<!-- Artist SlideShow Mosaic 6 -->
 					<include>MosaicBG</include>
-					<posx>1280</posx>
-					<posy>540</posy>
+					<left>1280</left>
+					<top>540</top>
 				</control>
 			</control>
 			<control type="group" id="5046">
@@ -169,38 +169,38 @@
 				<control type="image">
 					<!-- Artist SlideShow Mosaic 1 -->
 					<include>MosaicBGNew</include>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 				</control>
 				<control type="image">
 					<!-- Artist SlideShow Mosaic 2 -->
 					<include>MosaicBGNew</include>
-					<posx>640</posx>
-					<posy>0</posy>
+					<left>640</left>
+					<top>0</top>
 				</control>
 				<control type="image">
 					<!-- Artist SlideShow Mosaic 3 -->
 					<include>MosaicBGNew</include>
-					<posx>1280</posx>
-					<posy>0</posy>
+					<left>1280</left>
+					<top>0</top>
 				</control>
 				<control type="image">
 					<!-- Artist SlideShow Mosaic 4 -->
 					<include>MosaicBGNew</include>
-					<posx>0</posx>
-					<posy>540</posy>
+					<left>0</left>
+					<top>540</top>
 				</control>
 				<control type="image">
 					<!-- Artist SlideShow Mosaic 5 -->
 					<include>MosaicBGNew</include>
-					<posx>640</posx>
-					<posy>540</posy>
+					<left>640</left>
+					<top>540</top>
 				</control>
 				<control type="image">
 					<!-- Artist SlideShow Mosaic 6 -->
 					<include>MosaicBGNew</include>
-					<posx>1280</posx>
-					<posy>540</posy>
+					<left>1280</left>
+					<top>540</top>
 				</control>
 			</control>
 			<control type="multiimage" id="5047">
@@ -222,8 +222,8 @@
 			<include>Animation_Fade</include>
 			<visible>!PVR.IsPlayingRadio</visible>
 			<control type="group">	<!-- default (only) layout -->
-				<posx>0</posx>
-				<posy>1160</posy>
+				<left>0</left>
+				<top>1160</top>
 				<animation effect="slide" start="0,0" end="-600,0" time="400" tween="cubic" easing="inout" condition="[String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) | String.Contains(Window(Visualisation).Property(ArtistSlideshow),update-slide)] +  String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,405" time="400" tween="cubic" easing="inout" condition="Window.IsVisible(musicosd) | Window.IsVisible(1106)">Conditional</animation><!-- 1106 custom osd music -->
 				<animation effect="slide" start="0,0" end="0,450" time="700" tween="cubic" easing="out" condition="Skin.HasSetting(novisfurniture)">Conditional</animation>
@@ -232,31 +232,31 @@
 				<animation effect="slide" start="0,-450" end="0,0" time="400" tween="cubic" easing="in" delay="400">WindowClose</animation>
 				<visible>String.IsEqual(skin.string(vis_layout),default)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>-78</posy>
+					<left>0</left>
+					<top>-78</top>
 					<width>2520</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>-123</posy>
+					<left>0</left>
+					<top>-123</top>
 					<height>555</height>
 					<width>2520</width>
 					<texture>details_back.png</texture>
 					<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 				</control>
 				<control type="group">
-					<posx>1230</posx>
+					<left>1230</left>
 					<visible>Player.HasAudio</visible>
 					<animation effect="slide" start="0,0" end="210,0" time="800" delay="3000" tween="sine" easing="inout" condition="Player.HasAudio">Conditional</animation>
 					<animation effect="slide" end="-210,0" time="800" tween="sine" easing="inout" condition="Skin.HasSetting(noviscdart)">Conditional</animation>
 					<animation effect="fade" start="100" end="0,0" time="300" delay="500" condition="Skin.HasSetting(noviscdart)">Conditional</animation>
 					<control type="image">
 						<include>Animation_CDart</include>
-						<posx>0</posx>
-						<posy>-30</posy>
+						<left>0</left>
+						<top>-30</top>
 						<width>525</width>
 						<height>396</height>
 						<texture diffuse="cdart_diffuse.png" background="true">$VAR[value_audiodisc]</texture>
@@ -264,16 +264,16 @@
 					</control>
 				</control>
 				<control type="image">
-					<posx>1288</posx>
-					<posy>-33</posy>
+					<left>1288</left>
+					<top>-33</top>
 					<width>45</width>
 					<height>405</height>
 					<texture flipx="true">shadow.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1334</posx>
-					<posy>-33</posy>
+					<left>1334</left>
+					<top>-33</top>
 					<width>540</width>
 					<height>405</height>
 					<texture flipx="true">shadow_mask_v.png</texture>
@@ -281,8 +281,8 @@
 					<aspectratio align="left">stretch</aspectratio>
 				</control>
 				<control type="image">
-					<posx>1335</posx>
-					<posy>-30</posy>
+					<left>1335</left>
+					<top>-30</top>
 					<width>525</width>
 					<height>396</height>
 					<fadetime>200</fadetime>
@@ -291,8 +291,8 @@
 					<visible>!String.IsEmpty(Player.Art(album.thumb))</visible>
 				</control>
 				<control type="image">
-					<posx>1335</posx>
-					<posy>-30</posy>
+					<left>1335</left>
+					<top>-30</top>
 					<width>525</width>
 					<height>396</height>
 					<fadetime>200</fadetime>
@@ -301,8 +301,8 @@
 					<visible>String.IsEmpty(Player.Art(album.thumb))</visible>
 				</control>
 				<control type="image">
-					<posx>58</posx>
-					<posy>-33</posy>
+					<left>58</left>
+					<top>-33</top>
 					<width>540</width>
 					<height>405</height>
 					<texture>shadow_mask_v.png</texture>
@@ -310,16 +310,16 @@
 					<aspectratio align="right">stretch</aspectratio>
 				</control>
 				<control type="image">
-					<posx>598</posx>
-					<posy>-33</posy>
+					<left>598</left>
+					<top>-33</top>
 					<width>45</width>
 					<height>405</height>
 					<texture>shadow.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="multiimage">
-					<posx>58</posx>
-					<posy>-30</posy>
+					<left>58</left>
+					<top>-30</top>
 					<width>540</width>
 					<height>396</height>
 					<timeperimage>5000</timeperimage>
@@ -330,8 +330,8 @@
 					<visible>String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))</visible>
 				</control>
 				<control type="image">
-					<posx>58</posx>
-					<posy>-30</posy>
+					<left>58</left>
+					<top>-30</top>
 					<width>540</width>
 					<height>396</height>
 					<fadetime>FanartCrossFadeTime</fadetime>
@@ -340,8 +340,8 @@
 					<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>-15</posy>
+					<left>0</left>
+					<top>-15</top>
 					<width>300</width>
 					<height>90</height>
 					<texture fallback="transparent.png" background="true">$INFO[Player.Art(artist.clearlogo)]</texture>
@@ -350,8 +350,8 @@
 					<animation effect="fade" end="60" condition="true">Conditional</animation>
 				</control>
 				<control type="label">  <!-- check this location -->
-					<posx>50</posx>
-					<posy>-105</posy>
+					<left>50</left>
+					<top>-105</top>
 					<height>45</height>
 					<width>1820</width>
 					<align>center</align>
@@ -362,8 +362,8 @@
 					<label>$INFO[MusicPlayer.Property(Role.Composer),[UPPERCASE]$LOCALIZE[29903][/UPPERCASE]: , | ]$INFO[MusicPlayer.Property(Role.Orchestra),[UPPERCASE]$LOCALIZE[38034][/UPPERCASE]: , | ]$INFO[MusicPlayer.Property(Role.Conductor),[UPPERCASE]$LOCALIZE[29905][/UPPERCASE]: , | ]$INFO[MusicPlayer.Property(Role.Arranger),[UPPERCASE]$LOCALIZE[38037][/UPPERCASE]: ]</label>
 				</control>
 				<control type="label">
-					<posx>622</posx>
-					<posy>-50</posy>
+					<left>622</left>
+					<top>-50</top>
 					<width>690</width>
 					<height>45</height>
 					<align>center</align>
@@ -374,8 +374,8 @@
 					<visible>!Skin.HasSetting(viz_artist_sortname) | String.IsEmpty(MusicPlayer.Property(Artist_Sortname))</visible>
 				</control>
 				<control type="fadelabel">
-					<posx>622</posx>
-					<posy>-50</posy>
+					<left>622</left>
+					<top>-50</top>
 					<width>690</width>
 					<height>45</height>
 					<align>center</align>
@@ -390,8 +390,8 @@
 					<visible>Skin.HasSetting(viz_artist_sortname) + !String.IsEmpty(MusicPlayer.Property(Artist_Sortname))</visible>
 				</control>
 				<control type="fadelabel">
-					<posx>622</posx>
-					<posy>10</posy>
+					<left>622</left>
+					<top>10</top>
 					<width>690</width>
 					<height>30</height>
 					<align>center</align>
@@ -405,15 +405,15 @@
 					<scrollspeed>25</scrollspeed>
 				</control>
 				<control type="image">
-					<posx>622</posx>
-					<posy>72</posy>
+					<left>622</left>
+					<top>72</top>
 					<width>690</width>
 					<height>3</height>
 					<texture>divider.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>622</posx>
-					<posy>84</posy>
+					<left>622</left>
+					<top>84</top>
 					<width>690</width>
 					<height>198</height>
 					<font>Font_18A</font>
@@ -422,31 +422,31 @@
 					<autoscroll delay="20000" time="6000" repeat="20000">!Skin.HasSetting(noallowscroll)</autoscroll>
 				</control>
 				<control type="image">
-					<posx>622</posx>
-					<posy>288</posy>
+					<left>622</left>
+					<top>288</top>
 					<width>666</width>
 					<height>3</height>
 					<texture>divider.png</texture>
 				</control>
 				<control type="image">
-					<posx>607</posx>
-					<posy>278</posy>
+					<left>607</left>
+					<top>278</top>
 					<width>145</width>
 					<height>60</height>
 					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					<texture>$INFO[MusicPlayer.Codec,flags/musiccodec/,.png]</texture>
 				</control>
 				<control type="image">
-					<posx>1217</posx>
-					<posy>278</posy>
+					<left>1217</left>
+					<top>278</top>
 					<width>145</width>
 					<height>60</height>
 					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					<texture>$INFO[MusicPlayer.Channels,flags/audiochannels/,ch.png]</texture>
 				</control>
 				<control type="label">
-					<posx>758</posx>
-					<posy>289</posy>
+					<left>758</left>
+					<top>289</top>
 					<width>554</width>
 					<height>36</height>
 					<align>center</align>
@@ -457,8 +457,8 @@
 					<visible>!String.Contains(Skin.Font,massive)</visible>
 				</control>
 				<control type="label">
-					<posx>690</posx>
-					<posy>289</posy>
+					<left>690</left>
+					<top>289</top>
 					<width>554</width>
 					<height>36</height>
 					<align>center</align>
@@ -469,16 +469,16 @@
 					<visible>String.Contains(Skin.Font,massive)</visible>
 				</control>
 				<control type="progress">
-					<posx>690</posx>
-					<posy>328</posy>
+					<left>690</left>
+					<top>328</top>
 					<width>554</width>
 					<height>34</height>
 					<info>Player.Progress</info>
 					<animation effect="fade" end="80" condition="true">Conditional</animation>
 				</control>
 				<control type="label">
-					<posx>690</posx>
-					<posy>327</posy>
+					<left>690</left>
+					<top>327</top>
 					<width>554</width>
 					<height>36</height>
 					<align>center</align>
@@ -494,8 +494,8 @@
 			<include>Animation_Fade</include>
 			<visible>PVR.IsPlayingRadio</visible>
 			<control type="group">	<!-- default (only) layout -->
-				<posx>0</posx>
-				<posy>1160</posy>
+				<left>0</left>
+				<top>1160</top>
 				<animation effect="slide" start="0,0" end="-600,0" time="400" tween="cubic" easing="inout" condition="[String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) | String.Contains(Window(Visualisation).Property(ArtistSlideshow),update-slide)] +  String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,405" time="400" tween="cubic" easing="inout" condition="Window.IsVisible(musicosd) | Window.IsVisible(1106)">Conditional</animation><!-- 1106 custom osd music -->
 				<animation effect="slide" start="0,0" end="0,450" time="700" tween="cubic" easing="out" condition="Skin.HasSetting(novisfurnitureradio)">Conditional</animation>
@@ -503,31 +503,31 @@
 				<animation effect="slide" start="0,1080" end="0,-450" time="700" tween="cubic" easing="out" delay="400">WindowOpen</animation>
 				<animation effect="slide" start="0,-450" end="0,0" time="400" tween="cubic" easing="in" delay="400">WindowClose</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>-78</posy>
+					<left>0</left>
+					<top>-78</top>
 					<width>2520</width>
 					<height>45</height>
 					<texture>shadow_h.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>-123</posy>
+					<left>0</left>
+					<top>-123</top>
 					<height>555</height>
 					<width>2520</width>
 					<texture>details_back.png</texture>
 					<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 				</control>
 				<control type="group">
-					<posx>1230</posx>
+					<left>1230</left>
 					<visible>Player.HasAudio</visible>
 					<animation effect="slide" start="0,0" end="210,0" time="800" delay="3000" tween="sine" easing="inout" condition="Player.HasAudio">Conditional</animation>
 					<animation effect="slide" end="-210,0" time="800" tween="sine" easing="inout" condition="Skin.HasSetting(noviscdart)">Conditional</animation>
 					<animation effect="fade" start="100" end="0,0" time="300" delay="500" condition="Skin.HasSetting(noviscdart)">Conditional</animation>
 					<control type="image">
 						<include>Animation_CDart</include>
-						<posx>0</posx>
-						<posy>-30</posy>
+						<left>0</left>
+						<top>-30</top>
 						<width>525</width>
 						<height>396</height>
 						<texture diffuse="cdart_diffuse.png" background="true">$VAR[value_audiodisc]</texture>
@@ -535,16 +535,16 @@
 					</control>
 				</control>
 				<control type="image">
-					<posx>1288</posx>
-					<posy>-33</posy>
+					<left>1288</left>
+					<top>-33</top>
 					<width>45</width>
 					<height>405</height>
 					<texture flipx="true">shadow.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>1334</posx>
-					<posy>-33</posy>
+					<left>1334</left>
+					<top>-33</top>
 					<width>540</width>
 					<height>405</height>
 					<texture flipx="true">shadow_mask_v.png</texture>
@@ -552,8 +552,8 @@
 					<aspectratio align="left">stretch</aspectratio>
 				</control>
 				<control type="image">
-					<posx>1335</posx>
-					<posy>-30</posy>
+					<left>1335</left>
+					<top>-30</top>
 					<width>525</width>
 					<height>396</height>
 					<fadetime>200</fadetime>
@@ -562,8 +562,8 @@
 					<aspectratio align="left">keep</aspectratio>
 				</control>
 				<control type="image">
-					<posx>58</posx>
-					<posy>-33</posy>
+					<left>58</left>
+					<top>-33</top>
 					<width>540</width>
 					<height>405</height>
 					<texture>shadow_mask_v.png</texture>
@@ -571,16 +571,16 @@
 					<aspectratio align="right">stretch</aspectratio>
 				</control>
 				<control type="image">
-					<posx>598</posx>
-					<posy>-33</posy>
+					<left>598</left>
+					<top>-33</top>
 					<width>45</width>
 					<height>405</height>
 					<texture>shadow.png</texture>
 					<colordiffuse>C3FFFFFF</colordiffuse>
 				</control>
 				<control type="multiimage">
-					<posx>58</posx>
-					<posy>-30</posy>
+					<left>58</left>
+					<top>-30</top>
 					<width>540</width>
 					<height>396</height>
 					<timeperimage>5000</timeperimage>
@@ -590,8 +590,8 @@
 					<aspectratio align="right">keep</aspectratio>
 				</control>
 				<control type="label">  <!-- check this location -->
-					<posx>50</posx>
-					<posy>-105</posy>
+					<left>50</left>
+					<top>-105</top>
 					<height>45</height>
 					<width>1820</width>
 					<align>center</align>
@@ -602,8 +602,8 @@
 					<label>$INFO[MusicPlayer.Property(Role.Composer),[UPPERCASE]$LOCALIZE[29903][/UPPERCASE]: , | ]$INFO[MusicPlayer.Property(Role.Orchestra),[UPPERCASE]$LOCALIZE[38034][/UPPERCASE]: , | ]$INFO[MusicPlayer.Property(Role.Conductor),[UPPERCASE]$LOCALIZE[29905][/UPPERCASE]: , | ]$INFO[MusicPlayer.Property(Role.Arranger),[UPPERCASE]$LOCALIZE[38037][/UPPERCASE]: ]</label>
 				</control>
 				<control type="label">
-					<posx>622</posx>
-					<posy>-50</posy>
+					<left>622</left>
+					<top>-50</top>
 					<width>690</width>
 					<height>45</height>
 					<align>center</align>
@@ -613,15 +613,15 @@
 					<scroll>true</scroll>
 				</control>
 				<control type="image">
-					<posx>622</posx>
-					<posy>72</posy>
+					<left>622</left>
+					<top>72</top>
 					<width>690</width>
 					<height>3</height>
 					<texture>divider.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>622</posx>
-					<posy>84</posy>
+					<left>622</left>
+					<top>84</top>
 					<width>690</width>
 					<height>198</height>
 					<font>Font_18A</font>
@@ -630,8 +630,8 @@
 					<autoscroll delay="20000" time="6000" repeat="20000">!Skin.HasSetting(noallowscroll)</autoscroll>
 				</control>
 				<control type="label">
-					<posx>622</posx>
-					<posy>10</posy>
+					<left>622</left>
+					<top>10</top>
 					<width>690</width>
 					<height>30</height>
 					<align>center</align>
@@ -641,31 +641,31 @@
 					<scroll>true</scroll>
 				</control>
 				<control type="image">
-					<posx>622</posx>
-					<posy>288</posy>
+					<left>622</left>
+					<top>288</top>
 					<width>666</width>
 					<height>3</height>
 					<texture>divider.png</texture>
 				</control>
 				<control type="image">
-					<posx>607</posx>
-					<posy>278</posy>
+					<left>607</left>
+					<top>278</top>
 					<width>145</width>
 					<height>60</height>
 					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					<texture>$INFO[MusicPlayer.Codec,flags/musiccodec/,.png]</texture>
 				</control>
 				<control type="image">
-					<posx>1217</posx>
-					<posy>278</posy>
+					<left>1217</left>
+					<top>278</top>
 					<width>145</width>
 					<height>60</height>
 					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					<texture>$INFO[MusicPlayer.Channels,flags/audiochannels/,ch.png]</texture>
 				</control>
 				<control type="label">
-					<posx>758</posx>
-					<posy>289</posy>
+					<left>758</left>
+					<top>289</top>
 					<width>554</width>
 					<height>36</height>
 					<align>center</align>
@@ -676,8 +676,8 @@
 					<visible>!String.Contains(Skin.Font,massive)</visible>
 				</control>
 				<control type="label">
-					<posx>690</posx>
-					<posy>289</posy>
+					<left>690</left>
+					<top>289</top>
 					<width>554</width>
 					<height>36</height>
 					<align>center</align>
@@ -688,8 +688,8 @@
 					<visible>String.Contains(Skin.Font,massive)</visible>
 				</control>
 				<control type="progress">
-					<posx>690</posx>
-					<posy>328</posy>
+					<left>690</left>
+					<top>328</top>
 					<width>554</width>
 					<height>34</height>
 					<info>Player.Progress</info>
@@ -697,8 +697,8 @@
 					<visible>!PVR.IsTimeshift</visible>
 				</control>
 				<control type="progress">
-					<posx>690</posx>
-					<posy>328</posy>
+					<left>690</left>
+					<top>328</top>
 					<width>554</width>
 					<height>34</height>
 					<info>PVR.TimeShiftProgress</info>
@@ -706,8 +706,8 @@
 					<visible>PVR.IsTimeshift</visible>
 				</control>
 				<control type="label">
-					<posx>690</posx>
-					<posy>327</posy>
+					<left>690</left>
+					<top>327</top>
 					<width>554</width>
 					<height>36</height>
 					<align>center</align>
@@ -719,8 +719,8 @@
 					<visible>!PVR.IsTimeshift</visible>
 				</control>
 				<control type="label">
-					<posx>690</posx>
-					<posy>327</posy>
+					<left>690</left>
+					<top>327</top>
 					<width>554</width>
 					<height>36</height>
 					<align>center</align>

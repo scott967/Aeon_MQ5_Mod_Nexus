@@ -10,14 +10,14 @@
 	<!-- Widget Common Values -->
 	<include name="TWC.ScrollbarCommon">
 		<include>ScrollBar_Vertical</include>
-		<posx>945</posx>
-		<posy>75</posy>
+		<left>945</left>
+		<top>75</top>
 		<width>98</width>
 		<height>698</height>
 	</include>
 	<include name="TWC.LoadingLabelCommon">
-		<posx>8</posx>
-		<posy>398</posy>
+		<left>8</left>
+		<top>398</top>
 		<width>1200</width>
 		<height>120</height>
 		<font>Font_15</font>
@@ -32,8 +32,8 @@
 		<include>TWC.Current.DailyWeekendBG</include>
 	</include>
 	<include name="TWC.Current.DailyWeekendBG">
-		<posy>0</posy>
-		<posx>0</posx>
+		<top>0</top>
+		<left>0</left>
 		<width>171</width>
 		<height>417</height>
 		<colordiffuse>30FFFFFF</colordiffuse>
@@ -42,35 +42,35 @@
 		<include>TWC.Current.DailyDayLabelsCommon</include>
 	</include>
 	<include name="TWC.Current.DailyPrecipitationCommon">
-		<posy>210</posy>
+		<top>210</top>
 		<height>45</height>
 		<textcolor>FFFFFAF0</textcolor>
 		<font>Font_23</font>
 		<include>TWC.Current.DailyDayLabelsCommon</include>
 	</include>
 	<include name="TWC.Current.DailyHighLabelsCommon">
-		<posy>285</posy>
+		<top>285</top>
 		<height>45</height>
 		<textcolor>FFFF0000</textcolor>
 		<font>Font_23</font>
 		<include>TWC.Current.DailyDayLabelsCommon</include>
 	</include>
 	<include name="TWC.Current.DailyLowLabelsCommon">
-		<posy>360</posy>
+		<top>360</top>
 		<height>45</height>
 		<textcolor>FF00AFFF</textcolor>
 		<font>Font_20</font>
 		<include>TWC.Current.DailyDayLabelsCommon</include>
 	</include>
 	<include name="TWC.Current.DailyIconCommon">
-		<posy>90</posy>
+		<top>90</top>
 		<height>108</height>
 		<aspectratio>keep</aspectratio>
 		<include>TWC.Current.DailyDayLabelsCommon</include>
 	</include>
 	<include name="TWC.Current.DailyDayLabelsCommon">
-		<posx>-8</posx>
-		<posy>8</posy>
+		<left>-8</left>
+		<top>8</top>
 		<height>30</height>
 		<width>180</width>
 		<align>center</align>
@@ -79,13 +79,13 @@
 		<font>Font_15</font>
 	</include>
 	<include name="TWC.Current.DailyDateLabelsCommon">
-		<posy>38</posy>
+		<top>38</top>
 		<font>Font_15</font>
 		<include>TWC.Current.DailyDayLabelsCommon</include>
 	</include>
 	<include name="TWC.Current.ConditionLabelsCommon">
-		<posx>0</posx>
-		<posy>-135</posy>
+		<left>-450</left>
+		<top>-135</top>
 		<height>45</height>
 		<width>450</width>
 		<font>Font_15</font>
@@ -104,19 +104,19 @@
 <!-- Current weather view all providers Kodi defaults  -->
 	<include name="TWC.Current">
 		<control type="group">
-			<posx>435</posx>
-			<posy>90</posy>
+			<left>435</left>
+			<top>90</top>
 			<visible>String.IsEqual(Window.Property(Weather.CurrentView),current)</visible>
 			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 			<control type="group">
-				<posx>-45</posx>
-				<posy>-30</posy>
+				<left>-45</left>
+				<top>-30</top>
 				<control type="group">
-					<posx>15</posx>
+					<left>15</left>
 					<control type="label">
 						<description>current temp value</description>
-						<posx>15</posx>
-						<posy>120</posy>
+						<left>15</left>
+						<top>120</top>
 						<width>270</width>
 						<height>60</height>
 						<font>Font_50</font>
@@ -127,8 +127,8 @@
 					</control>
 					<control type="label">
 						<!-- sys Locality of data -->
-						<posx>75</posx>
-						<posy>68</posy>
+						<left>75</left>
+						<top>68</top>
 						<width>495</width>
 						<height>38</height>
 						<align>left</align>
@@ -141,8 +141,8 @@
 					</control>
 					<control type="label">
 						<description>current feels like label</description>
-						<posx>45</posx>
-						<posy>202</posy>
+						<left>45</left>
+						<top>202</top>
 						<width>210</width>
 						<height>60</height>
 						<font>Font_18</font>
@@ -153,8 +153,8 @@
 					</control>
 					<control type="label">
 						<description>sys current feels like value</description>
-						<posx>45</posx>
-						<posy>256</posy>
+						<left>45</left>
+						<top>256</top>
 						<width>210</width>
 						<height>60</height>
 						<font>Font_23</font>
@@ -167,8 +167,8 @@
 				</control>
 				<control type="image">
 					<description>current weather icon</description>
-					<posx>270</posx>
-					<posy>52</posy>
+					<left>270</left>
+					<top>52</top>
 					<width>345</width>
 					<height>270</height>
 					<info>Window.Property(Current.ConditionIcon)</info>
@@ -176,8 +176,8 @@
 				</control>
 				<control type="label">
 					<description>sys current condition label</description>
-					<posx>68</posx>
-					<posy>360</posy>
+					<left>68</left>
+					<top>360</top>
 					<width>510</width>
 					<height>75</height>
 					<label>$INFO[Window.Property(Current.Condition)]</label>
@@ -187,16 +187,16 @@
 					<aligny>top</aligny>
 				</control>
 				<control type="image">
-					<posx>622</posx>
-					<posy>60</posy>
+					<left>622</left>
+					<top>60</top>
 					<width>3</width>
 					<height>420</height>
 					<texture>line_v.png</texture>
 				</control>
 			</control>
 			<control type="grouplist">
-				<posx>417</posx>
-				<posy>30</posy>
+				<left>417</left>
+				<top>30</top>
 				<width>450</width>
 				<itemgap>0</itemgap>
 				<orientation>vertical</orientation>
@@ -259,8 +259,8 @@
 				</control>
 			</control>
 			<control type="grouplist">
-				<posx>878</posx>
-				<posy>30</posy>
+				<left>878</left>
+				<top>30</top>
 				<width>450</width>
 				<itemgap>0</itemgap>
 				<orientation>vertical</orientation>
@@ -330,14 +330,14 @@
 			</control>
 			<control type="label">
 				<description>Loading label</description>
-				<posy>600</posy>
+				<top>600</top>
 				<include>TWC.LoadingLabelCommon</include>
 				<visible>[[String.IsEmpty(Window.Property(Daily.IsFetched)) + !Skin.HasSetting(TWC.ShowCurrentHourly)] | [String.IsEmpty(Window.Property(Hourly.IsFetched)) + Skin.HasSetting(TWC.ShowCurrentHourly)]] + [!String.Contains(Window.Property(WeatherProvider),Yahoo) | String.Contains(Window.Property(WeatherProvider),Multi)]</visible>
 			</control>
 			<!-- Daily forecast -->
 			<control type="grouplist">
-				<posx>-16</posx>
-				<posy>458</posy>
+				<left>-16</left>
+				<top>458</top>
 				<width>1260</width>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
@@ -710,8 +710,8 @@
 			</control>
 			<!-- Hourly forecast -->
 			<control type="grouplist">
-				<posx>-16</posx>
-				<posy>458</posy>
+				<left>-16</left>
+				<top>458</top>
 				<width>1260</width>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
@@ -1048,8 +1048,8 @@
 		<include>TWC.Daily.DailyWeekendBG</include>
 	</include>
 	<include name="TWC.Daily.DailyWeekendBG">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>238</width>
 		<height>405</height>
 		<colordiffuse>30FFFFFF</colordiffuse>
@@ -1059,8 +1059,8 @@
 	</include>
 	<include name="TWC.Daily.DailyHorizontalSeparator">
 		<control type="image">
-			<posx>-30</posx>
-			<posy>402</posy>
+			<left>-30</left>
+			<top>402</top>
 			<width>1185</width>
 			<height>3</height>
 			<texture>line.png</texture>
@@ -1069,8 +1069,8 @@
 	<include name="TWC.Daily.DailyPrecipitationLabel">
 		<control type="fadelabel">
 			<description>precip label</description>
-			<posx>120</posx>
-			<posy>94</posy>
+			<left>120</left>
+			<top>94</top>
 			<width>90</width>
 			<align>center</align>
 			<aligny>center</aligny>
@@ -1082,37 +1082,37 @@
 		</control>
 	</include>
 	<include name="TWC.Daily.DailyPrecipitationCommon">
-		<posx>60</posx>
-		<posy>123</posy>
+		<left>60</left>
+		<top>123</top>
 		<height>45</height>
 		<textcolor>$VAR[value_headercolor]</textcolor>
 		<font>Font_23</font>
 		<include>TWC.Daily.DailyDayLabelsCommon</include>
 	</include>
 	<include name="TWC.Daily.DailyHighLabelsCommon">
-		<posy>278</posy>
+		<top>278</top>
 		<height>45</height>
 		<font>Font_15</font>
 		<include>TWC.Daily.DailyDayLabelsCommon</include>
 	</include>
 	<include name="TWC.Daily.DailyLowLabelsCommon">
-		<posy>345</posy>
+		<top>345</top>
 		<height>45</height>
 		<textcolor>$VAR[value_headercolor]</textcolor>
 		<font>Font_23</font>
 		<include>TWC.Daily.DailyDayLabelsCommon</include>
 	</include>
 	<include name="TWC.Daily.DailyIconCommon">
-		<posx>-8</posx>
-		<posy>90</posy>
+		<left>-8</left>
+		<top>90</top>
 		<width>150</width>
 		<height>108</height>
 		<aspectratio>keep</aspectratio>
 		<include>TWC.Daily.DailyDayLabelsCommon</include>
 	</include>
 	<include name="TWC.Daily.DailyOutlook">
-		<posx>8</posx>
-		<posy>202</posy>
+		<left>8</left>
+		<top>202</top>
 		<width>224</width>
 		<height>68</height>
 		<aligny>top</aligny>
@@ -1120,8 +1120,8 @@
 		<include>TWC.Daily.DailyDayLabelsCommon</include>
 	</include>
 	<include name="TWC.Daily.DailyDayLabelsCommon">
-		<posx>0</posx>
-		<posy>8</posy>
+		<left>0</left>
+		<top>8</top>
 		<height>30</height>
 		<width>238</width>
 		<align>center</align>
@@ -1131,13 +1131,13 @@
 		<wrapmultiline>true</wrapmultiline>
 	</include>
 	<include name="TWC.Daily.DailyDateLabelsCommon">
-		<posy>38</posy>
+		<top>38</top>
 		<font>Font_15</font>
 		<include>TWC.Daily.DailyDayLabelsCommon</include>
 	</include>
 	<include name="TWC.Daily.HeadingCommon">
-		<posx>0</posx>
-		<posy>-15</posy>
+		<left>0</left>
+		<top>-15</top>
 		<width>165</width>
 		<height>60</height>
 		<font>Font_15</font>
@@ -1147,8 +1147,8 @@
 		<wrapmultiline>true</wrapmultiline>
 	</include>
 	<include name="TWC.Daily.ListDay">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>165</width>
 		<height>120</height>
 		<font>Font_15</font>
@@ -1158,16 +1158,16 @@
 	</include>
 	<include name="TWC.Daily.ListNoFocusTexture">
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1178</width>
 			<height>120</height>
 			<texture border="5">darkgrey.png</texture>
 		</control>
 	</include>
 	<include name="TWC.Daily.ListConditionTexture">
-		<posx>180</posx>
-		<posy>0</posy>
+		<left>180</left>
+		<top>0</top>
 		<width>330</width>
 		<height>120</height>
 		<colordiffuse>33FFFFFF</colordiffuse>
@@ -1178,8 +1178,8 @@
 		<include>TWC.Daily.ListConditionTexture</include>
 	</include>
 	<include name="TWC.Daily.ListOutlookIcon">
-		<posx>195</posx>
-		<posy>0</posy>
+		<left>195</left>
+		<top>0</top>
 		<width>96</width>
 		<height>120</height>
 		<align>center</align>
@@ -1187,8 +1187,8 @@
 		<aspectratio>keep</aspectratio>
 	</include>
 	<include name="TWC.Daily.ListOutlook">
-		<posx>315</posx>
-		<posy>0</posy>
+		<left>315</left>
+		<top>0</top>
 		<width>180</width>
 		<height>120</height>
 		<font>Font_15</font>
@@ -1198,8 +1198,8 @@
 		<wrapmultiline>true</wrapmultiline>
 	</include>
 	<include name="TWC.Daily.ListHighTemp">
-		<posx>510</posx>
-		<posy>0</posy>
+		<left>510</left>
+		<top>0</top>
 		<width>135</width>
 		<height>120</height>
 		<font>Font_15</font>
@@ -1217,8 +1217,8 @@
 		<include>TWC.Daily.ListLowTempTexture</include>
 	</include>
 	<include name="TWC.Daily.ListLowTemp">
-		<posx>645</posx>
-		<posy>0</posy>
+		<left>645</left>
+		<top>0</top>
 		<width>135</width>
 		<height>120</height>
 		<font>Font_15</font>
@@ -1227,8 +1227,8 @@
 		<aligny>center</aligny>
 	</include>
 	<include name="TWC.Daily.ListPrecipitation">
-		<posx>780</posx>
-		<posy>0</posy>
+		<left>780</left>
+		<top>0</top>
 		<width>135</width>
 		<height>120</height>
 		<font>Font_15</font>
@@ -1237,8 +1237,8 @@
 		<aligny>center</aligny>
 	</include>
 	<include name="TWC.Daily.ListWindTexture">
-		<posx>922</posx>
-		<posy>0</posy>
+		<left>922</left>
+		<top>0</top>
 		<width>262</width>
 		<height>120</height>
 		<colordiffuse>33FFFFFF</colordiffuse>
@@ -1249,8 +1249,8 @@
 		<include>TWC.Daily.ListWindTexture</include>
 	</include>
 	<include name="TWC.Daily.ListWind">
-		<posx>930</posx>
-		<posy>0</posy>
+		<left>930</left>
+		<top>0</top>
 		<width>248</width>
 		<height>120</height>
 		<font>Font_15</font>
@@ -1262,8 +1262,8 @@
 <!-- Daily 10 days -->
 	<include name="TWC.Daily">
 		<control type="group">
-			<posx>435</posx>
-			<posy>90</posy>
+			<left>435</left>
+			<top>90</top>
 			<visible>String.IsEqual(Window.Property(Weather.CurrentView),10days)</visible>
 			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 			<control type="label">
@@ -1273,12 +1273,12 @@
 			</control>
 			<!-- brief view -->
 			<control type="group">
-				<posx>-8</posx>
-				<posy>52</posy>
+				<left>-8</left>
+				<top>52</top>
 				<visible>Skin.HasSetting(TWC.ShowDailyDetails) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
 				<control type="grouplist">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>1260</width>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
@@ -1610,12 +1610,12 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>-8</posx>
-				<posy>468</posy>
+				<left>-8</left>
+				<top>468</top>
 				<visible>Skin.HasSetting(TWC.ShowDailyDetails) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
 				<control type="grouplist">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>1260</width>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
@@ -1949,7 +1949,7 @@
 			</control>
 			<!-- details view -->
 			<control type="group">
-				<posy>52</posy>
+				<top>52</top>
 				<visible>!Skin.HasSetting(TWC.ShowDailyDetails) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
 				<!-- List Headings -->
 				<control type="group">
@@ -1958,32 +1958,32 @@
 						<label>[CR]$LOCALIZE[552]</label>
 					</control>
 					<control type="label">
-						<posx>180</posx>
+						<left>180</left>
 						<width>330</width>
 						<include>TWC.Daily.HeadingCommon</include>
 						<label>[CR]$LOCALIZE[33020]</label>
 					</control>
 					<control type="label">
-						<posx>510</posx>
+						<left>510</left>
 						<width>135</width>
 						<include>TWC.Daily.HeadingCommon</include>
 						<label>$LOCALIZE[393][CR]$LOCALIZE[401]</label>
 					</control>
 					<control type="label">
-						<posx>645</posx>
+						<left>645</left>
 						<width>135</width>
 						<include>TWC.Daily.HeadingCommon</include>
 						<label>$LOCALIZE[391][CR]$LOCALIZE[401]</label>
 					</control>
 					<control type="fadelabel">
-						<posx>780</posx>
+						<left>780</left>
 						<width>135</width>
 						<include>TWC.Daily.HeadingCommon</include>
 						<label>31862</label>
 						<scrollout>false</scrollout>
 					</control>
 					<control type="label">
-						<posx>915</posx>
+						<left>915</left>
 						<width>262</width>
 						<include>TWC.Daily.HeadingCommon</include>
 						<label>[CR]$LOCALIZE[404]</label>
@@ -1991,8 +1991,8 @@
 				</control>
 				<!-- Forecast list -->
 				<control type="grouplist" id="700">
-					<posx>0</posx>
-					<posy>68</posy>
+					<left>0</left>
+					<top>68</top>
 					<width>1192</width>
 					<height>738</height>
 					<itemgap>0</itemgap>
@@ -2847,8 +2847,8 @@
 				<!-- Scrollbar for forecast list -->
 				<control type="scrollbar" id="70000">
 					<description>Scroll Bar</description>
-					<posx>1200</posx>
-					<posy>68</posy>
+					<left>1200</left>
+					<top>68</top>
 					<height>738</height>
 					<include>TWC.ScrollbarCommon</include>
 					<onleft>SetFocus(51)</onleft>
@@ -2859,8 +2859,8 @@
 	</include>
 	<!-- ######################################################################### Hourly #########################################################################-->
 	<include name="TWC.Hourly.HeadingCommon">
-		<posx>0</posx>
-		<posy>-15</posy>
+		<left>0</left>
+		<top>-15</top>
 		<width>165</width>
 		<height>60</height>
 		<font>Font_15</font>
@@ -2871,16 +2871,16 @@
 	</include>
 	<include name="TWC.Hourly.ListNoFocusTexture">
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1178</width>
 			<height>120</height>
 			<texture></texture>
 		</control>
 	</include>
 	<include name="TWC.Hourly.ListTime">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>165</width>
 		<height>120</height>
 		<font>Font_15</font>
@@ -2890,8 +2890,8 @@
 	</include>
 	<include name="TWC.Hourly.ListConditionTexture">
 		<control type="image">
-			<posx>180</posx>
-			<posy>0</posy>
+			<left>180</left>
+			<top>0</top>
 			<width>330</width>
 			<height>120</height>
 			<colordiffuse>33FFFFFF</colordiffuse>
@@ -2899,8 +2899,8 @@
 		</control>
 	</include>
 	<include name="TWC.Hourly.ListOutlookIcon">
-		<posx>195</posx>
-		<posy>0</posy>
+		<left>195</left>
+		<top>0</top>
 		<width>96</width>
 		<height>120</height>
 		<align>center</align>
@@ -2908,8 +2908,8 @@
 		<aspectratio>keep</aspectratio>
 	</include>
 	<include name="TWC.Hourly.ListOutlook">
-		<posx>300</posx>
-		<posy>0</posy>
+		<left>300</left>
+		<top>0</top>
 		<width>210</width>
 		<height>120</height>
 		<font>Font_15</font>
@@ -2919,8 +2919,8 @@
 		<wrapmultiline>true</wrapmultiline>
 	</include>
 	<include name="TWC.Hourly.ListTempFeelsLike">
-		<posx>510</posx>
-		<posy>0</posy>
+		<left>510</left>
+		<top>0</top>
 		<width>135</width>
 		<height>120</height>
 		<font>Font_15</font>
@@ -2936,8 +2936,8 @@
 		</control>
 	</include>
 	<include name="TWC.Hourly.ListPrecipitation">
-		<posx>780</posx>
-		<posy>0</posy>
+		<left>780</left>
+		<top>0</top>
 		<width>135</width>
 		<height>120</height>
 		<font>Font_15</font>
@@ -2946,8 +2946,8 @@
 		<aligny>center</aligny>
 	</include>
 	<include name="TWC.Hourly.ListHumidity">
-		<posx>645</posx>
-		<posy>0</posy>
+		<left>645</left>
+		<top>0</top>
 		<width>135</width>
 		<height>120</height>
 		<font>Font_15</font>
@@ -2963,8 +2963,8 @@
 		</control>
 	</include>
 	<include name="TWC.Hourly.ListWind">
-		<posx>922</posx>
-		<posy>0</posy>
+		<left>922</left>
+		<top>0</top>
 		<width>262</width>
 		<height>120</height>
 		<font>Font_15</font>
@@ -2976,8 +2976,8 @@
 <!-- Hourly -->
 	<include name="TWC.Hourly">
 		<control type="group">
-			<posx>435</posx>
-			<posy>90</posy>
+			<left>435</left>
+			<top>90</top>
 			<visible>String.IsEqual(Window.Property(Weather.CurrentView),hourly)</visible>
 			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 			<control type="label">
@@ -2987,7 +2987,7 @@
 			</control>
 			<!-- details view -->
 			<control type="group">
-				<posy>52</posy>
+				<top>52</top>
 				<visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 				<!-- List Headings -->
 				<control type="group">
@@ -2996,32 +2996,32 @@
 						<label>[CR]$LOCALIZE[555]</label>
 					</control>
 					<control type="label">
-						<posx>180</posx>
+						<left>180</left>
 						<width>330</width>
 						<include>TWC.Hourly.HeadingCommon</include>
 						<label>[CR]$LOCALIZE[33020]</label>
 					</control>
 					<control type="label">
-						<posx>510</posx>
+						<left>510</left>
 						<width>135</width>
 						<include>TWC.Hourly.HeadingCommon</include>
 						<label>$LOCALIZE[401][CR]$LOCALIZE[402]</label>
 					</control>
 					<control type="label">
-						<posx>645</posx>
+						<left>645</left>
 						<width>135</width>
 						<include>TWC.Hourly.HeadingCommon</include>
 						<label>[CR]$LOCALIZE[406]</label>
 					</control>
 					<control type="fadelabel">
-						<posx>780</posx>
+						<left>780</left>
 						<width>135</width>
 						<include>TWC.Hourly.HeadingCommon</include>
 						<label>31862</label>
 						<scrollout>false</scrollout>
 					</control>
 					<control type="label">
-						<posx>915</posx>
+						<left>915</left>
 						<width>262</width>
 						<include>TWC.Hourly.HeadingCommon</include>
 						<label>[CR]$LOCALIZE[404]</label>
@@ -3029,8 +3029,8 @@
 				</control>
 				<!-- Forecast list -->
 				<control type="grouplist" id="600">
-					<posx>0</posx>
-					<posy>68</posy>
+					<left>0</left>
+					<top>68</top>
 					<width>1192</width>
 					<height>738</height>
 					<itemgap>0</itemgap>
@@ -3657,8 +3657,8 @@
 				<!-- Scrollbar for forecast list -->
 				<control type="scrollbar" id="6000">
 					<description>Scroll Bar</description>
-					<posx>1200</posx>
-					<posy>68</posy>
+					<left>1200</left>
+					<top>68</top>
 					<height>738</height>
 					<include>TWC.ScrollbarCommon</include>
 					<onleft>SetFocus(51)</onleft>
@@ -3669,8 +3669,8 @@
 	</include>
 	<!-- ######################################################################### 36Hour #########################################################################-->
 	<include name="TWC.36Hour.PeriodLabelsCommon">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>390</width>
 		<height>36</height>
 		<font>Font_15</font>
@@ -3678,15 +3678,15 @@
 		<align>center</align>
 	</include>
 	<include name="TWC.36Hour.PeriodIconCommon">
-		<posx>0</posx>
-		<posy>82</posy>
+		<left>0</left>
+		<top>82</top>
 		<width>192</width>
 		<height>180</height>
 		<aspectratio>keep</aspectratio>
 	</include>
 	<include name="TWC.36Hour.PeriodOutlookCommon">
-		<posx>0</posx>
-		<posy>278</posy>
+		<left>0</left>
+		<top>278</top>
 		<width>192</width>
 		<height>192</height>
 		<font>Font_15</font>
@@ -3696,8 +3696,8 @@
 		<wrapmultiline>true</wrapmultiline>
 	</include>
 	<include name="TWC.36Hour.PeriodTemperatureHeadingCommon">
-		<posx>195</posx>
-		<posy>81</posy>
+		<left>195</left>
+		<top>81</top>
 		<width>195</width>
 		<height>30</height>
 		<font>Font_15</font>
@@ -3706,16 +3706,16 @@
 		<align>center</align>
 	</include>
 	<include name="TWC.36Hour.PeriodTemperatureCommon">
-		<posy>128</posy>
+		<top>128</top>
 		<font>Font_15</font>
 		<include>TWC.36Hour.PeriodTemperatureHeadingCommon</include>
 	</include>
 	<include name="TWC.36Hour.PeriodPrecipitationHeadingCommon">
 		<control type="fadelabel">
 			<description>precip title</description>
-			<posx>180</posx>
+			<left>180</left>
 			<width>210</width>
-			<posy>188</posy>
+			<top>188</top>
 			<font>Font_15</font>
 			<include>TWC.36Hour.PeriodTemperatureHeadingCommon</include>
 			<label>[B]$LOCALIZE[31862][/B]</label>
@@ -3723,13 +3723,13 @@
 		</control>
 	</include>
 	<include name="TWC.36Hour.PeriodPrecipitationCommon">
-		<posy>225</posy>
+		<top>225</top>
 		<font>Font_23</font>
 		<include>TWC.36Hour.PeriodTemperatureHeadingCommon</include>
 	</include>
 	<include name="TWC.36Hour.PeriodForecastHeadingCommon">
 		<control type="label">
-			<posy>357</posy>
+			<top>357</top>
 			<font>Font_15</font>
 			<textcolor>$VAR[value_headercolor]</textcolor>
 			<align>center</align>
@@ -3740,7 +3740,7 @@
 		</control>
 	</include>
 	<include name="TWC.36Hour.PeriodForecastCommon">
-		<posy>390</posy>
+		<top>390</top>
 		<height>360</height>
 		<font>Font_17A</font>
 		<align>center</align>
@@ -3749,15 +3749,15 @@
 		<include>TWC.36Hour.PeriodLabelsCommon</include>
 	</include>
 	<include name="TWC.36Hour.PeriodDaylightCommon">
-		<posy>765</posy>
+		<top>765</top>
 		<font>Font_15</font>
 		<textcolor>$VAR[value_headercolor]</textcolor>
 		<include>TWC.36Hour.PeriodLabelsCommon</include>
 	</include>
 	<include name="TWC.36Hour.PeriodSeparator">
 		<control type="image">
-			<posx>396</posx>
-			<posy>0</posy>
+			<left>396</left>
+			<top>0</top>
 			<width>3</width>
 			<height>840</height>
 			<texture>line_v.png</texture>
@@ -3766,8 +3766,8 @@
 <!-- 36 Hour -->
 	<include name="TWC.36Hour">
 		<control type="group">
-			<posx>435</posx>
-			<posy>90</posy>
+			<left>435</left>
+			<top>90</top>
 			<visible>String.IsEqual(Window.Property(Weather.CurrentView),36hour) + [!String.Contains(Window.Property(WeatherProvider),Yahoo) | [String.Contains(Window(Weather).Property(WeatherProvider),Yahoo) + String.Contains(Window(Weather).Property(WeatherProvider),Weatherbit)]]</visible>
 			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 			<control type="label">
@@ -3777,8 +3777,8 @@
 			</control>
 			<control type="grouplist">
 				<visible>!String.IsEmpty(Window.Property(36Hour.IsFetched))</visible>
-				<posx>0</posx>
-				<posy>60</posy>
+				<left>0</left>
+				<top>60</top>
 				<width>1380</width>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
@@ -3977,13 +3977,13 @@
 		</control>
 		<control type="group">
 			<!-- Yahoo -->
-			<posx>435</posx>
-			<posy>90</posy>
+			<left>435</left>
+			<top>90</top>
 			<visible>String.IsEqual(Window.Property(Weather.CurrentView),36hour) + String.Contains(Window.Property(WeatherProvider),Yahoo)</visible>
 			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 			<control type="grouplist">
-				<posx>0</posx>
-				<posy>60</posy>
+				<left>0</left>
+				<top>60</top>
 				<width>1380</width>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
@@ -4105,8 +4105,8 @@
 	</include>
 	<!-- ######################################################################### Weekend #########################################################################-->
 	<include name="TWC.Weekend.DayCommon">
-		<posx>0</posx>
-		<posy>22</posy>
+		<left>0</left>
+		<top>22</top>
 		<width>390</width>
 		<height>36</height>
 		<font>Font_15</font>
@@ -4114,8 +4114,8 @@
 		<align>center</align>
 	</include>
 	<include name="TWC.Weekend.DateCommon">
-		<posx>375</posx>
-		<posy>0</posy>
+		<left>-15</left>
+		<top>0</top>
 		<width>390</width>
 		<height>22</height>
 		<font>Font_15</font>
@@ -4124,15 +4124,15 @@
 		<align>right</align>
 	</include>
 	<include name="TWC.Weekend.DayIconCommon">
-		<posx>0</posx>
-		<posy>105</posy>
+		<left>0</left>
+		<top>105</top>
 		<width>192</width>
 		<height>180</height>
 		<aspectratio>keep</aspectratio>
 	</include>
 	<include name="TWC.Weekend.DayOutlookCommon">
-		<posx>0</posx>
-		<posy>300</posy>
+		<left>0</left>
+		<top>300</top>
 		<width>192</width>
 		<height>192</height>
 		<font>Font_15</font>
@@ -4142,8 +4142,8 @@
 		<wrapmultiline>true</wrapmultiline>
 	</include>
 	<include name="TWC.Weekend.HighTemperatureHeadingCommon">
-		<posx>195</posx>
-		<posy>104</posy>
+		<left>195</left>
+		<top>104</top>
 		<width>195</width>
 		<height>30</height>
 		<font>Font_15</font>
@@ -4152,7 +4152,7 @@
 		<align>center</align>
 	</include>
 	<include name="TWC.Weekend.HighTemperatureCommon">
-		<posy>148</posy>
+		<top>148</top>
 		<font>Font_23</font>
 		<textcolor>FFf5f5f5</textcolor>
 		<include>TWC.Weekend.HighTemperatureHeadingCommon</include>
@@ -4160,19 +4160,19 @@
 	<include name="TWC.Weekend.LowTempHeadingCommon">
 		<control type="label">
 			<description>high temp title</description>
-			<posy>214</posy>
+			<top>214</top>
 			<label>[B]$LOCALIZE[391][/B]</label>
 			<include>TWC.Weekend.HighTemperatureHeadingCommon</include>
 		</control>
 	</include>
 	<include name="TWC.Weekend.LowTempCommon">
-		<posy>255</posy>
+		<top>255</top>
 		<font>Font_23</font>
 		<textcolor>FFf5f5f5</textcolor>
 		<include>TWC.Weekend.HighTemperatureHeadingCommon</include>
 	</include>
 	<include name="TWC.Weekend.ForecastHeadingCommon">
-		<posy>615</posy>
+		<top>615</top>
 		<font>Font_15</font>
 		<align>center</align>
 		<aligny>center</aligny>
@@ -4180,7 +4180,7 @@
 		<include>TWC.Weekend.DayCommon</include>
 	</include>
 	<include name="TWC.Weekend.ForecastCommon">
-		<posy>652</posy>
+		<top>652</top>
 		<height>195</height>
 		<font>Font_15</font>
 		<align>center</align>
@@ -4190,29 +4190,29 @@
 	</include>
 	<include name="TWC.Weekend.DaySeparator">
 		<control type="image">
-			<posx>396</posx>
-			<posy>0</posy>
+			<left>396</left>
+			<top>0</top>
 			<width>3</width>
 			<height>870</height>
 			<texture>line_v.png</texture>
 		</control>
 	</include>
 	<include name="TWC.Weekend.DetailsHeadingCommon">
-		<posy>378</posy>
+		<top>378</top>
 		<font>Font_15</font>
 		<align>center</align>
 		<aligny>center</aligny>
 		<include>TWC.Weekend.DayCommon</include>
 	</include>
 	<include name="TWC.Weekend.DetailsValuesCommon">
-		<posx>192</posx>
+		<left>192</left>
 		<textcolor>FFf5f5f5</textcolor>
 		<align>left</align>
 		<include>TWC.Weekend.DetailsLabelsCommon</include>
 	</include>
 	<include name="TWC.Weekend.DetailsLabelsCommon">
-		<posx>0</posx>
-		<posy>416</posy>
+		<left>-210</left>
+		<top>416</top>
 		<width>210</width>
 		<height>30</height>
 		<font>Font_15</font>
@@ -4225,7 +4225,7 @@
 		<texturenofocus></texturenofocus>
 	</include>
 	<include name="TWC.Weekend.DetailsLabels">
-		<posy>416</posy>
+		<top>416</top>
 		<width>195</width>
 		<height>225</height>
 		<itemgap>0</itemgap>
@@ -4264,7 +4264,7 @@
 		</control>
 	</include>
 	<include name="TWC.Weekend.ObservedLabels">
-		<posy>416</posy>
+		<top>416</top>
 		<width>195</width>
 		<height>255</height>
 		<itemgap>0</itemgap>
@@ -4304,8 +4304,8 @@
 	</include>
 	<include name="TWC.Weekend">
 		<control type="group">
-			<posx>435</posx>
-			<posy>90</posy>
+			<left>435</left>
+			<top>90</top>
 			<visible>String.IsEqual(Window.Property(Weather.CurrentView),weekend) + !String.IsEqual(Window.Property(WeatherProvider),OpenWeatherMap Extended)</visible>
 			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 			<control type="label">
@@ -4315,8 +4315,8 @@
 			</control>
 			<control type="grouplist">
 				<visible>!String.IsEmpty(Window.Property(Weekend.IsFetched))</visible>
-				<posx>0</posx>
-				<posy>38</posy>
+				<left>0</left>
+				<top>38</top>
 				<width>1380</width>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
@@ -4376,7 +4376,7 @@
 					<control type="label">
 						<description>precip</description>
 						<label>$INFO[Window.Property(Weekend.1.ObservedPrecipitation),$LOCALIZE[33021] ,]</label>
-						<posx>195</posx>
+						<left>195</left>
 						<include>TWC.Weekend.DayOutlookCommon</include>
 						<visible>!String.IsEmpty(Window.Property(Weekend.1.Observed))</visible>
 					</control>
@@ -4387,7 +4387,7 @@
 					</control>
 					<control type="label">
 						<description>observed</description>
-						<posy>788</posy>
+						<top>788</top>
 						<font>Font_15</font>
 						<label>[I][B]($LOCALIZE[33025])[/B][/I]</label>
 						<include>TWC.Weekend.DetailsHeadingCommon</include>
@@ -4496,12 +4496,12 @@
 						<visible>Skin.HasSetting(TWC.ShowWeekendDetails) + String.IsEmpty(Window.Property(Weekend.1.Observed))</visible>
 						<control type="label">
 							<description>forecast label</description>
-							<posy>380</posy>
+							<top>380</top>
 							<include>TWC.Weekend.ForecastHeadingCommon</include>
 						</control>
 						<control type="textbox">
 							<description>forecast</description>
-							<posy>411</posy>
+							<top>411</top>
 							<height>354</height>
 							<include>TWC.Weekend.ForecastCommon</include>
 							<info>Window.Property(Weekend.1.Forecast)</info>
@@ -4509,7 +4509,7 @@
 						</control>
 						<control type="label">
 							<description>precip</description>
-							<posy>788</posy>
+							<top>788</top>
 							<font>Font_15</font>
 							<textcolor>$VAR[value_headercolor]</textcolor>
 							<label>$INFO[Window.Property(Weekend.1.ChancePrecipitation)]</label>
@@ -4574,7 +4574,7 @@
 					<control type="label">
 						<description>precip</description>
 						<label>$INFO[Window.Property(Weekend.2.ObservedPrecipitation),$LOCALIZE[33021] ,]</label>
-						<posx>195</posx>
+						<left>195</left>
 						<include>TWC.Weekend.DayOutlookCommon</include>
 						<visible>!String.IsEmpty(Window.Property(Weekend.2.Observed))</visible>
 					</control>
@@ -4585,7 +4585,7 @@
 					</control>
 					<control type="label">
 						<description>observed</description>
-						<posy>788</posy>
+						<top>788</top>
 						<font>Font_15</font>
 						<label>[I][B]($LOCALIZE[33025])[/B][/I]</label>
 						<include>TWC.Weekend.DetailsHeadingCommon</include>
@@ -4694,12 +4694,12 @@
 						<visible>Skin.HasSetting(TWC.ShowWeekendDetails) + String.IsEmpty(Window.Property(Weekend.2.Observed))</visible>
 						<control type="label">
 							<description>forecast label</description>
-							<posy>380</posy>
+							<top>380</top>
 							<include>TWC.Weekend.ForecastHeadingCommon</include>
 						</control>
 						<control type="textbox">
 							<description>forecast</description>
-							<posy>411</posy>
+							<top>411</top>
 							<height>354</height>
 							<include>TWC.Weekend.ForecastCommon</include>
 							<info>Window.Property(Weekend.2.Forecast)</info>
@@ -4707,7 +4707,7 @@
 						</control>
 						<control type="label">
 							<description>precip</description>
-							<posy>788</posy>
+							<top>788</top>
 							<font>Font_15</font>
 							<textcolor>$VAR[value_headercolor]</textcolor>
 							<label>$INFO[Window.Property(Weekend.2.ChancePrecipitation)]</label>
@@ -4772,7 +4772,7 @@
 					<control type="label">
 						<description>precip</description>
 						<label>$INFO[Window.Property(Weekend.3.ObservedPrecipitation),$LOCALIZE[33021] ,]</label>
-						<posx>195</posx>
+						<left>195</left>
 						<include>TWC.Weekend.DayOutlookCommon</include>
 						<visible>!String.IsEmpty(Window.Property(Weekend.3.Observed))</visible>
 					</control>
@@ -4783,7 +4783,7 @@
 					</control>
 					<control type="label">
 						<description>observed</description>
-						<posy>788</posy>
+						<top>788</top>
 						<font>Font_15</font>
 						<label>[I][B]($LOCALIZE[33025])[/B][/I]</label>
 						<include>TWC.Weekend.DetailsHeadingCommon</include>
@@ -4892,12 +4892,12 @@
 						<visible>Skin.HasSetting(TWC.ShowWeekendDetails) + String.IsEmpty(Window.Property(Weekend.3.Observed))</visible>
 						<control type="label">
 							<description>forecast label</description>
-							<posy>380</posy>
+							<top>380</top>
 							<include>TWC.Weekend.ForecastHeadingCommon</include>
 						</control>
 						<control type="textbox">
 							<description>forecast</description>
-							<posy>411</posy>
+							<top>411</top>
 							<height>354</height>
 							<include>TWC.Weekend.ForecastCommon</include>
 							<info>Window.Property(Weekend.3.Forecast)</info>
@@ -4905,7 +4905,7 @@
 						</control>
 						<control type="label">
 							<description>precip</description>
-							<posy>788</posy>
+							<top>788</top>
 							<font>Font_15</font>
 							<textcolor>$VAR[value_headercolor]</textcolor>
 							<label>$INFO[Window.Property(Weekend.3.ChancePrecipitation)]</label>
@@ -4917,8 +4917,8 @@
 		</control>
 		<!-- OpenWeatherMap -->
 		<control type="group">
-			<posx>435</posx>
-			<posy>90</posy>
+			<left>435</left>
+			<top>90</top>
 			<visible>String.IsEqual(Window.Property(Weather.CurrentView),weekend) + String.IsEqual(Window.Property(WeatherProvider),OpenWeatherMap Extended)</visible>
 			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 			<control type="label">
@@ -4928,8 +4928,8 @@
 			</control>
 			<control type="grouplist">
 				<visible>!String.IsEmpty(Window.Property(Weekend.IsFetched))</visible>
-				<posx>0</posx>
-				<posy>38</posy>
+				<left>0</left>
+				<top>38</top>
 				<width>1380</width>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
@@ -4989,7 +4989,7 @@
 					<control type="label">
 						<description>precip</description>
 						<label>$INFO[Window.Property(Weekend.1.Precipitation),$LOCALIZE[33021] ,]</label>
-						<posx>195</posx>
+						<left>195</left>
 						<include>TWC.Weekend.DayOutlookCommon</include>
 						<visible>!String.IsEmpty(Window.Property(Weekend.1.Observed))</visible>
 					</control>
@@ -5000,7 +5000,7 @@
 					</control>
 					<control type="label">
 						<description>observed</description>
-						<posy>788</posy>
+						<top>788</top>
 						<font>Font_15</font>
 						<label>[I][B]($LOCALIZE[33025])[/B][/I]</label>
 						<include>TWC.Weekend.DetailsHeadingCommon</include>
@@ -5101,12 +5101,12 @@
 						<visible>Skin.HasSetting(TWC.ShowWeekendDetails) + String.IsEmpty(Window.Property(Weekend.1.Observed))</visible>
 						<control type="label">
 							<description>forecast label</description>
-							<posy>380</posy>
+							<top>380</top>
 							<include>TWC.Weekend.ForecastHeadingCommon</include>
 						</control>
 						<control type="textbox">
 							<description>forecast</description>
-							<posy>411</posy>
+							<top>411</top>
 							<height>354</height>
 							<include>TWC.Weekend.ForecastCommon</include>
 							<info>Window.Property(Weekend.1.Outlook)</info>
@@ -5114,7 +5114,7 @@
 						</control>
 						<control type="label">
 							<description>precip</description>
-							<posy>788</posy>
+							<top>788</top>
 							<font>Font_15</font>
 							<textcolor>$VAR[value_headercolor]</textcolor>
 							<label>$INFO[Window.Property(Weekend.1.Precipitation)]</label>
@@ -5179,7 +5179,7 @@
 					<control type="label">
 						<description>precip</description>
 						<label>$INFO[Window.Property(Weekend.2.Precipitation),$LOCALIZE[33021] ,]</label>
-						<posx>195</posx>
+						<left>195</left>
 						<include>TWC.Weekend.DayOutlookCommon</include>
 						<visible>!String.IsEmpty(Window.Property(Weekend.2.Observed))</visible>
 					</control>
@@ -5190,7 +5190,7 @@
 					</control>
 					<control type="label">
 						<description>observed</description>
-						<posy>788</posy>
+						<top>788</top>
 						<font>Font_15</font>
 						<label>[I][B]($LOCALIZE[33025])[/B][/I]</label>
 						<include>TWC.Weekend.DetailsHeadingCommon</include>
@@ -5291,12 +5291,12 @@
 						<visible>Skin.HasSetting(TWC.ShowWeekendDetails) + String.IsEmpty(Window.Property(Weekend.2.Observed))</visible>
 						<control type="label">
 							<description>forecast label</description>
-							<posy>380</posy>
+							<top>380</top>
 							<include>TWC.Weekend.ForecastHeadingCommon</include>
 						</control>
 						<control type="textbox">
 							<description>forecast</description>
-							<posy>411</posy>
+							<top>411</top>
 							<height>354</height>
 							<include>TWC.Weekend.ForecastCommon</include>
 							<info>Window.Property(Weekend.2.Outlook)</info>
@@ -5304,7 +5304,7 @@
 						</control>
 						<control type="label">
 							<description>precip</description>
-							<posy>788</posy>
+							<top>788</top>
 							<font>Font_15</font>
 							<textcolor>$VAR[value_headercolor]</textcolor>
 							<label>$INFO[Window.Property(Weekend.2.Precipitation)]</label>
@@ -5343,8 +5343,8 @@
 		<visible>!String.IsEqual(Window.Property(Weather.CurrentMap),Skin.String(TWC.DefaultMap))</visible>
 	</control>
 	<include name="TWC.Maps.ListCommon">
-		<posx>-120</posx>
-		<posy>75</posy>
+		<left>-120</left>
+		<top>75</top>
 		<width>1058</width>
 		<height>698</height>
 		<onleft>50</onleft>
@@ -5353,8 +5353,8 @@
 		<preloaditems>2</preloaditems>
 		<itemlayout width="352" height="232">
 			<control type="image">
-				<posx>15</posx>
-				<posy>15</posy>
+				<left>15</left>
+				<top>15</top>
 				<width>315</width>
 				<height>202</height>
 				<aspectratio>keep</aspectratio>
@@ -5363,8 +5363,8 @@
 		</itemlayout>
 		<focusedlayout height="345" width="232">
 			<control type="image">
-				<posx>15</posx>
-				<posy>15</posy>
+				<left>15</left>
+				<top>15</top>
 				<width>315</width>
 				<height>202</height>
 				<aspectratio>keep</aspectratio>
@@ -5373,8 +5373,8 @@
 		</focusedlayout>
 	</include>
 	<include name="TWC.Maps.ListTitleCommon">
-		<posx>-105</posx>
-		<posy>820</posy>
+		<left>-105</left>
+		<top>820</top>
 		<width>1080</width>
 		<height>45</height>
 		<font>Font_17A</font>
@@ -5384,18 +5384,18 @@
 	</include>
 	<include name="TWC.Maps">
 		<control type="group">  <!-- Weatherbit.IO, Multi and openweathermap maps -->
-			<posx>435</posx>
-			<posy>90</posy>
+			<left>435</left>
+			<top>90</top>
 			<onright>5200</onright>
 			<visible>String.IsEqual(Window.Property(Weather.CurrentView),maps) + [String.IsEqual(Window.Property(WeatherProvider),OpenWeatherMap Extended) | String.Contains(Window.Property(WeatherProvider), Weatherbit) | String.Contains(Window.Property(WeatherProvider), Multi)] + System.AddonIsEnabled(script.openweathermap.maps)</visible>
 			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 			<!-- Category buttons and maps -->
 			<control type="group" id="5200">
-				<posx>180</posx>
-				<posy>60</posy>
+				<left>180</left>
+				<top>60</top>
 				<control type="image">
-					<posx>-135</posx>
-					<posy>-15</posy>
+					<left>-135</left>
+					<top>-15</top>
 					<width>1140</width>
 					<height>825</height>
 					<texture>black.png</texture>
@@ -5403,8 +5403,8 @@
 				<control type="radiobutton" id="5201">
 					<description>Map List Button</description>
 					<include>MapsRadioButton</include>
-					<posx>-650</posx>
-					<posy>630</posy>
+					<left>-650</left>
+					<top>630</top>
 					<label>$INFO[Window.Property(Map.1.Heading)]</label>
 					<onleft>51</onleft>
 					<onright>51</onright>
@@ -5417,8 +5417,8 @@
 				<control type="radiobutton" id="5202">
 					<description>Map List Button</description>
 					<include>MapsRadioButton</include>
-					<posx>-650</posx>
-					<posy>675</posy>
+					<left>-650</left>
+					<top>675</top>
 					<label>$INFO[Window.Property(Map.2.Heading)]</label>
 					<onleft>51</onleft>
 					<onright>51</onright>
@@ -5431,8 +5431,8 @@
 				<control type="radiobutton" id="5203">
 					<description>Map List Button</description>
 					<include>MapsRadioButton</include>
-					<posx>-650</posx>
-					<posy>720</posy>
+					<left>-650</left>
+					<top>720</top>
 					<label>$INFO[Window.Property(Map.3.Heading)]</label>
 					<onleft>51</onleft>
 					<onright>51</onright>
@@ -5445,8 +5445,8 @@
 				<control type="radiobutton" id="5204">
 					<description>Map List Button</description>
 					<include>MapsRadioButton</include>
-					<posx>-650</posx>
-					<posy>765</posy>
+					<left>-650</left>
+					<top>765</top>
 					<label>$INFO[Window.Property(Map.4.Heading)]</label>
 					<onleft>51</onleft>
 					<onright>51</onright>
@@ -5459,8 +5459,8 @@
 				<control type="radiobutton" id="5205">
 					<description>Map List Button</description>
 					<include>MapsRadioButton</include>
-					<posx>-650</posx>
-					<posy>810</posy>
+					<left>-650</left>
+					<top>810</top>
 					<label>$INFO[Window.Property(Map.5.Heading)]</label>
 					<onleft>51</onleft>
 					<onright>51</onright>
@@ -5474,8 +5474,8 @@
 					<visible>String.IsEqual(Window.Property(CurrentMap),1)</visible>
 					<control type="image">
 						<description>map</description>
-						<posx>-135</posx>
-						<posy>-15</posy>
+						<left>-135</left>
+						<top>-15</top>
 						<width>1140</width>
 						<height>825</height>
 						<texture>$INFO[Window.Property(Map.1.Area)]</texture>
@@ -5483,8 +5483,8 @@
 					</control>
 					<control type="image">
 						<description>map</description>
-						<posx>-135</posx>
-						<posy>-15</posy>
+						<left>-135</left>
+						<top>-15</top>
 						<width>1140</width>
 						<height>825</height>
 						<texture>$INFO[Window.Property(Map.1.Layer)]</texture>
@@ -5493,8 +5493,8 @@
 					</control>
 					<control type="image">
 						<description>legend image</description>
-						<posx>408</posx>
-						<posy>830</posy>
+						<left>408</left>
+						<top>830</top>
 						<width>600</width>
 						<height>75</height>
 						<texture>$INFO[Window.Property(Map.1.Legend)]</texture>
@@ -5508,8 +5508,8 @@
 					<visible>String.IsEqual(Window.Property(CurrentMap),2)</visible>
 					<control type="image">
 						<description>map</description>
-						<posx>-135</posx>
-						<posy>-15</posy>
+						<left>-135</left>
+						<top>-15</top>
 						<width>1140</width>
 						<height>825</height>
 						<texture>$INFO[Window.Property(Map.2.Area)]</texture>
@@ -5517,8 +5517,8 @@
 					</control>
 					<control type="image">
 						<description>map</description>
-						<posx>-135</posx>
-						<posy>-15</posy>
+						<left>-135</left>
+						<top>-15</top>
 						<width>1140</width>
 						<height>825</height>
 						<texture>$INFO[Window.Property(Map.2.Layer)]</texture>
@@ -5527,8 +5527,8 @@
 					</control>
 					<control type="image">
 						<description>legend image</description>
-						<posx>408</posx>
-						<posy>830</posy>
+						<left>408</left>
+						<top>830</top>
 						<width>600</width>
 						<height>75</height>
 						<texture>$INFO[Window.Property(Map.2.Legend)]</texture>
@@ -5542,8 +5542,8 @@
 					<visible>String.IsEqual(Window.Property(CurrentMap),3)</visible>
 					<control type="image">
 						<description>map</description>
-						<posx>-135</posx>
-						<posy>-15</posy>
+						<left>-135</left>
+						<top>-15</top>
 						<width>1140</width>
 						<height>825</height>
 						<texture>$INFO[Window.Property(Map.3.Area)]</texture>
@@ -5551,8 +5551,8 @@
 					</control>
 					<control type="image">
 						<description>map</description>
-						<posx>-135</posx>
-						<posy>-15</posy>
+						<left>-135</left>
+						<top>-15</top>
 						<width>1140</width>
 						<height>825</height>
 						<texture>$INFO[Window.Property(Map.3.Layer)]</texture>
@@ -5561,8 +5561,8 @@
 					</control>
 					<control type="image">
 						<description>legend image</description>
-						<posx>408</posx>
-						<posy>830</posy>
+						<left>408</left>
+						<top>830</top>
 						<width>600</width>
 						<height>75</height>
 						<texture>$INFO[Window.Property(Map.3.Legend)]</texture>
@@ -5576,8 +5576,8 @@
 					<visible>String.IsEqual(Window.Property(CurrentMap),4)</visible>
 					<control type="image">
 						<description>map</description>
-						<posx>-135</posx>
-						<posy>-15</posy>
+						<left>-135</left>
+						<top>-15</top>
 						<width>1140</width>
 						<height>825</height>
 						<texture>$INFO[Window.Property(Map.4.Area)]</texture>
@@ -5585,8 +5585,8 @@
 					</control>
 					<control type="image">
 						<description>map</description>
-						<posx>-135</posx>
-						<posy>-15</posy>
+						<left>-135</left>
+						<top>-15</top>
 						<width>1140</width>
 						<height>825</height>
 						<texture>$INFO[Window.Property(Map.4.Layer)]</texture>
@@ -5595,8 +5595,8 @@
 					</control>
 					<control type="image">
 						<description>legend image</description>
-						<posx>408</posx>
-						<posy>830</posy>
+						<left>408</left>
+						<top>830</top>
 						<width>600</width>
 						<height>75</height>
 						<texture>$INFO[Window.Property(Map.4.Legend)]</texture>
@@ -5610,8 +5610,8 @@
 					<visible>String.IsEqual(Window.Property(CurrentMap),5)</visible>
 					<control type="image">
 						<description>map</description>
-						<posx>-135</posx>
-						<posy>-15</posy>
+						<left>-135</left>
+						<top>-15</top>
 						<width>1140</width>
 						<height>825</height>
 						<texture>$INFO[Window.Property(Map.5.Area)]</texture>
@@ -5619,8 +5619,8 @@
 					</control>
 					<control type="image">
 						<description>map</description>
-						<posx>-135</posx>
-						<posy>-15</posy>
+						<left>-135</left>
+						<top>-15</top>
 						<width>1140</width>
 						<height>825</height>
 						<texture>$INFO[Window.Property(Map.5.Layer)]</texture>
@@ -5629,8 +5629,8 @@
 					</control>
 					<control type="image">
 						<description>legend image</description>
-						<posx>408</posx>
-						<posy>830</posy>
+						<left>408</left>
+						<top>830</top>
 						<width>600</width>
 						<height>75</height>
 						<texture>$INFO[Window.Property(Map.5.Legend)]</texture>
@@ -6470,21 +6470,21 @@
 	</include>
 	<!-- ######################################################################### Plus Video #########################################################################-->
 	<include name="TWC.Video.VideoWindowDimensions">
-		<posx>68</posx>
-		<posy>60</posy>
+		<left>68</left>
+		<top>60</top>
 		<width>1080</width>
 		<height>810</height>
 	</include>
 	<include name="TWC.Video">
 		<control type="group">
-			<posx>435</posx>
-			<posy>90</posy>
+			<left>435</left>
+			<top>90</top>
 			<visible>String.IsEqual(Window.Property(Weather.CurrentView),video)</visible>
 			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 			<control type="image">
 				<description>Border</description>
-				<posx>60</posx>
-				<posy>52</posy>
+				<left>60</left>
+				<top>52</top>
 				<width>1095</width>
 				<height>825</height>
 				<texture border="5">settings_button.png</texture>
@@ -6508,15 +6508,15 @@
 	<!-- ######################################################################### Alerts #########################################################################-->
 	<include name="TWC.Alerts">
 		<control type="group">
-			<posx>435</posx>
-			<posy>90</posy>
+			<left>435</left>
+			<top>90</top>
 			<onright>8001</onright>
 			<visible>String.IsEqual(Window.Property(Weather.CurrentView),alerts)</visible>
 			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 			<control type="textbox" id="800">
 				<description>alert text</description>
-				<posx>0</posx>
-				<posy>60</posy>
+				<left>0</left>
+				<top>60</top>
 				<width>1185</width>
 				<height>802</height>
 				<font>Font_15</font>
@@ -6529,8 +6529,8 @@
 			</control>
 			<control type="scrollbar" id="8001">
 				<description>Scroll Bar</description>
-				<posx>1200</posx>
-				<posy>60</posy>
+				<left>1200</left>
+				<top>60</top>
 				<height>802</height>
 				<include>TWC.ScrollbarCommon</include>
 				<onleft>SetFocus(51)</onleft>
